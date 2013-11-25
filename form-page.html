@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta name="keywords" content="{{ page.keywords }}">
+	<meta name="description" content="{{ page.description }}">
+	<meta name="author" content="{{ site.author }}">
+
+	<meta property="fb:admins" content="1227335529">
+	<meta property="og:title" content="{{ site.title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ site.url }}">
+	<meta property="og:image" content="{{ site.url }}/photos/tbw-esileht-th.jpg">
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:description" content="{{ description }}">
+	<!-- http://graph.facebook.com/kasparnaaber -->
+	<!-- https://developers.facebook.com/tools/debug -->
+	<!-- Debug tuleb teha ka iga kord pärast seda, kui vahetad meta tagides midagi välja – enne ei korja Facebook seda külge -->
+	<!-- Siit saad ka veidi abi http://davidwalsh.name/facebook-meta-tags -->
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/ico">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/fonts.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="stylesheets/ie8.css" type="text/css"><![endif]-->
+	<script src="javascripts/modernizr.js"></script>
+
+	<title>Products</title>
+</head>
+<body>
+	<div class="cover-image-wrap cp-cover"></div>
+	<div class="cp-page-wrap">
+		<div class="cp-align-middle">
+			<div class="cp-inner">
+				<header class="cp-header">
+					<h1>Paesaggio Toscano</h1>
+					<nav class="main-menu cp-main-menu">
+						<ul class="horz-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="images-page.html">Images page</a></li>
+							<li><a href="gallery-page.html">Gallery page</a></li>
+							<li><a href="form-page.html" class="active">Form page</a></li>
+							<li><a href="table-page.html">Table page</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+						</ul>
+					</nav>
+				</header>
+				<main class="page-content" role="main">
+					<h1>This is where your products live</h1>
+					<p>Introduce your products by writing text, showing pictures, building forms, adding galleries.<br>If you don't need a Products page you can rename or delete it from the page properties tool on the lower right corner.</p>
+
+					<h2>This is an example form:</h2>
+					<form action="/form" method="post" id="form_285">
+						<div style="margin:0;padding:0;">
+							<input id="ticket_form_id" name="ticket[form_id]" type="hidden" value="285">
+						</div>
+						<div class="form_area">
+							<div class="form_notice">Form has been submitted. Thank you!</div>
+							<div class="form_error">Invalid data has been submitted!</div>
+							<div style="display: none; visibility: hidden;">
+								Email again: <input type="text" name="ticket[email]" value="" id="fci_ticket_email">
+							</div>
+							<div class="form_fields">
+								<div class="form_field">
+									<label for="field_field40">Pick from list</label>
+									<select class="form_field_select" id="field_field40" name="ticket[data][field40]">
+										<option value="Valik 1" selected="selected">First offender</option>
+										<option value="Valik 2">Second offender</option>
+										<option value="Valik 3">Third offender</option>
+									</select>
+								</div>
+								<div class="form_field form_field_required form_field_with_errors">
+									<label for="field_field46">Required field and field size large *</label>
+									<input class="form_field_textfield form_field_size_large" id="field_field46" name="ticket[data][field46]" type="text" value="Something important">
+									<div class="form_field_error">Field is required, Invalid e-mail format</div>
+								</div>
+								<div class="form_field">
+									<label for="field_field_1319705466338">Field size medium</label>
+									<input class="form_field_textfield form_field_size_medium" id="field_field_1319705466338" name="ticket[data][field_1319705466338]" type="text">
+								</div>
+								<div class="form_field">
+									<label for="field_field_1319705467081">Field size small</label>
+									<input class="form_field_textfield form_field_size_small" id="field_field_1319705467081" name="ticket[data][field_1319705467081]" type="text">
+								</div>
+								<div class="form_field">
+									<label for="field_field_1319705467089">Field size default</label>
+									<input class="form_field_textfield" id="field_field_1319705467089" name="ticket[data][field_1319705467081]" type="text">
+								</div>
+								<div class="form_field">
+									<label for="field_field_1383817710">Textarea large</label>
+									<textarea class="form_field_textarea form_field_size_large" cols="20" id="field_field_1383817710" name="ticket[data][field_1383817710]" rows="4"></textarea>
+								</div>
+								<div class="form_field">
+									<label for="field_field_1383817711">Textarea medium</label>
+									<textarea class="form_field_textarea form_field_size_medium" cols="20" id="field_field_1383817711" name="ticket[data][field_1383817710]" rows="4"></textarea>
+								</div>
+								<div class="form_field">
+									<label for="field_field_1383817712">Textarea small</label>
+									<textarea class="form_field_textarea form_field_size_small" cols="20" id="field_field_1383817712" name="ticket[data][field_1383817710]" rows="4"></textarea>
+								</div>
+								<div class="form_field">
+									<label for="field_field_1383817717">Textarea default</label>
+									<textarea class="form_field_textarea" cols="20" id="field_field_1383817717" name="ticket[data][field_1383817713]" rows="4"></textarea>
+								</div>
+								<div class="form_field">
+									<label>Kirjuta siia välja pealkiri</label>
+									<div>
+										<input class="form_field_checkbox" id="field_field_1359541473814_1" name="ticket[data][field_1359541473814][]" type="checkbox" value="Joy">
+										<label class="form_field_label checkbox_label" for="field_field_1359541473814_1">Joy</label>
+									</div>
+									<div>
+										<input class="form_field_checkbox" id="field_field_1359541473814_2" name="ticket[data][field_1359541473815][]" type="checkbox" value="Honey">
+										<label class="form_field_label checkbox_label" for="field_field_1359541473814_2">Honey</label>
+									</div>
+									<div>
+										<input class="form_field_checkbox" id="field_field_1359541473814_3" name="ticket[data][field_1359541473816][]" type="checkbox" value="Money">
+										<label class="form_field_label checkbox_label" for="field_field_1359541473814_3">Money</label>
+									</div>
+								</div>
+								<div class="form_field">
+									<label>Kirjuta siia välja pealkiri</label>
+									<div>
+										<input class="form_field_radio" id="field_field_1359541496629_4" name="ticket[data][field_1359541496629]" type="radio" value="Wife">
+										<label class="form_field_label radio_label" for="field_field_1359541496629_4">Knife</label>
+									</div>
+									<div>
+										<input class="form_field_radio" id="field_field_1359541496629_5" name="ticket[data][field_1359541496629]" type="radio" value="Knife">
+										<label class="form_field_label radio_label" for="field_field_1359541496629_5">Wife</label>
+									</div>
+									<div>
+										<input class="form_field_radio" id="field_field_1359541496629_6" name="ticket[data][field_1359541496629]" type="radio" value="Gun">
+										<label class="form_field_label radio_label" for="field_field_1359541496629_6">Gun</label>
+									</div>
+								</div>
+							</div>
+							<div class="form_submit">
+								<input name="commit" type="submit" value="Send!">
+							</div>
+						</div>
+					</form>
+				</main>
+			</div>
+			<footer class="footer-wrap cp-footer-wrap">My Company 2013. Visit us at 1192 Cambridge Street, Cambridge, MA 02139. Call us +1 617-576-1950  Email us at email@yourname.com</footer>
+		</div>
+	</div>
+
+	<script src="javascripts/jquery-1.10.2.min.js"></script>
+	<script src="javascripts/main.js"></script>
+</body>
+</html>
