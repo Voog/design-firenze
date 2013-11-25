@@ -36,13 +36,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .horz-menu { color: #444; color: rgba(68,68,68,1); }
-h1, h2 { margin-bottom: 1.2rem; }
 h1, .horz-menu { font-family: "Bebas-Neue-Regular",'Open Sans', sans-serif; }
 h1 {
 	font-size: 3.6rem;
 	font-weight: 400;
+	margin-bottom: 1.5rem;
 }
-h2 { font-size: 1.4rem; }
+h2 {
+	font-size: 1.4rem;
+	margin-bottom: 1.2rem;
+}
 h3, h4, h5, h6 {  }
 a {	text-decoration: none; }
 a:hover { }
@@ -69,7 +72,7 @@ img {
 .fp-main-menu .horz-menu li a {	color: #fff; color: rgba(255,255,255,1); }
 .fp-main-menu .horz-menu li .active, .fp-main-menu .horz-menu li a:hover { opacity: 0.5; }
 
-.cp-main-menu { margin-bottom: 2rem; }
+.cp-main-menu { margin-bottom: 1.7rem; }
 .cp-main-menu .horz-menu li a {	color: #888; color: rgba(136,136,136,1); }
 .cp-main-menu .horz-menu li .active, .cp-main-menu .horz-menu li a:hover { color: #444; color: rgba(68,68,68,1); }
 
@@ -87,8 +90,8 @@ img {
 .lang-menu-wrap {
 	display: inline-block;
 	position: absolute;
-	right: 3rem;
-	top: 2.5rem;
+	right: 2.5rem;
+	top: 2.1rem;
 	vertical-align: middle;
 }
 .lang-btn {
@@ -261,7 +264,7 @@ img {
 	display: table;
 	height: 100%;
 	margin: 0 auto;
-	max-width: 76rem;
+	max-width: 76.1rem;
 	width: 100%;
 }
 .cp-align-middle {
@@ -272,12 +275,13 @@ img {
 .cp-inner {
 	background: #fff; background: rgba(255,255,255,1);
 	min-height: 45.8rem;
-	padding: 2.5rem 3rem;
+	padding: 2.5rem;
 	position: relative;
 }
 
 .cp-header {
 	border-bottom: 1px solid #888888; border-bottom: 1px solid rgba(136,136,136,0.33);
+	padding: 0 0.5rem;
 }
 .cp-header h1 {
 	display: inline-block;
@@ -287,12 +291,9 @@ img {
 	max-width: 50%;
 }
 
-.page-content {
-	padding: 3.4rem 0 0 0;
-}
-.page-content p {
-	margin-bottom: 2.3rem;
-}
+.page-content {	padding: 3.2rem 0.4rem 0; }
+.page-content p {	margin-bottom: 2.5rem; }
+.page-content p:last-child { margin-bottom: 0; }
 .page-content ul { margin: 0 0 1.2rem 3.6rem; }
 .page-content ul li { margin-bottom: 0.3rem; }
 
@@ -321,5 +322,5 @@ img {
 .footer-wrap {
 	color: #fff; color: rgba(255,255,255,0.33);
 	font-size: 0.9rem;
-	padding: 2.5rem 3rem;
+	padding: 2.3rem 2.9rem;
 }
