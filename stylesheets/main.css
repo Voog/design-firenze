@@ -38,7 +38,10 @@ body {
 h1, h2, h3, h4, h5, h6, .horz-menu { color: #444; color: rgba(68,68,68,1); }
 h1, h2 { margin-bottom: 1.2rem; }
 h1, .horz-menu { font-family: "Bebas-Neue-Regular",'Open Sans', sans-serif; }
-h1 { font-size: 3.6rem; }
+h1 {
+	font-size: 3.6rem;
+	font-weight: 400;
+}
 h2 { font-size: 1.4rem; }
 h3, h4, h5, h6 {  }
 a {	text-decoration: none; }
