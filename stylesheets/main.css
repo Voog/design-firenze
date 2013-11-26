@@ -336,7 +336,7 @@ img {
 .fp-footer a { color: rgba(255,255,255,0.6); }
 .fp-footer a:hover { color: rgba(255,255,255,0.8); }
 
-/* Images page */
+/* Common page */
 .cp-cover {
 	background: url("../photos/cp-body-bg.jpg");
 	background-size: cover;
@@ -433,6 +433,168 @@ img {
 .edys-gallery-area:hover img { opacity: 0.6; }
 .edys-gallery-area img:hover { opacity: 1; }
 .edys-gallery a {	padding-right: 0 !important; }
+
+/* Forms */
+
+.form_field {	margin-bottom: 1.7rem; }
+.form_field div { position: relative; }
+
+.form_field label, .edy-form-field-label {
+	color: rgba(27,33,36,1);
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.form_field .form_field_label {
+	background-position: 0 0.2rem;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	height: 2rem;
+	padding-left: 2.6rem;
+	position: relative;
+	-webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none;	user-select: none;
+}
+
+.form_field .checkbox_label:before, .form_field .radio_label:before {
+	background: #f2f2f2; background: rgba(0,0,0,0.05);
+	content: "";
+	display: block;
+	height: 1.7rem;
+	left: 0;
+	position: absolute;
+	top: -0.1rem;
+	width: 1.7rem;
+}
+
+.form_field .checkbox_label.checked:after {
+	display: block;
+	content: "";
+	top: -0.5rem;
+	left: 0.3rem;
+	position: absolute;
+	height: 1.7rem;
+	width: 1.7rem;
+}
+
+.svg .form_field .checkbox_label.checked:after { background: url("../assets/ico-tick.svg") center center no-repeat; }
+.form_field label.radio_label:before, .form_field label.radio_label.checked:after { border-radius: 100%; }
+
+.form_field label.radio_label.checked:after {
+	background: #444444; background: rgba(68,68,68,1);
+	content: "";
+	display: block;
+	height: 1.1rem;
+	left: 0.3rem;
+	position: absolute;
+	top: 0.2rem;
+	width: 1.1rem;
+}
+
+.form_field_textfield, .form_field_textarea, .form_field_select, .form_submit input {
+	background: #f2f2f2; background: rgba(0,0,0,0.05);
+	border: none;
+	border-radius: 0;
+	font-family: inherit;
+	font-size: 1.4rem;
+	margin: 0 4px 4px 0;
+	padding: 1rem;
+	-webkit-appearance: none; -moz-appearance: none;
+}
+.form_field_textarea {
+	max-width: 100%;
+	min-height: 10.5rem;
+	overflow: auto;
+	vertical-align: top;
+}
+.form_field_size_large, .form_field_size_medium, .form_field_size_small { min-width: 21rem; }
+.form_field_size_large { width: 100%; }
+.form_field_size_medium { width: 50%; }
+.form_field_size_small { width: 25%; }
+.form_field_checkbox, .form_field_radio { display: none; }
+.form_field_select {
+	max-width: 100%;
+	padding: 1rem 2.5rem 1rem 1rem;
+	text-indent: 0.01px;
+	text-overflow: "";
+}
+.svg .form_field_select {  background: rgba(0,0,0,0.05) url("../assets/arrow-down.svg") no-repeat right 1rem center; }
+.no-svg .form_field_select { background: #f2f2f2 url("../images/arrow-down.png") no-repeat right 1rem center; }
+.no-svg .form_field_select { background: rgba(0,0,0,0.05) url("../images/arrow-down.png") no-repeat right 1rem center; }
+
+.form_submit input {
+	background: #308cb4; background: rgba(48,140,180,1);
+	border-radius: 0;
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+	display: block;
+	font-size: 1.4rem;
+	line-height: 1;
+	margin: 0;
+	padding: 0.85rem 1.1rem;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+.comment-wrap .form_fields input, .comment-wrap .form_fields textarea { background: rgba(238,238,238,1); }
+.form_field_error {
+  color: rgba(204,0,0,1);
+  display: inline;
+}
+.content-wrap .form_field_error { display: none; }
+.edy-form-field-elem { -webkit-box-sizing: border-box;	-moz-box-sizing: border-box; box-sizing: border-box; }
+.feedback-loading, .feedback-error, .feedback-success {
+  color: rgba(255,255,255,1);
+  display: inline-block;
+  line-height: 1;
+  vertical-align: top;
+}
+.feedback-error, .feedback-success {
+  font-size: 1.4rem;
+  padding: 0.3rem 1.2rem 0;
+}
+.feedback-loading {
+    background-color: rgba(0,0,0,0.2);
+    font-size: 3rem;
+    text-align: center;
+    width: 6rem;
+  }
+.feedback-loading span {
+  background: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.75rem;
+  margin: 0 0.3rem 0.5rem 0;
+  vertical-align: middle;
+  width:  0.75rem;
+  -webkit-animation: feedback-loading 0.8s linear infinite; -moz-animation: feedback-loading 0.8s linear infinite; -ms-animation: feedback-loading 0.8s linear infinite; animation: feedback-loading 0.8s linear infinite;
+}
+.feedback-loading span:nth-child(2) { -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; -ms-animation-delay: 0.2s; animation-delay: 0.2s; }
+.feedback-loading span:nth-child(3) {	-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; -ms-animation-delay: 0.4s; animation-delay: 0.4s; }
+.feedback-loading span:last-child { margin-right: 0; }
+@-webkit-keyframes feedback-loading { 0% { background: transparent; } 50% { background: #ffffff; } 100% { background: transparent; } }
+@-moz-keyframes feedback-loading { 0% { background: transparent; } 50% { background: #ffffff; } 100% { background: transparent; } }
+@-ms-keyframes feedback-loading { 0% { background: transparent; } 50% { background: #ffffff; } 100% { background: transparent; } }
+@keyframes feedback-loading { 0% { background: transparent; } 50% { background: #ffffff; } 100% { background: transparent; } }
+.feedback-error { background: rgba(204,0,0,1); }
+.feedback-success { background: rgba(96,167,64,1); }
+
+.close-btn {
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 100%;
+  cursor: pointer;
+  height: 2rem;
+  margin: 0.2rem 0 0.5rem 0.9rem;
+  padding: 0;
+  vertical-align: middle;
+  width: 2rem;
+}
+.svg .close-btn { background: url("../assets/ico-close.svg") center center no-repeat; }
+.no-svg .close-btn { background: url("../images/ico-close.png") center center no-repeat; }
+.close-btn:hover { opacity: 0.8; }
+.close-btn:focus { outline: none; }
+.form_error { display: none; }
 
 /* Footer */
 .footer-wrap {

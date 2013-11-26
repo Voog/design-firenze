@@ -37,9 +37,7 @@
 		scrollCount  = 0;
 		lastScrollTop = 0;
 		$(document).scroll(function(event){
-			console.log(scrollCount);
 			scrollCount++;
-			console.log(scrollCount);
 			setTimeout(function() {
 				scrollCount = 0;
 			}, 500);
@@ -65,7 +63,6 @@
 				}
 				lastScrollTop = scrollTop;
 			} else {
-				console.log("it is not");
 			}
 		});
 	};
@@ -77,6 +74,19 @@
 		});
 	};
 
+	var handleCheckboxClick = function() {
+		$(".form_field_label").click(function() {
+			$(this).toggleClass("checked");
+		});
+	};
+
+	var handleRadioClick = function() {
+		$(".radio_label").click(function() {
+			$(".radio_label").removeClass("checked");
+			$(this).addClass("checked");
+		});
+	};
+
 	var init = function() {
 		handleLangMenuClick();
 		handleMobileMenuClick();
@@ -84,6 +94,8 @@
 		handlePopoverMenuHide();
 		handleTopBar();
 		handleTopBarBtn();
+		handleCheckboxClick();
+		handleRadioClick();
 	};
 
 	init();

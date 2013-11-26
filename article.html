@@ -151,14 +151,48 @@
 								</span>
 							</div>
 						</article>
-					</section>
-				</main>
-			</div>
-			<footer class="footer-wrap cp-footer-wrap">My Company 2013. Visit us at 1192 Cambridge Street, Cambridge, MA 02139. Call us +1 617-576-1950  Email us at email@yourname.com</footer>
-		</div>
-	</div>
 
-	<script src="javascripts/jquery-1.10.2.min.js"></script>
-	<script src="javascripts/main.js"></script>
-</body>
-</html>
+						<div id="add-comment-wrap">
+							<h2 class="comment-title">Lisa kommentaar</h2>
+							<form action="/blogi/siin-on-naidisblogipostitus-mis-kirjeldab-viimaseid-uudiseid/comments" method="post">
+								<div class="form_area">
+									<div class="form_fields">
+										<div class="form_field">
+											<label for="commentform-name">
+												Nimi
+												
+											</label>
+											<input type="text" class="form_field_textfield form_field_size_small" id="commentform-name" value="" name="comment[author]">
+										</div>
+										<div class="form_field">
+											<label for="commentform-email">
+												E-mail
+												
+											</label>
+											<input type="text" class="form_field_textfield form_field_size_small" id="commentform-email" value="" name="comment[author_email]">
+										</div>
+										<div class="form_field">
+											<label for="commentform-body">
+												Vastus
+												
+											</label>
+											<textarea class="form_field_textarea form_field_size_medium" id="commentform-body" name="comment[body]"></textarea>
+										</div>
+									</div>
+									<div class="form_submit">
+										<input type="submit" value="Saada">
+									</div>
+								</div>
+								<div style="display:none; visibility:hidden;">Email again:<input id="fci_comment_email" name="comment[email]" type="text"></div></form>
+							</div>
+						</section>
+					</main>
+				</div>
+				<footer class="footer-wrap cp-footer-wrap">My Company 2013. Visit us at 1192 Cambridge Street, Cambridge, MA 02139. Call us +1 617-576-1950  Email us at email@yourname.com</footer>
+			</div>
+		</div>
+
+		<script src="javascripts/jquery-1.10.2.min.js"></script>
+		<script src="javascripts/main.js"></script>
+	</body>
+	</html>
