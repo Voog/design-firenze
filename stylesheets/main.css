@@ -4,11 +4,11 @@
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-html, body, h1, h2, h3, h4, h5, h6, p, ul, .horz-menu, .vert-menu {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, .menu {
 	margin: 0;
 	padding: 0;
 }
-.horz-menu, .vert-menu { list-style: none; }
+.menu { list-style: none; }
 .cfx:after {
 	content: "";
 	display: table;
@@ -35,8 +35,8 @@ body {
 	z-index: -1;
 }
 
-h1, h2, h3, h4, h5, h6, .horz-menu { color: #444; color: rgba(68,68,68,1); }
-h1, .horz-menu { font-family: "Bebas-Neue-Regular",'Open Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6, .menu { color: #444; color: rgba(68,68,68,1); }
+h1, .main-menu { font-family: "Bebas-Neue-Regular",'Open Sans', sans-serif; }
 h1 {
 	font-size: 3.6rem;
 	font-weight: 400;
@@ -63,29 +63,102 @@ img {
 	height: auto;
 }
 
+.top-bar-btn {
+	background: none;
+	border: none;
+	color: #fff; color: rgba(255,255,255,1);
+	cursor: pointer;
+	font-family: "Bebas-Neue-Regular",'Open Sans', sans-serif;
+	font-size: 1.6rem;
+	height: 4.5rem;
+	margin: 0;
+	outline: none;
+	padding: 0.3rem 1.9rem 0.4rem 0;
+	text-align: right;
+	-webkit-appearance: none; -moz-appearance: none;
+	width: 15.5rem;
+}
+
+/* Top bar */
+.top-bar {
+	background: #444444; background: rgba(68,68,68,1);
+	display: none;
+	min-height: 4.5rem;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: -4.6rem;
+	z-index: 1;
+	-webkit-transition: top 0.2s ; -moz-transition: top 0.2s; -o-transition: top 0.2s; transition: top 0.2s;
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+}
+.visible {
+	top: 0;
+	-webkit-transition: top 0.2s ; -moz-transition: top 0.2s; -o-transition: top 0.2s; transition: top 0.2s;
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+}
+.top-bar-inner {
+	margin: 0 auto;
+	max-width: 71.9rem;
+	padding: 1.2rem 3rem;
+	position: relative;
+}
+.post-tags {
+	position: absolute;
+	right: 1rem;
+	top: 0;
+	z-index: 1;
+}
+.post-tags .expanded {
+	background: #000; background: rgba(0,0,0,1);
+}
+
 /* Menus */
+.main-menu { font-size: 1.6rem; }
 .fp-main-menu {
 	border-top: 2px solid #fff; border-top: 2px solid rgba(255,255,255,1);
 	margin-top: 1.4rem;
 	padding-top: 2.7rem;
 }
-.fp-main-menu .horz-menu li a {	color: #fff; color: rgba(255,255,255,1); }
-.fp-main-menu .horz-menu li .active, .fp-main-menu .horz-menu li a:hover { opacity: 0.5; }
+.fp-main-menu .menu li a {	color: #fff; color: rgba(255,255,255,1); }
+.fp-main-menu .menu li .active, .fp-main-menu .menu li a:hover { opacity: 0.5; }
 
 .cp-main-menu { margin-bottom: 1.7rem; }
-.cp-main-menu .horz-menu li a {	color: #888; color: rgba(136,136,136,1); }
-.cp-main-menu .horz-menu li .active, .cp-main-menu .horz-menu li a:hover { color: #444; color: rgba(68,68,68,1); }
+.cp-main-menu .menu li a { color: #888; color: rgba(136,136,136,1); }
+.cp-main-menu .menu li .active, .cp-main-menu .menu li a:hover { color: #444; color: rgba(68,68,68,1); }
 
-.horz-menu li {
+.top-bar-inner .cp-main-menu {
 	display: inline-block;
-	margin-right: 1.3rem;
+	margin: 0;
 }
-.horz-menu li:last-child {
-	margin-right: 1.3rem;
+.top-bar .menu li .active, .top-bar .menu li a:hover, .tags-menu li a { color: #fff; color: rgba(255,255,255,1); }
+
+.top-bar .visible {
+	display: block;
 }
-.horz-menu li a {
-	font-size: 1.6rem;
+
+.tags-menu {
+	background: #000; background: rgba(0,0,0,1);
+	display: none;
+	min-width: 15.5rem;
+	padding: 0 0 3.1rem;
+	position: absolute;
+	right: 1rem;
+	top: 4.5rem;
 }
+.tags-menu .menu {
+	text-align: right;
+}
+.tags-menu .menu li a {
+	color: #888888; color: rgba(136,136,136,1);
+	display: block;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: 0.3rem 1.9rem 0.4rem 0;
+}
+
 .fp-page-wrap .lang-menu-wrap {
 	right: 3rem;
 	top: 1.3rem;
@@ -111,6 +184,7 @@ img {
 .lang-btn:focus { outline: none; }
 .lang-menu-popover {
 	background: rgba(255,255,255,1);
+	font-size: 1.6rem;
 	min-width: 12.1rem;
 	text-align: left;
 	padding: 0.6rem 0;
@@ -204,6 +278,11 @@ img {
 .uk:after { background-position: 0px -54px; }/*Ukraine*/
 .en:after { background-position: -20px -54px; }/*USA*/
 
+.horz-menu li {
+	display: inline-block;
+	margin-right: 1.3rem;
+}
+.horz-menu li:last-child { margin-right: 1.3rem; }
 
 /* Front page */
 .fp-cover {
@@ -223,6 +302,11 @@ img {
 	display: table-cell;
 	padding: 10rem 2rem;
 	vertical-align: middle;
+	max-width: inherit;
+}
+.fp-header {
+	margin: 0 auto;
+	max-width: inherit;
 }
 .fp-header h1 {
 	color: #fff; color: rgba(255,255,255,1);
@@ -267,11 +351,14 @@ img {
 }
 .cp-align-middle {
 	display: table-cell;
-	padding: 10rem 2rem;
+	padding: 0 2rem;
+	max-width: inherit;
 	vertical-align: middle;
 }
 .cp-inner {
 	background: #fff; background: rgba(255,255,255,1);
+	margin: 0 auto;
+	max-width: inherit;
 	min-height: 45.8rem;
 	padding: 2.5rem;
 	position: relative;
@@ -291,18 +378,51 @@ img {
 
 .page-content {	padding: 3.2rem 0.4rem 0; }
 .page-content p {	margin-bottom: 2.5rem; }
-.page-content p:last-child { margin-bottom: 0; }
+.page-content > :last-child { margin-bottom: 0; }
 .page-content ul { margin: 0 0 1.2rem 3.6rem; }
 .page-content ul li { margin-bottom: 0.3rem; }
 
 .cp-footer-wrap {	padding: 2.3rem 2.9rem; }
 
+/* Blog */
+.post-excerpt-wrap { margin-bottom: 3.4rem; }
+.post-excerpt-wrap .post-title { margin-right: 0.8rem; }
+.post-content-wrap {
+	border-bottom: 1px solid #888888; border-bottom: 1px solid rgba(136,136,136,0.33);
+	padding-bottom: 2.5rem;
+}
+.post-content-wrap h1 {
+	line-height: 1;
+	margin-bottom: 0;
+}
+.post-title a { color: #444444; color: rgba(68,68,68,1); }
+.post-title a:hover { opacity: 0.8; }
+.post-date { color: #e2e2e2; color: rgba(226,226,226,1); }
+.post-comments-count {
+	color: #308cb4; color: rgba(48,140,180,1);
+	margin-bottom: 2.3rem;
+}
+
+/* Comments */
+.comments-wrap {
+	margin-top: 2.3rem;
+}
+.comment-content {
+	border-left: 3px solid #f2f2f2; border-left: 3px solid rgba(0,0,0,0.05);
+	margin-bottom: 3rem;
+	padding-left: 1.9rem;
+}
+.comment-info { color: #e2e2e2; color: rgba(226,226,226,1); }
+
 /* Gallery */
-.edys-gallery-area { margin: 2.1rem 0 3rem; }
+.edys-gallery-area {
+	margin: 2.1rem 0 3rem;
+	width: 100%;
+}
 .edys-gallery-area a {
 	float: left;
 	height: auto;
-	width: 13.2rem;
+	width: 13.26rem;
 }
 .edys-gallery-area img {
 	margin: 0;
