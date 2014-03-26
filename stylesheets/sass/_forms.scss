@@ -57,10 +57,10 @@
   background-repeat: no-repeat;
 }
 .no-svg .form_field_select {
-    background-image: url('http://firenze-v2.kraftal.com/images/arrow-down.png');
+    background-image: url('../images/arrow-down.png');
 }
 .svg .form_field_select {
-    background-image: url('http://firenze-v2.kraftal.com/assets/arrow-down.svg');
+    background-image: url('../assets/arrow-down.svg');
 }
 
 .form_field_size_medium {
@@ -159,10 +159,10 @@
   cursor: pointer;
 }
 .svg .close-btn {
-  background: url("http://firenze-v2.kraftal.com/assets/ico-close.svg") center center no-repeat;
+  background: url("../assets/ico-close.svg") center center no-repeat;
 }
 .no-svg .close-btn {
-  background: url("http://firenze-v2.kraftal.com/images/ico-close.png") center center no-repeat;
+  background: url("../images/ico-close.png") center center no-repeat;
 }
 .close-btn:hover {
   opacity: .8;
