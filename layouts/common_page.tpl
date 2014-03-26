@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html lang="et">
-<head>
-  {% include "html-head" %}
-</head>
-  <body>
-  <!--<body style="background: url('{{ photos_path }}/cp-body-bg.jpg') center center no-repeat; background-attachment: fixed;">-->
-  <div class="cp-page-wrap cfx">
-    {% include "top-bar" %}
-    <div class="cp-align-middle cfx">
-      <div class="cp-inner cfx">
-        {% include "header" %}
-        <main class="page-content cfx" role="main">
-          {% content %}
-        </main>
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
+  <head>
+    {% include "html-head" %}
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ site.name }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
+  </head>
+
+  <body class="common-page">
+    <div class="container js-container">
+      {% include "topbar" %}
+
+      <div class="wrap">
+        <div class="wrap-middle">
+          <div class="wrap-inner">
+            {% include "header" %}
+
+            <main class="content" role="main">
+              <section class="content-formatted">
+                {% content %}
+              </section>
+            </main>
+
+          </div>
+          {% include "footer" %}
+        </div>
       </div>
-      {% include "footer" %}
     </div>
-  </div>
-  {% include "javascripts" %}
-  <script>$.backstretch("{{ photos_path }}/cp-body-bg.jpg");</script>
+
+    {% include "javascripts" %}
+    <script src="{{ javascripts_path }}/autogrow.js"></script>
+    <script src="{{ javascripts_path }}/ajaxForm.js"></script>
+    <script>
+      $('.form_field_textarea').autogrow();
+      $(".content-formatted form").edicyAjaxForm();
+      $.backstretch("{{ photos_path }}/common-page-bg.jpg");
+    </script>
 </body>
 </html>

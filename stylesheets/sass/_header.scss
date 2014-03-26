@@ -1,0 +1,27 @@
+/* HEADER */
+.header {
+  padding: 0 5px 17px;
+  @include border(bottom,1px,solid,$primary-color,.33);
+  .main-menu {
+    li {
+      a:hover,
+      &.active a {
+        @include color($secondary-color);
+      }
+    }
+  }
+}
+.header-inner {
+  position: relative;
+}
+.header-title {
+  display: inline-block;
+  max-width: 480px;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  line-height: 1;
+  &,
+  a {
+    @include color($secondary-color);
+  }
+}

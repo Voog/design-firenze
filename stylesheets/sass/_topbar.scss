@@ -1,0 +1,71 @@
+/* TOPBAR */
+.topbar {
+  @include clearfix;
+  // display: none;
+  position: fixed;
+  top: -200px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  min-height: 45px;
+  @include bg($secondary-color);
+  @include transition(top, 0.2s 0.2s);
+  @include perspective(1000);
+  .topbar-inner {
+    margin: 0 auto;
+    max-width: 660px;
+    padding: 12px 30px;
+    position: relative;
+  }
+  .main-menu {
+    li {
+      a:hover,
+      &.active a {
+        @include color($white);
+      }
+    }
+  }
+  .tags {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    .expanded {
+      @include bg($black);
+    }
+  }
+}
+
+.tags-btn {
+  width: 155px;
+  height: 100%;
+  margin: 0;
+  padding: 0 20px;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 16px;
+  text-align: right;
+  @include color($white);
+  line-height: 1;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &.open,
+  &.open:hover {
+    @include bg($black);
+  }
+  &:hover {
+    @include bg($black,.2);
+  }
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.topbar.visible {
+  @include transition(top, 0.2s 0.2s);
+  @include perspective(1000);
+}

@@ -1,0 +1,142 @@
+/* MOBILE VIEW */
+@media screen and (max-width: $mobile-2) {
+  /* GENERAL */
+  .container {
+    .wrap,
+    .wrap-middle {
+      display: block;
+    }
+  }
+
+  .wrap-inner {
+    padding: 0;
+  }
+
+  /* MENUS */
+  .menu-btn {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &.open {
+      .menu-stripe {
+        @include bg($secondary-color,.47);
+      }
+    }
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+  }
+  .menu-stripe {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+    @include bg($secondary-color,.67);
+    border-radius: 5px;
+    &:first-child,
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .menu {
+    li {
+      font-size: 20px;
+    }
+  }
+
+  .main-menu {
+    display: none;
+    &.expanded {
+      z-index: 2;
+      display: block;
+      min-width: 350px;
+      text-align: left;
+      @include bg($white);
+    }
+    li {
+      display: block;
+      margin: 0;
+      font-size: 20px;
+      @include border(top,1px,solid,$primary-color,.33);
+      a {
+        display: block;
+        padding: 6px 20px 4px;
+        &:hover {
+          @include color($primary-color,.1);
+        }
+      }
+      &.active a {
+        @include bg($primary-color,.1);
+      }
+      &.active a:hover {
+        @include color($secondary-color,.67);
+      }
+    }
+    .mobile-lang-menu {
+      position: static;
+      display: block;
+      padding-left: 0;
+      li {
+        text-align: left;
+        &.active a:hover {
+          @include color($secondary-color,.67);
+        }
+        a {
+          padding: 14px 30px 11px 53px;
+          font-size: 14px;
+          &:after {
+            top: 13.5px;
+            left: 25px;
+          }
+          &:hover {
+            @include bg($white);
+          }
+        }
+      }
+    }
+  }
+
+  .lang-menu {
+    display: none;
+  }
+
+  /* HEADER */
+  .header {
+    padding: 0;
+  }
+  .header-top {
+    padding: 20px;
+  }
+
+  /* CONTENT */
+  .content {
+    padding: 0 20px;
+  }
+
+  /* FORMS */
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_field_select {
+    min-width: 100%;
+  }
+
+  /* OTHER */ // TODO: Better name for this section
+  .backstretch {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('http://firenze-v2.kraftal.com/photos/front-page-bg-mobile.jpg');
+    background-size: cover;
+    img {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+/* FORMS */
+.content-formatted {
+  form {
+    width: 100%;
+    margin-top: 17px;
+  }
+}
+.form_field {
+  margin-top: 20px;
+  font-size: 14px;
+  @include color($secondary-color);
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+}
+
+.form_field_textfield,
+.form_field_textarea,
+.form_field_file,
+.form_field_select,
+.form_submit input {
+  font-family: inherit;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0;
+}
+.form_field_textfield,
+.form_field_textarea,
+.form_field_select {
+  max-width: 660px;
+  min-width: 200px;
+  min-height: 30px;
+  margin: 0;
+  padding: 4px 6px 5px;
+  @include bg($input-bg);
+  @include border(all,1px,solid,$input-bg);
+  @include box-sizing(border-box);
+  outline: none;
+}
+.form_field_checkbox,
+.form_field_radio {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 3px 3px 5px 4px;
+}
+
+.form_field_textarea {
+  min-height: 106px;
+}
+
+.form_field_select {
+  background-position: right 10px top 13px;
+  background-repeat: no-repeat;
+}
+.no-svg .form_field_select {
+    background-image: url('http://firenze-v2.kraftal.com/images/arrow-down.png');
+}
+.svg .form_field_select {
+    background-image: url('http://firenze-v2.kraftal.com/assets/arrow-down.svg');
+}
+
+.form_field_size_medium {
+  min-width: 350px;
+}
+.form_field_size_large {
+  min-width: 490px;
+}
+
+.form_submit {
+  input {
+    display: block;
+    margin: 18px 0 0;
+    padding: 8px 11px;
+    font-size: 14px;
+    @include color($white);
+    line-height: 1;
+    @include bg($blue);
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    &:hover {
+      @include bg($blue,.8);
+    }
+  }
+}
+.form_field_error {
+  @include color($red);
+}
+.form_field_with_errors {
+  .form_field_textfield,
+  .form_field_textarea {
+    @include border(all,1px,solid,$red);
+  }
+}
+
+.feedback-loading,
+.feedback-error,
+.feedback-success {
+  display: inline-block;
+  vertical-align: top;
+  margin: 18px 0 0;
+  @include color($white);
+  line-height: 1;
+}
+.feedback-error, .feedback-success {
+  padding: 3px 12px 0;
+  font-size: 14px;
+}
+.feedback-loading {
+  width: 60px;
+  text-align: center;
+  font-size: 30px;
+  @include bg($secondary-color);
+}
+.feedback-loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width:  7.5px;
+  height: 7.5px;
+  margin: 0 3px 5px 0;
+  background: transparent;
+  border-radius: 50%;
+  @include animation(feedback-loading .8s linear infinite);
+}
+.feedback-loading span:nth-child(2) {
+  @include animation-delay(.2s);
+}
+.feedback-loading span:nth-child(3) {
+  @include animation-delay(.4s);
+}
+.feedback-loading span:last-child {
+  margin-right: 0;
+}
+@include keyframes(feedback-loading) {
+  0% { background: transparent; } 50% { background: $white; } 100% { background: transparent; }
+}
+
+.feedback-error {
+  @include bg($red);
+}
+.feedback-success {
+  @include bg($green);
+}
+
+.close-btn {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 5px 9px;
+  padding: 0;
+  @include border(all,1px,solid,$white,.3);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.svg .close-btn {
+  background: url("http://firenze-v2.kraftal.com/assets/ico-close.svg") center center no-repeat;
+}
+.no-svg .close-btn {
+  background: url("http://firenze-v2.kraftal.com/images/ico-close.png") center center no-repeat;
+}
+.close-btn:hover {
+  opacity: .8;
+}
+.close-btn:focus {
+  outline: none;
+}
+.form_error {
+  display: none;
+}

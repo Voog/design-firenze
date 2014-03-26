@@ -1,0 +1,24 @@
+/* COMMENTS */
+.comments {
+  margin-top: 40px;
+  @include border(top,1px,solid,$primary-color,.33);
+}
+.comments-inner {
+  padding: 0 5px;
+}
+.comment-title {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 30px;
+  @include color($secondary-color);
+}
+.comment {
+  margin-top: 25px;
+  padding-left: 18px;
+  @include border(left,3px,solid,$black,.05);
+  &:first-child {
+    margin-top: 15px;
+  }
+}

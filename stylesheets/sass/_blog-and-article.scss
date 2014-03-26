@@ -1,0 +1,70 @@
+/* BLOG & BLOG ARTICLE */
+.post {
+  .tags {
+    margin-top: 25px;
+    .menu {
+      li {
+        font-size: 14px;
+        a {
+          @include color($blue);
+          &:hover {
+            @include color($blue,.8);
+          }
+        }
+      }
+    }
+  }
+}
+.post-header {
+  line-height: 1;
+}
+.post-title,
+.post-date {
+  display: inline-block;
+}
+
+.post-title {
+  margin: 0 10px 0 0;
+  @include color($secondary-color);
+  a {
+    @include color($secondary-color);
+    &:hover {
+      @include color($secondary-color,.8);
+    }
+  }
+}
+
+.post-date {
+  font-family: "Bebas Neue";
+  font-size: 36px;
+  @include color($post-date-color,.5);
+}
+
+.post-comments-count {
+  margin-top: 3px;
+}
+
+.post-content {
+  margin-top: 25px;
+}
+
+.post-body {
+  margin-top: 25px;
+}
+
+.blog-page {
+  .post {
+    margin-top: 35px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.post-page {
+  .post-title {
+    .editmode & {
+      display: block;
+    }
+  }
+}

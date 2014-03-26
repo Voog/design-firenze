@@ -1,26 +1,17 @@
-{% if editmode %}
-  <section class="lang-menu-wrap cfx">
-    <button class="lang-btn flag {% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}"></button>
-    <div class="lang-menu-popover" style="display: none;">
-      <ul class="menu">
-        {% for language in site.languages %}
-          <li><a href="{{ language.url }}" class="flag {{ language.code }}{% if language.selected? %} active{% endif %}">{{ language.title }}</a></li>
-        {% endfor %}
-        <li class="centered">{% languageadd %}</li>
-      </ul>
-    </div>
-  </section>
-{% else %}
-  {% if site.has_many_languages? %}
-    <section class="lang-menu-wrap cfx">
-      <button class="lang-btn flag {% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}"></button>
-      <div class="lang-menu-popover" style="display: none;">
-        <ul class="menu">
-          {% for language in site.languages %}
-            <li><a href="{{ language.url }}" class="flag {{ language.code }}{% if language.selected? %} active{% endif %}">{{ language.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </section>
-  {% endif %}
+<script src="{{ javascripts_path }}/jquery.js?1"></script>
+<script src="{{ javascripts_path }}/backstretch.js?1"></script>
+<script src="{{ javascripts_path }}/main.js?1"></script>
+<script src="{{ javascripts_path }}/retina.js?1"></script>
+<script src="{{ javascripts_path }}/overthrow.js?1"></script>
+
+{% if site.search.enabled %}
+  <script src="http://static.edicy.com/assets/site_search/3.0/site_search.js?2"></script>
+  <script>
+    var edys_site_search_options = {
+      texts: { noresults: "{{ "search_noresults" | lc }}" },
+      default_stylesheet_enabled: false
+    }
+  </script>
 {% endif %}
+
+{% unless editmode %}{{ site.analytics }}{% endunless %}
