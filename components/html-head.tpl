@@ -11,11 +11,9 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="{{ images_path }}/{{ page.data.touchicon }}"> <!-- TODO: Add image location data tag -->
 
-<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/142780401/sass/voog/design-firenze/css/voog-design-firenze-main.css?1">
-<!--{% stylesheet_link "main.css" %}-->
+{% stylesheet_link "main.css?1" %}
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,cyrillic-ext'>
-<!--[if lt IE 9]><link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/142780401/sass/voog/design-firenze/css/voog-design-bern-main.css?1"><![endif]-->
-<!--{% stylesheet_link "ie8.css" %}-->
+<!--[if lt IE 9]>{% stylesheet_link "ie8.css?1" %}<![endif]-->
 
 <script src="{{ javascripts_path }}/modernizr.js?1"></script>
 
