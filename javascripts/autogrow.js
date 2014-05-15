@@ -24,7 +24,7 @@
                 fontWeight:  $self.css('fontWeight'),
                 lineHeight:  $self.css('lineHeight'),
                 resize:      'none',
-    			'word-wrap': 'break-word'
+                'word-wrap': 'break-word'
             }).appendTo(document.body);
 
             var update = function(event)
@@ -42,10 +42,10 @@
                                     .replace(/\n/g, '<br/>')
                                     .replace(/ {2,}/g, function(space){ return times('&nbsp;', space.length - 1) + ' ' });
 
-				// Did enter get pressed?  Resize in this keydown event so that the flicker doesn't occur.
-				if (event && event.data && event.data.event === 'keydown' && event.keyCode === 13) {
-					val += '<br />';
-				}
+                // Did enter get pressed?  Resize in this keydown event so that the flicker doesn't occur.
+                if (event && event.data && event.data.event === 'keydown' && event.keyCode === 13) {
+                    val += '<br />';
+                }
 
                 shadow.css('width', $self.width());
                 shadow.html(val + (noFlickerPad === 0 ? '...' : '')); // Append '...' to resize pre-emptively.

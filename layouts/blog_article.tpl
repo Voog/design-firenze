@@ -42,7 +42,7 @@
 
                 <div class="comments-container">
                   {% for comment in article.comments reversed %}
-                    <div class="comment">{{ comment.body }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
+                    <div class="comment">{{ comment.body_html }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
                   {% endfor %}
                 </div>
 
