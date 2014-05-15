@@ -3,21 +3,16 @@
   font-family: 'Bebas Neue';
   src: url("../assets/bebas-neue.eot?");
   src: url("../assets/bebas-neue.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue.woff") format("woff"), url("../assets/bebas-neue.ttf") format("truetype"), url("../assets/bebas-neue.svg#bebas-neue") format("svg");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 /* GENERAL */
-html,
-body {
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
   color: #888888;
@@ -87,7 +82,7 @@ body {
 }
 .content-formatted h1 {
   font-family: "Bebas Neue";
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
 }
 .content-formatted h2 {
@@ -113,7 +108,9 @@ body {
   height: auto;
   margin-top: 20px;
 }
-.content-formatted pre {
+.content-formatted pre,
+.content-formatted code {
+  display: block;
   overflow: auto;
   padding: 10px;
   margin-top: 20px;
@@ -129,6 +126,7 @@ body {
 .content-formatted p:first-child,
 .content-formatted img:first-child,
 .content-formatted pre:first-child,
+.content-formatted code:first-child,
 .content-formatted table:first-child {
   margin-top: 0;
   margin-bottom: 0;
@@ -250,7 +248,7 @@ body {
 .lang-menu li a {
   position: relative;
   display: block;
-  padding: 5px 40px 3px 13px;
+  padding: 6px 40px 3px 13px;
   color: #444444;
 }
 .lang-menu li a:hover, .lang-menu li.active a, .lang-menu li.active a:hover {
@@ -513,7 +511,7 @@ body {
   margin: 0;
   padding: 0 20px;
   font-family: "Bebas Neue";
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   text-align: right;
   color: white;
@@ -732,6 +730,9 @@ body {
 }
 
 /* TABLES */
+.content-formatted table {
+  width: 100%;
+}
 .content-formatted .table-container {
   margin-top: 20px;
 }
@@ -767,7 +768,7 @@ body {
 .form_field label {
   display: block;
   margin-bottom: 6px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.3;
 }
 
@@ -1021,7 +1022,7 @@ body {
   margin-top: 24px;
   margin-bottom: 0;
   font-family: "Bebas Neue";
-  font-weight: normal;
+  font-weight: 400;
   font-size: 30px;
   color: #444444;
 }
