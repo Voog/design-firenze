@@ -144,19 +144,19 @@
 
         &.active,
         &.active:hover {
-          @include color($grey-1, 0.67);
+          // @include color($grey-1, 0.67);
 
           @include query($tablet-2) {
-            @include color($grey-1);
+            // @include color($grey-1);
             @include bg($blue-2);
           }
         }
 
         &:hover {
-          @include color($grey-1, 0.4);
+          // @include color($grey-1, 0.4);
 
           @include query($tablet-2) {
-            @include color($grey-1);
+            // @include color($grey-1);
             @include bg($blue-2, 0.5);
           }
         }
@@ -201,12 +201,12 @@
           &.active,
           &.active:hover {
             font-weight: 600;
-            @include color($grey-1, 0.67);
+            // @include color($grey-1, 0.67);
             background: none;
           }
 
           &:hover {
-            @include color($grey-1, 0.4);
+            // @include color($grey-1, 0.4);
             @include bg($grey-2, 0.5);
           }
         }

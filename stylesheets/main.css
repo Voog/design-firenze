@@ -1,103 +1,366 @@
-/*
-Syntax error: Undefined variable: "$grey-1".
-        on line 147 of stylesheets/sass/_menus.scss, in `color'
-        from line 147 of stylesheets/sass/_menus.scss
-        from line 8 of stylesheets/sass/main.scss
+/* FONTS */
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/bebas-neue-regular.eot");
+  src: url("../assets/bebas-neue-regular.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular.woff") format("woff"), url("../assets/bebas-neue-regular.ttf") format("truetype"), url("../assets/bebas-neue-regular.svg#Bebas Neue") format("svg");
+}
 
-Backtrace:
-stylesheets/sass/_menus.scss:147:in `color'
-stylesheets/sass/_menus.scss:147
-stylesheets/sass/main.scss:8
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/script/variable.rb:49:in `_perform'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/script/node.rb:40:in `perform'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:259:in `block in visit_mixin'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:259:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:259:in `visit_mixin'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/tree/root_node.rb:20:in `render'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/engine.rb:315:in `_render'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/engine.rb:262:in `render'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/vendor/listen/lib/listen/adapter.rb:198:in `call'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Users/kaspar/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.18/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$grey-1\".\A         on line 147 of stylesheets/sass/_menus.scss, in `color'\A         from line 147 of stylesheets/sass/_menus.scss\A         from line 8 of stylesheets/sass/main.scss"; }
+/* GENERAL */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #727272;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.content-formatted:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bgpicker-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.bgpicker-btn:focus {
+  outline: none;
+}
+
+.background-color {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: white;
+}
+@media screen and (max-width: 752px) {
+  .container {
+    padding: 20px;
+  }
+}
+.container a {
+  text-decoration: none;
+}
+.container a img {
+  border: none;
+}
+
+.content-formatted h1:first-child,
+.content-formatted h2:first-child,
+.content-formatted h3:first-child,
+.content-formatted h4:first-child,
+.content-formatted h5:first-child,
+.content-formatted h6:first-child,
+.content-formatted p:first-child,
+.content-formatted ul:first-child,
+.content-formatted img:first-child,
+.content-formatted pre:first-child,
+.content-formatted code:first-child,
+.content-formatted table:first-child {
+  margin-top: 0;
+}
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6,
+.content-formatted p,
+.content-formatted ul {
+  margin-bottom: 0;
+}
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6 {
+  color: #1b2124;
+  word-wrap: break-word;
+}
+.content-formatted h1 {
+  margin-top: 40px;
+  font-size: 50px;
+  line-height: 1;
+}
+.content-formatted h2 {
+  margin-top: 15px;
+  font-size: 30px;
+}
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6 {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.content-formatted p {
+  margin-top: 20px;
+}
+.content-formatted a {
+  color: #0066bb;
+}
+.content-formatted a:hover {
+  color: #0066bb;
+  color: rgba(0, 102, 187, 0.8);
+}
+.content-formatted img,
+.content-formatted iframe {
+  max-width: 100%;
+}
+.content-formatted img {
+  height: auto;
+}
+.content-formatted pre,
+.content-formatted code,
+.content-formatted .edy-texteditor-container {
+  margin-top: 25px;
+}
+.content-formatted pre,
+.content-formatted code {
+  display: block;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+.content-formatted .edy-texteditor-view {
+  min-height: 32px;
+}
+
+/* MENUS */
+.menu-btn {
+  display: none;
+}
+@media screen and (max-width: 752px) {
+  .menu-btn {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-btn.open .menu-stripe, .menu-btn:hover .menu-stripe {
+    background-color: #1b2124;
+    background-color: rgba(27, 33, 36, 0.47);
+  }
+  .menu-btn:focus {
+    outline: none;
+  }
+  .menu-btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-btn {
+    right: 20px;
+  }
+}
+.menu-btn .menu-stripe {
+  display: block;
+  width: 23px;
+  height: 4px;
+  margin: 4px 0;
+  background-color: #1b2124;
+  background-color: rgba(27, 33, 36, 0.67);
+  border-radius: 5px;
+}
+.menu-btn .menu-stripe:first-child, .menu-btn .menu-stripe:last-child {
+  margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .menu-btn {
+    right: 0;
+  }
+}
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.menu li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.menu-main {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media screen and (max-width: 752px) {
+  .menu-main {
+    display: none;
+  }
+  .menu-main.expanded {
+    position: absolute;
+    top: 62px;
+    right: 20px;
+    z-index: 10;
+    display: block;
+    min-width: 350px;
+    margin-bottom: 60px;
+    text-align: left;
+    background-color: white;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
+    -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
+  }
+}
+@media screen and (max-width: 752px) and (max-width: 480px) {
+  .menu-main.expanded {
+    top: 45px;
+    left: -15px;
+    right: -15px;
+    min-width: 0;
+    margin-bottom: 40px;
+    border-top: 1px solid #727272;
+    border-top: 1px solid rgba(114, 114, 114, 0.2);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+.menu-main .menu {
+  line-height: 1.3;
+}
+.menu-main .menu li {
+  margin-left: 13px;
+}
+.menu-main .menu li:first-child {
+  margin-left: 0;
+}
+.menu-main .menu li.edit-btn {
+  display: inline-block;
+}
+@media screen and (max-width: 900px) {
+  .menu-main .menu li.edit-btn {
+    display: block;
+  }
+  .menu-main .menu li.edit-btn .edy-menu-menuadd {
+    display: inline-block;
+    margin: 6px 25px 8px 25px;
+    padding: 0;
+  }
+  .menu-main .menu li.edit-btn .edy-menu-menuadd:hover {
+    background: none;
+  }
+}
+@media screen and (max-width: 752px) {
+  .menu-main .menu li {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #727272;
+    border-bottom: 1px solid rgba(114, 114, 114, 0.2);
+  }
+}
+.menu-main .menu li a {
+  font-weight: 600;
+  color: #1b2124;
+  color: rgba(27, 33, 36, 0.67);
+}
+.menu-main .menu li a.untranslated {
+  color: #cc0000;
+  color: rgba(204, 0, 0, 0.5);
+}
+@media screen and (max-width: 752px) {
+  .menu-main .menu li a.active, .menu-main .menu li a.active:hover {
+    background-color: #c7e5ff;
+  }
+}
+@media screen and (max-width: 752px) {
+  .menu-main .menu li a:hover {
+    background-color: #c7e5ff;
+    background-color: rgba(199, 229, 255, 0.5);
+  }
+}
+@media screen and (max-width: 752px) {
+  .menu-main .menu li a {
+    display: block;
+    padding: 8px 25px 5px;
+  }
+}
+.menu-main .menu-lang {
+  display: none;
+}
+@media screen and (max-width: 752px) {
+  .menu-main .menu-lang {
+    display: block;
+    padding-left: 0;
+  }
+  .menu-main .menu-lang li {
+    text-align: left;
+  }
+  .menu-main .menu-lang li:first-child {
+    border-top: none;
+  }
+  .menu-main .menu-lang li a {
+    padding: 11px 30px 9px 53px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .menu-main .menu-lang li a:before, .menu-main .menu-lang li a:after {
+    top: 13px;
+    left: 25px;
+  }
+  .menu-main .menu-lang li a.active, .menu-main .menu-lang li a.active:hover {
+    font-weight: 600;
+    background: none;
+  }
+  .menu-main .menu-lang li a:hover {
+    background-color: #838586;
+    background-color: rgba(131, 133, 134, 0.5);
+  }
+  .menu-main .menu-lang li.edit-btn {
+    display: block;
+    text-align: left;
+  }
+  .menu-main .menu-lang li.edit-btn .edy-menu-langadd {
+    display: inline-block;
+    padding: 0;
+    margin: 11px 25px 11px 25px;
+  }
+}
+
+/* HEADER */
+/* TOPBAR */
+/* SIDEBAR */
+/* CONTENT */
+/* FRONT PAGE */
+/* COMMON PAGE */
+/* BLOG & BLOG ARTICLE */
+/* GALLERY */
+/* TABLES */
+/* SEARCH */
+/* FORMS */
+/* COMMENTS */
+/* FOOTER */
