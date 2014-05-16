@@ -1,5 +1,6 @@
 /* HEADER */
 .header {
+  position: relative;
   padding: 0 5px 15px;
   @include border(bottom, 1px, solid, $primary-color, 0.33);
 }
