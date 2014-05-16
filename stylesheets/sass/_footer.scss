@@ -1,1 +1,22 @@
 /* FOOTER */
+.footer {
+  .content-formatted {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 9px;
+    @include color($white, 0.33);
+
+    .edy-texteditor-view {
+      min-height: 11px;
+    }
+
+    a {
+      @include color($white, 0.66);
+
+      &:hover {
+        @include color($white);
+      }
+    }
+  }
+}

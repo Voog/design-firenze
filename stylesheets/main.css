@@ -1030,3 +1030,21 @@ body {
 
 /* COMMENTS */
 /* FOOTER */
+.footer .content-formatted {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 9px;
+  color: white;
+  color: rgba(255, 255, 255, 0.33);
+}
+.footer .content-formatted .edy-texteditor-view {
+  min-height: 11px;
+}
+.footer .content-formatted a {
+  color: white;
+  color: rgba(255, 255, 255, 0.66);
+}
+.footer .content-formatted a:hover {
+  color: white;
+}

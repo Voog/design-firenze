@@ -16,12 +16,14 @@
     <div class="container-inner">
       <div class="wrap">
         <div class="wrap-inner">
-        {% include "header" %}
+          {% include "header" %}
 
           <main class="content" role="main">
             <section class="content-formatted">{% content %}</section>
           </main>
         </div>
+
+        {% include "footer" %}
       </div>
     </div>
   </div>
