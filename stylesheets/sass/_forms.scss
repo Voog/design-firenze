@@ -101,13 +101,13 @@
       font-size: 14px;
       @include color($white);
       line-height: 1;
-      @include bg($blue);
+      @include bg($blue-1);
       border: none;
       cursor: pointer;
       @include inputiosreset;
 
       &:hover {
-        @include bg($blue, 0.8);
+        @include bg($blue-1, 0.8);
       }
 
       @include query($mobile-2) {
