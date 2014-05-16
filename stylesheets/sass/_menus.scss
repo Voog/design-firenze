@@ -138,7 +138,7 @@
 
       a {
         font-weight: 600;
-        @include color($secondary-color, 0.67);
+        @include color($primary-color);
 
         &.untranslated {
           @include color($red, 0.5);
@@ -146,16 +146,16 @@
 
         &.active,
         &.active:hover {
-          // @include color($grey-1, 0.67);
+          @include color($secondary-color);
 
           @include query($tablet-2) {
             // @include color($grey-1);
-            @include bg($blue-2);
+            // @include bg($blue-2);
           }
         }
 
         &:hover {
-          // @include color($grey-1, 0.4);
+          @include color($primary-color, 0.8);
 
           @include query($tablet-2) {
             // @include color($grey-1);
