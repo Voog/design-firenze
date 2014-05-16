@@ -20,7 +20,10 @@
 
   {% if editmode or site.has_many_languages? %}
     <nav class="menu-lang">
-      {% include "menu-lang" %}
+      <button class="menu-lang-btn js-menu-lang-btn lang-flag {% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}">Choose language</button>
+      <div class="menu-lang-popover js-menu-lang-popover">
+        {% include "menu-lang" %}
+      </div>
     </nav>
   {% endif %}
 </header>

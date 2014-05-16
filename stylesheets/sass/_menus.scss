@@ -227,3 +227,307 @@
     }
   }
 }
+
+.menu-lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  line-height: 1;
+
+  &.edit-btn {
+    display: inline-block;
+    margin: 7px 20px;
+    padding: 0;
+
+  }
+
+  @include query($tablet-2) {
+    display: none;
+  }
+
+  li {
+    display: list-item;
+    text-align: right;
+    font-size: 12px;
+
+    a {
+      position: relative;
+      display: block;
+      padding: 6px 40px 3px 13px;
+      @include color($secondary-color, 0.67);
+
+      &.active,
+      &.active:hover {
+        @include color($white);
+        @include bg($secondary-color);
+      }
+
+      &:hover {
+        @include bg($grey-2, 0.5);
+      }
+
+      &:before,
+      &:after {
+        top: 4px;
+        right: 12px;
+      }
+    }
+  }
+
+  .edy-menu-langadd {
+    display: inline-block;
+    padding: 10px 15px 5px;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+
+.menu-lang-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 13px;
+  font-size: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before,
+  &:after {
+    top: 0;
+    left: 0;
+  }
+}
+
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 13px;
+    content: '';
+  }
+}
+
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
+  &:before {
+    @include bg($black);
+  }
+
+  &:after {
+    opacity: 0.95;
+    background-size: 200px;
+    background-repeat: no-repeat;
+
+    .no-svg & {
+      background-image: url('../images/ico-flags.png');
+    }
+
+    .svg & {
+      background-image: url('../assets/ico-flags.svg');
+    }
+  }
+}
+
+.menu-lang-popover {
+  display: none;
+
+  &.expanded {
+    position: absolute;
+    top: 18px;
+    right: -12px;
+    display: block;
+    margin-bottom: 40px;
+    padding: 6px 0;
+    min-width: 121px;
+    background: #fff;
+    @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+    z-index: 1;
+  }
+}
+
+.sq:after {
+  background-position: 0 0;
+}
+
+.hy:after {
+  background-position: -20px 0;
+}
+
+.bn:after {
+  background-position: -40px 0;
+}
+
+.pt:after {
+  background-position: -60px 0;
+}
+
+.bg:after {
+  background-position: -80px 0;
+}
+
+.zh:after {
+  background-position: -100px 0;
+}
+
+.hr:after {
+  background-position: -120px 0;
+}
+
+.da:after {
+  background-position: -140px 0;
+}
+
+.cs:after {
+  background-position: -160px 0;
+}
+
+.et:after {
+  background-position: -180px 0;
+}
+
+.fi:after {
+  background-position: 0 -14px;
+}
+
+.fr:after {
+  background-position: -20px -14px;
+}
+
+.ka:after {
+  background-position: -40px -14px;
+}
+
+.de:after {
+  background-position: -60px -14px;
+}
+
+.el:after {
+  background-position: -80px -14px;
+}
+
+.hu:after {
+  background-position: -100px -14px;
+}
+
+.is:after {
+  background-position: -120px -14px;
+}
+
+.hi:after {
+  background-position: -140px -14px;
+}
+
+.id:after {
+  background-position: -160px -14px;
+}
+
+.fa:after {
+  background-position: -180px -14px;
+}
+
+.he:after {
+  background-position: 0 -28px;
+}
+
+.it:after {
+  background-position: -20px -28px;
+}
+
+.ja:after {
+  background-position: -40px -28px;
+}
+
+
+.ko:after {
+  background-position: -60px -28px;
+}
+
+.lv:after {
+  background-position: -80px -28px;
+}
+
+.lt:after {
+  background-position: -100px -28px;
+}
+
+.ms:after {
+  background-position: -120px -28px;
+}
+
+.nl:after {
+  background-position: -140px -28px;
+}
+
+.no:after {
+  background-position: -160px -28px;
+}
+
+.ur:after {
+  background-position: -180px -28px;
+}
+
+.fil:after {
+  background-position: 0 -42px;
+}
+
+.pl:after {
+  background-position: -20px -42px;
+}
+
+.ro:after {
+  background-position: -40px -42px;
+}
+
+.ru:after {
+  background-position: -60px -42px;
+}
+
+.ar:after {
+  background-position: -80px -42px;
+}
+
+.sr:after {
+  background-position: -100px -42px;
+}
+
+.sk:after {
+  background-position: -120px -42px;
+}
+
+.es:after {
+  background-position: -140px -42px;
+}
+
+.sv:after {
+  background-position: -160px -42px;
+}
+
+.tr:after {
+  background-position: -180px -42px;
+}
+
+
+.uk:after {
+  background-position: 0px -56px;
+}
+
+.en:after {
+  background-position: -20px -56px;
+}
