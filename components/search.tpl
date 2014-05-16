@@ -1,4 +1,5 @@
 <!-- TODO: Add if statement when search is supported by E3 -->
+{% comment %}
 <section class="search">
   <form id="search" class="edys-search" method="get" action="#">
     <div class="search-left">
@@ -10,3 +11,4 @@
   </form>
   <div id="customsearch"></div>
 </section>
+{% endcomment %}
