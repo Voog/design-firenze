@@ -10,10 +10,12 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}"> <!-- TODO: Add image location data tag -->{% endif %}
 
-<script src="{{ javascripts_path }}/modernizr.js?28"></script>
+<script src="{{ javascripts_path }}/modernizr.js?1"></script>
 
-{% stylesheet_link "main.css?28" %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.css?28" %}<![endif]-->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic%7COpen+Sans:400italic,700italic,400,700">
+{% stylesheet_link "main.css?1" %}
+<!--[if lt IE 9]>{% stylesheet_link "ie8.css?1" %}<![endif]-->
+<link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css?1">
 
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
 

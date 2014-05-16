@@ -1,1 +1,24 @@
 /* HEADER */
+.header {
+  padding: 0 5px 15px;
+  @include border(bottom, 1px, solid, $primary-color, 0.33);
+}
+
+.header-title {
+  @extend %bebas-neue;
+  max-width: 630px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+
+  &,
+  a {
+    @include color($secondary-color);
+  }
+
+  a {
+    &:hover {
+      @include color($secondary-color, 0.8);
+    }
+  }
+}

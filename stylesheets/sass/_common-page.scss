@@ -1,1 +1,12 @@
 /* COMMON PAGE */
+.common-page {
+  background-image: url('../images/common-page-bg.jpg');
+
+  .wrap-inner {
+    @extend %content-bg;
+  }
+
+  .content {
+    padding: 43px 5px;
+  }
+}
