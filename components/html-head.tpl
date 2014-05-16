@@ -12,7 +12,7 @@
 
 <script src="{{ javascripts_path }}/modernizr.js?1"></script>
 
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic%7COpen+Sans:400italic,700italic,400,700">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 {% stylesheet_link "main.css?1" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.css?1" %}<![endif]-->
 <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css?1">
