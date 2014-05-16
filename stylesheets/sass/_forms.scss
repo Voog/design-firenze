@@ -1,1 +1,250 @@
 /* FORMS */
+.content-formatted {
+  form {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .form_field,
+  .edy-fe-label {
+    font-size: 14px;
+    @include color($secondary-color);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .form_field {
+    margin-top: 20px;
+  }
+
+  .form_field label,
+  .edy-fe-label {
+    display: block;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_field_select,
+  .form_submit input {
+    font-family: inherit;
+    font-size: 14px;
+    @include inputiosreset;
+  }
+
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_field_select,
+  .form_field_file {
+    max-width: 100%;
+  }
+
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_field_select {
+    width: 280px;
+    margin: 0;
+    padding: 5px 8px 6px;
+    @include bg($third-color);
+    border: none;
+    @include box-sizing(border-box);
+
+    @include query($mobile-2) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .form_field_select {
+    padding: 7px 9px 6px 9px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    background-position: 97.5% 13px;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  .no-svg & {
+    .form_field_select {
+      background-image: url('../images/ico-arrow-down.png');
+    }
+  }
+  .svg & {
+    .form_field_select {
+      background-image: url('../images/ico-arrow-down.png');
+    }
+  }
+
+  .form_field_size_medium {
+    width: 420px;
+
+    @include query($mobile-2) {
+      width: 100%;
+    }
+  }
+
+  .form_field_size_large {
+    width: 580px;
+  }
+
+  .form_submit {
+    input {
+      display: block;
+      margin: 18px 0 0;
+      padding: 8px 11px;
+      font-size: 14px;
+      @include color($white);
+      line-height: 1;
+      @include bg($blue);
+      border: none;
+      cursor: pointer;
+      @include inputiosreset;
+
+      &:hover {
+        @include bg($blue, 0.8);
+      }
+
+      @include query($mobile-2) {
+        width: 100%;
+      }
+    }
+  }
+
+  .form_field_with_errors {
+    .form_field_textfield,
+    .form_field_textarea {
+      @include border(all, 1px, solid, $red);
+    }
+  }
+
+  .form_field_error {
+    margin-top: 5px;
+    margin-left: 1px;
+    @include color($red);
+  }
+
+  .feedback-loading,
+  .feedback-error,
+  .feedback-success,
+  .form_error,
+  .form_notice, {
+    display: inline-block;
+    vertical-align: top;
+    @include color($white);
+    line-height: 1;
+  }
+
+  .feedback-error,
+  .feedback-success,
+  .form_error,
+  .form_notice {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .feedback-error,
+  .feedback-loading,
+  .feedback-success {
+    margin: 18px 0 0;
+  }
+
+  .feedback-loading {
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    @include bg($secondary-color, 0.5);
+  }
+
+  .feedback-loading {
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      width:  7.5px;
+      height: 7.5px;
+      margin: 0 3px 5px 0;
+      background: transparent;
+      border-radius: 50%;
+      @include animation(feedback-loading 0.8s linear infinite);
+    }
+  }
+
+  .feedback-loading {
+    span:nth-child(2) {
+      @include animation-delay(.2s);
+    }
+  }
+
+  .feedback-loading {
+    span:nth-child(3) {
+      @include animation-delay(.4s);
+    }
+  }
+
+  .feedback-loading {
+    span:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include keyframes(feedback-loading) {
+    0% {
+      background: transparent;
+    }
+
+    50% {
+      background: $white;
+    }
+
+    100% {
+      background: transparent;
+    }
+  }
+
+  .feedback-error,
+  .form_error {
+    @include bg($red);
+  }
+
+  .feedback-success,
+  .form_notice {
+    @include bg($green);
+  }
+
+  .form_error,
+  .form_notice {
+    margin-bottom: 20px;
+  }
+
+  .close-btn {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin: 2px 0 5px 9px;
+    padding: 0;
+    @include border(all, 1px, solid, $white, 0.3);
+    border-radius: 100%;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .no-svg & {
+      background: url("../images/ico-close.png") center center no-repeat;
+    }
+
+    .svg & {
+      background: url("../assets/ico-close.svg") center center no-repeat;
+    }
+  }
+}
