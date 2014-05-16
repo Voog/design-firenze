@@ -2,8 +2,9 @@
   <script src='/assets/admin/tools/0.1.1/edicy-tools.js'></script>
   <script>
     // Body background image and color data preview and save logic
-    var siteData = new Edicy.CustomData({
-      type: 'site'
+    var pageData = new Edicy.CustomData({
+      type: 'page',
+      id: '{{ page.id }}'
     });
 
     var bgPickerBody = new Edicy.BgPicker($('.js-bgpicker-body-settings'), {
@@ -25,7 +26,7 @@
       },
 
       commit: function(data) {
-        siteData.set({
+        pageData.set({
           'body_image': data.image || null,
           'body_color': data.color || null
         });
