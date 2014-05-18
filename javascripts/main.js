@@ -21,8 +21,17 @@
       if ($('.js-menu-lang-popover').hasClass('expanded')) {
         $('.js-menu-lang-popover').removeClass('expanded');
       }
+    });
+  };
 
-      console.log('This happened');
+  // REDUCES OPACITY OF THE GALLERY IMAGES THAT ARE NOT UNDER THE CURSOR
+  var handleGalleryHover = function() {
+    $('.edys-gallery-item').mouseover(function() {
+      $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').addClass('inactive');
+    });
+
+    $('.edys-gallery-item').mouseout(function() {
+      $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').removeClass('inactive');
     });
   };
 
@@ -99,6 +108,7 @@
       toggleMainMenu();
       toggleLangMenu();
       handlePopoverMenuHide();
+      handleGalleryHover();
       handleWindowResize();
       wrapTables();
       if ($('.table-container').length > 0) {
@@ -111,8 +121,7 @@
     window.site = $.extend(window.site || {}, {
       initBlogPage: initBlogPage,
       initArticlePage: initArticlePage,
-      initCommonPage: initCommonPage,
-      handleFormFieldClick: handleFormFieldClick
+      initCommonPage: initCommonPage
     });
 
     init();
