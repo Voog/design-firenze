@@ -1,5 +1,11 @@
 /* FOOTER */
 .footer {
+  .editmode &:after {
+    display: block;
+    height: 40px;
+    content: '';
+  }
+
   .content-formatted {
     max-width: 680px;
     margin: 0 auto;
