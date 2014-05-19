@@ -1,0 +1,32 @@
+/* LAYOUTS */
+.common-page,
+.blog-page,
+.post-page {
+  .content {
+    padding: 43px 5px;
+  }
+}
+
+// FRONT PAGE
+.front-page {
+  background-image: url('../images/front-page-bg.jpg');
+}
+
+// COMMON PAGE
+.common-page {
+  background-image: url('../images/common-page-bg.jpg');
+}
+
+// BLOG & NEWS
+.blog-page,
+.post-page {
+  background-image: url('../images/blog-page-bg.jpg');
+}
+
+.blog-page {
+
+}
+
+.post-page {
+
+}
