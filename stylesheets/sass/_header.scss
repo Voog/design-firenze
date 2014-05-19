@@ -1,8 +1,19 @@
 /* HEADER */
 .header {
-  position: relative;
-  padding: 0 5px 15px;
-  @include border(bottom, 1px, solid, $primary-color, 0.33);
+  .common-page &,
+  .blog-page &,
+  .post-page & {
+    position: relative;
+    padding: 0 5px 20px;
+    @include border(bottom, 1px, solid, $primary-color, 0.33);
+  }
+}
+
+.header-top {
+  .front-page & {
+    padding-bottom: 22px;
+    @include border(bottom, 2px, solid, $white);
+  }
 }
 
 .header-title {
@@ -12,14 +23,40 @@
   font-size: 30px;
   line-height: 1;
 
-  &,
-  a {
-    @include color($secondary-color);
+  .front-page & {
+    text-align: center;
+    font-size: 60px;
+
+    &,
+    a {
+      @include color($white);
+    }
+
+    a {
+      &:hover {
+        @include color($white, 0.8);
+      }
+    }
   }
 
-  a {
-    &:hover {
-      @include color($secondary-color, 0.8);
+  .common-page &,
+  .blog-page &,
+  .post-page & {
+    &,
+    a {
+      @include color($secondary-color);
     }
+
+    a {
+      &:hover {
+        @include color($secondary-color, 0.8);
+      }
+    }
+  }
+}
+
+.header-bottom {
+  .front-page & {
+    padding-top: 25px;
   }
 }

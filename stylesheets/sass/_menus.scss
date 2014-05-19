@@ -2,6 +2,20 @@
 .menu-btn {
   display: none;
 
+  .menu-stripe {
+    display: block;
+    width: 23px;
+    height: 4px;
+    margin: 4px 0;
+    @include bg($secondary-color, 0.67);
+    border-radius: 5px;
+
+    &:first-child,
+    &:last-child {
+      margin: 0;
+    }
+  }
+
   @include query($tablet-2) {
     position: absolute;
     top: 8px;
@@ -31,24 +45,6 @@
   }
 
   @include query($mobile-1) {
-    right: 20px;
-  }
-
-  .menu-stripe {
-    display: block;
-    width: 23px;
-    height: 4px;
-    margin: 4px 0;
-    @include bg($secondary-color, 0.67);
-    border-radius: 5px;
-
-    &:first-child,
-    &:last-child {
-      margin: 0;
-    }
-  }
-
-  @include query($mobile-1) {
     right: 0;
   }
 }
@@ -62,15 +58,15 @@
   li {
     display: inline-block;
     vertical-align: middle;
-    font-size: 14px;
   }
 }
 
 .menu-main {
   @extend %bebas-neue;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -9px;
+
+  .front-page & {
+    text-align: center;
+  }
 
   @include query($tablet-2) {
     display: none;
@@ -87,17 +83,17 @@
       @include bg($white);
       @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
     }
+  }
 
-    @include query($mobile-1) {
-      &.expanded {
-        top: 45px;
-        left: -15px;
-        right: -15px;
-        min-width: 0;
-        margin-bottom: 40px;
-        @include border(top, 1px, solid, $primary-color, 0.2);
-        @include no-box-shadow;
-      }
+  @include query($mobile-1) {
+    &.expanded {
+      top: 45px;
+      left: -15px;
+      right: -15px;
+      min-width: 0;
+      margin-bottom: 40px;
+      @include border(top, 1px, solid, $primary-color, 0.2);
+      @include no-box-shadow;
     }
   }
 
@@ -137,38 +133,57 @@
       }
 
       a {
-        font-weight: 600;
-        @include color($primary-color);
+        .front-page & {
+          font-size: 16px;
+          @include color($white);
+
+          &.active,
+          &.active:hover {
+            @include color($white, 0.5);
+
+            @include query($tablet-2) {
+            }
+          }
+
+          &:hover {
+            @include color($primary-color, 0.8);
+          }
+        }
+
+        .common-page &,
+        .blog-page &,
+        .post-page & {
+          font-size: 14px;
+          @include color($primary-color);
+
+          &.active,
+          &.active:hover {
+            @include color($secondary-color);
+
+            @include query($tablet-2) {
+            }
+          }
+
+          &:hover {
+            @include color($primary-color, 0.8);
+          }
+        }
 
         &.untranslated {
           @include color($red, 0.5);
         }
 
-        &.active,
-        &.active:hover {
-          @include color($secondary-color);
-
-          @include query($tablet-2) {
-            // @include color($grey-1);
-            // @include bg($blue-2);
-          }
-        }
-
-        &:hover {
-          @include color($primary-color, 0.8);
-
-          @include query($tablet-2) {
-            // @include color($grey-1);
-            @include bg($blue-2, 0.5);
-          }
-        }
-
         @include query($tablet-2) {
           display: block;
           padding: 8px 25px 5px;
+
           &.active,
           &.active:hover {
 
+          }
+
+          &:hover {
+            @include bg($blue-2, 0.5);
           }
         }
       }
@@ -203,13 +218,11 @@
           &.active,
           &.active:hover {
             font-weight: 600;
-            // @include color($grey-1, 0.67);
             background: none;
           }
 
           &:hover {
-            // @include color($grey-1, 0.4);
-            @include bg($grey-2, 0.5);
+            @include bg($grey-1, 0.5);
           }
         }
 
@@ -239,7 +252,11 @@
     display: inline-block;
     margin: 7px 20px;
     padding: 0;
+  }
 
+  .front-page & {
+    top: 25px;
+    right: 30px;
   }
 
   @include query($tablet-2) {
@@ -264,7 +281,7 @@
       }
 
       &:hover {
-        @include bg($grey-2, 0.5);
+        @include bg($grey-1, 0.5);
       }
 
       &:before,
