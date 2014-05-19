@@ -25,12 +25,32 @@
   @include color($grey-3);
 }
 
+.post-comments-count {
+  a {
+    &:hover {
+      @include color($blue-1, 0.8);
+    }
+
+    &:visited {
+     @include color($blue-1);
+    }
+  }
+}
+
 .post-content {
   margin-top: 17px;
 }
 
 .post-body {
   margin-top: 20px;
+}
+
+.tags {
+  margin-top: 25px;
+}
+
+.tags-title {
+  @include color($secondary-color);
 }
 
 .blog-page {
@@ -41,4 +61,7 @@
       margin-top: 0;
     }
   }
+}
+
+.post-page {
 }

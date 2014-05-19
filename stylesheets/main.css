@@ -733,6 +733,17 @@ body {
   background-position: -20px -56px;
 }
 
+.menu-tags .menu li a {
+  color: #0066bb;
+}
+.menu-tags .menu li a:hover {
+  color: #0066bb;
+  color: rgba(0, 102, 187, 0.8);
+}
+.menu-tags .menu li a.active {
+  font-weight: 700;
+}
+
 /* HEADER */
 .common-page .header, .blog-page .header, .post-page .header {
   position: relative;
@@ -780,6 +791,15 @@ body {
 }
 
 /* TOPBAR */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #444444;
+}
+
 /* SIDEBAR */
 /* CONTENT */
 /* BLOG & BLOG ARTICLE */
@@ -806,12 +826,28 @@ body {
   color: #e2e2e2;
 }
 
+.post-comments-count a:hover {
+  color: #0066bb;
+  color: rgba(0, 102, 187, 0.8);
+}
+.post-comments-count a:visited {
+  color: #0066bb;
+}
+
 .post-content {
   margin-top: 17px;
 }
 
 .post-body {
   margin-top: 20px;
+}
+
+.tags {
+  margin-top: 25px;
+}
+
+.tags-title {
+  color: #444444;
 }
 
 .blog-page .post {

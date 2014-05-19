@@ -15,6 +15,8 @@
   <div class="container">
     <div class="container-inner">
       <div class="wrap">
+      {% include "topbar" %}
+
         <div class="wrap-inner">
           {% include "header" %}
 

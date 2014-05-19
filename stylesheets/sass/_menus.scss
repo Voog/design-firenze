@@ -548,3 +548,21 @@
 .en:after {
   background-position: -20px -56px;
 }
+
+.menu-tags {
+  .menu {
+    li {
+      a {
+        @include color($blue-1);
+
+        &:hover {
+          @include color($blue-1, 0.8);
+        }
+
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

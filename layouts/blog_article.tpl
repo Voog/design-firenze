@@ -33,6 +33,8 @@
                 <div class="post-body content-formatted">{% editable article.body %}</div>
               </div>
             </article>
+
+            {% include "tags-post" %}
           </main>
 
           <section id="comments" class="comments content-formatted">
@@ -43,7 +45,7 @@
                 <div class="comment edy-site-blog-comment">
                   <span class="comment-body">{{ comment.body_html }}</span>
                   <span class="comment-info">
-                    <span class="comment-author">({{ comment.author }}</span><span>{{ comment.created_at | format_date: "long" }})</span>
+                    <span class="comment-author">{{ comment.author }}, </span><span>{{ comment.created_at | format_date: "long" }}</span>
                   </span>
                   {% removebutton %}
                   </div>

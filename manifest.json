@@ -144,6 +144,13 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-translations.tpl",
+      "layout_name": "",
+      "title": "tags-translations"
     }
   ],
   "assets": [
