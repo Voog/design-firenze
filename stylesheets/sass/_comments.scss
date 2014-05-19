@@ -1,1 +1,17 @@
 /* COMMENTS */
+.comment,
+.comment-form {
+  margin-top: 30px;
+}
+
+.comment {
+  padding-left: 20px;
+  @include border(left, 3px, solid, $black, 0.05);
+}
+.comment-body,
+.comment-info {
+}
+
+.comment-info {
+  @include color($grey-3);
+}

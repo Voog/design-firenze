@@ -1,1 +1,44 @@
 /* BLOG & BLOG ARTICLE */
+.post-title,
+.post-title a,
+.post-date {
+  @extend %bebas-neue;
+  font-size: 36px;
+}
+
+.post-title {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-weight: normal;
+
+  a {
+    @include color($secondary-color);
+
+    &:hover {
+      @include color($secondary-color, 0.8);
+    }
+  }
+}
+
+.post-date {
+  @extend %bebas-neue;
+  @include color($grey-3);
+}
+
+.post-content {
+  margin-top: 17px;
+}
+
+.post-body {
+  margin-top: 20px;
+}
+
+.blog-page {
+  .post {
+    margin-top: 43px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
