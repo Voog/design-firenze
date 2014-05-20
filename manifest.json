@@ -78,13 +78,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-lang-mobile.tpl",
-      "layout_name": "menu-lang-mobile",
-      "title": "menu-lang-mobile"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/menu-lang.tpl",
       "layout_name": "menu-lang",
       "title": "menu-lang"
@@ -141,16 +134,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/topbar.tpl",
-      "layout_name": "topbar",
-      "title": "topbar"
+      "file": "components/tags-translations.tpl",
+      "layout_name": "",
+      "title": "tags-translations"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/tags-translations.tpl",
-      "layout_name": "",
-      "title": "tags-translations"
+      "file": "components/topbar.tpl",
+      "layout_name": "topbar",
+      "title": "topbar"
     }
   ],
   "assets": [
@@ -179,10 +172,46 @@
       "filename": "bebas-neue-regular.woff"
     },
     {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-arrow-down.svg",
+      "kind": "assets",
+      "filename": "ico-arrow-down.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-close.svg",
+      "kind": "assets",
+      "filename": "ico-close.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-flags.svg",
+      "kind": "assets",
+      "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-search.svg",
+      "kind": "assets",
+      "filename": "ico-search.svg"
+    },
+    {
       "content_type": "image/png",
       "file": "images/arrow-down.png",
       "kind": "images",
       "filename": "arrow-down.png"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/blog-page-bg.jpg",
+      "kind": "images",
+      "filename": "blog-page-bg.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/common-page-bg.jpg",
+      "kind": "images",
+      "filename": "common-page-bg.jpg"
     },
     {
       "content_type": "image/png",
@@ -197,10 +226,22 @@
       "filename": "flag-sprite@2x.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/autogrow.js",
-      "kind": "javascripts",
-      "filename": "autogrow.js"
+      "content_type": "image/jpeg",
+      "file": "images/front-page-bg-mobile.jpg",
+      "kind": "images",
+      "filename": "front-page-bg-mobile.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/front-page-bg.jpg",
+      "kind": "images",
+      "filename": "front-page-bg.jpg"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-flags-small.png",
+      "kind": "images",
+      "filename": "ico-flags-small.png"
     },
     {
       "content_type": "application/javascript",
