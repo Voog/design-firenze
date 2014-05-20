@@ -209,6 +209,10 @@
           &.active:hover {
             @include color($white);
           }
+
+          &:hover {
+            @include color($white, 0.5);
+          }
         }
 
         &:hover {

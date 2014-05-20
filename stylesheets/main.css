@@ -447,6 +447,10 @@ body {
 .topbar .menu-main .menu li a.active, .topbar .menu-main .menu li a.active:hover {
   color: white;
 }
+.topbar .menu-main .menu li a:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
+}
 .menu-main .menu li a:hover {
   color: #444444;
 }
