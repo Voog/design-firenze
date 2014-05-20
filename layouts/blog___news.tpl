@@ -13,9 +13,11 @@
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ page.data.body_image }}" data-bg-color="{{ page.data.body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{% if page.data.body_color %} style="background-color: {{ page.data.body_color }};{% if page.data.body_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
 
-  <div class="container">
+  <div class="container js-container">
     <div class="container-inner">
       <div class="wrap">
+        {% include "topbar" %}
+
         <div class="wrap-inner">
           {% include "header" %}
 
@@ -46,8 +48,6 @@
 
   <script>
     site.initBlogPage();
-
-    $.backstretch("{{ photos_path }}/blog-page-bg.jpg");
 
     $(document).ready(function() {
       currentUrl = window.location.href;

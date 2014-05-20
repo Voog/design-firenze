@@ -7,12 +7,24 @@
     padding: 0 5px 20px;
     @include border(bottom, 1px, solid, $primary-color, 0.33);
   }
+
+  @include query($mobile-1) {
+    margin: 0 -20px;
+  }
 }
 
 .header-top {
   .front-page & {
     padding-bottom: 22px;
     @include border(bottom, 2px, solid, $white);
+  }
+
+  @include query($mobile-1) {
+    .common-page &,
+    .blog-page &,
+    .post-page & {
+      padding: 0 15px;
+    }
   }
 }
 

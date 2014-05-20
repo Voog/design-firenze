@@ -11,9 +11,16 @@
   margin: 0 10px 0 0;
   font-weight: normal;
 
+  .editmode & {
+    min-width: 200px;
+  }
+
+  &,
   a {
     @include color($secondary-color);
+  }
 
+  a {
     &:hover {
       @include color($secondary-color, 0.8);
     }
@@ -32,7 +39,7 @@
     }
 
     &:visited {
-     @include color($blue-1);
+      @include color($blue-1);
     }
   }
 }
@@ -43,14 +50,6 @@
 
 .post-body {
   margin-top: 20px;
-}
-
-.tags {
-  margin-top: 25px;
-}
-
-.tags-title {
-  @include color($secondary-color);
 }
 
 .blog-page {

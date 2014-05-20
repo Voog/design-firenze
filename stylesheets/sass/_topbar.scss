@@ -1,9 +1,19 @@
 /* TOPBAR */
 .topbar {
   position: fixed;
-  top: 0;
+  top: -200px;
   left: 0;
   right: 0;
   z-index: 1;
   @include bg($secondary-color);
+  @include transition (top 0.2s 0.2s);
+  @include perspective;
+
+  .wrap {
+    position: relative;
+    display: block;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 12px 30px;
+  }
 }

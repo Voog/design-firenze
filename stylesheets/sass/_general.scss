@@ -17,6 +17,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
 }
 
 %bebas-neue {
@@ -106,6 +107,7 @@ body {
 }
 
 .wrap-inner {
+  max-width: 720px;
   padding: 25px;
   @include box-sizing(border-box);
 
@@ -113,6 +115,10 @@ body {
   .blog-page &,
   .post-page & {
     @extend %content-bg;
+  }
+
+  @include query($mobile-1) {
+    padding: 20px;
   }
 }
 

@@ -13,16 +13,18 @@
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ page.data.body_image }}" data-bg-color="{{ page.data.body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{% if page.data.body_color %} style="background-color: {{ page.data.body_color }};{% if page.data.body_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
 
-  <div class="container">
+  <div class="container js-container">
     <div class="container-inner">
       <div class="wrap">
+        {% include "topbar" with "article" %}
+
         <div class="wrap-inner">
           {% include "header" %}
 
           <main class="content" role="main">
             <article class="post">
               <header class="post-header">
-                <h2 class="post-title"><a href="{{ article.url }}">{% editable article.title %}</a></h2>
+                <h2 class="post-title">{% editable article.title %}</h2>
                 <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | format_date: 'long' }}</time>
                 <div class="post-comments-count">
                   <a href="#comments">{% case article.comments_count %}{% when 0 %}{{ "no_comments" | lc }}{% else %}{{ "comments_for_count" | lc}}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span>{% endcase %}</a></div>
@@ -34,7 +36,7 @@
               </div>
             </article>
 
-            {% include "tags-post" %}
+            {% if editmode %}<div class="tags-editor">{% editable article.tags %}</div>{% endif %}
           </main>
 
           <section id="comments" class="comments content-formatted">
@@ -65,9 +67,7 @@
   {% include "bg-picker" %}
 
   <script>
-    site.initBlogPage();
-
-    $.backstretch("{{ photos_path }}/blog-page-bg.jpg");
+    site.initArticlePage();
 
     $(document).ready(function() {
       currentUrl = window.location.href;

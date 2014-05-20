@@ -15,6 +15,14 @@
     });
   };
 
+  var toggleTagsMenu = function() {
+    $('.js-tags-btn').click(function(event) {
+      event.stopPropagation();
+      $(this).toggleClass('open');
+      $('.js-menu-tags').toggleClass('expanded');
+    });
+  };
+
   // HIDES THE POPOVER MAIN MENU IF CICKED ANYWHERE ELSE THAN THE MENU ITSELF (VISIBLE ON SMALLES SCREENS)
   var handlePopoverMenuHide = function() {
     $('html').click(function() {
@@ -35,10 +43,46 @@
     });
   };
 
-  // HIDES THE FORM FIELD ERROR WHEN THE FIELD IS FOCUSED
-  var handleFormFieldClick = function() {
-    $('.form_field_with_errors').click(function() {
-      $(this).removeClass('form_field_with_errors');
+  // TOGGLES THE TOPBAR OF THE POSITION AND SCROLL DIRECTION
+  var handleTopbarPosition = function() {
+    var startScroll,
+    toHandler,
+    endScroll,
+    scrolled,
+    container = $('.js-container'),
+    topbar = $('.js-topbar'),
+    header = $('.js-header'),
+    tagsMenu = $('.js-menu-tags'),
+    topbarHeight = $(topbar).outerHeight(),
+    topbarVisibleArea = $(header).outerHeight() + 150,
+    tagsMenuHeight = $(tagsMenu).outerHeight();
+
+    // console.log('topbarHeight' + topbarHeight);
+    // console.log('topbarVisibleArea' + topbarVisibleArea);
+    // console.log('tagsMenuHeight' + tagsMenuHeight);
+
+
+    $(topbar).css({'top' : -topbarHeight});
+
+    $(window).on("scroll", function(){
+      if (!startScroll) {
+        startScroll = $(window).scrollTop();
+      } else {
+        endScroll = $(window).scrollTop();
+        scrolled = endScroll - startScroll;
+
+        if (scrolled < -5 && startScroll > topbarVisibleArea) {
+          $(topbar).css({'top' : 0});
+        } else if ((scrolled < 0 && startScroll < topbarVisibleArea) || (scrolled > 0 && startScroll > topbarVisibleArea)) {
+          if (tagsMenu.hasClass('expanded')) {
+            $(tagsMenu).removeClass('expanded');
+            $('.js-tags-btn').removeClass('open');
+          }
+          $(topbar).css({'top' : -topbarHeight});
+        }
+
+        startScroll = 0;
+      }
     });
   };
 
@@ -56,7 +100,7 @@
     $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
   };
 
-  // TODO: Add comment
+  // CHECK THE PRESENCE OF THE SCROLLBAR
   var checkScrollBar = function() {
     jQuery.fn.hasScrollBar = function(direction) {
       if (direction == 'vertical') {
@@ -82,6 +126,7 @@
   // INITIATES THE TABLE HORISONTAL SCROLL FUNCTION WHEN WINDOW IS RESIZED
   var handleWindowResize = function() {
     $(window).resize(function() {
+      handleTopbarPosition();
       handleTableHorizontalScrolling();
     });
   };
@@ -89,17 +134,20 @@
     // Initiations
     var initBlogPage = function() {
       // ADD BLOG LISTING VIEW SPECIFIC FUNCTIONS HERE
+      handleTopbarPosition();
+      toggleTagsMenu();
     };
 
     var initArticlePage = function() {
       // ADD SINGLE POST VIEW SPECIFIC FUNCTIONS HERE
-      handleFormFieldClick();
+      handleTopbarPosition();
+      toggleTagsMenu();
       focusCommentsWithErrors();
     };
 
     var initCommonPage = function() {
       // ADD COMMON PAGE SPECIFIC FUNCTIONS HERE
-      handleFormFieldClick();
+      handleTopbarPosition();
       focusCommentsWithErrors();
     };
 
