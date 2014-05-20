@@ -3,6 +3,20 @@
 @import '_mixins';
 
 // MENUS
+.menu-lang-btn {
+  &:before,
+  &:after {
+    margin-top: -6px;
+    margin-left: -1px;
+  }
+}
+
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
+  .no-svg &:after {
+    background-image: url('../images/ico-flags-small.png');
+  }
+}
 
 // GENERAL
 
