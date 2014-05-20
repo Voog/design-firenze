@@ -4,8 +4,16 @@
 .post-page {
   .content {
     padding: 43px 5px;
+  }
 
-    @include query($mobile-1) {
+  @include query($tablet-2) {
+    .container-inner {
+      display: block;
+    }
+  }
+
+  @include query($mobile-1) {
+    .content {
       padding: 20px 0;
     }
   }
@@ -19,12 +27,6 @@
 // COMMON PAGE
 .common-page {
   background-image: url('../images/common-page-bg.jpg');
-
-  @include query($mobile-1) {
-    .container-inner {
-      display: block;
-    }
-  }
 }
 
 // BLOG & NEWS

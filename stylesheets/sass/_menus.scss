@@ -117,12 +117,11 @@
 
     @include query($mobile-1) {
       &.expanded {
-        top: 45px;
-        left: 0;
-        right: 0;
+        top: 21px;
+        left: -5px;
+        right: -5px;
         min-width: 0;
         margin-bottom: 40px;
-        @include border(top, 1px, solid, $primary-color, 0.2);
         @include no-box-shadow;
       }
     }
@@ -138,6 +137,15 @@
 
       &:first-child {
         margin-left: 0;
+      }
+
+      .common-page &,
+      .blog-page &,
+      .post-page & {
+        @include query($mobile-1) {
+          display: block;
+          margin-left: 0;
+        }
       }
 
       &.edit-btn {
@@ -166,16 +174,6 @@
           margin: 0;
           font-size: 20px;
           @include border(bottom, 1px, solid, $primary-color, 0.2);
-        }
-      }
-
-      .header & {
-        @include query($mobile-1) {
-          display: block;
-
-          & {
-            margin-left: 0;
-          }
         }
       }
 
@@ -312,7 +310,11 @@
   }
 
   @include query($mobile-1) {
-    position: static;
+    .common-page &,
+    .blog-page &,
+    .post-page & {
+      position: static;
+    }
   }
 
   .front-page & {

@@ -8,8 +8,12 @@
     @include border(bottom, 1px, solid, $primary-color, 0.33);
   }
 
-  @include query($mobile-1) {
-    margin: 0 -20px;
+  .common-page &,
+  .blog-page &,
+  .post-page & {
+    @include query($mobile-1) {
+      margin: 0 -20px;
+    }
   }
 }
 
@@ -68,6 +72,8 @@
 }
 
 .header-bottom {
+  position: relative;
+
   .front-page & {
     padding-top: 25px;
   }

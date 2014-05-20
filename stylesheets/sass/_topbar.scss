@@ -16,4 +16,8 @@
     margin: 0 auto;
     padding: 12px 30px;
   }
+
+  @include query($tablet-1) {
+    display: none;
+  }
 }

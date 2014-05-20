@@ -18,6 +18,13 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
+  .common-page &,
+  .blog-page &,
+  .post-pgae & {
+    @include query($tablet-2) {
+      background: none !important;
+    }
+  }
 }
 
 %bebas-neue {

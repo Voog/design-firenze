@@ -26,6 +26,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+@media screen and (max-width: 720px) {
+  .common-page body, .blog-page body, .post-pgae body {
+    background: none !important;
+  }
+}
 
 .content-formatted h1, .menu-main, .header-title, .post-title,
 .post-title a,
@@ -229,6 +234,13 @@ body {
 .post-page .content {
   padding: 43px 5px;
 }
+@media screen and (max-width: 720px) {
+  .common-page .container-inner,
+  .blog-page .container-inner,
+  .post-page .container-inner {
+    display: block;
+  }
+}
 @media screen and (max-width: 480px) {
   .common-page .content,
   .blog-page .content,
@@ -243,11 +255,6 @@ body {
 
 .common-page {
   background-image: url("../images/common-page-bg.jpg");
-}
-@media screen and (max-width: 480px) {
-  .common-page .container-inner {
-    display: block;
-  }
 }
 
 .blog-page,
@@ -366,13 +373,11 @@ body {
 }
 @media screen and (max-width: 480px) {
   .common-page .header .menu-main.expanded, .blog-page .header .menu-main.expanded, .post-page .header .menu-main.expanded {
-    top: 45px;
-    left: 0;
-    right: 0;
+    top: 21px;
+    left: -5px;
+    right: -5px;
     min-width: 0;
     margin-bottom: 40px;
-    border-top: 1px solid #888888;
-    border-top: 1px solid rgba(136, 136, 136, 0.2);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -388,6 +393,12 @@ body {
 }
 .menu-main .menu li:first-child {
   margin-left: 0;
+}
+@media screen and (max-width: 480px) {
+  .common-page .menu-main .menu li, .blog-page .menu-main .menu li, .post-page .menu-main .menu li {
+    display: block;
+    margin-left: 0;
+  }
 }
 .menu-main .menu li.edit-btn {
   display: inline-block;
@@ -412,14 +423,6 @@ body {
     font-size: 20px;
     border-bottom: 1px solid #888888;
     border-bottom: 1px solid rgba(136, 136, 136, 0.2);
-  }
-}
-@media screen and (max-width: 480px) {
-  .header .menu-main .menu li {
-    display: block;
-  }
-  .header .menu-main .menu li {
-    margin-left: 0;
   }
 }
 .front-page .menu-main .menu li a {
@@ -513,7 +516,7 @@ body {
   padding: 0;
 }
 @media screen and (max-width: 480px) {
-  .menu-lang {
+  .common-page .menu-lang, .blog-page .menu-lang, .post-page .menu-lang {
     position: static;
   }
 }
@@ -834,7 +837,7 @@ body {
   border-bottom: 1px solid rgba(136, 136, 136, 0.33);
 }
 @media screen and (max-width: 480px) {
-  .header {
+  .common-page .header, .blog-page .header, .post-page .header {
     margin: 0 -20px;
   }
 }
@@ -878,6 +881,9 @@ body {
   color: rgba(68, 68, 68, 0.8);
 }
 
+.header-bottom {
+  position: relative;
+}
 .front-page .header-bottom {
   padding-top: 25px;
 }
@@ -902,6 +908,11 @@ body {
   max-width: 660px;
   margin: 0 auto;
   padding: 12px 30px;
+}
+@media screen and (max-width: 900px) {
+  .topbar {
+    display: none;
+  }
 }
 
 /* SIDEBAR */
