@@ -23,7 +23,7 @@
       {% include "menu-level-1" %}
       {% if editmode or site.has_many_languages? %}
       <div class="menu-lang">
-        {% include "menu-lang-mobile" %}
+        {% include "menu-lang" %}
       </div>
       {% endif %}
     </nav>
