@@ -19,5 +19,5 @@
 
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
 
-{% if site.data.fbadmin %}<meta property="fb:admins" content="{{ site.data.fbadmin }}"><!-- TODO: Add functionality -->{% endif %}
+{% if site.data.fb_admin %}<meta property="fb:admins" content="{{ site.data.fbadmin }}"><!-- TODO: Add functionality -->{% endif %}
 <meta property="og:type" content="website">
