@@ -20,12 +20,36 @@ body {
 
   .common-page &,
   .blog-page &,
-  .post-pgae & {
+  .post-page & {
     @include query($tablet-2) {
       background: none !important;
     }
   }
 }
+
+/* LAYOUTS */
+// FRONT PAGE
+.front-page {
+  background-image: url('../images/front-page-bg.jpg');
+}
+
+// COMMON PAGE
+.common-page {
+  background-image: url('../images/common-page-bg.jpg');
+}
+
+// BLOG & NEWS
+.blog-page,
+.post-page {
+  background-image: url('../images/blog-page-bg.jpg');
+}
+
+.blog-page {
+}
+
+.post-page {
+}
+
 
 %bebas-neue {
   font-family: 'Bebas Neue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -140,44 +164,17 @@ body {
   @extend %clearfix;
   word-wrap: break-word;
 
-  // Resets the top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  img,
-  pre,
-  code,
-  table,
-  form {
+  // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
+  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, img, table form {
+    margin-bottom: 0;
+
     &:first-child {
       margin-top: 0;
     }
   }
 
-  // Resets the bottom margin for all first elements in the editable content-area (to prevent unwanted white-space at the end of a content-area).
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul {
-    margin-bottom: 0;
-  }
-
   // Styling rules for the editable content area headings.
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     @include color($secondary-color);
   }
 
@@ -193,10 +190,7 @@ body {
     font-size: 18px;
   }
 
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3, h4, h5, h6 {
     margin-top: 20px;
     font-size: 16px;
   }
@@ -224,8 +218,7 @@ body {
   }
 
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
-  img,
-  iframe {
+  img, iframe {
     max-width: 100%;
   }
 
@@ -239,8 +232,7 @@ body {
     overflow: auto;
     white-space: nowrap;
 
-    &,
-    code {
+    &, code {
       padding: 10px;
       font-size: 14px;
       @include bg($grey-2);

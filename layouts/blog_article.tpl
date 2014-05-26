@@ -27,7 +27,8 @@
                 <h2 class="post-title">{% editable article.title %}</h2>
                 <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | format_date: 'long' }}</time>
                 <div class="post-comments-count">
-                  <a href="#comments">{% case article.comments_count %}{% when 0 %}{{ "no_comments" | lc }}{% else %}{{ "comments_for_count" | lc}}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span>{% endcase %}</a></div>
+                  <a href="#comments">{% case article.comments_count %}{% when 0 %}{{ "no_comments" | lc }}{% else %}{{ "comments_for_count" | lc}}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span>{% endcase %}</a>
+                </div>
               </header>
 
               <div class="post-content">
@@ -47,7 +48,8 @@
                 <div class="comment edy-site-blog-comment">
                   <span class="comment-body">{{ comment.body_html }}</span>
                   <span class="comment-info">
-                    <span class="comment-author">{{ comment.author }}, </span><span>{{ comment.created_at | format_date: "long" }}</span>
+                    <span class="comment-author">{{ comment.author }}, </span>
+                    <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
                   </span>
                   {% removebutton %}
                   </div>

@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    min-height: 100px;
+    height: 100px;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMDIiLz4KICAgIDxzdG9wIG9mZnNldD0iMjYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMTciLz4KICAgIDxzdG9wIG9mZnNldD0iNjMlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNTEiLz4KICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNjUiLz4KICAgIDxzdG9wIG9mZnNldD0iOTYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjcxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 6%, rgba(0, 0, 0, 0.17) 26%, rgba(0, 0, 0, 0.51) 63%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.75) 96%, rgba(0, 0, 0, 0.75) 99%, rgba(0, 0, 0, 0.71) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(6%, rgba(0, 0, 0, 0.02)), color-stop(26%, rgba(0, 0, 0, 0.17)), color-stop(63%, rgba(0, 0, 0, 0.51)), color-stop(80%, rgba(0, 0, 0, 0.65)), color-stop(96%, rgba(0, 0, 0, 0.75)), color-stop(99%, rgba(0, 0, 0, 0.75)), color-stop(100%, rgba(0, 0, 0, 0.71)));
@@ -22,9 +22,6 @@
 
     .flexbox & {
       @include flexbox;
-      @include flex-direction(column);
-      @include align-content(center);
-      @include justify-content(center);
     }
 
     .editmode & {
@@ -32,13 +29,8 @@
     }
   }
 
-  // .editmode &:after {
-  //   display: block;
-  //   height: 40px;
-  //   content: '';
-  // }
-
   .content-formatted {
+    @include align-self(center);
     max-width: 680px;
     margin: 0 auto;
     padding: 20px 30px;
