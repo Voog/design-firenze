@@ -31,7 +31,6 @@ body {
   }
 }
 
-/* LAYOUTS */
 .front-page {
   background-image: url("../images/front-page-bg.jpg");
 }
@@ -105,6 +104,8 @@ body {
 }
 .no-flexbox .container-inner {
   display: table;
+  table-layout: fixed;
+  width: 100%;
 }
 .flexbox .container-inner {
   display: -webkit-box;
@@ -132,6 +133,7 @@ body {
 .no-flexbox .wrap {
   display: table-cell;
   vertical-align: middle;
+  width: 400px;
 }
 
 .wrap-inner {
@@ -336,38 +338,38 @@ body {
 .menu-main .menu {
   line-height: 1.3;
 }
-.menu-main .menu li {
+.menu-main .menu .menu-item {
   display: inline-block;
   vertical-align: middle;
   margin-left: 8px;
 }
-.menu-main .menu li:first-child {
+.menu-main .menu .menu-item:first-child {
   margin-left: 0;
 }
 @media screen and (max-width: 480px) {
-  .common-page .menu-main .menu li, .blog-page .menu-main .menu li, .post-page .menu-main .menu li {
+  .common-page .menu-main .menu .menu-item, .blog-page .menu-main .menu .menu-item, .post-page .menu-main .menu .menu-item {
     display: block;
     margin-left: 0;
   }
 }
-.menu-main .menu li.edit-btn {
+.menu-main .menu .menu-item.edit-btn {
   display: inline-block;
 }
 @media screen and (max-width: 480px) {
-  .common-page .menu-main .menu li.edit-btn, .blog-page .menu-main .menu li.edit-btn, .post-page .menu-main .menu li.edit-btn {
+  .common-page .menu-main .menu .menu-item.edit-btn, .blog-page .menu-main .menu .menu-item.edit-btn, .post-page .menu-main .menu .menu-item.edit-btn {
     display: block;
   }
-  .common-page .menu-main .menu li.edit-btn .edy-menu-menuadd, .blog-page .menu-main .menu li.edit-btn .edy-menu-menuadd, .post-page .menu-main .menu li.edit-btn .edy-menu-menuadd {
+  .common-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd, .blog-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd, .post-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd {
     display: inline-block;
     margin: 6px 25px 8px 25px;
     padding: 0;
   }
-  .common-page .menu-main .menu li.edit-btn .edy-menu-menuadd:hover, .blog-page .menu-main .menu li.edit-btn .edy-menu-menuadd:hover, .post-page .menu-main .menu li.edit-btn .edy-menu-menuadd:hover {
+  .common-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover, .blog-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover, .post-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover {
     background: none;
   }
 }
 @media screen and (max-width: 480px) {
-  .menu-main .menu li.edit-btn {
+  .menu-main .menu .menu-item.edit-btn {
     display: block;
     margin: 0;
     font-size: 20px;
@@ -375,41 +377,41 @@ body {
     border-bottom: 1px solid rgba(136, 136, 136, 0.2);
   }
 }
-.front-page .menu-main .menu li a {
+.front-page .menu-main .menu .menu-item .menu-link {
   font-size: 16px;
   color: white;
 }
-.front-page .menu-main .menu li a.active, .front-page .menu-main .menu li a.active:hover {
+.front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover {
   color: white;
   color: rgba(255, 255, 255, 0.5);
 }
-.front-page .menu-main .menu li a:hover {
+.front-page .menu-main .menu .menu-item .menu-link:hover {
   color: #888888;
   color: rgba(136, 136, 136, 0.8);
 }
-.common-page .menu-main .menu li a, .blog-page .menu-main .menu li a, .post-page .menu-main .menu li a {
+.common-page .menu-main .menu .menu-item .menu-link, .blog-page .menu-main .menu .menu-item .menu-link, .post-page .menu-main .menu .menu-item .menu-link {
   font-size: 14px;
   color: #888888;
 }
-.common-page .menu-main .menu li a.active, .common-page .menu-main .menu li a.active:hover, .blog-page .menu-main .menu li a.active, .blog-page .menu-main .menu li a.active:hover, .post-page .menu-main .menu li a.active, .post-page .menu-main .menu li a.active:hover {
+.common-page .menu-main .menu .menu-item .menu-link.active, .common-page .menu-main .menu .menu-item .menu-link.active:hover, .blog-page .menu-main .menu .menu-item .menu-link.active, .blog-page .menu-main .menu .menu-item .menu-link.active:hover, .post-page .menu-main .menu .menu-item .menu-link.active, .post-page .menu-main .menu .menu-item .menu-link.active:hover {
   color: #444444;
 }
-.topbar .menu-main .menu li a.active, .topbar .menu-main .menu li a.active:hover {
+.topbar .menu-main .menu .menu-item .menu-link.active, .topbar .menu-main .menu .menu-item .menu-link.active:hover {
   color: white;
 }
-.topbar .menu-main .menu li a:hover {
+.topbar .menu-main .menu .menu-item .menu-link:hover {
   color: white;
   color: rgba(255, 255, 255, 0.5);
 }
-.menu-main .menu li a:hover {
+.menu-main .menu .menu-item .menu-link:hover {
   color: #444444;
 }
-.menu-main .menu li a.untranslated {
+.menu-main .menu .menu-item .menu-link.untranslated {
   color: #cc0000;
   color: rgba(204, 0, 0, 0.5);
 }
 @media screen and (max-width: 480px) {
-  .common-page .header .menu-main .menu li a, .blog-page .header .menu-main .menu li a, .post-page .header .menu-main .menu li a {
+  .common-page .header .menu-main .menu .menu-item .menu-link, .blog-page .header .menu-main .menu .menu-item .menu-link, .post-page .header .menu-main .menu .menu-item .menu-link {
     display: block;
     padding: 6px 20px 4px;
     font-size: 20px;
@@ -425,32 +427,32 @@ body {
     display: block;
     padding-left: 0;
   }
-  .common-page .menu-main .menu-lang .menu li, .blog-page .menu-main .menu-lang .menu li, .post-page .menu-main .menu-lang .menu li {
+  .common-page .menu-main .menu-lang .menu .menu-item, .blog-page .menu-main .menu-lang .menu .menu-item, .post-page .menu-main .menu-lang .menu .menu-item {
     text-align: left;
   }
-  .common-page .menu-main .menu-lang .menu li:first-child, .blog-page .menu-main .menu-lang .menu li:first-child, .post-page .menu-main .menu-lang .menu li:first-child {
+  .common-page .menu-main .menu-lang .menu .menu-item:first-child, .blog-page .menu-main .menu-lang .menu .menu-item:first-child, .post-page .menu-main .menu-lang .menu .menu-item:first-child {
     border-top: none;
   }
-  .common-page .menu-main .menu-lang .menu li a, .blog-page .menu-main .menu-lang .menu li a, .post-page .menu-main .menu-lang .menu li a {
+  .common-page .menu-main .menu-lang .menu .menu-item .menu-link, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link, .post-page .menu-main .menu-lang .menu .menu-item .menu-link {
     padding: 6px 20px 4px 47px;
   }
-  .common-page .menu-main .menu-lang .menu li a:before, .common-page .menu-main .menu-lang .menu li a:after, .blog-page .menu-main .menu-lang .menu li a:before, .blog-page .menu-main .menu-lang .menu li a:after, .post-page .menu-main .menu-lang .menu li a:before, .post-page .menu-main .menu-lang .menu li a:after {
+  .common-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .common-page .menu-main .menu-lang .menu .menu-item .menu-link:after, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link:after, .post-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .post-page .menu-main .menu-lang .menu .menu-item .menu-link:after {
     top: 12px;
     left: 20px;
   }
-  .common-page .menu-main .menu-lang .menu li a.active, .common-page .menu-main .menu-lang .menu li a.active:hover, .blog-page .menu-main .menu-lang .menu li a.active, .blog-page .menu-main .menu-lang .menu li a.active:hover, .post-page .menu-main .menu-lang .menu li a.active, .post-page .menu-main .menu-lang .menu li a.active:hover {
+  .common-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .common-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover, .post-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .post-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover {
     font-weight: 600;
     background: none;
   }
-  .common-page .menu-main .menu-lang .menu li a:hover, .blog-page .menu-main .menu-lang .menu li a:hover, .post-page .menu-main .menu-lang .menu li a:hover {
+  .common-page .menu-main .menu-lang .menu .menu-item .menu-link:hover, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link:hover, .post-page .menu-main .menu-lang .menu .menu-item .menu-link:hover {
     background-color: #838586;
     background-color: rgba(131, 133, 134, 0.5);
   }
-  .common-page .menu-main .menu-lang .menu li.edit-btn, .blog-page .menu-main .menu-lang .menu li.edit-btn, .post-page .menu-main .menu-lang .menu li.edit-btn {
+  .common-page .menu-main .menu-lang .menu .menu-item.edit-btn, .blog-page .menu-main .menu-lang .menu .menu-item.edit-btn, .post-page .menu-main .menu-lang .menu .menu-item.edit-btn {
     display: block;
     text-align: left;
   }
-  .common-page .menu-main .menu-lang .menu li.edit-btn .edy-menu-langadd, .blog-page .menu-main .menu-lang .menu li.edit-btn .edy-menu-langadd, .post-page .menu-main .menu-lang .menu li.edit-btn .edy-menu-langadd {
+  .common-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd, .blog-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd, .post-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd {
     display: inline-block;
     padding: 0;
     margin: 11px 25px 11px 25px;
@@ -483,27 +485,27 @@ body {
     display: none;
   }
 }
-.menu-lang li {
+.menu-lang .menu-item {
   display: list-item;
   text-align: right;
   font-size: 12px;
 }
-.menu-lang li a {
+.menu-lang .menu-item .menu-link {
   position: relative;
   display: block;
   padding: 6px 40px 3px 13px;
   color: #444444;
   color: rgba(68, 68, 68, 0.67);
 }
-.menu-lang li a.active, .menu-lang li a.active:hover {
+.menu-lang .menu-item .menu-link.active, .menu-lang .menu-item .menu-link.active:hover {
   color: white;
   background-color: #444444;
 }
-.menu-lang li a:hover {
+.menu-lang .menu-item .menu-link:hover {
   background-color: #838586;
   background-color: rgba(131, 133, 134, 0.5);
 }
-.menu-lang li a:before, .menu-lang li a:after {
+.menu-lang .menu-item .menu-link:before, .menu-lang .menu-item .menu-link:after {
   top: 4px;
   right: 12px;
 }
@@ -538,8 +540,8 @@ body {
 }
 
 .menu-lang-btn:before, .menu-lang-btn:after,
-.menu-lang li a.ico-lang:before,
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:before,
+.menu-lang .menu-item .lang-flag:after {
   position: absolute;
   display: block;
   width: 20px;
@@ -548,21 +550,21 @@ body {
 }
 
 .menu-lang-btn:before,
-.menu-lang li a.ico-lang:before {
+.menu-lang .menu-item .lang-flag:before {
   background-color: black;
 }
 .menu-lang-btn:after,
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:after {
   opacity: 0.95;
   background-size: 200px;
   background-repeat: no-repeat;
 }
 .no-svg .menu-lang-btn:after, .no-svg
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:after {
   background-image: url("../images/ico-flags.png");
 }
 .svg .menu-lang-btn:after, .svg
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:after {
   background-image: url("../assets/ico-flags.svg");
 }
 
@@ -584,171 +586,171 @@ body {
   z-index: 1;
 }
 
-.sq:after {
+.lang-flag-sq:after {
   background-position: 0 0;
 }
 
-.hy:after {
+.lang-flag-hy:after {
   background-position: -20px 0;
 }
 
-.bn:after {
+.lang-flag-bn:after {
   background-position: -40px 0;
 }
 
-.pt:after {
+.lang-flag-pt:after {
   background-position: -60px 0;
 }
 
-.bg:after {
+.lang-flag-bg:after {
   background-position: -80px 0;
 }
 
-.zh:after {
+.lang-flag-zh:after {
   background-position: -100px 0;
 }
 
-.hr:after {
+.lang-flag-hr:after {
   background-position: -120px 0;
 }
 
-.da:after {
+.lang-flag-da:after {
   background-position: -140px 0;
 }
 
-.cs:after {
+.lang-flag-cs:after {
   background-position: -160px 0;
 }
 
-.et:after {
+.lang-flag-et:after {
   background-position: -180px 0;
 }
 
-.fi:after {
-  background-position: 0 -14px;
+.lang-flag-fi:after {
+  background-position: 0px -14px;
 }
 
-.fr:after {
+.lang-flag-fr:after {
   background-position: -20px -14px;
 }
 
-.ka:after {
+.lang-flag-ka:after {
   background-position: -40px -14px;
 }
 
-.de:after {
+.lang-flag-de:after {
   background-position: -60px -14px;
 }
 
-.el:after {
+.lang-flag-el:after {
   background-position: -80px -14px;
 }
 
-.hu:after {
+.lang-flag-hu:after {
   background-position: -100px -14px;
 }
 
-.is:after {
+.lang-flag-is:after {
   background-position: -120px -14px;
 }
 
-.hi:after {
+.lang-flag-hi:after {
   background-position: -140px -14px;
 }
 
-.id:after {
+.lang-flag-id:after {
   background-position: -160px -14px;
 }
 
-.fa:after {
+.lang-flag-fa:after {
   background-position: -180px -14px;
 }
 
-.he:after {
-  background-position: 0 -28px;
+.lang-flag-he:after {
+  background-position: 0px -28px;
 }
 
-.it:after {
+.lang-flag-it:after {
   background-position: -20px -28px;
 }
 
-.ja:after {
+.lang-flag-ja:after {
   background-position: -40px -28px;
 }
 
-.ko:after {
+.lang-flag-ko:after {
   background-position: -60px -28px;
 }
 
-.lv:after {
+.lang-flag-lv:after {
   background-position: -80px -28px;
 }
 
-.lt:after {
+.lang-flag-lt:after {
   background-position: -100px -28px;
 }
 
-.ms:after {
+.lang-flag-ms:after {
   background-position: -120px -28px;
 }
 
-.nl:after {
+.lang-flag-nl:after {
   background-position: -140px -28px;
 }
 
-.no:after {
+.lang-flag-no:after {
   background-position: -160px -28px;
 }
 
-.ur:after {
+.lang-flag-ur:after {
   background-position: -180px -28px;
 }
 
-.fil:after {
-  background-position: 0 -42px;
+.lang-flag-fil:after {
+  background-position: 0px -42px;
 }
 
-.pl:after {
+.lang-flag-pl:after {
   background-position: -20px -42px;
 }
 
-.ro:after {
+.lang-flag-ro:after {
   background-position: -40px -42px;
 }
 
-.ru:after {
+.lang-flag-ru:after {
   background-position: -60px -42px;
 }
 
-.ar:after {
+.lang-flag-ar:after {
   background-position: -80px -42px;
 }
 
-.sr:after {
+.lang-flag-lt:after {
   background-position: -100px -42px;
 }
 
-.sk:after {
+.lang-flag-sk:after {
   background-position: -120px -42px;
 }
 
-.es:after {
+.lang-flag-es:after {
   background-position: -140px -42px;
 }
 
-.sv:after {
+.lang-flag-sv:after {
   background-position: -160px -42px;
 }
 
-.tr:after {
+.lang-flag-tr:after {
   background-position: -180px -42px;
 }
 
-.uk:after {
+.lang-flag-uk:after {
   background-position: 0px -56px;
 }
 
-.en:after {
+.lang-flag-en:after {
   background-position: -20px -56px;
 }
 
@@ -770,16 +772,19 @@ body {
   text-align: right;
   background-color: black;
 }
-.topbar .menu-tags.expanded li {
+.topbar .menu-tags.expanded .menu-item {
   display: block;
 }
-.topbar .menu-tags.expanded li a {
+.topbar .menu-tags.expanded .menu-item .menu-link {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
   color: #888888;
 }
-.topbar .menu-tags.expanded li a:hover {
+.topbar .menu-tags.expanded .menu-item .menu-link.active, .topbar .menu-tags.expanded .menu-item .menu-link.active:hover {
+  font-weight: 600;
+}
+.topbar .menu-tags.expanded .menu-item .menu-link.active, .topbar .menu-tags.expanded .menu-item .menu-link:hover {
   color: white;
 }
 
@@ -1222,11 +1227,15 @@ body {
 }
 
 /* FOOTER */
+.footer {
+  max-width: 770px;
+}
 .front-page .footer {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
+  max-width: 100%;
   height: 100px;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMDIiLz4KICAgIDxzdG9wIG9mZnNldD0iMjYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMTciLz4KICAgIDxzdG9wIG9mZnNldD0iNjMlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNTEiLz4KICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNjUiLz4KICAgIDxzdG9wIG9mZnNldD0iOTYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjcxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
   background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.02) 6%, rgba(0, 0, 0, 0.17) 26%, rgba(0, 0, 0, 0.51) 63%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.75) 96%, rgba(0, 0, 0, 0.75) 99%, rgba(0, 0, 0, 0.71) 100%);
