@@ -36,6 +36,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/bg-picker-variables.tpl",
+      "layout_name": "",
+      "title": "bg-picker-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/bg-picker.tpl",
       "layout_name": "bg-picker",
       "title": "bg-picker"
@@ -135,7 +142,7 @@
       "content_type": "component",
       "component": true,
       "file": "components/tags-translations.tpl",
-      "layout_name": "",
+      "layout_name": "tags-translations",
       "title": "tags-translations"
     },
     {
@@ -144,6 +151,13 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-variables.tpl",
+      "layout_name": "",
+      "title": "Tags-variables"
     }
   ],
   "assets": [
