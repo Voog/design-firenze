@@ -27,7 +27,7 @@
                 <h2 class="post-title">{% editable article.title %}</h2>
                 <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | format_date: 'long' }}</time>
                 <div class="post-comments-count">
-                  <a href="#comments">{% case article.comments_count %}{% when 0 %}{{ "no_comments" | lc }}{% else %}{{ "comments_for_count" | lc}}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span>{% endcase %}</a>
+                  <a href="#comments">{% case article.comments_count %}{% when 0 %}{{ "no_comments" | lc }}{% else %}{{ "comments_for_count" | lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>{% endcase %}</a>
                 </div>
               </header>
 
@@ -41,7 +41,7 @@
           </main>
 
           <section id="comments" class="comments content-formatted">
-            {% case article.comments_count %}{% when 0 %}{% else %}<h1 class="comments-title"><span class="edy-site-blog-comments-count">{{article.comments_count}}</span> {{ "comments_for_count" | lc }}</h1>{% endcase %}
+            {% case article.comments_count %}{% when 0 %}{% else %}<h1 class="comments-title"><span class="edy-site-blog-comments-count">{{ article.comments_count }}</span> {{ "comments_for_count" | lc }}</h1>{% endcase %}
 
             <div class="comment-messages">
               {% for comment in article.comments reversed %}
