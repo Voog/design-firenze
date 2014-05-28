@@ -533,6 +533,12 @@ $flags:
           font-size: 12px;
           @include color($primary-color);
 
+          &.active,
+          &.active:hover {
+            font-weight: 600;
+          }
+
+          &.active,
           &:hover {
             @include color($white);
           }
