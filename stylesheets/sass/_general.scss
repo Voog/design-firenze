@@ -27,18 +27,15 @@ body {
   }
 }
 
-/* LAYOUTS */
-// FRONT PAGE
+// Layout specific body classes.
 .front-page {
   background-image: url('../images/front-page-bg.jpg');
 }
 
-// COMMON PAGE
 .common-page {
   background-image: url('../images/common-page-bg.jpg');
 }
 
-// BLOG & NEWS
 .blog-page,
 .post-page {
   background-image: url('../images/blog-page-bg.jpg');
@@ -49,7 +46,6 @@ body {
 
 .post-page {
 }
-
 
 %bebas-neue {
   font-family: 'Bebas Neue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -120,6 +116,8 @@ body {
 
   .no-flexbox & {
     display: table;
+    table-layout: fixed;
+    width: 100%;
   }
 
   .flexbox & {
@@ -134,6 +132,7 @@ body {
   .no-flexbox & {
     display: table-cell;
     vertical-align: middle;
+    width: 400px;
   }
 }
 
@@ -212,6 +211,7 @@ body {
 
   a {
     @include color($blue-1);
+
     &:hover {
       @include color($blue-1, 0.8);
     }
