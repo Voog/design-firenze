@@ -72,8 +72,6 @@
     $(window).on("scroll", function(){
       // Forces to hide the topbar if browser is at the begginning of the page (IE fix).
       if ($(window).scrollTop() <= 0) {
-        console.log('hesp');
-        console.log(-topbarHeight);
         $(topbar).css({'top' : -topbarHeight});
       }
 

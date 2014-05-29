@@ -59,9 +59,9 @@
 
     $(document).ready(function() {
       currentUrl = window.location.href;
-      blogUrl = "{{ site.url }}/{{ page.path }}";
+      blogUrl = "{{ site.url }}{{ page.path }}";
       if (currentUrl === blogUrl) {
-        $(".blog-main").addClass("active");
+        $(".js-tags-all").addClass("active");
       };
     });
   </script>
