@@ -807,6 +807,7 @@ body {
 @media screen and (max-width: 480px) {
   .content-page .header-top {
     padding: 0 15px;
+    min-height: 30px;
   }
 }
 
