@@ -234,12 +234,6 @@
     },
     {
       "content_type": "image/jpeg",
-      "file": "images/front-page-bg-mobile.jpg",
-      "kind": "images",
-      "filename": "front-page-bg-mobile.jpg"
-    },
-    {
-      "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
       "filename": "front-page-bg.jpg"

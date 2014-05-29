@@ -12,6 +12,12 @@ body {
   height: 100% !important;
 }
 
+html {
+  background: url(../photos/front-page-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -21,9 +27,8 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: #888888;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 @media screen and (max-width: 720px) {
   .content-page body {
@@ -32,16 +37,16 @@ body {
 }
 
 .front-page {
-  background-image: url("../images/front-page-bg.jpg");
+  background: url("../photos/front-page-bg.jpg") no-repeat center center fixed;
 }
 
 .common-page {
-  background-image: url("../images/common-page-bg.jpg");
+  background: url("../photos/common-page-bg.jpg") no-repeat center center fixed;
 }
 
 .blog-page,
 .post-page {
-  background-image: url("../images/blog-page-bg.jpg");
+  background: url("../photos/blog-page-bg.jpg") no-repeat center center fixed;
 }
 
 .content-formatted h1, .menu-main, .header-title, .post-title,

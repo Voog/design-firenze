@@ -9,11 +9,11 @@
   <!-- Builds style tag for background image -->
   {% assign body_image_style = '' %}
   {% unless page.data.body_image == nil %}
-    {% assign body_image_style = ' style="background-image: ' %}
+    {% assign body_image_style = ' style="background: ' %}
     {% if page.data.body_image == '' %}
       {% assign body_image_style = body_image_style | append: 'none' %}
     {% else %}
-      {% assign body_image_style = body_image_style | append: "url('" | append: page.data.body_image | append: "')" %}
+      {% assign body_image_style = body_image_style | append: "url('" | append: page.data.body_image | append: "') no-repeat center center fixed" %}
     {% endif %}
     {% assign body_image_style = body_image_style | append: ';"' %}
   {% endunless %}

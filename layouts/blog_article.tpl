@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
+<!-- Sets the body background image value -->
+{% capture dont_render %}
+  {% if page.data.body_image == nil %}
+    {% assign body_image = '/images/blog-page-bg.jpg' %}
+  {% else %}
+    {% assign body_image = page.data.body_image %}
+  {% endif %}
+{% endcapture %}
+{% include "bg-picker-variables" %}
+<html class="blog-page js-bgpicker-body-image{% if editmode %}editmode{% else %}public{% endif %}"{{ body_image_style}} lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
-<meta property="og:url" content="{{ site.url }}">
+  <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
   <meta property="og:description" content="{{ article.excerpt | strip_html | truncate: 120 }}">
   {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
@@ -10,20 +19,10 @@
 
   {{ blog.rss_link }}
 
-  <!-- Sets the body background image value -->
-  {% capture dont_render %}
-    {% if page.data.body_image == nil %}
-      {% assign body_image = '/images/blog-page-bg.jpg' %}
-    {% else %}
-      {% assign body_image = page.data.body_image %}
-    {% endif %}
-  {% endcapture %}
-  {% include "bg-picker-variables" %}
-
   {{ site.stats_header }}
 </head>
 
-<body class="blog-page content-page js-bgpicker-body-image"{{ body_image_style }}>
+<body class="content-page"{{ body_image_style }}>
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>
 
