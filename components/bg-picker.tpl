@@ -12,8 +12,8 @@
       color: true,
 
       preview: function(data) {
-        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : '',
-            col = (data.color && data.color !== '') ? data.color : '';
+        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
+            col = (data.color && data.color !== '') ? data.color : 'none';
 
         $('.js-bgpicker-body-image').css({'background-image' : img});
         $('.js-bgpicker-body-color').css({'background-color' : col});
@@ -27,8 +27,8 @@
 
       commit: function(data) {
         pageData.set({
-          'body_image': data.image || null,
-          'body_color': data.color || null
+          'body_image': data.image || '',
+          'body_color': data.color || ''
         });
       }
     });

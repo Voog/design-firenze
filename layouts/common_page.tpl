@@ -6,11 +6,17 @@
   <meta property="og:title" content="{{ site.name }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}"><!-- TODO: Add image location data tag -->
+
+  <!-- Sets the body background image value -->
+  {% if page.data.body_image == nil %}
+    {% assign body_image = '/images/common-page-bg.jpg' %}
+  {% endif %}
+  {% include "bg-picker-variables" %}
 </head>
 
-<body class="common-page js-bgpicker-body-image" {% if page.data.body_image %}style="background-image: url('{{ page.data.body_image}}');"{% endif %}>
-  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ page.data.body_image }}" data-bg-color="{{ page.data.body_color }}"></button>{% endif %}
-  <div class="background-color js-bgpicker-body-color"{% if page.data.body_color %} style="background-color: {{ page.data.body_color }};{% if page.data.body_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
+<body class="common-page js-bgpicker-body-image"{{ body_image_style }}>
+  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
+  <div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>
 
   <div class="container js-container">
     <div class="container-inner">
