@@ -17,7 +17,7 @@
   {{ site.stats_header }}
 </head>
 
-<body class="blog-page js-bgpicker-body-image"{{ body_image_style }}>
+<body class="blog-page content-page js-bgpicker-body-image"{{ body_image_style }}>
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>
 

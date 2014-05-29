@@ -1,16 +1,12 @@
 /* HEADER */
 .header {
-  .common-page &,
-  .blog-page &,
-  .post-page & {
+  .content-page & {
     position: relative;
     padding: 0 5px 20px;
     @include border(bottom, 1px, solid, $primary-color, 0.33);
   }
 
-  .common-page &,
-  .blog-page &,
-  .post-page & {
+  .content-page & {
     @include query($mobile-1) {
       margin: 0 -20px;
     }
@@ -24,9 +20,7 @@
   }
 
   @include query($mobile-1) {
-    .common-page &,
-    .blog-page &,
-    .post-page & {
+    .content-page & {
       padding: 0 15px;
     }
   }
@@ -55,9 +49,7 @@
     }
   }
 
-  .common-page &,
-  .blog-page &,
-  .post-page & {
+  .content-page & {
     &,
     a {
       @include color($secondary-color);

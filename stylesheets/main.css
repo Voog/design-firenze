@@ -26,7 +26,7 @@ body {
   background-size: cover;
 }
 @media screen and (max-width: 720px) {
-  .common-page body, .blog-page body, .post-page body {
+  .content-page body {
     background: none !important;
   }
 }
@@ -99,7 +99,7 @@ body {
 .front-page .container-inner {
   max-width: 450px;
 }
-.common-page .container-inner, .blog-page .container-inner, .post-page .container-inner {
+.content-page .container-inner {
   max-width: 720px;
 }
 .no-flexbox .container-inner {
@@ -143,14 +143,13 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.content-page .wrap-inner {
+  background-color: white;
+}
 @media screen and (max-width: 480px) {
   .wrap-inner {
     padding: 20px;
   }
-}
-
-.common-page .wrap-inner, .blog-page .wrap-inner, .post-page .wrap-inner {
-  background-color: white;
 }
 
 .content-formatted {
@@ -341,13 +340,13 @@ body {
 .menu-main .menu .menu-item {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 8px;
+  margin-right: 8px;
 }
-.menu-main .menu .menu-item:first-child {
-  margin-left: 0;
+.menu-main .menu .menu-item:last-child {
+  margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  .common-page .menu-main .menu .menu-item, .blog-page .menu-main .menu .menu-item, .post-page .menu-main .menu .menu-item {
+  .content-page .menu-main .menu .menu-item {
     display: block;
     margin-left: 0;
   }
@@ -356,15 +355,15 @@ body {
   display: inline-block;
 }
 @media screen and (max-width: 480px) {
-  .common-page .menu-main .menu .menu-item.edit-btn, .blog-page .menu-main .menu .menu-item.edit-btn, .post-page .menu-main .menu .menu-item.edit-btn {
+  .content-page .menu-main .menu .menu-item.edit-btn {
     display: block;
   }
-  .common-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd, .blog-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd, .post-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd {
+  .content-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd {
     display: inline-block;
     margin: 6px 25px 8px 25px;
     padding: 0;
   }
-  .common-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover, .blog-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover, .post-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover {
+  .content-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover {
     background: none;
   }
 }
@@ -389,11 +388,11 @@ body {
   color: #888888;
   color: rgba(136, 136, 136, 0.8);
 }
-.common-page .menu-main .menu .menu-item .menu-link, .blog-page .menu-main .menu .menu-item .menu-link, .post-page .menu-main .menu .menu-item .menu-link {
+.content-page .menu-main .menu .menu-item .menu-link {
   font-size: 14px;
   color: #888888;
 }
-.common-page .menu-main .menu .menu-item .menu-link.active, .common-page .menu-main .menu .menu-item .menu-link.active:hover, .blog-page .menu-main .menu .menu-item .menu-link.active, .blog-page .menu-main .menu .menu-item .menu-link.active:hover, .post-page .menu-main .menu .menu-item .menu-link.active, .post-page .menu-main .menu .menu-item .menu-link.active:hover {
+.content-page .menu-main .menu .menu-item .menu-link.active, .content-page .menu-main .menu .menu-item .menu-link.active:hover {
   color: #444444;
 }
 .topbar .menu-main .menu .menu-item .menu-link.active, .topbar .menu-main .menu .menu-item .menu-link.active:hover {
@@ -423,36 +422,36 @@ body {
   display: none;
 }
 @media screen and (max-width: 480px) {
-  .common-page .menu-main .menu-lang, .blog-page .menu-main .menu-lang, .post-page .menu-main .menu-lang {
+  .content-page .menu-main .menu-lang {
     display: block;
     padding-left: 0;
   }
-  .common-page .menu-main .menu-lang .menu .menu-item, .blog-page .menu-main .menu-lang .menu .menu-item, .post-page .menu-main .menu-lang .menu .menu-item {
+  .content-page .menu-main .menu-lang .menu .menu-item {
     text-align: left;
   }
-  .common-page .menu-main .menu-lang .menu .menu-item:first-child, .blog-page .menu-main .menu-lang .menu .menu-item:first-child, .post-page .menu-main .menu-lang .menu .menu-item:first-child {
+  .content-page .menu-main .menu-lang .menu .menu-item:first-child {
     border-top: none;
   }
-  .common-page .menu-main .menu-lang .menu .menu-item .menu-link, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link, .post-page .menu-main .menu-lang .menu .menu-item .menu-link {
+  .content-page .menu-main .menu-lang .menu .menu-item .menu-link {
     padding: 6px 20px 4px 47px;
   }
-  .common-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .common-page .menu-main .menu-lang .menu .menu-item .menu-link:after, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link:after, .post-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .post-page .menu-main .menu-lang .menu .menu-item .menu-link:after {
+  .content-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .content-page .menu-main .menu-lang .menu .menu-item .menu-link:after {
     top: 12px;
     left: 20px;
   }
-  .common-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .common-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover, .post-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .post-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover {
+  .content-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .content-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover {
     font-weight: 600;
     background: none;
   }
-  .common-page .menu-main .menu-lang .menu .menu-item .menu-link:hover, .blog-page .menu-main .menu-lang .menu .menu-item .menu-link:hover, .post-page .menu-main .menu-lang .menu .menu-item .menu-link:hover {
+  .content-page .menu-main .menu-lang .menu .menu-item .menu-link:hover {
     background-color: #838586;
     background-color: rgba(131, 133, 134, 0.5);
   }
-  .common-page .menu-main .menu-lang .menu .menu-item.edit-btn, .blog-page .menu-main .menu-lang .menu .menu-item.edit-btn, .post-page .menu-main .menu-lang .menu .menu-item.edit-btn {
+  .content-page .menu-main .menu-lang .menu .menu-item.edit-btn {
     display: block;
     text-align: left;
   }
-  .common-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd, .blog-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd, .post-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd {
+  .content-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd {
     display: inline-block;
     padding: 0;
     margin: 11px 25px 11px 25px;
@@ -472,7 +471,7 @@ body {
   padding: 0;
 }
 @media screen and (max-width: 480px) {
-  .common-page .menu-lang, .blog-page .menu-lang, .post-page .menu-lang {
+  .content-page .menu-lang {
     position: static;
   }
 }
@@ -481,7 +480,7 @@ body {
   right: 30px;
 }
 @media screen and (max-width: 480px) {
-  .common-page .menu-lang, .blog-page .menu-lang, .post-page .menu-lang {
+  .content-page .menu-lang {
     display: none;
   }
 }
@@ -789,14 +788,14 @@ body {
 }
 
 /* HEADER */
-.common-page .header, .blog-page .header, .post-page .header {
+.content-page .header {
   position: relative;
   padding: 0 5px 20px;
   border-bottom: 1px solid #888888;
   border-bottom: 1px solid rgba(136, 136, 136, 0.33);
 }
 @media screen and (max-width: 480px) {
-  .common-page .header, .blog-page .header, .post-page .header {
+  .content-page .header {
     margin: 0 -20px;
   }
 }
@@ -806,7 +805,7 @@ body {
   border-bottom: 2px solid white;
 }
 @media screen and (max-width: 480px) {
-  .common-page .header-top, .blog-page .header-top, .post-page .header-top {
+  .content-page .header-top {
     padding: 0 15px;
   }
 }
@@ -829,13 +828,11 @@ body {
   color: white;
   color: rgba(255, 255, 255, 0.8);
 }
-.common-page .header-title,
-.common-page .header-title a, .blog-page .header-title,
-.blog-page .header-title a, .post-page .header-title,
-.post-page .header-title a {
+.content-page .header-title,
+.content-page .header-title a {
   color: #444444;
 }
-.common-page .header-title a:hover, .blog-page .header-title a:hover, .post-page .header-title a:hover {
+.content-page .header-title a:hover {
   color: #444444;
   color: rgba(68, 68, 68, 0.8);
 }

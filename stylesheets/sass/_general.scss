@@ -18,9 +18,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
-  .common-page &,
-  .blog-page &,
-  .post-page & {
+  .content-page & {
     @include query($tablet-2) {
       background: none !important;
     }
@@ -108,9 +106,7 @@ body {
     max-width: 450px;
   }
 
-  .common-page &,
-  .blog-page &,
-  .post-page & {
+  .content-page & {
     max-width: 720px;
   }
 
@@ -141,19 +137,13 @@ body {
   padding: 25px;
   @include box-sizing(border-box);
 
-  .common-page &,
-  .blog-page &,
-  .post-page & {
-    @extend %content-bg;
+  .content-page & {
+    @include bg($white);
   }
 
   @include query($mobile-1) {
     padding: 20px;
   }
-}
-
-%content-bg {
-  @include bg($white);
 }
 
 // Styling rules for the site's editable content areas.
