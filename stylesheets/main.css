@@ -876,16 +876,17 @@ body {
 
 /* SIDEBAR */
 /* CONTENT */
-.common-page .content, .blog-page .content, .post-page .content {
+.content {
+  display: block;
   padding: 43px 5px;
 }
 @media screen and (max-width: 720px) {
-  .common-page .content .container-inner, .blog-page .content .container-inner, .post-page .content .container-inner {
+  .content .container-inner {
     display: block;
   }
 }
 @media screen and (max-width: 480px) {
-  .common-page .content .content, .blog-page .content .content, .post-page .content .content {
+  .content .content {
     padding: 20px 0;
   }
 }

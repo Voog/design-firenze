@@ -1,21 +1,17 @@
 /* CONTENT */
 .content {
-  .common-page &,
-  .blog-page &,
-  .post-page & {
-    padding: 43px 5px;
+  display: block;
+  padding: 43px 5px;
 
-    @include query($tablet-2) {
-      .container-inner {
-        display: block;
-      }
+  @include query($tablet-2) {
+    .container-inner {
+      display: block;
     }
+  }
 
-    @include query($mobile-1) {
-      .content {
-        padding: 20px 0;
-      }
+  @include query($mobile-1) {
+    .content {
+      padding: 20px 0;
     }
-
   }
 }
