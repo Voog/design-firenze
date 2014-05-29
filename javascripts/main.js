@@ -1,5 +1,5 @@
 ;(function($) {
-  // SHOWS/HIDES THE POPOVER MAIN MENU (VISIBLE ON SMALLES SCREENS)
+  // Shows/hides the popover main menu (visible on smalles screens).
   var toggleMainMenu = function() {
     $('.js-menu-btn').click(function() {
       $(this).toggleClass('open');
@@ -7,7 +7,7 @@
     });
   };
 
-  // SWITCHES THE SITE LANGUAGE TO THE SELECTED VALUE FROM THE LANGUAGE MENU
+  // Shows/hides the popover language menu.
   var toggleLangMenu = function() {
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
@@ -15,6 +15,7 @@
     });
   };
 
+  // Shows/hides the popover tags menu.
   var toggleTagsMenu = function() {
     $('.js-tags-btn').click(function(event) {
       event.stopPropagation();
@@ -23,7 +24,7 @@
     });
   };
 
-  // HIDES THE POPOVER MAIN MENU IF CICKED ANYWHERE ELSE THAN THE MENU ITSELF (VISIBLE ON SMALLES SCREENS)
+  // Hides the popover main menu if clicked anywhere else than the menu itself (visible on smalles screens).
   var handlePopoverMenuHide = function() {
     $('html').click(function() {
       if ($('.js-menu-lang-popover').hasClass('expanded')) {
@@ -32,7 +33,7 @@
     });
   };
 
-  // REDUCES OPACITY OF THE GALLERY IMAGES THAT ARE NOT UNDER THE CURSOR
+  // Reduces opacity of the gallery images that are not under the cursor.
   var handleGalleryHover = function() {
     $('.edys-gallery-item').mouseover(function() {
       $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').addClass('inactive');
@@ -43,7 +44,16 @@
     });
   };
 
-  // TOGGLES THE TOPBAR OF THE POSITION AND SCROLL DIRECTION
+  // Scrolls to the comment-form if comment submit failed (to show the error messages to the user).
+  var focusCommentsWithErrors = function() {
+    $(document).ready(function() {
+      if ($('.form_field').hasClass('form_field_with_errors') === true) {
+        $('html, body').scrollTop($('.comment-form').offset().top);
+      }
+    });
+  };
+
+  // Toggles the topbar of the position and scroll direction
   var handleTopbarPosition = function() {
     var startScroll,
     toHandler,
@@ -61,10 +71,16 @@
     // console.log('topbarVisibleArea' + topbarVisibleArea);
     // console.log('tagsMenuHeight' + tagsMenuHeight);
 
-
     $(topbar).css({'top' : -topbarHeight});
 
     $(window).on("scroll", function(){
+      // Forces to hide the topbar if browser is at the begginning of the page (IE fix).
+      if ($(window).scrollTop() <= 0) {
+        console.log('hesp');
+        console.log(-topbarHeight);
+        $(topbar).css({'top' : -topbarHeight});
+      }
+
       if (!startScroll) {
         startScroll = $(window).scrollTop();
       } else {
@@ -86,21 +102,13 @@
     });
   };
 
-  // SCROLLS TO THE COMMENT-FORM IF COMMENT SUBMIT FAILED (TO SHOW THE ERROR MESSAGES TO THE USER)
-  var focusCommentsWithErrors = function() {
-    $(document).ready(function() {
-      if ($('.form_field').hasClass('form_field_with_errors') === true) {
-        $('html, body').scrollTop($('.comment-form').offset().top);
-      }
-    });
-  };
-
-  // TODO: Remove if Edicy is going to wrap table with the container
+  // Wraps tables in the container.
+  // TODO: remove if edicy is going to wrap table with the container.
   var wrapTables = function() {
     $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
   };
 
-  // CHECK THE PRESENCE OF THE SCROLLBAR
+  // Checks the presence of the table scrollbar.
   var checkScrollBar = function() {
     jQuery.fn.hasScrollBar = function(direction) {
       if (direction == 'vertical') {
@@ -112,7 +120,7 @@
     }
   };
 
-  // ADDS HORIZONTAL SCROLL TO TABLES THAT DON'T FIT INTO THE CONTENT AREA
+  // Adds horizontal scroll to tables that don't fit into the content area.
   var handleTableHorizontalScrolling = function() {
     $.each($('.table-container'), function() {
       if ($(this).hasScrollBar('horizontal') === true) {
@@ -123,7 +131,7 @@
     });
   };
 
-  // INITIATES THE TABLE HORISONTAL SCROLL FUNCTION WHEN WINDOW IS RESIZED
+  // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTopbarPosition();
@@ -133,26 +141,26 @@
 
     // Initiations
     var initBlogPage = function() {
-      // ADD BLOG LISTING VIEW SPECIFIC FUNCTIONS HERE
+      // Add blog listing view specific functions here.
       handleTopbarPosition();
       toggleTagsMenu();
     };
 
     var initArticlePage = function() {
-      // ADD SINGLE POST VIEW SPECIFIC FUNCTIONS HERE
+      // Add single post view specific functions here.
       handleTopbarPosition();
       toggleTagsMenu();
       focusCommentsWithErrors();
     };
 
     var initCommonPage = function() {
-      // ADD COMMON PAGE SPECIFIC FUNCTIONS HERE
+      // Add common page specific functions here.
       handleTopbarPosition();
       focusCommentsWithErrors();
     };
 
     var init = function() {
-      // ADD SITE WIDE FUNCTIONS HERE
+      // Add site wide functions here.
       toggleMainMenu();
       toggleLangMenu();
       handlePopoverMenuHide();
@@ -165,12 +173,14 @@
       }
     };
 
-    // ENABLES THE USAGE OF THE INITIATIONS OUTSIDE THIS FILE
+    // Enables the usage of the initiations outside this file.
+    // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
     window.site = $.extend(window.site || {}, {
       initBlogPage: initBlogPage,
       initArticlePage: initArticlePage,
       initCommonPage: initCommonPage
     });
 
+    // Initiates site wide functions.
     init();
   })(jQuery);
