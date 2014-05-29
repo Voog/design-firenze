@@ -358,8 +358,8 @@ body {
 @media screen and (max-width: 480px) {
   .common-page .header .menu-main.expanded, .blog-page .header .menu-main.expanded, .post-page .header .menu-main.expanded {
     top: 50px;
-    left: -5px;
-    right: -5px;
+    left: 0;
+    right: 0;
     min-width: 0;
     margin-bottom: 40px;
     -webkit-box-shadow: none;
