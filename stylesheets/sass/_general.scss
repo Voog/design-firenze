@@ -122,6 +122,15 @@ body {
     @include align-content(center);
     @include justify-content(center);
   }
+
+  @include query($mobile-1) {
+    .content-page & {
+      .no-flexbox &,
+      .flexbox & {
+        display: block;
+      }
+    }
+  }
 }
 
 .wrap {

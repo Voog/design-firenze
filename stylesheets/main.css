@@ -129,6 +129,11 @@ body {
   -moz-justify-content: center;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .no-flexbox .content-page .container-inner, .flexbox .content-page .container-inner {
+    display: block;
+  }
+}
 
 .no-flexbox .wrap {
   display: table-cell;
