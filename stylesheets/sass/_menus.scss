@@ -142,34 +142,7 @@
       .content-page & {
         @include query($mobile-1) {
           display: block;
-          margin-left: 0;
-        }
-      }
-
-      &.edit-btn {
-        display: inline-block;
-
-        .content-page & {
-          @include query($mobile-1) {
-            display: block;
-
-            .edy-menu-menuadd {
-              display: inline-block;
-              margin: 6px 25px 8px 25px;
-              padding: 0;
-
-              &:hover {
-                background: none;
-              }
-            }
-          }
-        }
-
-        @include query($mobile-1) {
-          display: block;
-          margin: 0;
-          font-size: 20px;
-          @include border(bottom, 1px, solid, $primary-color, 0.2);
+          margin-right: 0;
         }
       }
 
@@ -217,12 +190,10 @@
           @include color($red, 0.5);
         }
 
-        .common-page .header &,
-        .blog-page .header &,
-        .post-page .header & {
+        .content-page & {
           @include query($mobile-1) {
             display: block;
-            padding: 6px 20px 4px;
+            padding: 8px 20px 5px;
             font-size: 20px;
             @include border(bottom, 1px, solid, $primary-color, 0.33);
 
@@ -236,6 +207,34 @@
             }
           }
         }
+      }
+    }
+
+    .edit-btn {
+      display: inline-block;
+      margin-left: 8px;
+
+      .content-page & {
+        @include query($mobile-1) {
+          display: block;
+
+          .edy-menu-menuadd {
+            display: inline-block;
+            margin: 6px 25px 8px 25px;
+            padding: 0;
+
+            &:hover {
+              background: none;
+            }
+          }
+        }
+      }
+
+      @include query($mobile-1) {
+        display: block;
+        margin: 0;
+        font-size: 20px;
+        @include border(bottom, 1px, solid, $primary-color, 0.2);
       }
     }
   }
@@ -267,23 +266,23 @@
               &.active,
               &.active:hover {
                 font-weight: 600;
+              }
+
+              &.active,
+              &:hover {
                 background: none;
               }
-
-              &:hover {
-                @include bg($grey-1, 0.5);
-              }
             }
+          }
 
-            &.edit-btn {
-              display: block;
-              text-align: left;
+          .edit-btn {
+            display: block;
+            text-align: left;
 
-              .edy-menu-langadd {
-                display: inline-block;
-                padding: 0;
-                margin: 11px 25px 11px 25px;
-              }
+            .edy-menu-langadd {
+              display: inline-block;
+              margin: 5px 25px 8px 25px;
+              padding: 0;
             }
           }
         }
@@ -351,9 +350,13 @@
     }
   }
 
+  .edit-btn {
+    text-align: right;
+  }
+
   .edy-menu-langadd {
     display: inline-block;
-    padding: 10px 15px 5px;
+    padding: 10px 20px 5px;
 
     &:hover {
       background: none;

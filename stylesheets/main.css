@@ -148,6 +148,7 @@ body {
 
 .wrap-inner {
   max-width: 720px;
+  margin: 0 auto;
   padding: 25px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -380,32 +381,7 @@ body {
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu .menu-item {
     display: block;
-    margin-left: 0;
-  }
-}
-.menu-main .menu .menu-item.edit-btn {
-  display: inline-block;
-}
-@media screen and (max-width: 480px) {
-  .content-page .menu-main .menu .menu-item.edit-btn {
-    display: block;
-  }
-  .content-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd {
-    display: inline-block;
-    margin: 6px 25px 8px 25px;
-    padding: 0;
-  }
-  .content-page .menu-main .menu .menu-item.edit-btn .edy-menu-menuadd:hover {
-    background: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .menu-main .menu .menu-item.edit-btn {
-    display: block;
-    margin: 0;
-    font-size: 20px;
-    border-bottom: 1px solid #888888;
-    border-bottom: 1px solid rgba(136, 136, 136, 0.2);
+    margin-right: 0;
   }
 }
 .front-page .menu-main .menu .menu-item .menu-link {
@@ -442,12 +418,38 @@ body {
   color: rgba(204, 0, 0, 0.5);
 }
 @media screen and (max-width: 480px) {
-  .common-page .header .menu-main .menu .menu-item .menu-link, .blog-page .header .menu-main .menu .menu-item .menu-link, .post-page .header .menu-main .menu .menu-item .menu-link {
+  .content-page .menu-main .menu .menu-item .menu-link {
     display: block;
-    padding: 6px 20px 4px;
+    padding: 8px 20px 5px;
     font-size: 20px;
     border-bottom: 1px solid #888888;
     border-bottom: 1px solid rgba(136, 136, 136, 0.33);
+  }
+}
+.menu-main .menu .edit-btn {
+  display: inline-block;
+  margin-left: 8px;
+}
+@media screen and (max-width: 480px) {
+  .content-page .menu-main .menu .edit-btn {
+    display: block;
+  }
+  .content-page .menu-main .menu .edit-btn .edy-menu-menuadd {
+    display: inline-block;
+    margin: 6px 25px 8px 25px;
+    padding: 0;
+  }
+  .content-page .menu-main .menu .edit-btn .edy-menu-menuadd:hover {
+    background: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-main .menu .edit-btn {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #888888;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.2);
   }
 }
 .menu-main .menu-lang {
@@ -473,20 +475,18 @@ body {
   }
   .content-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .content-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover {
     font-weight: 600;
+  }
+  .content-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .content-page .menu-main .menu-lang .menu .menu-item .menu-link:hover {
     background: none;
   }
-  .content-page .menu-main .menu-lang .menu .menu-item .menu-link:hover {
-    background-color: #838586;
-    background-color: rgba(131, 133, 134, 0.5);
-  }
-  .content-page .menu-main .menu-lang .menu .menu-item.edit-btn {
+  .content-page .menu-main .menu-lang .menu .edit-btn {
     display: block;
     text-align: left;
   }
-  .content-page .menu-main .menu-lang .menu .menu-item.edit-btn .edy-menu-langadd {
+  .content-page .menu-main .menu-lang .menu .edit-btn .edy-menu-langadd {
     display: inline-block;
+    margin: 5px 25px 8px 25px;
     padding: 0;
-    margin: 11px 25px 11px 25px;
   }
 }
 
@@ -540,9 +540,12 @@ body {
   top: 4px;
   right: 12px;
 }
+.menu-lang .edit-btn {
+  text-align: right;
+}
 .menu-lang .edy-menu-langadd {
   display: inline-block;
-  padding: 10px 15px 5px;
+  padding: 10px 20px 5px;
 }
 .menu-lang .edy-menu-langadd:hover {
   background: none;
