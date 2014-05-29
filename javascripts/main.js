@@ -135,13 +135,13 @@
 
     // Initiations
     var initBlogPage = function() {
-      // Add blog listing view specific functions here.
+      // Add blog listing layout specific functions here.
       handleTopbarPosition();
       toggleTagsMenu();
     };
 
     var initArticlePage = function() {
-      // Add single post view specific functions here.
+      // Add single post layout specific functions here.
       handleTopbarPosition();
       toggleTagsMenu();
       focusCommentsWithErrors();
