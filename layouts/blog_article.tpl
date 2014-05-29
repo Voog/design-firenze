@@ -11,9 +11,13 @@
   {{ blog.rss_link }}
 
   <!-- Sets the body background image value -->
-  {% if page.data.body_image == nil %}
-    {% assign body_image = '/images/blog-page-bg.jpg' %}
-  {% endif %}
+  {% capture dont_render %}
+    {% if page.data.body_image == nil %}
+      {% assign body_image = '/images/blog-page-bg.jpg' %}
+    {% else %}
+      {% assign body_image = page.data.body_image %}
+    {% endif %}
+  {% endcapture %}
   {% include "bg-picker-variables" %}
 
   {{ site.stats_header }}

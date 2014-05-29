@@ -9,9 +9,13 @@
   {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% endif %}
 
   <!-- Sets the body background image value -->
-  {% if page.data.body_image == nil %}
-    {% assign body_image = '/images/common-page-bg.jpg' %}
-  {% endif %}
+  {% capture dont_render %}
+    {% if page.data.body_image == nil %}
+      {% assign body_image = '/images/common-page-bg.jpg' %}
+    {% else %}
+      {% assign body_image = page.data.body_image %}
+    {% endif %}
+  {% endcapture %}
   {% include "bg-picker-variables" %}
 
   {{ site.stats_header }}
