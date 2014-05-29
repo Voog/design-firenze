@@ -203,10 +203,10 @@
       "filename": "ico-search.svg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/arrow-down.png",
-      "kind": "images",
-      "filename": "arrow-down.png"
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-tick.svg",
+      "kind": "assets",
+      "filename": "ico-tick.svg"
     },
     {
       "content_type": "image/jpeg",
@@ -221,18 +221,6 @@
       "filename": "common-page-bg.jpg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/flag-sprite.png",
-      "kind": "images",
-      "filename": "flag-sprite.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/flag-sprite@2x.png",
-      "kind": "images",
-      "filename": "flag-sprite@2x.png"
-    },
-    {
       "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
@@ -240,9 +228,39 @@
     },
     {
       "content_type": "image/png",
+      "file": "images/ico-arrow-down.png",
+      "kind": "images",
+      "filename": "ico-arrow-down.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-close.png",
+      "kind": "images",
+      "filename": "ico-close.png"
+    },
+    {
+      "content_type": "image/png",
       "file": "images/ico-flags-small.png",
       "kind": "images",
       "filename": "ico-flags-small.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-flags.png",
+      "kind": "images",
+      "filename": "ico-flags.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-search.png",
+      "kind": "images",
+      "filename": "ico-search.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-tick.png",
+      "kind": "images",
+      "filename": "ico-tick.png"
     },
     {
       "content_type": "application/javascript",
