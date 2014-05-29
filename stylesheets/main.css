@@ -379,6 +379,10 @@ body {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
+  .menu-main .menu .menu-item:first-child {
+    border-top: 1px solid #888888;
+    border-top: 1px solid rgba(136, 136, 136, 0.33);
+  }
   .content-page .menu-main .menu .menu-item {
     display: block;
     margin-right: 0;
@@ -424,10 +428,6 @@ body {
     font-size: 20px;
     border-bottom: 1px solid #888888;
     border-bottom: 1px solid rgba(136, 136, 136, 0.33);
-  }
-  .content-page .menu-main .menu .menu-item .menu-link:first-child {
-    border-top: 1px solid #888888;
-    border-top: 1px solid rgba(136, 136, 136, 0.33);
   }
 }
 .menu-main .menu .edit-btn {

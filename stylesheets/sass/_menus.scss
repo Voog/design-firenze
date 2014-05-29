@@ -139,8 +139,12 @@
         margin-right: 0;
       }
 
-      .content-page & {
-        @include query($mobile-1) {
+      @include query($mobile-1) {
+        &:first-child {
+          @include border(top, 1px, solid, $primary-color, 0.33);
+        }
+
+        .content-page & {
           display: block;
           margin-right: 0;
         }
@@ -196,10 +200,6 @@
             padding: 8px 20px 5px;
             font-size: 20px;
             @include border(bottom, 1px, solid, $primary-color, 0.33);
-
-            &:first-child {
-              @include border(top, 1px, solid, $primary-color, 0.33);
-            }
 
             &.active,
             &.active:hover {
