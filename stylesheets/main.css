@@ -222,6 +222,28 @@ body {
 .content-formatted .edy-texteditor-view {
   min-height: 18px;
 }
+.content-formatted .table-container {
+  margin-top: 20px;
+}
+.content-formatted .overthrow {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.content-formatted .horizontal-scroll {
+  border-left: 1px dashed #f2f2f2;
+  border-right: 1px dashed #f2f2f2;
+}
+.content-formatted table {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px;
+  border-collapse: collapse;
+}
+.content-formatted table td {
+  padding: 10px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
 
 /* MENUS */
 .menu-btn {
@@ -963,30 +985,6 @@ body {
 }
 .edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image.inactive {
   opacity: 0.6;
-}
-
-/* TABLES */
-.content-formatted .table-container {
-  margin-top: 20px;
-}
-.content-formatted .overthrow {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.content-formatted .horizontal-scroll {
-  border-left: 1px dashed #f2f2f2;
-  border-right: 1px dashed #f2f2f2;
-}
-.content-formatted table {
-  width: 100%;
-  margin-top: 20px;
-  font-size: 16px;
-  border-collapse: collapse;
-}
-.content-formatted table td {
-  padding: 10px;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
 }
 
 /* SEARCH */
