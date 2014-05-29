@@ -4,7 +4,7 @@
 }
 
 .no-svg .menu-lang-btn:after, .no-svg
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:after {
   background-image: url("../images/ico-flags-small.png");
 }
 
