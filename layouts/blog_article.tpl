@@ -13,6 +13,8 @@
     {% assign body_image = '/images/blog-page-bg.jpg' %}
   {% endif %}
   {% include "bg-picker-variables" %}
+
+  {{ site.stats_header }}
 </head>
 
 <body class="blog-page js-bgpicker-body-image"{{ body_image_style }}>
