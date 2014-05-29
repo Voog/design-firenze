@@ -1,34 +1,28 @@
 /* GALLERY */
-// .edys-gallery-area {
-//   margin-top: 20px;
+// Styling rules for the built-in image gallery thumbnails.  These rules affect the entire site's image galleries.
+// NB! It is not recommended to set the width and height of the thumbail image (.edys-gallery-image) larger than 100px because the generated thumbnail's original size is 100x100px.
+.edys-gallery-area {
+  margin-top: 20px;
 
-//   &:first-child {
-//     margin-top: 0;
-//   }
+  &:first-child {
+    margin-top: 0;
+  }
 
-//   .edys-gallery {
-//     @extend %clearfix;
+  .edys-gallery {
+    @extend %clearfix;
+    .edys-gallery-item {
+      display: inline-block;
+      padding-bottom: 1px;
 
-//     a {
-//       &.edys-gallery-item {
-//         display: inline-block;
-//         width: 90.2px;
-//         padding-right: 4px;
+      .edys-gallery-image {
+        display: block;
+        width: auto;
+        height: auto;
 
-//         &:nth-child(7n+7) {
-//           margin-right: 0;
-//         }
-
-//         .edys-gallery-image {
-//           display: block;
-//           width: 100%;
-//           height: auto;
-
-//           &.inactive {
-//             opacity: 0.6;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+        &.inactive {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

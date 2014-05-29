@@ -55,7 +55,7 @@ body {
   font-family: 'Bebas Neue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
-.content-formatted:after {
+.content-formatted:after, .edys-gallery-area .edys-gallery:after {
   content: '';
   display: table;
   clear: both;
@@ -946,6 +946,25 @@ body {
 }
 
 /* GALLERY */
+.edys-gallery-area {
+  margin-top: 20px;
+}
+.edys-gallery-area:first-child {
+  margin-top: 0;
+}
+.edys-gallery-area .edys-gallery .edys-gallery-item {
+  display: inline-block;
+  padding-bottom: 1px;
+}
+.edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image {
+  display: block;
+  width: auto;
+  height: auto;
+}
+.edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image.inactive {
+  opacity: 0.6;
+}
+
 /* TABLES */
 .content-formatted .table-container {
   margin-top: 20px;
