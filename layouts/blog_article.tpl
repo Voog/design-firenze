@@ -2,10 +2,12 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
-  <meta property="og:url" content="{{ site.url }}">
+<meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}"><!-- TODO: Add image location data tag -->
+  <meta property="og:description" content="{{ article.excerpt | strip_html | truncate: 120 }}">
+  {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
+  {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
+
   {{ blog.rss_link }}
 
   <!-- Sets the body background image value -->
