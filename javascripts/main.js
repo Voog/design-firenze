@@ -67,10 +67,6 @@
     topbarVisibleArea = $(header).outerHeight() + 150,
     tagsMenuHeight = $(tagsMenu).outerHeight();
 
-    // console.log('topbarHeight' + topbarHeight);
-    // console.log('topbarVisibleArea' + topbarVisibleArea);
-    // console.log('tagsMenuHeight' + tagsMenuHeight);
-
     $(topbar).css({'top' : -topbarHeight});
 
     $(window).on("scroll", function(){
