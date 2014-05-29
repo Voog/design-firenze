@@ -117,7 +117,7 @@
 
     @include query($mobile-1) {
       &.expanded {
-        top: 21px;
+        top: 50px;
         left: -5px;
         right: -5px;
         min-width: 0;
@@ -196,6 +196,10 @@
             padding: 8px 20px 5px;
             font-size: 20px;
             @include border(bottom, 1px, solid, $primary-color, 0.33);
+
+            &:first-child {
+              @include border(top, 1px, solid, $primary-color, 0.33);
+            }
 
             &.active,
             &.active:hover {
