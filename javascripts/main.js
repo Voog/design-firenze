@@ -96,6 +96,14 @@
     });
   };
 
+  // Positions footer on front page layout.
+  var handleFooterPosition = function() {
+    var windowHeight = $(window).height(),
+    footerHeight = $('.js-footer').height();
+
+    console.log('windowHeight: ' + windowHeight);
+  };
+
   // Wraps tables in the container.
   // TODO: remove if edicy is going to wrap table with the container.
   var wrapTables = function() {
@@ -129,6 +137,7 @@
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTopbarPosition();
+      handleFooterPosition();
       handleTableHorizontalScrolling();
     });
   };
@@ -153,6 +162,11 @@
       focusCommentsWithErrors();
     };
 
+    var initFrontPage = function() {
+      // Add front page specific functions here.
+      handleFooterPosition();
+    };
+
     var init = function() {
       // Add site wide functions here.
       toggleMainMenu();
@@ -172,7 +186,8 @@
     window.site = $.extend(window.site || {}, {
       initBlogPage: initBlogPage,
       initArticlePage: initArticlePage,
-      initCommonPage: initCommonPage
+      initCommonPage: initCommonPage,
+      initFrontPage: initFrontPage
     });
 
     // Initiates site wide functions.

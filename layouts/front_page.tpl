@@ -40,8 +40,10 @@
 
   {% include "javascripts" %}
   {% include "bg-picker" %}
-  {% unless page.data.body_image == '' %}
-    <script>$.backstretch('{{ body_image }}');</script>
-  {% endunless %}
+  <script>
+    {% unless article.data.body_image == '' %}$.backstretch('{{ body_image }}');{% endunless %}
+
+    site.initFrontPage();
+  </script>
 </body>
 </html>
