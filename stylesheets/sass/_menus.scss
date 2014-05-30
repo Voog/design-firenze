@@ -95,9 +95,11 @@
     text-align: center;
   }
 
-  .common-page .header &,
-  .blog-page .header &,
-  .post-page .header & {
+  .topbar & {
+    max-width: 525px;
+  }
+
+  .content-page .header & {
     @include query($mobile-1) {
       display: none;
 

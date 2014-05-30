@@ -13,7 +13,7 @@
   {{ site.stats_header }}
 </head>
 
-<body class="blog-page content-page js-bgpicker-body-image">
+<body class="post-page content-page js-bgpicker-body-image">
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>
 
@@ -41,7 +41,7 @@
               </div>
             </article>
 
-            {% if editmode %}<div class="tags-editor">{% editable article.tags %}</div>{% endif %}
+            {% if editmode %}<div class="post-tags">{% editable article.tags %}</div>{% endif %}
           </main>
 
           <section id="comments" class="comments content-formatted">

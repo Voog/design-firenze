@@ -34,12 +34,10 @@
 
 .post-comments-count {
   a {
+    @include color($blue-1);
+
     &:hover {
       @include color($blue-1, 0.8);
-    }
-
-    &:visited {
-      @include color($blue-1);
     }
   }
 }
@@ -63,4 +61,7 @@
 }
 
 .post-page {
+  .post-tags {
+    margin-top: 20px;
+  }
 }
