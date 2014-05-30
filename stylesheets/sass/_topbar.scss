@@ -17,7 +17,8 @@
     padding: 12px 30px;
   }
 
-  // @include query($tablet-1) {
-  //   display: none;
-  // }
+  // TODO: Add topbar support to mobile devices.
+  @include query($tablet-1) {
+    display: none;
+  }
 }
