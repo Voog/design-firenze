@@ -155,10 +155,10 @@ body {
 .content-formatted {
   word-wrap: break-word;
 }
-.content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6, .content-formatted p, .content-formatted ul, .content-formatted ol, .content-formatted pre, .content-formatted code, .content-formatted img, .content-formatted table form {
+.content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6, .content-formatted p, .content-formatted ul, .content-formatted ol, .content-formatted pre, .content-formatted code, .content-formatted img, .content-formatted iframe, .content-formatted table form {
   margin-bottom: 0;
 }
-.content-formatted h1:first-child, .content-formatted h2:first-child, .content-formatted h3:first-child, .content-formatted h4:first-child, .content-formatted h5:first-child, .content-formatted h6:first-child, .content-formatted p:first-child, .content-formatted ul:first-child, .content-formatted ol:first-child, .content-formatted pre:first-child, .content-formatted code:first-child, .content-formatted img:first-child, .content-formatted table form:first-child {
+.content-formatted h1:first-child, .content-formatted h2:first-child, .content-formatted h3:first-child, .content-formatted h4:first-child, .content-formatted h5:first-child, .content-formatted h6:first-child, .content-formatted p:first-child, .content-formatted ul:first-child, .content-formatted ol:first-child, .content-formatted pre:first-child, .content-formatted code:first-child, .content-formatted img:first-child, .content-formatted iframe:first-child, .content-formatted table form:first-child {
   margin-top: 0;
 }
 .content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
@@ -996,23 +996,36 @@ body {
   max-width: 100%;
   margin-top: 20px;
 }
+.content-formatted .form_field {
+  margin-top: 15px;
+}
+.content-formatted .form_field:first-child {
+  margin-top: 0;
+}
 .content-formatted .form_field,
 .content-formatted .edy-fe-label {
   font-size: 14px;
   color: #444444;
 }
-.content-formatted .form_field:first-child,
-.content-formatted .edy-fe-label:first-child {
-  margin-top: 0;
-}
-.content-formatted .form_field {
-  margin-top: 20px;
-}
-.content-formatted .form_field label,
-.content-formatted .edy-fe-label {
-  display: block;
-  font-weight: 600;
+.content-formatted .form_field label {
+  position: relative;
+  display: inline;
+  padding-left: 8px;
+  font-weight: 400;
   line-height: 1.3;
+  cursor: pointer;
+}
+.content-formatted .form_field label:after {
+  content: '\a';
+  white-space: pre;
+}
+.content-formatted .form_field label:before {
+  display: block;
+}
+.content-formatted .form_field .edy-fe-label,
+.content-formatted .form_field .form_field_label {
+  padding-left: 0;
+  font-weight: 600;
 }
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
@@ -1034,7 +1047,7 @@ body {
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select {
   width: 280px;
-  margin: 0;
+  margin: 8px 0 0;
   padding: 5px 8px 6px;
   background-color: #f2f2f2;
   border: none;
@@ -1067,6 +1080,55 @@ body {
 }
 .svg .content-formatted .form_field_select {
   background-image: url("../images/ico-arrow-down.png");
+}
+.content-formatted .form_field_checkbox,
+.content-formatted .form_field_radio {
+  visibility: hidden;
+  margin-bottom: 8px;
+}
+.content-formatted .form_field_checkbox + .form_control_indicator,
+.content-formatted .form_field_radio + .form_control_indicator {
+  position: absolute;
+  left: 3px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #f2f2f2;
+}
+.content-formatted .form_field_checkbox + .form_control_indicator {
+  top: 3px;
+}
+.content-formatted .form_field_checkbox:checked + .form_control_indicator:before {
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  content: '';
+  background-size: cover;
+}
+.no-svg .content-formatted .form_field_checkbox:checked + .form_control_indicator:before {
+  background-image: url("../images/ico-tick.png");
+}
+.svg .content-formatted .form_field_checkbox:checked + .form_control_indicator:before {
+  background-image: url("../assets/ico-tick.svg");
+}
+.content-formatted .form_field_radio + .form_control_indicator {
+  top: 2px;
+}
+.content-formatted .form_field_radio + .form_control_indicator, .content-formatted .form_field_radio + .form_control_indicator:before {
+  border-radius: 100%;
+}
+.content-formatted .form_field_radio:checked + .form_control_indicator:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  content: '';
+  background-color: #444444;
 }
 .content-formatted .form_field_size_medium {
   width: 420px;
