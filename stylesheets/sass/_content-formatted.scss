@@ -1,3 +1,4 @@
+
 // Styling rules for the site's editable content area and its elements.
 // NB! Each editable content-area - {% content %} - should be wrapped in the element that has the "content-formatted" class.
 // NB! Contact forms and image galleries are located in the separate partials: "_forms.scss" and "_gallery.scss".
@@ -87,9 +88,40 @@
     }
   }
 
+  .edy-texteditor-container {
+    &.edy-positionable-container-left,
+    &.edy-positionable-container-right {
+      width: 45%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    &.edy-positionable-container-left {
+      margin-right: 6%;
+    }
+
+    &.edy-positionable-container-right {
+      margin-left: 6%;
+    }
+
+    &.edy-positionable-container-left,
+    &.edy-positionable-container-right {
+      @include query($mobile-1) {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
   // Minimal height of the editable content area (to avoid content area visual 'jumping' when content-area is focused).
   .edy-texteditor-view {
     min-height: 18px;
+
+    .footer & {
+      min-height: 12px;
+    }
   }
 
 
