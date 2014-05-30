@@ -1,5 +1,6 @@
 <script src="{{ javascripts_path }}/jquery.js?3"></script>
 <script src="{{ javascripts_path }}/main.js?3"></script>
+<script src="{{ javascripts_path }}/backstretch.js?3"></script>
 <script src="{{ javascripts_path }}/retina.js?3"></script>
 <script src="{{ javascripts_path }}/overthrow.js?3"></script>
 

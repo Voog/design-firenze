@@ -1,14 +1,5 @@
 <!DOCTYPE html>
-<!-- Sets the body background image value -->
-{% capture dont_render %}
-  {% if page.data.body_image == nil %}
-    {% assign body_image = '/images/blog-page-bg.jpg' %}
-  {% else %}
-    {% assign body_image = page.data.body_image %}
-  {% endif %}
-{% endcapture %}
-{% include "bg-picker-variables" %}
-<html class="blog-page js-bgpicker-body-image{% if editmode %}editmode{% else %}public{% endif %}"{{ body_image_style}} lang="{{ page.language_code }}">
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
   <meta property="og:url" content="{{ site.url }}">
@@ -19,10 +10,12 @@
 
   {{ blog.rss_link }}
 
+  {% include "bg-picker-variables" %}
+
   {{ site.stats_header }}
 </head>
 
-<body class="content-page"{{ body_image_style }}>
+<body class="blog-page content-page js-bgpicker-body-image">
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>
 
@@ -58,10 +51,7 @@
 
   {% include "javascripts" %}
   {% include "bg-picker" %}
-
   <script>
-    site.initBlogPage();
-
     $(document).ready(function() {
       currentUrl = window.location.href;
       blogUrl = "{{ site.url }}{{ page.path }}";
@@ -69,6 +59,10 @@
         $(".js-tags-all").addClass("active");
       };
     });
+
+    {% unless page.data.body_image == '' %}$.backstretch('{{ body_image }}');{% endunless %}
+
+    site.initBlogPage();
   </script>
 </body>
 </html>

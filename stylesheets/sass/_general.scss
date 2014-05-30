@@ -5,12 +5,6 @@ body {
   height: 100% !important;
 }
 
-html {
-  background: url(../photos/front-page-bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
-}
-
 body {
   position: relative;
   margin: 0;
@@ -20,8 +14,8 @@ body {
   font-size: 14px;
   line-height: 1.4;
   @include color($primary-color);
-overflow: scroll;
--webkit-overflow-scrolling: touch;
+
+  -webkit-overflow-scrolling: touch;
 
   .content-page & {
     @include query($tablet-2) {
@@ -30,19 +24,19 @@ overflow: scroll;
   }
 }
 
-// Layout specific body classes.
-.front-page {
-  background: url('../photos/front-page-bg.jpg') no-repeat center center fixed;
-}
+// // Layout specific body classes.
+// .front-page {
+//   background: url('../photos/front-page-bg.jpg') no-repeat center center fixed;
+// }
 
-.common-page {
-  background: url('../photos/common-page-bg.jpg') no-repeat center center fixed;
-}
+// .common-page {
+//   background: url('../photos/common-page-bg.jpg') no-repeat center center fixed;
+// }
 
-.blog-page,
-.post-page {
-  background: url('../photos/blog-page-bg.jpg') no-repeat center center fixed;
-}
+// .blog-page,
+// .post-page {
+//   background: url('../photos/blog-page-bg.jpg') no-repeat center center fixed;
+// }
 
 .blog-page {
 }
@@ -143,6 +137,14 @@ overflow: scroll;
     display: table-cell;
     vertical-align: middle;
     width: 400px;
+  }
+
+  @include query($mobile-1) {
+    .no-flexbox &,
+    .flexbox & {
+      display: block;
+      width: auto;
+    }
   }
 }
 

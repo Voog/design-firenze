@@ -264,6 +264,12 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/backstretch.js",
+      "kind": "javascripts",
+      "filename": "backstretch.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/jquery.js",
       "kind": "javascripts",
       "filename": "jquery.js"

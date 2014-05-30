@@ -12,12 +12,6 @@ body {
   height: 100% !important;
 }
 
-html {
-  background: url(../photos/front-page-bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
-}
-
 body {
   position: relative;
   margin: 0;
@@ -27,26 +21,12 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: #888888;
-  overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 @media screen and (max-width: 720px) {
   .content-page body {
     background: none !important;
   }
-}
-
-.front-page {
-  background: url("../photos/front-page-bg.jpg") no-repeat center center fixed;
-}
-
-.common-page {
-  background: url("../photos/common-page-bg.jpg") no-repeat center center fixed;
-}
-
-.blog-page,
-.post-page {
-  background: url("../photos/blog-page-bg.jpg") no-repeat center center fixed;
 }
 
 .content-formatted h1, .menu-main, .header-title, .post-title,
@@ -144,6 +124,12 @@ body {
   display: table-cell;
   vertical-align: middle;
   width: 400px;
+}
+@media screen and (max-width: 480px) {
+  .no-flexbox .wrap, .flexbox .wrap {
+    display: block;
+    width: auto;
+  }
 }
 
 .wrap-inner {
