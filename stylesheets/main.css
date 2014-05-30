@@ -133,14 +133,17 @@ body {
 }
 
 .wrap-inner {
-  max-width: 720px;
   margin: 0 auto;
   padding: 25px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.front-page .wrap-inner {
+  max-width: 460px;
+}
 .content-page .wrap-inner {
+  max-width: 720px;
   background-color: white;
 }
 @media screen and (max-width: 480px) {

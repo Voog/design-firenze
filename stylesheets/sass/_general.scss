@@ -149,12 +149,16 @@ body {
 }
 
 .wrap-inner {
-  max-width: 720px;
   margin: 0 auto;
   padding: 25px;
   @include box-sizing(border-box);
 
+  .front-page & {
+    max-width: 460px;
+  }
+
   .content-page & {
+    max-width: 720px;
     @include bg($white);
   }
 
