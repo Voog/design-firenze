@@ -1280,6 +1280,7 @@ body {
   -moz-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  width: 100%;
   max-width: 680px;
   margin: 0 auto;
   padding: 20px 30px;
