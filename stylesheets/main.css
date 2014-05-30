@@ -1291,6 +1291,9 @@ body {
 .editmode .front-page .footer {
   bottom: 40px;
 }
+.editmode .content-page .footer {
+  margin-bottom: 40px;
+}
 .footer .content-formatted {
   -webkit-align-self: center;
   -moz-align-self: center;
