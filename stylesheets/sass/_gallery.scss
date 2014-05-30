@@ -12,7 +12,12 @@
     @extend %clearfix;
     .edys-gallery-item {
       display: inline-block;
+      width: 90px;
       padding-bottom: 1px;
+
+      &:nth-child(7n+7) {
+        padding-right: 0;
+      }
 
       .edys-gallery-image {
         display: block;
@@ -22,6 +27,24 @@
         &.inactive {
           opacity: 0.6;
         }
+      }
+    }
+  }
+}
+
+.edy-gallery-area {
+  .editmode & {
+    .edy-gallery-thumb {
+      width: 90px;
+      height: 90px;
+
+      &:nth-child(8n+8) {
+        margin-right: 0;
+      }
+
+      .edy-gallery-image {
+        width: 90px;
+        height: 90px;
       }
     }
   }
