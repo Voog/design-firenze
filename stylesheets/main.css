@@ -31,7 +31,7 @@ body {
 
 .content-formatted h1, .menu-main, .header-title, .post-title,
 .post-title a,
-.post-date {
+.post-date, .comments .comments-title {
   font-family: 'Bebas Neue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -1228,19 +1228,25 @@ body {
 }
 
 /* COMMENTS */
-.comment,
-.comment-form {
+.comments {
+  padding: 25px 5px 0;
+  border-top: 1px solid #888888;
+  border-top: 1px solid rgba(136, 136, 136, 0.33);
+}
+.comments .comments-title {
+  font-size: 30px;
+}
+.comments .comment,
+.comments .comment-form {
   margin-top: 30px;
 }
-
-.comment {
+.comments .comment {
   padding-left: 20px;
   line-height: 1.5;
   border-left: 3px solid black;
   border-left: 3px solid rgba(0, 0, 0, 0.05);
 }
-
-.comment-info {
+.comments .comment-info {
   color: #e2e2e2;
 }
 

@@ -1,19 +1,29 @@
 /* COMMENTS */
-.comment,
-.comment-form {
-  margin-top: 30px;
-}
+.comments {
+  padding: 25px 5px 0;
+  @include border(top, 1px, solid, $primary-color, 0.33);
 
-.comment {
-  padding-left: 20px;
-  line-height: 1.5;
-  @include border(left, 3px, solid, $black, 0.05);
-}
+  .comments-title {
+    @extend %bebas-neue;
+    font-size: 30px;
+  }
 
-.comment-body,
-.comment-info {
-}
+  .comment,
+  .comment-form {
+    margin-top: 30px;
+  }
 
-.comment-info {
-  @include color($grey-3);
+  .comment {
+    padding-left: 20px;
+    line-height: 1.5;
+    @include border(left, 3px, solid, $black, 0.05);
+  }
+
+  .comment-body,
+  .comment-info {
+  }
+
+  .comment-info {
+    @include color($grey-3);
+  }
 }

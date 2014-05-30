@@ -45,7 +45,7 @@
           </main>
 
           <section id="comments" class="comments content-formatted">
-            {% case article.comments_count %}{% when 0 %}{% else %}<h1 class="comments-title"><span class="edy-site-blog-comments-count">{{ article.comments_count }}</span> {{ "comments_for_count" | lc }}</h1>{% endcase %}
+            {% case article.comments_count %}{% when 0 %}{% else %}<h2 class="comments-title"><span class="edy-site-blog-comments-count">{{ article.comments_count }}</span> {{ "comments_for_count" | lc }}</h2>{% endcase %}
 
             <div class="comment-messages">
               {% for comment in article.comments reversed %}
