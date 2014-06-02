@@ -62,6 +62,10 @@ body {
   bottom: 0;
 }
 
+%static {
+  position: static;
+}
+
 // Styling rules for the independent elements that can be located everywhere in the DOM and always have the same styling rules.
 .bgpicker-btn {
   position: absolute;
@@ -120,6 +124,11 @@ body {
     @include flex-direction(column);
     @include align-content(center);
     @include justify-content(center);
+  }
+
+  .static & {
+    display: block;
+    height: auto;
   }
 
   @include query($mobile-1) {

@@ -22,15 +22,15 @@
   {{ site.stats_header }}
 </head>
 
-<body class="front-page js-bgpicker-body-image">
+<body class="front-page js-body js-bgpicker-body-image">
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>
 
   <div class="container">
     <div class="container-inner">
-      <div class="wrap">
+      <div class="wrap js-wrap">
 
-        <div class="wrap-inner">
+        <div class="wrap-inner js-wrap-inner">
           {% include "header" %}
         </div>
       </div>
@@ -41,7 +41,7 @@
   {% include "javascripts" %}
   {% include "bg-picker" %}
   <script>
-    {% unless article.data.body_image == '' %}$.backstretch('{{ body_image }}');{% endunless %}
+    {% unless page.data.body_image == '' %}$.backstretch('{{ body_image }}');{% endunless %}
 
     site.initFrontPage();
   </script>

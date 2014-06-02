@@ -98,10 +98,33 @@
 
   // Positions footer on front page layout.
   var handleFooterPosition = function() {
-    var windowHeight = $(window).height(),
+    windowHeight = $(window).height();
     footerHeight = $('.js-footer').height();
 
+    $('.js-wrap-inner').css({
+      'padding-top' : footerHeight / 2,
+      'padding-bottom' : footerHeight / 2,
+    });
+
+    contentHeight = $('.js-wrap').innerHeight();
+
     console.log('windowHeight: ' + windowHeight);
+    console.log('footerHeight: ' + footerHeight);
+    console.log('contentInnerHeight: ' + contentHeight);
+
+    if (windowHeight <= contentHeight) {
+      $('.js-body').addClass('static');
+    } else {
+      $('.js-body').removeClass('static');
+    }
+  };
+
+  var handleFrontPageContentEdit = function() {
+    console.log('initeds');
+    $('.edy-editable').keypress(function() {
+      handleFooterPosition();
+      console.log('jes');
+    });
   };
 
   // Wraps tables in the container.
@@ -164,6 +187,7 @@
 
     var initFrontPage = function() {
       // Add front page specific functions here.
+      handleFrontPageContentEdit();
       handleFooterPosition();
     };
 

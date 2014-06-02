@@ -114,6 +114,10 @@ body {
   -moz-justify-content: center;
   justify-content: center;
 }
+.static .container-inner {
+  display: block;
+  height: auto;
+}
 @media screen and (max-width: 480px) {
   .no-flexbox .content-page .container-inner, .flexbox .content-page .container-inner {
     display: block;
@@ -1398,6 +1402,9 @@ body {
 }
 .editmode .content-page .footer {
   margin-bottom: 40px;
+}
+.no-flexbox .static .footer, .flexbox .static .footer {
+  position: static;
 }
 .footer .content-formatted {
   -webkit-align-self: center;

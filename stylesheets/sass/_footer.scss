@@ -38,6 +38,13 @@
     }
   }
 
+  .static & {
+    .no-flexbox &,
+    .flexbox & {
+      position: static;
+    }
+  }
+
   .content-formatted {
     @include align-self(center);
     width: 100%;
