@@ -41,7 +41,9 @@
   {% include "javascripts" %}
   {% include "bg-picker" %}
   <script>
-    {% unless page.data.body_image == '' %}$.backstretch('{{ body_image }}');{% endunless %}
+    {% unless body_image == nil or body_image == '' %}
+      $.backstretch('{{ body_image }}');
+    {% endunless %}
 
     site.initFrontPage();
   </script>
