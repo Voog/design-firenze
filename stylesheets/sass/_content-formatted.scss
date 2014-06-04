@@ -1,4 +1,3 @@
-
 // Styling rules for the site's editable content area and its elements.
 // NB! Each editable content-area - {% content %} - should be wrapped in the element that has the "content-formatted" class.
 // NB! Contact forms and image galleries are located in the separate partials: "_forms.scss" and "_gallery.scss".
@@ -146,7 +145,6 @@
     }
   }
 
-  // UI OVERRIDES
   // Minimal height of the editable content area (to avoid content area visual 'jumping' when content-area is focused).
   .edy-texteditor-view {
     min-height: 18px;
@@ -156,6 +154,19 @@
     }
   }
 
+  // Draggable content area without content.
+  // TODO: Remove if different color schemes are supported by E3.
+  .edy-empty-bordered {
+    .footer & {
+      @include border(all, 1px, dashed, $white, 0.63);
+
+      .edy-empty-header {
+        @include color($white, 0.63);
+      }
+    }
+  }
+
+  // Content area border.
   .edy-content-element-hover {
     .footer & {
       @include border(all, 1px, solid, $white, 0.2);
@@ -168,19 +179,6 @@
 
       &:hover {
         outline: 1px solid rgba($white, 0.63)
-      }
-    }
-
-  }
-
-  // Draggable content area without content.
-  // TODO: Remove if different color schemes are supported by E3.
-  .edy-empty-bordered {
-    .footer & {
-      @include border(all, 1px, dashed, $white, 0.63);
-
-      .edy-empty-header {
-        @include color($white, 0.63);
       }
     }
   }

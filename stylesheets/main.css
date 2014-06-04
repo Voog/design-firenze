@@ -255,6 +255,14 @@ body {
 .footer .content-formatted .edy-texteditor-view {
   min-height: 12px;
 }
+.footer .content-formatted .edy-empty-bordered {
+  border: 1px dashed white;
+  border: 1px dashed rgba(255, 255, 255, 0.63);
+}
+.footer .content-formatted .edy-empty-bordered .edy-empty-header {
+  color: white;
+  color: rgba(255, 255, 255, 0.63);
+}
 .footer .content-formatted .edy-content-element-hover {
   border: 1px solid white;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -264,14 +272,6 @@ body {
 }
 .footer .content-formatted .edy-texteditor-active:hover {
   outline: 1px solid rgba(255, 255, 255, 0.63);
-}
-.footer .content-formatted .edy-empty-bordered {
-  border: 1px dashed white;
-  border: 1px dashed rgba(255, 255, 255, 0.63);
-}
-.footer .content-formatted .edy-empty-bordered .edy-empty-header {
-  color: white;
-  color: rgba(255, 255, 255, 0.63);
 }
 
 /* MENUS */
@@ -428,7 +428,7 @@ body {
 }
 .front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover {
   color: white;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 .front-page .menu-main .menu .menu-item .menu-link:hover {
   color: #888888;
@@ -452,8 +452,8 @@ body {
   color: #444444;
 }
 .menu-main .menu .menu-item .menu-link.untranslated {
-  color: #cc0000;
-  color: rgba(204, 0, 0, 0.5);
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu .menu-item .menu-link {

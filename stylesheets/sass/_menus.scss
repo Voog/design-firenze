@@ -165,7 +165,7 @@
 
           &.active,
           &.active:hover {
-            @include color($white, 0.5);
+            @include color($white, 0.8);
           }
 
           &:hover {
@@ -199,7 +199,7 @@
         }
 
         &.untranslated {
-          @include color($red, 0.5);
+          @include color($white, 0.5);
         }
 
         .content-page & {
