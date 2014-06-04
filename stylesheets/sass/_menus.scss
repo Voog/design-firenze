@@ -304,9 +304,12 @@
 }
 
 // Styling rules for the site's sub menu.
+.menu-sub-wrap {
+  @include border(bottom, 1px, solid, $primary-color, 0.33);
+}
+
 .menu-sub {
   padding: 15px 5px;
-  @include border(bottom, 1px, solid, $primary-color, 0.33);
 
   .menu {
 
@@ -550,7 +553,13 @@ $flags:
   .lang-flag-#{$flag}:after { background-position: $pos; }
 }
 
+.tags-editor {
+  padding: 15px 5px;
+}
+
 .tags {
+  @include border(bottom, 1px, solid, $primary-color, 0.33);
+
   .topbar & {
     position: absolute;
     top: 0;
@@ -558,10 +567,16 @@ $flags:
     bottom: 0;
     z-index: 1;
     text-align: right;
+    border: none;
   }
 }
 
+.tags-title {
+  font-weight: 700;
+}
+
 .menu-tags {
+  display: inline-block;
   .topbar & {
     display: none;
 

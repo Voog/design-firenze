@@ -1,8 +1,7 @@
 <div class="tags">
   {% include "tags-variables" %}
-
   {% unless article.tags == empty %}
-    <button class="tags-btn js-tags-btn">{{ tags_title }}</button>
+    <button class="tags-btn js-tags-btn">{{ tags_button }}</button>
     <nav class="menu-tags js-menu-tags">
       <ul class="menu">
         <li class="menu-item">

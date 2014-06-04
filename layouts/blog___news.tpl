@@ -26,6 +26,7 @@
 
         <div class="wrap-inner">
           {% include "header" %}
+          {% include "tags-blog" %}
 
           <main class="content" role="main">
             {% addbutton %}

@@ -7,10 +7,10 @@
     {% if page.blog? == true %}
       {% if topbar == "article" %}
         {% if site.has_language_tags? %}
-          {% include "tags-post" %}
+          {% include "topbar-tags-post" %}
         {% endif %}
       {% else %}
-        {% include "tags-blog" %}
+        {% include "topbar-tags-blog" %}
       {% endif %}
     {% endif %}
   </div>

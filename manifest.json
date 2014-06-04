@@ -148,6 +148,20 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/topbar-tags-blog.tpl",
+      "layout_name": "",
+      "title": "topbar-tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar-tags-post.tpl",
+      "layout_name": "",
+      "title": "topbar-tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"

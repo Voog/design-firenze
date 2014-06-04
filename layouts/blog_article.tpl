@@ -24,6 +24,7 @@
 
         <div class="wrap-inner">
           {% include "header" %}
+          {% include "tags-post" %}
 
           <main class="content" role="main">
             <article class="post">
@@ -40,8 +41,6 @@
                 <div class="post-body content-formatted">{% editable article.body %}</div>
               </div>
             </article>
-
-            {% if editmode %}<div class="post-tags">{% editable article.tags %}</div>{% endif %}
           </main>
 
           <section id="comments" class="comments content-formatted">
