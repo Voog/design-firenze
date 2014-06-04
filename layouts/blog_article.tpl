@@ -77,7 +77,7 @@
       $.backstretch('{{ body_image }}');
     {% endunless %}
 
-    site.initBlogPage();
+    site.initPostPage();
   </script>
 </body>
 </html>

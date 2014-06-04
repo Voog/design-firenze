@@ -126,7 +126,6 @@
   var handleFrontPageContentEdit = function() {
     $('.edy-editable').on('focus blur keypress paste input', function() {
       handleFooterPosition();
-      console.log('initiated it is');
     });
   };
 
@@ -169,17 +168,11 @@
   };
 
     // Initiations
-    var initBlogPage = function() {
-      // Add blog listing layout specific functions here.
-      handleTopbarPosition();
-      toggleTagsMenu();
-    };
-
-    var initArticlePage = function() {
-      // Add single post layout specific functions here.
-      handleTopbarPosition();
-      toggleTagsMenu();
-      focusCommentsWithErrors();
+    var initFrontPage = function() {
+      // Add front page specific functions here.
+      handleFrontPageContentEdit();
+      handleFooterPosition();
+      removeOptionalContent();
     };
 
     var initCommonPage = function() {
@@ -188,10 +181,17 @@
       focusCommentsWithErrors();
     };
 
-    var initFrontPage = function() {
-      // Add front page specific functions here.
-      handleFrontPageContentEdit();
-      handleFooterPosition();
+    var initBlogPage = function() {
+      // Add blog listing layout specific functions here.
+      handleTopbarPosition();
+      toggleTagsMenu();
+    };
+
+    var initPostPage = function() {
+      // Add single post layout specific functions here.
+      handleTopbarPosition();
+      toggleTagsMenu();
+      focusCommentsWithErrors();
     };
 
     var init = function() {
@@ -211,10 +211,10 @@
     // Enables the usage of the initiations outside this file.
     // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
     window.site = $.extend(window.site || {}, {
-      initBlogPage: initBlogPage,
-      initArticlePage: initArticlePage,
+      initFrontPage: initFrontPage,
       initCommonPage: initCommonPage,
-      initFrontPage: initFrontPage
+      initBlogPage: initBlogPage,
+      initPostPage: initPostPage,
     });
 
     // Initiates site wide functions.

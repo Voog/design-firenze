@@ -7,11 +7,13 @@
 }
 
 .post-title {
-  display: inline-block;
+  display: inline;
   margin: 0 10px 0 0;
+  word-break: break-all;
   font-weight: normal;
 
   .editmode & {
+    display: inline-block;
     min-width: 200px;
   }
 
