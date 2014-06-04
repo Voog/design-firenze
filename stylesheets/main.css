@@ -23,11 +23,6 @@ body {
   color: #888888;
   -webkit-overflow-scrolling: touch;
 }
-@media screen and (max-width: 720px) {
-  .content-page body {
-    background: none !important;
-  }
-}
 
 .content-formatted h1, .menu-main, .header-title, .post-title,
 .post-title a,

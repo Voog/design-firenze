@@ -16,32 +16,6 @@ body {
   @include color($primary-color);
 
   -webkit-overflow-scrolling: touch;
-
-  .content-page & {
-    @include query($tablet-2) {
-      background: none !important;
-    }
-  }
-}
-
-// // Layout specific body classes.
-// .front-page {
-//   background: url('../photos/front-page-bg.jpg') no-repeat center center fixed;
-// }
-
-// .common-page {
-//   background: url('../photos/common-page-bg.jpg') no-repeat center center fixed;
-// }
-
-// .blog-page,
-// .post-page {
-//   background: url('../photos/blog-page-bg.jpg') no-repeat center center fixed;
-// }
-
-.blog-page {
-}
-
-.post-page {
 }
 
 %bebas-neue {
