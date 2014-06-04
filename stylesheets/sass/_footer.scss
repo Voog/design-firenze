@@ -41,7 +41,7 @@
 
   .content-formatted {
     @include align-self(center);
-    max-width: 680px;
+    width: 680px;
     margin: 0 auto;
     padding: 20px 30px;
     font-size: 9px;

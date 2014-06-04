@@ -115,16 +115,6 @@
     }
   }
 
-  // Minimal height of the editable content area (to avoid content area visual 'jumping' when content-area is focused).
-  .edy-texteditor-view {
-    min-height: 18px;
-
-    .footer & {
-      min-height: 12px;
-    }
-  }
-
-
   // Styling rules for the site's editable content area tables.
   // Container around editable content-area table.
   .table-container {
@@ -153,6 +143,40 @@
       padding: 10px;
       @include border(top,1px,solid,$third-color);
       @include border(bottom,1px,solid,$third-color);
+    }
+  }
+
+  // UI OVERRIDES
+  // Minimal height of the editable content area (to avoid content area visual 'jumping' when content-area is focused).
+  .edy-texteditor-view {
+    min-height: 18px;
+
+    .footer & {
+      min-height: 12px;
+    }
+  }
+
+  .edy-content-element-hover {
+    @include border(all, 1px, solid, $white, 0.2);
+  }
+
+  .edy-texteditor-active {
+    outline: 1px solid rgba($white, 0.4);
+
+    &:hover {
+      outline: 1px solid rgba($white, 0.63)
+    }
+  }
+
+  // Draggable content area without content.
+  // TODO: Remove if different color schemes are supported by E3.
+  .edy-empty-bordered {
+    .footer & {
+      @include border(all, 1px, dashed, $white, 0.63);
+
+      .edy-empty-header {
+        @include color($white, 0.63);
+      }
     }
   }
 }
