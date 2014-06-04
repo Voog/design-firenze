@@ -26,16 +26,6 @@
     .flexbox & {
       @include flexbox;
     }
-
-    .editmode & {
-      bottom: 40px;
-    }
-  }
-
-  .content-page & {
-    .editmode & {
-      margin-bottom: 40px;
-    }
   }
 
   .static & {
@@ -45,9 +35,12 @@
     }
   }
 
+  .editmode & {
+    margin-bottom: 40px;
+  }
+
   .content-formatted {
     @include align-self(center);
-    width: 100%;
     max-width: 680px;
     margin: 0 auto;
     padding: 20px 30px;

@@ -44,6 +44,18 @@
     });
   };
 
+  // Removes optional content elements if element doesn't have any content.
+  var removeOptionalContent = function() {
+    optionalContent = $('.js-content-optional');
+    $.each( $(optionalContent), function(){
+      optionalContentLength = $(this).text().trim().length;
+
+      if (!optionalContentLength > 0) {
+        $(this).remove();
+      }
+    });
+  };
+
   // Scrolls to the comment-form if comment submit failed (to show the error messages to the user).
   var focusCommentsWithErrors = function() {
     $(document).ready(function() {
@@ -98,32 +110,23 @@
 
   // Positions footer on front page layout.
   var handleFooterPosition = function() {
-    windowHeight = $(window).height();
-    footerHeight = $('.js-footer').height();
+    $(document).ready(function() {
+      windowHeight = $(window).height(),
+      footerHeight = $('.js-footer').height(),
+      contentHeight = $('.js-wrap').height();
 
-    $('.js-wrap-inner').css({
-      'padding-top' : footerHeight / 2,
-      'padding-bottom' : footerHeight / 2,
+      if (windowHeight - footerHeight - 50 <= contentHeight) {
+        $('.js-body').addClass('static');
+      } else {
+        $('.js-body').removeClass('static');
+      }
     });
-
-    contentHeight = $('.js-wrap').innerHeight();
-
-    console.log('windowHeight: ' + windowHeight);
-    console.log('footerHeight: ' + footerHeight);
-    console.log('contentInnerHeight: ' + contentHeight);
-
-    if (windowHeight <= contentHeight) {
-      $('.js-body').addClass('static');
-    } else {
-      $('.js-body').removeClass('static');
-    }
   };
 
   var handleFrontPageContentEdit = function() {
-    console.log('initeds');
-    $('.edy-editable').keypress(function() {
+    $('.edy-editable').on('focus blur keypress paste input', function() {
       handleFooterPosition();
-      console.log('jes');
+      console.log('initiated it is');
     });
   };
 
