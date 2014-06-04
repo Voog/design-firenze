@@ -303,6 +303,50 @@
   }
 }
 
+// Styling rules for the site's sub menu.
+.menu-sub {
+  padding: 15px 5px;
+  @include border(bottom, 1px, solid, $primary-color, 0.33);
+
+  .menu {
+
+    .menu-item {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 14px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .menu-link {
+        @include color($primary-color);
+
+        &.untranslated {
+
+        }
+
+        &.active,
+        &.active:hover {
+          @include color($secondary-color);
+        }
+
+        &:hover {
+          @include color($secondary-color);
+        }
+      }
+    }
+
+    .edit-btn {
+      display: inline-block;
+    }
+  }
+
+  @include query($tablet-2) {
+    margin-top: 30px;
+  }
+}
+
 .menu-lang {
   position: absolute;
   top: 0;

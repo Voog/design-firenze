@@ -510,6 +510,37 @@ body {
   }
 }
 
+.menu-sub {
+  padding: 15px 5px;
+  border-bottom: 1px solid #888888;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.33);
+}
+.menu-sub .menu .menu-item {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.menu-sub .menu .menu-item:first-child {
+  margin-left: 0;
+}
+.menu-sub .menu .menu-item .menu-link {
+  color: #888888;
+}
+.menu-sub .menu .menu-item .menu-link.active, .menu-sub .menu .menu-item .menu-link.active:hover {
+  color: #444444;
+}
+.menu-sub .menu .menu-item .menu-link:hover {
+  color: #444444;
+}
+.menu-sub .menu .edit-btn {
+  display: inline-block;
+}
+@media screen and (max-width: 720px) {
+  .menu-sub {
+    margin-top: 30px;
+  }
+}
+
 .menu-lang {
   position: absolute;
   top: 0;
