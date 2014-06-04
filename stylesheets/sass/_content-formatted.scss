@@ -157,15 +157,20 @@
   }
 
   .edy-content-element-hover {
-    @include border(all, 1px, solid, $white, 0.2);
+    .footer & {
+      @include border(all, 1px, solid, $white, 0.2);
+    }
   }
 
   .edy-texteditor-active {
-    outline: 1px solid rgba($white, 0.4);
+    .footer & {
+      outline: 1px solid rgba($white, 0.4);
 
-    &:hover {
-      outline: 1px solid rgba($white, 0.63)
+      &:hover {
+        outline: 1px solid rgba($white, 0.63)
+      }
     }
+
   }
 
   // Draggable content area without content.

@@ -255,14 +255,14 @@ body {
 .footer .content-formatted .edy-texteditor-view {
   min-height: 12px;
 }
-.content-formatted .edy-content-element-hover {
+.footer .content-formatted .edy-content-element-hover {
   border: 1px solid white;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.content-formatted .edy-texteditor-active {
+.footer .content-formatted .edy-texteditor-active {
   outline: 1px solid rgba(255, 255, 255, 0.4);
 }
-.content-formatted .edy-texteditor-active:hover {
+.footer .content-formatted .edy-texteditor-active:hover {
   outline: 1px solid rgba(255, 255, 255, 0.63);
 }
 .footer .content-formatted .edy-empty-bordered {
