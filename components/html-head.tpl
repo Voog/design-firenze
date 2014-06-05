@@ -12,7 +12,8 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/ico">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-{% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}"> <!-- TODO: Add image location data tag -->{% endif %}
+{% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
+{% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}<!-- MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC -->{% endcomment %}
 <script src="{{ javascripts_path }}/modernizr.js?4"></script>
