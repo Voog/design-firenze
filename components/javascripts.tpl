@@ -2,7 +2,6 @@
 <script src="{{ javascripts_path }}/jquery.js?4"></script>
 <script src="{{ javascripts_path }}/main.js?4"></script>
 <script src="{{ javascripts_path }}/backstretch.js?4"></script>
-<script src="{{ javascripts_path }}/retina.js?4"></script>
 <script src="{{ javascripts_path }}/overthrow.js?4"></script>
 
 {% comment %}<!-- SITE SEARCH INITIATION -->{% endcomment %}
