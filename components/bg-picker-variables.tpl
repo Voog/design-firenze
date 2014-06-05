@@ -51,7 +51,7 @@
     <!-- Builds style tag for background color for content pages -->
     {% assign body_color_style = "" %}
     {% unless page.data.body_color == nil %}
-      {% assign body_color_style = ' style="background-color: ' %}
+      {% assign body_color_style = ' style="background: ' %}
       {% if page.data.body_color == '' %}
         {% assign body_color_style = body_color_style | append: 'none' %}
       {% else %}

@@ -23,7 +23,7 @@
 
 <body class="common-page content-page">
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
-  <div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>
+  {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
 
   <div class="container js-container">
     <div class="container-inner">

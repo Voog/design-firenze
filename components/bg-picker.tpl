@@ -22,8 +22,7 @@
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
             col = (data.color && data.color !== '') ? data.color : 'none';
 
-        // $('.js-bgpicker-body-image').css({'background-image' : img});
-        $('.js-bgpicker-body-color').css({'background-color' : col});
+        $('.js-bgpicker-body-color').css({'background' : col});
 
         if (data.image === null || data.image === '') {
           $('.backstretch').remove();
