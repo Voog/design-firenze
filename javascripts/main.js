@@ -174,6 +174,7 @@
 
     var initCommonPage = function() {
       // Add common page specific functions here.
+      handleTopbarPosition();
       focusCommentsWithErrors();
     };
 

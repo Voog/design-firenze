@@ -15,6 +15,11 @@
     max-width: 660px;
     margin: 0 auto;
     padding: 12px 30px;
+
+
+    .container-inner & {
+      background: none;
+    }
   }
 
   // TODO: Add topbar support to mobile devices.

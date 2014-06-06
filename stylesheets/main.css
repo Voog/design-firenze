@@ -945,6 +945,9 @@ body {
   margin: 0 auto;
   padding: 12px 30px;
 }
+.container-inner .topbar .wrap {
+  background: none;
+}
 @media screen and (max-width: 900px) {
   .topbar {
     display: none;
