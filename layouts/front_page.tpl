@@ -2,7 +2,6 @@
 <html class="{% if editmode %} editmode{% else %} public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
-
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
   {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
@@ -27,14 +26,16 @@
   {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
 
   <div class="container">
-    <div class="container-inner">
-      <div class="wrap js-wrap">
-
-        <div class="wrap-inner js-wrap-inner">
-          {% include "header" %}
+    <div class="container-middle js-container-middle">
+      <div class="container-inner">
+        <div class="wrap">
+          <div class="wrap-inner">
+            {% include "header" %}
+          </div>
         </div>
       </div>
     </div>
+
     {% include "footer" %}
   </div>
 

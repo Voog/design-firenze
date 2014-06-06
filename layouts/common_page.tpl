@@ -25,23 +25,24 @@
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
   {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
 
-  <div class="container js-container">
-    <div class="container-inner">
-      <div class="wrap">
-      {% include "topbar" %}
+  <div class="container">
+    <div class="container-middle js-container-middle">
+      <div class="container-inner">
+        <div class="wrap">
+          <div class="wrap-inner">
+            {% include "topbar" %}
+            {% include "header" %}
+            {% include "menu-level-2" %}
 
-        <div class="wrap-inner">
-          {% include "header" %}
-          {% include "menu-level-2" %}
-
-          <main class="content" role="main">
-            <section class="content-formatted">{% content %}</section>
-          </main>
+            <main class="content" role="main">
+              <section class="content-formatted">{% content %}</section>
+            </main>
+          </div>
         </div>
-
-        {% include "footer" %}
       </div>
     </div>
+
+    {% include "footer" %}
   </div>
 
   {% include "javascripts" %}

@@ -5,6 +5,12 @@ body {
   height: 100% !important;
 }
 
+.editmode {
+  &, body {
+    height: 50% !important;
+  }
+}
+
 body {
   position: relative;
   margin: 0;
@@ -14,8 +20,6 @@ body {
   font-size: 14px;
   line-height: 1.4;
   @include color($primary-color);
-
-  -webkit-overflow-scrolling: touch;
 }
 
 %bebas-neue {
@@ -34,10 +38,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-%static {
-  position: static;
 }
 
 // Styling rules for the independent elements that can be located everywhere in the DOM and always have the same styling rules.
@@ -60,11 +60,8 @@ body {
 
 // Styling rules for the main container that affects the entire site's other elements.
 .container {
-  height: 100%;
-
-  .editmode & {
-    @include calc(height, ('100% - 40px'));
-  }
+  position: relative;
+  min-height: 100%;
 
   a {
     text-decoration: none;
@@ -75,8 +72,10 @@ body {
   }
 }
 
-.container-inner {
-  height: 100%;
+.container-middle {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
   margin: 0 auto;
 
   .front-page & {
@@ -86,66 +85,17 @@ body {
   .content-page & {
     max-width: 720px;
   }
+}
 
-  .no-flexbox & {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-  }
-
-  .flexbox & {
-    @include flexbox;
-    @include flex-direction(column);
-    @include align-content(center);
-    @include justify-content(center);
-  }
-
-  .static & {
-    display: block;
-    height: auto;
-  }
-
-  @include query($mobile-1) {
-    .content-page & {
-      .no-flexbox &,
-      .flexbox & {
-        display: block;
-      }
-    }
-  }
+.container-inner {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .wrap {
-  .no-flexbox & {
-    display: table-cell;
-    vertical-align: middle;
-    width: 400px;
-  }
-
-  @include query($mobile-1) {
-    .no-flexbox &,
-    .flexbox & {
-      display: block;
-      width: auto;
-    }
-  }
-}
-
-.wrap-inner {
-  margin: 0 auto;
   padding: 25px;
-  @include box-sizing(border-box);
 
-  .front-page & {
-    max-width: 460px;
-  }
-
-  .content-page & {
-    max-width: 720px;
+  .content-page .container-inner & {
     @include bg($white);
-  }
-
-  @include query($mobile-1) {
-    padding: 20px;
   }
 }

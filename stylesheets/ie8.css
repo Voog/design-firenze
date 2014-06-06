@@ -8,4 +8,6 @@
   background-image: url("../images/ico-flags-small.png");
 }
 
-/* FRONT PAGE */
+.background-color {
+  -ms-filter: "alpha(opacity=50)";
+}

@@ -108,24 +108,22 @@
     });
   };
 
-  // Positions footer on front page layout.
+  // Sets the position of the footer to the bottom of the page
   var handleFooterPosition = function() {
-    $(document).ready(function() {
-      windowHeight = $(window).height(),
-      footerHeight = $('.js-footer').height(),
-      contentHeight = $('.js-wrap').height();
+    editmode = $('html').hasClass('editmode'),
+    container = '.js-container-middle',
+    windowHeight = $(window).height(),
+    footerHeight = $('.js-footer').height();
 
-      if (windowHeight - footerHeight - 50 <= contentHeight) {
-        $('.js-body').addClass('static');
-      } else {
-        $('.js-body').removeClass('static');
-      }
-    });
-  };
+    if (editmode) {
+      containerHeight = windowHeight - footerHeight - 40;
+    } else  {
+      containerHeight = windowHeight - footerHeight;
+    }
 
-  var handleFrontPageContentEdit = function() {
-    $('.edy-editable').on('focus blur keypress paste input', function() {
-      handleFooterPosition();
+    $(container).css({
+      'height': containerHeight,
+      'padding-bottom': footerHeight
     });
   };
 
@@ -170,14 +168,12 @@
     // Initiations
     var initFrontPage = function() {
       // Add front page specific functions here.
-      handleFrontPageContentEdit();
-      handleFooterPosition();
+      // handleFrontPageContentEdit();
       removeOptionalContent();
     };
 
     var initCommonPage = function() {
       // Add common page specific functions here.
-      handleTopbarPosition();
       focusCommentsWithErrors();
     };
 
@@ -199,6 +195,7 @@
       toggleMainMenu();
       toggleLangMenu();
       handlePopoverMenuHide();
+      handleFooterPosition();
       handleGalleryHover();
       handleWindowResize();
       wrapTables();
