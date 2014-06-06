@@ -145,6 +145,7 @@
     }
   }
 
+  // CMS STYLE OVERRIDES
   // Minimal height of the editable content area (to avoid content area visual 'jumping' when content-area is focused).
   .edy-texteditor-view {
     min-height: 18px;
@@ -152,6 +153,10 @@
     .footer & {
       min-height: 12px;
     }
+  }
+
+  .placeholder {
+    @include color($white, 0.5);
   }
 
   // Draggable content area without content.

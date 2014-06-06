@@ -255,6 +255,10 @@ body {
 .footer .content-formatted .edy-texteditor-view {
   min-height: 12px;
 }
+.content-formatted .placeholder {
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
+}
 .footer .content-formatted .edy-empty-bordered {
   border: 1px dashed white;
   border: 1px dashed rgba(255, 255, 255, 0.63);
