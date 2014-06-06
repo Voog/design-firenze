@@ -91,9 +91,14 @@ body {
 }
 
 .wrap {
+  margin: 0 auto;
   padding: 25px;
 }
+.front-page .container-inner .wrap {
+  max-width: 450px;
+}
 .content-page .container-inner .wrap {
+  max-width: 720px;
   background-color: white;
 }
 

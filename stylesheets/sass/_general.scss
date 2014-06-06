@@ -93,9 +93,17 @@ body {
 }
 
 .wrap {
+  margin: 0 auto;
   padding: 25px;
 
-  .content-page .container-inner & {
-    @include bg($white);
+  .container-inner & {
+    .front-page & {
+      max-width: 450px;
+    }
+
+    .content-page & {
+      max-width: 720px;
+      @include bg($white);
+    }
   }
 }
