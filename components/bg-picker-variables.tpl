@@ -1,13 +1,6 @@
 {% capture dont_render %}
   {% if bg-picker-variables == "article" %}
 
-    <!-- Sets the body background image value for article pages -->
-    {% if article.data.body_image == nil %}
-      {% assign body_image = '/images/blog-page-bg.jpg' %}
-    {% else %}
-      {% assign body_image = article.data.body_image %}
-    {% endif %}
-
     <!-- Sets the body background color value for article pages-->
     {% if article.data.body_color == nil %}
       {% assign body_color = '' %}
@@ -18,7 +11,7 @@
     <!-- Builds style tag for background color for article pages -->
     {% assign body_color_style = '' %}
     {% unless article.data.body_color == nil %}
-      {% assign body_color_style = ' style="background-color: ' %}
+      {% assign body_color_style = ' style="background: ' %}
       {% if article.data.body_color == '' %}
         {% assign body_color_style = body_color_style | append: 'none' %}
       {% else %}
@@ -33,13 +26,6 @@
     {% endunless %}
 
   {% else %}
-
-    <!-- Sets the body background image value for content pages -->
-    {% if page.data.body_image == nil %}
-      {% assign body_image = '/images/blog-page-bg.jpg' %}
-    {% else %}
-      {% assign body_image = page.data.body_image %}
-    {% endif %}
 
     <!-- Sets the body background color value -->
     {% if page.data.body_color == nil %}

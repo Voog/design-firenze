@@ -8,6 +8,12 @@
   {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
   {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
 
+  <!-- Sets the body background image value for article pages -->
+  {% if article.data.body_image == nil %}
+    {% assign body_image = '/images/blog-page-bg.jpg' %}
+  {% else %}
+    {% assign body_image = article.data.body_image %}
+  {% endif %}
   {% include 'bg-picker-variables' with 'article' %}
 
   {{ site.stats_header }}
