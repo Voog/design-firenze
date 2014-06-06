@@ -156,7 +156,9 @@
   }
 
   .placeholder {
-    @include color($white, 0.5);
+    .header-title & {
+      @include color($white, 0.5);
+    }
   }
 
   // Draggable content area without content.
