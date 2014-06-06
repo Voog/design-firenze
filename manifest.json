@@ -165,7 +165,13 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
-    }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "assets": [
     {
@@ -223,6 +229,12 @@
       "filename": "ico-tick.svg"
     },
     {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-voog.svg",
+      "kind": "assets",
+      "filename": "ico-voog.svg"
+    },
+    {
       "content_type": "image/jpeg",
       "file": "images/blog-page-bg.jpg",
       "kind": "images",
@@ -275,6 +287,12 @@
       "file": "images/ico-tick.png",
       "kind": "images",
       "filename": "ico-tick.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-voog.png",
+      "kind": "images",
+      "filename": "ico-voog.png"
     },
     {
       "content_type": "application/javascript",

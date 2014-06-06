@@ -21,18 +21,16 @@
 
   .wrap {
     display: table;
-    max-width: 680px;
+    max-width: 720px;
     height: 100px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 25px;
   }
 
   .content-formatted {
     display: table-cell;
     vertical-align: middle;
-    width: 680px;
     margin: 0 auto;
-    padding: 20px 30px;
     text-align: center;
     font-size: 9px;
     @include color($white, 0.33);
@@ -42,6 +40,32 @@
 
       &:hover {
         @include color($white);
+      }
+    }
+  }
+
+  .voog-reference {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+
+    a {
+      display: block;
+      @include opacity(0.5);
+      width: 35px;
+      height: 8px;
+      font-size: 0;
+
+      .no-svg & {
+        background-image: url('../images/ico-voog.png');
+      }
+
+      .svg & {
+        background-image: url('../assets/ico-voog.svg');
+      }
+
+      &:hover {
+        @include opacity(1);
       }
     }
   }
