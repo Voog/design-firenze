@@ -7,7 +7,8 @@ body {
 
 .editmode {
   &, body {
-    height: 50% !important;
+    height: -webkit-calc(100% - 40px) !important;
+    height:         calc(100% - 40px) !important;
   }
 }
 
@@ -20,6 +21,7 @@ body {
   font-size: 14px;
   line-height: 1.4;
   @include color($primary-color);
+  -webkit-overflow-scrolling: touch;
 }
 
 %bebas-neue {

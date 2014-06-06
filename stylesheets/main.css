@@ -13,7 +13,8 @@ body {
 }
 
 .editmode, .editmode body {
-  height: 50% !important;
+  height: -webkit-calc(100% - 40px) !important;
+  height: calc(100% - 40px) !important;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: #888888;
+  -webkit-overflow-scrolling: touch;
 }
 
 .content-formatted h1, .menu-main, .header-title, .post-title,
