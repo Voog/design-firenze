@@ -201,7 +201,7 @@ body {
 .footer .content-formatted .edy-texteditor-view {
   min-height: 12px;
 }
-.header-title .content-formatted .placeholder {
+.content-formatted .placeholder {
   color: white;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -376,13 +376,9 @@ body {
   font-size: 16px;
   color: white;
 }
-.front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover {
+.front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover, .front-page .menu-main .menu .menu-item .menu-link:hover {
   color: white;
   color: rgba(255, 255, 255, 0.8);
-}
-.front-page .menu-main .menu .menu-item .menu-link:hover {
-  color: #888888;
-  color: rgba(136, 136, 136, 0.8);
 }
 .content-page .menu-main .menu .menu-item .menu-link {
   font-size: 14px;
