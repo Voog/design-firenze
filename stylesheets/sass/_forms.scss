@@ -200,6 +200,12 @@
     }
   }
 
+  .form_field_required {
+    .form_field_label:after {
+      content: ' * \a';
+    }
+  }
+
   .form_field_with_errors {
     .form_field_textfield,
     .form_field_textarea {
