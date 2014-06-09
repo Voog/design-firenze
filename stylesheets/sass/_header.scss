@@ -29,6 +29,12 @@
   }
 }
 
+.header-options {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
 .header-title {
   @extend %bebas-neue;
   max-width: 630px;

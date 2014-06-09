@@ -165,13 +165,7 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
-    },
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    }
   ],
   "assets": [
     {

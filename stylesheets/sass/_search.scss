@@ -1,1 +1,29 @@
 /* SEARCH */
+.search-btn {
+  vertical-align: middle;
+  @include opacity(0.5);
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  .no-svg & {
+    background-image: url('../images/ico-search.png');
+  }
+
+  .svg & {
+    background-image: url('../assets/ico-search.svg');
+  }
+
+  &:hover {
+    @include opacity(1);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

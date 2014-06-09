@@ -112,6 +112,7 @@
   var handleFooterPosition = function() {
     editmode = $('html').hasClass('editmode'),
     container = '.js-container-middle',
+    contentHeight = $('.js-wrap').height(),
     windowHeight = $(window).height(),
     footerHeight = $('.js-footer').height();
 

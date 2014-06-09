@@ -519,10 +519,9 @@ body {
 }
 
 .menu-lang {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: inline-block;
+  vertical-align: middle;
+  margin-left: 14px;
   line-height: 1;
 }
 .menu-lang.edit-btn {
@@ -534,10 +533,6 @@ body {
   .content-page .menu-lang {
     position: static;
   }
-}
-.front-page .menu-lang {
-  top: 25px;
-  right: 30px;
 }
 @media screen and (max-width: 480px) {
   .content-page .menu-lang {
@@ -552,7 +547,7 @@ body {
 .menu-lang .menu-item .menu-link {
   position: relative;
   display: block;
-  padding: 6px 40px 3px 13px;
+  padding: 5px 40px 5px 13px;
   color: #444444;
   color: rgba(68, 68, 68, 0.67);
 }
@@ -893,6 +888,12 @@ body {
   }
 }
 
+.header-options {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
 .header-title {
   max-width: 630px;
   font-weight: 400;
@@ -1061,6 +1062,35 @@ body {
 }
 
 /* SEARCH */
+.search-btn {
+  vertical-align: middle;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.no-svg .search-btn {
+  background-image: url("../images/ico-search.png");
+}
+.svg .search-btn {
+  background-image: url("../assets/ico-search.svg");
+}
+.search-btn:hover {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+.search-btn:focus {
+  outline: none;
+}
+
 /* FORMS */
 .content-formatted form {
   max-width: 100%;

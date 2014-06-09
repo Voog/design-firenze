@@ -348,10 +348,9 @@
 }
 
 .menu-lang {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: inline-block;
+  vertical-align: middle;
+  margin-left: 14px;
   line-height: 1;
 
   &.edit-btn {
@@ -364,11 +363,6 @@
     .content-page & {
       position: static;
     }
-  }
-
-  .front-page & {
-    top: 25px;
-    right: 30px;
   }
 
   .content-page & {
@@ -385,7 +379,7 @@
     .menu-link {
       position: relative;
       display: block;
-      padding: 6px 40px 3px 13px;
+      padding: 5px 40px 5px 13px;
       @include color($secondary-color, 0.67);
 
       &.active,

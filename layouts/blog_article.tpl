@@ -26,7 +26,7 @@
   <div class="container">
     <div class="container-middle js-container-middle">
       <div class="container-inner">
-        <div class="wrap">
+        <div class="wrap js-wrap">
           <div class="wrap-inner">
             {% include "topbar" with "article" %}
             {% include "header" %}
