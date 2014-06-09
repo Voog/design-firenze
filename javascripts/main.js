@@ -128,6 +128,12 @@
     });
   };
 
+  var handleFooterContentEdit = function() {
+    $('.edy-texteditor-view').on('keydown', function() {
+      handleFooterPosition();
+    });
+  };
+
   // Wraps tables in the container.
   // TODO: remove if edicy is going to wrap table with the container.
   var wrapTables = function() {
@@ -162,6 +168,7 @@
     $(window).resize(function() {
       handleTopbarPosition();
       handleFooterPosition();
+      handleFooterContentEdit();
       handleTableHorizontalScrolling();
     });
   };
@@ -169,7 +176,6 @@
     // Initiations
     var initFrontPage = function() {
       // Add front page specific functions here.
-      // handleFrontPageContentEdit();
       removeOptionalContent();
     };
 
@@ -198,6 +204,7 @@
       toggleLangMenu();
       handlePopoverMenuHide();
       handleFooterPosition();
+      handleFooterContentEdit();
       handleGalleryHover();
       handleWindowResize();
       wrapTables();
