@@ -32,7 +32,14 @@
 .header-options {
   position: absolute;
   top: 25px;
-  right: 30px;
+
+  .front-page & {
+    right: 30px;
+  }
+
+  .content-page & {
+    right: 0;
+  }
 }
 
 .header-title {

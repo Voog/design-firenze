@@ -891,7 +891,12 @@ body {
 .header-options {
   position: absolute;
   top: 25px;
+}
+.front-page .header-options {
   right: 30px;
+}
+.content-page .header-options {
+  right: 0;
 }
 
 .header-title {
