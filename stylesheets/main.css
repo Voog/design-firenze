@@ -205,33 +205,33 @@ body {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
 }
+.front-page.dark-background .content-formatted .placeholder {
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .front-page.dark-background .content-formatted .edy-empty-bordered {
+  border: 1px dashed white;
+  border: 1px dashed rgba(255, 255, 255, 0.63);
+}
+.footer .front-page.dark-background .content-formatted .edy-empty-bordered .edy-empty-header {
+  color: white;
+  color: rgba(255, 255, 255, 0.63);
+}
+.footer .front-page.dark-background .content-formatted .edy-content-element-hover {
+  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer .front-page.dark-background .content-formatted .edy-texteditor-active {
+  outline: 1px solid rgba(255, 255, 255, 0.4);
+}
+.footer .front-page.dark-background .content-formatted .edy-texteditor-active:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.63);
+}
 .content-formatted .edy-texteditor-view {
   min-height: 18px;
 }
 .footer .content-formatted .edy-texteditor-view {
   min-height: 12px;
-}
-.content-formatted .placeholder {
-  color: white;
-  color: rgba(255, 255, 255, 0.5);
-}
-.footer .content-formatted .edy-empty-bordered {
-  border: 1px dashed white;
-  border: 1px dashed rgba(255, 255, 255, 0.63);
-}
-.footer .content-formatted .edy-empty-bordered .edy-empty-header {
-  color: white;
-  color: rgba(255, 255, 255, 0.63);
-}
-.footer .content-formatted .edy-content-element-hover {
-  border: 1px solid white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-.footer .content-formatted .edy-texteditor-active {
-  outline: 1px solid rgba(255, 255, 255, 0.4);
-}
-.footer .content-formatted .edy-texteditor-active:hover {
-  outline: 1px solid rgba(255, 255, 255, 0.63);
 }
 
 /* MENUS */
@@ -386,17 +386,30 @@ body {
     margin-right: 0;
   }
 }
-.front-page .menu-main .menu .menu-item .menu-link {
-  font-size: 16px;
+.front-page .menu-main .menu .menu-item .menu-link, .front-page.dark-background .menu-main .menu .menu-item .menu-link {
   color: white;
 }
-.front-page .menu-main .menu .menu-item .menu-link.untranslated {
+.front-page .menu-main .menu .menu-item .menu-link.untranslated, .front-page.dark-background .menu-main .menu .menu-item .menu-link.untranslated {
   color: white;
   color: rgba(255, 255, 255, 0.5);
 }
-.front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover, .front-page .menu-main .menu .menu-item .menu-link:hover {
+.front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover, .front-page .menu-main .menu .menu-item .menu-link:hover, .front-page.dark-background .menu-main .menu .menu-item .menu-link.active, .front-page.dark-background .menu-main .menu .menu-item .menu-link.active:hover, .front-page.dark-background .menu-main .menu .menu-item .menu-link:hover {
   color: white;
   color: rgba(255, 255, 255, 0.8);
+}
+.front-page.light-background .menu-main .menu .menu-item .menu-link {
+  color: black;
+}
+.front-page.light-background .menu-main .menu .menu-item .menu-link.untranslated {
+  color: black;
+  color: rgba(0, 0, 0, 0.5);
+}
+.front-page.light-background .menu-main .menu .menu-item .menu-link.active, .front-page.light-background .menu-main .menu .menu-item .menu-link.active:hover, .front-page.light-background .menu-main .menu .menu-item .menu-link:hover {
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
+.front-page .menu-main .menu .menu-item .menu-link {
+  font-size: 16px;
 }
 .content-page .menu-main .menu .menu-item .menu-link {
   font-size: 14px;
@@ -849,7 +862,12 @@ body {
 
 .front-page .header-top {
   padding-bottom: 22px;
+}
+.front-page .header-top, .front-page.dark-background .header-top {
   border-bottom: 2px solid white;
+}
+.light-background.front-page .header-top {
+  border-bottom: 2px solid black;
 }
 @media screen and (max-width: 480px) {
   .content-page .header-top {
@@ -876,17 +894,23 @@ body {
   font-size: 30px;
   line-height: 1;
 }
+.front-page .header-title, .front-page .header-title a, .front-page.dark-background .header-title, .front-page.dark-background .header-title a {
+  color: white;
+}
+.front-page .header-title a:hover, .front-page.dark-background .header-title a:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+.light-background.front-page .header-title, .light-background.front-page .header-title a {
+  color: black;
+}
+.light-background.front-page .header-title a:hover {
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
 .front-page .header-title {
   text-align: center;
   font-size: 60px;
-}
-.front-page .header-title,
-.front-page .header-title a {
-  color: white;
-}
-.front-page .header-title a:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
 }
 .content-page .header-title,
 .content-page .header-title a {
@@ -1052,11 +1076,17 @@ body {
   background-repeat: no-repeat;
   background-color: transparent;
 }
-.no-svg .search-btn {
-  background-image: url("../images/ico-search.png");
+.no-svg .search-btn, .no-svg .front-page.light-background .search-btn {
+  background-image: url("../images/ico-search-black.png");
 }
-.svg .search-btn {
-  background-image: url("../assets/ico-search.svg");
+.svg .search-btn, .svg .front-page.light-background .search-btn {
+  background-image: url("../assets/ico-search-black.svg");
+}
+.no-svg .front-page.dark-background .search-btn {
+  background-image: url("../images/ico-search-white.png");
+}
+.svg .front-page.dark-background .search-btn {
+  background-image: url("../assets/ico-search-white.svg");
 }
 .search-btn:hover {
   opacity: 1;
@@ -1403,12 +1433,20 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+.footer, .dark-background .footer {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b5000000', GradientType=0 );
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMDIiLz4KICAgIDxzdG9wIG9mZnNldD0iMjYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMTciLz4KICAgIDxzdG9wIG9mZnNldD0iNjMlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNTEiLz4KICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNjUiLz4KICAgIDxzdG9wIG9mZnNldD0iOTYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjcxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
   background-image: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.02) 6%, rgba(0, 0, 0, 0.17) 26%, rgba(0, 0, 0, 0.51) 63%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.75) 96%, rgba(0, 0, 0, 0.75) 99%, rgba(0, 0, 0, 0.71) 100%);
   background-color: transparent;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.02) 6%, rgba(0, 0, 0, 0.17) 26%, rgba(0, 0, 0, 0.51) 63%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.75) 96%, rgba(0, 0, 0, 0.75) 99%, rgba(0, 0, 0, 0.71) 100%);
   background-image: linear-gradient(to bottom,transparent 0%, rgba(0, 0, 0, 0.02) 6%, rgba(0, 0, 0, 0.17) 26%, rgba(0, 0, 0, 0.51) 63%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.75) 96%, rgba(0, 0, 0, 0.75) 99%, rgba(0, 0, 0, 0.71) 100%);
+}
+.light-background .footer {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#00FFFFFF', GradientType=0 );
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 6%, rgba(255, 255, 255, 0.17) 26%, rgba(255, 255, 255, 0.51) 63%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0.75) 96%, rgba(255, 255, 255, 0.75) 99%, rgba(255, 255, 255, 0.71) 100%);
+  background-color: rgba(255, 255, 255, 0);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 6%, rgba(255, 255, 255, 0.17) 26%, rgba(255, 255, 255, 0.51) 63%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0.75) 96%, rgba(255, 255, 255, 0.75) 99%, rgba(255, 255, 255, 0.71) 100%);
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 6%, rgba(255, 255, 255, 0.17) 26%, rgba(255, 255, 255, 0.51) 63%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0.75) 96%, rgba(255, 255, 255, 0.75) 99%, rgba(255, 255, 255, 0.71) 100%);
 }
 .footer .wrap {
   display: table;
@@ -1425,15 +1463,28 @@ body {
   margin: 0 auto;
   text-align: center;
   font-size: 9px;
+}
+.footer .content-formatted, .dark-background .footer .content-formatted {
   color: white;
   color: rgba(255, 255, 255, 0.33);
 }
-.footer .content-formatted a {
+.footer .content-formatted a, .dark-background .footer .content-formatted a {
   color: white;
   color: rgba(255, 255, 255, 0.66);
 }
-.footer .content-formatted a:hover {
+.footer .content-formatted a:hover, .dark-background .footer .content-formatted a:hover {
   color: white;
+}
+.light-background .footer .content-formatted {
+  color: black;
+  color: rgba(0, 0, 0, 0.66);
+}
+.light-background .footer .content-formatted a {
+  color: black;
+  color: rgba(0, 0, 0, 0.88);
+}
+.light-background .footer .content-formatted a:hover {
+  color: black;
 }
 .footer .voog-reference {
   display: table-cell;
@@ -1450,11 +1501,17 @@ body {
   height: 8px;
   font-size: 0;
 }
-.no-svg .footer .voog-reference a {
-  background-image: url("../images/ico-voog.png");
+.no-svg .footer .voog-reference a, .no-svg .dark-background .footer .voog-reference a {
+  background-image: url("../images/ico-voog-white.png");
 }
-.svg .footer .voog-reference a {
-  background-image: url("../assets/ico-voog.svg");
+.svg .footer .voog-reference a, .svg .dark-background .footer .voog-reference a {
+  background-image: url("../assets/ico-voog-white.svg");
+}
+.no-svg .light-background .footer .voog-reference a {
+  background-image: url("../images/ico-voog-black.png");
+}
+.svg .light-background .footer .voog-reference a {
+  background-image: url("../assets/ico-voog-black.svg");
 }
 .footer .voog-reference a:hover {
   opacity: 1;

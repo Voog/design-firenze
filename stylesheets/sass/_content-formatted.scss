@@ -151,44 +151,46 @@
 
   // CMS STYLE OVERRIDES
   // Minimal height of the editable content area (to avoid content area visual 'jumping' when content-area is focused).
+  .front-page.dark-background & {
+    & .placeholder {
+      @include color($white, 0.5);
+    }
+
+    // Draggable content area without content.
+    // TODO: Remove if different color schemes are supported by E3.
+    .edy-empty-bordered {
+      .footer & {
+        @include border(all, 1px, dashed, $white, 0.63);
+
+        .edy-empty-header {
+          @include color($white, 0.63);
+        }
+      }
+    }
+
+    // Content area border.
+    .edy-content-element-hover {
+      .footer & {
+        @include border(all, 1px, solid, $white, 0.2);
+      }
+    }
+
+    .edy-texteditor-active {
+      .footer & {
+        outline: 1px solid rgba($white, 0.4);
+
+        &:hover {
+          outline: 1px solid rgba($white, 0.63)
+        }
+      }
+    }
+  }
+
   .edy-texteditor-view {
     min-height: 18px;
 
     .footer & {
       min-height: 12px;
-    }
-  }
-
-  & .placeholder {
-    @include color($white, 0.5);
-  }
-
-  // Draggable content area without content.
-  // TODO: Remove if different color schemes are supported by E3.
-  .edy-empty-bordered {
-    .footer & {
-      @include border(all, 1px, dashed, $white, 0.63);
-
-      .edy-empty-header {
-        @include color($white, 0.63);
-      }
-    }
-  }
-
-  // Content area border.
-  .edy-content-element-hover {
-    .footer & {
-      @include border(all, 1px, solid, $white, 0.2);
-    }
-  }
-
-  .edy-texteditor-active {
-    .footer & {
-      outline: 1px solid rgba($white, 0.4);
-
-      &:hover {
-        outline: 1px solid rgba($white, 0.63)
-      }
     }
   }
 }

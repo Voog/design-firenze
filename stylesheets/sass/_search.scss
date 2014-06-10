@@ -11,12 +11,25 @@
   background-repeat: no-repeat;
   background-color: transparent;
 
-  .no-svg & {
-    background-image: url('../images/ico-search.png');
+  &,
+  .front-page.light-background & {
+    .no-svg & {
+      background-image: url('../images/ico-search-black.png');
+    }
+
+    .svg & {
+      background-image: url('../assets/ico-search-black.svg');
+    }
   }
 
-  .svg & {
-    background-image: url('../assets/ico-search.svg');
+  .front-page.dark-background & {
+    .no-svg & {
+      background-image: url('../images/ico-search-white.png');
+    }
+
+    .svg & {
+      background-image: url('../assets/ico-search-white.svg');
+    }
   }
 
   &:hover {

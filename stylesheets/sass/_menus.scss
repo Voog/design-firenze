@@ -166,8 +166,8 @@
       }
 
       .menu-link {
-        .front-page & {
-          font-size: 16px;
+        .front-page &,
+        .front-page.dark-background & {
           @include color($white);
 
           &.untranslated {
@@ -179,7 +179,23 @@
           &:hover {
             @include color($white, 0.8);
           }
+        }
 
+        .front-page.light-background & {
+          @include color($black);
+
+          &.untranslated {
+            @include color($black, 0.5);
+          }
+
+          &.active,
+          &.active:hover,
+          &:hover {
+            @include color($black, 0.8);
+          }
+        }
+        .front-page & {
+          font-size: 16px;
         }
 
         .content-page & {

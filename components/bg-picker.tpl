@@ -31,6 +31,8 @@
           $.backstretch(data.image);
           $('.js-bgpicker-body-color').css({'opacity' : 0.5});
         }
+
+        site.handleColorScheme();
       },
 
       commit: function(data) {

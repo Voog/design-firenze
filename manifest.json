@@ -10,7 +10,7 @@
       "component": false,
       "file": "layouts/blog___news.tpl",
       "layout_name": "page_default",
-      "title": "Blog & News"
+      "title": "Blog   news"
     },
     {
       "content_type": "page",
@@ -149,14 +149,14 @@
       "content_type": "component",
       "component": true,
       "file": "components/topbar-tags-blog.tpl",
-      "layout_name": "",
+      "layout_name": "topbar-tags-blog",
       "title": "topbar-tags-blog"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/topbar-tags-post.tpl",
-      "layout_name": "",
+      "layout_name": "topbar-tags-post",
       "title": "topbar-tags-post"
     },
     {
@@ -212,9 +212,15 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-search.svg",
+      "file": "assets/ico-search-black.svg",
       "kind": "assets",
-      "filename": "ico-search.svg"
+      "filename": "ico-search-black.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-search-white.svg",
+      "kind": "assets",
+      "filename": "ico-search-white.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -224,9 +230,15 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-voog.svg",
+      "file": "assets/ico-voog-black.svg",
       "kind": "assets",
-      "filename": "ico-voog.svg"
+      "filename": "ico-voog-black.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-voog-white.svg",
+      "kind": "assets",
+      "filename": "ico-voog-white.svg"
     },
     {
       "content_type": "image/jpeg",
@@ -272,9 +284,15 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-search.png",
+      "file": "images/ico-search-black.png",
       "kind": "images",
-      "filename": "ico-search.png"
+      "filename": "ico-search-black.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-search-white.png",
+      "kind": "images",
+      "filename": "ico-search-white.png"
     },
     {
       "content_type": "image/png",
@@ -283,10 +301,16 @@
       "filename": "ico-tick.png"
     },
     {
-      "content_type": "image/png",
-      "file": "images/ico-voog.png",
+      "content_type": "image/jpeg",
+      "file": "images/ico-voog-black.jpg",
       "kind": "images",
-      "filename": "ico-voog.png"
+      "filename": "ico-voog-black.jpg"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-voog-white.png",
+      "kind": "images",
+      "filename": "ico-voog-white.png"
     },
     {
       "content_type": "application/javascript",

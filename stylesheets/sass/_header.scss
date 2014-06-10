@@ -18,7 +18,15 @@
 .header-top {
   .front-page & {
     padding-bottom: 22px;
+  }
+
+  .front-page &,
+  .front-page.dark-background & {
     @include border(bottom, 2px, solid, $white);
+  }
+
+  .light-background.front-page & {
+    @include border(bottom, 2px, solid, $black);
   }
 
   @include query($mobile-1) {
@@ -50,12 +58,9 @@
   font-size: 30px;
   line-height: 1;
 
-  .front-page & {
-    text-align: center;
-    font-size: 60px;
-
-    &,
-    a {
+  .front-page &,
+  .front-page.dark-background & {
+    &, a {
       @include color($white);
     }
 
@@ -64,6 +69,23 @@
         @include color($white, 0.8);
       }
     }
+  }
+
+  .light-background.front-page & {
+    &, a {
+      @include color($black);
+    }
+
+    a {
+      &:hover {
+        @include color($black, 0.8);
+      }
+    }
+  }
+
+  .front-page & {
+    text-align: center;
+    font-size: 60px;
   }
 
   .content-page & {
