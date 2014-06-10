@@ -151,12 +151,20 @@
     }
   }
 
-  @include query($mobile-1) {
+  @include query($tablet-2) {
     .wrap,
     .content-formatted,
     .voog-reference {
       display: block;
       width: auto;
+    }
+
+    .content-formatted {
+      margin: 20px auto;
+    }
+
+    .voog-reference a {
+      margin: 15px auto;
     }
   }
 }

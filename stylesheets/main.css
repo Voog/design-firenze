@@ -1533,11 +1533,17 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .footer .wrap,
   .footer .content-formatted,
   .footer .voog-reference {
     display: block;
     width: auto;
+  }
+  .footer .content-formatted {
+    margin: 20px auto;
+  }
+  .footer .voog-reference a {
+    margin: 15px auto;
   }
 }
