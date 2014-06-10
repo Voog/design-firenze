@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{% if editmode %} editmode{% else %} public{% endif %}" lang="{{ page.language_code }}">
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
   <meta property="og:url" content="{{ site.url }}">

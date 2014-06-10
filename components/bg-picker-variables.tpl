@@ -27,7 +27,7 @@
 
   {% else %}
 
-    <!-- Sets the body background color value -->
+    <!-- Sets the body background color value for content pages -->
     {% if page.data.body_color == nil %}
       {% assign body_color = '' %}
     {% else %}
