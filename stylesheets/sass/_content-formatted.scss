@@ -155,33 +155,29 @@
     & .placeholder {
       @include color($white, 0.5);
     }
+  }
 
-    // Draggable content area without content.
-    // TODO: Remove if different color schemes are supported by E3.
+  // Draggable content area without content.
+  // TODO: Remove if different color schemes are supported by E3.
+  .dark-background .footer & {
     .edy-empty-bordered {
-      .footer & {
-        @include border(all, 1px, dashed, $white, 0.63);
+      @include border(all, 1px, dashed, $white, 0.63);
 
-        .edy-empty-header {
-          @include color($white, 0.63);
-        }
+      .edy-empty-header {
+        @include color($white, 0.63);
       }
     }
 
     // Content area border.
     .edy-content-element-hover {
-      .footer & {
-        @include border(all, 1px, solid, $white, 0.2);
-      }
+      @include border(all, 1px, solid, $white, 0.2);
     }
 
     .edy-texteditor-active {
-      .footer & {
-        outline: 1px solid rgba($white, 0.4);
+      outline: 1px solid rgba($white, 0.4);
 
-        &:hover {
-          outline: 1px solid rgba($white, 0.63)
-        }
+      &:hover {
+        outline: 1px solid rgba($white, 0.63)
       }
     }
   }
