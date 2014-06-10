@@ -170,19 +170,29 @@
           font-size: 16px;
           @include color($white);
 
+          &.untranslated {
+            @include color($white, 0.5);
+          }
+
           &.active,
           &.active:hover,
           &:hover {
             @include color($white, 0.8);
           }
+
         }
 
         .content-page & {
           font-size: 14px;
           @include color($primary-color);
 
+          &.untranslated {
+            @include color($primary-color, 0.5);
+          }
+
           &.active,
-          &.active:hover {
+          &.active:hover,
+          &:hover {
             @include color($secondary-color);
           }
         }
@@ -200,10 +210,6 @@
 
         &:hover {
           @include color($secondary-color);
-        }
-
-        &.untranslated {
-          @include color($white, 0.5);
         }
 
         .content-page & {
@@ -307,7 +313,7 @@
         @include color($primary-color);
 
         &.untranslated {
-
+          @include color($secondary-color, 0.5);
         }
 
         &.active,

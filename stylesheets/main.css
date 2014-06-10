@@ -390,6 +390,10 @@ body {
   font-size: 16px;
   color: white;
 }
+.front-page .menu-main .menu .menu-item .menu-link.untranslated {
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
+}
 .front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover, .front-page .menu-main .menu .menu-item .menu-link:hover {
   color: white;
   color: rgba(255, 255, 255, 0.8);
@@ -398,7 +402,11 @@ body {
   font-size: 14px;
   color: #888888;
 }
-.content-page .menu-main .menu .menu-item .menu-link.active, .content-page .menu-main .menu .menu-item .menu-link.active:hover {
+.content-page .menu-main .menu .menu-item .menu-link.untranslated {
+  color: #888888;
+  color: rgba(136, 136, 136, 0.5);
+}
+.content-page .menu-main .menu .menu-item .menu-link.active, .content-page .menu-main .menu .menu-item .menu-link.active:hover, .content-page .menu-main .menu .menu-item .menu-link:hover {
   color: #444444;
 }
 .topbar .menu-main .menu .menu-item .menu-link.active, .topbar .menu-main .menu .menu-item .menu-link.active:hover {
@@ -410,10 +418,6 @@ body {
 }
 .menu-main .menu .menu-item .menu-link:hover {
   color: #444444;
-}
-.menu-main .menu .menu-item .menu-link.untranslated {
-  color: white;
-  color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu .menu-item .menu-link {
@@ -487,6 +491,10 @@ body {
 }
 .menu-sub .menu .menu-item .menu-link {
   color: #888888;
+}
+.menu-sub .menu .menu-item .menu-link.untranslated {
+  color: #444444;
+  color: rgba(68, 68, 68, 0.5);
 }
 .menu-sub .menu .menu-item .menu-link.active, .menu-sub .menu .menu-item .menu-link.active:hover {
   color: #444444;
