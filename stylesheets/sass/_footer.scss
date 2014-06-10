@@ -21,7 +21,8 @@
 
   .wrap {
     display: table;
-    max-width: 720px;
+    width: 100%;
+    max-width: 620px;
     height: 100px;
     margin: 0 auto;
     padding: 0 25px;
@@ -30,6 +31,7 @@
   .content-formatted {
     display: table-cell;
     vertical-align: middle;
+    width: 565px;
     margin: 0 auto;
     text-align: center;
     font-size: 9px;
@@ -47,6 +49,7 @@
   .voog-reference {
     display: table-cell;
     vertical-align: middle;
+    width: 20px;
     padding-left: 20px;
 
     a {
