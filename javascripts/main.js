@@ -1,7 +1,8 @@
 ;(function($) {
   // Shows/hides the popover main menu (visible on smalles screens).
   var toggleMainMenu = function() {
-    $('.js-menu-btn').click(function() {
+    $('.js-menu-btn').click(function(event) {
+      event.stopPropagation();
       $(this).toggleClass('open');
       $('.js-menu-main').toggleClass('expanded');
     });
@@ -11,7 +12,7 @@
   var toggleLangMenu = function() {
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
-      $('.js-menu-lang-popover').toggleClass('expanded');
+      $('.js-menu-lang').toggleClass('expanded');
     });
   };
 
@@ -24,11 +25,11 @@
     });
   };
 
-  // Hides the popover main menu if clicked anywhere else than the menu itself (visible on smalles screens).
+  // Hides the popover menus if clicked anywhere else than the menu itself.
   var handlePopoverMenuHide = function() {
     $('html').click(function() {
-      if ($('.js-menu-lang-popover').hasClass('expanded')) {
-        $('.js-menu-lang-popover').removeClass('expanded');
+      if ($('.js-menu-popover').hasClass('expanded')) {
+        $('.js-menu-popover').removeClass('expanded');
       }
     });
   };
