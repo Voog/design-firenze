@@ -314,6 +314,10 @@ body {
   border: 0;
 }
 
+.edit-btn {
+  display: inline-block;
+}
+
 .menu {
   margin-top: 0;
   margin-bottom: 0;
@@ -414,36 +418,22 @@ body {
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu .menu-item .menu-link {
     display: block;
-    padding: 8px 20px 5px;
+    padding: 7px 20px 4px;
     font-size: 20px;
     border-bottom: 1px solid #888888;
     border-bottom: 1px solid rgba(136, 136, 136, 0.33);
   }
 }
 .menu-main .menu .edit-btn {
-  display: inline-block;
   margin-left: 8px;
-}
-@media screen and (max-width: 480px) {
-  .content-page .menu-main .menu .edit-btn {
-    display: block;
-  }
-  .content-page .menu-main .menu .edit-btn .edy-menu-menuadd {
-    display: inline-block;
-    margin: 6px 25px 8px 25px;
-    padding: 0;
-  }
-  .content-page .menu-main .menu .edit-btn .edy-menu-menuadd:hover {
-    background: none;
-  }
 }
 @media screen and (max-width: 480px) {
   .menu-main .menu .edit-btn {
     display: block;
-    margin: 0;
-    font-size: 20px;
+    margin-left: 0;
+    padding: 10px 25px;
     border-bottom: 1px solid #888888;
-    border-bottom: 1px solid rgba(136, 136, 136, 0.2);
+    border-bottom: 1px solid rgba(136, 136, 136, 0.33);
   }
 }
 .menu-main .menu-lang {
@@ -452,6 +442,7 @@ body {
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu-lang {
     display: block;
+    margin-left: 0;
     padding-left: 0;
   }
   .content-page .menu-main .menu-lang .menu .menu-item {
@@ -461,10 +452,10 @@ body {
     border-top: none;
   }
   .content-page .menu-main .menu-lang .menu .menu-item .menu-link {
-    padding: 6px 20px 4px 47px;
+    padding: 10px 20px 9px 47px;
   }
   .content-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .content-page .menu-main .menu-lang .menu .menu-item .menu-link:after {
-    top: 12px;
+    top: 13px;
     left: 20px;
   }
   .content-page .menu-main .menu-lang .menu .menu-item .menu-link.active, .content-page .menu-main .menu-lang .menu .menu-item .menu-link.active:hover {
@@ -474,13 +465,7 @@ body {
     background: none;
   }
   .content-page .menu-main .menu-lang .menu .edit-btn {
-    display: block;
-    text-align: left;
-  }
-  .content-page .menu-main .menu-lang .menu .edit-btn .edy-menu-langadd {
-    display: inline-block;
-    margin: 5px 25px 8px 25px;
-    padding: 0;
+    padding: 12px 25px 13px;
   }
 }
 
@@ -509,25 +494,12 @@ body {
 .menu-sub .menu .menu-item .menu-link:hover {
   color: #444444;
 }
-.menu-sub .menu .edit-btn {
-  display: inline-block;
-}
-@media screen and (max-width: 720px) {
-  .menu-sub {
-    margin-top: 30px;
-  }
-}
 
 .menu-lang {
   display: inline-block;
   vertical-align: middle;
   margin-left: 14px;
   line-height: 1;
-}
-.menu-lang.edit-btn {
-  display: inline-block;
-  margin: 7px 20px;
-  padding: 0;
 }
 @media screen and (max-width: 480px) {
   .content-page .menu-lang {
@@ -562,16 +534,6 @@ body {
 .menu-lang .menu-item .menu-link:before, .menu-lang .menu-item .menu-link:after {
   top: 4px;
   right: 12px;
-}
-.menu-lang .edit-btn {
-  text-align: right;
-}
-.menu-lang .edy-menu-langadd {
-  display: inline-block;
-  padding: 10px 20px 5px;
-}
-.menu-lang .edy-menu-langadd:hover {
-  background: none;
 }
 
 .menu-lang-btn {
@@ -870,7 +832,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .content-page .header {
-    margin: 0 -20px;
+    margin: 0 -25px;
   }
 }
 .static .header {

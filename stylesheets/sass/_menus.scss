@@ -69,16 +69,23 @@
   outline: none;
   cursor: pointer;
 }
+
 .tags-btn.open, .tags-btn.open:hover {
   background-color: black;
 }
+
 .tags-btn:hover {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .tags-btn::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+.edit-btn {
+  display: inline-block;
 }
 
 .menu {
@@ -202,7 +209,7 @@
         .content-page & {
           @include query($mobile-1) {
             display: block;
-            padding: 8px 20px 5px;
+            padding: 7px 20px 4px;
             font-size: 20px;
             @include border(bottom, 1px, solid, $primary-color, 0.33);
 
@@ -220,30 +227,13 @@
     }
 
     .edit-btn {
-      display: inline-block;
       margin-left: 8px;
-
-      .content-page & {
-        @include query($mobile-1) {
-          display: block;
-
-          .edy-menu-menuadd {
-            display: inline-block;
-            margin: 6px 25px 8px 25px;
-            padding: 0;
-
-            &:hover {
-              background: none;
-            }
-          }
-        }
-      }
 
       @include query($mobile-1) {
         display: block;
-        margin: 0;
-        font-size: 20px;
-        @include border(bottom, 1px, solid, $primary-color, 0.2);
+        margin-left: 0;
+        padding: 10px 25px;
+        @include border(bottom, 1px, solid, $primary-color, 0.33);
       }
     }
   }
@@ -254,6 +244,7 @@
     .content-page & {
       @include query($mobile-1) {
         display: block;
+        margin-left: 0;
         padding-left: 0;
         .menu {
           .menu-item {
@@ -264,11 +255,11 @@
             }
 
             .menu-link {
-              padding: 6px 20px 4px 47px;
+              padding: 10px 20px 9px 47px;
 
               &:before,
               &:after {
-                top: 12px;
+                top: 13px;
                 left: 20px;
               }
 
@@ -285,14 +276,7 @@
           }
 
           .edit-btn {
-            display: block;
-            text-align: left;
-
-            .edy-menu-langadd {
-              display: inline-block;
-              margin: 5px 25px 8px 25px;
-              padding: 0;
-            }
+            padding: 12px 25px 13px;
           }
         }
       }
@@ -336,14 +320,6 @@
         }
       }
     }
-
-    .edit-btn {
-      display: inline-block;
-    }
-  }
-
-  @include query($tablet-2) {
-    margin-top: 30px;
   }
 }
 
@@ -352,12 +328,6 @@
   vertical-align: middle;
   margin-left: 14px;
   line-height: 1;
-
-  &.edit-btn {
-    display: inline-block;
-    margin: 7px 20px;
-    padding: 0;
-  }
 
   @include query($mobile-1) {
     .content-page & {
@@ -397,19 +367,6 @@
         top: 4px;
         right: 12px;
       }
-    }
-  }
-
-  .edit-btn {
-    text-align: right;
-  }
-
-  .edy-menu-langadd {
-    display: inline-block;
-    padding: 10px 20px 5px;
-
-    &:hover {
-      background: none;
     }
   }
 }
