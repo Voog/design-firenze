@@ -24,11 +24,12 @@
   {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
 
   <div class="container">
+    {% include "topbar" with "article" %}
+
     <div class="container-middle js-container-middle">
       <div class="container-inner">
         <div class="wrap js-wrap">
           <div class="wrap-inner">
-            {% include "topbar" with "article" %}
             {% include "header" %}
             {% include "tags-post" %}
 

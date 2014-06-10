@@ -325,11 +325,11 @@ body {
   list-style: none;
 }
 
+.menu-main.narrow {
+  max-width: 500px;
+}
 .front-page .menu-main {
   text-align: center;
-}
-.topbar .menu-main {
-  max-width: 525px;
 }
 @media screen and (max-width: 480px) {
   .content-page .header .menu-main {
@@ -784,7 +784,7 @@ body {
 .topbar .tags {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 5px;
   bottom: 0;
   z-index: 1;
   text-align: right;
@@ -910,7 +910,7 @@ body {
 .topbar .wrap {
   position: relative;
   display: block;
-  max-width: 660px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 12px 30px;
 }

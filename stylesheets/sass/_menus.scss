@@ -98,12 +98,12 @@
 .menu-main {
   @extend %bebas-neue;
 
-  .front-page & {
-    text-align: center;
+  &.narrow {
+    max-width: 500px;
   }
 
-  .topbar & {
-    max-width: 525px;
+  .front-page & {
+    text-align: center;
   }
 
   .content-page .header & {
@@ -511,7 +511,7 @@ $flags:
   .topbar & {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
     bottom: 0;
     z-index: 1;
     text-align: right;
