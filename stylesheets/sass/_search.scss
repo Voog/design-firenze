@@ -39,4 +39,17 @@
   &:focus {
     outline: none;
   }
+
+  @include query($mobile-1) {
+    position: relative;
+    top: 1px;
+
+    .front-page & {
+      right: 0;
+    }
+
+    .common-page & {
+      right: 40px;
+    }
+  }
 }

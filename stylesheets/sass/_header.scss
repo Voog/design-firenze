@@ -4,10 +4,6 @@
     position: relative;
     padding: 0 5px 20px;
     @include border(bottom, 1px, solid, $primary-color, 0.33);
-
-    @include query($mobile-1) {
-      margin: 0 -25px;
-    }
   }
 
   .static & {
@@ -31,7 +27,6 @@
 
   @include query($mobile-1) {
     .content-page & {
-      padding: 0 15px;
       min-height: 30px;
     }
   }
@@ -40,6 +35,8 @@
 .header-options {
   position: absolute;
   top: 25px;
+  width: 50%;
+  text-align: right;
 
   .front-page & {
     right: 30px;

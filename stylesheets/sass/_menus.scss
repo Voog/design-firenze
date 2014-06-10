@@ -18,8 +18,9 @@
 
   @include query($mobile-1) {
     position: absolute;
-    top: 5px;
+    top: 2px;
     right: 0;
+    z-index: 1;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -49,7 +50,7 @@
   }
 
   @include query($mobile-1) {
-    right: 20px;
+    right: 5px;
   }
 }
 
@@ -127,8 +128,8 @@
     @include query($mobile-1) {
       &.expanded {
         top: 50px;
-        left: 0;
-        right: 0;
+        left: -25px;
+        right: -25px;
         min-width: 0;
         margin-bottom: 40px;
         @include no-box-shadow;

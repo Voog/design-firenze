@@ -75,9 +75,13 @@
     padding: 0 25px;
   }
 
-  .content-formatted {
+  .content-formatted,
+  .voog-reference {
     display: table-cell;
     vertical-align: middle;
+  }
+
+  .content-formatted {
     width: 590px;
     margin: 0 auto;
     text-align: center;
@@ -110,8 +114,6 @@
   }
 
   .voog-reference {
-    display: table-cell;
-    vertical-align: middle;
     width: 60px;
     padding-left: 20px;
 
@@ -146,6 +148,15 @@
       &:hover {
         @include opacity(1);
       }
+    }
+  }
+
+  @include query($mobile-1) {
+    .wrap,
+    .content-formatted,
+    .voog-reference {
+      display: block;
+      width: auto;
     }
   }
 }
