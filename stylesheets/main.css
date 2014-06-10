@@ -896,6 +896,7 @@ body {
   right: 30px;
 }
 .content-page .header-options {
+  top: 0;
   right: 0;
 }
 
