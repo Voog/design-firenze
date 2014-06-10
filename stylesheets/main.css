@@ -625,6 +625,11 @@ body {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   z-index: 1;
 }
+.menu-lang-popover .edit-btn {
+  display: block;
+  padding: 8px 20px 3px;
+  text-align: right;
+}
 
 .lang-flag-sq:after {
   background-position: 0 0;
