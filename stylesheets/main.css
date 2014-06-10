@@ -856,11 +856,6 @@ body {
   border-bottom: 1px solid #888888;
   border-bottom: 1px solid rgba(136, 136, 136, 0.33);
 }
-@media screen and (max-width: 480px) {
-  .content-page .header {
-    margin: 0 -25px;
-  }
-}
 .static .header {
   padding-top: 55px;
 }
@@ -1456,7 +1451,7 @@ body {
 .footer .wrap {
   display: table;
   width: 100%;
-  max-width: 620px;
+  max-width: 650px;
   height: 100px;
   margin: 0 auto;
   padding: 0 25px;
@@ -1464,7 +1459,7 @@ body {
 .footer .content-formatted {
   display: table-cell;
   vertical-align: middle;
-  width: 565px;
+  width: 590px;
   margin: 0 auto;
   text-align: center;
   font-size: 9px;
@@ -1494,7 +1489,7 @@ body {
 .footer .voog-reference {
   display: table-cell;
   vertical-align: middle;
-  width: 20px;
+  width: 60px;
   padding-left: 20px;
 }
 .footer .voog-reference a {
