@@ -35,10 +35,8 @@
 
       commit: function(data) {
         {% if bg-picker == "article" %}
-          console.log('articleData');
           articleData.set({
         {% else %}
-          console.log('pageData');
           pageData.set({
         {% endif %}
           'body_image': data.image || '',
