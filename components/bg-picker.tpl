@@ -32,7 +32,7 @@
           $('.js-bgpicker-body-color').css({'opacity' : 0.5});
         }
 
-        site.handleColorScheme();
+        {% if editmode %}site.handleColorScheme();{% endif %}
       },
 
       commit: function(data) {

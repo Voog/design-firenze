@@ -156,37 +156,33 @@
   var handleColorScheme = function() {
     color = $('.js-bgpicker-body-color').css('background-color');
 
-    var getRGBA = function(colorStr) {
-      if (!colorStr || typeof colorStr !== 'string') {
-        return;
-      }
+    if (color) {
+      var getRGBA = function(colorStr) {
+        if (!colorStr || typeof colorStr !== 'string') {
+          return;
+        }
 
-      var arr = colorStr.match(/(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,?\s*([\d\.]+)?\s*)/);
-      if (arr) {
-        return {
-          r: +arr[2],
-          g: +arr[3],
-          b: +arr[4],
-          a: (arr[5]) ? +arr[5] : 1
-        };
-      }
-    };
+        var arr = colorStr.match(/(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,?\s*([\d\.]+)?\s*)/);
+        if (arr) {
+          return {
+            r: +arr[2],
+            g: +arr[3],
+            b: +arr[4],
+            a: (arr[5]) ? +arr[5] : 1
+          };
+        }
+      };
 
       var parsedColor = getRGBA(color),
       rgbAverage = parsedColor.r + parsedColor.g + parsedColor.b,
       alpha = parsedColor.a;
-
-      if (rgbAverage + alpha > 0) {
-        console.log('larger');
-      } else {
-        console.log('smaller');
-      }
 
       if (rgbAverage + alpha > 0 && rgbAverage / 3 > 128) {
         $('body').addClass('light-background').removeClass('dark-background');
       } else {
         $('body').addClass('dark-background').removeClass('light-background');
       }
+    }
   };
 
   // Initiates the functions when window is resized.
