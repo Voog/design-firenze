@@ -16,13 +16,13 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}<!-- MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC -->{% endcomment %}
-<script src="{{ javascripts_path }}/modernizr.js?4"></script>
+<script src="{{ javascripts_path }}/modernizr.js?5"></script>
 
 {% comment %}<!-- STYLESHEETS -->{% endcomment %}
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-{% stylesheet_link "main.css?4" %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.css?4" %}<![endif]-->
-<link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css?4">
+{% stylesheet_link "main.css?5" %}
+<!--[if lt IE 9]>{% stylesheet_link "ie8.css?5" %}<![endif]-->
+<link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css?5">
 
 {% comment %}<!-- SITE TITLE -->{% endcomment %}
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
