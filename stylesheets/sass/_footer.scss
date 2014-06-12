@@ -75,6 +75,11 @@
     padding: 0 25px;
   }
 
+  .wrap-inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
   .content-formatted,
   .voog-reference {
     display: table-cell;
