@@ -12,7 +12,7 @@
   var toggleLangMenu = function() {
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
-      $('.js-menu-lang').toggleClass('expanded');
+      $('.js-menu-lang-popover').toggleClass('expanded');
     });
   };
 
