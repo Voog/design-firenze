@@ -26,6 +26,7 @@
   {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
 
   <div class="container">
+    <div class="top-gradient"></div>
     <div class="container-middle js-container-middle">
       <div class="container-inner">
         <div class="wrap js-wrap">
