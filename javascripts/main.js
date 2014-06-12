@@ -100,7 +100,9 @@
   // Sets the position of the footer to the bottom of the page
   var handleFooterPosition = function() {
     editmode = $('html').hasClass('editmode'),
-    container = '.js-container-middle',
+    container = '.js-container',
+    containerMiddle = '.js-container-middle',
+    wrap = '.js-wrap',
     contentHeight = $('.js-wrap').height(),
     windowHeight = $(window).height(),
     footerHeight = $('.js-footer').height();
@@ -111,10 +113,27 @@
       containerHeight = windowHeight - footerHeight;
     }
 
-    $(container).css({
-      'height': containerHeight,
+    $(containerMiddle).css({
+      'height': containerHeight - footerHeight * 0.5,
+      'padding-bottom': footerHeight * 1.5
+    });
+
+    containerHeight = $(container).height();
+
+    $(containerMiddle).css({
+      'height': containerHeight - footerHeight * 1.5,
       'padding-bottom': footerHeight
     });
+
+    if (windowHeight < containerHeight) {
+      $(wrap).css({
+        'bottom': 0
+      });
+    } else {
+      $(wrap).css({
+        'bottom': -footerHeight * 0.5
+      });
+    }
   };
 
   // Initiates the functions when footer content area is being edited.

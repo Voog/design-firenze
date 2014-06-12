@@ -13,8 +13,8 @@ body {
 }
 
 .editmode, .editmode body {
-  height: -webkit-calc(100% - 40px) !important;
-  height: calc(100% - 40px) !important;
+  height: -webkit-calc(100% - 20px) !important;
+  height: calc(100% - 20px) !important;
 }
 
 body {
@@ -107,6 +107,7 @@ body {
 }
 
 .wrap {
+  position: relative;
   margin: 0 auto;
   padding: 25px;
 }
@@ -242,7 +243,7 @@ body {
   outline: 1px solid rgba(255, 255, 255, 0.63);
 }
 .content-formatted .edy-texteditor-view {
-  min-height: 18px;
+  min-height: 19px;
 }
 .footer .content-formatted .edy-texteditor-view {
   min-height: 12px;

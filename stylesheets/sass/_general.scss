@@ -7,8 +7,8 @@ body {
 
 .editmode {
   &, body {
-    height: -webkit-calc(100% - 40px) !important;
-    height:         calc(100% - 40px) !important;
+    height: -webkit-calc(100% - 20px) !important;
+    height:         calc(100% - 20px) !important;
   }
 }
 
@@ -110,6 +110,7 @@ body {
 }
 
 .wrap {
+  position: relative;
   margin: 0 auto;
   padding: 25px;
 
