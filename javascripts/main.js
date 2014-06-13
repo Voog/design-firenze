@@ -1,36 +1,43 @@
 ;(function($) {
   // Shows/hides the popover main menu (visible on smalles screens).
-  var toggleMainMenu = function() {
+  var handleElementsToggle = function() {
+    $('html').click(function() {
+      if ($('.js-popover').hasClass('expanded')) {
+        $('.js-popover').removeClass('expanded');
+      }
+
+      if ($('.js-modal-overlay').hasClass('active')) {
+        $('.js-modal-overlay').removeClass('active');
+      }
+    });
+
+    // Toggles the popover main menu (visible on smalles screens).
     $('.js-menu-btn').click(function(event) {
       event.stopPropagation();
       $(this).toggleClass('open');
       $('.js-menu-main').toggleClass('expanded');
     });
-  };
 
-  // Shows/hides the popover language menu.
-  var toggleLangMenu = function() {
+    // Toggles the popover language menu.
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
       $('.js-menu-lang-popover').toggleClass('expanded');
     });
-  };
 
-  // Shows/hides the popover tags menu.
-  var toggleTagsMenu = function() {
-    $('.js-tags-btn').click(function(event) {
+    // Toggles the mobile search modal.
+    $('.js-search-btn').click(function(event) {
       event.stopPropagation();
       $(this).toggleClass('open');
-      $('.js-menu-tags').toggleClass('expanded');
-    });
-  };
+      $('.js-search').toggleClass('active');
 
-  // Hides the popover menus if clicked anywhere else than the menu itself.
-  var handlePopoverMenuHide = function() {
-    $('html').click(function() {
-      if ($('.js-menu-popover').hasClass('expanded')) {
-        $('.js-menu-popover').removeClass('expanded');
+      if ($('.js-modal-overlay').hasClass('active')) {
+        $('.js-search-input').focus();
       }
+    });
+
+    // Prevents modal closing
+    $('.js-modal').click(function(event) {
+      event.stopPropagation();
     });
   };
 
@@ -241,9 +248,7 @@
 
     var init = function() {
       // Add site wide functions here.
-      toggleMainMenu();
-      toggleLangMenu();
-      handlePopoverMenuHide();
+      handleElementsToggle();
       handleFooterPosition();
       handleFooterContentEdit();
       handleGalleryHover();

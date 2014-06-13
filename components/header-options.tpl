@@ -1,6 +1,6 @@
 <div class="header-options">
   {% if site.search.enabled %}
-    <button class="search-btn">Search</button>
+    <button class="search-btn js-search-btn">Search</button>
   {% endif %}
 
   {% if editmode or site.has_many_languages? %}

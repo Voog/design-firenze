@@ -20,5 +20,7 @@
       </div>
       {% endif %}
     </nav>
+
+    {% include "search" %}
   </div>
 </header>

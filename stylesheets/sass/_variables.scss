@@ -5,20 +5,22 @@
 // General colors
 $primary-color: #888888;
 $secondary-color: #444444;
-$third-color: #f2f2f2;
+$third-color: #F2F2F2;
 
 // Specific colors
 $black: #000000;
-$white: #ffffff;
+$white: #FFFFFF;
 
-$red: #cc0000;
-$green: #60a740;
-$blue-1: #0066bb;
-$blue-2: #c7e5ff;
+$red: #CC0000;
+$green: #60A740;
+$blue-1: #0066BB;
+$blue-2: #C7E5FF;
 
 $grey-1: #838586;
-$grey-2: #fafafa;
-$grey-3: #e2e2e2;
+$grey-2: #FAFAFA;
+$grey-3: #E2E2E2;
+$grey-4: #F5F5F5;
+$yellow: #F9EC5A;
 
 
 // Media queries
@@ -30,4 +32,7 @@ $mobile-1: 480px;
 $mobile-2: 420px;
 
 // Reusable values
-// $search-height: 24px;
+// Define the reusable variables here.
+// For example the width of several different elements, that allways have to be with the same height:
+// $box-width: 400px;
+$search-height: 50px;

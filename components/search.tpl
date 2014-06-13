@@ -1,13 +1,10 @@
 {% if site.search.enabled %}
-  <section class="search">
-    <form id="search" class="edys-search" method="get" action="#">
-      <div class="search-left">
-        <input id="onpage_search" class="edys-search-input" type="text" placeholder="Search" name="">
-      </div>
-      <div class="search-right">
-        <input class="search-submit" type="submit" value="Search" name="">
-      </div>
+  <div class="search js-search js-modal-overlay">
+    <div class="search-inner js-modal">
+    <form id="search" class="search-form js-search-form" method="get" action="#">
+      <input id="onpage_search" class="search-input js-search-input js-input-dynamic" type="text" placeholder="search this site...">
+      <input class="search-submit js-search-submit" type="submit" value="" name="">
     </form>
-    <div id="customsearch"></div>
-  </section>
+    </div>
+  </div>
 {% endif %}
