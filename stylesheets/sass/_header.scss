@@ -13,18 +13,8 @@
 
 .header-top {
   .front-page & {
-    padding-bottom: 22px;
+    text-align: center;
   }
-
-  .front-page &,
-  .front-page.dark-background & {
-    @include border(bottom, 2px, solid, $white);
-  }
-
-  .light-background.front-page & {
-    @include border(bottom, 2px, solid, $black);
-  }
-
   @include query($mobile-1) {
     .content-page & {
       min-height: 30px;
@@ -51,12 +41,21 @@
 .header-title {
   @extend %bebas-neue;
   max-width: 630px;
+  min-width: 50px;
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
 
+  .front-page & {
+    display: inline-block;
+    max-width: 400px;
+    padding-bottom: 20px;
+  }
+
   .front-page &,
   .front-page.dark-background & {
+    @include border(bottom, 3px, solid, $white);
+
     &, a {
       @include color($white);
     }
@@ -69,6 +68,8 @@
   }
 
   .light-background.front-page & {
+    @include border(bottom, 2px, solid, $black);
+
     &, a {
       @include color($black);
     }

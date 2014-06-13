@@ -64,6 +64,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/header-options.tpl",
+      "layout_name": "header-options",
+      "title": "header-options"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/header.tpl",
       "layout_name": "header",
       "title": "header"

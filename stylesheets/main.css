@@ -461,7 +461,7 @@ body {
   margin-left: 8px;
 }
 @media screen and (max-width: 480px) {
-  .menu-main .menu .edit-btn {
+  .content-page .menu-main .menu .edit-btn {
     display: block;
     margin-left: 0;
     padding: 10px 25px;
@@ -877,13 +877,7 @@ body {
 }
 
 .front-page .header-top {
-  padding-bottom: 22px;
-}
-.front-page .header-top, .front-page.dark-background .header-top {
-  border-bottom: 2px solid white;
-}
-.light-background.front-page .header-top {
-  border-bottom: 2px solid black;
+  text-align: center;
 }
 @media screen and (max-width: 480px) {
   .content-page .header-top {
@@ -907,9 +901,18 @@ body {
 
 .header-title {
   max-width: 630px;
+  min-width: 50px;
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
+}
+.front-page .header-title {
+  display: inline-block;
+  max-width: 400px;
+  padding-bottom: 20px;
+}
+.front-page .header-title, .front-page.dark-background .header-title {
+  border-bottom: 3px solid white;
 }
 .front-page .header-title, .front-page .header-title a, .front-page.dark-background .header-title, .front-page.dark-background .header-title a {
   color: white;
@@ -917,6 +920,9 @@ body {
 .front-page .header-title a:hover, .front-page.dark-background .header-title a:hover {
   color: white;
   color: rgba(255, 255, 255, 0.8);
+}
+.light-background.front-page .header-title {
+  border-bottom: 2px solid black;
 }
 .light-background.front-page .header-title, .light-background.front-page .header-title a {
   color: black;
