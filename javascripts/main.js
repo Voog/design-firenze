@@ -109,6 +109,7 @@
     editmode = $('html').hasClass('editmode'),
     container = '.js-container',
     containerMiddle = '.js-container-middle',
+    containerInner = '.js-container-inner',
     wrap = '.js-wrap',
     contentHeight = $('.js-wrap').height(),
     windowHeight = $(window).height(),
@@ -121,26 +122,20 @@
     }
 
     $(containerMiddle).css({
-      'height': containerHeight - footerHeight * 0.5,
-      'padding-bottom': footerHeight * 1.5
+      'height': containerHeight - footerHeight,
+      'padding-bottom': footerHeight
     });
 
     containerHeight = $(container).height();
 
     $(containerMiddle).css({
-      'height': containerHeight - footerHeight * 1.5,
+      'height': containerHeight - footerHeight,
       'padding-bottom': footerHeight
     });
 
-    if (windowHeight < containerHeight) {
-      $(wrap).css({
-        'bottom': 0
-      });
-    } else {
-      $(wrap).css({
-        'bottom': -footerHeight * 0.5
-      });
-    }
+    $(containerInner).css({
+      'padding-top': footerHeight
+    });
   };
 
   // Initiates the functions when footer content area is being edited.

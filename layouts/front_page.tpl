@@ -28,7 +28,7 @@
   <div class="container js-container">
     <div class="top-gradient"></div>
     <div class="container-middle js-container-middle">
-      <div class="container-inner">
+      <div class="container-inner js-container-inner">
         {% include 'header-options' %}
 
         <div class="wrap js-wrap">
