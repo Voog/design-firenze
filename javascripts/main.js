@@ -177,7 +177,9 @@
   var handleColorScheme = function() {
     color = $('.js-bgpicker-body-color').css('background-color');
 
-    if (color === 'rgba(0, 0, 0, 0)') {
+    console.log(color);
+
+    if (color === 'rgba(0, 0, 0, 0)' || color === 'transparent') {
       $(document).ready(function() {
         if ($('.backstretch').length > 0) {
           $('body').addClass('dark-background').removeClass('light-background');
@@ -203,8 +205,8 @@
       };
 
       var parsedColor = getRGBA(color),
-      rgbAverage = parsedColor.r + parsedColor.g + parsedColor.b,
-      alpha = parsedColor.a;
+          rgbAverage = parsedColor.r + parsedColor.g + parsedColor.b,
+          alpha = parsedColor.a;
 
       if (rgbAverage + alpha > 0 && rgbAverage / 3 > 128) {
         $('body').addClass('light-background').removeClass('dark-background');
