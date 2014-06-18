@@ -343,12 +343,6 @@
       "filename": "overthrow.js"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/search.js",
-      "kind": "javascripts",
-      "filename": "search.js"
-    },
-    {
       "content_type": "text/css",
       "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
