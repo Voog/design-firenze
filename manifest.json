@@ -120,13 +120,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/search.tpl",
-      "layout_name": "search",
-      "title": "search"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/sidebar.tpl",
       "layout_name": "sidebar",
       "title": "sidebar"
@@ -246,18 +239,6 @@
       "file": "assets/ico-voog-white.svg",
       "kind": "assets",
       "filename": "ico-voog-white.svg"
-    },
-    {
-      "content_type": "application/json",
-      "file": "assets/page1.json",
-      "kind": "assets",
-      "filename": "page1.json"
-    },
-    {
-      "content_type": "application/json",
-      "file": "assets/page2.json",
-      "kind": "assets",
-      "filename": "page2.json"
     },
     {
       "content_type": "image/jpeg",

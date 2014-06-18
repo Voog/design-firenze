@@ -3,7 +3,7 @@
 <script src="{{ javascripts_path }}/main.js?5"></script>
 <script src="{{ javascripts_path }}/backstretch.js?5"></script>
 <script src="{{ javascripts_path }}/overthrow.js?5"></script>
-<script src="{{ javascripts_path }}/search.js?5"></script>
+<script src="http://static.voog.com/libs/edicy-search/1.0.0/edicy-search.js?5"></script>
 
 <script>
   var search = new VoogSearch($('.js-search-form').get(0), {
