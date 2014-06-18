@@ -22,7 +22,7 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 {% stylesheet_link "main.css?5" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.css?5" %}<![endif]-->
-<link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css?5">
+<link rel="stylesheet" href="/assets/admin/tools/0.1.2/edicy-tools.css?5">
 
 {% comment %}<!-- SITE TITLE -->{% endcomment %}
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
