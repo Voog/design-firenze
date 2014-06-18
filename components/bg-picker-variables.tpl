@@ -19,7 +19,7 @@
         {% if article.data.body_image == '' %}
           {% assign body_color_style = body_color_style | append: '; opacity: 1' %}
         {% else %}
-          {% assign body_color_style = body_color_style | append: '; opacity: 0.5' %}
+          {% assign body_color_style = body_color_style | append: '; opacity: 0.2' %}
         {% endif %}
       {% endif %}
       {% assign body_color_style = body_color_style | append: ';"' %}
@@ -45,7 +45,7 @@
         {% if page.data.body_image == '' %}
           {% assign body_color_style = body_color_style | append: '; opacity: 1' %}
         {% else %}
-          {% assign body_color_style = body_color_style | append: '; opacity: 0.5' %}
+          {% assign body_color_style = body_color_style | append: '; opacity: 0.2' %}
         {% endif %}
       {% endif %}
       {% assign body_color_style = body_color_style | append: ';"' %}

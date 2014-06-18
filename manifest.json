@@ -120,6 +120,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/sidebar.tpl",
       "layout_name": "sidebar",
       "title": "sidebar"

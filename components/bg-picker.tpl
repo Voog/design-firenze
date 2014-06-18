@@ -25,11 +25,16 @@
         $('.js-bgpicker-body-color').css({'background' : col});
 
         if (data.image === null || data.image === '') {
-          $('.backstretch').remove();
+          $('.backstretch, .js-top-gradient').remove();
           $('.js-bgpicker-body-color').css({'opacity' : 1});
+          $('.js-footer').removeClass('footer-gradient');
         } else {
           $.backstretch(data.image);
-          $('.js-bgpicker-body-color').css({'opacity' : 0.5});
+          if($('.js-top-gradient').length === 0) {
+            $('.js-container').prepend('<div class="top-gradient js-top-gradient"></div>');
+          }
+          $('.js-footer').addClass('footer-gradient');
+          $('.js-bgpicker-body-color').css({'opacity' : 0.2});
         }
 
         {% if editmode %}site.handleColorScheme();{% endif %}

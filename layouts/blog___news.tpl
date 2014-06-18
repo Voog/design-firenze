@@ -32,6 +32,7 @@
         <div class="wrap js-wrap">
           <div class="wrap-inner">
             {% include "header" %}
+            {{ body_image }}
             {% include "tags-blog" %}
 
             <main class="content" role="main">
@@ -60,6 +61,10 @@
   {% include "javascripts" %}
   {% include "bg-picker" %}
   <script>
+    {% unless body_image == nil or body_image == '' %}
+      $.backstretch('{{ body_image }}');
+    {% endunless %}
+
     $(document).ready(function() {
       currentUrl = window.location.href;
       blogUrl = "{{ site.url }}{{ page.path }}";
@@ -67,10 +72,6 @@
         $(".js-tags-all").addClass("active");
       };
     });
-
-    {% unless body_image == nil or body_image == '' %}
-      $.backstretch('{{ body_image }}');
-    {% endunless %}
 
     site.initBlogPage();
   </script>

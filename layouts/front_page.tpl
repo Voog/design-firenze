@@ -26,7 +26,7 @@
   {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
 
   <div class="container js-container">
-    <div class="top-gradient"></div>
+    {% unless body_image == '' %}<div class="top-gradient js-top-gradient"></div>{% endunless %}
     <div class="container-middle js-container-middle">
       <div class="container-inner js-container-inner">
         {% include 'header-options' %}

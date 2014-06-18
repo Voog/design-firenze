@@ -176,8 +176,17 @@
 
   var handleColorScheme = function() {
     color = $('.js-bgpicker-body-color').css('background-color');
+    console.log(color);
 
-    if (color) {
+    if (color === 'rgba(0, 0, 0, 0)') {
+        if ($('.backstretch').length > 0) {
+          $('body').addClass('dark-background').removeClass('light-background');
+          console.log('withimage');
+        } else {
+          $('body').addClass('light-background').removeClass('dark-background');
+          console.log('noimage');
+        }
+    } else if (color) {
       var getRGBA = function(colorStr) {
         if (!colorStr || typeof colorStr !== 'string') {
           return;
@@ -219,7 +228,6 @@
     // Initiations
     var initFrontPage = function() {
       // Add front page specific functions here.
-      handleColorScheme();
     };
 
     var initCommonPage = function() {
@@ -231,18 +239,17 @@
     var initBlogPage = function() {
       // Add blog listing layout specific functions here.
       handleTopbarPosition();
-      toggleTagsMenu();
     };
 
     var initPostPage = function() {
       // Add single post layout specific functions here.
       handleTopbarPosition();
-      toggleTagsMenu();
       focusCommentsWithErrors();
     };
 
     var init = function() {
       // Add site wide functions here.
+      handleColorScheme();
       handleElementsToggle();
       handleFooterPosition();
       handleFooterContentEdit();
