@@ -7,7 +7,7 @@
   .wrap {
     display: table;
     width: 100%;
-    max-width: 660px;
+    max-width: 720px;
     height: 100px;
     margin: 0 auto;
     padding: 0 25px;
@@ -16,17 +16,20 @@
   .wrap-inner {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
   }
 
   .content-formatted,
   .voog-reference {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
   }
 
   .content-formatted {
-    width: 590px;
+    max-width: 590px;
+    min-width: 30px;
     margin: 0 auto;
+    padding-right: 10px;
     text-align: center;
     font-size: 9px;
 
@@ -57,9 +60,6 @@
   }
 
   .voog-reference {
-    width: 60px;
-    padding-left: 20px;
-
     a {
       display: block;
       @include opacity(0.5);

@@ -1651,7 +1651,7 @@ body {
 .footer .wrap {
   display: table;
   width: 100%;
-  max-width: 660px;
+  max-width: 720px;
   height: 100px;
   margin: 0 auto;
   padding: 0 25px;
@@ -1659,15 +1659,18 @@ body {
 .footer .wrap-inner {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 .footer .content-formatted,
 .footer .voog-reference {
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
 }
 .footer .content-formatted {
-  width: 590px;
+  max-width: 590px;
+  min-width: 30px;
   margin: 0 auto;
+  padding-right: 10px;
   text-align: center;
   font-size: 9px;
 }
@@ -1692,10 +1695,6 @@ body {
 }
 .light-background .footer .content-formatted a:hover {
   color: black;
-}
-.footer .voog-reference {
-  width: 60px;
-  padding-left: 20px;
 }
 .footer .voog-reference a {
   display: block;
