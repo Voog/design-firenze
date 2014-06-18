@@ -31,7 +31,6 @@
         <div class="wrap js-wrap">
           <div class="wrap-inner">
             {% include "header" %}
-{{ body_image }}
             {% include "tags-post" %}
 
             <main class="content" role="main">
