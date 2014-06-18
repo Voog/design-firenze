@@ -176,16 +176,15 @@
 
   var handleColorScheme = function() {
     color = $('.js-bgpicker-body-color').css('background-color');
-    console.log(color);
 
     if (color === 'rgba(0, 0, 0, 0)') {
+      $(document).ready(function() {
         if ($('.backstretch').length > 0) {
           $('body').addClass('dark-background').removeClass('light-background');
-          console.log('withimage');
         } else {
           $('body').addClass('light-background').removeClass('dark-background');
-          console.log('noimage');
         }
+      });
     } else if (color) {
       var getRGBA = function(colorStr) {
         if (!colorStr || typeof colorStr !== 'string') {
