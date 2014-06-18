@@ -10,7 +10,7 @@
 
   <!-- Sets the body background image value for article pages -->
   {% if article.data.body_image == nil %}
-    {% assign body_image = '/images/blog-page-bg.jpg' %}
+    {% assign body_image = images_path | append: '/blog-page-bg.jpg' %}
   {% else %}
     {% assign body_image = article.data.body_image %}
   {% endif %}

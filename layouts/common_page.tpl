@@ -11,7 +11,7 @@
   <!-- Sets the body background image value -->
   {% capture dont_render %}
     {% if page.data.body_image == nil %}
-      {% assign body_image = '/images/common-page-bg.jpg' %}
+      {% assign body_image = images_path | append: '/common-page-bg.jpg' %}
     {% else %}
       {% assign body_image = page.data.body_image %}
     {% endif %}
