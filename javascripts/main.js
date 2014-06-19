@@ -129,13 +129,25 @@
     containerHeight = $(container).height();
 
     $(containerMiddle).css({
-      'height': containerHeight - footerHeight,
+      'height': containerHeight - footerHeight - 30,
       'padding-bottom': footerHeight
     });
 
-    $(containerInner).css({
-      'padding-top': footerHeight
-    });
+    console.log('containerHeight' + containerHeight);
+    console.log('windowHeight' + windowHeight);
+    console.log('');
+
+    if (windowHeight < containerHeight - 30) {
+      console.log('scroll');
+      $(wrap).css({
+        'margin-top': 0
+      });
+    } else {
+      console.log('no scroll');
+      $(wrap).css({
+        'margin-top': footerHeight - 30
+      });
+    }
   };
 
   // Initiates the functions when footer content area is being edited.
@@ -205,8 +217,8 @@
       };
 
       var parsedColor = getRGBA(color),
-          rgbAverage = parsedColor.r + parsedColor.g + parsedColor.b,
-          alpha = parsedColor.a;
+      rgbAverage = parsedColor.r + parsedColor.g + parsedColor.b,
+      alpha = parsedColor.a;
 
       if (rgbAverage + alpha > 0 && rgbAverage / 3 > 128) {
         $('body').addClass('light-background').removeClass('dark-background');

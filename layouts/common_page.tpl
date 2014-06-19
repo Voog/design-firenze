@@ -29,7 +29,7 @@
     {% include "topbar" %}
 
     <div class="container-middle js-container-middle">
-      <div class="container-inner">
+      <div class="container-inner js-container-inner">
         <div class="wrap js-wrap">
           <div class="wrap-inner">
             {% include "header" %}
