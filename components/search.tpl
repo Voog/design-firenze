@@ -1,7 +1,7 @@
 {% if site.search.enabled %}
   <div class="search js-search js-modal-overlay">
     <div class="search-inner js-search-inner">
-    <form id="search" class="search-form js-search-form" method="get" action="#">
+    <form id="search" class="search-form js-search-form js-popover" method="get" action="#">
       <input id="onpage_search" class="search-input js-search-input js-input-dynamic" type="text" placeholder="search this site...">
       <!-- <input class="search-submit js-search-submit" type="submit" value="" name=""> -->
       <button class="search-submit js-search-submit">

@@ -5,6 +5,10 @@
       if ($('.js-popover').hasClass('expanded')) {
         $('.js-popover').removeClass('expanded');
       }
+
+      if ($('.js-tags-btn').hasClass('open')) {
+        $('.js-tags-btn').removeClass('open');
+      }
     });
 
     // Toggles the popover main menu (visible on smalles screens).
@@ -18,6 +22,13 @@
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
       $('.js-menu-lang-popover').toggleClass('expanded');
+    });
+
+    // Toggles the popover main menu (visible on smalles screens).
+    $('.js-tags-btn').click(function(event) {
+      event.stopPropagation();
+      $(this).toggleClass('open');
+      $('.js-menu-tags').toggleClass('expanded');
     });
 
     // Opens the search modal.
@@ -44,7 +55,7 @@
     });
 
     // Prevents search modal closing on click
-    $('.js-search-form').click(function(event) {
+    $('.js-popover').click(function(event) {
       event.stopPropagation();
     });
   };

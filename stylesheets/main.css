@@ -634,7 +634,7 @@ body {
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-  z-index: 1;
+  z-index: 30;
 }
 .menu-lang-popover .edit-btn {
   display: block;

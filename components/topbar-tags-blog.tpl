@@ -2,7 +2,7 @@
   {% include "tags-variables" %}
   <button class="tags-btn js-tags-btn">{{ tags_button }}</button>
 
-  <nav class="menu-tags js-menu-tags">
+  <nav class="menu-tags js-menu-tags js-popover">
     <ul class="menu">
       <li class="menu-item">
         <a class="menu-link js-tags-all" href="/{{ page.path }}">{{ tags_all }}</a>

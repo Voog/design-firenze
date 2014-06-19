@@ -12,7 +12,8 @@
         per_page: 2,
         lang: '{{ page.language_code }}',
         noResults: '{{ "search_noresults" | lc }}',
-        minChars: 2
+        minChars: 2,
+        searchOnType: true
       });
     });
   </script>
