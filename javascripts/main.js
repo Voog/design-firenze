@@ -5,10 +5,6 @@
       if ($('.js-popover').hasClass('expanded')) {
         $('.js-popover').removeClass('expanded');
       }
-
-      if ($('.js-modal-overlay').hasClass('active')) {
-        $('.js-modal-overlay').removeClass('active');
-      }
     });
 
     // Toggles the popover main menu (visible on smalles screens).
@@ -24,20 +20,51 @@
       $('.js-menu-lang-popover').toggleClass('expanded');
     });
 
-    // Toggles the mobile search modal.
-    $('.js-search-btn').click(function(event) {
+    // Opens the search modal.
+    $('.js-search-open-btn').click(function(event) {
       event.stopPropagation();
-      $(this).toggleClass('open');
-      $('.js-search').toggleClass('active');
+      $(this).addClass('open');
+      $('.js-search-close-btn').addClass('open');
+      $('.js-search').addClass('active');
+      $('.js-search-inner').css({'margin-top': '-25px'});
+      $('.js-search-input').focus();
 
-      if ($('.js-modal-overlay').hasClass('active')) {
-        $('.js-search-input').focus();
-      }
     });
 
-    // Prevents modal closing
-    $('.js-modal').click(function(event) {
+    // Closes the search modal.
+    $('.js-search-close-btn').click(function(event) {
       event.stopPropagation();
+      $(this).removeClass('open');
+      $('.js-search-open-btn').removeClass('open');
+      $('.js-search').removeClass('active');
+    });
+
+    $('.js-search').click(function() {
+      $('.js-search-close-btn').trigger('click');
+    });
+
+    // Prevents search modal closing on click
+    $('.js-search-form').click(function(event) {
+      event.stopPropagation();
+    });
+  };
+
+  // Adds/removes active class to search box if input is focused.
+  var handleSearchFocus = function() {
+    searchForm = $('.js-search-form');
+    $('.js-search-input').focus(function() {
+      searchForm.addClass('active');
+    }).blur(function() {
+      searchForm.removeClass('active');
+    });
+  };
+
+  var handleSearchMobilePosition = function() {
+    $('.js-search-form').on('submit', function() {
+      // searchModalHeight = $('.voog-search-modal').height();
+      $('.js-search-inner').css({'margin-top': '-54px'});
+      // console.log('searchModalHeight: ' + searchModalHeight);
+
     });
   };
 
@@ -256,6 +283,8 @@
       // Add site wide functions here.
       handleColorScheme();
       handleElementsToggle();
+      handleSearchFocus();
+      handleSearchMobilePosition();
       handleFooterPosition();
       handleFooterContentEdit();
       handleGalleryHover();

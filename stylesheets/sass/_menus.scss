@@ -1,5 +1,6 @@
 /* MENUS */
 .menu-btn {
+  @extend %button;
   display: none;
 
   .menu-stripe {
@@ -22,11 +23,7 @@
     right: 0;
     z-index: 1;
     display: inline-block;
-    margin: 0;
     padding: 0;
-    background: none;
-    border: none;
-    cursor: pointer;
 
     &.open,
     &:hover {
@@ -55,20 +52,16 @@
 }
 
 .tags-btn {
+  @extend %button;
   width: 155px;
   height: 100%;
-  margin: 0;
   padding: 0 20px;
-  font-family: "Bebas Neue";
+  font-family: 'Bebas Neue';
   font-weight: normal;
   font-size: 16px;
   text-align: right;
   color: white;
   line-height: 1;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
 .tags-btn.open, .tags-btn.open:hover {
@@ -78,11 +71,6 @@
 .tags-btn:hover {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-.tags-btn::-moz-focus-inner {
-  padding: 0;
-  border: 0;
 }
 
 .edit-btn {
@@ -351,7 +339,6 @@
 .menu-lang {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 14px;
   line-height: 1;
 
   @include query($mobile-1) {
@@ -401,8 +388,9 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 20px;
-  height: 13px;
+  width: 30px;
+  height: 25px;
+  padding: 0;
   font-size: 0;
   background: none;
   border: none;
@@ -418,8 +406,8 @@
 
   &:before,
   &:after {
-    top: 0;
-    left: 0;
+    top: 6px;
+    left: 5px;
   }
 }
 

@@ -219,18 +219,6 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-search-black.svg",
-      "kind": "assets",
-      "filename": "ico-search-black.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-search-white.svg",
-      "kind": "assets",
-      "filename": "ico-search-white.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
       "file": "assets/ico-tick.svg",
       "kind": "assets",
       "filename": "ico-tick.svg"
