@@ -27,8 +27,7 @@
       $('.js-search-close-btn').addClass('open');
       $('.js-search').addClass('active');
       $('.js-search-inner').css({'margin-top': '-25px'});
-      $('.js-search-input').focus();
-
+      $('.js-search-input').val('').focus();
     });
 
     // Closes the search modal.
@@ -37,6 +36,7 @@
       $(this).removeClass('open');
       $('.js-search-open-btn').removeClass('open');
       $('.js-search').removeClass('active');
+      $('.voog-search-modal').remove();
     });
 
     $('.js-search').click(function() {
