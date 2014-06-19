@@ -133,17 +133,11 @@
       'padding-bottom': footerHeight
     });
 
-    console.log('containerHeight' + containerHeight);
-    console.log('windowHeight' + windowHeight);
-    console.log('');
-
     if (windowHeight < containerHeight - 30) {
-      console.log('scroll');
       $(wrap).css({
         'margin-top': 0
       });
     } else {
-      console.log('no scroll');
       $(wrap).css({
         'margin-top': footerHeight - 30
       });
@@ -188,8 +182,6 @@
 
   var handleColorScheme = function() {
     color = $('.js-bgpicker-body-color').css('background-color');
-
-    console.log(color);
 
     if (color === 'rgba(0, 0, 0, 0)' || color === 'transparent') {
       $(document).ready(function() {
