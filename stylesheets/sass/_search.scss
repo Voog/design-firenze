@@ -137,6 +137,7 @@
 
 .search-btn {
   position: relative;
+  top: 1px;
   z-index: 25;
   vertical-align: middle;
   @include opacity(0.5);
@@ -163,15 +164,8 @@
   }
 
   @include query($mobile-1) {
-    position: relative;
-    top: 1px;
-
-    .front-page & {
-      right: 0;
-    }
-
-    .common-page & {
-      right: 40px;
+    .content-page & {
+      margin-right: 35px;
     }
   }
 }

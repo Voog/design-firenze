@@ -1221,6 +1221,7 @@ body {
 
 .search-btn {
   position: relative;
+  top: 1px;
   z-index: 25;
   vertical-align: middle;
   opacity: 0.5;
@@ -1245,15 +1246,8 @@ body {
   outline: none;
 }
 @media screen and (max-width: 480px) {
-  .search-btn {
-    position: relative;
-    top: 1px;
-  }
-  .front-page .search-btn {
-    right: 0;
-  }
-  .common-page .search-btn {
-    right: 40px;
+  .content-page .search-btn {
+    margin-right: 35px;
   }
 }
 
