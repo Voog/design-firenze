@@ -16,6 +16,10 @@
       event.stopPropagation();
       $(this).toggleClass('open');
       $('.js-menu-main').toggleClass('expanded');
+
+      if ($('.js-search-close-btn').hasClass('open')) {
+        $('.js-search-close-btn').trigger('click');
+      }
     });
 
     // Toggles the popover language menu.
@@ -32,6 +36,10 @@
     // Opens the search modal.
     $('.js-search-open-btn').click(function(event) {
       event.stopPropagation();
+      if ($('.js-menu-btn').hasClass('open')) {
+        $('.js-menu-btn').trigger('click');
+      }
+
       $(this).addClass('open');
       $('.js-search-close-btn').addClass('open');
       $('.js-search').addClass('active');
