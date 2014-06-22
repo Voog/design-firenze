@@ -892,16 +892,15 @@ body {
 
 .header-options {
   position: absolute;
-  top: 18px;
+  right: 25px;
   width: 50%;
   text-align: right;
 }
 .front-page .header-options {
-  right: 25px;
+  top: 18px;
 }
 .content-page .header-options {
-  top: 0;
-  right: 0;
+  top: 25px;
 }
 
 .header-title {

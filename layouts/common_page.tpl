@@ -33,6 +33,7 @@
         <div class="wrap js-wrap">
           <div class="wrap-inner">
             {% include "header" %}
+            {% include 'header-options' %}
             {% include "menu-level-2" %}
 
             <main class="content" role="main">

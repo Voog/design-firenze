@@ -32,6 +32,7 @@
         <div class="wrap js-wrap">
           <div class="wrap-inner">
             {% include "header" %}
+            {% include 'header-options' %}
             {% include "tags-blog" %}
 
             <main class="content" role="main">

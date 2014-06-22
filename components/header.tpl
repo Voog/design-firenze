@@ -7,8 +7,6 @@
       <span class="menu-stripe"></span>
       <span class="menu-stripe"></span>
     </button>
-
-    {% unless site.root_item.selected? %}{% include 'header-options' %}{% endunless %}
   </div>
 
   <div class="header-bottom">
