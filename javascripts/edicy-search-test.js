@@ -376,8 +376,6 @@
         submit: function() {
             var val = this.input.value;
 
-            console.log('a');
-
             this.setLoading();
             this.clearNext = true;
 
