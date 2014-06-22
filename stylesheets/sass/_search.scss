@@ -21,7 +21,8 @@
     right: 0;
     bottom: 0;
     z-index: 20;
-    display: block;
+    display: table;
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -29,14 +30,18 @@
   }
 }
 
-.search-inner {
-  position: absolute;
-  top: 50%;
+.search-middle {
+  display: table-cell;
+  vertical-align: middle;
   width: 100%;
-  margin-top: -$search-height / 2;
   padding: 0 20px;
   @include box-sizing(border-box);
+}
 
+.search-inner {
+  max-width: 400px;
+  margin: 0 auto;
+  @include box-shadow(0, 0, 100px, 0, rgba($black, 0.75));
 }
 
 .search-form {
@@ -65,11 +70,10 @@
   font-family: inherit;
   font-size: 24px;
   line-height: 1;
-  @include color($secondary-color, 0.67);
+  @include color($secondary-color);
   background: none;
   @include box-sizing(border-box);
   border: none;
-  @include box-shadow(0, 0, 100px, rgba($black, 0.75));
 
   // Removes the clear input button in IE11
   &::-ms-clear {
@@ -93,6 +97,23 @@
   vertical-align: top;
   width: 30px;
   height: $search-height;
+
+  &, .dark-background & {
+    .no-svg & {
+      background-image: url('../images/ico-search-white.png');
+    }
+  }
+
+  .light-background & {
+    .no-svg & {
+      background-image: url('../images/ico-search-black.png');
+    }
+  }
+
+  .no-svg & {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .search-submit {
@@ -123,24 +144,22 @@
   height: 22px;
   font-size: 0;
 
+  svg {
+    .front-page.dark-background & {
+      fill: $white;
+    }
+
+    .front-page.light-background & {
+      fill: $black;
+    }
+  }
+
   &:hover {
     @include opacity(1);
   }
 
   &:focus {
     outline: none;
-  }
-
-  .dark-background & {
-    svg {
-      fill: $white;
-    }
-  }
-
-  .light-background & {
-    svg {
-      fill: $black;
-    }
   }
 
   @include query($mobile-1) {
@@ -172,81 +191,49 @@
 }
 
 .voog-search-modal {
-  position: absolute;
   @include box-sizing(border-box);
-  z-index: 20;
   width: 100%;
   max-width: 400px;
-  padding: 20px 27px;
+  margin: 0 auto;
   @include bg($grey-4, 0.95);
+  @include no-box-shadow;
+
+  &.search-results-active {
+    padding: 20px 27px;
+  }
 }
 
 .voog-search-modal-results {
-  text-align: center;
+  &.no-content {
+    text-align: center;
+  }
+
+  h3 {
+    @extend %bebas-neue;
+    margin: 0;
+    font-size: 24px;
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      @include color($secondary-color);
+
+      &:hover {
+        @include color($secondary-color, 0.8);
+      }
+    }
+  }
+
+  p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
 }
 
-// .voog-search-modal {
-//   position: absolute;
-//   @include box-sizing(border-box);
-//   z-index: 20;
-//   width: 100%;
-//   max-width: 400px;
-//   max-height: 300px;
-//   margin-top: 0;
-//   padding: 20px 27px;
-//   @include box-shadow(0, 0, 30px, rgba($black, 0.5));
-//   overflow-x: hidden;
-//   overflow-y: auto;
+.voog-search-modal-result {
+  margin-top: 18px;
 
-//   &.no-content {
-//     text-align: center;
-//     padding-bottom: 24px;
-//   }
-
-//   em {
-//     font-weight: 600;
-//     font-style: normal;
-//     @include bg($yellow, 0.5);
-//     border-radius: 2px;
-//   }
-// }
-
-// .voog-search-modal-result {
-//   margin-top: 18px;
-// }
-
-// .voog-search-loader {
-//   display: none;
-//   height: 24px;
-//   text-align: center;
-//   background: url('../assets/dot-loader.svg') no-repeat center;
-// }
-
-// .voog-search-modal-result {
-//   margin-top: 18px;
-
-//   &:first-child {
-//     margin-top: 0;
-//   }
-// }
-
-// .voog-search-title {
-//   @extend %bebas-neue;
-//   margin: 0;
-//   font-size: 24px;
-// }
-
-// .voog-search-link {
-//   text-decoration: none;
-//   font-weight: 600;
-//   @include color($secondary-color);
-
-//   &:hover {
-//     @include color($secondary-color, 0.8);
-//   }
-// }
-
-// .voog-search-content {
-//   margin: 5px 0 0;
-//   font-size: 14px;
-// }
+  &:first-child {
+    margin-top: 0;
+  }
+}

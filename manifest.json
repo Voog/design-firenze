@@ -176,6 +176,12 @@
   ],
   "assets": [
     {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
+    {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/bebas-neue-regular.eot",
       "kind": "assets",
@@ -234,6 +240,12 @@
       "file": "assets/ico-voog-white.svg",
       "kind": "assets",
       "filename": "ico-voog-white.svg"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
     },
     {
       "content_type": "image/jpeg",
@@ -296,10 +308,10 @@
       "filename": "ico-tick.png"
     },
     {
-      "content_type": "image/jpeg",
-      "file": "images/ico-voog-black.jpg",
+      "content_type": "image/png",
+      "file": "images/ico-voog-black.png",
       "kind": "images",
-      "filename": "ico-voog-black.jpg"
+      "filename": "ico-voog-black.png"
     },
     {
       "content_type": "image/png",
@@ -308,10 +320,22 @@
       "filename": "ico-voog-white.png"
     },
     {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
+    {
       "content_type": "application/javascript",
       "file": "javascripts/backstretch.js",
       "kind": "javascripts",
       "filename": "backstretch.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/edicy-search-test.js",
+      "kind": "javascripts",
+      "filename": "edicy-search-test.js"
     },
     {
       "content_type": "application/javascript",
@@ -338,6 +362,12 @@
       "filename": "overthrow.js"
     },
     {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
+    {
       "content_type": "text/css",
       "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
@@ -348,6 +378,12 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "stylesheets/sass",
+      "kind": "stylesheets",
+      "filename": "sass"
     }
   ]
 }

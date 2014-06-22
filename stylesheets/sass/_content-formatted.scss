@@ -182,6 +182,16 @@
     }
   }
 
+  // Space between editable content areas in editmode.
+  .edy-content-element {
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // Minimum height of the text content areas.
   .edy-texteditor-view {
     min-height: 19px;
 

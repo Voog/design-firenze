@@ -1,13 +1,13 @@
 ;(function($) {
   // Shows/hides the popover main menu (visible on smalles screens).
-  var handleElementsToggle = function() {
+  var handleElementsClick = function() {
     $('html').click(function() {
-      if ($('.js-popover').hasClass('expanded')) {
-        $('.js-popover').removeClass('expanded');
+      if ($('.js-btn').hasClass('open')) {
+        $('.js-btn').removeClass('open');
       }
 
-      if ($('.js-tags-btn').hasClass('open')) {
-        $('.js-tags-btn').removeClass('open');
+      if ($('.js-popover').hasClass('expanded')) {
+        $('.js-popover').removeClass('expanded');
       }
     });
 
@@ -21,14 +21,12 @@
     // Toggles the popover language menu.
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
-      $('.js-menu-lang-popover').toggleClass('expanded');
+      $('.js-menu-lang').toggleClass('expanded');
     });
 
-    // Toggles the popover main menu (visible on smalles screens).
-    $('.js-tags-btn').click(function(event) {
-      event.stopPropagation();
-      $(this).toggleClass('open');
-      $('.js-menu-tags').toggleClass('expanded');
+    // Hides search modal on side click
+    $('.js-search').click(function() {
+      $('.js-search-close-btn').trigger('click');
     });
 
     // Opens the search modal.
@@ -37,7 +35,6 @@
       $(this).addClass('open');
       $('.js-search-close-btn').addClass('open');
       $('.js-search').addClass('active');
-      $('.js-search-inner').css({'margin-top': '-25px'});
       $('.js-search-input').val('').focus();
     });
 
@@ -47,35 +44,12 @@
       $(this).removeClass('open');
       $('.js-search-open-btn').removeClass('open');
       $('.js-search').removeClass('active');
-      $('.voog-search-modal').remove();
+      $('.js-voog-search-modal').removeClass('search-results-active');
+      $('.voog-search-modal-results').html('');
     });
 
-    $('.js-search').click(function() {
-      $('.js-search-close-btn').trigger('click');
-    });
-
-    // Prevents search modal closing on click
-    $('.js-popover').click(function(event) {
+    $('.js-search-form').click(function(event) {
       event.stopPropagation();
-    });
-  };
-
-  // Adds/removes active class to search box if input is focused.
-  var handleSearchFocus = function() {
-    searchForm = $('.js-search-form');
-    $('.js-search-input').focus(function() {
-      searchForm.addClass('active');
-    }).blur(function() {
-      searchForm.removeClass('active');
-    });
-  };
-
-  var handleSearchMobilePosition = function() {
-    $('.js-search-form').on('submit', function() {
-      // searchModalHeight = $('.voog-search-modal').height();
-      $('.js-search-inner').css({'margin-top': '-54px'});
-      // console.log('searchModalHeight: ' + searchModalHeight);
-
     });
   };
 
@@ -293,14 +267,13 @@
     var init = function() {
       // Add site wide functions here.
       handleColorScheme();
-      handleElementsToggle();
-      handleSearchFocus();
-      handleSearchMobilePosition();
+      handleElementsClick();
       handleFooterPosition();
       handleFooterContentEdit();
       handleGalleryHover();
       handleWindowResize();
       wrapTables();
+
       if ($('.table-container').length > 0) {
         checkScrollBar();
         handleTableHorizontalScrolling();

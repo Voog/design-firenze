@@ -10,7 +10,7 @@
     max-width: 720px;
     height: 100px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0;
   }
 
   .wrap-inner {
@@ -22,7 +22,6 @@
   .content-formatted,
   .voog-reference {
     display: inline-block;
-    vertical-align: middle;
   }
 
   .content-formatted {
@@ -67,8 +66,7 @@
       height: 8px;
       font-size: 0;
 
-      &,
-      .dark-background & {
+      &, .dark-background & {
         .no-svg & {
           background-image: url('../images/ico-voog-white.png');
         }
@@ -91,23 +89,6 @@
       &:hover {
         @include opacity(1);
       }
-    }
-  }
-
-  @include query($tablet-2) {
-    .wrap,
-    .content-formatted,
-    .voog-reference {
-      display: block;
-      width: auto;
-    }
-
-    .content-formatted {
-      margin: 20px auto;
-    }
-
-    .voog-reference a {
-      margin: 15px auto;
     }
   }
 }

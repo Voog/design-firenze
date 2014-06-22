@@ -1,4 +1,7 @@
 /* MENUS */
+// Styling rules for the site's menus.
+
+// Menu button. Only visible on smaller screens.
 .menu-btn {
   @extend %button;
   display: none;
@@ -51,6 +54,7 @@
   }
 }
 
+// Tags toggle button
 .tags-btn {
   @extend %button;
   width: 155px;
@@ -62,21 +66,23 @@
   text-align: right;
   color: white;
   line-height: 1;
+
+  &.open,
+  &.open:hover {
+    @include bg($black);
+  }
+
+  &:hover {
+    @include bg($black, 0.2);
+  }
 }
 
-.tags-btn.open, .tags-btn.open:hover {
-  background-color: black;
-}
-
-.tags-btn:hover {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
+// CMS menu add/edit button
 .edit-btn {
   display: inline-block;
 }
 
+// General rules for all navigation menus.
 .menu {
   margin-top: 0;
   margin-bottom: 0;
@@ -251,6 +257,7 @@
     }
   }
 
+  // Styling rules for the language menu in the site's main menu. Only visible on smaller screens.
   .menu-lang {
     display: none;
 
@@ -336,6 +343,7 @@
   }
 }
 
+// Styling rules for the site's language menu.
 .menu-lang {
   display: inline-block;
   vertical-align: middle;
@@ -361,28 +369,28 @@
     .menu-link {
       position: relative;
       display: block;
-      padding: 5px 40px 5px 13px;
+      padding: 4px 39px 4px 12px;
       @include color($secondary-color, 0.67);
 
       &.active,
       &.active:hover {
-        @include color($white);
-        @include bg($secondary-color);
+        @include opacity(0.5);
+        @include filter(grayscale(100%));
       }
 
       &:hover {
-        @include bg($grey-1, 0.5);
+        @include opacity(0.75);
+        @include filter(grayscale(50%));
       }
 
       &:before,
       &:after {
-        top: 4px;
-        right: 12px;
+        top: 3px;
+        right: 11px;
       }
     }
   }
 }
-
 
 .menu-lang-btn {
   position: relative;
@@ -520,6 +528,7 @@ $flags:
   .lang-flag-#{$flag}:after { background-position: $pos; }
 }
 
+// Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
 .tags-editor {
   padding: 15px 5px;
 }
