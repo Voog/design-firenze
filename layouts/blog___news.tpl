@@ -6,7 +6,7 @@
   <meta property="og:title" content="{{ site.name }}">
   {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
   {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
-  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
+  {% unless page.data.fb_image == nil or page.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endunless %}
 
   <!-- Sets the body background image value for article pages -->
   {% if article.data.body_image == nil %}
