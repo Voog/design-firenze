@@ -1,7 +1,7 @@
 /* CONTENT */
 .content {
   display: block;
-  padding: 43px 5px;
+  @include rem-fallback(padding, 43, 5);
 
   @include query($tablet-2) {
     .container-inner {
@@ -12,6 +12,7 @@
   @include query($mobile-1) {
     .content {
       padding: 20px 0;
+      @include rem-fallback(padding, 20, 0);
     }
   }
 }

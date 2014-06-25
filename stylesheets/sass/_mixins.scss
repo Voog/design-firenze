@@ -51,6 +51,38 @@
   }
 }
 
+// REM FALLBACKS
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  }
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value / 10}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $pxValues;
+  #{$property}: $remValues;
+}
+
 // PERSPECTIVE
 @mixin perspective($value: 1000) {
   -webkit-perspective: $value;
@@ -73,8 +105,8 @@
 }
 
 // MEDIA QUERY
-@mixin query($value: $tablet-1) {
-  @media screen and (max-width: $value) {
+@mixin query($value: $tablet-1, $screen: 'max-width') {
+  @media screen and ($screen: $value) {
     @content;
   }
 }

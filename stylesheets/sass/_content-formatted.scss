@@ -21,23 +21,23 @@
 
   h1 {
     @extend %bebas-neue;
-    margin-top: 25px;
-    font-size: 36px;
+    @include rem-fallback(margin-top, 25);
+    @include rem-fallback(font-size, 36);
     line-height: 1;
   }
 
   h2 {
-    margin-top: 16px;
-    font-size: 18px;
+    @include rem-fallback(margin-top, 16);
+    @include rem-fallback(font-size, 18);
   }
 
   h3, h4, h5, h6 {
-    margin-top: 20px;
-    font-size: 16px;
+    @include rem-fallback(margin-top, 20);
+    @include rem-fallback(font-size, 16);
   }
 
   p {
-    margin-top: 20px;
+    @include rem-fallback(margin-top, 20);
   }
 
   // Styling rules for the editable content area lists and links.
@@ -69,14 +69,14 @@
   }
 
   pre {
-    margin-top: 10px;
+    @include rem-fallback(margin-top, 10);
     margin-bottom: 0;
     overflow: auto;
     white-space: nowrap;
 
     &, code {
-      padding: 10px;
-      font-size: 14px;
+      @include rem-fallback(padding, 10);
+      @include rem-fallback(font-size, 14);
       @include bg($grey-2);
     }
 
@@ -88,7 +88,7 @@
   }
 
   blockquote {
-    margin: 20px 40px;
+    @include rem-fallback(margin, 20, 40);
   }
 
   .edy-texteditor-container {
@@ -121,7 +121,7 @@
   // Styling rules for the site's editable content area tables.
   // Container around editable content-area table.
   .table-container {
-    margin-top: 20px;
+    @include rem-fallback(margin-top, 20);
   }
 
   // Overthrow plugin to support horizontal scrolling on older devices that have touch-screens. For example Android 2.3 devices.
@@ -138,12 +138,12 @@
 
   table {
     width: 100%;
-    margin-top: 20px;
-    font-size: 16px;
+    @include rem-fallback(margin-top, 20);
+    @include rem-fallback(font-size, 16);
     border-collapse: collapse;
 
     td {
-      padding: 10px;
+      @include rem-fallback(padding, 10);
       @include border(top,1px,solid,$third-color);
       @include border(bottom,1px,solid,$third-color);
     }
@@ -162,6 +162,7 @@
   .dark-background .footer & {
     .edy-empty-bordered {
       @include border(all, 1px, dashed, $white, 0.63);
+      @include rem-fallback(border-width, 1);
 
       .edy-empty-header {
         @include color($white, 0.63);
@@ -171,6 +172,7 @@
     // Content area border.
     .edy-content-element-hover {
       @include border(all, 1px, solid, $white, 0.2);
+      @include rem-fallback(border-width, 1);
     }
 
     .edy-texteditor-active {
@@ -184,7 +186,7 @@
 
   // Space between editable content areas in editmode.
   .edy-content-element {
-    margin-top: 20px;
+    @include rem-fallback(margin-top, 20);
 
     &:first-child {
       margin-top: 0;
@@ -193,10 +195,10 @@
 
   // Minimum height of the text content areas.
   .edy-texteditor-view {
-    min-height: 19px;
+    @include rem-fallback(min-height, 19);
 
     .footer & {
-      min-height: 12px;
+      @include rem-fallback(min-height, 12);
     }
   }
 }

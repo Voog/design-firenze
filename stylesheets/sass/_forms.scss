@@ -2,11 +2,11 @@
 .content-formatted {
   form {
     max-width: 100%;
-    margin-top: 20px;
+    @include rem-fallback(margin-top, 20);
   }
 
   .form_field {
-    margin-top: 15px;
+    @include rem-fallback(margin-top, 15);
 
     &:first-child {
       margin-top: 0;
@@ -15,7 +15,7 @@
 
   .form_field,
   .edy-fe-label {
-    font-size: 14px;
+    @include rem-fallback(font-size, 14);
     @include color($secondary-color);
   }
 
@@ -23,7 +23,7 @@
     label {
       position: relative;
       display: inline;
-      padding-left: 8px;
+      @include rem-fallback(padding-left, 8);
       font-weight: 400;
       line-height: 1.3;
       cursor: pointer;
@@ -50,7 +50,7 @@
   .form_field_select,
   .form_submit input {
     font-family: inherit;
-    font-size: 14px;
+    @include rem-fallback(font-size, 14);
     @include inputiosreset;
   }
 
@@ -64,9 +64,9 @@
   .form_field_textfield,
   .form_field_textarea,
   .form_field_select {
-    width: 280px;
-    margin: 8px 0 0;
-    padding: 5px 8px 6px;
+    @include rem-fallback(width, 280);
+    @include rem-fallback(margin, 8, 0, 0);
+    @include rem-fallback(padding, 5, 8, 6);
     @include bg($third-color);
     border: none;
     @include box-sizing(border-box);
@@ -81,10 +81,11 @@
   }
 
   .form_field_select {
-    padding: 7px 9px 6px 9px;
-    text-indent: 0.01px;
+    @include rem-fallback(padding, 7, 9);
+    @include rem-fallback(text-indent, 0.01);
     text-overflow: '';
     background-position: 97.5% 13px;
+    background-position: 97.5% 1.3rem;
     background-repeat: no-repeat;
     border: none;
   }
@@ -103,31 +104,31 @@
   .form_field_checkbox,
   .form_field_radio {
     visibility: hidden;
-    margin-bottom: 8px;
+    @include rem-fallback(margin-bottom, 8);
 
     + .form_control_indicator {
       position: absolute;
-      left: 3px;
+      @include rem-fallback(left, 3);
       display: block;
-      width: 15px;
-      height: 15px;
+      @include rem-fallback(width, 15);
+      @include rem-fallback(height, 15);
       @include bg($third-color);
     }
   }
 
   .form_field_checkbox {
     + .form_control_indicator {
-      top: 3px;
+      @include rem-fallback(top, 3);
     }
 
     &:checked {
       + .form_control_indicator:before {
         position: absolute;
-        top: -3px;
-        left: 3px;
+        @include rem-fallback(top, -3);
+        @include rem-fallback(left, 3);
         display: block;
-        width: 14px;
-        height: 14px;
+        @include rem-fallback(width, 14);
+        @include rem-fallback(height, 14);
         content: '';
         background-size: cover;
 
@@ -144,7 +145,7 @@
 
   .form_field_radio {
     + .form_control_indicator {
-      top: 2px;
+      @include rem-fallback(top, 2);
 
       &, &:before {
         border-radius: 100%;
@@ -157,8 +158,8 @@
         top: 0;
         left: 0;
         display: block;
-        width: 15px;
-        height: 15px;
+        @include rem-fallback(width, 15);
+        @include rem-fallback(height, 15);
         content: '';
         @include bg($secondary-color);
       }
@@ -166,7 +167,7 @@
   }
 
   .form_field_size_medium {
-    width: 420px;
+    @include rem-fallback(width, 420);
 
     @include query($mobile-2) {
       width: 100%;
@@ -174,15 +175,15 @@
   }
 
   .form_field_size_large {
-    width: 580px;
+    @include rem-fallback(width, 580);
   }
 
   .form_submit {
     input {
       display: block;
-      margin: 18px 0 0;
-      padding: 8px 11px;
-      font-size: 14px;
+      @include rem-fallback(margin, 18, 0, 0);
+      @include rem-fallback(padding, 8, 11);
+      @include rem-fallback(font-size, 14);
       @include color($white);
       line-height: 1;
       @include bg($blue-1);
@@ -214,8 +215,8 @@
   }
 
   .form_field_error {
-    margin-top: 5px;
-    margin-left: 1px;
+    @include rem-fallback(margin-top, 5);
+    @include rem-fallback(margin-left, 1);
     @include color($red);
   }
 
@@ -234,20 +235,20 @@
   .feedback-success,
   .form_error,
   .form_notice {
-    padding: 8px 12px;
-    font-size: 14px;
+    @include rem-fallback(padding, 8, 12);
+    @include rem-fallback(font-size, 14);
   }
 
   .feedback-error,
   .feedback-loading,
   .feedback-success {
-    margin: 18px 0 0;
+    @include rem-fallback(margin, 18, 0, 0);
   }
 
   .feedback-loading {
-    width: 60px;
+    @include rem-fallback(width, 60);
     text-align: center;
-    font-size: 30px;
+    @include rem-fallback(font-size, 30);
     @include bg($secondary-color, 0.5);
   }
 
@@ -255,9 +256,9 @@
     span {
       display: inline-block;
       vertical-align: middle;
-      width:  7.5px;
-      height: 7.5px;
-      margin: 0 3px 5px 0;
+      @include rem-fallback(width, 7.5);
+      @include rem-fallback(height, 7.5);
+      @include rem-fallback(margin, 0, 3, 5, 0);
       background: transparent;
       border-radius: 50%;
       @include animation(feedback-loading 0.8s linear infinite);
@@ -308,16 +309,17 @@
 
   .form_error,
   .form_notice {
-    margin-bottom: 20px;
+    @include rem-fallback(margin-bottom, 20);
   }
 
   .close-btn {
     vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    margin: 2px 0 5px 9px;
+    @include rem-fallback(width, 20);
+    @include rem-fallback(height, 20);
+    @include rem-fallback(margin, 2, 0, 5, 9);
     padding: 0;
     @include border(all, 1px, solid, $white, 0.3);
+    @include rem-fallback(border-width, 1);
     border-radius: 100%;
     cursor: pointer;
 

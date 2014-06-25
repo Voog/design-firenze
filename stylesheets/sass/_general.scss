@@ -1,5 +1,13 @@
 /* GENERAL */
 // Styling rules for the basic parts of the page. These rules affect the entire site.
+html {
+  font-size: 62.5%;
+
+  @include query($large-1, 'min-width') {
+    font-size: 85.5%;
+  }
+}
+
 html,
 body {
   height: 100% !important;
@@ -8,7 +16,9 @@ body {
 .editmode {
   &, body {
     height: -webkit-calc(100% - 20px) !important;
+    height: -webkit-calc(100% - 2rem) !important;
     height:         calc(100% - 20px) !important;
+    height:         calc(100% - 2rem) !important;
   }
 }
 
@@ -18,7 +28,7 @@ body {
   padding: 0;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  @include rem-fallback(font-size, 14);
   line-height: 1.4;
   @include color($primary-color);
   -webkit-overflow-scrolling: touch;
@@ -64,9 +74,18 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  height: 96px;
+  @include rem-fallback(height, 96);
   $experimental-support-for-svg: true;
-  @include background-image(linear-gradient(top,  rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.2) 1%,rgba(255,255,255,0.17) 19%,rgba(255,255,255,0.05) 69%,rgba(255,255,255,0) 100%));
+  @include background-image(
+    linear-gradient(
+      top,
+      rgba(255,255,255,0.18) 0%,
+      rgba(255,255,255,0.2) 1%,
+      rgba(255,255,255,0.17) 19%,
+      rgba(255,255,255,0.05) 69%,
+      rgba(255,255,255,0) 100%
+      )
+    );
 }
 
 .bgpicker-btn {
@@ -99,14 +118,14 @@ body {
   table-layout: fixed;
   width: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  @include rem-fallback(padding-top, 30);
 
   .front-page & {
-    max-width: 450px;
+    @include rem-fallback(max-width, 450);
   }
 
   .content-page & {
-    max-width: 720px;
+    @include rem-fallback(max-width, 720);
   }
 }
 
@@ -118,15 +137,15 @@ body {
 .wrap {
   position: relative;
   margin: 0 auto;
-  padding: 25px;
+  @include rem-fallback(padding, 25);
 
   .container-inner & {
     .front-page & {
-      max-width: 450px;
+      @include rem-fallback(max-width, 450);
     }
 
     .content-page & {
-      max-width: 720px;
+      @include rem-fallback(max-width, 720);
       @include bg($white);
     }
   }

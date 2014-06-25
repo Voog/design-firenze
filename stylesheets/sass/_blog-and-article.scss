@@ -3,12 +3,12 @@
 .post-title a,
 .post-date {
   @extend %bebas-neue;
-  font-size: 36px;
+  @include rem-fallback(font-size, 36);
 }
 
 .post-title {
   display: inline;
-  margin: 0 10px 0 0;
+  @include rem-fallback(margin, 0, 10, 0, 0);
   word-break: break-all;
   font-weight: normal;
 
@@ -39,16 +39,16 @@
 }
 
 .post-content {
-  margin-top: 17px;
+  @include rem-fallback(margin-top, 17);
 }
 
 .post-body {
-  margin-top: 20px;
+  @include rem-fallback(margin-top, 20);
 }
 
 .blog-page {
   .post {
-    margin-top: 43px;
+    @include rem-fallback(margin-top, 43);
 
     &:first-child {
       margin-top: 0;

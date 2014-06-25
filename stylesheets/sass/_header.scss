@@ -2,12 +2,13 @@
 .header {
   .content-page & {
     position: relative;
-    padding: 0 5px 20px;
+    @include rem-fallback(padding, 0, 5,20);
     @include border(bottom, 1px, solid, $primary-color, 0.33);
+    @include rem-fallback(border-bottom-width, 1);
   }
 
   .static & {
-    padding-top: 55px;
+    @include rem-fallback(padding-top, 55);
   }
 }
 
@@ -17,43 +18,44 @@
   }
   @include query($mobile-1) {
     .content-page & {
-      min-height: 30px;
+      @include rem-fallback(min-height, 30);
     }
   }
 }
 
 .header-options {
   position: absolute;
-  right: 25px;
+  @include rem-fallback(right, 25);
   width: 50%;
   text-align: right;
 
   .front-page & {
-    top: 18px;
+    @include rem-fallback(top, 18);
   }
 
   .content-page & {
-    top: 25px;
+    @include rem-fallback(top, 25);
   }
 }
 
 .header-title {
   @extend %bebas-neue;
-  max-width: 630px;
-  min-width: 50px;
+  @include rem-fallback(max-width, 630);
+  @include rem-fallback(min-width, 50);
   font-weight: 400;
-  font-size: 30px;
+  @include rem-fallback(font-size, 30);
   line-height: 1;
 
   .front-page & {
     display: inline-block;
-    max-width: 400px;
-    padding-bottom: 20px;
+    @include rem-fallback(max-width, 400);
+    @include rem-fallback(padding-bottom, 20);
   }
 
   .front-page &,
   .front-page.dark-background & {
     @include border(bottom, 3px, solid, $white);
+    @include rem-fallback(border-bottom-width, 3);
 
     &, a {
       @include color($white);
@@ -66,8 +68,9 @@
     }
   }
 
-  .light-background.front-page & {
-    @include border(bottom, 2px, solid, $black);
+  .front-page.light-background & {
+    @include border(bottom, 3px, solid, $black);
+    @include rem-fallback(border-bottom-width, 3);
 
     &, a {
       @include color($black);
@@ -82,7 +85,7 @@
 
   .front-page & {
     text-align: center;
-    font-size: 60px;
+    @include rem-fallback(font-size, 60);
   }
 
   .content-page & {
@@ -101,6 +104,6 @@
 
 .header-bottom {
   .front-page & {
-    padding-top: 25px;
+    @include rem-fallback(padding-top, 25);
   }
 }

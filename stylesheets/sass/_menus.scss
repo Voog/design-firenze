@@ -8,9 +8,9 @@
 
   .menu-stripe {
     display: block;
-    width: 23px;
-    height: 4px;
-    margin: 4px 0;
+    @include rem-fallback(width, 23);
+    @include rem-fallback(height, 4);
+    @include rem-fallback(margin, 4, 0);
     @include bg($secondary-color, 0.67);
     border-radius: 5px;
 
@@ -22,7 +22,7 @@
 
   @include query($mobile-1) {
     position: absolute;
-    top: 2px;
+    @include rem-fallback(top, 2);
     right: 0;
     z-index: 25;
     display: inline-block;
@@ -57,14 +57,14 @@
 // Tags toggle button
 .tags-btn {
   @extend %button;
-  width: 155px;
+  @include rem-fallback(width, 155);
   height: 100%;
-  padding: 0 20px;
+  @include rem-fallback(padding, 0, 20);
   font-family: 'Bebas Neue';
   font-weight: normal;
-  font-size: 16px;
+  @include rem-fallback(font-size, 16);
   text-align: right;
-  color: white;
+  @include color($white);
   line-height: 1;
 
   &.open,
@@ -94,7 +94,7 @@
   @extend %bebas-neue;
 
   &.narrow {
-    max-width: 500px;
+    @include rem-fallback(max-width, 500);
   }
 
   .front-page & {
@@ -107,25 +107,26 @@
 
       &.expanded {
         position: absolute;
-        top: 62px;
-        right: 20px;
+        @include rem-fallback(top, 62);
+        @include rem-fallback(right, 20);
         z-index: 10;
         display: block;
-        min-width: 350px;
-        margin-bottom: 60px;
+        @include rem-fallback(max-width, 350);
+        @include rem-fallback(margin-bottom, 60);
         text-align: left;
         @include bg($white);
         @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+        @include box-shadow(0, 0,5rem, 2.5rem, rgba($black, 0.3));
       }
     }
 
     @include query($mobile-1) {
       &.expanded {
-        top: 50px;
-        left: -25px;
-        right: -25px;
+        @include rem-fallback(top, 50);
+        @include rem-fallback(left, -25);
+        @include rem-fallback(right, -25);
         min-width: 0;
-        margin-bottom: 40px;
+        @include rem-fallback(margin-bottom, 40);
         @include no-box-shadow;
       }
     }
@@ -139,10 +140,10 @@
     .menu-item {
       display: inline-block;
       vertical-align: middle;
-      margin-right: 8px;
+      @include rem-fallback(margin-right, 8);
 
       .front-page & {
-        margin-right: 15px;
+        @include rem-fallback(margin-right, 15);
       }
 
       &:last-child {
@@ -152,6 +153,7 @@
       @include query($mobile-1) {
         &:first-child {
           @include border(top, 1px, solid, $primary-color, 0.33);
+          @include rem-fallback(border-top-width, 1);
         }
 
         .content-page & {
@@ -190,11 +192,11 @@
           }
         }
         .front-page & {
-          font-size: 16px;
+          @include rem-fallback(font-size, 16);
         }
 
         .content-page & {
-          font-size: 14px;
+          @include rem-fallback(font-size, 14);
           @include color($primary-color);
 
           &.untranslated {
@@ -223,35 +225,28 @@
           @include color($secondary-color);
         }
 
-        .content-page & {
-          @include query($mobile-1) {
+        @include query($mobile-1) {
+          .content-page & {
             display: block;
-            padding: 7px 20px 4px;
-            font-size: 20px;
+            @include rem-fallback(padding, 7, 10, 4);
+            @include rem-fallback(font-size, 20);
             @include border(bottom, 1px, solid, $primary-color, 0.33);
-
-            &.active,
-            &.active:hover {
-
-            }
-
-            &:hover {
-
-            }
+            @include rem-fallback(border-bottom-width, 1);
           }
         }
       }
     }
 
     .edit-btn {
-      margin-left: 8px;
+      @include rem-fallback(margin-left, 8);
 
       @include query($mobile-1) {
         .content-page & {
           display: block;
           margin-left: 0;
-          padding: 10px 25px;
+          @include rem-fallback(padding, 10, 25);
           @include border(bottom, 1px, solid, $primary-color, 0.33);
+          @include rem-fallback(border-bottom-width, 1);
         }
       }
     }
@@ -275,12 +270,12 @@
             }
 
             .menu-link {
-              padding: 10px 20px 9px 47px;
+              @include rem-fallback(padding, 10, 20, 9, 47);
 
               &:before,
               &:after {
-                top: 13px;
-                left: 20px;
+                @include rem-fallback(top, 13);
+                @include rem-fallback(left, 20);
               }
 
               &.active,
@@ -296,7 +291,7 @@
           }
 
           .edit-btn {
-            padding: 12px 25px 13px;
+            @include rem-fallback(padding, 12, 25, 13);
           }
         }
       }
@@ -307,17 +302,17 @@
 // Styling rules for the site's sub menu.
 .menu-sub-wrap {
   @include border(bottom, 1px, solid, $primary-color, 0.33);
+  @include rem-fallback(border-bottom-width, 1);
 }
 
 .menu-sub {
-  padding: 15px 5px;
+  @include rem-fallback(padding, 15, 5);
 
   .menu {
-
     .menu-item {
       display: inline-block;
-      margin-right: 10px;
-      font-size: 14px;
+      @include rem-fallback(margin-right, 10);
+      @include rem-fallback(font-size, 14);
 
       &:first-child {
         margin-left: 0;
@@ -364,12 +359,12 @@
   .menu-item {
     display: list-item;
     text-align: right;
-    font-size: 12px;
+    @include rem-fallback(font-size, 12);
 
     .menu-link {
       position: relative;
       display: block;
-      padding: 4px 39px 4px 12px;
+      @include rem-fallback(padding, 4, 39, 4, 12);
       @include color($secondary-color, 0.67);
 
       &.active,
@@ -385,8 +380,8 @@
 
       &:before,
       &:after {
-        top: 3px;
-        right: 11px;
+        @include rem-fallback(top, 3);
+        @include rem-fallback(right, 11);
       }
     }
   }
@@ -396,8 +391,8 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 30px;
-  height: 25px;
+  @include rem-fallback(width, 30);
+  @include rem-fallback(height, 25);
   padding: 0;
   font-size: 0;
   background: none;
@@ -414,8 +409,8 @@
 
   &:before,
   &:after {
-    top: 6px;
-    left: 5px;
+    @include rem-fallback(top, 6);
+    @include rem-fallback(left, 5);
   }
 }
 
@@ -425,8 +420,8 @@
   &:after {
     position: absolute;
     display: block;
-    width: 20px;
-    height: 13px;
+    @include rem-fallback(width, 20);
+    @include rem-fallback(height, 13);
     content: '';
   }
 }
@@ -439,7 +434,7 @@
 
   &:after {
     opacity: 0.95;
-    background-size: 200px;
+    @include rem-fallback(background-size, 200);
     background-repeat: no-repeat;
 
     .no-svg & {
@@ -457,20 +452,21 @@
 
   &.expanded {
     position: absolute;
-    top: 18px;
-    right: -12px;
+    @include rem-fallback(top, 18);
+    @include rem-fallback(right, -12);
     display: block;
-    margin-bottom: 40px;
-    padding: 6px 0;
-    min-width: 121px;
+    @include rem-fallback(margin-bottom, 40);
+    @include rem-fallback(padding, 6, 0);
+    @include rem-fallback(min-width, 121);
     background: #fff;
     @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+    @include box-shadow(0, 0.5rem, 2.5rem, rgba($black, 0.3));
     z-index: 30;
   }
 
   .edit-btn {
     display: block;
-    padding: 8px 20px 3px;
+    @include rem-fallback(padding, 8, 20, 3);
     text-align: right;
   }
 }
@@ -530,16 +526,17 @@ $flags:
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
 .tags-editor {
-  padding: 15px 5px;
+  @include rem-fallback(padding, 15, 5);
 }
 
 .tags {
   @include border(bottom, 1px, solid, $primary-color, 0.33);
+  @include rem-fallback(border-bottom-width, 1);
 
   .topbar & {
     position: absolute;
     top: 0;
-    right: 5px;
+    @include rem-fallback(right, 5);
     bottom: 0;
     z-index: 1;
     text-align: right;
@@ -558,7 +555,7 @@ $flags:
 
     &.expanded {
       display: block;
-      padding-bottom: 30px;
+      @include rem-fallback(padding-bottom, 30);
       text-align: right;
       @include bg($black);
 
@@ -567,8 +564,8 @@ $flags:
 
         .menu-link {
           display: block;
-          padding: 3px 20px;
-          font-size: 12px;
+          @include rem-fallback(padding, 3, 20);
+          @include rem-fallback(font-size, 12);
           @include color($primary-color);
 
           &.active,
