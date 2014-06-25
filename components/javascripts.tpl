@@ -1,13 +1,13 @@
 {% comment %}<!-- SITE WIDE JAVASCRIPTS -->{% endcomment %}
-<script src="{{ javascripts_path }}/jquery.js?5"></script>
-<script src="{{ javascripts_path }}/main.js?5"></script>
-<script src="{{ javascripts_path }}/backstretch.js?5"></script>
-<script src="{{ javascripts_path }}/overthrow.js?5"></script>
+<script src="{{ javascripts_path }}/jquery.js?6"></script>
+<script src="{{ javascripts_path }}/main.js?6"></script>
+<script src="{{ javascripts_path }}/backstretch.js?6"></script>
+<script src="{{ javascripts_path }}/overthrow.js?6"></script>
 
 {% if site.search.enabled %}
   <!-- TODO: Replace script URL if newer version is added to voog.construction -->
-  <!-- <script src="{{ site.static_asset_host }}/libs/edicy-search/1.0.0/edicy-search.js?5"></script> -->
-  <script src="{{ javascripts_path }}/edicy-search-test.js"></script>
+  <!-- <script src="{{ site.static_asset_host }}/libs/edicy-search/1.0.0/edicy-search.js?6"></script> -->
+  <script src="{{ javascripts_path }}/edicy-search-test.js?6"></script>
   <script type="text/javascript">
     var search = new VoogSearch($('.js-search-form').get(0), {
       per_page: 3,
