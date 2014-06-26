@@ -83,10 +83,10 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  height: 96px;
-  height: 9.6rem;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.2) 1%, rgba(255, 255, 255, 0.17) 19%, rgba(255, 255, 255, 0.05) 69%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.2) 1%, rgba(255, 255, 255, 0.17) 19%, rgba(255, 255, 255, 0.05) 69%, rgba(255, 255, 255, 0) 100%);
+  height: 100px;
+  height: 10rem;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0) 100%);
 }
 
 .bgpicker-btn {
@@ -1878,6 +1878,7 @@ body {
 .footer .wrap-inner {
   display: table-cell;
   vertical-align: middle;
+  padding-top: 42px;
   text-align: center;
 }
 .footer .content-formatted,
@@ -1948,6 +1949,6 @@ body {
 }
 
 .footer-gradient {
-  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.33) 23%, rgba(0, 0, 0, 0.81) 78%, rgba(0, 0, 0, 0.88) 89%, rgba(0, 0, 0, 0.91) 98%, rgba(0, 0, 0, 0.95) 99%, rgba(0, 0, 0, 0.88) 100%);
-  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.33) 23%, rgba(0, 0, 0, 0.81) 78%, rgba(0, 0, 0, 0.88) 89%, rgba(0, 0, 0, 0.91) 98%, rgba(0, 0, 0, 0.95) 99%, rgba(0, 0, 0, 0.88) 100%);
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
 }

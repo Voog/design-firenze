@@ -74,18 +74,16 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  @include rem-fallback(height, 96);
+  @include rem-fallback(height, 100);
   $experimental-support-for-svg: true;
   @include background-image(
     linear-gradient(
       top,
-      rgba(255,255,255,0.18) 0%,
-      rgba(255,255,255,0.2) 1%,
-      rgba(255,255,255,0.17) 19%,
-      rgba(255,255,255,0.05) 69%,
-      rgba(255,255,255,0) 100%
-      )
-    );
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.2) 60%,
+      rgba(255, 255, 255, 0) 100%
+    )
+  );
 }
 
 .bgpicker-btn {

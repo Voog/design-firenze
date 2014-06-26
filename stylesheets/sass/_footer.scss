@@ -16,6 +16,7 @@
   .wrap-inner {
     display: table-cell;
     vertical-align: middle;
+    padding-top: 42px;
     text-align: center;
   }
 
@@ -94,14 +95,12 @@
 }
 
 .footer-gradient {
-  @include background-image(linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.33) 23%,
-    rgba(0, 0, 0, 0.81) 78%,
-    rgba(0, 0, 0, 0.88) 89%,
-    rgba(0, 0, 0, 0.91) 98%,
-    rgba(0, 0, 0, 0.95) 99%,
-    rgba(0, 0, 0, 0.88) 100%)
+  @include background-image(
+    linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 60%,
+      rgba(0, 0, 0, 0.5) 100%
+    )
   );
 }
