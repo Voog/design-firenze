@@ -148,18 +148,25 @@
 
     containerHeight = $(container).height();
 
+    // TODO: FInd out wh this magic number is needed.
+    if (editmode) {
+      magicNumber = 18;
+    } else {
+      magicNumber = 30;
+    }
+
     $(containerMiddle).css({
-      'height': containerHeight - footerHeight - 30,
+      'height': containerHeight - footerHeight - magicNumber,
       'padding-bottom': footerHeight
     });
 
-    if (windowHeight < containerHeight - 30) {
+    if (windowHeight < containerHeight - magicNumber) {
       $(wrap).css({
         'margin-top': 0
       });
     } else {
       $(wrap).css({
-        'margin-top': footerHeight - 30
+        'margin-top': footerHeight - magicNumber
       });
     }
   };
