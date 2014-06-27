@@ -213,6 +213,12 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-flags-large.svg",
+      "kind": "assets",
+      "filename": "ico-flags-large.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-flags.svg",
       "kind": "assets",
       "filename": "ico-flags.svg"
