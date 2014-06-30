@@ -9,11 +9,13 @@
   {% unless page.data.fb_image == nil or page.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endunless %}
 
   <!-- Sets the body background image value for article pages -->
-  {% if article.data.body_image == nil %}
-    {% assign body_image = images_path | append: '/blog-page-bg.jpg' %}
-  {% else %}
-    {% assign body_image = article.data.body_image %}
-  {% endif %}
+  {% capture dont_render %}
+    {% if article.data.body_image == nil %}
+      {% assign body_image = images_path | append: '/blog-page-bg.jpg' %}
+    {% else %}
+      {% assign body_image = article.data.body_image %}
+    {% endif %}
+  {% endcapture %}
   {% include "bg-picker-variables" %}
 
   {{ blog.rss_link }}
