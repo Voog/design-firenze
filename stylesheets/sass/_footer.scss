@@ -66,6 +66,7 @@
       @include rem-fallback(width, 35);
       @include rem-fallback(height, 8);
       font-size: 0;
+      background-size: cover;
 
       &, .dark-background & {
         .no-svg & {

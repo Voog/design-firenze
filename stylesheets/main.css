@@ -2121,6 +2121,7 @@ body {
   height: 8px;
   height: 0.8rem;
   font-size: 0;
+  background-size: cover;
 }
 .no-svg .footer .voog-reference a, .no-svg .dark-background .footer .voog-reference a {
   background-image: url("../images/ico-voog-white.png");
