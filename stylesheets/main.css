@@ -2118,8 +2118,8 @@ body {
   filter: alpha(opacity=50);
   width: 35px;
   width: 3.5rem;
-  width: 8px;
-  width: 0.8rem;
+  height: 8px;
+  height: 0.8rem;
   font-size: 0;
 }
 .no-svg .footer .voog-reference a, .no-svg .dark-background .footer .voog-reference a {

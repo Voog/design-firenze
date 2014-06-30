@@ -64,7 +64,7 @@
       display: block;
       @include opacity(0.5);
       @include rem-fallback(width, 35);
-      @include rem-fallback(width, 8);
+      @include rem-fallback(height, 8);
       font-size: 0;
 
       &, .dark-background & {
