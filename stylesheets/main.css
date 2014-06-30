@@ -1711,6 +1711,9 @@ body {
   padding-left: 0;
   font-weight: 600;
 }
+.content-formatted .comment-form .form_field label {
+  padding-left: 0;
+}
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select,
