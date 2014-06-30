@@ -75,6 +75,12 @@
     margin: 0 auto;
     border: none;
   }
+
+  .search-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 36px;
+  }
 }
 
 .search-input {
@@ -154,7 +160,7 @@
 .search-btn {
   position: relative;
   @include rem-fallback(top, 1);
-  z-index: 25;
+  z-index: 19;
   vertical-align: middle;
   @include opacity(0.5);
   @include rem-fallback(width, 22);
@@ -180,7 +186,7 @@
   }
 
   @include query($mobile-1) {
-    .content-page & {
+    .content-page .header-options & {
       @include rem-fallback(margin-right, 35);
     }
   }
@@ -197,6 +203,10 @@
 
   &.open {
     display: inline-block;
+
+    .search-form & {
+      display: none;
+    }
   }
 }
 

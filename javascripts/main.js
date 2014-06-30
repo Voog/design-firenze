@@ -53,8 +53,7 @@
     // Closes the search modal.
     $('.js-search-close-btn').click(function(event) {
       event.stopPropagation();
-      $(this).removeClass('open');
-      $('.js-search-open-btn').removeClass('open');
+      $('.js-search-open-btn, .js-search-close-btn').removeClass('open');
       $('.js-search').removeClass('active');
       $('.js-voog-search-modal').removeClass('search-results-active');
     });

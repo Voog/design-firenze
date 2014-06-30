@@ -325,7 +325,7 @@ body {
     top: 2px;
     top: 0.2rem;
     right: 0;
-    z-index: 25;
+    z-index: 20;
     display: inline-block;
     padding: 0;
   }
@@ -1491,6 +1491,11 @@ body {
   margin: 0 auto;
   border: none;
 }
+.search-form .search-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 36px;
+}
 
 .search-input {
   vertical-align: middle;
@@ -1572,7 +1577,7 @@ body {
   position: relative;
   top: 1px;
   top: 0.1rem;
-  z-index: 25;
+  z-index: 19;
   vertical-align: middle;
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -1598,7 +1603,7 @@ body {
   outline: none;
 }
 @media screen and (max-width: 480px) {
-  .content-page .search-btn {
+  .content-page .header-options .search-btn {
     margin-right: 35px;
     margin-right: 3.5rem;
   }
@@ -1613,6 +1618,9 @@ body {
 }
 .search-close-btn.open {
   display: inline-block;
+}
+.search-form .search-close-btn.open {
+  display: none;
 }
 
 .voog-search-modal {

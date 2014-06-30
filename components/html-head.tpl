@@ -1,5 +1,5 @@
 {% comment %}<!-- IE SETTINGS -->{% endcomment %}
-{% comment %}<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->{% endcomment %}
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 
 {% comment %}<!-- BASIC META INFO -->{% endcomment %}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
