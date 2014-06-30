@@ -70,22 +70,6 @@ body {
 }
 
 // Styling rules for the independent elements that can be located everywhere in the DOM and always have the same styling rules.
-.top-gradient {
-  position: absolute;
-  left: 0;
-  right: 0;
-  @include rem-fallback(height, 100);
-  $experimental-support-for-svg: true;
-  @include background-image(
-    linear-gradient(
-      top,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0.2) 60%,
-      rgba(255, 255, 255, 0) 100%
-    )
-  );
-}
-
 .bgpicker-btn {
   @extend %button;
   position: absolute;

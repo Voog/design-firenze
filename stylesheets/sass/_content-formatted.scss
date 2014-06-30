@@ -17,6 +17,10 @@
   // Styling rules for the editable content area headings and paragraphs.
   h1, h2, h3, h4, h5, h6 {
     @include color($secondary-color);
+
+    .front-page & {
+      @include color($white);
+    }
   }
 
   h1 {

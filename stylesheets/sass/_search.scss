@@ -43,6 +43,7 @@
 }
 
 .search-inner {
+  position: relative;
   max-width: 400px;
   @include box-shadow(0, 0, 100px, 0, rgba($black, 0.75));
   @include box-shadow(0, 0, 10rem, 0, rgba($black, 0.75));
@@ -55,6 +56,13 @@
   .content-page & {
     margin: 104px auto;
     margin: 10.4rem auto;
+  }
+
+  .search-close-btn {
+    position: absolute;
+    top: 14px;
+    @include rem-fallback(right, 7);
+    z-index: 20;
   }
 }
 
@@ -71,15 +79,9 @@
   }
 
   &, &.active {
-    max-width: 400px;
+    @include rem-fallback(max-width, 400);
     margin: 0 auto;
     border: none;
-  }
-
-  .search-close-btn {
-    position: absolute;
-    top: 14px;
-    right: 36px;
   }
 }
 
@@ -88,7 +90,7 @@
   width: 100%;
   height: $search-height;
   margin: 0;
-  @include rem-fallback(padding, 0, 40, 0, 10);
+  @include rem-fallback(padding, 0, 65, 0, 10);
   font-family: inherit;
   @include rem-fallback(font-size, 24);
   line-height: 1;
@@ -140,8 +142,8 @@
 
 .search-submit {
   position: absolute;
-  top: 0;
-  right: 0;
+  @include rem-fallback(top, 1);
+  @include rem-fallback(right, 25);
   background-color: transparent;
   @include rem-fallback(width, 41);
   @include rem-fallback(background-size, 32);
@@ -162,18 +164,20 @@
   @include rem-fallback(top, 1);
   z-index: 19;
   vertical-align: middle;
-  @include opacity(0.5);
+  @include opacity(0.8);
   @include rem-fallback(width, 22);
   @include rem-fallback(height, 22);
   font-size: 0;
 
   svg {
-    .front-page.dark-background & {
-      fill: $white;
-    }
+    .header-options & {
+      .front-page.dark-background & {
+        fill: $white;
+      }
 
-    .front-page.light-background & {
-      fill: $black;
+      .front-page.light-background & {
+        fill: $black;
+      }
     }
   }
 
@@ -204,8 +208,16 @@
   &.open {
     display: inline-block;
 
-    .search-form & {
-      display: none;
+    .search-inner & {
+      display: block;
+
+      svg {
+        @include opacity(0.5);
+
+        &:hover {
+          @include opacity(1);
+        }
+      }
     }
   }
 }

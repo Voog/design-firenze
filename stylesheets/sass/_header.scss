@@ -83,8 +83,6 @@
   }
 
   .front-page.light-background & {
-    @include border(bottom, 3px, solid, $black);
-    @include rem-fallback(border-bottom-width, 3);
 
     &, a {
       @include color($black);
