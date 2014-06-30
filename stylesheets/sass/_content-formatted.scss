@@ -159,6 +159,7 @@
 
   // Draggable content area without content.
   // TODO: Remove if different color schemes are supported by E3.
+  .front-page.dark-background &,
   .dark-background .footer & {
     .edy-empty-bordered {
       @include border(all, 1px, dashed, $white, 0.63);

@@ -8,8 +8,11 @@
   {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
   {% unless page.data.fb_image == nil or page.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% endunless %}
 
-  <!-- Sets the body background image value -->
   {% capture dont_render %}
+    <!-- Sets the variable to decide if "header.tpl" renders the editable content area -->
+    {% assign frontPage = true %}
+
+    <!-- Sets the body background image value -->
     {% if page.data.body_image == nil %}
       {% assign body_image = images_path | append: '/front-page-bg.jpg' %}
     {% else %}

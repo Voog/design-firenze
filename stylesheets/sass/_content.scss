@@ -3,6 +3,26 @@
   display: block;
   @include rem-fallback(padding, 43, 5);
 
+  .front-page & {
+    padding: 0;
+    text-align: center;
+
+    .content-formatted {
+      &, .editmode & {
+        position: relative;
+        @include rem-fallback(min-width, 211);
+        @include rem-fallback(padding, 20, 0);
+        @include color($white);
+        @include border(top, 3px, solid, $white);
+        @include border(top, 0.3rem, solid, $white);
+
+        &:empty {
+          display: none;
+        }
+      }
+    }
+  }
+
   @include query($tablet-2) {
     .container-inner {
       display: block;

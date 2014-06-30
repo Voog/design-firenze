@@ -1,6 +1,16 @@
 <header class="header">
   <div class="header-top">
-    <div class="header-title content-formatted">{% unless editmode or site.root_item.selected? %}<a href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode or site.root_item.selected? %}</a>{% endunless %}</div>
+    <div class="header-top-inner content-formatted">
+      <div class="header-title">
+        {% unless editmode or site.root_item.selected? %}<a href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode or site.root_item.selected? %}</a>{% endunless %}
+      </div>
+
+      {% if frontPage == true %}
+        <main class="content" role="main">
+          <section class="content-formatted">{% content %}</section>
+        </main>
+      {% endif %}
+    </div>
 
     <button class="menu-btn js-menu-btn js-btn">
       <span class="menu-stripe"></span>

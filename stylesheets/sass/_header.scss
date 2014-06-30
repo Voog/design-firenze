@@ -23,6 +23,13 @@
   }
 }
 
+.header-top-inner {
+  display: inline-block;
+  max-width: 100%;
+  @include border(bottom, 3px, solid, $white);
+  @include border(bottom, 0.3rem, solid, $white);
+}
+
 .header-options {
   position: absolute;
   @include rem-fallback(right, 25);
@@ -47,22 +54,23 @@
 .header-title {
   @extend %bebas-neue;
   @include rem-fallback(max-width, 630);
-  @include rem-fallback(min-width, 50);
+  @include rem-fallback(min-width, 211);
   font-weight: 400;
   @include rem-fallback(font-size, 30);
   line-height: 1;
 
   .front-page & {
-    display: inline-block;
-    @include rem-fallback(max-width, 400);
-    @include rem-fallback(padding-bottom, 20);
+    max-width: none;
+
+    a,
+    .edy-editable,
+    .public & {
+      @include rem-fallback(margin-bottom, 20);
+    }
   }
 
   .front-page &,
   .front-page.dark-background & {
-    @include border(bottom, 3px, solid, $white);
-    @include rem-fallback(border-bottom-width, 3);
-
     &, a {
       @include color($white);
     }

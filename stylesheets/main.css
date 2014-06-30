@@ -262,26 +262,26 @@ body {
   color: white;
   color: rgba(255, 255, 255, 0.5);
 }
-.dark-background .footer .content-formatted .edy-empty-bordered {
+.front-page.dark-background .content-formatted .edy-empty-bordered, .dark-background .footer .content-formatted .edy-empty-bordered {
   border: 1px dashed white;
   border: 1px dashed rgba(255, 255, 255, 0.63);
   border-width: 1px;
   border-width: 0.1rem;
 }
-.dark-background .footer .content-formatted .edy-empty-bordered .edy-empty-header {
+.front-page.dark-background .content-formatted .edy-empty-bordered .edy-empty-header, .dark-background .footer .content-formatted .edy-empty-bordered .edy-empty-header {
   color: white;
   color: rgba(255, 255, 255, 0.63);
 }
-.dark-background .footer .content-formatted .edy-content-element-hover {
+.front-page.dark-background .content-formatted .edy-content-element-hover, .dark-background .footer .content-formatted .edy-content-element-hover {
   border: 1px solid white;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-width: 1px;
   border-width: 0.1rem;
 }
-.dark-background .footer .content-formatted .edy-texteditor-active {
+.front-page.dark-background .content-formatted .edy-texteditor-active, .dark-background .footer .content-formatted .edy-texteditor-active {
   outline: 1px solid rgba(255, 255, 255, 0.4);
 }
-.dark-background .footer .content-formatted .edy-texteditor-active:hover {
+.front-page.dark-background .content-formatted .edy-texteditor-active:hover, .dark-background .footer .content-formatted .edy-texteditor-active:hover {
   outline: 1px solid rgba(255, 255, 255, 0.63);
 }
 .content-formatted .edy-content-element {
@@ -1174,6 +1174,13 @@ body {
   }
 }
 
+.header-top-inner {
+  display: inline-block;
+  max-width: 100%;
+  border-bottom: 3px solid white;
+  border-bottom: 0.3rem solid white;
+}
+
 .header-options {
   position: absolute;
   right: 25px;
@@ -1199,24 +1206,20 @@ body {
 .header-title {
   max-width: 630px;
   max-width: 63rem;
-  min-width: 50px;
-  min-width: 5rem;
+  min-width: 211px;
+  min-width: 21.1rem;
   font-weight: 400;
   font-size: 30px;
   font-size: 3rem;
   line-height: 1;
 }
 .front-page .header-title {
-  display: inline-block;
-  max-width: 400px;
-  max-width: 40rem;
-  padding-bottom: 20px;
-  padding-bottom: 2rem;
+  max-width: none;
 }
-.front-page .header-title, .front-page.dark-background .header-title {
-  border-bottom: 3px solid white;
-  border-bottom-width: 3px;
-  border-bottom-width: 0.3rem;
+.front-page .header-title a,
+.front-page .header-title .edy-editable, .public .front-page .header-title {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .front-page .header-title, .front-page .header-title a, .front-page.dark-background .header-title, .front-page.dark-background .header-title a {
   color: white;
@@ -1294,6 +1297,23 @@ body {
   display: block;
   padding: 43px 5px;
   padding: 4.3rem 0.5rem;
+}
+.front-page .content {
+  padding: 0;
+  text-align: center;
+}
+.front-page .content .content-formatted, .editmode .front-page .content .content-formatted {
+  position: relative;
+  min-width: 211px;
+  min-width: 21.1rem;
+  padding: 20px 0px;
+  padding: 2rem 0rem;
+  color: white;
+  border-top: 3px solid white;
+  border-top: 0.3rem solid white;
+}
+.front-page .content .content-formatted:empty, .editmode .front-page .content .content-formatted:empty {
+  display: none;
 }
 @media screen and (max-width: 720px) {
   .content .container-inner {
