@@ -9,6 +9,10 @@
       if ($('.js-popover').hasClass('expanded')) {
         $('.js-popover').removeClass('expanded');
       }
+
+      if ($('.js-search-inner').hasClass('active')) {
+        $('.js-search-inner').removeClass('active');
+      }
     });
 
     // Toggles the popover main menu (visible on smalles screens).
@@ -53,11 +57,31 @@
       $('.js-search-open-btn').removeClass('open');
       $('.js-search').removeClass('active');
       $('.js-voog-search-modal').removeClass('search-results-active');
-      $('.voog-search-modal-results').html('');
     });
 
-    $('.js-search-form').click(function(event) {
+    $('.js-search-form, .js-voog-search-modal').click(function(event) {
       event.stopPropagation();
+    });
+  };
+
+  // Sets the search modal height.
+  var handleSearchModalHeight = function() {
+    windowHeight = $(window).height();
+    searchModal = $('.js-voog-search-modal');
+
+    if ($('body').hasClass('front-page')) {
+      searchModalHeight = windowHeight - 171;
+    } else {
+      searchModalHeight = windowHeight - 258;
+    }
+
+    searchModal.css({'max-height': searchModalHeight});
+  };
+
+  // Sets search modal height on search submit.
+  var handleSearchSubmit = function() {
+    $('.js-search-form').on('submit', function() {
+      handleSearchModalHeight();
     });
   };
 
@@ -254,6 +278,7 @@
       handleFooterPosition();
       handleFooterContentEdit();
       handleTableHorizontalScrolling();
+      handleSearchModalHeight();
     });
   };
 
@@ -285,6 +310,7 @@
       handleElementsClick();
       handleFooterPosition();
       handleFooterContentEdit();
+      handleSearchSubmit();
       handleGalleryHover();
       handleWindowResize();
       wrapTables();

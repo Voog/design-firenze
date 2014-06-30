@@ -36,6 +36,12 @@
   .content-page & {
     @include rem-fallback(top, 25);
   }
+
+  @include query($mobile-1) {
+    .front-page & {
+      @include rem-fallback(right, 16);
+    }
+  }
 }
 
 .header-title {

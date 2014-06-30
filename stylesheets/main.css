@@ -1189,6 +1189,12 @@ body {
   top: 25px;
   top: 2.5rem;
 }
+@media screen and (max-width: 480px) {
+  .front-page .header-options {
+    right: 16px;
+    right: 1.6rem;
+  }
+}
 
 .header-title {
   max-width: 630px;
@@ -1440,17 +1446,28 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+@media screen and (max-width: 420px) {
+  .search-middle {
+    padding: 0;
+  }
+}
 
 .search-inner {
   max-width: 400px;
-  margin: 60px auto;
-  margin: 6rem auto;
   -webkit-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.75);
+}
+.front-page .search-inner {
+  margin: 60px auto;
+  margin: 6rem auto;
+}
+.content-page .search-inner {
+  margin: 104px auto;
+  margin: 10.4rem auto;
 }
 
 .search-form {
@@ -1599,6 +1616,7 @@ body {
 }
 
 .voog-search-modal {
+  display: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1607,6 +1625,8 @@ body {
   max-width: 400px;
   max-width: 40rem;
   margin: 0 auto;
+  padding: 20px 27px;
+  padding: 2rem 2.7rem;
   background-color: #edecec;
   background-color: rgba(237, 236, 236, 0.95);
   -webkit-box-shadow: none;
@@ -1616,8 +1636,7 @@ body {
   overflow-y: auto;
 }
 .voog-search-modal.search-results-active {
-  padding: 20px 27px;
-  padding: 2rem 2.7rem;
+  display: block;
 }
 
 .voog-search-modal-results.no-content {

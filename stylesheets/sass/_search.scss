@@ -36,14 +36,26 @@
   width: 100%;
   @include rem-fallback(padding, 0, 20);
   @include box-sizing(border-box);
+
+  @include query($mobile-2) {
+    padding: 0;
+  }
 }
 
 .search-inner {
   max-width: 400px;
-  margin: 60px auto;
-  margin: 6rem auto;
   @include box-shadow(0, 0, 100px, 0, rgba($black, 0.75));
   @include box-shadow(0, 0, 10rem, 0, rgba($black, 0.75));
+
+  .front-page & {
+    margin: 60px auto;
+    margin: 6rem auto;
+  }
+
+  .content-page & {
+    margin: 104px auto;
+    margin: 10.4rem auto;
+  }
 }
 
 .search-form {
@@ -189,18 +201,20 @@
 }
 
 .voog-search-modal {
+  display: none;
   @include box-sizing(border-box);
   z-index: 999;
   width: 100%;
   @include rem-fallback(max-width, 400);
   margin: 0 auto;
+  @include rem-fallback(padding, 20, 27);
   @include bg($grey-4, 0.95);
   @include no-box-shadow;
   overflow-x: hidden;
   overflow-y: auto;
 
   &.search-results-active {
-    @include rem-fallback(padding, 20, 27);
+    display: block;
   }
 }
 
