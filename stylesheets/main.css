@@ -1443,7 +1443,8 @@ body {
 
 .search-inner {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 60px auto;
+  margin: 6rem auto;
   -webkit-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
@@ -1601,6 +1602,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  z-index: 999;
   width: 100%;
   max-width: 400px;
   max-width: 40rem;
@@ -1610,6 +1612,8 @@ body {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .voog-search-modal.search-results-active {
   padding: 20px 27px;

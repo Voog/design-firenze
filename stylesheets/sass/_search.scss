@@ -40,7 +40,8 @@
 
 .search-inner {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 60px auto;
+  margin: 6rem auto;
   @include box-shadow(0, 0, 100px, 0, rgba($black, 0.75));
   @include box-shadow(0, 0, 10rem, 0, rgba($black, 0.75));
 }
@@ -189,11 +190,14 @@
 
 .voog-search-modal {
   @include box-sizing(border-box);
+  z-index: 999;
   width: 100%;
   @include rem-fallback(max-width, 400);
   margin: 0 auto;
   @include bg($grey-4, 0.95);
   @include no-box-shadow;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   &.search-results-active {
     @include rem-fallback(padding, 20, 27);
