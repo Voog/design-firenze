@@ -3,7 +3,7 @@
     <nav class="menu-tags menu-sub">
       <ul class="menu">
         <li class="menu-item">
-          <a class="menu-link js-tags-all" href="{{ site.url }}{{ site.blogs.first.page.path }}">{{ tags_all }}</a>
+          <a class="menu-link js-tags-all" href="{{ site.url }}{{ site.blogs.first.page.path }}">All posts</a> {% comment %}/* TODO: Add multilanguge tag */{% endcomment %}
         </li>
         {% for tag in site.language_tags %}
           {% assign activestr = "" %}

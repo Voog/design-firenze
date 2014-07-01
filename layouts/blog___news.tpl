@@ -10,10 +10,10 @@
 
   <!-- Sets the body background image value for article pages -->
   {% capture dont_render %}
-    {% if article.data.body_image == nil %}
+    {% if page.data.body_image == nil %}
       {% assign body_image = images_path | append: '/blog-page-bg.jpg' %}
     {% else %}
-      {% assign body_image = article.data.body_image %}
+      {% assign body_image = page.data.body_image %}
     {% endif %}
   {% endcapture %}
   {% include "bg-picker-variables" %}
