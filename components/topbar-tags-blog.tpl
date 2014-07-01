@@ -5,7 +5,7 @@
     <ul class="menu">
       <li class="menu-item">
         {% comment %}/* TODO: Add multilanguge tag */{% endcomment %}
-        <a class="menu-link js-tags-all" href="/{{ page.path }}">All posts</a>
+        <a class="menu-link js-tags-all" href="/{{ page.path }}">{{ 'all_posts' | lc }}</a>
       </li>
       {% for tag in site.language_tags %}
         {% assign activestr = " " %}
