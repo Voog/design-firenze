@@ -55,7 +55,7 @@
 
             <section id="comments" class="comments content-formatted">
               {% if article.comments_count > 0 %}
-                <h2 class="comments-title"><span class="edy-site-blog-comments-count"></span> {{ 'replies' | lcc : article.comments_count }}</h2>
+                <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
 
                 <div class="comment-messages">
                   {% for comment in article.comments reversed %}
