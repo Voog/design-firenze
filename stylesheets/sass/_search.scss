@@ -265,6 +265,13 @@
     @include rem-fallback(margin, 5, 0, 0);
     @include rem-fallback(font-size, 14);
   }
+
+  em {
+    font-style: normal;
+    @include bg($yellow, 0.5);
+    border-radius: 2px;
+    padding: 0 2px;
+  }
 }
 
 .voog-search-modal-result {

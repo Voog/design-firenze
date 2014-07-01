@@ -1694,6 +1694,13 @@ body {
   font-size: 14px;
   font-size: 1.4rem;
 }
+.voog-search-modal-results em {
+  font-style: normal;
+  background-color: #f9ec5a;
+  background-color: rgba(249, 236, 90, 0.5);
+  border-radius: 2px;
+  padding: 0 2px;
+}
 
 .voog-search-modal-result {
   margin-top: 18px;

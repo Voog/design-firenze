@@ -69,9 +69,9 @@
     searchModal = $('.js-voog-search-modal');
 
     if ($('body').hasClass('front-page')) {
-      searchModalHeight = windowHeight - 171;
+      searchModalHeight = windowHeight - 121;
     } else {
-      searchModalHeight = windowHeight - 258;
+      searchModalHeight = windowHeight - 164;
     }
 
     searchModal.css({'max-height': searchModalHeight});
