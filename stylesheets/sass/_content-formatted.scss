@@ -75,14 +75,11 @@
   pre {
     @include rem-fallback(margin-top, 10);
     margin-bottom: 0;
+    @include rem-fallback(padding, 10);
     overflow: auto;
     white-space: nowrap;
-
-    &, code {
-      @include rem-fallback(padding, 10);
-      @include rem-fallback(font-size, 14);
-      @include bg($grey-2);
-    }
+    @include rem-fallback(font-size, 14);
+    @include bg($grey-2);
 
     code {
       display: block;

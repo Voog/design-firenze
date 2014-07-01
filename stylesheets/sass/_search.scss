@@ -45,18 +45,10 @@
 .search-inner {
   position: relative;
   max-width: 400px;
+  margin: 60px auto;
+  margin: 6rem auto;
   @include box-shadow(0, 0, 100px, 0, rgba($black, 0.75));
   @include box-shadow(0, 0, 10rem, 0, rgba($black, 0.75));
-
-  .front-page & {
-    margin: 60px auto;
-    margin: 6rem auto;
-  }
-
-  .content-page & {
-    margin: 104px auto;
-    margin: 10.4rem auto;
-  }
 
   .search-close-btn {
     position: absolute;
