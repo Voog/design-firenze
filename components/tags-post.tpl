@@ -1,4 +1,3 @@
-{% include "tags-variables" %}
 {% if editmode %}
   <div class="tags">
     <div class="tags-editor">{% editable article.tags %}</div>
@@ -6,7 +5,7 @@
 {% else %}
   {% unless article.tags == empty %}
     <div class="tags">
-      <span class="tags-title">{{ tags_post_title }}:</span>
+      <span class="tags-title">{{ 'tags' | lc }}</span>
       <nav class="menu-tags menu-sub">
         <ul class="menu">
           {% for tag in article.tags %}

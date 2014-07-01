@@ -1,5 +1,4 @@
 {% if site.has_language_tags? %}
-  {% include "tags-variables" %}
   <div class="tags">
     <nav class="menu-tags menu-sub">
       <ul class="menu">

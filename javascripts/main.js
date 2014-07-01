@@ -32,6 +32,12 @@
       $('.js-menu-lang').toggleClass('expanded');
     });
 
+    $('.js-tags-btn').click(function(event) {
+      event.stopPropagation();
+      $(this).toggleClass('open');
+      $('.js-menu-tags').toggleClass('expanded');
+    });
+
     // Hides search modal on side click
     $('.js-search').click(function() {
       $('.js-search-close-btn').trigger('click');

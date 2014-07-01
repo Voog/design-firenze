@@ -1,6 +1,5 @@
 <div class="tags">
-  {% include "tags-variables" %}
-  <button class="tags-btn js-tags-btn">{{ tags_button }}</button>
+  <button class="tags-btn js-tags-btn js-btn">{{ 'browse_by_tags' | lc }}</button>
 
   <nav class="menu-tags js-menu-tags js-popover">
     <ul class="menu">
