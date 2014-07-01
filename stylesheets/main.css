@@ -315,7 +315,8 @@ body {
     position: absolute;
     top: 2px;
     top: 0.2rem;
-    right: 0;
+    right: 5px;
+    right: 0.5rem;
     z-index: 20;
     display: inline-block;
     padding: 0;
@@ -333,11 +334,6 @@ body {
   }
   .front-page .menu-btn {
     display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .menu-btn {
-    right: 5px;
   }
 }
 
@@ -387,40 +383,18 @@ body {
   }
   .content-page .header .menu-main.expanded {
     position: absolute;
-    top: 62px;
-    top: 6.2rem;
-    right: 20px;
-    right: 2rem;
-    z-index: 10;
-    display: block;
-    max-width: 350px;
-    max-width: 35rem;
-    margin-bottom: 60px;
-    margin-bottom: 6rem;
-    text-align: left;
-    background-color: white;
-    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-    -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-    -webkit-box-shadow: 0 0 5rem 2.5rem rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 5rem 2.5rem rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 5rem 2.5rem rgba(0, 0, 0, 0.3);
-  }
-}
-@media screen and (max-width: 480px) {
-  .content-page .header .menu-main.expanded {
     top: 50px;
     top: 5rem;
     left: -25px;
     left: -2.5rem;
     right: -25px;
     right: -2.5rem;
-    min-width: 0;
+    z-index: 10;
+    display: block;
     margin-bottom: 40px;
     margin-bottom: 4rem;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    text-align: left;
+    background-color: white;
   }
 }
 .menu-main .menu .content-page {

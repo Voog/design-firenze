@@ -23,7 +23,7 @@
   @include query($mobile-1) {
     position: absolute;
     @include rem-fallback(top, 2);
-    right: 0;
+    @include rem-fallback(right, 5);
     z-index: 20;
     display: inline-block;
     padding: 0;
@@ -47,10 +47,6 @@
     .front-page & {
       display: none;
     }
-  }
-
-  @include query($mobile-1) {
-    right: 5px;
   }
 }
 
@@ -107,27 +103,14 @@
 
       &.expanded {
         position: absolute;
-        @include rem-fallback(top, 62);
-        @include rem-fallback(right, 20);
-        z-index: 10;
-        display: block;
-        @include rem-fallback(max-width, 350);
-        @include rem-fallback(margin-bottom, 60);
-        text-align: left;
-        @include bg($white);
-        @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
-        @include box-shadow(0, 0,5rem, 2.5rem, rgba($black, 0.3));
-      }
-    }
-
-    @include query($mobile-1) {
-      &.expanded {
         @include rem-fallback(top, 50);
         @include rem-fallback(left, -25);
         @include rem-fallback(right, -25);
-        min-width: 0;
+        z-index: 10;
+        display: block;
         @include rem-fallback(margin-bottom, 40);
-        @include no-box-shadow;
+        text-align: left;
+        @include bg($white);
       }
     }
   }
