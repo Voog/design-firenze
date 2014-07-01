@@ -403,7 +403,7 @@
   &:after {
     position: absolute;
     display: block;
-    @include rem-fallback(width, 20);
+    @include rem-fallback(width, 20A);
     @include rem-fallback(height, 13);
     content: '';
   }
@@ -417,7 +417,7 @@
 
   &:after {
     opacity: 0.95;
-    @include rem-fallback(background-size, 200);
+    background-size: 200px;
     background-repeat: no-repeat;
 
     .no-svg & {
@@ -428,6 +428,7 @@
       background-image: url('../assets/ico-flags.svg');
 
       @include query($large-1, 'min-width') {
+        background-size: 280px;
         background-image: url('../assets/ico-flags-large.svg');
       }
     }
@@ -511,7 +512,13 @@ $flags:
 @each $flag, $left, $top in $flags {
   .lang-flag-#{$flag}:after { background-position: #{$left}px #{$top}px; }
 
-  .lang-flag-#{$flag}:after { background-position: #{$left / 10}rem #{$top / 10}rem; }
+  // .lang-flag-#{$flag}:after { background-position: #{$left / 10}rem #{$top / 10}rem; }
+}
+
+@include query($large-1, 'min-width') {
+  @each $flag, $left, $top in $flags {
+    .lang-flag-#{$flag}:after { background-position: #{$left + $left * 0.4}px #{$top + $top * 0.4}px; }
+  }
 }
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
