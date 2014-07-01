@@ -9,16 +9,13 @@
     {% endif %}
 
     <!-- Builds style tag for background color for article pages -->
-    {% assign body_color_style = '' %}
-    {% unless article.data.body_color == nil %}
-      {% assign body_color_style = ' style="background: ' %}
-      {% if article.data.body_color == '' %}
-        {% assign body_color_style = body_color_style | append: 'none' %}
-      {% else %}
-        {% assign body_color_style = body_color_style | append: article.data.body_color %}
-      {% endif %}
-      {% assign body_color_style = body_color_style | append: ';"' %}
-    {% endunless %}
+    {% assign body_color_style = ' style="background: ' %}
+    {% if body_color == '' %}
+      {% assign body_color_style = body_color_style | append: 'none' %}
+    {% else %}
+      {% assign body_color_style = body_color_style | append: body_color %}
+    {% endif %}
+    {% assign body_color_style = body_color_style | append: ';"' %}
 
   {% else %}
 
@@ -30,16 +27,13 @@
     {% endif %}
 
     <!-- Builds style tag for background color for content pages -->
-    {% assign body_color_style = "" %}
-    {% unless page.data.body_color == nil %}
-      {% assign body_color_style = ' style="background: ' %}
-      {% if page.data.body_color == '' %}
-        {% assign body_color_style = body_color_style | append: 'none' %}
-      {% else %}
-        {% assign body_color_style = body_color_style | append: page.data.body_color %}
-      {% endif %}
-      {% assign body_color_style = body_color_style | append: ';"' %}
-    {% endunless %}
+    {% assign body_color_style = ' style="background: ' %}
+    {% if body_color == '' %}
+      {% assign body_color_style = body_color_style | append: 'none' %}
+    {% else %}
+      {% assign body_color_style = body_color_style | append: body_color %}
+    {% endif %}
+    {% assign body_color_style = body_color_style | append: ';"' %}
 
   {% endif %}
 {% endcapture %}
