@@ -155,14 +155,28 @@
     containerMiddle = '.js-container-middle',
     containerInner = '.js-container-inner',
     wrap = '.js-wrap',
-    contentHeight = $('.js-wrap').height(),
+    contentHeight = $('.js-wrap').height()
+    widnowWidth = $(window).width(),
     windowHeight = $(window).height(),
     footerHeight = $('.js-footer').height();
 
+    // TODO: Find out wh these "magicNumber"-s are needed and remove them if there's a better solution.
     if (editmode) {
       containerHeight = windowHeight - footerHeight - 40;
+      if (widnowWidth < 1400) {
+        magicNumber = 18;
+      } else {
+        magicNumber = 22;
+      }
+      // magicNumber = 18;
     } else  {
       containerHeight = windowHeight - footerHeight;
+      if (widnowWidth < 1400) {
+        magicNumber = 30;
+      } else {
+        magicNumber = 42;
+      }
+      // magicNumber = 30;
     }
 
     $(containerMiddle).css({
@@ -171,13 +185,6 @@
     });
 
     containerHeight = $(container).height();
-
-    // TODO: FInd out wh this magic number is needed.
-    if (editmode) {
-      magicNumber = 18;
-    } else {
-      magicNumber = 30;
-    }
 
     $(containerMiddle).css({
       'height': containerHeight - footerHeight - magicNumber,

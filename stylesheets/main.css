@@ -2085,6 +2085,7 @@ body {
 .footer .content-formatted,
 .footer .voog-reference {
   display: inline-block;
+  vertical-align: middle;
 }
 .footer .content-formatted {
   max-width: 590px;
@@ -2133,9 +2134,7 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
   width: 35px;
-  width: 3.5rem;
   height: 8px;
-  height: 0.8rem;
   font-size: 0;
   background-size: cover;
 }
@@ -2155,6 +2154,12 @@ body {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
+}
+@media screen and (min-width: 1400px) {
+  .footer a {
+    width: 49px;
+    height: 11.2px;
+  }
 }
 
 .footer-gradient {

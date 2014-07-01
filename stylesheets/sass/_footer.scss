@@ -23,6 +23,7 @@
   .content-formatted,
   .voog-reference {
     display: inline-block;
+    vertical-align: middle;
   }
 
   .content-formatted {
@@ -68,8 +69,8 @@
     a {
       display: block;
       @include opacity(0.5);
-      @include rem-fallback(width, 35);
-      @include rem-fallback(height, 8);
+      width: 35px;
+      height: 8px;
       font-size: 0;
       background-size: cover;
 
@@ -96,6 +97,13 @@
       &:hover {
         @include opacity(1);
       }
+    }
+  }
+
+  @include query($large-1, 'min-width') {
+    a {
+      width: 49px;
+      height: 11.2px;
     }
   }
 }
