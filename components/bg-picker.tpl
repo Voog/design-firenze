@@ -20,8 +20,6 @@
       showAlpha: true,
 
       preview: function(data) {
-
-        console.log(data);
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
             col = (data.color && data.color !== '') ? data.color : 'none';
 

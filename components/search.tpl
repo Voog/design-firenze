@@ -3,7 +3,7 @@
     <div class="search-middle">
       <div class="search-inner js-search-inner">
         <form id="search" class="search-form js-search-form" method="get" action="#">
-          <input id="onpage_search" class="search-input js-search-input" type="text" placeholder="Search this site...">
+          <input id="onpage_search" class="search-input js-search-input" type="text" placeholder="{{ 'search_this_site' | lc }}">
 
           <button class="search-submit js-search-submit">
             <svg xmlns="http://www.w3.org/2000/svg" height="21px" width="20px">
