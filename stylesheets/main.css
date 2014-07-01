@@ -2146,6 +2146,12 @@ body {
 .light-background .footer .content-formatted a:hover {
   color: black;
 }
+@media screen and (max-width: 640px) {
+  .footer .content-formatted {
+    display: block;
+    padding-right: 0;
+  }
+}
 .footer .voog-reference a {
   display: block;
   opacity: 0.5;

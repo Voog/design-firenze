@@ -57,6 +57,11 @@
         }
       }
     }
+
+    @include query($tablet-3) {
+      display: block;
+      padding-right: 0;
+    }
   }
 
   .voog-reference {
@@ -102,6 +107,6 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2) 60%,
       rgba(0, 0, 0, 0.5) 100%
-    )
-  );
+      )
+    );
 }
