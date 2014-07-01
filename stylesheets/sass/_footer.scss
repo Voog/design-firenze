@@ -60,7 +60,7 @@
 
     @include query($tablet-3) {
       display: block;
-      padding-right: 0;
+      @include rem-fallback(padding, 0, 20);
     }
   }
 

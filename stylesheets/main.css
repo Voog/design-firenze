@@ -2149,7 +2149,8 @@ body {
 @media screen and (max-width: 640px) {
   .footer .content-formatted {
     display: block;
-    padding-right: 0;
+    padding: 0px 20px;
+    padding: 0rem 2rem;
   }
 }
 .footer .voog-reference a {
