@@ -2156,7 +2156,7 @@ body {
   filter: alpha(opacity=100);
 }
 @media screen and (min-width: 1400px) {
-  .footer a {
+  .footer .voog-reference a {
     width: 49px;
     height: 11.2px;
   }

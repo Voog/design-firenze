@@ -101,9 +101,11 @@
   }
 
   @include query($large-1, 'min-width') {
-    a {
-      width: 49px;
-      height: 11.2px;
+    .voog-reference {
+      a {
+        width: 49px;
+        height: 11.2px;
+      }
     }
   }
 }

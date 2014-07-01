@@ -151,7 +151,6 @@
   }
 
   // CMS STYLE OVERRIDES
-  // Minimal height of the editable content area (to avoid content area visual 'jumping' when content-area is focused).
   .front-page.dark-background & {
     & .placeholder {
       @include color($white, 0.5);
@@ -159,7 +158,7 @@
   }
 
   // Draggable content area without content.
-  // TODO: Remove if different color schemes are supported by E3.
+  // TODO: Remove if different color schemes are supported by VOOG.
   .front-page.dark-background &,
   .dark-background .footer & {
     .edy-empty-bordered {
