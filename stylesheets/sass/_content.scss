@@ -13,8 +13,6 @@
         @include rem-fallback(min-width, 211);
         @include rem-fallback(padding, 20, 0);
         @include color($white);
-        @include border(top, 3px, solid, $white);
-        @include border(top, 0.3rem, solid, $white);
 
         &:empty {
           display: none;
@@ -33,6 +31,28 @@
     .content {
       padding: 20px 0;
       @include rem-fallback(padding, 20, 0);
+    }
+  }
+}
+
+.dark-background {
+  &.front-page {
+    .content {
+      .content-formatted {
+        @include border(top, 3px, solid, $white);
+        @include border(top, 0.3rem, solid, $white);
+      }
+    }
+  }
+}
+
+.light-background {
+  &.front-page {
+    .content {
+      .content-formatted {
+        @include border(top, 3px, solid, $black);
+        @include border(top, 0.3rem, solid, $black);
+      }
     }
   }
 }

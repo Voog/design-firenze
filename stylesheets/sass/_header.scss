@@ -26,8 +26,16 @@
 .header-top-inner {
   display: inline-block;
   max-width: 100%;
-  @include border(bottom, 3px, solid, $white);
-  @include border(bottom, 0.3rem, solid, $white);
+
+  .dark-background & {
+    @include border(bottom, 3px, solid, $white);
+    @include border(bottom, 0.3rem, solid, $white);
+  }
+
+  .light-background & {
+    @include border(bottom, 3px, solid, $black);
+    @include border(bottom, 0.3rem, solid, $black);
+  }
 }
 
 .header-options {

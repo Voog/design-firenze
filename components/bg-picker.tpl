@@ -26,6 +26,7 @@
         $('.js-bgpicker-body-color').css({'background' : col});
 
         if (data.image === null || data.image === '') {
+          $('.backstretch').remove();
           $('.js-footer').removeClass('footer-gradient');
         } else {
           $.backstretch(data.image);
