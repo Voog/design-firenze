@@ -25,7 +25,8 @@
 <link rel="stylesheet" href="/assets/admin/tools/0.1.3/edicy-tools.css?10">
 
 {% comment %}<!-- SITE TITLE -->{% endcomment %}
-<title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
+{% capture page_title %}{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}{% endcapture %}
+<title>{{ page_title }}</title>
 
 {% comment %}<!-- FACEBOOK OPENGRAPH -->{% endcomment %}
 <!-- https://developers.facebook.com/tools/debug - Debug after each modification -->
