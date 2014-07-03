@@ -1,8 +1,5 @@
 {% comment %}<!-- SITE WIDE JAVASCRIPTS -->{% endcomment %}
-<script src="{{ javascripts_path }}/jquery.js?10"></script>
-<script src="{{ javascripts_path }}/main.js?10"></script>
-<script src="{{ javascripts_path }}/backstretch.js?10"></script>
-<script src="{{ javascripts_path }}/overthrow.js?10"></script>
+<script src="{{ javascripts_path }}/application.min.js?10"></script>
 <script src="{{ site.static_asset_host }}/libs/picturefill/1.0.0/picturefill.min.js?10"></script>
 
 {% if site.search.enabled %}

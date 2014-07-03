@@ -16,12 +16,12 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}<!-- MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC -->{% endcomment %}
-<script src="{{ javascripts_path }}/modernizr.js?10"></script>
+<script src="{{ javascripts_path }}/modernizr.min.js?10"></script>
 
 {% comment %}<!-- STYLESHEETS -->{% endcomment %}
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,cyrillic-ext">
-{% stylesheet_link "main.css?10" %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.css?10" %}<![endif]-->
+{% stylesheet_link "main.min.css?10" %}
+<!--[if lt IE 9]>{% stylesheet_link "ie8.min.css?10" %}<![endif]-->
 <link rel="stylesheet" href="/assets/admin/tools/0.1.3/edicy-tools.css?10">
 
 {% comment %}<!-- SITE TITLE -->{% endcomment %}
