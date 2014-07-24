@@ -4,7 +4,7 @@
 
 {% if site.search.enabled %}
   <script src="{{ site.static_asset_host }}/libs/edicy-search/1.0.0/edicy-search.js"></script>
-  <script type="text/javascript">
+  <script>
     var search = new VoogSearch($('.js-search-form').get(0), {
       per_page: 3,
       lang: '{{ page.language_code }}',
