@@ -58,3 +58,6 @@
     <meta name="description" content="{{ page.description }}">
   {% endunless %}
 {% endif %}
+
+{% if blog %}{{ blog.rss_link }}{% endif %}
+{{ site.stats_header }}

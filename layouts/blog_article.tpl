@@ -12,8 +12,6 @@
     {% endif %}
   {% endcapture %}
   {% include 'bg-picker-variables' with 'article' %}
-
-  {{ site.stats_header }}
 </head>
 
 <body class="post-page content-page js-bgpicker-body-image">

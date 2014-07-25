@@ -12,9 +12,6 @@
     {% endif %}
   {% endcapture %}
   {% include "bg-picker-variables" %}
-
-  {{ blog.rss_link }}
-  {{ site.stats_header }}
 </head>
 
 <body class="blog-page content-page js-bgpicker-body-image">
