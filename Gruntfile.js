@@ -109,10 +109,7 @@ module.exports = function(grunt) {
           '!*.min.css'
         ],
         dest: 'stylesheets/',
-        ext: '.min.css',
-        options: {
-          spawn: false
-        }
+        ext: '.min.css'
       }
     },
 
