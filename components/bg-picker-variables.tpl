@@ -3,7 +3,7 @@
 
     <!-- Sets the body background color value for article pages-->
     {% if article.data.body_color == nil %}
-      {% assign body_color = 'rgba(0, 0, 0, 0.2)' %}
+      {% assign body_color = 'rgba(0,0,0,0.2)' %}
     {% else %}
       {% assign body_color = article.data.body_color %}
     {% endif %}
