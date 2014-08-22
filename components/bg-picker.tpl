@@ -22,7 +22,7 @@
       preview: function(data) {
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
             col = (data.color && data.color !== '') ? data.color : 'none';
-              console.log(data.color);
+
         $('.js-bgpicker-body-color').css({'background' : col});
 
         if (data.image === null || data.image === '') {
