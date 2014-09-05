@@ -11,7 +11,7 @@
       {% assign body_image = page.data.body_image %}
     {% endif %}
   {% endcapture %}
-  {% include "bg-picker-variables" %}
+  {% include "edicy-tools-variables" %}
 </head>
 
 <body class="blog-page content-page js-bgpicker-body-image">
@@ -53,7 +53,7 @@
   </div>
 
   {% include "javascripts" %}
-  {% include "bg-picker" %}
+  {% include "edicy-tools" %}
   <script>
     {% unless body_image == nil or body_image == '' %}
       $.backstretch('{{ body_image }}');

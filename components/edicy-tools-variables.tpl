@@ -1,5 +1,5 @@
 {% capture dont_render %}
-  {% if bg-picker-variables == "article" %}
+  {% if edicy-tools-variables == "article" %}
 
     <!-- Sets the body background color value for article pages-->
     {% if article.data.body_color == nil %}

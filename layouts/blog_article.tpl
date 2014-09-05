@@ -11,7 +11,7 @@
       {% assign body_image = article.data.body_image %}
     {% endif %}
   {% endcapture %}
-  {% include 'bg-picker-variables' with 'article' %}
+  {% include 'edicy-tools-variables' with 'article' %}
 </head>
 
 <body class="post-page content-page js-bgpicker-body-image">
@@ -75,7 +75,7 @@
   </div>
 
   {% include "javascripts" %}
-  {% include "bg-picker" with 'article' %}
+  {% include "edicy-tools" with 'article' %}
 
   <script>
     {% unless body_image == nil or body_image == '' %}

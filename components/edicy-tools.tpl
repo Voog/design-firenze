@@ -2,7 +2,7 @@
   <script src='{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js'></script>
   <script>
     // Body background image and color data preview and save logic
-    {% if bg-picker == "article" %}
+    {% if edicy-tools == "article" %}
       var articleData = new Edicy.CustomData({
         type: 'article',
         id: '{{ article.id }}'
@@ -37,7 +37,7 @@
       },
 
       commit: function(data) {
-        {% if bg-picker == "article" %}
+        {% if edicy-tools == "article" %}
           articleData.set({
         {% else %}
           pageData.set({
