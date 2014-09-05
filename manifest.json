@@ -36,23 +36,23 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/bg-picker-variables.tpl",
-      "layout_name": "bg-picker-variables",
-      "title": "bg-picker-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/bg-picker.tpl",
-      "layout_name": "bg-picker",
-      "title": "bg-picker"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/comment-form.tpl",
       "layout_name": "comment-form",
       "title": "comment-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools.tpl",
+      "layout_name": "edicy-tools",
+      "title": "edicy-tools"
     },
     {
       "content_type": "component",

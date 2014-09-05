@@ -2,7 +2,7 @@
   "name": "voog-design-firenze",
   "devDependencies": {
     "modernizr": "~2.8.3",
-    "jquery": "~1.x",
+    "jquery": "~1.9.1",
     "bourbon": "~4.0.2",
     "overthrow": "~0.7.0",
     "jquery-backstretch": "~2.0.4"
