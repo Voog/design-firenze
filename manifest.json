@@ -338,9 +338,21 @@
     },
     {
       "content_type": "text/css",
+      "file": "stylesheets/ie8.min.css",
+      "kind": "stylesheets",
+      "filename": "ie8.min.css"
+    },
+    {
+      "content_type": "text/css",
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.min.css",
+      "kind": "stylesheets",
+      "filename": "main.min.css"
     }
   ]
 }
