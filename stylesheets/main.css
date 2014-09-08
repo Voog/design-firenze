@@ -174,7 +174,7 @@ body {
   color: #0066bb;
 }
 .content-formatted a:hover {
-  color: #0066bb;
+  color: #0066BB;
   color: rgba(0, 102, 187, 0.8);
 }
 .content-formatted img, .content-formatted iframe {
@@ -250,21 +250,21 @@ body {
   border-bottom: 1px solid #f2f2f2;
 }
 .front-page.dark-background .content-formatted .placeholder {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.5);
 }
 .front-page.dark-background .content-formatted .edy-empty-bordered, .dark-background .footer .content-formatted .edy-empty-bordered {
-  border: 1px dashed white;
+  border: 1px dashed #FFFFFF;
   border: 1px dashed rgba(255, 255, 255, 0.63);
   border-width: 1px;
   border-width: 0.1rem;
 }
 .front-page.dark-background .content-formatted .edy-empty-bordered .edy-empty-header, .dark-background .footer .content-formatted .edy-empty-bordered .edy-empty-header {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.63);
 }
 .front-page.dark-background .content-formatted .edy-content-element-hover, .dark-background .footer .content-formatted .edy-content-element-hover {
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-width: 1px;
   border-width: 0.1rem;
@@ -355,7 +355,7 @@ body {
   background-color: black;
 }
 .tags-btn:hover {
-  background-color: black;
+  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -429,22 +429,22 @@ body {
   color: white;
 }
 .front-page .menu-main .menu .menu-item .menu-link.untranslated, .front-page.dark-background .menu-main .menu .menu-item .menu-link.untranslated {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.5);
 }
 .front-page .menu-main .menu .menu-item .menu-link.active, .front-page .menu-main .menu .menu-item .menu-link.active:hover, .front-page .menu-main .menu .menu-item .menu-link:hover, .front-page.dark-background .menu-main .menu .menu-item .menu-link.active, .front-page.dark-background .menu-main .menu .menu-item .menu-link.active:hover, .front-page.dark-background .menu-main .menu .menu-item .menu-link:hover {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
 }
 .front-page.light-background .menu-main .menu .menu-item .menu-link {
   color: black;
 }
 .front-page.light-background .menu-main .menu .menu-item .menu-link.untranslated {
-  color: black;
+  color: #000000;
   color: rgba(0, 0, 0, 0.5);
 }
 .front-page.light-background .menu-main .menu .menu-item .menu-link.active, .front-page.light-background .menu-main .menu .menu-item .menu-link.active:hover, .front-page.light-background .menu-main .menu .menu-item .menu-link:hover {
-  color: black;
+  color: #000000;
   color: rgba(0, 0, 0, 0.8);
 }
 .front-page .menu-main .menu .menu-item .menu-link {
@@ -467,7 +467,7 @@ body {
   color: white;
 }
 .topbar .menu-main .menu .menu-item .menu-link:hover {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.5);
 }
 .menu-main .menu .menu-item .menu-link:hover {
@@ -1197,14 +1197,14 @@ body {
   color: white;
 }
 .front-page .header-title a:hover, .front-page.dark-background .header-title a:hover {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
 }
 .front-page.light-background .header-title, .front-page.light-background .header-title a {
   color: black;
 }
 .front-page.light-background .header-title a:hover {
-  color: black;
+  color: #000000;
   color: rgba(0, 0, 0, 0.8);
 }
 .front-page .header-title {
@@ -1334,7 +1334,7 @@ body {
   color: #0066bb;
 }
 .post-comments-count a:hover {
-  color: #0066bb;
+  color: #0066BB;
   color: rgba(0, 102, 187, 0.8);
 }
 
@@ -1470,15 +1470,15 @@ body {
 .search-form {
   position: relative;
   z-index: 20;
-  background-color: white;
+  background-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid black;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-width: 1px;
   border-width: 0.1rem;
 }
 .search-form.active {
-  border: 1px solid black;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-width: 1px;
   border-width: 0.1rem;
@@ -1584,10 +1584,10 @@ body {
   font-size: 0;
 }
 .front-page.dark-background .header-options .search-btn svg {
-  fill: white;
+  fill: #FFFFFF;
 }
 .front-page.light-background .header-options .search-btn svg {
-  fill: black;
+  fill: #000000;
 }
 .search-btn:hover {
   opacity: 1;
@@ -1640,7 +1640,7 @@ body {
   margin: 0 auto;
   padding: 20px 27px;
   padding: 2rem 2.7rem;
-  background-color: #edecec;
+  background-color: #EDECEC;
   background-color: rgba(237, 236, 236, 0.95);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1677,7 +1677,7 @@ body {
 }
 .voog-search-modal-results em {
   font-style: normal;
-  background-color: #f9ec5a;
+  background-color: #F9EC5A;
   background-color: rgba(249, 236, 90, 0.5);
   border-radius: 2px;
   padding: 0 2px;
@@ -1887,7 +1887,7 @@ body {
   border-radius: 0;
 }
 .content-formatted .form_submit input:hover {
-  background-color: #0066bb;
+  background-color: #0066BB;
   background-color: rgba(0, 102, 187, 0.8);
 }
 @media screen and (max-width: 420px) {
@@ -1972,35 +1972,35 @@ body {
   margin-right: 0;
 }
 @-webkit-keyframes feedback-loading {
-  .content-formatted 0%  {
+  0% {
     background: transparent;
   }
-  .content-formatted 50%  {
-    background: white;
+  50% {
+    background: #FFFFFF;
   }
-  .content-formatted 100%  {
+  100% {
     background: transparent;
   }
 }
 @-moz-keyframes feedback-loading {
-  .content-formatted 0%  {
+  0% {
     background: transparent;
   }
-  .content-formatted 50%  {
-    background: white;
+  50% {
+    background: #FFFFFF;
   }
-  .content-formatted 100%  {
+  100% {
     background: transparent;
   }
 }
 @keyframes feedback-loading {
-  .content-formatted 0%  {
+  0% {
     background: transparent;
   }
-  .content-formatted 50%  {
-    background: white;
+  50% {
+    background: #FFFFFF;
   }
-  .content-formatted 100%  {
+  100% {
     background: transparent;
   }
 }
@@ -2026,7 +2026,7 @@ body {
   margin: 2px 0px 5px 9px;
   margin: 0.2rem 0rem 0.5rem 0.9rem;
   padding: 0;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-width: 1px;
   border-width: 0.1rem;
@@ -2065,7 +2065,7 @@ body {
 .comments .comment {
   padding-left: 20px;
   line-height: 1.5;
-  border-left: 3px solid black;
+  border-left: 3px solid #000000;
   border-left: 3px solid rgba(0, 0, 0, 0.05);
   border-left-width: 3px;
   border-left-width: 0.3rem;
@@ -2114,22 +2114,22 @@ body {
   font-size: 0.9rem;
 }
 .footer .content-formatted, .dark-background .footer .content-formatted {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.33);
 }
 .footer .content-formatted a, .dark-background .footer .content-formatted a {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.66);
 }
 .footer .content-formatted a:hover, .dark-background .footer .content-formatted a:hover {
   color: white;
 }
 .light-background .footer .content-formatted {
-  color: black;
+  color: #000000;
   color: rgba(0, 0, 0, 0.66);
 }
 .light-background .footer .content-formatted a {
-  color: black;
+  color: #000000;
   color: rgba(0, 0, 0, 0.88);
 }
 .light-background .footer .content-formatted a:hover {
@@ -2180,3 +2180,5 @@ body {
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
 }
+
+/*# sourceMappingURL=main.css.map */
