@@ -1,10 +1,19 @@
 /* FONTS */
 @font-face {
   font-family: "Bebas Neue";
-  font-weight: 400;
+  src: url("../assets/bebas-neue-regular-cyrillic.eot");
+  src: url("../assets/bebas-neue-regular-cyrillic.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-cyrillic.woff") format("woff"), url("../assets/bebas-neue-regular-cyrillic.ttf") format("opentype"), url("../assets/bebas-neue-regular-cyrillic.svg#webfontJRppkSIE") format("svg");
+  unicode-range: U+0400 -U4ff;
+  font-weight: normal;
   font-style: normal;
-  src: url("../assets/bebas-neue-regular.eot");
-  src: url("../assets/bebas-neue-regular.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular.woff") format("woff"), url("../assets/bebas-neue-regular.ttf") format("truetype"), url("../assets/bebas-neue-regular.svg#Bebas Neue") format("svg");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../assets/bebas-neue-regular-latin.eot");
+  src: url("../assets/bebas-neue-regular-latin.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-latin.woff") format("woff"), url("../assets/bebas-neue-regular-latin.ttf") format("opentype"), url("../assets/bebas-neue-regular-latin.svg#webfontJRppkSIE") format("svg");
+  unicode-range: U+00-FF;
+  font-weight: normal;
+  font-style: normal;
 }
 /* GENERAL */
 html {
@@ -44,7 +53,7 @@ body {
 .content-formatted h1, .menu-main, .header-title, .post-title,
 .post-title a,
 .post-date, .voog-search-modal-results h3, .comments .comments-title {
-  font-family: 'Bebas Neue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Bebas Neue';
 }
 
 .content-formatted:after, .edys-gallery-area .edys-gallery:after, .search:after,
@@ -891,171 +900,171 @@ body {
 
 @media screen and (min-width: 1400px) {
   .lang-flag-sq:after {
-    background-position: 0px 0px;
+    background-position: 0rem 0rem;
   }
 
   .lang-flag-hy:after {
-    background-position: -28px 0px;
+    background-position: -2rem 0rem;
   }
 
   .lang-flag-bn:after {
-    background-position: -56px 0px;
+    background-position: -4rem 0rem;
   }
 
   .lang-flag-pt:after {
-    background-position: -84px 0px;
+    background-position: -6rem 0rem;
   }
 
   .lang-flag-bg:after {
-    background-position: -112px 0px;
+    background-position: -8rem 0rem;
   }
 
   .lang-flag-zh:after {
-    background-position: -140px 0px;
+    background-position: -10rem 0rem;
   }
 
   .lang-flag-hr:after {
-    background-position: -168px 0px;
+    background-position: -12rem 0rem;
   }
 
   .lang-flag-da:after {
-    background-position: -196px 0px;
+    background-position: -14rem 0rem;
   }
 
   .lang-flag-cs:after {
-    background-position: -224px 0px;
+    background-position: -16rem 0rem;
   }
 
   .lang-flag-et:after {
-    background-position: -252px 0px;
+    background-position: -18rem 0rem;
   }
 
   .lang-flag-fi:after {
-    background-position: 0px -19.6px;
+    background-position: 0rem -1.4rem;
   }
 
   .lang-flag-fr:after {
-    background-position: -28px -19.6px;
+    background-position: -2rem -1.4rem;
   }
 
   .lang-flag-ka:after {
-    background-position: -56px -19.6px;
+    background-position: -4rem -1.4rem;
   }
 
   .lang-flag-de:after {
-    background-position: -84px -19.6px;
+    background-position: -6rem -1.4rem;
   }
 
   .lang-flag-el:after {
-    background-position: -112px -19.6px;
+    background-position: -8rem -1.4rem;
   }
 
   .lang-flag-hu:after {
-    background-position: -140px -19.6px;
+    background-position: -10rem -1.4rem;
   }
 
   .lang-flag-is:after {
-    background-position: -168px -19.6px;
+    background-position: -12rem -1.4rem;
   }
 
   .lang-flag-hi:after {
-    background-position: -196px -19.6px;
+    background-position: -14rem -1.4rem;
   }
 
   .lang-flag-id:after {
-    background-position: -224px -19.6px;
+    background-position: -16rem -1.4rem;
   }
 
   .lang-flag-fa:after {
-    background-position: -252px -19.6px;
+    background-position: -18rem -1.4rem;
   }
 
   .lang-flag-he:after {
-    background-position: 0px -39.2px;
+    background-position: 0rem -2.8rem;
   }
 
   .lang-flag-it:after {
-    background-position: -28px -39.2px;
+    background-position: -2rem -2.8rem;
   }
 
   .lang-flag-ja:after {
-    background-position: -56px -39.2px;
+    background-position: -4rem -2.8rem;
   }
 
   .lang-flag-ko:after {
-    background-position: -84px -39.2px;
+    background-position: -6rem -2.8rem;
   }
 
   .lang-flag-lv:after {
-    background-position: -112px -39.2px;
+    background-position: -8rem -2.8rem;
   }
 
   .lang-flag-lt:after {
-    background-position: -140px -39.2px;
+    background-position: -10rem -2.8rem;
   }
 
   .lang-flag-ms:after {
-    background-position: -168px -39.2px;
+    background-position: -12rem -2.8rem;
   }
 
   .lang-flag-nl:after {
-    background-position: -196px -39.2px;
+    background-position: -14rem -2.8rem;
   }
 
   .lang-flag-no:after {
-    background-position: -224px -39.2px;
+    background-position: -16rem -2.8rem;
   }
 
   .lang-flag-ur:after {
-    background-position: -252px -39.2px;
+    background-position: -18rem -2.8rem;
   }
 
   .lang-flag-fil:after {
-    background-position: 0px -58.8px;
+    background-position: 0rem -4.2rem;
   }
 
   .lang-flag-pl:after {
-    background-position: -28px -58.8px;
+    background-position: -2rem -4.2rem;
   }
 
   .lang-flag-ro:after {
-    background-position: -56px -58.8px;
+    background-position: -4rem -4.2rem;
   }
 
   .lang-flag-ru:after {
-    background-position: -84px -58.8px;
+    background-position: -6rem -4.2rem;
   }
 
   .lang-flag-ar:after {
-    background-position: -112px -58.8px;
+    background-position: -8rem -4.2rem;
   }
 
   .lang-flag-sk:after {
-    background-position: -140px -58.8px;
+    background-position: -10rem -4.2rem;
   }
 
   .lang-flag-sl:after {
-    background-position: -168px -58.8px;
+    background-position: -12rem -4.2rem;
   }
 
   .lang-flag-es:after {
-    background-position: -196px -58.8px;
+    background-position: -14rem -4.2rem;
   }
 
   .lang-flag-sv:after {
-    background-position: -224px -58.8px;
+    background-position: -16rem -4.2rem;
   }
 
   .lang-flag-tr:after {
-    background-position: -252px -58.8px;
+    background-position: -18rem -4.2rem;
   }
 
   .lang-flag-uk:after {
-    background-position: 0px -78.4px;
+    background-position: 0rem -5.6rem;
   }
 
   .lang-flag-en:after {
-    background-position: -28px -78.4px;
+    background-position: -2rem -5.6rem;
   }
 }
 .tags-editor {

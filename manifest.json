@@ -170,27 +170,51 @@
   "assets": [
     {
       "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/bebas-neue-regular.eot",
+      "file": "assets/bebas-neue-regular-cyrillic.eot",
       "kind": "assets",
-      "filename": "bebas-neue-regular.eot"
+      "filename": "bebas-neue-regular-cyrillic.eot"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/bebas-neue-regular.svg",
+      "file": "assets/bebas-neue-regular-cyrillic.svg",
       "kind": "assets",
-      "filename": "bebas-neue-regular.svg"
+      "filename": "bebas-neue-regular-cyrillic.svg"
     },
     {
       "content_type": "application/x-font-truetype",
-      "file": "assets/bebas-neue-regular.ttf",
+      "file": "assets/bebas-neue-regular-cyrillic.ttf",
       "kind": "assets",
-      "filename": "bebas-neue-regular.ttf"
+      "filename": "bebas-neue-regular-cyrillic.ttf"
     },
     {
       "content_type": "application/font-woff",
-      "file": "assets/bebas-neue-regular.woff",
+      "file": "assets/bebas-neue-regular-cyrillic.woff",
       "kind": "assets",
-      "filename": "bebas-neue-regular.woff"
+      "filename": "bebas-neue-regular-cyrillic.woff"
+    },
+    {
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/bebas-neue-regular-latin.eot",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-latin.eot"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/bebas-neue-regular-latin.svg",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-latin.svg"
+    },
+    {
+      "content_type": "application/x-font-truetype",
+      "file": "assets/bebas-neue-regular-latin.ttf",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-latin.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/bebas-neue-regular-latin.woff",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-latin.woff"
     },
     {
       "content_type": "image/svg+xml",

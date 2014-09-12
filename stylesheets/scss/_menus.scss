@@ -461,53 +461,95 @@
 
 // Language flag icons positioning in the spritemap.
 $flags:
-(sq,   0 ,     0),
-(hy,  -20,     0),
-(bn,  -40,     0),
-(pt,  -60,     0),
-(bg,  -80,     0),
-(zh, -100,     0),
-(hr, -120,     0),
-(da, -140,     0),
-(cs, -160,     0),
-(et, -180,     0),
+  // Albanian (Albania)
+  (sq,   0,        0),
+  // Armenian (Armenia)
+  (hy,  -20,     0),
+  // Bengali (Bangladesh)
+  (bn,  -40,     0),
+  // Brazilian Portuguese (Brazil)
+  (pt,  -60,     0),
+  // Bulgarian (Bulgaria)
+  (bg,  -80,    0),
+  // Chinese (China)
+  (zh, -100,     0),
+  // Croatian (Croatia)
+  (hr, -120,     0),
+  // Danish (Denmark)
+  (da, -140,     0),
+  // Czech (Czech Republic)
+  (cs, -160,     0),
+  // Estonian (Estonia)
+  (et, -180,     0),
 
-(fi,    0, -14),
-(fr,  -20, -14),
-(ka,  -40, -14),
-(de,  -60, -14),
-(el,  -80, -14),
-(hu, -100, -14),
-(is, -120, -14),
-(hi, -140, -14),
-(id, -160, -14),
-(fa, -180, -14),
+  // Finnish (Finland)
+  (fi,    0, -14),
+  // French (France)
+  (fr,  -20, -14),
+  // Georgian (Georgia)
+  (ka,  -40, -14),
+  // German (Germany)
+  (de,  -60, -14),
+  // Greek (Greece)
+  (el,  -80, -14),
+  // Hungarian (Hungary)
+  (hu, -100, -14),
+  // Icelandic (Iceland)
+  (is, -120, -14),
+  // Hindi (India)
+  (hi, -140, -14),
+  // Indonesian (Indonesia)
+  (id, -160, -14),
+  // Iranian (Iran)
+  (fa, -180, -14),
 
-(he,    0, -28),
-(it,  -20, -28),
-(ja,  -40, -28),
-(ko,  -60, -28),
-(lv,  -80, -28),
-(lt, -100, -28),
-(ms, -120, -28),
-(nl, -140, -28),
-(no, -160, -28),
-(ur, -180, -28),
+  // Hebrew (Israel)
+  (he,    0, -28),
+  // Italian (Italy)
+  (it,  -20, -28),
+  // Japanese (Japan)
+  (ja,  -40, -28),
+  // Korean (Korea, South)
+  (ko,  -60, -28),
+  // Latvian (Latvia)
+  (lv,  -80, -28),
+  // Lithuanian (Lithuania)
+  (lt, -100, -28),
+  // Malaysian (Malaysia)
+  (ms, -120, -28),
+  // Dutch (Netherlands)
+  (nl, -140, -28),
+  // Norwegian (Norway)
+  (no, -160, -28),
+  // Urdu (Pakistan)
+  (ur, -180, -28),
 
-(fil,   0, -42),
-(pl,  -20, -42),
-(ro,  -40, -42),
-(ru,  -60, -42),
-(ar,  -80, -42),
-(sk, -100, -42),
-(sl, -120, -42),
-(es, -140, -42),
-(sv, -160, -42),
-(tr, -180, -42),
+  // Filipino (Philippines)
+  (fil,   0, -42),
+  // Polish (Poland)
+  (pl,  -20, -42),
+  // Romanian (Romania)
+  (ro,  -40, -42),
+  // Russian (Russia)
+  (ru,  -60, -42),
+  // Arabic (Saudi Arabia)
+  (ar,  -80, -42),
+  // Slovakian (Slovakia)
+  (sk, -100, -42),
+  // Slovenian (Slovenia)
+  (sl, -120, -42),
+  // Spanish (Spain)
+  (es, -140, -42),
+  // Swedish (Sweden)
+  (sv, -160, -42),
+  // Turkish (Turkey)
+  (tr, -180, -42),
 
-(uk,    0, -56),
-(en,  -20, -56)
-;
+  // Ukrainian (Ukraine)
+  (uk,    0, -56),
+  // American English (United States of America)
+  (en,  -20, -56)
+  ;
 
 @each $flag, $left, $top in $flags {
   .lang-flag-#{$flag}:after { background-position: #{$left}px #{$top}px; }
@@ -517,7 +559,7 @@ $flags:
 
 @include query($large-1, 'min-width') {
   @each $flag, $left, $top in $flags {
-    .lang-flag-#{$flag}:after { background-position: #{$left + $left * 0.4}px #{$top + $top * 0.4}px; }
+    .lang-flag-#{$flag}:after { background-position: #{$left / 10}rem #{$top / 10}rem; }
   }
 }
 
