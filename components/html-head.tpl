@@ -36,25 +36,43 @@
 <meta property="og:title" content="{{ page_title | escape }}">
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
+{% comment %}Facebook OG image settings.{% endcomment %}
 {% if article %}
+  {% comment %}Facebook OG image on for article pages.{% endcomment %}
   {% if article.data.fb_image %}
     <meta property="og:image" content="{{ article.data.fb_image }}">
   {% elsif page.data.fb_image %}
     <meta property="og:image" content="{{ page.data.fb_image }}">
   {% elsif site.data.fb_image %}
     <meta property="og:image" content="{{ site.data.fb_image }}">
+  {% else %}
+    {% unless body_image == '' %}
+      <meta property="og:image" content="{{ body_image }}">
+    {% endunless %}
   {% endif %}
   <meta property="og:description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
   <meta name="description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
 {% else %}
+  {% comment %}Facebook OG image dor content pages.{% endcomment %}
   {% if page.data.fb_image %}
     <meta property="og:image" content="{{ page.data.fb_image }}">
   {% elsif site.data.fb_image %}
     <meta property="og:image" content="{{ site.data.fb_image }}">
+  {% else %}
+    {% unless body_image == '' %}
+      <meta property="og:image" content="{{ body_image }}">
+    {% endunless %}
   {% endif %}
+
   {% unless page.description == nil or page.description == "" %}
     <meta property="og:description" content="{{ page.description }}">
     <meta name="description" content="{{ page.description }}">
+  {% else %}
+    {% unless blog or editmode %}
+      {% capture content %}{% content %}{% endcapture %}
+      <meta property="og:description" content="{{ content | strip_html | truncatewords: 200, '...' }}">
+      <meta name="description" content="{{ content | strip_html | truncatewords: 200, '...'  }}">
+    {% endunless %}
   {% endunless %}
 {% endif %}
 

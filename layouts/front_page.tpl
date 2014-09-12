@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% include "html-head" %}
-
   {% capture dont_render %}
-    <!-- Sets the variable to decide if "header.tpl" renders the editable content area -->
-    {% assign frontPage = true %}
-
+    {% assign front_page = true %}
     <!-- Sets the body background image value -->
     {% if page.data.body_image == nil %}
       {% assign body_image = images_path | append: '/front-page-bg.jpg' %}
@@ -14,6 +10,7 @@
       {% assign body_image = page.data.body_image %}
     {% endif %}
   {% endcapture %}
+  {% include "html-head" %}
   {% include "edicy-tools-variables" %}
 </head>
 

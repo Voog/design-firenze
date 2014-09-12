@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% include "html-head" %}
-
   <!-- Sets the body background image value for article pages -->
   {% capture dont_render %}
     {% if article.data.body_image == nil %}
@@ -11,6 +9,7 @@
       {% assign body_image = article.data.body_image %}
     {% endif %}
   {% endcapture %}
+  {% include "html-head" %}
   {% include 'edicy-tools-variables' with 'article' %}
 </head>
 
