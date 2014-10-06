@@ -7,12 +7,22 @@
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
-{% if article and article.data.fb_image %}
-  <meta property="og:image" content="{{ article.data.fb_image }}">
-{% elsif page.data.fb_image %}
-  <meta property="og:image" content="{{ page.data.fb_image }}">
-{% elsif site.data.fb_image %}
-  <meta property="og:image" content="{{ site.data.fb_image }}">
+{% if front_page == true %}
+  {% unless page.data.body_image == '' %}
+    {% if page.data.body_image == nil %}
+      <meta property="og:image" content="{{ site.url }}{{ body_image | remove_first: '/' }}">
+    {% else %}
+      <meta property="og:image" content="{{ body_image }}">
+    {% endif %}
+  {% endunless %}
+{% else %}
+  {% if article and article.data.fb_image %}
+    <meta property="og:image" content="{{ article.data.fb_image }}">
+  {% elsif page.data.fb_image %}
+    <meta property="og:image" content="{{ page.data.fb_image }}">
+  {% elsif site.data.fb_image %}
+    <meta property="og:image" content="{{ site.data.fb_image }}">
+  {% endif %}
 {% endif %}
 
 {% comment %}Open Graph description{% endcomment %}
