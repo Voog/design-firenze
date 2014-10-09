@@ -77,12 +77,12 @@
     margin-bottom: 0;
     @include rem-fallback(padding, 10);
     overflow: auto;
-    white-space: nowrap;
     @include rem-fallback(font-size, 14);
     @include bg($grey-2);
 
     code {
       display: block;
+      white-space: nowrap;
       margin-top: 0;
       padding: 0;
     }
