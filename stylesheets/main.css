@@ -47,6 +47,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.4;
   color: #888888;
+  background-size: cover;
   -webkit-overflow-scrolling: touch;
 }
 

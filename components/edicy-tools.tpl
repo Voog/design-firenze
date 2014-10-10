@@ -21,15 +21,18 @@
 
       preview: function(data) {
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
+            oldImg = $('.js-bgpicker-body-image').css('background-image'),
             col = (data.color && data.color !== '') ? data.color : 'none';
 
+        // Updades the header image only if it has been changed.
+        if (oldImg !== img) {
+          $('.js-bgpicker-body-image').css({'background-image' : img});
+        }
         $('.js-bgpicker-body-color').css({'background' : col});
 
         if (data.image === null || data.image === '') {
-          $('.backstretch').remove();
           $('.js-footer').removeClass('footer-gradient');
         } else {
-          $.backstretch(data.image);
           $('.js-footer').addClass('footer-gradient');
         }
 

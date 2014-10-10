@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "jquery": "~1.x",
-    "jquery-backstretch": "~2.0.4",
     "overthrow": "~0.7.0"
   }
 }
