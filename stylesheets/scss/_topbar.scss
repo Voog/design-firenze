@@ -1,7 +1,7 @@
 /* TOPBAR */
 .topbar {
   position: fixed;
-  @include rem-fallback(top, -200);
+  top: -200px;
   left: 0;
   right: 0;
   z-index: 1;
@@ -12,9 +12,9 @@
   .wrap {
     position: relative;
     display: block;
-    @include rem-fallback(max-width, 650);
+    max-width: 650px;
     margin: 0 auto;
-    @include rem-fallback(padding, 12, 30);
+    padding: 12px 30px;
 
     .container-inner & {
       background: none;

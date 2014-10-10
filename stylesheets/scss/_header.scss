@@ -2,13 +2,12 @@
 .header {
   .content-page & {
     position: relative;
-    @include rem-fallback(padding, 0, 5,20);
+    padding: 0 5px 20px;
     @include border(bottom, 1px, solid, $primary-color, 0.33);
-    @include rem-fallback(border-bottom-width, 1);
   }
 
   .static & {
-    @include rem-fallback(padding-top, 55);
+    padding-top: 55px;
   }
 }
 
@@ -18,7 +17,7 @@
   }
   @include query($mobile-1) {
     .content-page & {
-      @include rem-fallback(min-height, 30);
+      min-height: 30px;
     }
   }
 }
@@ -29,42 +28,40 @@
 
   .dark-background & {
     @include border(bottom, 3px, solid, $white);
-    @include border(bottom, 0.3rem, solid, $white);
   }
 
   .light-background & {
     @include border(bottom, 3px, solid, $black);
-    @include border(bottom, 0.3rem, solid, $black);
   }
 }
 
 .header-options {
   position: absolute;
-  @include rem-fallback(right, 25);
+  right: 25px;
   width: 50%;
   text-align: right;
 
   .front-page & {
-    @include rem-fallback(top, 18);
+    top: 18px;
   }
 
   .content-page & {
-    @include rem-fallback(top, 25);
+    top: 25px;
   }
 
   @include query($mobile-1) {
     .front-page & {
-      @include rem-fallback(right, 16);
+      right: 16px;
     }
   }
 }
 
 .header-title {
   @extend %bebas-neue;
-  @include rem-fallback(max-width, 630);
-  @include rem-fallback(min-width, 211);
+  max-width: 630px;
+  min-width: 211px;
   font-weight: 400;
-  @include rem-fallback(font-size, 30);
+  font-size: 30px;
   line-height: 1;
 
   .front-page & {
@@ -73,7 +70,7 @@
     a,
     .edy-editable,
     .public & {
-      @include rem-fallback(margin-bottom, 20);
+      margin-bottom: 20px;
     }
   }
 
@@ -105,7 +102,7 @@
 
   .front-page & {
     text-align: center;
-    @include rem-fallback(font-size, 60);
+    font-size: 60px
   }
 
   .content-page & {
@@ -124,6 +121,6 @@
 
 .header-bottom {
   .front-page & {
-    @include rem-fallback(padding-top, 25);
+    padding-top: 25px;
   }
 }

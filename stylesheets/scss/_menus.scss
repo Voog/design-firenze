@@ -8,9 +8,9 @@
 
   .menu-stripe {
     display: block;
-    @include rem-fallback(width, 23);
-    @include rem-fallback(height, 4);
-    @include rem-fallback(margin, 4, 0);
+    width: 23px;
+    height: 4px;
+    margin: 4px 0;
     @include bg($secondary-color, 0.67);
     border-radius: 5px;
 
@@ -22,8 +22,8 @@
 
   @include query($mobile-1) {
     position: absolute;
-    @include rem-fallback(top, 2);
-    @include rem-fallback(right, 5);
+    top: 2px;
+    right: 5px;
     z-index: 20;
     display: inline-block;
     padding: 0;
@@ -53,12 +53,12 @@
 // Tags toggle button
 .tags-btn {
   @extend %button;
-  @include rem-fallback(width, 155);
+  width: 155px;
   height: 100%;
-  @include rem-fallback(padding, 0, 20);
+  padding: 0 20px;
   font-family: 'Bebas Neue';
   font-weight: normal;
-  @include rem-fallback(font-size, 16);
+  font-size: 16px;
   text-align: right;
   @include color($white);
   line-height: 1;
@@ -90,7 +90,7 @@
   @extend %bebas-neue;
 
   &.narrow {
-    @include rem-fallback(max-width, 500);
+    max-width: 500px;
   }
 
   .front-page & {
@@ -103,12 +103,12 @@
 
       &.expanded {
         position: absolute;
-        @include rem-fallback(top, 50);
-        @include rem-fallback(left, -25);
-        @include rem-fallback(right, -25);
+        top: 50px;
+        left: -25px;
+        right: -25px;
         z-index: 10;
         display: block;
-        @include rem-fallback(margin-bottom, 40);
+        margin-bottom: 40px;
         text-align: left;
         @include bg($white);
       }
@@ -123,10 +123,10 @@
     .menu-item {
       display: inline-block;
       vertical-align: middle;
-      @include rem-fallback(margin-right, 8);
+      margin-right: 8px;
 
       .front-page & {
-        @include rem-fallback(margin-right, 15);
+        margin-right: 15px;
       }
 
       &:last-child {
@@ -136,7 +136,6 @@
       @include query($mobile-1) {
         &:first-child {
           @include border(top, 1px, solid, $primary-color, 0.33);
-          @include rem-fallback(border-top-width, 1);
         }
 
         .content-page & {
@@ -175,11 +174,11 @@
           }
         }
         .front-page & {
-          @include rem-fallback(font-size, 16);
+          font-size: 16px;
         }
 
         .content-page & {
-          @include rem-fallback(font-size, 14);
+          font-size: 14px;
           @include color($primary-color);
 
           &.untranslated {
@@ -211,25 +210,23 @@
         @include query($mobile-1) {
           .content-page & {
             display: block;
-            @include rem-fallback(padding, 7, 10, 4);
-            @include rem-fallback(font-size, 20);
+            padding: 7px 10px 4px;
+            font-size: 20px;
             @include border(bottom, 1px, solid, $primary-color, 0.33);
-            @include rem-fallback(border-bottom-width, 1);
           }
         }
       }
     }
 
     .edit-btn {
-      @include rem-fallback(margin-left, 8);
+      margin-left: 8px;
 
       @include query($mobile-1) {
         .content-page & {
           display: block;
           margin-left: 0;
-          @include rem-fallback(padding, 10, 25);
+          padding: 10px 25px;
           @include border(bottom, 1px, solid, $primary-color, 0.33);
-          @include rem-fallback(border-bottom-width, 1);
         }
       }
     }
@@ -253,12 +250,12 @@
             }
 
             .menu-link {
-              @include rem-fallback(padding, 10, 20, 9, 47);
+              padding: 10px 20px 9px 47px;
 
               &:before,
               &:after {
-                @include rem-fallback(top, 13);
-                @include rem-fallback(left, 20);
+                top: 13px;
+                left: 20px;
               }
 
               &.active,
@@ -274,7 +271,7 @@
           }
 
           .edit-btn {
-            @include rem-fallback(padding, 12, 25, 13);
+            padding: 12px 25px 13px;
           }
         }
       }
@@ -285,17 +282,16 @@
 // Styling rules for the site's sub menu.
 .menu-sub-wrap {
   @include border(bottom, 1px, solid, $primary-color, 0.33);
-  @include rem-fallback(border-bottom-width, 1);
 }
 
 .menu-sub {
-  @include rem-fallback(padding, 15, 5);
+  padding: 15px 5px;
 
   .menu {
     .menu-item {
       display: inline-block;
-      @include rem-fallback(margin-right, 10);
-      @include rem-fallback(font-size, 14);
+      margin-right: 10px;
+      font-size: 14px;
 
       &:first-child {
         margin-left: 0;
@@ -342,13 +338,17 @@
   .menu-item {
     display: list-item;
     text-align: right;
-    @include rem-fallback(font-size, 12);
+    font-size: 12px;
 
     .menu-link {
       position: relative;
       display: block;
-      @include rem-fallback(padding, 4, 39, 4, 12);
+      padding: 4px 39px 4px 12px;
       @include color($secondary-color, 0.67);
+
+      @include query($large-1, 'min-width') {
+        padding: 16px 78px 16px 24px;
+      }
 
       &.active,
       &.active:hover {
@@ -363,8 +363,8 @@
 
       &:before,
       &:after {
-        @include rem-fallback(top, 3);
-        @include rem-fallback(right, 11);
+        top: 3px;
+        right: 11px;
       }
     }
   }
@@ -374,8 +374,8 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  @include rem-fallback(width, 30);
-  @include rem-fallback(height, 25);
+  width: 31px;
+  height: 25px;
   padding: 0;
   font-size: 0;
   background: none;
@@ -392,8 +392,13 @@
 
   &:before,
   &:after {
-    @include rem-fallback(top, 6);
-    @include rem-fallback(left, 5);
+    top: 5px;
+    left: 5px;
+  }
+
+  @include query($large-1, 'min-width') {
+    width: 52px;
+    height: 40px;
   }
 }
 
@@ -403,9 +408,14 @@
   &:after {
     position: absolute;
     display: block;
-    @include rem-fallback(width, 20A);
-    @include rem-fallback(height, 13);
+    width: 21px;
+    height: 15px;
     content: '';
+
+    @include query($large-1, 'min-width') {
+      width: 42px;
+      height: 30px;
+    }
   }
 }
 
@@ -417,8 +427,11 @@
 
   &:after {
     opacity: 0.95;
-    background-size: 200px;
     background-repeat: no-repeat;
+
+    @include query($large-1, 'min-width') {
+      background-size: 420px;
+    }
 
     .no-svg & {
       background-image: url('../images/ico-flags.png');
@@ -426,11 +439,6 @@
 
     .svg & {
       background-image: url('../assets/ico-flags.svg');
-
-      @include query($large-1, 'min-width') {
-        background-size: 280px;
-        background-image: url('../assets/ico-flags-large.svg');
-      }
     }
   }
 }
@@ -440,142 +448,138 @@
 
   &.expanded {
     position: absolute;
-    @include rem-fallback(top, 28);
-    @include rem-fallback(right, -6);
+    top: 28px;
+    right: -6px;
     display: block;
-    @include rem-fallback(margin-bottom, 40);
-    @include rem-fallback(padding, 6, 0);
-    @include rem-fallback(min-width, 121);
+    margin-bottom: 40px;
+    padding: 6px 0;
+    min-width: 121px;
     background: #fff;
     @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
-    @include box-shadow(0, 0.5rem, 2.5rem, rgba($black, 0.3));
     z-index: 30;
   }
 
   .edit-btn {
     display: block;
-    @include rem-fallback(padding, 8, 18, 3);
+    padding: 8px 18px 3px;
     text-align: right;
   }
 }
 
 // Language flag icons positioning in the spritemap.
 $flags:
-  // Albanian (Albania)
-  (sq,   0,        0),
-  // Armenian (Armenia)
-  (hy,  -20,     0),
-  // Bengali (Bangladesh)
-  (bn,  -40,     0),
-  // Brazilian Portuguese (Brazil)
-  (pt,  -60,     0),
-  // Bulgarian (Bulgaria)
-  (bg,  -80,    0),
-  // Chinese (China)
-  (zh, -100,     0),
-  // Croatian (Croatia)
-  (hr, -120,     0),
-  // Danish (Denmark)
-  (da, -140,     0),
-  // Czech (Czech Republic)
-  (cs, -160,     0),
-  // Estonian (Estonia)
-  (et, -180,     0),
+// Albanian (Albania)
+(sq,   0,        0),
+// Armenian (Armenia)
+(hy,  -21px,    0),
+// Bengali (Bangladesh)
+(bn,  -42px,    0),
+// Brazilian Portuguese (Brazil)
+(pt,  -63px,    0),
+// Bulgarian (Bulgaria)
+(bg,  -84px,    0),
+// Chinese (China)
+(zh, -105px,    0),
+// Croatian (Croatia)
+(hr, -126px,    0),
+// Danish (Denmark)
+(da, -147px,    0),
+// Czech (Czech Republic)
+(cs, -168px,    0),
+// Estonian (Estonia)
+(et, -189px,    0),
 
-  // Finnish (Finland)
-  (fi,    0, -14),
-  // French (France)
-  (fr,  -20, -14),
-  // Georgian (Georgia)
-  (ka,  -40, -14),
-  // German (Germany)
-  (de,  -60, -14),
-  // Greek (Greece)
-  (el,  -80, -14),
-  // Hungarian (Hungary)
-  (hu, -100, -14),
-  // Icelandic (Iceland)
-  (is, -120, -14),
-  // Hindi (India)
-  (hi, -140, -14),
-  // Indonesian (Indonesia)
-  (id, -160, -14),
-  // Iranian (Iran)
-  (fa, -180, -14),
+// Finnish (Finland)
+(fi,    0px, -15px),
+// French (France)
+(fr,  -21px, -15px),
+// Georgian (Georgia)
+(ka,  -42px, -15px),
+// German (Germany)
+(de,  -63px, -15px),
+// Greek (Greece)
+(el,  -84px, -15px),
+// Hungarian (Hungary)
+(hu, -105px, -15px),
+// Icelandic (Iceland)
+(is, -126px, -15px),
+// Hindi (India)
+(hi, -147px, -15px),
+// Indonesian (Indonesia)
+(id, -168px, -15px),
+// Iranian (Iran)
+(fa, -189px, -15px),
 
-  // Hebrew (Israel)
-  (he,    0, -28),
-  // Italian (Italy)
-  (it,  -20, -28),
-  // Japanese (Japan)
-  (ja,  -40, -28),
-  // Korean (Korea, South)
-  (ko,  -60, -28),
-  // Latvian (Latvia)
-  (lv,  -80, -28),
-  // Lithuanian (Lithuania)
-  (lt, -100, -28),
-  // Malaysian (Malaysia)
-  (ms, -120, -28),
-  // Dutch (Netherlands)
-  (nl, -140, -28),
-  // Norwegian (Norway)
-  (no, -160, -28),
-  // Urdu (Pakistan)
-  (ur, -180, -28),
+// Hebrew (Israel)
+(he,    0px, -30px),
+// Italian (Italy)
+(it,  -21px, -30px),
+// Japanese (Japan)
+(ja,  -42px, -30px),
+// Korean (Korea, South)
+(ko,  -63px, -30px),
+// Latvian (Latvia)
+(lv,  -84px, -30px),
+// Lithuanian (Lithuania)
+(lt, -105px, -30px),
+// Malaysian (Malaysia)
+(ms, -126px, -30px),
+// Dutch (Netherlands)
+(nl, -147px, -30px),
+// Norwegian (Norway)
+(no, -168px, -30px),
+// Urdu (Pakistan)
+(ur, -189px, -30px),
 
-  // Filipino (Philippines)
-  (fil,   0, -42),
-  // Polish (Poland)
-  (pl,  -20, -42),
-  // Romanian (Romania)
-  (ro,  -40, -42),
-  // Russian (Russia)
-  (ru,  -60, -42),
-  // Arabic (Saudi Arabia)
-  (ar,  -80, -42),
-  // Slovakian (Slovakia)
-  (sk, -100, -42),
-  // Slovenian (Slovenia)
-  (sl, -120, -42),
-  // Spanish (Spain)
-  (es, -140, -42),
-  // Swedish (Sweden)
-  (sv, -160, -42),
-  // Turkish (Turkey)
-  (tr, -180, -42),
+// Filipino (Philippines)
+(fil,   0px, -45px),
+// Polish (Poland)
+(pl,  -21px, -45px),
+// Romanian (Romania)
+(ro,  -42px, -45px),
+// Russian (Russia)
+(ru,  -63px, -45px),
+// Arabic (Saudi Arabia)
+(ar,  -84px, -45px),
+// Slovakian (Slovakia)
+(sk, -105px, -45px),
+// Slovenian (Slovenia)
+(sl, -126px, -45px),
+// Spanish (Spain)
+(es, -147px, -45px),
+// Swedish (Sweden)
+(sv, -168px, -45px),
+// Turkish (Turkey)
+(tr, -189px, -45px),
 
-  // Ukrainian (Ukraine)
-  (uk,    0, -56),
-  // American English (United States of America)
-  (en,  -20, -56)
-  ;
+// Ukrainian (Ukraine)
+(uk,    0px, -60px),
+// American English (United States of America)
+(en,  -21px, -60px)
+;
 
 @each $flag, $left, $top in $flags {
-  .lang-flag-#{$flag}:after { background-position: #{$left}px #{$top}px; }
-
-  // .lang-flag-#{$flag}:after { background-position: #{$left / 10}rem #{$top / 10}rem; }
+  .lang-flag-#{$flag}:after { background-position: #{$left} #{$top}; }
 }
 
 @include query($large-1, 'min-width') {
   @each $flag, $left, $top in $flags {
-    .lang-flag-#{$flag}:after { background-position: #{$left / 10}rem #{$top / 10}rem; }
+    .lang-flag-#{$flag}:after { background-position: #{$left*2} #{$top*2}; }
   }
 }
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
 .tags-editor {
-  @include rem-fallback(padding, 15, 5);
+  padding: 15px 5px;
 }
 
 .tags {
   @include border(bottom, 1px, solid, $primary-color, 0.33);
-  @include rem-fallback(border-bottom-width, 1);
 
   .topbar & {
     position: absolute;
     top: 0;
-    @include rem-fallback(right, 5);
+    right: 5px;
     bottom: 0;
     z-index: 1;
     text-align: right;
@@ -594,7 +598,7 @@ $flags:
 
     &.expanded {
       display: block;
-      @include rem-fallback(padding-bottom, 30);
+      padding-bottom: 30px;
       text-align: right;
       @include bg($black);
 
@@ -603,8 +607,8 @@ $flags:
 
         .menu-link {
           display: block;
-          @include rem-fallback(padding, 3, 20);
-          @include rem-fallback(font-size, 12);
+          padding: 3px 20px;
+          font-size: 12px;
           @include color($primary-color);
 
           &.active,

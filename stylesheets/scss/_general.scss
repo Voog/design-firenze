@@ -1,13 +1,5 @@
 /* GENERAL */
 // Styling rules for the basic parts of the page. These rules affect the entire site.
-html {
-  font-size: 62.5%;
-
-  @include query($large-1, 'min-width') {
-    font-size: 87.5%;
-  }
-}
-
 html,
 body {
   height: 100% !important;
@@ -15,10 +7,7 @@ body {
 
 .editmode {
   &, body {
-    height: -webkit-calc(100% - 20px) !important;
-    height: -webkit-calc(100% - 2rem) !important;
-    height:         calc(100% - 20px) !important;
-    height:         calc(100% - 2rem) !important;
+    @include calc(height, "100% - 20px !important");
   }
 }
 
@@ -28,7 +17,7 @@ body {
   padding: 0;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
-  @include rem-fallback(font-size, 14);
+  font-size: 14px;
   line-height: 1.4;
   @include color($primary-color);
   background-size: cover;
@@ -101,14 +90,14 @@ body {
   table-layout: fixed;
   width: 100%;
   margin: 0 auto;
-  @include rem-fallback(padding-top, 30);
+  padding-top: 30px;
 
   .front-page & {
     max-width: 100%;
   }
 
   .content-page & {
-    @include rem-fallback(max-width, 720);
+    min-width: 720px;
   }
 }
 
@@ -120,7 +109,7 @@ body {
 .wrap {
   position: relative;
   margin: 0 auto;
-  @include rem-fallback(padding, 25);
+  padding: 25px;
 
   .container-inner & {
     .front-page & {
@@ -128,7 +117,7 @@ body {
     }
 
     .content-page & {
-      @include rem-fallback(max-width, 720);
+      max-width: 720px;
       @include bg($white);
     }
   }

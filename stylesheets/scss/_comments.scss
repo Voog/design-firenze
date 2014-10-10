@@ -1,8 +1,7 @@
 /* COMMENTS */
 .comments {
-  @include rem-fallback(padding, 25, 5, 0);
+  padding: 25px 5px 0;
   @include border(top, 1px, solid, $primary-color, 0.33);
-  @include rem-fallback(border-top-width, 1);
 
   .comments-title {
     @extend %bebas-neue;
@@ -18,7 +17,6 @@
     padding-left: 20px;
     line-height: 1.5;
     @include border(left, 3px, solid, $black, 0.05);
-    @include rem-fallback(border-left-width, 3);
   }
 
   .comment-body,

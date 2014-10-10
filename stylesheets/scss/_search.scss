@@ -8,8 +8,8 @@
 .search {
   display: none;
   vertical-align: middle;
-  @include rem-fallback(margin-top, -4);
-  @include rem-fallback(margin-left, 15);
+  margin-top: -4px;
+  margin-left: 15px;
   height: $search-height;
   line-height: 1;
   @include bg($white);
@@ -34,7 +34,7 @@
   display: table-cell;
   vertical-align: middle;
   width: 100%;
-  @include rem-fallback(padding, 0, 20);
+  padding: 0 20px;
   @include box-sizing(border-box);
 
   @include query($mobile-2) {
@@ -46,14 +46,12 @@
   position: relative;
   max-width: 400px;
   margin: 60px auto;
-  margin: 6rem auto;
   @include box-shadow(0, 0, 100px, 0, rgba($black, 0.75));
-  @include box-shadow(0, 0, 10rem, 0, rgba($black, 0.75));
 
   .search-close-btn {
     position: absolute;
     top: 14px;
-    @include rem-fallback(right, 7);
+    right: 7px;
     z-index: 20;
   }
 }
@@ -63,15 +61,14 @@
   z-index: 20;
   @include bg($white, 0.95);
   @include border(all, 1px, solid, $black, 0.1);
-  @include rem-fallback(border-width, 1);
 
   &.active {
     @include border(all, 1px, solid, $black, 0.3);
-    @include rem-fallback(border-width, 1);
   }
 
-  &, &.active {
-    @include rem-fallback(max-width, 400);
+  &,
+  &.active {
+    max-width: 400px;
     margin: 0 auto;
     border: none;
   }
@@ -82,9 +79,9 @@
   width: 100%;
   height: $search-height;
   margin: 0;
-  @include rem-fallback(padding, 0, 65, 0, 10);
+  padding: 0 65px 0 10px;
   font-family: inherit;
-  @include rem-fallback(font-size, 24);
+  font-size: 24px;
   line-height: 1;
   @include color($secondary-color);
   background: none;
@@ -97,7 +94,7 @@
   }
 
   &::-webkit-input-placeholder {
-    @include rem-fallback(padding, 2, 0, 4, 0);
+    padding: 2px 0 4px 0;
     line-height: 1;
     @include color($secondary-color, 0.5);
   }
@@ -111,7 +108,7 @@
 .search-submit {
   @extend %button;
   vertical-align: top;
-  @include rem-fallback(width, 30);
+  width: 30px;
   height: $search-height;
 
   &, .dark-background & {
@@ -133,14 +130,13 @@
 }
 
 .search-submit {
-  position: absolute;
-  @include rem-fallback(top, 1);
-  @include rem-fallback(right, 25);
-  background-color: transparent;
-  @include rem-fallback(width, 41);
-  @include rem-fallback(background-size, 32);
-
   @include opacity(0.5);
+  position: absolute;
+  top: 1px;
+  right: 25px;
+  background-color: transparent;
+  width: 41px;
+  background-size: 32px;
 
   &:hover {
     @include opacity(1);
@@ -153,12 +149,12 @@
 
 .search-btn {
   position: relative;
-  @include rem-fallback(top, 1);
+  top: 1px;
   z-index: 19;
   vertical-align: middle;
   @include opacity(0.8);
-  @include rem-fallback(width, 22);
-  @include rem-fallback(height, 22);
+  width: 22px;
+  height: 22px;
   font-size: 0;
 
   svg {
@@ -183,7 +179,7 @@
 
   @include query($mobile-1) {
     .content-page .header-options & {
-      @include rem-fallback(margin-right, 35);
+      margin-right: 35px;
     }
   }
 }
@@ -219,9 +215,9 @@
   @include box-sizing(border-box);
   z-index: 999;
   width: 100%;
-  @include rem-fallback(max-width, 400);
+  max-width: 400px;
   margin: 0 auto;
-  @include rem-fallback(padding, 20, 27);
+  padding: 20px 27px;
   @include bg($grey-4, 0.95);
   @include no-box-shadow;
   overflow-x: hidden;
@@ -240,7 +236,7 @@
   h3 {
     @extend %bebas-neue;
     margin: 0;
-    @include rem-fallback(font-size, 24);
+    font-size: 24px;
 
     a {
       text-decoration: none;
@@ -254,8 +250,8 @@
   }
 
   p {
-    @include rem-fallback(margin, 5, 0, 0);
-    @include rem-fallback(font-size, 14);
+    margin: 5px 0 0;
+    font-size: 14px;
   }
 
   em {
@@ -267,7 +263,7 @@
 }
 
 .voog-search-modal-result {
-  @include rem-fallback(margin-top, 18);
+  margin-top: 18px;
 
   &:first-child {
     margin-top: 0;

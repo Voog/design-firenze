@@ -1,6 +1,29 @@
 // CUSTOM MIXINS
 // Comment out the "_mixins.scss" partial in the "main.scss" file if not used.
 
+// Hyphenate
+@mixin hyphenate($boolean) {
+  @if $boolean == true {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  } @else {
+    word-break: normal;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+}
+
+// CALCULATE
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
 // BOXES
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
   -webkit-box-shadow: $top $left $blur $color #{$inset};
@@ -58,38 +81,6 @@
       border-#{$side}: $width $style rgba($color, $opacity);
     }
   }
-}
-
-// REM FALLBACKS
-@function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
-}
-
-@mixin rem-fallback($property, $values...) {
-  $max: length($values);
-  $pxValues: '';
-  $remValues: '';
-
-  @for $i from 1 through $max {
-    $value: strip-unit(nth($values, $i));
-    $pxValues: #{$pxValues + $value}px;
-
-    @if $i < $max {
-      $pxValues: #{$pxValues + " "};
-    }
-  }
-
-  @for $i from 1 through $max {
-    $value: strip-unit(nth($values, $i));
-    $remValues: #{$remValues + $value / 10}rem;
-
-    @if $i < $max {
-      $remValues: #{$remValues + " "};
-    }
-  }
-
-  #{$property}: $pxValues;
-  #{$property}: $remValues;
 }
 
 // PERSPECTIVE

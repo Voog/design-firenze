@@ -7,8 +7,8 @@
   .wrap {
     display: table;
     width: 100%;
-    @include rem-fallback(max-width, 720);
-    @include rem-fallback(height, 100);
+    max-width: 720px;
+    height: 100px;
     margin: 0 auto;
     padding: 0;
   }
@@ -27,12 +27,12 @@
   }
 
   .content-formatted {
-    @include rem-fallback(max-width, 590);
-    @include rem-fallback(min-width, 100);
+    max-width: 590px;
+    min-width: 100px;
     margin: 0 auto;
-    @include rem-fallback(padding-right, 10);
+    padding-right: 10px;
     text-align: center;
-    @include rem-fallback(font-size, 9);
+    font-style: 9px;
 
     &,
     .dark-background & {
@@ -61,7 +61,7 @@
 
     @include query($tablet-3) {
       display: block;
-      @include rem-fallback(padding, 0, 20);
+      padding: 0 20px;
     }
   }
 
