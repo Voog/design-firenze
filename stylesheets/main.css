@@ -1169,7 +1169,7 @@ body {
 /* CONTENT */
 .content {
   display: block;
-  padding: 43 5;
+  padding: 43px 5px;
 }
 .front-page .content {
   padding: 0;
