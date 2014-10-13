@@ -96,11 +96,13 @@
     });
   };
 
-  // Scrolls to the comment-form if comment submit failed (to show the error messages to the user).
-  var focusCommentsWithErrors = function() {
+  // Scrolls to the comment-form if comment submit failed (to show the error messages to the user)
+  var focusFormWithErrors = function() {
     $(document).ready(function() {
-      if ($('.form_field').hasClass('form_field_with_errors') === true) {
+      if ($('.comment-form').hasClass('form_with_errors')) {
         $('html, body').scrollTop($('.comment-form').offset().top);
+      } else if ($('form').find('.form_error, .form_notice').length > 0) {
+        $('html, body').scrollTop($('.form_error, .form_notice').closest('form').offset().top);
       }
     });
   };
@@ -297,7 +299,6 @@
     var initCommonPage = function() {
       // Add common page specific functions here.
       handleTopbarPosition();
-      focusCommentsWithErrors();
     };
 
     var initBlogPage = function() {
@@ -308,7 +309,6 @@
     var initPostPage = function() {
       // Add single post layout specific functions here.
       handleTopbarPosition();
-      focusCommentsWithErrors();
     };
 
     var init = function() {
@@ -319,6 +319,7 @@
       handleFooterContentEdit();
       handleSearchSubmit();
       handleGalleryHover();
+      focusFormWithErrors();
       handleWindowResize();
       wrapTables();
 
