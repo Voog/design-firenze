@@ -11,7 +11,7 @@
       &, .editmode & {
         position: relative;
         min-width: 211px;
-        padding: 20 0;
+        padding: 20px 0;
         @include color($white);
 
         &:empty {

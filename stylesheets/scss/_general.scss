@@ -1,27 +1,32 @@
 /* GENERAL */
 // Styling rules for the basic parts of the page. These rules affect the entire site.
-html,
-body {
-  height: 100% !important;
-}
-
-.editmode {
-  &, body {
-    @include calc(height, "100% - 20px !important");
+html {
+  &.editmode {
+    height: 100% !important;
   }
 }
 
 body {
-  position: relative;
+  @include display(flex);
+  @include flex-direction(column);
+  height: auto !important;
+  min-height: 100%;
   margin: 0;
-  padding: 0;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
   @include color($primary-color);
   background-size: cover;
-  -webkit-overflow-scrolling: touch;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+
+  img {
+    border: none;
+  }
 }
 
 %bebas-neue {
@@ -73,51 +78,24 @@ body {
 
 // Styling rules for the main container that affects the entire site's other elements.
 .container {
-  position: relative;
-  min-height: 100%;
+  @include display(flex);
+  @include flex(1 1 auto);
+  @include align-items(center);
+  @include justify-content(center);
 
-  a {
-    text-decoration: none;
+  .wrap {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 25px;
 
-    img {
-      border: none;
-    }
-  }
-}
-
-.container-middle {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 30px;
-
-  .front-page & {
-    max-width: 100%;
-  }
-
-  .content-page & {
-    min-width: 720px;
-  }
-}
-
-.container-inner {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.wrap {
-  position: relative;
-  margin: 0 auto;
-  padding: 25px;
-
-  .container-inner & {
-    .front-page & {
-
+    &.static {
+      margin-bottom: 0;
     }
 
     .content-page & {
-      max-width: 720px;
+      position: relative;
+      max-width: 650px;
       @include bg($white);
     }
   }

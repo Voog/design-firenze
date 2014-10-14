@@ -152,61 +152,27 @@
 
   // Sets the position of the footer to the bottom of the page
   var handleFooterPosition = function() {
-    editmode = $('html').hasClass('editmode'),
-    container = '.js-container',
-    containerMiddle = '.js-container-middle',
-    containerInner = '.js-container-inner',
-    wrap = '.js-wrap',
-    contentHeight = $('.js-wrap').height()
-    widnowWidth = $(window).width(),
-    windowHeight = $(window).height(),
-    footerHeight = $('.js-footer').height();
+    // var windowHeight = $(window).height(),
+    //     contentHeight = $('.js-wrap').outerHeight(true),
+    //     footerHeight = $('.js-footer').outerHeight();
 
-    // TODO: Find out wh these "magicNumber"-s are needed and remove them if there's a better solution.
-    if (editmode) {
-      containerHeight = windowHeight - footerHeight - 40;
-      if (widnowWidth < 1400) {
-        magicNumber = 18;
-      } else {
-        magicNumber = 22;
-      }
-      // magicNumber = 18;
-    } else  {
-      containerHeight = windowHeight - footerHeight;
-      if (widnowWidth < 1400) {
-        magicNumber = 30;
-      } else {
-        magicNumber = 42;
-      }
-      // magicNumber = 30;
-    }
+    //     console.log('windowHeight: ' + windowHeight);
+    //     console.log('contentHeight: ' + contentHeight);
+    //     console.log('footerHeight: ' + footerHeight);
+    //     console.log();
 
-    $(containerMiddle).css({
-      'height': containerHeight - footerHeight,
-      'padding-bottom': footerHeight
-    });
-
-    containerHeight = $(container).height();
-
-    $(containerMiddle).css({
-      'height': containerHeight - footerHeight - magicNumber,
-      'padding-bottom': footerHeight
-    });
-
-    if (windowHeight < containerHeight - magicNumber) {
-      $(wrap).css({
-        'margin-top': 0
-      });
-    } else {
-      $(wrap).css({
-        'margin-top': footerHeight - magicNumber
-      });
-    }
+    //     if ((contentHeight + footerHeight) > windowHeight) {
+    //       console.log('content is smaller than window');
+    //       $('.js-footer').addClass('static');
+    //     } else {
+    //       console.log('content is larger than window');
+    //       $('.js-footer').removeClass('static');
+    //     }
   };
 
   // Initiates the functions when footer content area is being edited.
   var handleFooterContentEdit = function() {
-    $('.edy-texteditor-view').on('keydown', function() {
+    $('.edy-texteditor-view').on('keydown keyup change', function() {
       handleFooterPosition();
     });
   };
