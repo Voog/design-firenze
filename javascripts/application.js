@@ -19400,6 +19400,8 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 })( window );
 ;(function($) {
+  var editmode = $('html').hasClass('editmode');
+
   // Shows/hides the popover main menu (visible on smalles screens).
   var handleElementsClick = function() {
     $('html').click(function() {
@@ -19553,22 +19555,35 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
   // Sets the position of the footer to the bottom of the page
   var handleFooterPosition = function() {
-    // var windowHeight = $(window).height(),
-    //     contentHeight = $('.js-wrap').outerHeight(true),
-    //     footerHeight = $('.js-footer').outerHeight();
+    var content = $('.js-wrap'),
+        footer = $('.js-footer'),
+        windowHeight = $(window).height(),
+        contentHeight = content.outerHeight(),
+        panelHeight = 40,
+        contentSpacing = 30;
 
-    //     console.log('windowHeight: ' + windowHeight);
-    //     console.log('contentHeight: ' + contentHeight);
-    //     console.log('footerHeight: ' + footerHeight);
-    //     console.log();
+    // Set positioning values based on view mode.
+    if (editmode) {
+      var footerHeight = footer.height() + panelHeight,
+          contentMargin = footerHeight - panelHeight;
+    } else {
+      var footerHeight = footer.height(),
+          contentMargin = footerHeight;
+    }
 
-    //     if ((contentHeight + footerHeight) > windowHeight) {
-    //       console.log('content is smaller than window');
-    //       $('.js-footer').addClass('static');
-    //     } else {
-    //       console.log('content is larger than window');
-    //       $('.js-footer').removeClass('static');
-    //     }
+    // Set the position of the footer.
+    footer.css({'margin-top' : -footerHeight});
+
+    // Set the position of the content area based on the cntent and window height.
+    if (content.offset().top <= footerHeight + 10) {
+      content.css({'margin-top' : contentSpacing});
+      content.addClass('content-longer');
+    } else{
+      content.css({'margin-top' : contentMargin});
+      content.removeClass('content-longer');
+    };
+
+    content.css({'margin-bottom' : footerHeight});
   };
 
   // Initiates the functions when footer content area is being edited.
