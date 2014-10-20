@@ -144,7 +144,7 @@ a img {
 .content-page .container .wrap {
   position: relative;
   z-index: 1;
-  max-width: 670px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -474,6 +474,7 @@ a img {
 }
 .menu-main .menu .edit-btn {
   margin-left: 8px;
+  margin-right: 8px;
 }
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu .edit-btn {
