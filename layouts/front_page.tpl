@@ -12,13 +12,16 @@
 
   {% include 'header-options' %}
 
-  <div class="container">
-    <div class="wrap js-wrap">
-      {% include "header" %}
+  <div class="container js-container">
+    <div class="container-inner">
+      <div class="wrap js-wrap">
+        {% include "header" %}
+      </div>
     </div>
+
+    {% include "footer" %}
   </div>
 
-  {% include "footer" %}
 
   {% include "javascripts" %}
   {% include "edicy-tools" %}

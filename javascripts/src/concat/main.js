@@ -152,44 +152,66 @@
     });
   };
 
-  // Sets the position of the footer to the bottom of the page
-  var handleFooterPosition = function() {
-    var content = $('.js-wrap'),
-        footer = $('.js-footer'),
-        windowHeight = $(window).height(),
-        contentHeight = content.outerHeight(),
-        panelHeight = 40,
-        contentSpacing = 30;
+  handleLayoutPositioning = function() {
+    var container = $('.js-container');
+    containerWrap = container.find('.js-wrap'),
+    footer = $('.js-footer'),
+    footerInner = $('.js-footer-inner'),
+    footerGradientHeight = 85,
+    editmodePanelHeight = 40,
+    windowHeight = editmode ? windowHeight = $(window).height() - editmodePanelHeight : windowHeight = $(window).height(),
+    brakePoint = 2 * footer.innerHeight() - footerGradientHeight + containerWrap.innerHeight();
 
-    // Set positioning values based on view mode.
-    if (editmode) {
-      var footerHeight = footer.height() + panelHeight,
-          contentMargin = footerHeight - panelHeight;
+    if (brakePoint > windowHeight) {
+      container.addClass('container-long');
     } else {
-      var footerHeight = footer.height(),
-          contentMargin = footerHeight;
-    }
-
-    // Set the position of the footer.
-    footer.css({'margin-top' : -footerHeight});
-
-    // Set the position of the content area based on the cntent and window height.
-    if (content.offset().top <= footerHeight + 10) {
-      content.css({'margin-top' : contentSpacing});
-      content.addClass('content-longer');
-    } else{
-      content.css({'margin-top' : contentMargin});
-      content.removeClass('content-longer');
+      container.removeClass('container-long');
     };
+  }
 
-    content.css({'margin-bottom' : footerHeight});
-  };
+  // Sets the position of the footer to the bottom of the page
+  var handleContentMutations = function() {
+    var MutationObserver = (function () {
+      var prefixes = ['WebKit', 'Moz', 'O', 'Ms', '']
+      for(var i=0; i < prefixes.length; i++) {
+        if(prefixes[i] + 'MutationObserver' in window) {
+          return window[prefixes[i] + 'MutationObserver'];
+        }
+      }
+      return false;
+    }());
 
-  // Initiates the functions when footer content area is being edited.
-  var handleFooterContentEdit = function() {
-    $('.edy-texteditor-view').on('keydown keyup change', function() {
-      handleFooterPosition();
-    });
+    if(MutationObserver) {
+      var mObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+      // create an observer instance
+      var targetContainer = document.querySelector('.js-wrap'),
+          config = {
+            childList: true,
+            subtree: true
+          };
+
+      var targetFooter = document.querySelector('.js-footer-inner'),
+          config = {
+            attributes: true,
+            childList: true,
+            subtree: true,
+          };
+
+      var observer = new mObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            handleLayoutPositioning();
+          });
+      });
+
+      observer.observe(targetContainer, config);
+      observer.observe(targetFooter, config);
+    } else {
+      setInterval(function() {
+        console.log('mutation');
+        handleLayoutPositioning();
+      }, 1000);
+    }
   };
 
   // Wraps tables in the container.
@@ -265,8 +287,7 @@
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTopbarPosition();
-      handleFooterPosition();
-      handleFooterContentEdit();
+      handleContentMutations();
       handleTableHorizontalScrolling();
       handleSearchModalHeight();
     });
@@ -296,8 +317,7 @@
       // Add site wide functions here.
       handleColorScheme();
       handleElementsClick();
-      handleFooterPosition();
-      handleFooterContentEdit();
+      handleContentMutations();
       handleSearchSubmit();
       handleGalleryHover();
       focusFormWithErrors();

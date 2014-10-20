@@ -11,18 +11,23 @@
   {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
 
   {% include "topbar" %}
-  <div class="container">
-    <div class="wrap js-wrap">
-      {% include "header" %}
-      {% include 'header-options' %}
-      {% include "menu-level-2" %}
 
-      <main class="content" role="main">
-        <section class="content-formatted">{% content %}</section>
-      </main>
+  <div class="container js-container">
+    <div class="container-inner">
+      <div class="wrap js-wrap">
+        {% include "header" %}
+        {% include 'header-options' %}
+        {% include "menu-level-2" %}
+
+        <main class="content" role="main">
+          <section class="content-formatted">{% content %}</section>
+        </main>
+      </div>
     </div>
+
+    {% include "footer" %}
   </div>
-  {% include "footer" %}
+
 
   {% include "javascripts" %}
   {% include "edicy-tools" %}

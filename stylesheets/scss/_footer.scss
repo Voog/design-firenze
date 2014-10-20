@@ -1,27 +1,24 @@
 /* FOOTER */
 .footer {
-  margin-top: -100px;
-  padding: 0 140px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 20px;
+  padding: 60px 140px 20px;
   text-align: center;
 
-  .editmode & {
-    margin-top: -140px;
-  }
-
-  .wrap {
-    display: table;
+  .container-long & {
+    position: static;
+    box-sizing: border-box;
     width: 100%;
-    max-width: 720px;
-    height: 100px;
-    margin: 0 auto;
-    padding: 0;
+    margin-top: -43px;
+    padding-bottom: 21px;
   }
 
-  .wrap-inner {
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 42px;
-    text-align: center;
+  .footer-inner {
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .content-formatted,
@@ -79,29 +76,29 @@
     font-size: 0;
     background-size: cover;
 
-    &, .dark-background & {
-      .no-svg & {
-        background-image: url('../images/ico-voog-white.png');
-      }
+    // &, .dark-background & {
+    //   .no-svg & {
+    //     background-image: url('../images/ico-voog-white.png');
+    //   }
 
-      .svg & {
-        background-image: url('../assets/ico-voog-white.svg');
-      }
-    }
+    //   .svg & {
+    //     background-image: url('../assets/ico-voog-white.svg');
+    //   }
+    // }
 
-    .light-background & {
-      .no-svg & {
-        background-image: url('../images/ico-voog-black.png');
-      }
+    // .light-background & {
+    //   .no-svg & {
+    //     background-image: url('../images/ico-voog-black.png');
+    //   }
 
-      .svg & {
-        background-image: url('../assets/ico-voog-black.svg');
-      }
-    }
+    //   .svg & {
+    //     background-image: url('../assets/ico-voog-black.svg');
+    //   }
+    // }
 
-    &:hover {
-      @include opacity(1);
-    }
+    // &:hover {
+    //   @include opacity(1);
+    // }
   }
 }
 
