@@ -20321,7 +20321,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
       observer.observe(targetFooter, config);
     } else {
       setInterval(function() {
-        console.log('mutation');
         handleLayoutPositioning();
       }, 1000);
     }

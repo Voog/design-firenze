@@ -208,7 +208,6 @@
       observer.observe(targetFooter, config);
     } else {
       setInterval(function() {
-        console.log('mutation');
         handleLayoutPositioning();
       }, 1000);
     }
