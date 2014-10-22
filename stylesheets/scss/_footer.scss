@@ -2,22 +2,23 @@
 .footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  min-height: 20px;
+  padding: 60px 140px 20px;
+  text-align: center;
 
-  .wrap {
-    display: table;
+  .container-long & {
+    position: static;
+    box-sizing: border-box;
     width: 100%;
-    max-width: 720px;
-    height: 100px;
-    margin: 0 auto;
-    padding: 0;
+    margin-top: -43px;
+    padding-bottom: 21px;
   }
 
-  .wrap-inner {
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 42px;
-    text-align: center;
+  .footer-inner {
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .content-formatted,
@@ -27,12 +28,11 @@
   }
 
   .content-formatted {
-    max-width: 590px;
     min-width: 100px;
     margin: 0 auto;
     padding-right: 10px;
     text-align: center;
-    font-style: 9px;
+    font-size: 9px;
 
     &,
     .dark-background & {
@@ -64,48 +64,49 @@
       padding: 0 20px;
     }
   }
+}
 
+
+.voog-reference {
+  a {
+    display: block;
+    @include opacity(0.5);
+    width: 35px;
+    height: 8px;
+    font-size: 0;
+    background-size: cover;
+
+    // &, .dark-background & {
+    //   .no-svg & {
+    //     background-image: url('../images/ico-voog-white.png');
+    //   }
+
+    //   .svg & {
+    //     background-image: url('../assets/ico-voog-white.svg');
+    //   }
+    // }
+
+    // .light-background & {
+    //   .no-svg & {
+    //     background-image: url('../images/ico-voog-black.png');
+    //   }
+
+    //   .svg & {
+    //     background-image: url('../assets/ico-voog-black.svg');
+    //   }
+    // }
+
+    // &:hover {
+    //   @include opacity(1);
+    // }
+  }
+}
+
+@include query($large-1, 'min-width') {
   .voog-reference {
     a {
-      display: block;
-      @include opacity(0.5);
-      width: 35px;
-      height: 8px;
-      font-size: 0;
-      background-size: cover;
-
-      &, .dark-background & {
-        .no-svg & {
-          background-image: url('../images/ico-voog-white.png');
-        }
-
-        .svg & {
-          background-image: url('../assets/ico-voog-white.svg');
-        }
-      }
-
-      .light-background & {
-        .no-svg & {
-          background-image: url('../images/ico-voog-black.png');
-        }
-
-        .svg & {
-          background-image: url('../assets/ico-voog-black.svg');
-        }
-      }
-
-      &:hover {
-        @include opacity(1);
-      }
-    }
-  }
-
-  @include query($large-1, 'min-width') {
-    .voog-reference {
-      a {
-        width: 49px;
-        height: 11.2px;
-      }
+      width: 49px;
+      height: 11.2px;
     }
   }
 }

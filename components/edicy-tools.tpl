@@ -14,40 +14,55 @@
       });
     {% endif %}
 
-    var bgPickerBody = new Edicy.BgPicker($('.js-bgpicker-body-settings'), {
+    var bodyBg = new Edicy.BgPicker($('.js-body-background-settings'), {
       picture: true,
+      target_width: 600,
       color: true,
       showAlpha: true,
 
       preview: function(data) {
-        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
-            oldImg = $('.js-bgpicker-body-image').css('background-image'),
-            col = (data.color && data.color !== '') ? data.color : 'none';
+        var bodyBgImage = (data.image && data.image !== '') ? 'url(' + data.image + ')' : 'none',
+            bodyBgColor = (data.color && data.color !== '') ? data.color : 'transparent',
+            bodyBgColorOpacity = (data.colorData && data.colorData !== '') ? data.colorData.a : 'none',
+            bodyBgColorLightness = (data.colorData && data.colorData !== '' && data.colorData.lightness) ? data.colorData.lightness : 'none';
 
-        // Updades the header image only if it has been changed.
-        if (oldImg !== img) {
-          $('.js-bgpicker-body-image').css({'background-image' : img});
-        }
-        $('.js-bgpicker-body-color').css({'background' : col});
+        // removes the current lightness class.
+        $('.js-body').removeClass('light-background dark-background');
+        // Checks the opacity of the body background color and sets the lightness class depending on it's value.
+        var frontPage = $('body').hasClass('front-page');
+        if (frontPage == true && bodyBgColorOpacity >= 0.16) {
+          $('.js-body').addClass(bodyBgColorLightness >= 0.2 ? 'light-background' : 'dark-background');
+        } else if (frontPage == true) {
+          $('.js-body').addClass('light-background');
+        };
 
-        if (data.image === null || data.image === '') {
-          $('.js-footer').removeClass('footer-gradient');
-        } else {
-          $('.js-footer').addClass('footer-gradient');
-        }
+        // Updades the body image only if it has been changed.
+        // TODO: Add image sizes.
+        $('.js-body-background-image').css({'background-image' : bodyBgImage});
+        // {% if page.data.body_bg.imageSizes %}
+        //   var imageSizes = {{ page.data.body_bg.imageSizes | json }};
+        //   console.log(imageSizes);
 
-        {% if editmode %}site.handleColorScheme();{% endif %}
+        //   jQuery.each(imageSizes, function(index, value) {
+
+        //   });
+        // {% endif %}
+
+        // Updates the body background color.
+        $('.js-body-background-color').css({'background-color' : bodyBgColor});
       },
 
       commit: function(data) {
-        {% if edicy-tools == "article" %}
-          articleData.set({
+        var commitData = $.extend(true, {}, data);
+
+        commitData.image = commitData.image || '';
+        commitData.color = commitData.color || 'transparent';
+
+        {% if bg-picker == "article" %}
+          Edicy.articles.currentArticle.setData("body_bg", commitData);
         {% else %}
-          pageData.set({
+          pageData.set("body_bg", commitData);
         {% endif %}
-          'body_image': data.image || '',
-          'body_color': data.color || ''
-        });
       }
     });
   </script>

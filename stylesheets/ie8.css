@@ -9,6 +9,6 @@
   background-image: url("../images/ico-flags-small.png");
 }
 
-.background-color {
+.body-background-color {
   -ms-filter: "alpha(opacity=50)";
 }

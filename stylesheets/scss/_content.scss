@@ -1,7 +1,7 @@
 /* CONTENT */
 .content {
   display: block;
-  padding: 43px 5px;
+  padding: 25px 5px 4px;
 
   .front-page & {
     padding: 0;
@@ -11,7 +11,7 @@
       &, .editmode & {
         position: relative;
         min-width: 211px;
-        padding: 20 0;
+        padding: 19px 0 21px;
         @include color($white);
 
         &:empty {

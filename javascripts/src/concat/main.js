@@ -1,4 +1,6 @@
 ;(function($) {
+  var editmode = $('html').hasClass('editmode');
+
   // Shows/hides the popover main menu (visible on smalles screens).
   var handleElementsClick = function() {
     $('html').click(function() {
@@ -150,65 +152,65 @@
     });
   };
 
-  // Sets the position of the footer to the bottom of the page
-  var handleFooterPosition = function() {
-    editmode = $('html').hasClass('editmode'),
-    container = '.js-container',
-    containerMiddle = '.js-container-middle',
-    containerInner = '.js-container-inner',
-    wrap = '.js-wrap',
-    contentHeight = $('.js-wrap').height()
-    widnowWidth = $(window).width(),
-    windowHeight = $(window).height(),
-    footerHeight = $('.js-footer').height();
+  handleLayoutPositioning = function() {
+    var container = $('.js-container');
+    containerWrap = container.find('.js-wrap'),
+    footer = $('.js-footer'),
+    footerInner = $('.js-footer-inner'),
+    footerGradientHeight = 85,
+    editmodePanelHeight = 40,
+    windowHeight = editmode ? windowHeight = $(window).height() - editmodePanelHeight : windowHeight = $(window).height(),
+    brakePoint = 2 * footer.innerHeight() - footerGradientHeight + containerWrap.innerHeight();
 
-    // TODO: Find out wh these "magicNumber"-s are needed and remove them if there's a better solution.
-    if (editmode) {
-      containerHeight = windowHeight - footerHeight - 40;
-      if (widnowWidth < 1400) {
-        magicNumber = 18;
-      } else {
-        magicNumber = 22;
-      }
-      // magicNumber = 18;
-    } else  {
-      containerHeight = windowHeight - footerHeight;
-      if (widnowWidth < 1400) {
-        magicNumber = 30;
-      } else {
-        magicNumber = 42;
-      }
-      // magicNumber = 30;
-    }
-
-    $(containerMiddle).css({
-      'height': containerHeight - footerHeight,
-      'padding-bottom': footerHeight
-    });
-
-    containerHeight = $(container).height();
-
-    $(containerMiddle).css({
-      'height': containerHeight - footerHeight - magicNumber,
-      'padding-bottom': footerHeight
-    });
-
-    if (windowHeight < containerHeight - magicNumber) {
-      $(wrap).css({
-        'margin-top': 0
-      });
+    if (brakePoint > windowHeight) {
+      container.addClass('container-long');
     } else {
-      $(wrap).css({
-        'margin-top': footerHeight - magicNumber
-      });
-    }
-  };
+      container.removeClass('container-long');
+    };
+  }
 
-  // Initiates the functions when footer content area is being edited.
-  var handleFooterContentEdit = function() {
-    $('.edy-texteditor-view').on('keydown', function() {
-      handleFooterPosition();
-    });
+  // Sets the position of the footer to the bottom of the page
+  var handleContentMutations = function() {
+    var MutationObserver = (function () {
+      var prefixes = ['WebKit', 'Moz', 'O', 'Ms', '']
+      for(var i=0; i < prefixes.length; i++) {
+        if(prefixes[i] + 'MutationObserver' in window) {
+          return window[prefixes[i] + 'MutationObserver'];
+        }
+      }
+      return false;
+    }());
+
+    if(MutationObserver) {
+      var mObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+      // create an observer instance
+      var targetContainer = document.querySelector('.js-wrap'),
+          config = {
+            childList: true,
+            subtree: true
+          };
+
+      var targetFooter = document.querySelector('.js-footer-inner'),
+          config = {
+            attributes: true,
+            childList: true,
+            subtree: true,
+          };
+
+      var observer = new mObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            handleLayoutPositioning();
+          });
+      });
+
+      observer.observe(targetContainer, config);
+      observer.observe(targetFooter, config);
+    } else {
+      setInterval(function() {
+        handleLayoutPositioning();
+      }, 1000);
+    }
   };
 
   // Wraps tables in the container.
@@ -240,52 +242,11 @@
     });
   };
 
-  var handleColorScheme = function() {
-    color = $('.js-bgpicker-body-color').css('background-color');
-
-    if (color === 'rgba(0, 0, 0, 0)' || color === 'transparent') {
-      $(document).ready(function() {
-        if ($('.backstretch').length > 0) {
-          $('body').addClass('dark-background').removeClass('light-background');
-        } else {
-          $('body').addClass('light-background').removeClass('dark-background');
-        }
-      });
-    } else if (color) {
-      var getRGBA = function(colorStr) {
-        if (!colorStr || typeof colorStr !== 'string') {
-          return;
-        }
-
-        var arr = colorStr.match(/(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,?\s*([\d\.]+)?\s*)/);
-        if (arr) {
-          return {
-            r: +arr[2],
-            g: +arr[3],
-            b: +arr[4],
-            a: (arr[5]) ? +arr[5] : 1
-          };
-        }
-      };
-
-      var parsedColor = getRGBA(color),
-      rgbAverage = parsedColor.r + parsedColor.g + parsedColor.b,
-      alpha = parsedColor.a;
-
-      if (rgbAverage + alpha > 0 && rgbAverage / 3 > 128) {
-        $('body').addClass('light-background').removeClass('dark-background');
-      } else {
-        $('body').addClass('dark-background').removeClass('light-background');
-      }
-    }
-  };
-
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTopbarPosition();
-      handleFooterPosition();
-      handleFooterContentEdit();
+      handleContentMutations();
       handleTableHorizontalScrolling();
       handleSearchModalHeight();
     });
@@ -313,10 +274,8 @@
 
     var init = function() {
       // Add site wide functions here.
-      handleColorScheme();
       handleElementsClick();
-      handleFooterPosition();
-      handleFooterContentEdit();
+      handleContentMutations();
       handleSearchSubmit();
       handleGalleryHover();
       focusFormWithErrors();
@@ -335,8 +294,7 @@
       initFrontPage: initFrontPage,
       initCommonPage: initCommonPage,
       initBlogPage: initBlogPage,
-      initPostPage: initPostPage,
-      handleColorScheme: handleColorScheme
+      initPostPage: initPostPage
     });
 
     // Initiates site wide functions.

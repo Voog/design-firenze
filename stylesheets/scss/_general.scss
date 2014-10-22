@@ -3,25 +3,30 @@
 html,
 body {
   height: 100% !important;
-}
 
-.editmode {
-  &, body {
-    @include calc(height, "100% - 20px !important");
+  .editmode & {
+    height: calc(100% - 40px) !important;
+    height: -webkit-calc(100% - 40px) !important;
   }
 }
 
 body {
-  position: relative;
   margin: 0;
-  padding: 0;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
   @include color($primary-color);
   background-size: cover;
-  -webkit-overflow-scrolling: touch;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+
+  img {
+    border: none;
+  }
 }
 
 %bebas-neue {
@@ -65,7 +70,7 @@ body {
   position: absolute;
 }
 
-.background-color {
+.body-background-color {
   @extend %stretch;
   position: fixed;
   z-index: -2;
@@ -74,51 +79,58 @@ body {
 // Styling rules for the main container that affects the entire site's other elements.
 .container {
   position: relative;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  height: 100%;
   min-height: 100%;
+  box-sizing: border-box;
 
-  a {
-    text-decoration: none;
+  .no-flexbox & {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
 
-    img {
-      border: none;
+  &.container-long {
+    @include justify-content(flex-end);
+    height: auto;
+
+    .no-flexbox & {
+      &,
+      .container-inner {
+        display: block;
+      }
     }
   }
-}
 
-.container-middle {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 30px;
+  .wrap {
+    padding: 25px;
 
-  .front-page & {
-    max-width: 100%;
-  }
-
-  .content-page & {
-    min-width: 720px;
+    .content-page & {
+      position: relative;
+      z-index: 1;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      @include bg($white);
+    }
   }
 }
 
 .container-inner {
-  display: table-cell;
-  vertical-align: middle;
-}
+  width: 100%;
+  box-sizing: border-box;
 
-.wrap {
-  position: relative;
-  margin: 0 auto;
-  padding: 25px;
+  .no-flexbox & {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+  }
 
-  .container-inner & {
-    .front-page & {
-
-    }
-
-    .content-page & {
-      max-width: 720px;
-      @include bg($white);
-    }
+  .wrap {
+    margin-top: 30px;
   }
 }

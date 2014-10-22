@@ -4,23 +4,19 @@
   {% assign front_page = true %}
   {% include "html-head" %}
   {% include "edicy-tools-variables" %}
+  {% include "edicy-tools-styles" %}
 </head>
 
-<body class="front-page js-body js-bgpicker-body-image"{{ body_image_style }}>
+<body class="front-page body-background-image js-body js-body-background-image {{ body_bg_type }}">
+  {% if editmode %}<button class="bgpicker-btn js-body-background-settings" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
+  {% if body_bg_color != '' or editmode %}<div class="body-background-color js-body-background-color"></div>{% endif %}
 
-  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
-  {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
+  {% include 'header-options' %}
 
   <div class="container js-container">
-    <div class="container-middle js-container-middle">
-      <div class="container-inner js-container-inner">
-        {% include 'header-options' %}
-
-        <div class="wrap js-wrap">
-          <div class="wrap-inner">
-            {% include "header" %}
-          </div>
-        </div>
+    <div class="container-inner">
+      <div class="wrap js-wrap">
+        {% include "header" %}
       </div>
     </div>
 
