@@ -70,7 +70,7 @@ a {
   position: absolute;
 }
 
-.background-color {
+.body-background-color {
   @extend %stretch;
   position: fixed;
   z-index: -2;

@@ -3,87 +3,109 @@
 // NB! Contact forms and image galleries are located in the separate partials: "_forms.scss" and "_gallery.scss".
 .content-formatted {
   @extend %clearfix;
-  word-wrap: break-word;
+  @include hyphenate(true);
 
-  // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
-  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, img, iframe, table, form {
-    margin-bottom: 0;
-
+  // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  pre,
+  code,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block {
     &:first-child {
       margin-top: 0;
     }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  // Styling rules for the editable content area headings and paragraphs.
-  h1, h2, h3, h4, h5, h6 {
-    @include color($secondary-color);
-
-    .front-page & {
+  // Colors for editable content area elements with editable background.
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  table {
+    .dark-background & {
       @include color($white);
     }
   }
 
+  // Editable content area headings.
   h1 {
     @extend %bebas-neue;
-    margin-top: 25px;
     font-size: 36px;
-    line-height: 1;
   }
 
   h2 {
-    margin-top: 16px;
     font-size: 18px;
   }
 
-  h3, h4, h5, h6 {
-    margin-top: 20px;
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 16px;
   }
 
-  p {
-    margin-top: 20px;
-  }
-
-  // Styling rules for the editable content area lists and links.
-  ul {
-    li {
-    }
-  }
-
-  ol {
-    li {
-    }
-  }
-
+  // Editable content area links.
   a {
-    @include color($blue-1);
+    @include color($blue-1, 1);
 
     &:hover {
       @include color($blue-1, 0.8);
     }
   }
 
-  // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
-  img, iframe {
-    max-width: 100%;
+  // Sets the dynamic line-height for the text with custom font-size.
+  span[style*="font-size"] {
+    line-height: 1.7em;
   }
 
-  img {
-    height: auto;
+  // Disables hyphenation for the elements that shouldn't hyphenate.
+  pre,
+  code,
+  iframe,
+  table,
+  form {
+    @include hyphenate(false);
   }
 
+  // Top and bottom margin for the elements that doesn't have the default margin.
+  pre,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block,
+  .embed-container,
+  .table-container,
+  .editmode & table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  // Code blocks and preformatted content.
   pre {
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding: 10px;
     overflow: auto;
-    resize: 14px;
+    padding: 10px;
+    font-size: 14px;
     @include bg($grey-2);
 
     code {
       display: block;
       white-space: nowrap;
-      margin-top: 0;
       padding: 0;
     }
   }
@@ -92,31 +114,30 @@
     margin: 20px 40px;
   }
 
-  .edy-texteditor-container {
-    &.edy-positionable-container-left,
-    &.edy-positionable-container-right {
-      width: 45%;
-      margin-top: 3%;
-      margin-bottom: 3%;
-    }
+  // Embeddable iframe content.
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
 
-    &.edy-positionable-container-left {
-      margin-right: 6%;
-    }
+    // Content area floating images
+  .edy-positionable-container-left,
+  .edy-positionable-container-right {
+    width: 45%;
+  }
 
-    &.edy-positionable-container-right {
-      margin-left: 6%;
-    }
+  .edy-positionable-container-left {
+    margin-right: 20px;
+  }
 
-    &.edy-positionable-container-left,
-    &.edy-positionable-container-right {
-      @include query($mobile-1) {
-        float: none;
-        width: auto;
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
+  .edy-positionable-container-right {
+    margin-left: 20px;
+  }
+
+  // Content area image title
+  .edy-image-container-title-inner {
+    padding: 4px 6px 2px;
+    font-size: 16px;
   }
 
   // Styling rules for the site's editable content area tables.
@@ -125,79 +146,22 @@
     margin-top: 20px;
   }
 
+  // Content area tables
   // Overthrow plugin to support horizontal scrolling on older devices that have touch-screens. For example Android 2.3 devices.
   .overthrow {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  // Adds dashed border to indicate that the table is too wide and can be scrolled horizontally.
-  .horizontal-scroll {
-    @include border(left,1px,dashed,$third-color);
-    @include border(right,1px,dashed,$third-color);
-  }
-
   table {
     width: 100%;
-    margin-top: 20px;
     font-size: 16px;
     border-collapse: collapse;
 
     td {
       padding: 10px;
-      @include border(top,1px,solid,$third-color);
-      @include border(bottom,1px,solid,$third-color);
-    }
-  }
-
-  // CMS STYLE OVERRIDES
-  .front-page.dark-background & {
-    & .placeholder {
-      @include color($white, 0.5);
-    }
-  }
-
-  // Draggable content area without content.
-  // TODO: Remove if different color schemes are supported by VOOG.
-  .front-page.dark-background &,
-  .dark-background .footer & {
-    .edy-empty-bordered {
-      @include border(all, 1px, dashed, $white, 0.63);
-
-      .edy-empty-header {
-        @include color($white, 0.63);
-      }
-    }
-
-    // Content area border.
-    .edy-content-element-hover {
-      @include border(all, 1px, solid, $white, 0.2);
-    }
-
-    .edy-texteditor-active {
-      outline: 1px solid rgba($white, 0.4);
-
-      &:hover {
-        outline: 1px solid rgba($white, 0.63)
-      }
-    }
-  }
-
-  // Space between editable content areas in editmode.
-  .edy-content-element {
-    margin-top: 20px;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  // Minimum height of the text content areas.
-  .edy-texteditor-view {
-    min-height: 19px;;
-
-    .footer & {
-      min-height: 12px;
+      @include border(top, 1px, solid, $third-color);
+      @include border(bottom, 1px, solid, $third-color);
     }
   }
 }

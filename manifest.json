@@ -43,6 +43,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/edicy-tools-styles.tpl",
+      "layout_name": "edicy-tools-styles",
+      "title": "edicy-tools-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/edicy-tools-variables.tpl",
       "layout_name": "edicy-tools-variables",
       "title": "edicy-tools-variables"
@@ -267,15 +274,69 @@
     },
     {
       "content_type": "image/jpeg",
+      "file": "images/blog-page-bg_block.jpg",
+      "kind": "images",
+      "filename": "blog-page-bg_block.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/blog-page-bg_huge.jpg",
+      "kind": "images",
+      "filename": "blog-page-bg_huge.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/blog-page-bg_large.jpg",
+      "kind": "images",
+      "filename": "blog-page-bg_large.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
       "file": "images/common-page-bg.jpg",
       "kind": "images",
       "filename": "common-page-bg.jpg"
     },
     {
       "content_type": "image/jpeg",
+      "file": "images/common-page-bg_block.jpg",
+      "kind": "images",
+      "filename": "common-page-bg_block.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/common-page-bg_huge.jpg",
+      "kind": "images",
+      "filename": "common-page-bg_huge.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/common-page-bg_large.jpg",
+      "kind": "images",
+      "filename": "common-page-bg_large.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
       "filename": "front-page-bg.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/front-page-bg_block.jpg",
+      "kind": "images",
+      "filename": "front-page-bg_block.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/front-page-bg_huge.jpg",
+      "kind": "images",
+      "filename": "front-page-bg_huge.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/front-page-bg_large.jpg",
+      "kind": "images",
+      "filename": "front-page-bg_large.jpg"
     },
     {
       "content_type": "image/png",
@@ -354,6 +415,18 @@
       "file": "javascripts/modernizr.min.js",
       "kind": "javascripts",
       "filename": "modernizr.min.js"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/editmode.css",
+      "kind": "stylesheets",
+      "filename": "editmode.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/editmode.min.css",
+      "kind": "stylesheets",
+      "filename": "editmode.min.css"
     },
     {
       "content_type": "text/css",

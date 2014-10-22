@@ -4,11 +4,12 @@
   {% assign front_page = true %}
   {% include "html-head" %}
   {% include "edicy-tools-variables" %}
+  {% include "edicy-tools-styles" %}
 </head>
 
-<body class="front-page js-body js-bgpicker-body-image"{{ body_image_style }}>
-  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ body_image }}" data-bg-color="{{ body_color }}"></button>{% endif %}
-  {% if body_color != '' or editmode %}<div class="background-color js-bgpicker-body-color"{{ body_color_style }}></div>{% endif %}
+<body class="front-page body-background-image js-body js-body-background-image {{ body_bg_type }}">
+  {% if editmode %}<button class="bgpicker-btn js-body-background-settings" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
+  {% if body_bg_color != '' or editmode %}<div class="body-background-color js-body-background-color"></div>{% endif %}
 
   {% include 'header-options' %}
 
@@ -21,7 +22,6 @@
 
     {% include "footer" %}
   </div>
-
 
   {% include "javascripts" %}
   {% include "edicy-tools" %}

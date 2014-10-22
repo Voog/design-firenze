@@ -11,6 +11,7 @@
   .front-page & {
     text-align: center;
   }
+
   @include query($mobile-1) {
     .content-page & {
       min-height: 30px;
@@ -21,13 +22,17 @@
 .header-top-inner {
   display: inline-block;
   max-width: 100%;
+}
 
-  .dark-background & {
-    @include border(bottom, 3px, solid, $white);
-  }
+.header-top-inner {
+  .content-formatted {
+    .front-page.dark-background & {
+      @include border(bottom, 3px, solid, $white);
+    }
 
-  .light-background & {
-    @include border(bottom, 3px, solid, $black);
+    .front-page.light-background & {
+      @include border(bottom, 3px, solid, $black);
+    }
   }
 }
 
