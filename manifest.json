@@ -183,6 +183,12 @@
   ],
   "assets": [
     {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
+    {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/bebas-neue-regular-cyrillic.eot",
       "kind": "assets",
@@ -265,6 +271,18 @@
       "file": "assets/ico-voog-white.svg",
       "kind": "assets",
       "filename": "ico-voog-white.svg"
+    },
+    {
+      "content_type": "application/x-wais-source",
+      "file": "assets/src",
+      "kind": "assets",
+      "filename": "src"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
     },
     {
       "content_type": "image/jpeg",
@@ -393,6 +411,18 @@
       "filename": "ico-voog-white.png"
     },
     {
+      "content_type": "application/x-wais-source",
+      "file": "assets/src",
+      "kind": "assets",
+      "filename": "src"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
+    {
       "content_type": "application/javascript",
       "file": "javascripts/application.js",
       "kind": "javascripts",
@@ -415,6 +445,30 @@
       "file": "javascripts/modernizr.min.js",
       "kind": "javascripts",
       "filename": "modernizr.min.js"
+    },
+    {
+      "content_type": "application/x-wais-source",
+      "file": "assets/src",
+      "kind": "assets",
+      "filename": "src"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/editmode.css",
+      "kind": "stylesheets",
+      "filename": "editmode.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/editmode.min.css",
+      "kind": "stylesheets",
+      "filename": "editmode.min.css"
     },
     {
       "content_type": "text/css",
@@ -451,6 +505,12 @@
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "stylesheets/scss",
+      "kind": "stylesheets",
+      "filename": "scss"
     }
   ]
 }
