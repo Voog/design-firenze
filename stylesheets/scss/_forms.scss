@@ -17,6 +17,14 @@
   .edy-fe-label {
     font-size: 14px;
     @include color($secondary-color);
+
+    .front-page & {
+      @include color($white);
+    }
+
+    .light-background & {
+      @include color($black);
+    }
   }
 
   .form_field {

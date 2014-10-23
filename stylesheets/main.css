@@ -1623,6 +1623,14 @@ a img {
   font-size: 14px;
   color: #444444;
 }
+.front-page .content-formatted .form_field, .front-page
+.content-formatted .edy-fe-label {
+  color: white;
+}
+.light-background .content-formatted .form_field, .light-background
+.content-formatted .edy-fe-label {
+  color: black;
+}
 .content-formatted .form_field label {
   position: relative;
   display: inline;
