@@ -2,16 +2,11 @@
 // Styling rules for the built-in image gallery thumbnails.  These rules affect the entire site's image galleries.
 // NB! It is not recommended to set the width and height of the thumbail image (.edys-gallery-image) larger than 100px because the generated thumbnail's original size is 100x100px.
 .edys-gallery-area {
-  margin-top: 20px;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
   .edys-gallery {
     @extend %clearfix;
     .edys-gallery-item {
       display: inline-block;
+      float: none;
       width: 90px;
       padding-bottom: 1px;
 

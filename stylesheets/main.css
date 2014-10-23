@@ -1318,14 +1318,9 @@ a img {
 }
 
 /* GALLERY */
-.edys-gallery-area {
-  margin-top: 20px;
-}
-.edys-gallery-area:first-child {
-  margin-top: 0;
-}
 .edys-gallery-area .edys-gallery .edys-gallery-item {
   display: inline-block;
+  float: none;
   width: 90px;
   padding-bottom: 1px;
 }
