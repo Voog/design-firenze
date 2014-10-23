@@ -696,27 +696,8 @@ a img {
   background-image: url("../assets/ico-flags.svg");
 }
 
-.menu-lang-popover {
-  display: none;
-}
-.menu-lang-popover.expanded {
-  position: absolute;
-  top: 28px;
-  right: -6px;
-  display: block;
-  margin-bottom: 40px;
-  padding: 6px 0;
-  min-width: 121px;
-  background: #fff;
-  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-  -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-  z-index: 30;
-}
-.menu-lang-popover .edit-btn {
-  display: block;
-  padding: 8px 18px 3px;
-  text-align: right;
+.lang-flag:after {
+  background-position: -189px -60px;
 }
 
 .lang-flag-sq:after {
@@ -887,6 +868,34 @@ a img {
   background-position: -21px -60px;
 }
 
+.lang-flag-xx:after {
+  background-position: -42px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -63px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -84px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -105px -60px;
+}
+
+.lang-flag-sr:after {
+  background-position: -126px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -147px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -168px -60px;
+}
+
 @media screen and (min-width: 1400px) {
   .lang-flag-sq:after {
     background-position: 0 0;
@@ -1055,7 +1064,58 @@ a img {
   .lang-flag-en:after {
     background-position: -42px -120px;
   }
+
+  .lang-flag-xx:after {
+    background-position: -84px -120px;
+  }
+
+  .lang-flag-xx:after {
+    background-position: -126px -120px;
+  }
+
+  .lang-flag-xx:after {
+    background-position: -168px -120px;
+  }
+
+  .lang-flag-xx:after {
+    background-position: -210px -120px;
+  }
+
+  .lang-flag-sr:after {
+    background-position: -252px -120px;
+  }
+
+  .lang-flag-xx:after {
+    background-position: -294px -120px;
+  }
+
+  .lang-flag-xx:after {
+    background-position: -336px -120px;
+  }
 }
+.menu-lang-popover {
+  display: none;
+}
+.menu-lang-popover.expanded {
+  position: absolute;
+  top: 28px;
+  right: -6px;
+  display: block;
+  margin-bottom: 40px;
+  padding: 6px 0;
+  min-width: 121px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
+  -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
+  z-index: 30;
+}
+.menu-lang-popover .edit-btn {
+  display: block;
+  padding: 8px 18px 3px;
+  text-align: right;
+}
+
 .tags-editor {
   padding: 15px 5px;
 }
