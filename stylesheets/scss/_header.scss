@@ -22,16 +22,22 @@
 .header-top-inner {
   display: inline-block;
   max-width: 100%;
-}
 
-.header-top-inner {
-  .content-formatted {
-    .front-page.dark-background & {
-      @include border(bottom, 3px, solid, $white);
-    }
+  .front-page & {
+    @include border(bottom, 3px, solid, $white);
+  }
 
-    .front-page.light-background & {
+  .light-background & {
+    .front-page & {
       @include border(bottom, 3px, solid, $black);
+    }
+  }
+
+  .content-formatted {
+    @include border(top, 3px, solid, $white);
+
+    .light-background & {
+      @include border(top, 3px, solid, $black);
     }
   }
 }
@@ -69,16 +75,8 @@
   .front-page & {
     max-width: none;
 
-    a,
-    .edy-editable,
-    .public & {
-      margin-bottom: 20px;
-    }
-  }
-
-  .front-page &,
-  .front-page.dark-background & {
-    &, a {
+    &,
+    a {
       @include color($white);
     }
 
@@ -87,11 +85,17 @@
         @include color($white, 0.8);
       }
     }
+
+    a,
+    .edy-editable,
+    .public & {
+      margin-bottom: 20px;
+    }
   }
 
-  .front-page.light-background & {
-
-    &, a {
+  .light-background & {
+    &,
+    a {
       @include color($black);
     }
 

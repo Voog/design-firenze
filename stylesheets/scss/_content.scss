@@ -8,15 +8,12 @@
     text-align: center;
 
     .content-formatted {
-      &, .editmode & {
-        position: relative;
-        min-width: 211px;
-        padding: 19px 0 21px;
-        @include color($white);
+      position: relative;
+      min-width: 211px;
+      padding: 19px 0 21px;
 
-        &:empty {
-          display: none;
-        }
+      &:empty {
+        display: none;
       }
     }
   }
@@ -30,26 +27,6 @@
   @include query($mobile-1) {
     .content {
       padding: 20 0;
-    }
-  }
-}
-
-.dark-background {
-  &.front-page {
-    .content {
-      .content-formatted {
-        @include border(top, 3px, solid, $white);
-      }
-    }
-  }
-}
-
-.light-background {
-  &.front-page {
-    .content {
-      .content-formatted {
-        @include border(top, 3px, solid, $black);
-      }
     }
   }
 }

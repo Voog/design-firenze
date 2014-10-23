@@ -27,14 +27,19 @@
             bodyBgColorLightness = (data.colorData && data.colorData !== '' && data.colorData.lightness) ? data.colorData.lightness : 'none';
 
         // removes the current lightness class.
-        $('.js-body').removeClass('light-background dark-background');
+        $('.js-background-type').removeClass('light-background dark-background');
         // Checks the opacity of the body background color and sets the lightness class depending on it's value.
-        var frontPage = $('body').hasClass('front-page');
-        if (frontPage == true && bodyBgColorOpacity >= 0.16) {
-          $('.js-body').addClass(bodyBgColorLightness >= 0.2 ? 'light-background' : 'dark-background');
-        } else if (frontPage == true) {
-          $('.js-body').addClass('light-background');
+        if (bodyBgColorOpacity >= 0.16) {
+          $('.js-background-type').addClass(bodyBgColorLightness >= 0.2 ? 'light-background' : 'dark-background');
+        } else {
+          $('.js-background-type').addClass('light-background');
         };
+
+        if (data.image === null || data.image === '') {
+          $('.js-footer').removeClass('footer-gradient');
+        } else {
+          $('.js-footer').addClass('footer-gradient');
+        }
 
         // Updades the body image only if it has been changed.
         // TODO: Add image sizes.

@@ -110,11 +110,12 @@
   vertical-align: top;
   width: 30px;
   height: $search-height;
+  background-color: transparent;
 
-  &, .dark-background & {
-    .no-svg & {
-      background-image: url('../images/ico-search-white.png');
-    }
+  .no-svg & {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/ico-search-white.png');
   }
 
   .light-background & {
@@ -122,28 +123,20 @@
       background-image: url('../images/ico-search-black.png');
     }
   }
-
-  .no-svg & {
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
 .search-submit {
   @include opacity(0.5);
   position: absolute;
-  top: 1px;
+  top: 0;
   right: 25px;
-  background-color: transparent;
+  padding-top: 2px;
   width: 41px;
   background-size: 32px;
+  background-color: transparent;
 
   &:hover {
     @include opacity(1);
-  }
-
-  svg {
-    fill: $secondary-color;
   }
 }
 
@@ -152,18 +145,25 @@
   top: 1px;
   z-index: 19;
   vertical-align: middle;
-  @include opacity(0.8);
   width: 22px;
   height: 22px;
   font-size: 0;
 
   svg {
     .header-options & {
-      .front-page.dark-background & {
+      fill: rgba($secondary-color, 0.67);
+
+      .front-page & {
         fill: $white;
       }
 
-      .front-page.light-background & {
+      &:hover {
+        fill: rgba($secondary-color, 0.47);
+      }
+    }
+
+    .light-background & {
+      .front-page & {
         fill: $black;
       }
     }

@@ -20188,7 +20188,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   var handleSearchModalHeight = function() {
     windowHeight = $(window).height();
     searchModal = $('.js-voog-search-modal'),
-    searchModalHeight = windowHeight - 121;
+    searchModalHeight = windowHeight - 171;
 
     searchModal.css({'max-height': searchModalHeight});
   };
@@ -20327,9 +20327,15 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   };
 
   // Wraps tables in the container.
-  // TODO: remove if edicy is going to wrap table with the container.
+  // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
-    $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
+    if (editmode === false) {
+      $.each($('.content-formatted'), function() {
+        if (!$(this).hasClass('js-custom-content-formatted')) {
+          $(this).find('table').wrap('<div class="table-container overthrow"></div>');
+        }
+      });
+    }
   };
 
   // Checks the presence of the table scrollbar.

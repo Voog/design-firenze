@@ -5,6 +5,14 @@
   @extend %clearfix;
   @include hyphenate(true);
 
+  .front-page & {
+    @include color($white);
+  }
+
+  .light-background & {
+    @include color($black);
+  }
+
   // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
   h1,
   h2,
@@ -28,23 +36,6 @@
     }
   }
 
-  // Colors for editable content area elements with editable background.
-  &,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  table {
-    .dark-background & {
-      @include color($white);
-    }
-  }
-
   // Editable content area headings.
   h1 {
     @extend %bebas-neue;
@@ -62,12 +53,35 @@
     font-size: 16px;
   }
 
+  ul,
+  ol {
+    .front-page & {
+      text-align: left;
+    }
+  }
+
   // Editable content area links.
   a {
     @include color($blue-1, 1);
 
     &:hover {
       @include color($blue-1, 0.8);
+    }
+
+    .front-page & {
+      @include color($white);
+
+      &:hover {
+        @include color($white, 0.8);
+      }
+    }
+
+    .light-background & {
+      @include color($black);
+
+      &:hover {
+        @include color($black, 0.8);
+      }
     }
   }
 
@@ -98,6 +112,7 @@
 
   // Code blocks and preformatted content.
   pre {
+    text-align: left;
     overflow: auto;
     padding: 10px;
     font-size: 14px;
@@ -107,6 +122,14 @@
       display: block;
       white-space: nowrap;
       padding: 0;
+    }
+
+    .front-page & {
+      @include bg($black, 0.2);
+    }
+
+    .light-background & {
+      @include bg($white, 0.2);
     }
   }
 
@@ -162,6 +185,11 @@
       padding: 10px;
       @include border(top, 1px, solid, $third-color);
       @include border(bottom, 1px, solid, $third-color);
+
+      .light-background & {
+        @include border(top, 1px, solid, $black);
+        @include border(bottom, 1px, solid, $black);
+      }
     }
   }
 }

@@ -7,7 +7,7 @@
   {% include "edicy-tools-styles" %}
 </head>
 
-<body class="front-page body-background-image js-body js-body-background-image {{ body_bg_type }}">
+<body class="front-page body-background-image js-body-background-image">
   {% if editmode %}<button class="bgpicker-btn js-body-background-settings" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
   {% if body_bg_color != '' or editmode %}<div class="body-background-color js-body-background-color"></div>{% endif %}
 
@@ -15,7 +15,7 @@
 
   <div class="container js-container">
     <div class="container-inner">
-      <div class="wrap js-wrap">
+      <div class="wrap js-wrap js-background-type {{ body_bg_type }}">
         {% include "header" %}
       </div>
     </div>

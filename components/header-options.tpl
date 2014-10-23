@@ -1,4 +1,4 @@
-<div class="header-options">
+<div class="header-options js-background-type {{ body_bg_type }}">
   {% if site.search.enabled %}
     <button class="search-btn search-open-btn js-search-open-btn">
       <svg height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
