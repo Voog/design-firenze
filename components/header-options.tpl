@@ -18,10 +18,8 @@
       <button class="menu-lang-btn lang-flag {% for language in site.languages %}{% if language.selected? %}lang-flag-{{ language.code }}{% endif %}{% endfor %} js-menu-lang-btn js-btn">
         <span class="lang-title">
           {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
+          <span class="ico-popover-toggle">▼</span>
         </span>
-        <svg class="ico-popover-toggle" width="13px" height="8px" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13,1.7 C13,1.7 8.3,6.3 8.3,6.3 C8.3,6.3 8.3,6.3 8.3,6.3 C8.3,6.3 6.5,8 6.5,8 C6.5,8 6.5,8 6.5,8 C6.5,8 6.5,8 6.5,8 C6.5,8 4.7,6.3 4.7,6.3 C4.7,6.3 4.7,6.3 4.7,6.3 C4.7,6.3 0,1.7 0,1.7 C0,1.7 1.8,0 1.8,0 C1.8,0 6.5,4.6 6.5,4.6 C6.5,4.6 11.2,0 11.2,0 C11.2,0 13,1.7 13,1.7 Z" />
-        </svg>
       </button>
       <div class="menu-lang-popover js-menu-lang js-popover">
         {% include "menu-lang" %}

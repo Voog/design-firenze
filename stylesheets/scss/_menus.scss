@@ -411,20 +411,17 @@
 
   .flags-disabled & {
     .ico-popover-toggle {
-      fill: rgba($secondary-color, 0.67);
-
-      .front-page & {
-        fill: $white;
-      }
-
-      .light-background & {
-        fill: $black;
-      }
+      position: relative;
+      top: -1px;
+      display: inline-block;
+      font-size: 7.2px;
     }
   }
 
   &.open {
     .ico-popover-toggle {
+      top: -3px;
+      left: 1px;
       @include transform(rotate(180deg));
     }
   }
