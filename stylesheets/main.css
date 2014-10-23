@@ -1786,6 +1786,9 @@ a img {
     width: 100%;
   }
 }
+.front-page .content-formatted .form_submit input {
+  margin: 18px auto 0;
+}
 .content-formatted .form_field_required .form_field_label:after {
   content: ' * \a';
 }

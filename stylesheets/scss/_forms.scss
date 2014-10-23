@@ -209,6 +209,10 @@
       @include query($mobile-2) {
         width: 100%;
       }
+
+      .front-page & {
+        margin: 18px auto 0;
+      }
     }
   }
 
