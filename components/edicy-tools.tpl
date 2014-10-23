@@ -70,5 +70,24 @@
         {% endif %}
       }
     });
+
+    var siteData = new Edicy.CustomData({
+      type: 'site'
+    });
+
+    $('.js-option-toggle-flags').on('click', function(event) {
+      event.stopPropagation();
+
+      if ($(this).hasClass('js-flag-disable-btn')) {
+        var FlagsState = false;
+      } else {
+        var FlagsState = true;
+      }
+
+      siteData.set("flags_state", FlagsState);
+
+      $(this).toggleClass('js-flag-disable-btn');
+      $('.js-menu-lang-wrap').toggleClass('flags-enabled flags-disabled');
+    });
   </script>
 {% endeditorjsblock %}

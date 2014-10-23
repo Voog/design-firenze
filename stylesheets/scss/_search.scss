@@ -156,10 +156,6 @@
       .front-page & {
         fill: $white;
       }
-
-      &:hover {
-        fill: rgba($secondary-color, 0.47);
-      }
     }
 
     .light-background & {
@@ -170,7 +166,9 @@
   }
 
   &:hover {
-    @include opacity(1);
+    svg {
+      fill: rgba($secondary-color, 0.47);
+    }
   }
 
   &:focus {

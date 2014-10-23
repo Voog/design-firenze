@@ -31,6 +31,7 @@
     // Toggles the popover language menu.
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
+      $('.js-menu-lang-btn').toggleClass('open');
       $('.js-menu-lang').toggleClass('expanded');
     });
 

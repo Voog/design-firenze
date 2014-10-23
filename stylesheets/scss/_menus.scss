@@ -246,7 +246,7 @@
             }
 
             .menu-link {
-              padding: 10px 20px 9px 47px;
+              padding: 11px 20px 8px 47px;
 
               &:before,
               &:after {
@@ -339,7 +339,7 @@
     .menu-link {
       position: relative;
       display: block;
-      padding: 4px 39px 4px 12px;
+      padding: 5px 39px 4px 12px;
       @include color($secondary-color, 0.67);
 
       @include query($large-1, 'min-width') {
@@ -366,19 +366,28 @@
   }
 }
 
+.flags-disabled {
+  .menu-item {
+    .menu-link {
+      padding: 5px 12px 4px 12px;
+    }
+  }
+}
+
 .menu-lang-btn {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 31px;
   height: 25px;
   padding: 0;
-  font-size: 0;
+  font-size: inherit;
+  @include color($secondary-color, 0.67);
   background: none;
   border: none;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &.open {
     opacity: 0.8;
   }
 
@@ -390,6 +399,43 @@
   &:after {
     top: 5px;
     left: 5px;
+  }
+
+  .front-page & {
+    @include color($white);
+  }
+
+  .light-background & {
+    @include color($black);
+  }
+
+  .flags-disabled & {
+    .ico-popover-toggle {
+      fill: rgba($secondary-color, 0.67);
+
+      .front-page & {
+        fill: $white;
+      }
+
+      .light-background & {
+        fill: $black;
+      }
+    }
+  }
+
+  &.open {
+    .ico-popover-toggle {
+      @include transform(rotate(180deg));
+    }
+  }
+
+  .flags-enabled & {
+    width: 31px;
+
+    .lang-title,
+    .ico-popover-toggle {
+      display: none;
+    }
   }
 
   @include query($large-1, 'min-width') {
@@ -439,9 +485,52 @@
   }
 }
 
+.menu-lang-popover {
+  display: none;
+
+  &.expanded {
+    position: absolute;
+    top: 28px;
+    right: -6px;
+    display: block;
+    margin-bottom: 40px;
+    padding: 6px 0;
+    min-width: 121px;
+    background: #fff;
+    @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+    z-index: 30;
+
+    .editmode & {
+      padding-bottom: 0;
+    }
+  }
+
+  .lang-flag {
+    &:before,
+    &:after {
+      .flags-disabled & {
+        display: none;
+      }
+    }
+  }
+
+  .edit-btn {
+    display: block;
+    padding: 8px 18px 3px;
+    text-align: right;
+  }
+}
+
 .lang-flag {
   &:after {
     background-position: -189px -60px;
+  }
+
+  &:before,
+  &:after {
+    .flags-disabled & {
+      display: none;
+    }
   }
 }
 
@@ -454,7 +543,7 @@ $flags:
 // Bengali (Bangladesh)
 (bn,  -42px,    0),
 // Brazilian Portuguese (Brazil)
-(pt,  -63px,    0),
+(xx,  -63px,    0),
 // Bulgarian (Bulgaria)
 (bg,  -84px,    0),
 // Chinese (China)
@@ -539,8 +628,8 @@ $flags:
 (xx,  -42px, -60px),
 // British English (Great Britian)
 (xx,  -63px, -60px),
-// Something (something)
-(xx,  -84px, -60px),
+// Portuguese (Portuguese Republic)
+(pt,  -84px, -60px),
 // Canadian English (Canada)
 (xx,  -105px, -60px),
 // Serbian (Republic of Serbia)
@@ -561,26 +650,38 @@ $flags:
   }
 }
 
-.menu-lang-popover {
-  display: none;
+.lang-options {
+  @include bg($black, 0.09);
 
-  &.expanded {
-    position: absolute;
-    top: 28px;
-    right: -6px;
-    display: block;
-    margin-bottom: 40px;
-    padding: 6px 0;
-    min-width: 121px;
-    background: #fff;
-    @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
-    z-index: 30;
+  .menu {
+    .menu-item {
+      margin-top: 8px;
+      padding: 7px 12px;
+      font-size: 13px;
+    }
+  }
+}
+
+.option-btn {
+  @extend %button;
+  font-family: inherit;
+  font-size: inherit;
+  @include color($blue-1);
+
+  &:hover {
+    @include color($blue-1, 0.8);
   }
 
-  .edit-btn {
-    display: block;
-    padding: 8px 18px 3px;
-    text-align: right;
+  .flags-disabled & {
+    .disable-text {
+      display: none;
+    }
+  }
+
+  .flags-enabled & {
+    .enable-text {
+      display: none;
+    }
   }
 }
 
