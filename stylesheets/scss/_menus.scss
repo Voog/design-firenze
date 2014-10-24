@@ -165,7 +165,9 @@
 
       @include query($mobile-1) {
         &:first-child {
-          @include border(top, 1px, solid, $primary-color, 0.33);
+          .content-page & {
+            @include border(top, 1px, solid, $primary-color, 0.33);
+          }
         }
 
         .content-page & {

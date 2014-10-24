@@ -564,7 +564,7 @@ a img {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  .menu-main .menu .menu-item:first-child {
+  .content-page .menu-main .menu .menu-item:first-child {
     border-top: 1px solid #888888;
     border-top: 1px solid rgba(136, 136, 136, 0.33);
   }
@@ -1491,7 +1491,7 @@ a img {
 .content-page .header {
   position: relative;
   padding-right: 5px;
-  padding-bottom: 5px;
+  padding-bottom: px;
   padding-left: 5px;
   border-bottom: 1px solid #888888;
   border-bottom: 1px solid rgba(136, 136, 136, 0.33);
