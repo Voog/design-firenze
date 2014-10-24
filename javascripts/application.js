@@ -20372,7 +20372,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTopbarPosition();
-      handleContentMutations();
+      handleLayoutPositioning();
       handleTableHorizontalScrolling();
       handleSearchModalHeight();
     });
@@ -20401,6 +20401,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     var init = function() {
       // Add site wide functions here.
       handleElementsClick();
+      handleLayoutPositioning();
       handleContentMutations();
       handleSearchSubmit();
       handleGalleryHover();

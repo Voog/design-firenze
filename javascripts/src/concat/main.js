@@ -259,7 +259,7 @@
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTopbarPosition();
-      handleContentMutations();
+      handleLayoutPositioning();
       handleTableHorizontalScrolling();
       handleSearchModalHeight();
     });
@@ -288,6 +288,7 @@
     var init = function() {
       // Add site wide functions here.
       handleElementsClick();
+      handleLayoutPositioning();
       handleContentMutations();
       handleSearchSubmit();
       handleGalleryHover();
