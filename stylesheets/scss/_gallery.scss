@@ -3,57 +3,10 @@
 // NB! It is not recommended to set the width and height of the thumbail image (.edys-gallery-image) larger than 100px because the generated thumbnail's original size is 100x100px.
 .edys-gallery-area {
   .edys-gallery {
-    @extend %clearfix;
     .edys-gallery-item {
-      display: inline-block;
-      float: none;
-      width: 90px;
-      padding-bottom: 1px;
-
       @include query($large-1, 'min-width') {
-        width: #{90 * $wide-view-multiplier}px;
-      }
-
-      &:nth-child(7n+7) {
-        padding-right: 0;
-      }
-
-      .edys-gallery-image {
-        display: block;
-        width: auto;
-        height: auto;
-
-        &.inactive {
-          opacity: 0.6;
-        }
-      }
-    }
-  }
-}
-
-.edy-gallery-area {
-  .editmode & {
-    .edy-gallery-thumb {
-      width: 90px;
-      height: 90px;
-
-      @include query($large-1, 'min-width') {
-        width: #{90 * $wide-view-multiplier}px;
-        height: #{90 * $wide-view-multiplier}px;
-      }
-
-      &:nth-child(8n+8) {
-        margin-right: 0;
-      }
-
-      .edy-gallery-image {
-        width: 90px;
-        height: 90px;
-
-        @include query($large-1, 'min-width') {
-          width: #{90 * $wide-view-multiplier}px;
-          height: #{90 * $wide-view-multiplier}px;
-        }
+        margin-right: 10px;
+        margin-bottom: 10px;
       }
     }
   }

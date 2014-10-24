@@ -55,7 +55,7 @@ a img {
   font-family: 'Bebas Neue';
 }
 
-.content-formatted:after, .edys-gallery-area .edys-gallery:after, .search:after,
+.content-formatted:after, .search:after,
 .search-form:after {
   content: '';
   display: table;
@@ -1816,50 +1816,10 @@ a img {
 }
 
 /* GALLERY */
-.edys-gallery-area .edys-gallery .edys-gallery-item {
-  display: inline-block;
-  float: none;
-  width: 90px;
-  padding-bottom: 1px;
-}
 @media screen and (min-width: 1400px) {
   .edys-gallery-area .edys-gallery .edys-gallery-item {
-    width: 126.0px;
-  }
-}
-.edys-gallery-area .edys-gallery .edys-gallery-item:nth-child(7n+7) {
-  padding-right: 0;
-}
-.edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image {
-  display: block;
-  width: auto;
-  height: auto;
-}
-.edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image.inactive {
-  opacity: 0.6;
-}
-
-.editmode .edy-gallery-area .edy-gallery-thumb {
-  width: 90px;
-  height: 90px;
-}
-@media screen and (min-width: 1400px) {
-  .editmode .edy-gallery-area .edy-gallery-thumb {
-    width: 126.0px;
-    height: 126.0px;
-  }
-}
-.editmode .edy-gallery-area .edy-gallery-thumb:nth-child(8n+8) {
-  margin-right: 0;
-}
-.editmode .edy-gallery-area .edy-gallery-thumb .edy-gallery-image {
-  width: 90px;
-  height: 90px;
-}
-@media screen and (min-width: 1400px) {
-  .editmode .edy-gallery-area .edy-gallery-thumb .edy-gallery-image {
-    width: 126.0px;
-    height: 126.0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 
