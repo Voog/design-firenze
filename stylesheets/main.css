@@ -1491,7 +1491,7 @@ a img {
 .content-page .header {
   position: relative;
   padding-right: 5px;
-  padding-bottom: px;
+  padding-bottom: 20px;
   padding-left: 5px;
   border-bottom: 1px solid #888888;
   border-bottom: 1px solid rgba(136, 136, 136, 0.33);
@@ -1816,8 +1816,24 @@ a img {
 }
 
 /* GALLERY */
+.edys-gallery-item {
+  display: block;
+  width: auto;
+  height: auto;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+.edys-gallery-item.inactive {
+  opacity: 0.8;
+}
+.edys-gallery-item:hover {
+  opacity: 1;
+}
 @media screen and (min-width: 1400px) {
-  .edys-gallery-area .edys-gallery .edys-gallery-item {
+  .edys-gallery-item {
     margin-right: 10px;
     margin-bottom: 10px;
   }
