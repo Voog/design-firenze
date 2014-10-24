@@ -33,8 +33,12 @@ a {
   }
 }
 
-%bebas-neue {
-  font-family: 'Bebas Neue';
+%bebas-neue-latin {
+  font-family: 'Bebas Neue Latin', 'Bebas Neue Cyrillic';
+}
+
+%bebas-neue-cyrillic {
+  font-family: 'Bebas Neue Cyrillic', 'Bebas Neue Latin';
 }
 
 // Pseudo classes for declaring commonly used styling rules for different elements.

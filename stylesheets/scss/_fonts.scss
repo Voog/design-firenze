@@ -1,20 +1,3 @@
 /* FONTS */
-// @include font-face('Bebas Neue Latin', '../assets/../assets/bebas-neue-regular-latin', 400);
-// @include font-face('Bebas Neue Cyrillic', '../assets/../assets/bebas-neue-regular-cyrillic', 400);
-@font-face {
-  font-family: "Bebas Neue";
-  src: url('../assets/bebas-neue-regular-cyrillic.eot');
-  src: url('../assets/bebas-neue-regular-cyrillic.eot?#iefix') format('embedded-opentype'), url('../assets/bebas-neue-regular-cyrillic.woff') format('woff'), url('../assets/bebas-neue-regular-cyrillic.ttf') format('opentype'), url('../assets/bebas-neue-regular-cyrillic.svg#webfontJRppkSIE') format('svg');
-  unicode-range: U+0400-U+04ff;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  src: url('../assets/bebas-neue-regular-latin.eot');
-  src: url('../assets/bebas-neue-regular-latin.eot?#iefix') format('embedded-opentype'), url('../assets/bebas-neue-regular-latin.woff') format('woff'), url('../assets/bebas-neue-regular-latin.ttf') format('opentype'), url('../assets/bebas-neue-regular-latin.svg#webfontJRppkSIE') format('svg');
-  unicode-range: U+00-FF;
-  font-weight: normal;
-  font-style: normal;
-}
+@include font-face('Bebas Neue Latin', '../assets/bebas-neue-regular-latin', 400);
+@include font-face('Bebas Neue Cyrillic', '../assets/bebas-neue-regular-cyrillic', 400);

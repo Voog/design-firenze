@@ -303,11 +303,17 @@
   }
 
   h3 {
-    @extend %bebas-neue;
+    @extend %bebas-neue-latin;
     margin: 0;
     font-size: 24px;
 
-    font-size: #{24 * $wide-view-multiplier}px;
+    html[lang=ru] & {
+      @extend %bebas-neue-cyrillic;
+    }
+
+    @include query($large-1, 'min-width') {
+      font-size: #{24 * $wide-view-multiplier}px;
+    }
 
     a {
       text-decoration: none;

@@ -1,19 +1,17 @@
 /* FONTS */
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("../assets/bebas-neue-regular-cyrillic.eot");
-  src: url("../assets/bebas-neue-regular-cyrillic.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-cyrillic.woff") format("woff"), url("../assets/bebas-neue-regular-cyrillic.ttf") format("opentype"), url("../assets/bebas-neue-regular-cyrillic.svg#webfontJRppkSIE") format("svg");
-  unicode-range: U+0400 -U4ff;
-  font-weight: normal;
+  font-family: "Bebas Neue Latin";
+  font-weight: 400;
   font-style: normal;
+  src: url("../assets/bebas-neue-regular-latin.eot");
+  src: url("../assets/bebas-neue-regular-latin.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-latin.woff") format("woff"), url("../assets/bebas-neue-regular-latin.ttf") format("truetype"), url("../assets/bebas-neue-regular-latin.svg#Bebas Neue Latin") format("svg");
 }
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("../assets/bebas-neue-regular-latin.eot");
-  src: url("../assets/bebas-neue-regular-latin.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-latin.woff") format("woff"), url("../assets/bebas-neue-regular-latin.ttf") format("opentype"), url("../assets/bebas-neue-regular-latin.svg#webfontJRppkSIE") format("svg");
-  unicode-range: U+00-FF;
-  font-weight: normal;
+  font-family: "Bebas Neue Cyrillic";
+  font-weight: 400;
   font-style: normal;
+  src: url("../assets/bebas-neue-regular-cyrillic.eot");
+  src: url("../assets/bebas-neue-regular-cyrillic.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-cyrillic.woff") format("woff"), url("../assets/bebas-neue-regular-cyrillic.ttf") format("truetype"), url("../assets/bebas-neue-regular-cyrillic.svg#Bebas Neue Cyrillic") format("svg");
 }
 /* GENERAL */
 html,
@@ -49,10 +47,16 @@ a img {
   border: none;
 }
 
-.content-formatted h1, .menu-main, .header-title, .post-title,
+.content-formatted h1, .tags-btn, .menu-main, .header-title, .post-title,
 .post-title a,
 .post-date, .voog-search-modal-results h3, .comments .comments-title {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue Latin', 'Bebas Neue Cyrillic';
+}
+
+html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .menu-main, html[lang=ru] .header-title, html[lang=ru] .post-title, html[lang=ru]
+.post-title a, html[lang=ru]
+.post-date, html[lang=ru] .voog-search-modal-results h3, html[lang=ru] .comments .comments-title {
+  font-family: 'Bebas Neue Cyrillic', 'Bebas Neue Latin';
 }
 
 .content-formatted:after, .search:after,
@@ -470,7 +474,6 @@ a img {
   width: 155px;
   height: 100%;
   padding: 0 20px;
-  font-family: 'Bebas Neue';
   font-weight: normal;
   font-size: 16px;
   text-align: right;
@@ -2142,7 +2145,11 @@ a img {
 .voog-search-modal-results h3 {
   margin: 0;
   font-size: 24px;
-  font-size: 33.6px;
+}
+@media screen and (min-width: 1400px) {
+  .voog-search-modal-results h3 {
+    font-size: 33.6px;
+  }
 }
 .voog-search-modal-results h3 a {
   text-decoration: none;

@@ -90,12 +90,16 @@
 }
 
 .header-title {
-  @extend %bebas-neue;
+  @extend %bebas-neue-latin;
   max-width: 630px;
   min-width: 211px;
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
+
+  html[lang=ru] & {
+    @extend %bebas-neue-cyrillic;
+  }
 
   @include query($large-1, 'min-width') {
     max-width: #{630 * $wide-view-multiplier}px;

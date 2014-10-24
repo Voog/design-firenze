@@ -2,8 +2,12 @@
 .post-title,
 .post-title a,
 .post-date {
-  @extend %bebas-neue;
+  @extend %bebas-neue-latin;
   font-size: 36px;
+
+  html[lang=ru] & {
+    @extend %bebas-neue-cyrillic;
+  }
 
   @include query($large-1, 'min-width') {
     font-size: #{36 * $wide-view-multiplier}px;
@@ -36,8 +40,12 @@
 }
 
 .post-date {
-  @extend %bebas-neue;
+  @extend %bebas-neue-latin;
   @include color($grey-3);
+
+  html[lang=ru] & {
+    @extend %bebas-neue-cyrillic;
+  }
 }
 
 .post-comments-count {

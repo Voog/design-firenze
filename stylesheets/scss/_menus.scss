@@ -59,15 +59,19 @@
 // Tags toggle button
 .tags-btn {
   @extend %button;
+  @extend %bebas-neue-latin;
   width: 155px;
   height: 100%;
   padding: 0 20px;
-  font-family: 'Bebas Neue';
   font-weight: normal;
   font-size: 16px;
   text-align: right;
   @include color($white);
   line-height: 1;
+
+  html[lang=ru] & {
+    @extend %bebas-neue-cyrillic;
+  }
 
   @include query($large-1, 'min-width') {
     width: #{155 * $wide-view-multiplier}px;
@@ -99,7 +103,11 @@
 }
 
 .menu-main {
-  @extend %bebas-neue;
+  @extend %bebas-neue-latin;
+
+  html[lang=ru] & {
+    @extend %bebas-neue-cyrillic;
+  }
 
   &.narrow {
     max-width: 500px;
