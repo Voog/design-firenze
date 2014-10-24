@@ -2,8 +2,17 @@
 .header {
   .content-page & {
     position: relative;
-    padding: 0 5px 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
     @include border(bottom, 1px, solid, $primary-color, 0.33);
+
+    @include query($large-1, 'min-width') {
+      padding-right: #{5 * $wide-view-multiplier}px;
+      padding-bottom: #{5 * $wide-view-multiplier}px;
+      padding-left: #{5 * $wide-view-multiplier}px;
+      border-width: 2px;
+    }
   }
 }
 
@@ -25,19 +34,23 @@
 
   .front-page & {
     @include border(bottom, 3px, solid, $white);
+
+    @include query($large-1, 'min-width') {
+      border-width: #{3 * $wide-view-multiplier}px;
+    }
   }
 
   .light-background & {
     .front-page & {
-      @include border(bottom, 3px, solid, $black);
+      border-color: $black;
     }
   }
 
   .content-formatted {
-    @include border(top, 3px, solid, $white);
+    border-color: $white;
 
     .light-background & {
-      @include border(top, 3px, solid, $black);
+      border-color: $black;
     }
   }
 }
@@ -49,12 +62,24 @@
   width: 50%;
   text-align: right;
 
+  @include query($large-1, 'min-width') {
+    right: #{25 * $wide-view-multiplier}px;
+  }
+
   .front-page & {
     top: 18px;
+
+    @include query($large-1, 'min-width') {
+      top: #{18 * $wide-view-multiplier}px;
+    }
   }
 
   .content-page & {
     top: 25px;
+
+    @include query($large-1, 'min-width') {
+      top: #{25 * $wide-view-multiplier}px;
+    }
   }
 
   @include query($mobile-1) {
@@ -71,6 +96,12 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
+
+  @include query($large-1, 'min-width') {
+    max-width: #{630 * $wide-view-multiplier}px;
+    min-width: #{211 * $wide-view-multiplier}px;
+    font-size: #{30 * $wide-view-multiplier}px;
+  }
 
   .front-page & {
     max-width: none;
@@ -90,6 +121,10 @@
     .edy-editable,
     .public & {
       margin-bottom: 20px;
+
+      @include query($large-1, 'min-width') {
+        margin-bottom: #{20 * $wide-view-multiplier}px;
+      }
     }
   }
 
@@ -108,7 +143,15 @@
 
   .front-page & {
     text-align: center;
-    font-size: 60px
+    font-size: 60px;
+
+    @include query($large-1, 'min-width') {
+      font-size: #{60 * $wide-view-multiplier}px;
+    }
+
+    @include query($large-1, 'min-width') {
+      font-size: #{60 * $wide-view-multiplier}px;
+    }
   }
 
   .content-page & {
@@ -128,5 +171,9 @@
 .header-bottom {
   .front-page & {
     padding-top: 25px;
+
+    @include query($large-1, 'min-width') {
+  padding-top: #{25 * $wide-view-multiplier}px;
+}
   }
 }

@@ -14,6 +14,11 @@
   line-height: 1;
   @include bg($white);
 
+  @include query($large-1, 'min-width') {
+    margin-top: #{-4 * $wide-view-multiplier}px;
+    margin-left: #{15 * $wide-view-multiplier}px;
+  }
+
   &.active {
     position: fixed;
     top: 0;
@@ -37,6 +42,10 @@
   padding: 0 20px;
   @include box-sizing(border-box);
 
+  @include query($large-1, 'min-width') {
+    padding: 0 #{20 * $wide-view-multiplier}px;
+  }
+
   @include query($mobile-2) {
     padding: 0;
   }
@@ -48,11 +57,20 @@
   margin: 60px auto;
   @include box-shadow(0, 0, 100px, 0, rgba($black, 0.75));
 
+  @include query($large-1, 'min-width') {
+    max-width: #{400 * $wide-view-multiplier}px;
+  }
+
   .search-close-btn {
     position: absolute;
     top: 14px;
     right: 7px;
     z-index: 20;
+
+    @include query($large-1, 'min-width') {
+      top: #{14 * $wide-view-multiplier}px;
+      right: #{7 * $wide-view-multiplier}px
+    }
   }
 }
 
@@ -62,8 +80,14 @@
   @include bg($white, 0.95);
   @include border(all, 1px, solid, $black, 0.1);
 
+  @include query($large-1, 'min-width') {
+    border-width: #{1 * $wide-view-multiplier}px;
+  }
+
   &.active {
     @include border(all, 1px, solid, $black, 0.3);
+
+    border-color: $black;
   }
 
   &,
@@ -71,6 +95,10 @@
     max-width: 400px;
     margin: 0 auto;
     border: none;
+
+    @include query($large-1, 'min-width') {
+      max-width: #{400 * $wide-view-multiplier}px;
+    }
   }
 }
 
@@ -88,6 +116,12 @@
   @include box-sizing(border-box);
   border: none;
 
+  @include query($large-1, 'min-width') {
+    height: #{$search-height * $wide-view-multiplier};
+    padding: 0 #{65 * $wide-view-multiplier}px 0 #{10 * $wide-view-multiplier}px;
+    font-size: #{24 * $wide-view-multiplier}px;
+  }
+
   // Removes the clear input button in IE11
   &::-ms-clear {
     display: none;
@@ -97,6 +131,10 @@
     padding: 2px 0 4px 0;
     line-height: 1;
     @include color($secondary-color, 0.5);
+
+    @include query($large-1, 'min-width') {
+      padding: #{2 * $wide-view-multiplier}px 0 #{4 * $wide-view-multiplier}px 0;
+    }
   }
 
   &:focus {
@@ -111,6 +149,11 @@
   width: 30px;
   height: $search-height;
   background-color: transparent;
+
+  @include query($large-1, 'min-width') {
+    width: #{30 * $wide-view-multiplier}px;
+    height: 70px;
+  }
 
   .no-svg & {
     background-position: center;
@@ -135,6 +178,18 @@
   background-size: 32px;
   background-color: transparent;
 
+  @include query($large-1, 'min-width') {
+    right: #{25 * $wide-view-multiplier}px;
+    padding-top: #{2 * $wide-view-multiplier}px;
+    width: #{41 * $wide-view-multiplier}px;
+    background-size: #{32 * $wide-view-multiplier}px;
+
+    svg {
+      width: #{20 * $wide-view-multiplier}px;
+      height: #{21 * $wide-view-multiplier}px;
+    }
+  }
+
   &:hover {
     @include opacity(1);
   }
@@ -149,6 +204,12 @@
   height: 22px;
   font-size: 0;
 
+  @include query($large-1, 'min-width') {
+    top: -1px;
+    width: #{22 * $wide-view-multiplier}px;
+    height: #{22 * $wide-view-multiplier}px;
+  }
+
   svg {
     .header-options & {
       fill: rgba($secondary-color, 0.67);
@@ -162,6 +223,11 @@
       .front-page & {
         fill: $black;
       }
+    }
+
+    @include query($large-1, 'min-width') {
+      width: #{16 * $wide-view-multiplier}px;
+      height: #{16 * $wide-view-multiplier}px;
     }
   }
 
@@ -221,6 +287,11 @@
   overflow-x: hidden;
   overflow-y: auto;
 
+  @include query($large-1, 'min-width') {
+    max-width: #{400 * $wide-view-multiplier}px;
+    padding: #{20 * $wide-view-multiplier}px #{27 * $wide-view-multiplier}px;
+  }
+
   &.search-results-active {
     display: block;
   }
@@ -236,6 +307,8 @@
     margin: 0;
     font-size: 24px;
 
+    font-size: #{24 * $wide-view-multiplier}px;
+
     a {
       text-decoration: none;
       font-weight: 400;
@@ -250,6 +323,11 @@
   p {
     margin: 5px 0 0;
     font-size: 14px;
+
+    @include query($large-1, 'min-width') {
+      margin-top: #{5 * $wide-view-multiplier}px;
+      font-size: #{14 * $wide-view-multiplier}px;
+    }
   }
 
   em {
@@ -257,11 +335,20 @@
     @include bg($yellow, 0.5);
     border-radius: 2px;
     padding: 0 2px;
+
+    @include query($large-1, 'min-width') {
+      border-radius: 4px;
+      padding: 0 #{2 * $wide-view-multiplier}px;
+    }
   }
 }
 
 .voog-search-modal-result {
   margin-top: 18px;
+
+  @include query($large-1, 'min-width') {
+    margin-top: #{18 * $wide-view-multiplier}px;
+  }
 
   &:first-child {
     margin-top: 0;

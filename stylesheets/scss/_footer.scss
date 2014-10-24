@@ -8,17 +8,31 @@
   padding: 60px 0 20px;
   text-align: center;
 
+  @include query($large-1, 'min-width') {
+    min-height: #{20 * $wide-view-multiplier}px;
+    padding: #{60 * $wide-view-multiplier}px 0 #{20 * $wide-view-multiplier}px;
+  }
+
   .container-long & {
     position: static;
     box-sizing: border-box;
     width: 100%;
     margin-top: -43px;
     padding-bottom: 21px;
+
+    @include query($large-1, 'min-width') {
+      margin-top: #{-43 * $wide-view-multiplier}px;
+      padding-bottom: #{21 * $wide-view-multiplier}px;
+    }
   }
 
   .footer-inner {
     max-width: 720px;
     margin: 0 auto;
+
+    @include query($large-1, 'min-width') {
+      max-width: #{720 * $wide-view-multiplier}px;
+    }
   }
 
   .content-formatted,
@@ -34,6 +48,12 @@
     text-align: center;
     font-size: 9px;
 
+    @include query($large-1, 'min-width') {
+      min-width: #{100 * $wide-view-multiplier}px;
+      padding-right: #{10 * $wide-view-multiplier}px;
+      font-size: #{9 * $wide-view-multiplier}px;
+    }
+
     @include color($white, 0.33);
 
     a {
@@ -47,6 +67,10 @@
     @include query($tablet-3) {
       display: block;
       padding: 0 20px;
+
+      @include query($large-1, 'min-width') {
+        padding: 0 #{20 * $wide-view-multiplier}px;
+      }
     }
   }
 
@@ -74,6 +98,11 @@
     height: 8px;
     font-size: 0;
     background-size: cover;
+
+    @include query($large-1, 'min-width') {
+      width: #{35 * $wide-view-multiplier}px;
+      height: #{8 * $wide-view-multiplier}px;
+    }
 
     .svg & {
       background-image: url('../assets/ico-voog-white.svg');
@@ -104,6 +133,11 @@
     a {
       width: 49px;
       height: 11.2px;
+
+      @include query($large-1, 'min-width') {
+        width: #{49 * $wide-view-multiplier}px;
+        height: #{11.2 * $wide-view-multiplier}px;
+      }
     }
   }
 }

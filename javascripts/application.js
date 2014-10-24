@@ -20187,9 +20187,15 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
   // Sets the search modal height.
   var handleSearchModalHeight = function() {
-    windowHeight = $(window).height();
-    searchModal = $('.js-voog-search-modal'),
-    searchModalHeight = windowHeight - 171;
+    var windowWidth = $(window).width();
+        windowHeight = $(window).height(),
+        searchModal = $('.js-voog-search-modal');
+
+        if (windowWidth >= 1400 ) {
+          searchModalHeight = windowHeight - 190;
+        } else {
+          searchModalHeight = windowHeight - 171;
+        }
 
     searchModal.css({'max-height': searchModalHeight});
   };

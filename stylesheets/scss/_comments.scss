@@ -1,26 +1,41 @@
 /* COMMENTS */
 .comments {
+  margin-top: 27px;
   padding: 25px 5px 0;
   @include border(top, 1px, solid, $primary-color, 0.33);
+
+  @include query($large-1, 'min-width') {
+    margin-top: #{25 * $wide-view-multiplier}px;
+    padding: #{25 * $wide-view-multiplier}px #{4 * $wide-view-multiplier} 0;
+    border-width: #{1 * $wide-view-multiplier}px;
+  }
 
   .comments-title {
     @extend %bebas-neue;
     font-size: 30px;
+
+    @include query($large-1, 'min-width') {
+      font-size: #{30 * $wide-view-multiplier}px;
+    }
   }
 
   .comment,
   .comment-form {
     margin-top: 30px;
+
+    @include query($large-1, 'min-width') {
+      margin-top: #{30 * $wide-view-multiplier}px;
+    }
   }
 
   .comment {
     padding-left: 20px;
     line-height: 1.5;
     @include border(left, 3px, solid, $black, 0.05);
-  }
 
-  .comment-body,
-  .comment-info {
+    @include query($large-1, 'min-width') {
+      border-width: #{3 * $wide-view-multiplier}px;
+    }
   }
 
   .comment-info {

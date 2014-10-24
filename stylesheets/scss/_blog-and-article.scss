@@ -4,13 +4,25 @@
 .post-date {
   @extend %bebas-neue;
   font-size: 36px;
+
+  @include query($large-1, 'min-width') {
+    font-size: #{36 * $wide-view-multiplier}px;
+  }
 }
 
 .post-title {
   display: inline;
-  margin: 0 10 0 0;
+  margin: 0 10px 0 0;
   word-break: break-all;
   font-weight: normal;
+
+  .editmode & {
+    display: block;
+  }
+
+  @include query($large-1, 'min-width') {
+    padding: 0 #{10 * $wide-view-multiplier}px 0 0;
+  }
 
   &, a {
     @include color($secondary-color);
@@ -40,27 +52,43 @@
 
 .post-content {
   margin-top: 17px;
-}
 
-.post-body {
-  margin-top: 20px;
-}
+  @include query($large-1, 'min-width') {
+    margin-top: #{17 * $wide-view-multiplier}px;
+  }
 
-.blog-page {
-  .post {
-    margin-top: 43px;
+  .post-body {
+    margin-top: 20px;
 
-    &:first-child {
-      margin-top: 0;
+    @include query($large-1, 'min-width') {
+      margin-top: #{20 * $wide-view-multiplier}px;
     }
   }
-}
 
-.post-page {
-  .post-title {
-    .editmode & {
-      display: inline-block;
-      min-width: 200px;
+  .blog-page {
+    .post {
+      margin-top: 43px;
+
+      @include query($large-1, 'min-width') {
+        margin-top: #{43 * $wide-view-multiplier}px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .post-page {
+    .post-title {
+      .editmode & {
+        display: inline-block;
+        min-width: 200px;
+
+        @include query($large-1, 'min-width') {
+          max-width: #{200 * $wide-view-multiplier}px;
+        }
+      }
     }
   }
 }

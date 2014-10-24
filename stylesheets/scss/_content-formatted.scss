@@ -40,10 +40,18 @@
   h1 {
     @extend %bebas-neue;
     font-size: 36px;
+
+    @include query($large-1, 'min-width') {
+      font-size: #{36 * $wide-view-multiplier}px;
+    }
   }
 
   h2 {
     font-size: 18px;
+
+    @include query($large-1, 'min-width') {
+      font-size: #{18 * $wide-view-multiplier}px;
+    }
   }
 
   h3,
@@ -51,6 +59,10 @@
   h5,
   h6 {
     font-size: 16px;
+
+    @include query($large-1, 'min-width') {
+      font-size: #{16 * $wide-view-multiplier}px;
+    }
   }
 
   ul,
@@ -108,6 +120,11 @@
   .editmode & table {
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @include query($large-1, 'min-width') {
+      margin-top: #{20 * $wide-view-multiplier}px;
+      margin-bottom: #{20 * $wide-view-multiplier}px;
+    }
   }
 
   // Code blocks and preformatted content.
@@ -117,6 +134,11 @@
     padding: 10px;
     font-size: 14px;
     @include bg($grey-2);
+
+    @include query($large-1, 'min-width') {
+      padding: #{10 * $wide-view-multiplier}px;
+      font-size: #{14 * $wide-view-multiplier}px;
+    }
 
     code {
       display: block;
@@ -135,6 +157,10 @@
 
   blockquote {
     margin: 20px 40px;
+
+    @include query($large-1, 'min-width') {
+      margin: #{20 * $wide-view-multiplier}px #{40 * $wide-view-multiplier}px;
+    }
   }
 
   // Embeddable iframe content.
@@ -144,29 +170,46 @@
   }
 
     // Content area floating images
-  .edy-positionable-container-left,
-  .edy-positionable-container-right {
-    width: 45%;
-  }
+    .edy-positionable-container-left,
+    .edy-positionable-container-right {
+      width: 45%;
+    }
 
-  .edy-positionable-container-left {
-    margin-right: 20px;
-  }
+    .edy-positionable-container-left {
+      margin-right: 20px;
 
-  .edy-positionable-container-right {
-    margin-left: 20px;
-  }
+      @include query($large-1, 'min-width') {
+        margin-right: #{20 * $wide-view-multiplier}px;
+      }
+    }
+
+    .edy-positionable-container-right {
+      margin-left: 20px;
+
+      @include query($large-1, 'min-width') {
+        margin-left: #{20 * $wide-view-multiplier}px;
+      }
+    }
 
   // Content area image title
   .edy-image-container-title-inner {
     padding: 4px 6px 2px;
     font-size: 16px;
+
+    @include query($large-1, 'min-width') {
+      padding-bottom: #{4 * $wide-view-multiplier}px #{6 * $wide-view-multiplier}px #{2 * $wide-view-multiplier}px;
+      font-size: #{16 * $wide-view-multiplier}px;
+    }
   }
 
   // Styling rules for the site's editable content area tables.
   // Container around editable content-area table.
   .table-container {
     margin-top: 20px;
+
+    @include query($large-1, 'min-width') {
+      margin-top: #{20 * $wide-view-multiplier}px;
+    }
   }
 
   // Content area tables
@@ -181,6 +224,10 @@
     font-size: 16px;
     border-collapse: collapse;
 
+    @include query($large-1, 'min-width') {
+      font-size: #{16 * $wide-view-multiplier}px;
+    }
+
     td {
       padding: 10px;
       @include border(top, 1px, solid, $third-color);
@@ -189,6 +236,10 @@
       .light-background & {
         @include border(top, 1px, solid, $black);
         @include border(bottom, 1px, solid, $black);
+      }
+
+      @include query($large-1, 'min-width') {
+        border-witdh: #{1 * $wide-view-multiplier}px;
       }
     }
   }

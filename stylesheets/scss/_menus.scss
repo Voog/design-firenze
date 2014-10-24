@@ -14,6 +14,12 @@
     @include bg($secondary-color, 0.67);
     border-radius: 5px;
 
+    @include query($large-1, 'min-width') {
+      width: #{23 * $wide-view-multiplier}px;
+      height: #{4 * $wide-view-multiplier}px;
+      margin: #{4 * $wide-view-multiplier}px 0;
+    }
+
     &:first-child,
     &:last-child {
       margin: 0;
@@ -63,6 +69,12 @@
   @include color($white);
   line-height: 1;
 
+  @include query($large-1, 'min-width') {
+    width: #{155 * $wide-view-multiplier}px;
+    padding: 0 #{20 * $wide-view-multiplier}px;
+    font-size: #{16 * $wide-view-multiplier}px;
+  }
+
   &.open,
   &.open:hover {
     @include bg($black);
@@ -91,6 +103,10 @@
 
   &.narrow {
     max-width: 500px;
+
+    @include query($large-1, 'min-width') {
+      max-width: #{500 * $wide-view-multiplier}px;
+    }
   }
 
   .front-page & {
@@ -104,13 +120,20 @@
       &.expanded {
         position: absolute;
         top: 50px;
-        left: -25px;
         right: -25px;
+        left: -25px;
         z-index: 10;
         display: block;
         margin-bottom: 40px;
         text-align: left;
         @include bg($white);
+
+        @include query($large-1, 'min-width') {
+          top: #{50  * $wide-view-multiplier}px;
+          rigth: #{-25 * $wide-view-multiplier}px;
+          left: #{-25 * $wide-view-multiplier}px;
+          margin-bottom: #{40 * $wide-view-multiplier}px;
+        }
       }
     }
   }
@@ -125,8 +148,15 @@
       vertical-align: middle;
       margin-right: 8px;
 
+      @include query($large-1, 'min-width') {
+        margin-right: #{8 * $wide-view-multiplier}px;
+      }
       .front-page & {
         margin-right: 15px;
+
+        @include query($large-1, 'min-width') {
+          margin-right: #{8 * $wide-view-multiplier}px;
+        }
       }
 
       &:last-child {
@@ -148,6 +178,10 @@
         .front-page & {
           font-size: 16px;
           @include color($white);
+
+          @include query($large-1, 'min-width') {
+            font-size: #{16 * $wide-view-multiplier}px;
+          }
 
           &.untranslated {
             @include color($white, 0.5);
@@ -175,6 +209,10 @@
         .content-page & {
           font-size: 14px;
           @include color($primary-color);
+
+          @include query($large-1, 'min-width') {
+            font-size: #{14 * $wide-view-multiplier}px;
+          }
 
           &.untranslated {
             @include color($primary-color, 0.5);
@@ -208,14 +246,26 @@
             padding: 7px 10px 4px;
             font-size: 20px;
             @include border(bottom, 1px, solid, $primary-color, 0.33);
+
+            @include query($large-1, 'min-width') {
+              padding: #{7 * $wide-view-multiplier}px #{10 * $wide-view-multiplier}px #{4 * $wide-view-multiplier}px;
+              font-size: #{20 * $wide-view-multiplier}px;
+            }
           }
         }
       }
     }
 
     .edit-btn {
-      margin-left: 8px;
       margin-right: 8px;
+      margin-left: 8px;
+
+      @include query($large-1, 'min-width') {
+        position: relative;
+        top: -2px;
+        margin-right: #{8 * $wide-view-multiplier}px;
+        margin-left: #{8 * $wide-view-multiplier}px;
+      }
 
       @include query($mobile-1) {
         .content-page & {
@@ -278,16 +328,29 @@
 // Styling rules for the site's sub menu.
 .menu-sub-wrap {
   @include border(bottom, 1px, solid, $primary-color, 0.33);
+
+  @include query($large-1, 'min-width') {
+    border-width: 2px;
+  }
 }
 
 .menu-sub {
   padding: 15px 5px;
+
+  @include query($large-1, 'min-width') {
+    padding: #{15 * $wide-view-multiplier}px #{5 * $wide-view-multiplier}px;
+  }
 
   .menu {
     .menu-item {
       display: inline-block;
       margin-right: 10px;
       font-size: 14px;
+
+      @include query($large-1, 'min-width') {
+        margin-right: #{10 * $wide-view-multiplier}px;
+        font-size: #{14 * $wide-view-multiplier}px;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -336,6 +399,10 @@
     text-align: right;
     font-size: 12px;
 
+    @include query($large-1, 'min-width') {
+      font-size: #{12 * $wide-view-multiplier}px;
+    }
+
     .menu-link {
       position: relative;
       display: block;
@@ -343,7 +410,7 @@
       @include color($secondary-color, 0.67);
 
       @include query($large-1, 'min-width') {
-        padding: 16px 78px 16px 24px;
+        padding: 12px 65px 10px 24px;
       }
 
       &.active,
@@ -361,6 +428,11 @@
       &:after {
         top: 3px;
         right: 11px;
+
+        @include query($large-1, 'min-width') {
+          top: #{3 * $wide-view-multiplier}px;
+          right: #{11 * $wide-view-multiplier}px;
+        }
       }
     }
   }
@@ -369,7 +441,11 @@
 .flags-disabled {
   .menu-item {
     .menu-link {
-      padding: 5px 12px 4px 12px;
+      padding: 5px 12px 4px;
+
+      @include query($large-1, 'min-width') {
+        padding: -378px -120px;
+      }
     }
   }
 }
@@ -386,6 +462,10 @@
   border: none;
   cursor: pointer;
 
+  @include query($large-1, 'min-width') {
+    height: 44px;
+  }
+
   &:hover,
   &.open {
     opacity: 0.8;
@@ -399,6 +479,11 @@
   &:after {
     top: 5px;
     left: 5px;
+
+    @include query($large-1, 'min-width') {
+      top: #{5 * $wide-view-multiplier}px;
+      left: #{5 * $wide-view-multiplier}px;
+    }
   }
 
   .front-page & {
@@ -415,6 +500,11 @@
       top: -1px;
       display: inline-block;
       font-size: 7.2px;
+
+      @include query($large-1, 'min-width') {
+        top: #{-1 * $wide-view-multiplier}px;
+        font-size: #{7.2 * $wide-view-multiplier}px;
+      }
     }
   }
 
@@ -429,16 +519,20 @@
   .flags-enabled & {
     width: 31px;
 
+    @include query($large-1, 'min-width') {
+      width: 56px;
+    }
+
     .lang-title,
     .ico-popover-toggle {
       display: none;
     }
   }
 
-  @include query($large-1, 'min-width') {
-    width: 52px;
-    height: 40px;
-  }
+  // @include query($large-1, 'min-width') {
+  //   width: 52px;
+  //   height: 40px;
+  // }
 }
 
 .menu-lang-btn,
@@ -452,8 +546,8 @@
     content: '';
 
     @include query($large-1, 'min-width') {
-      width: 42px;
-      height: 30px;
+      width: #{21 * 2}px;
+      height: #{15 * 2}px;
     }
   }
 }
@@ -497,6 +591,14 @@
     @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
     z-index: 30;
 
+    @include query($large-1, 'min-width') {
+      top: 50px;
+      right: #{-6 * $wide-view-multiplier}px;
+      margin-bottom: #{40 * $wide-view-multiplier}px;
+      padding: #{6 * $wide-view-multiplier}px 0;
+      min-width: #{121 * $wide-view-multiplier}px;
+    }
+
     .editmode & {
       padding-bottom: 0;
     }
@@ -515,12 +617,20 @@
     display: block;
     padding: 8px 18px 3px;
     text-align: right;
+
+    @include query($large-1, 'min-width') {
+      padding: #{8 * $wide-view-multiplier}px #{18 * $wide-view-multiplier}px #{3 * $wide-view-multiplier}px;
+    }
   }
 }
 
 .lang-flag {
   &:after {
     background-position: -189px -60px;
+
+    @include query($large-1, 'min-width') {
+      background-position: #{-189 * 2}px #{-60 * 2}px;
+    }
   }
 
   &:before,
@@ -655,6 +765,12 @@ $flags:
       margin-top: 8px;
       padding: 7px 12px;
       font-size: 13px;
+
+      @include query($large-1, 'min-width') {
+        margin-top: #{8 * $wide-view-multiplier}px;
+        padding: #{7 * $wide-view-multiplier}px #{12 * $wide-view-multiplier}px;
+        font-size: #{13 * $wide-view-multiplier}px;
+      }
     }
   }
 }
@@ -685,10 +801,18 @@ $flags:
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
 .tags-editor {
   padding: 15px 5px;
+
+  @include query($large-1, 'min-width') {
+    padding: #{15 * $wide-view-multiplier}px #{5 * $wide-view-multiplier}px;
+  }
 }
 
 .tags {
   @include border(bottom, 1px, solid, $primary-color, 0.33);
+
+  @include query($large-1, 'min-width') {
+    border-width: 2px;
+  }
 
   .topbar & {
     position: absolute;
@@ -698,6 +822,10 @@ $flags:
     z-index: 1;
     text-align: right;
     border: none;
+
+    @include query($large-1, 'min-width') {
+      right: #{5 * $wide-view-multiplier}px;
+    }
   }
 }
 
@@ -716,6 +844,10 @@ $flags:
       text-align: right;
       @include bg($black);
 
+      @include query($large-1, 'min-width') {
+        padding-bottom: #{30 * $wide-view-multiplier}px;
+      }
+
       .menu-item {
         display: block;
 
@@ -724,6 +856,11 @@ $flags:
           padding: 3px 20px;
           font-size: 12px;
           @include color($primary-color);
+
+          @include query($large-1, 'min-width') {
+            padding: #{3 * $wide-view-multiplier}px #{20 * $wide-view-multiplier}px;
+            font-size: #{12 * $wide-view-multiplier}px;
+          }
 
           &.active,
           &.active:hover {
