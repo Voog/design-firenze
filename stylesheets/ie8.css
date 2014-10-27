@@ -1,14 +1,12 @@
 /* IE8 FALLBACKS */
-.menu-lang-btn:before, .menu-lang-btn:after {
-  margin-top: -6px;
-  margin-left: -1px;
-}
-
-.no-svg .menu-lang-btn:after, .no-svg
-.menu-lang .menu-item .lang-flag:after {
-  background-image: url("../images/ico-flags-small.png");
-}
-
 .body-background-color {
   -ms-filter: "alpha(opacity=50)";
+}
+
+.menu-lang-btn:before, .menu-lang-btn:after {
+  position: absolute;
+  top: -1px;
+  left: 6px;
+  margin-top: -6px;
+  margin-left: -1px;
 }

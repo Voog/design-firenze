@@ -2,25 +2,22 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '_mixins';
 
-// MENUS
-.menu-lang-btn {
-  &:before,
-  &:after {
-    margin-top: -6px;
-    margin-left: -1px;
-  }
-}
-
-.menu-lang-btn,
-.menu-lang .menu-item .lang-flag {
-  .no-svg &:after {
-    background-image: url('../images/ico-flags-small.png');
-  }
-}
-
 // GENERAL
 .body-background-color {
   -ms-filter: "alpha(opacity=50)";
+}
+
+// MENUS
+.menu-lang-btn {
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: -1px;
+    left: 6px;
+    margin-top: -6px;
+    margin-left: -1px;
+  }
 }
 
 // HEADER

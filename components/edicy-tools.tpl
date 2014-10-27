@@ -43,15 +43,29 @@
 
         // Updades the body image only if it has been changed.
         // TODO: Add image sizes.
-        $('.js-body-background-image').css({'background-image' : bodyBgImage});
-        // {% if page.data.body_bg.imageSizes %}
-        //   var imageSizes = {{ page.data.body_bg.imageSizes | json }};
-        //   console.log(imageSizes);
+        var getPhotoByWidth = function(sizes, targetWidth) {
+          var prevPhoto;
+          for (var i = sizes.length; i--;) {
+            if (sizes[i].width < targetWidth) {
+              // Returns the previous image if current iteration size is smaller than targetWidth
+              // Fallback to current if all images are smaller than currentWidth
+              return prevPhoto || sizes[i];
+            }
+          }
+          // makes sure that smallest is returned if all images bigger than targetWidth
+          return sizes[sizes.length - 1]
 
-        //   jQuery.each(imageSizes, function(index, value) {
+        };
 
-        //   });
-        // {% endif %}
+        var testime = getPhotoByWidth(data.imageSizes, $(window).width());
+
+        console.log(data.imageSizes);
+        console.log($(window).width());
+        console.log(testime);
+
+
+
+        // $('.js-body-background-image').css({'background-image' : bodyBgImage});
 
         // Updates the body background color.
         $('.js-body-background-color').css({'background-color' : bodyBgColor});
