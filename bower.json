@@ -1,11 +1,11 @@
 {
   "name": "voog-design-firenze",
   "devDependencies": {
-    "bourbon": "~4.0.2",
-    "modernizr": "~2.8.3"
+    "bourbon": "~4.0.2"
   },
   "dependencies": {
     "jquery": "~1.x",
+    "modernizr": "~2.8.3",
     "overthrow": "~0.7.0"
   }
 }

@@ -352,12 +352,6 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-flags-small.png",
-      "kind": "images",
-      "filename": "ico-flags-small.png"
-    },
-    {
-      "content_type": "image/png",
       "file": "images/ico-flags.png",
       "kind": "images",
       "filename": "ico-flags.png"

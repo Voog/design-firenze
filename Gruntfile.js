@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
   "use strict";
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -23,7 +24,7 @@ module.exports = function(grunt) {
       If there are some javascript files that shouldn't be concatenated:
         - Add the files to 'javascripts/src' folder.
         - Uncomment the following task.
-        - Uncomment the task runner on line '168'.
+        - Uncomment the task runner on line '166'.
         - Run 'npm install grunt-contrib-copy' on command-line.
         - Add 'copy' task next to 'modernizr' task on line '179'.
     */
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
     //   }
     // },
 
-    // Concatenates the javascript source files to the javascripts folder.
+    // Concatenates the javascript source files into the one file in "javascripts" folder.
     concat: {
       build: {
         src: [
@@ -162,18 +163,18 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.loadNpmTasks('grunt-modernizr');
-  // Uncomment the following task if there are some javascript files that shouldn't be concatenated (see line '21' for further instructions).
-  // grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  // Uncomment the following task if there are some javascript files that shouldn't be concatenated (see line '22' for further instructions).
+  // grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-modernizr');
+  grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-svgmin');
 
   grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
 
