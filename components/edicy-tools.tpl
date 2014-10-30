@@ -59,12 +59,6 @@
 
         var testime = getPhotoByWidth(data.imageSizes, $(window).width());
 
-        console.log(data.imageSizes);
-        console.log($(window).width());
-        console.log(testime);
-
-
-
         // $('.js-body-background-image').css({'background-image' : bodyBgImage});
 
         // Updates the body background color.
