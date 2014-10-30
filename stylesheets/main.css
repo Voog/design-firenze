@@ -869,15 +869,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     font-size: 10.08px;
   }
 }
-.menu-lang-btn.open .ico-popover-toggle {
-  top: -3px;
-  left: 1px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
 .flags-enabled .menu-lang-btn {
   width: 31px;
 }

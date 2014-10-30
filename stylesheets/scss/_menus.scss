@@ -518,13 +518,14 @@
     }
   }
 
-  &.open {
-    .ico-popover-toggle {
-      top: -3px;
-      left: 1px;
-      @include transform(rotate(180deg));
-    }
-  }
+  // TODO: Remove if decided to not use or add back if it is going to be used anyway.
+  // &.open {
+  //   .ico-popover-toggle {
+  //     top: -3px;
+  //     left: 1px;
+  //     @include transform(rotate(180deg));
+  //   }
+  // }
 
   .flags-enabled & {
     width: 31px;
@@ -538,11 +539,6 @@
       display: none;
     }
   }
-
-  // @include query($large-1, 'min-width') {
-  //   width: 52px;
-  //   height: 40px;
-  // }
 }
 
 .menu-lang-btn,
