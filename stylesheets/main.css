@@ -519,6 +519,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 .front-page .menu-main {
+  position: relative;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
