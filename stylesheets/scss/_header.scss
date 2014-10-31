@@ -62,10 +62,6 @@
   width: 50%;
   text-align: right;
 
-  @include query($large-1, 'min-width') {
-    right: #{25 * $wide-view-multiplier}px;
-  }
-
   .front-page & {
     top: 18px;
 

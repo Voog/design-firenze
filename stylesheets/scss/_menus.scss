@@ -409,19 +409,11 @@
     text-align: right;
     font-size: 12px;
 
-    @include query($large-1, 'min-width') {
-      font-size: #{12 * $wide-view-multiplier}px;
-    }
-
     .menu-link {
       position: relative;
       display: block;
       padding: 5px 39px 4px 12px;
       @include color($secondary-color, 0.67);
-
-      @include query($large-1, 'min-width') {
-        padding: 12px 65px 10px 24px;
-      }
 
       &.active,
       &.active:hover {
@@ -438,11 +430,6 @@
       &:after {
         top: 3px;
         right: 11px;
-
-        @include query($large-1, 'min-width') {
-          top: #{3 * $wide-view-multiplier}px;
-          right: #{11 * $wide-view-multiplier}px;
-        }
       }
     }
   }
@@ -452,10 +439,6 @@
   .menu-item {
     .menu-link {
       padding: 5px 12px 4px;
-
-      @include query($large-1, 'min-width') {
-        padding: -378px -120px;
-      }
     }
   }
 }
@@ -472,10 +455,6 @@
   border: none;
   cursor: pointer;
 
-  @include query($large-1, 'min-width') {
-    height: 44px;
-  }
-
   &:hover,
   &.open {
     opacity: 0.8;
@@ -489,11 +468,6 @@
   &:after {
     top: 5px;
     left: 5px;
-
-    @include query($large-1, 'min-width') {
-      top: #{5 * $wide-view-multiplier}px;
-      left: #{5 * $wide-view-multiplier}px;
-    }
   }
 
   .front-page & {
@@ -510,11 +484,6 @@
       top: -1px;
       display: inline-block;
       font-size: 7.2px;
-
-      @include query($large-1, 'min-width') {
-        top: #{-1 * $wide-view-multiplier}px;
-        font-size: #{7.2 * $wide-view-multiplier}px;
-      }
     }
   }
 
@@ -529,10 +498,6 @@
 
   .flags-enabled & {
     width: 31px;
-
-    @include query($large-1, 'min-width') {
-      width: 56px;
-    }
 
     .lang-title,
     .ico-popover-toggle {
@@ -550,11 +515,6 @@
     width: 21px;
     height: 15px;
     content: '';
-
-    @include query($large-1, 'min-width') {
-      width: #{21 * 2}px;
-      height: #{15 * 2}px;
-    }
   }
 }
 
@@ -567,10 +527,6 @@
   &:after {
     opacity: 0.95;
     background-repeat: no-repeat;
-
-    @include query($large-1, 'min-width') {
-      background-size: 420px;
-    }
 
     .no-svg & {
       background-image: url('../images/ico-flags.png');
@@ -596,14 +552,6 @@
     background: #fff;
     @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
     z-index: 30;
-
-    @include query($large-1, 'min-width') {
-      top: 50px;
-      right: #{-6 * $wide-view-multiplier}px;
-      margin-bottom: #{40 * $wide-view-multiplier}px;
-      padding: #{6 * $wide-view-multiplier}px 0;
-      min-width: #{121 * $wide-view-multiplier}px;
-    }
 
     .editmode & {
       padding-bottom: 0;
@@ -647,120 +595,106 @@
   }
 }
 
+.lang-flag {
+  &:after {
+    background-position: -189px -60px;
+  }
+}
+
 // Language flag icons positioning in the spritemap.
 $flags:
 // Albanian (Albania)
-(sq,   0,        0),
+(sq,   0        0),
 // Armenian (Armenia)
-(hy,  -21px,    0),
+(hy,  -21px     0),
 // Bengali (Bangladesh)
-(bn,  -42px,    0),
+(bn,  -42px     0),
 // Brazilian Portuguese (Brazil)
-(xx,  -63px,    0),
+(pt,  -63px     0),
 // Bulgarian (Bulgaria)
-(bg,  -84px,    0),
+(bg,  -84px     0),
 // Chinese (China)
-(zh, -105px,    0),
+(zh, -105px     0),
 // Croatian (Croatia)
-(hr, -126px,    0),
+(hr, -126px     0),
 // Danish (Denmark)
-(da, -147px,    0),
+(da, -147px     0),
 // Czech (Czech Republic)
-(cs, -168px,    0),
+(cs, -168px     0),
 // Estonian (Estonia)
-(et, -189px,    0),
+(et, -189px     0),
 
 // Finnish (Finland)
-(fi,    0px, -15px),
+(fi,    0px -15px),
 // French (France)
-(fr,  -21px, -15px),
+(fr,  -21px -15px),
 // Georgian (Georgia)
-(ka,  -42px, -15px),
+(ka,  -42px -15px),
 // German (Germany)
-(de,  -63px, -15px),
+(de,  -63px -15px),
 // Greek (Greece)
-(el,  -84px, -15px),
+(el,  -84px -15px),
 // Hungarian (Hungary)
-(hu, -105px, -15px),
+(hu, -105px -15px),
 // Icelandic (Iceland)
-(is, -126px, -15px),
+(is, -126px -15px),
 // Hindi (India)
-(hi, -147px, -15px),
+(hi, -147px -15px),
 // Indonesian (Indonesia)
-(id, -168px, -15px),
+(id, -168px -15px),
 // Iranian (Iran)
-(fa, -189px, -15px),
+(fa, -189px -15px),
 
 // Hebrew (Israel)
-(he,    0px, -30px),
+(he,    0px -30px),
 // Italian (Italy)
-(it,  -21px, -30px),
+(it,  -21px -30px),
 // Japanese (Japan)
-(ja,  -42px, -30px),
+(ja,  -42px -30px),
 // Korean (Korea, South)
-(ko,  -63px, -30px),
+(ko,  -63px -30px),
 // Latvian (Latvia)
-(lv,  -84px, -30px),
+(lv,  -84px -30px),
 // Lithuanian (Lithuania)
-(lt, -105px, -30px),
+(lt, -105px -30px),
 // Malaysian (Malaysia)
-(ms, -126px, -30px),
+(ms, -126px -30px),
 // Dutch (Netherlands)
-(nl, -147px, -30px),
+(nl, -147px -30px),
 // Norwegian (Norway)
-(no, -168px, -30px),
+(no, -168px -30px),
 // Urdu (Pakistan)
-(ur, -189px, -30px),
+(ur, -189px -30px),
 
 // Filipino (Philippines)
-(fil,   0px, -45px),
+(fil,   0px -45px),
 // Polish (Poland)
-(pl,  -21px, -45px),
+(pl,  -21px -45px),
 // Romanian (Romania)
-(ro,  -42px, -45px),
+(ro,  -42px -45px),
 // Russian (Russia)
-(ru,  -63px, -45px),
+(ru,  -63px -45px),
 // Arabic (Saudi Arabia)
-(ar,  -84px, -45px),
+(ar,  -84px -45px),
 // Slovakian (Slovakia)
-(sk, -105px, -45px),
+(sk, -105px -45px),
 // Slovenian (Slovenia)
-(sl, -126px, -45px),
+(sl, -126px -45px),
 // Spanish (Spain)
-(es, -147px, -45px),
+(es, -147px -45px),
 // Swedish (Sweden)
-(sv, -168px, -45px),
+(sv, -168px -45px),
 // Turkish (Turkey)
-(tr, -189px, -45px),
+(tr, -189px -45px),
 
 // Ukrainian (Ukraine)
-(uk,    0px, -60px),
+(uk,    0px -60px),
 // American English (United States of America)
-(en,  -21px, -60px),
-// French (Ivory Coast)
-(xx,  -42px, -60px),
-// British English (Great Britian)
-(xx,  -63px, -60px),
-// Portuguese (Portuguese Republic)
-(pt,  -84px, -60px),
-// Canadian English (Canada)
-(xx,  -105px, -60px),
-// Serbian (Republic of Serbia)
-(sr,  -126px, -60px),
-// Dutch, French, German (Kingdom of Belgium)
-(xx,  -147px, -60px),
-// Australian English (Commonwealth of Australia)
-(xx,  -168px, -60px),
+(en,  -21px -60px)
 ;
 
-@each $flag, $left, $top in $flags {
-  .lang-flag-#{$flag}:after { background-position: #{$left} #{$top}; }
-}
-
-@include query($large-1, 'min-width') {
-  @each $flag, $left, $top in $flags {
-    .lang-flag-#{$flag}:after { background-position: #{$left*2} #{$top*2}; }
-  }
+@each $flag, $pos in $flags {
+  .lang-flag-#{$flag}:after { background-position: $pos; }
 }
 
 .lang-options {

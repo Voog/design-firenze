@@ -766,22 +766,12 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   text-align: right;
   font-size: 12px;
 }
-@media screen and (min-width: 1400px) {
-  .menu-lang .menu-item {
-    font-size: 16.8px;
-  }
-}
 .menu-lang .menu-item .menu-link {
   position: relative;
   display: block;
   padding: 5px 39px 4px 12px;
   color: #444444;
   color: rgba(68, 68, 68, 0.67);
-}
-@media screen and (min-width: 1400px) {
-  .menu-lang .menu-item .menu-link {
-    padding: 12px 65px 10px 24px;
-  }
 }
 .menu-lang .menu-item .menu-link.active, .menu-lang .menu-item .menu-link.active:hover {
   opacity: 0.5;
@@ -801,20 +791,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   top: 3px;
   right: 11px;
 }
-@media screen and (min-width: 1400px) {
-  .menu-lang .menu-item .menu-link:before, .menu-lang .menu-item .menu-link:after {
-    top: 4.2px;
-    right: 15.4px;
-  }
-}
 
 .flags-disabled .menu-item .menu-link {
   padding: 5px 12px 4px;
-}
-@media screen and (min-width: 1400px) {
-  .flags-disabled .menu-item .menu-link {
-    padding: -378px -120px;
-  }
 }
 
 .menu-lang-btn {
@@ -830,11 +809,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 1400px) {
-  .menu-lang-btn {
-    height: 44px;
-  }
-}
 .menu-lang-btn:hover, .menu-lang-btn.open {
   opacity: 0.8;
 }
@@ -844,12 +818,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .menu-lang-btn:before, .menu-lang-btn:after {
   top: 5px;
   left: 5px;
-}
-@media screen and (min-width: 1400px) {
-  .menu-lang-btn:before, .menu-lang-btn:after {
-    top: 7px;
-    left: 7px;
-  }
 }
 .front-page .menu-lang-btn {
   color: white;
@@ -863,19 +831,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   display: inline-block;
   font-size: 7.2px;
 }
-@media screen and (min-width: 1400px) {
-  .flags-disabled .menu-lang-btn .ico-popover-toggle {
-    top: -1.4px;
-    font-size: 10.08px;
-  }
-}
 .flags-enabled .menu-lang-btn {
   width: 31px;
-}
-@media screen and (min-width: 1400px) {
-  .flags-enabled .menu-lang-btn {
-    width: 56px;
-  }
 }
 .flags-enabled .menu-lang-btn .lang-title,
 .flags-enabled .menu-lang-btn .ico-popover-toggle {
@@ -891,14 +848,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   height: 15px;
   content: '';
 }
-@media screen and (min-width: 1400px) {
-  .menu-lang-btn:before, .menu-lang-btn:after,
-  .menu-lang .menu-item .lang-flag:before,
-  .menu-lang .menu-item .lang-flag:after {
-    width: 42px;
-    height: 30px;
-  }
-}
 
 .menu-lang-btn:before,
 .menu-lang .menu-item .lang-flag:before {
@@ -908,12 +857,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .menu-lang .menu-item .lang-flag:after {
   opacity: 0.95;
   background-repeat: no-repeat;
-}
-@media screen and (min-width: 1400px) {
-  .menu-lang-btn:after,
-  .menu-lang .menu-item .lang-flag:after {
-    background-size: 420px;
-  }
 }
 .no-svg .menu-lang-btn:after, .no-svg
 .menu-lang .menu-item .lang-flag:after {
@@ -940,15 +883,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   z-index: 30;
-}
-@media screen and (min-width: 1400px) {
-  .menu-lang-popover.expanded {
-    top: 50px;
-    right: -8.4px;
-    margin-bottom: 56px;
-    padding: 8.4px 0;
-    min-width: 169.4px;
-  }
 }
 .editmode .menu-lang-popover.expanded {
   padding-bottom: 0;
@@ -979,6 +913,10 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   display: none;
 }
 
+.lang-flag:after {
+  background-position: -189px -60px;
+}
+
 .lang-flag-sq:after {
   background-position: 0 0;
 }
@@ -991,7 +929,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   background-position: -42px 0;
 }
 
-.lang-flag-xx:after {
+.lang-flag-pt:after {
   background-position: -63px 0;
 }
 
@@ -1147,231 +1085,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   background-position: -21px -60px;
 }
 
-.lang-flag-xx:after {
-  background-position: -42px -60px;
-}
-
-.lang-flag-xx:after {
-  background-position: -63px -60px;
-}
-
-.lang-flag-pt:after {
-  background-position: -84px -60px;
-}
-
-.lang-flag-xx:after {
-  background-position: -105px -60px;
-}
-
-.lang-flag-sr:after {
-  background-position: -126px -60px;
-}
-
-.lang-flag-xx:after {
-  background-position: -147px -60px;
-}
-
-.lang-flag-xx:after {
-  background-position: -168px -60px;
-}
-
-@media screen and (min-width: 1400px) {
-  .lang-flag-sq:after {
-    background-position: 0 0;
-  }
-
-  .lang-flag-hy:after {
-    background-position: -42px 0;
-  }
-
-  .lang-flag-bn:after {
-    background-position: -84px 0;
-  }
-
-  .lang-flag-xx:after {
-    background-position: -126px 0;
-  }
-
-  .lang-flag-bg:after {
-    background-position: -168px 0;
-  }
-
-  .lang-flag-zh:after {
-    background-position: -210px 0;
-  }
-
-  .lang-flag-hr:after {
-    background-position: -252px 0;
-  }
-
-  .lang-flag-da:after {
-    background-position: -294px 0;
-  }
-
-  .lang-flag-cs:after {
-    background-position: -336px 0;
-  }
-
-  .lang-flag-et:after {
-    background-position: -378px 0;
-  }
-
-  .lang-flag-fi:after {
-    background-position: 0px -30px;
-  }
-
-  .lang-flag-fr:after {
-    background-position: -42px -30px;
-  }
-
-  .lang-flag-ka:after {
-    background-position: -84px -30px;
-  }
-
-  .lang-flag-de:after {
-    background-position: -126px -30px;
-  }
-
-  .lang-flag-el:after {
-    background-position: -168px -30px;
-  }
-
-  .lang-flag-hu:after {
-    background-position: -210px -30px;
-  }
-
-  .lang-flag-is:after {
-    background-position: -252px -30px;
-  }
-
-  .lang-flag-hi:after {
-    background-position: -294px -30px;
-  }
-
-  .lang-flag-id:after {
-    background-position: -336px -30px;
-  }
-
-  .lang-flag-fa:after {
-    background-position: -378px -30px;
-  }
-
-  .lang-flag-he:after {
-    background-position: 0px -60px;
-  }
-
-  .lang-flag-it:after {
-    background-position: -42px -60px;
-  }
-
-  .lang-flag-ja:after {
-    background-position: -84px -60px;
-  }
-
-  .lang-flag-ko:after {
-    background-position: -126px -60px;
-  }
-
-  .lang-flag-lv:after {
-    background-position: -168px -60px;
-  }
-
-  .lang-flag-lt:after {
-    background-position: -210px -60px;
-  }
-
-  .lang-flag-ms:after {
-    background-position: -252px -60px;
-  }
-
-  .lang-flag-nl:after {
-    background-position: -294px -60px;
-  }
-
-  .lang-flag-no:after {
-    background-position: -336px -60px;
-  }
-
-  .lang-flag-ur:after {
-    background-position: -378px -60px;
-  }
-
-  .lang-flag-fil:after {
-    background-position: 0px -90px;
-  }
-
-  .lang-flag-pl:after {
-    background-position: -42px -90px;
-  }
-
-  .lang-flag-ro:after {
-    background-position: -84px -90px;
-  }
-
-  .lang-flag-ru:after {
-    background-position: -126px -90px;
-  }
-
-  .lang-flag-ar:after {
-    background-position: -168px -90px;
-  }
-
-  .lang-flag-sk:after {
-    background-position: -210px -90px;
-  }
-
-  .lang-flag-sl:after {
-    background-position: -252px -90px;
-  }
-
-  .lang-flag-es:after {
-    background-position: -294px -90px;
-  }
-
-  .lang-flag-sv:after {
-    background-position: -336px -90px;
-  }
-
-  .lang-flag-tr:after {
-    background-position: -378px -90px;
-  }
-
-  .lang-flag-uk:after {
-    background-position: 0px -120px;
-  }
-
-  .lang-flag-en:after {
-    background-position: -42px -120px;
-  }
-
-  .lang-flag-xx:after {
-    background-position: -84px -120px;
-  }
-
-  .lang-flag-xx:after {
-    background-position: -126px -120px;
-  }
-
-  .lang-flag-pt:after {
-    background-position: -168px -120px;
-  }
-
-  .lang-flag-xx:after {
-    background-position: -210px -120px;
-  }
-
-  .lang-flag-sr:after {
-    background-position: -252px -120px;
-  }
-
-  .lang-flag-xx:after {
-    background-position: -294px -120px;
-  }
-
-  .lang-flag-xx:after {
-    background-position: -336px -120px;
-  }
-}
 .lang-options {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.09);
@@ -1536,11 +1249,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   right: 25px;
   width: 50%;
   text-align: right;
-}
-@media screen and (min-width: 1400px) {
-  .header-options {
-    right: 35px;
-  }
 }
 .front-page .header-options {
   top: 18px;
@@ -2044,13 +1752,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   height: 22px;
   font-size: 0;
 }
-@media screen and (min-width: 1400px) {
-  .search-btn {
-    top: -1px;
-    width: 30.8px;
-    height: 30.8px;
-  }
-}
 .header-options .search-btn svg {
   fill: rgba(68, 68, 68, 0.67);
 }
@@ -2059,12 +1760,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .front-page .light-background .search-btn svg {
   fill: #000000;
-}
-@media screen and (min-width: 1400px) {
-  .search-btn svg {
-    width: 22.4px;
-    height: 22.4px;
-  }
 }
 .search-btn:hover svg {
   fill: rgba(68, 68, 68, 0.47);
@@ -2100,6 +1795,18 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
+}
+@media screen and (min-width: 1400px) {
+  .search-inner .search-close-btn.open svg {
+    width: 22.4px;
+    height: 22.4px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .search-inner .search-close-btn.open {
+    width: 30.8px;
+    height: 30.8px;
+  }
 }
 
 .voog-search-modal {
