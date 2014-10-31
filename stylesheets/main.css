@@ -2759,6 +2759,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   color: #FFFFFF;
   color: rgba(255, 255, 255, 0.33);
 }
+.footer .content-formatted:empty {
+  display: none;
+}
 @media screen and (min-width: 1400px) {
   .footer .content-formatted {
     min-width: 140px;
