@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header js-header{% if site.search.enabled %} search-enabled{% endif %}{% unless flags_state %} flags-disabled{% endunless %}">
   <div class="header-top">
     <div class="header-top-inner content-formatted">
       <div class="header-title">

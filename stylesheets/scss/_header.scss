@@ -40,6 +40,48 @@
     }
   }
 
+  .content-page & {
+    margin-right: 31px;
+
+    @include query($mobile-1) {
+      margin-right: 24px;
+    }
+  }
+
+  .search-enabled & {
+    .content-page & {
+      margin-right: 59px;
+
+      @include query($large-1, 'min-width') {
+        margin-right: 53px;
+      }
+    }
+  }
+
+  .flags-disabled & {
+    .content-page & {
+      margin-right: 77px;
+
+      @include query($large-1, 'min-width') {
+        margin-right: 70px;
+      }
+    }
+  }
+
+  .search-enabled.flags-disabled & {
+    .content-page & {
+      margin-right: 100px;
+
+      @include query($large-1, 'min-width') {
+        margin-right: 95px;
+      }
+    }
+
+    @include query($mobile-1) {
+      margin-right: 59px;
+    }
+  }
+
   .light-background & {
     .front-page & {
       border-color: $black;
@@ -87,8 +129,9 @@
 
 .header-title {
   @extend %bebas-neue-latin;
-  max-width: 630px;
-  min-width: 211px;
+  position: relative;
+  z-index: 2;
+  min-width: 96px;
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
@@ -173,7 +216,7 @@
     padding-top: 25px;
 
     @include query($large-1, 'min-width') {
-  padding-top: #{25 * $wide-view-multiplier}px;
-}
+      padding-top: #{25 * $wide-view-multiplier}px;
+    }
   }
 }

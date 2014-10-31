@@ -28,7 +28,7 @@
 
   @include query($mobile-1) {
     position: absolute;
-    top: 2px;
+    top: 5px;
     right: 5px;
     z-index: 20;
     display: inline-block;
@@ -433,35 +433,29 @@
       }
     }
   }
-}
 
-.flags-disabled {
-  .menu-item {
-    .menu-link {
-      padding: 5px 12px 4px;
+  &.flags-disabled{
+    .menu-item {
+      .menu-link {
+        padding: 5px 12px 4px;
+      }
     }
   }
 }
 
+
 .menu-lang-btn {
+  @extend %button;
   position: relative;
   display: inline-block;
   vertical-align: top;
   height: 25px;
-  padding: 0;
-  font-size: inherit;
+  font-size: 14px;
   @include color($secondary-color, 0.67);
-  background: none;
-  border: none;
-  cursor: pointer;
 
   &:hover,
   &.open {
     opacity: 0.8;
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:before,
@@ -472,6 +466,10 @@
 
   .front-page & {
     @include color($white);
+  }
+
+  .content-page & {
+    top: 3px;
   }
 
   .light-background & {
@@ -705,12 +703,6 @@ $flags:
       margin-top: 8px;
       padding: 7px 12px;
       font-size: 13px;
-
-      @include query($large-1, 'min-width') {
-        margin-top: #{8 * $wide-view-multiplier}px;
-        padding: #{7 * $wide-view-multiplier}px #{12 * $wide-view-multiplier}px;
-        font-size: #{13 * $wide-view-multiplier}px;
-      }
     }
   }
 }

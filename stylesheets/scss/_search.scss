@@ -197,12 +197,21 @@
 
 .search-btn {
   position: relative;
-  top: 1px;
   z-index: 19;
   vertical-align: middle;
   width: 22px;
   height: 22px;
   font-size: 0;
+
+  .front-page & {
+    top: 1px;
+  }
+
+  .header-options & {
+    .content-page & {
+      top: 4px;
+    }
+  }
 
   svg {
     .header-options & {

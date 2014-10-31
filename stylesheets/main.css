@@ -73,7 +73,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   bottom: 0;
 }
 
-.bgpicker-btn, .menu-btn, .tags-btn, .option-btn, .search-btn,
+.bgpicker-btn, .menu-btn, .tags-btn, .menu-lang-btn, .option-btn, .search-btn,
 .search-submit {
   margin: 0;
   padding: 0;
@@ -81,12 +81,12 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   border: none;
   cursor: pointer;
 }
-.bgpicker-btn::-moz-focus-inner, .menu-btn::-moz-focus-inner, .tags-btn::-moz-focus-inner, .option-btn::-moz-focus-inner, .search-btn::-moz-focus-inner,
+.bgpicker-btn::-moz-focus-inner, .menu-btn::-moz-focus-inner, .tags-btn::-moz-focus-inner, .menu-lang-btn::-moz-focus-inner, .option-btn::-moz-focus-inner, .search-btn::-moz-focus-inner,
 .search-submit::-moz-focus-inner {
   padding: 0;
   border: none;
 }
-.bgpicker-btn:focus, .menu-btn:focus, .tags-btn:focus, .option-btn:focus, .search-btn:focus,
+.bgpicker-btn:focus, .menu-btn:focus, .tags-btn:focus, .menu-lang-btn:focus, .option-btn:focus, .search-btn:focus,
 .search-submit:focus {
   outline: none;
 }
@@ -452,7 +452,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 @media screen and (max-width: 480px) {
   .menu-btn {
     position: absolute;
-    top: 2px;
+    top: 5px;
     right: 5px;
     z-index: 20;
     display: inline-block;
@@ -795,8 +795,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   top: 3px;
   right: 11px;
 }
-
-.flags-disabled .menu-item .menu-link {
+.menu-lang.flags-disabled .menu-item .menu-link {
   padding: 5px 12px 4px;
 }
 
@@ -805,19 +804,12 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   display: inline-block;
   vertical-align: top;
   height: 25px;
-  padding: 0;
-  font-size: inherit;
+  font-size: 14px;
   color: #444444;
   color: rgba(68, 68, 68, 0.67);
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 .menu-lang-btn:hover, .menu-lang-btn.open {
   opacity: 0.8;
-}
-.menu-lang-btn:focus {
-  outline: none;
 }
 .menu-lang-btn:before, .menu-lang-btn:after {
   top: 5px;
@@ -825,6 +817,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .front-page .menu-lang-btn {
   color: white;
+}
+.content-page .menu-lang-btn {
+  top: 3px;
 }
 .light-background .menu-lang-btn {
   color: black;
@@ -1098,13 +1093,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   padding: 7px 12px;
   font-size: 13px;
 }
-@media screen and (min-width: 1400px) {
-  .lang-options .menu .menu-item {
-    margin-top: 11.2px;
-    padding: 9.8px 16.8px;
-    font-size: 18.2px;
-  }
-}
 
 .option-btn {
   font-family: inherit;
@@ -1237,6 +1225,43 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     border-width: 4.2px;
   }
 }
+.content-page .header-top-inner {
+  margin-right: 31px;
+}
+@media screen and (max-width: 480px) {
+  .content-page .header-top-inner {
+    margin-right: 24px;
+  }
+}
+.content-page .search-enabled .header-top-inner {
+  margin-right: 59px;
+}
+@media screen and (min-width: 1400px) {
+  .content-page .search-enabled .header-top-inner {
+    margin-right: 53px;
+  }
+}
+.content-page .flags-disabled .header-top-inner {
+  margin-right: 77px;
+}
+@media screen and (min-width: 1400px) {
+  .content-page .flags-disabled .header-top-inner {
+    margin-right: 70px;
+  }
+}
+.content-page .search-enabled.flags-disabled .header-top-inner {
+  margin-right: 100px;
+}
+@media screen and (min-width: 1400px) {
+  .content-page .search-enabled.flags-disabled .header-top-inner {
+    margin-right: 95px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-enabled.flags-disabled .header-top-inner {
+    margin-right: 59px;
+  }
+}
 .front-page .light-background .header-top-inner {
   border-color: #000000;
 }
@@ -1277,8 +1302,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .header-title {
-  max-width: 630px;
-  min-width: 211px;
+  position: relative;
+  z-index: 2;
+  min-width: 96px;
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
@@ -1749,12 +1775,17 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 
 .search-btn {
   position: relative;
-  top: 1px;
   z-index: 19;
   vertical-align: middle;
   width: 22px;
   height: 22px;
   font-size: 0;
+}
+.front-page .search-btn {
+  top: 1px;
+}
+.content-page .header-options .search-btn {
+  top: 4px;
 }
 .header-options .search-btn svg {
   fill: rgba(68, 68, 68, 0.67);
