@@ -1315,8 +1315,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .header-title {
-  position: relative;
-  z-index: 2;
   min-width: 96px;
   font-weight: 400;
   font-size: 30px;
@@ -1331,6 +1329,13 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .front-page .header-title {
   max-width: none;
+  text-align: center;
+  font-size: 60px;
+}
+@media screen and (min-width: 1400px) {
+  .front-page .header-title {
+    font-size: 84px;
+  }
 }
 .front-page .header-title,
 .front-page .header-title a {
@@ -1350,27 +1355,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     margin-bottom: 28px;
   }
 }
-.light-background .header-title,
-.light-background .header-title a {
-  color: black;
-}
-.light-background .header-title a:hover {
-  color: #000000;
-  color: rgba(0, 0, 0, 0.8);
-}
-.front-page .header-title {
-  text-align: center;
-  font-size: 60px;
-}
-@media screen and (min-width: 1400px) {
-  .front-page .header-title {
-    font-size: 84px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .front-page .header-title {
-    font-size: 84px;
-  }
+.content-page .header-title {
+  position: relative;
+  z-index: 2;
 }
 .content-page .header-title,
 .content-page .header-title a {
@@ -1379,6 +1366,14 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-page .header-title a:hover {
   color: #444444;
   color: rgba(68, 68, 68, 0.8);
+}
+.light-background .header-title,
+.light-background .header-title a {
+  color: black;
+}
+.light-background .header-title a:hover {
+  color: #000000;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .front-page .header-bottom {
@@ -1794,7 +1789,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   height: 22px;
   font-size: 0;
 }
-.front-page .search-btn {
+.front-page .header-options .search-btn {
   top: 1px;
 }
 .content-page .header-options .search-btn {

@@ -203,11 +203,11 @@
   height: 22px;
   font-size: 0;
 
-  .front-page & {
-    top: 1px;
-  }
-
   .header-options & {
+    .front-page & {
+      top: 1px;
+    }
+
     .content-page & {
       top: 4px;
     }

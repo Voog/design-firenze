@@ -129,8 +129,6 @@
 
 .header-title {
   @extend %bebas-neue-latin;
-  position: relative;
-  z-index: 2;
   min-width: 96px;
   font-weight: 400;
   font-size: 30px;
@@ -148,6 +146,12 @@
 
   .front-page & {
     max-width: none;
+    text-align: center;
+    font-size: 60px;
+
+    @include query($large-1, 'min-width') {
+      font-size: #{60 * $wide-view-multiplier}px;
+    }
 
     &,
     a {
@@ -171,6 +175,22 @@
     }
   }
 
+  .content-page & {
+    position: relative;
+    z-index: 2;
+
+    &,
+    a {
+      @include color($secondary-color);
+    }
+
+    a {
+      &:hover {
+        @include color($secondary-color, 0.8);
+      }
+    }
+  }
+
   .light-background & {
     &,
     a {
@@ -180,32 +200,6 @@
     a {
       &:hover {
         @include color($black, 0.8);
-      }
-    }
-  }
-
-  .front-page & {
-    text-align: center;
-    font-size: 60px;
-
-    @include query($large-1, 'min-width') {
-      font-size: #{60 * $wide-view-multiplier}px;
-    }
-
-    @include query($large-1, 'min-width') {
-      font-size: #{60 * $wide-view-multiplier}px;
-    }
-  }
-
-  .content-page & {
-    &,
-    a {
-      @include color($secondary-color);
-    }
-
-    a {
-      &:hover {
-        @include color($secondary-color, 0.8);
       }
     }
   }
