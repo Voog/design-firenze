@@ -603,36 +603,36 @@
 // Language flag icons positioning in the spritemap.
 $flags:
 // Albanian (Albania)
-(sq,   0        0),
+(sq, 0 0),
 // Armenian (Armenia)
-(hy,  -21px     0),
+(hy, -21px 0),
 // Bengali (Bangladesh)
-(bn,  -42px     0),
+(bn, -42px 0),
 // Brazilian Portuguese (Brazil)
-(pt,  -63px     0),
+// (xx, -63px 0),
 // Bulgarian (Bulgaria)
-(bg,  -84px     0),
+(bg, -84px 0),
 // Chinese (China)
-(zh, -105px     0),
+(zh, -105px 0),
 // Croatian (Croatia)
-(hr, -126px     0),
+(hr, -126px 0),
 // Danish (Denmark)
-(da, -147px     0),
+(da, -147px 0),
 // Czech (Czech Republic)
-(cs, -168px     0),
+(cs, -168px 0),
 // Estonian (Estonia)
-(et, -189px     0),
+(et, -189px 0),
 
 // Finnish (Finland)
-(fi,    0px -15px),
+(fi, 0 -15px),
 // French (France)
-(fr,  -21px -15px),
+(fr, -21px -15px),
 // Georgian (Georgia)
-(ka,  -42px -15px),
+(ka, -42px -15px),
 // German (Germany)
-(de,  -63px -15px),
+(de, -63px -15px),
 // Greek (Greece)
-(el,  -84px -15px),
+(el, -84px -15px),
 // Hungarian (Hungary)
 (hu, -105px -15px),
 // Icelandic (Iceland)
@@ -645,15 +645,15 @@ $flags:
 (fa, -189px -15px),
 
 // Hebrew (Israel)
-(he,    0px -30px),
+(he, 0 -30px),
 // Italian (Italy)
-(it,  -21px -30px),
+(it, -21px -30px),
 // Japanese (Japan)
-(ja,  -42px -30px),
+(ja, -42px -30px),
 // Korean (Korea, South)
-(ko,  -63px -30px),
+(ko, -63px -30px),
 // Latvian (Latvia)
-(lv,  -84px -30px),
+(lv, -84px -30px),
 // Lithuanian (Lithuania)
 (lt, -105px -30px),
 // Malaysian (Malaysia)
@@ -666,15 +666,15 @@ $flags:
 (ur, -189px -30px),
 
 // Filipino (Philippines)
-(fil,   0px -45px),
+(fil, 0 -45px),
 // Polish (Poland)
-(pl,  -21px -45px),
+(pl, -21px -45px),
 // Romanian (Romania)
-(ro,  -42px -45px),
+(ro, -42px -45px),
 // Russian (Russia)
-(ru,  -63px -45px),
+(ru, -63px -45px),
 // Arabic (Saudi Arabia)
-(ar,  -84px -45px),
+(ar, -84px -45px),
 // Slovakian (Slovakia)
 (sk, -105px -45px),
 // Slovenian (Slovenia)
@@ -687,9 +687,23 @@ $flags:
 (tr, -189px -45px),
 
 // Ukrainian (Ukraine)
-(uk,    0px -60px),
+(uk, 0 -60px),
 // American English (United States of America)
-(en,  -21px -60px)
+(en, -21px -60px),
+// French (Ivory Coast)
+// (xx, -42px -60px),
+// British English (Great Britian)
+(en-gb, -63px -60px),
+// Portuguese (Portuguese Republic)
+(pt, -84px -60px),
+// Canadian English (Canada)
+// (xx, -105px, -60px),
+// Serbian (Republic of Serbia)
+(sr, -126px, -60px),
+// Dutch, French, German (Kingdom of Belgium)
+// (xx, -147px, -60px),
+// Australian English (Commonwealth of Australia)
+// (xx, -168px, -60px),
 ;
 
 @each $flag, $pos in $flags {
