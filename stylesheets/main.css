@@ -212,7 +212,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted pre:first-child,
 .content-formatted code:first-child,
 .content-formatted .edy-positionable-container-left-block:first-child,
-.content-formatted .edy-positionable-container-right-block:first-child {
+.content-formatted .edy-positionable-container-right-block:first-child,
+.content-formatted .edy-positionable-container-center-block:first-child {
   margin-top: 0;
 }
 .content-formatted h1:last-child,
@@ -227,7 +228,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted pre:last-child,
 .content-formatted code:last-child,
 .content-formatted .edy-positionable-container-left-block:last-child,
-.content-formatted .edy-positionable-container-right-block:last-child {
+.content-formatted .edy-positionable-container-right-block:last-child,
+.content-formatted .edy-positionable-container-center-block:last-child {
   margin-bottom: 0;
 }
 .content-formatted h1 {
@@ -302,6 +304,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted pre,
 .content-formatted .edy-positionable-container-left-block,
 .content-formatted .edy-positionable-container-right-block,
+.content-formatted .edy-positionable-container-center-block,
 .content-formatted .embed-container,
 .content-formatted .table-container, .editmode .content-formatted table {
   margin-top: 20px;
@@ -311,6 +314,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   .content-formatted pre,
   .content-formatted .edy-positionable-container-left-block,
   .content-formatted .edy-positionable-container-right-block,
+  .content-formatted .edy-positionable-container-center-block,
   .content-formatted .embed-container,
   .content-formatted .table-container, .editmode .content-formatted table {
     margin-top: 28px;

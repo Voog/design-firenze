@@ -26,7 +26,8 @@
   pre,
   code,
   .edy-positionable-container-left-block,
-  .edy-positionable-container-right-block {
+  .edy-positionable-container-right-block,
+  .edy-positionable-container-center-block {
     &:first-child {
       margin-top: 0;
     }
@@ -119,6 +120,7 @@
   pre,
   .edy-positionable-container-left-block,
   .edy-positionable-container-right-block,
+  .edy-positionable-container-center-block,
   .embed-container,
   .table-container,
   .editmode & table {
