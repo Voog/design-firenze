@@ -71,10 +71,6 @@
     @include query($tablet-3) {
       display: block;
       padding: 0 20px;
-
-      @include query($large-1, 'min-width') {
-        padding: 0 #{20 * $wide-view-multiplier}px;
-      }
     }
   }
 
@@ -132,20 +128,6 @@
   }
 }
 
-@include query($large-1, 'min-width') {
-  .voog-reference {
-    a {
-      width: 49px;
-      height: 11.2px;
-
-      @include query($large-1, 'min-width') {
-        width: #{49 * $wide-view-multiplier}px;
-        height: #{11.2 * $wide-view-multiplier}px;
-      }
-    }
-  }
-}
-
 .footer-gradient {
   @include background-image(
     linear-gradient(
@@ -153,6 +135,6 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2) 60%,
       rgba(0, 0, 0, 0.5) 100%
-      )
-    );
+    )
+  );
 }

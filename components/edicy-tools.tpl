@@ -95,7 +95,7 @@
       siteData.set("flags_state", FlagsState);
 
       $(this).toggleClass('js-flag-disable-btn');
-      $('.js-menu-lang-wrap, .js-header').toggleClass('flags-enabled flags-disabled');
+      $('.js-header').toggleClass('flags-enabled flags-disabled');
     });
   </script>
 {% endeditorjsblock %}

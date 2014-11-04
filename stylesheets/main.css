@@ -602,6 +602,11 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
 }
+@media screen and (max-width: 480px) {
+  .front-page .menu-main .menu .menu-item .menu-link {
+    padding: 0;
+  }
+}
 .light-background .menu-main .menu .menu-item .menu-link {
   color: black;
 }
@@ -642,7 +647,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu .menu-item .menu-link {
     display: block;
-    padding: 7px 10px 4px;
+    padding: 7px 20px 4px;
     font-size: 20px;
     border-bottom: 1px solid #888888;
     border-bottom: 1px solid rgba(136, 136, 136, 0.33);
@@ -708,6 +713,17 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     padding: 12px 25px 13px;
   }
 }
+.content-page .flags-disabled .menu-main .menu-lang .menu-item .menu-link {
+  padding: 11px 20px 8px;
+}
+.content-page .flags-disabled .menu-main .menu-lang .menu-item .menu-link:before, .content-page .flags-disabled .menu-main .menu-lang .menu-item .menu-link:after {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .content-page .flags-disabled .menu-main .menu-lang .menu-item .menu-link {
+    padding: 11px 10px 8px -99px;
+  }
+}
 
 .menu-sub-wrap {
   border-bottom: 1px solid #888888;
@@ -730,7 +746,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .menu-sub .menu .menu-item {
   display: inline-block;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media screen and (min-width: 1400px) {
   .menu-sub .menu .menu-item {
@@ -781,6 +797,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   padding: 5px 39px 4px 12px;
   color: #444444;
   color: rgba(68, 68, 68, 0.67);
+}
+.flags-disabled .menu-lang .menu-item .menu-link {
+  padding: 5px 12px 4px;
 }
 .menu-lang .menu-item .menu-link.active, .menu-lang .menu-item .menu-link.active:hover {
   opacity: 0.5;
@@ -1106,6 +1125,13 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   padding: 7px 12px;
   font-size: 13px;
 }
+@media screen and (max-width: 480px) {
+  .lang-options .menu .menu-item {
+    margin-top: 0;
+    padding: 10px 12px;
+    font-size: 17px;
+  }
+}
 
 .option-btn {
   font-family: inherit;
@@ -1271,7 +1297,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 @media screen and (max-width: 480px) {
-  .search-enabled.flags-disabled .header-top-inner {
+  .content-page .search-enabled.flags-disabled .header-top-inner {
     margin-right: 59px;
   }
 }
@@ -1288,24 +1314,23 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .header-options {
   position: absolute;
   z-index: 1;
-  right: 25px;
-  width: 50%;
+  left: 30px;
   text-align: right;
 }
 .front-page .header-options {
   top: 18px;
+  right: 25px;
+}
+.content-page .header-options {
+  right: 0;
+  left: 5px;
 }
 @media screen and (min-width: 1400px) {
   .front-page .header-options {
     top: 25.2px;
   }
-}
-.content-page .header-options {
-  top: 25px;
-}
-@media screen and (min-width: 1400px) {
   .content-page .header-options {
-    top: 35px;
+    top: 3px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2532,12 +2557,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 1400px) {
-  .footer .content-formatted {
-    padding: 0 28px;
-  }
-}
-
 .footer.light-background .content-formatted {
   color: #000000;
   color: rgba(0, 0, 0, 0.66);
@@ -2582,19 +2601,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
-}
-
-@media screen and (min-width: 1400px) {
-  .voog-reference a {
-    width: 49px;
-    height: 11.2px;
-  }
-}
-@media screen and (min-width: 1400px) and (min-width: 1400px) {
-  .voog-reference a {
-    width: 68.6px;
-    height: 15.68px;
-  }
 }
 
 .footer-gradient {

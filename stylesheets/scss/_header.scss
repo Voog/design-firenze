@@ -75,10 +75,10 @@
       @include query($large-1, 'min-width') {
         margin-right: 95px;
       }
-    }
 
-    @include query($mobile-1) {
-      margin-right: 59px;
+      @include query($mobile-1) {
+        margin-right: 59px;
+      }
     }
   }
 
@@ -100,23 +100,26 @@
 .header-options {
   position: absolute;
   z-index: 1;
-  right: 25px;
-  width: 50%;
+  left: 30px;
   text-align: right;
 
   .front-page & {
     top: 18px;
-
-    @include query($large-1, 'min-width') {
-      top: #{18 * $wide-view-multiplier}px;
-    }
+    right: 25px;
   }
 
   .content-page & {
-    top: 25px;
+    right: 0;
+    left: 5px;
+  }
 
-    @include query($large-1, 'min-width') {
-      top: #{25 * $wide-view-multiplier}px;
+  @include query($large-1, 'min-width') {
+    .front-page & {
+      top: #{18 * $wide-view-multiplier}px;
+    }
+
+    .content-page & {
+      top: 3px;
     }
   }
 

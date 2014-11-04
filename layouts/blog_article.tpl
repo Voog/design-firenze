@@ -17,7 +17,6 @@
     <div class="container-inner">
       <div class="wrap js-wrap">
         {% include "header" %}
-        {% include 'header-options' %}
         {% include "tags-post" %}
 
         <main class="content" role="main">

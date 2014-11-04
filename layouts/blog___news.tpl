@@ -15,9 +15,8 @@
 
   <div class="container js-container">
     <div class="container-inner">
-      <div class="wrap light-background js-wrap">
+      <div class="wrap js-wrap">
         {% include "header" %}
-        {% include 'header-options' %}
         {% include "tags-blog" %}
 
         <main class="content" role="main">

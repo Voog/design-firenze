@@ -150,7 +150,7 @@ a {
     margin-top: 30px;
 
     @include query($large-1, 'min-width') {
-  margin-top: #{30 * $wide-view-multiplier}px;
-}
+      margin-top: #{30 * $wide-view-multiplier}px;
+    }
   }
 }

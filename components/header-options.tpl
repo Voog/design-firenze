@@ -14,7 +14,7 @@
   {% endif %}
 
   {% if editmode or site.has_many_languages? %}
-    <nav class="menu-lang js-menu-lang-wrap {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
+    <nav class="menu-lang">
       <button class="menu-lang-btn lang-flag {% for language in site.languages %}{% if language.selected? %}lang-flag-{{ language.code }}{% endif %}{% endfor %} js-menu-lang-btn js-btn">
         <span class="lang-title">
           {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}

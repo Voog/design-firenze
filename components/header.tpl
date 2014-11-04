@@ -1,4 +1,6 @@
-<header class="header js-header{% if site.search.enabled %} search-enabled{% endif %}{% unless flags_state %} flags-disabled{% endunless %}">
+<header class="header js-header{% if site.search.enabled %} search-enabled{% endif %} {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
+  {% include "header-options" %}
+
   <div class="header-top">
     <div class="header-top-inner content-formatted">
       <div class="header-title">

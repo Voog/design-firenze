@@ -202,6 +202,10 @@
           &:hover {
             @include color($white, 0.8);
           }
+
+          @include query($mobile-1) {
+            padding: 0;
+          }
         }
 
         .light-background & {
@@ -254,7 +258,7 @@
         @include query($mobile-1) {
           .content-page & {
             display: block;
-            padding: 7px 10px 4px;
+            padding: 7px 20px 4px;
             font-size: 20px;
             @include border(bottom, 1px, solid, $primary-color, 0.33);
 
@@ -298,6 +302,7 @@
         display: block;
         margin-left: 0;
         padding-left: 0;
+
         .menu {
           .menu-item {
             text-align: left;
@@ -333,6 +338,25 @@
         }
       }
     }
+
+    .flags-disabled & {
+      .content-page & {
+        .menu-item {
+          .menu-link {
+            padding: 11px 20px 8px;
+
+            &:before,
+            &:after {
+              display: none;
+            }
+
+            @include query($mobile-1) {
+              padding: 11px 10px 8px -99px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -356,7 +380,7 @@
     .menu-item {
       display: inline-block;
       margin-right: 10px;
-      font-size: 14px;
+      font-size: 16px;
 
       @include query($large-1, 'min-width') {
         margin-right: #{10 * $wide-view-multiplier}px;
@@ -415,6 +439,10 @@
       display: block;
       padding: 5px 39px 4px 12px;
       @include color($secondary-color, 0.67);
+
+      .flags-disabled & {
+        padding: 5px 12px 4px;
+      }
 
       &.active,
       &.active:hover {
@@ -485,15 +513,6 @@
       font-size: 7.2px;
     }
   }
-
-  // TODO: Remove if decided to not use or add back if it is going to be used anyway.
-  // &.open {
-  //   .ico-popover-toggle {
-  //     top: -3px;
-  //     left: 1px;
-  //     @include transform(rotate(180deg));
-  //   }
-  // }
 
   .flags-enabled & {
     width: 31px;
@@ -718,7 +737,14 @@ $flags:
       margin-top: 8px;
       padding: 7px 12px;
       font-size: 13px;
+
+      @include query($mobile-1) {
+        margin-top: 0;
+        padding: 10px 12px;
+        font-size: 17px;
+      }
     }
+
   }
 }
 
@@ -782,6 +808,7 @@ $flags:
 
 .menu-tags {
   display: inline-block;
+
   .topbar & {
     display: none;
 
