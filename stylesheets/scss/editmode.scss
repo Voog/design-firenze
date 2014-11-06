@@ -35,3 +35,11 @@
     }
   }
 }
+
+.edy-gallery-area {
+  .edy-gallery-thumb {
+    .front-page & {
+      float: none;
+    }
+  }
+}

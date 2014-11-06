@@ -9,6 +9,11 @@
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 
+  .front-page & {
+    display: inline-block;
+    float: none;
+  }
+
   &.inactive {
     opacity: 0.8;
   }

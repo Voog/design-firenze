@@ -1591,6 +1591,10 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 }
+.front-page .edys-gallery-item {
+  display: inline-block;
+  float: none;
+}
 .edys-gallery-item.inactive {
   opacity: 0.8;
 }
