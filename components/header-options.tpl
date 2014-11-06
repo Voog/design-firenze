@@ -16,10 +16,12 @@
   {% if editmode or site.has_many_languages? %}
     <nav class="menu-lang">
       <button class="menu-lang-btn lang-flag {% for language in site.languages %}{% if language.selected? %}lang-flag-{{ language.code }}{% endif %}{% endfor %} js-menu-lang-btn js-btn">
-        <span class="lang-title">
-          {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
-          <span class="ico-popover-toggle">▼</span>
-        </span>
+        {% if editmode or flags_state == false %}
+          <span class="lang-title">
+            {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
+            <span class="ico-popover-toggle">▼</span>
+          </span>
+        {% endif %}
       </button>
       <div class="menu-lang-popover js-menu-lang js-popover">
         {% include "menu-lang" %}
