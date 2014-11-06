@@ -37,7 +37,8 @@
 }
 
 .edy-gallery-area {
-  .edy-gallery-thumb {
+  .edy-gallery-thumb,
+  .edy-gallery-sortable-placeholder {
     .front-page & {
       float: none;
     }
