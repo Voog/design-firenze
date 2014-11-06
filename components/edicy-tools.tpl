@@ -51,9 +51,6 @@
             bodyBgColorOpacity = (data.colorData && data.colorData !== '') ? data.colorData.a : 'none',
             bodyBgColorLightness = (data.colorData && data.colorData !== '' && data.colorData.lightness) ? data.colorData.lightness : 'none';
 
-        console.log('suitableImage: ' + suitableImage);
-        console.log('bodyBgImage: ' + bodyBgImage);
-
         // Removes the current lightness class.
         $('.js-background-type').removeClass('light-background dark-background');
         // Checks the opacity of the body background color and sets the lightness class depending on it's value.
