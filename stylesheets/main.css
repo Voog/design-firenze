@@ -1148,6 +1148,14 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .flags-enabled .option-btn .enable-text {
   display: none;
 }
+.option-btn .disable-text:first-letter,
+.option-btn .enable-text:first-letter {
+  text-transform: capitalize;
+}
+.option-btn .disable-text:first-letter,
+.option-btn .enable-text:first-letter {
+  text-transform: capitalize;
+}
 
 .tags-editor {
   padding: 15px 5px;

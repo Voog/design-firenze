@@ -769,6 +769,20 @@ $flags:
       display: none;
     }
   }
+
+  .disable-text,
+  .enable-text {
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  .disable-text,
+  .enable-text {
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
 }
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
