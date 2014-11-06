@@ -100,8 +100,8 @@
     background-size: cover;
 
     @include query($large-1, 'min-width') {
-      width: #{35 * $wide-view-multiplier}px;
-      height: #{8 * $wide-view-multiplier}px;
+      width: 52px;
+      height: 12px;
     }
 
     .svg & {

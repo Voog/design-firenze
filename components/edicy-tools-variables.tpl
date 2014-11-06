@@ -55,11 +55,11 @@
 
   {% if body_bg_image_sizes == nil %}
     {% if front_page %}
-      {% assign body_bg_image_sizes_str = '{"url":"' | append: images_path | append: '/front-page-bg.jpg", "height":1735, "width":2560}{"url":"' | append: images_path | append: '/front-page-bg_huge.jpg", "height":1388, "width":2048}{"url":"' | append: images_path | append: '/front-page-bg_large.jpg", "height":868, "width":1280}{"url":"' | append: images_path | append: '/front-page-bg_block.jpg", "height":407, "width":600}' %}
+      {% assign body_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/front-page-bg.jpg", "height":1735, "width":2560},{"url":"' | append: images_path | append: '/front-page-bg_huge.jpg", "height":1388, "width":2048},{"url":"' | append: images_path | append: '/front-page-bg_large.jpg", "height":868, "width":1280},{"url":"' | append: images_path | append: '/front-page-bg_block.jpg", "height":407, "width":600}]' %}
     {% elsif blog_page %}
-      {% assign body_bg_image_sizes_str = '{"url":"' | append: images_path | append: '/blog-page-bg.jpg", "height":1735, "width":2560}{"url":"' | append: images_path | append: '/blog-page-bg_huge.jpg", "height":1388, "width":2048}{"url":"' | append: images_path | append: '/blog-page-bg_large.jpg", "height":868, "width":1280}{"url":"' | append: images_path | append: '/blog-page-bg_block.jpg", "height":407, "width":600}' %}
+      {% assign body_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/blog-page-bg.jpg", "height":1735, "width":2560},{"url":"' | append: images_path | append: '/blog-page-bg_huge.jpg", "height":1388, "width":2048},{"url":"' | append: images_path | append: '/blog-page-bg_large.jpg", "height":868, "width":1280},{"url":"' | append: images_path | append: '/blog-page-bg_block.jpg", "height":407, "width":600}]' %}
     {% else %}
-      {% assign body_bg_image_sizes_str = '{"url":"' | append: images_path | append: '/common-page-bg.jpg", "height":1735, "width":2560}{"url":"' | append: images_path | append: '/common-page-bg_huge.jpg", "height":1388, "width":2048}{"url":"' | append: images_path | append: '/common-page-bg_large.jpg", "height":868, "width":1280}{"url":"' | append: images_path | append: '/common-page-bg_block.jpg", "height":407, "width":600}' %}
+      {% assign body_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/common-page-bg.jpg", "height":1735, "width":2560},{"url":"' | append: images_path | append: '/common-page-bg_huge.jpg", "height":1388, "width":2048},{"url":"' | append: images_path | append: '/common-page-bg_large.jpg", "height":868, "width":1280},{"url":"' | append: images_path | append: '/common-page-bg_block.jpg", "height":407, "width":600}]' %}
     {% endif %}
   {% else %}
     {% assign body_bg_image_sizes_str = body_bg_image_sizes | json %}
