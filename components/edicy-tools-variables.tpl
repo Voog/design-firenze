@@ -30,8 +30,8 @@
 
   {% comment %}Sets the body background type.{% endcomment %}
   {% if body_bg %}
-    {% if body_bg_color_opacity >= 0.16 %}
-      {% if body_bg_color_lightness >= 0.2 %}
+    {% if body_bg_color_opacity >= 0.2 %}
+      {% if body_bg_color_lightness >= 0.5 %}
         {% assign body_bg_type = 'light-background' %}
       {% else %}
         {% assign body_bg_type = 'dark-background' %}
