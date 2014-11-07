@@ -24,9 +24,11 @@
             <header class="post-header">
               <h2 class="post-title">{% editable article.title %}</h2>
               <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | format_date: 'long' }}</time>
-              <div class="post-comments-count">
-                <a href="#comments">{{ 'post_has_replies' | lcc : article.comments_count }}</a>
-              </div>
+              {% if article.comments_count > 0 %}
+                <div class="post-comments-count">
+                  <a href="#comments">{{ 'post_has_replies' | lcc : article.comments_count }}</a>
+                </div>
+              {% endif %}
             </header>
 
             <div class="post-content">
