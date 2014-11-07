@@ -516,6 +516,11 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .menu {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -1285,11 +1290,11 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 @media screen and (max-width: 480px) {
   .content-page .header-top-inner {
-    margin-right: 24px;
+    margin-right: 45px;
   }
 }
 .content-page .search-enabled .header-top-inner {
-  margin-right: 59px;
+  margin-right: 58px;
 }
 @media screen and (min-width: 1400px) {
   .content-page .search-enabled .header-top-inner {
@@ -1360,6 +1365,14 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
+}
+.header-title,
+.header-title a {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 @media screen and (min-width: 1400px) {
   .header-title {
@@ -1526,9 +1539,13 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .post-title {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   display: inline;
   margin: 0 10px 0 0;
-  word-break: break-all;
   font-weight: normal;
 }
 .editmode .post-title {
@@ -1548,6 +1565,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .post-date {
+  display: inline-block;
   color: #e2e2e2;
 }
 

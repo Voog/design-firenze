@@ -44,13 +44,13 @@
     margin-right: 31px;
 
     @include query($mobile-1) {
-      margin-right: 24px;
+      margin-right: 45px;
     }
   }
 
   .search-enabled & {
     .content-page & {
-      margin-right: 59px;
+      margin-right: 58px;
 
       @include query($large-1, 'min-width') {
         margin-right: 53px;
@@ -136,6 +136,11 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
+
+  &,
+  a {
+    @include hyphenate(true);
+  }
 
   html[lang=ru] & {
     @extend %bebas-neue-cyrillic;
