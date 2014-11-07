@@ -232,6 +232,14 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted .edy-positionable-container-center-block:last-child {
   margin-bottom: 0;
 }
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6 {
+  color: #444444;
+}
 .content-formatted h1 {
   font-size: 36px;
 }

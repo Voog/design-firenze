@@ -37,6 +37,15 @@
     }
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include color($secondary-color);
+  }
+
   // Editable content area headings.
   h1 {
     @extend %bebas-neue-latin;
