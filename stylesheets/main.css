@@ -688,6 +688,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 @media screen and (max-width: 480px) {
   .content-page .menu-main .menu .edit-btn {
     display: block;
+    margin-right: 0;
     margin-left: 0;
     padding: 10px 25px;
     border-bottom: 1px solid #888888;
@@ -710,7 +711,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     border-top: none;
   }
   .content-page .menu-main .menu-lang .menu .menu-item .menu-link {
-    padding: 11px 20px 8px 47px;
+    padding: 12px 20px 11px 47px;
+    font-size: 16px;
   }
   .content-page .menu-main .menu-lang .menu .menu-item .menu-link:before, .content-page .menu-main .menu-lang .menu .menu-item .menu-link:after {
     top: 13px;
@@ -727,7 +729,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 .content-page .flags-disabled .menu-main .menu-lang .menu-item .menu-link {
-  padding: 11px 20px 8px;
+  padding: 12px 20px 11px;
 }
 .content-page .flags-disabled .menu-main .menu-lang .menu-item .menu-link:before, .content-page .flags-disabled .menu-main .menu-lang .menu-item .menu-link:after {
   display: none;

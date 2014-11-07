@@ -286,6 +286,7 @@
       @include query($mobile-1) {
         .content-page & {
           display: block;
+          margin-right: 0;
           margin-left: 0;
           padding: 10px 25px;
           @include border(bottom, 1px, solid, $primary-color, 0.33);
@@ -313,7 +314,8 @@
             }
 
             .menu-link {
-              padding: 11px 20px 8px 47px;
+              padding: 12px 20px 11px 47px;
+              font-size: 16px;
 
               &:before,
               &:after {
@@ -344,7 +346,8 @@
       .content-page & {
         .menu-item {
           .menu-link {
-            padding: 11px 20px 8px;
+            padding: 12px 20px 11px;
+
 
             &:before,
             &:after {
