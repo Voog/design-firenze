@@ -6,7 +6,7 @@
           background-image: url("{{ imageSize.url }}");
         }
       {% else %}
-        @media screen and (max-width: {{ imageSize.width }}px) {
+        @media screen and (max-width: {{ imageSize.width }}px) and (max-height: {{ imageSize.height }}px) {
           .body-background-image {
             background-image: url("{{ imageSize.url }}");
           }
@@ -28,19 +28,19 @@
       background-image: url("{{ bg_image_prefix }}.jpg");
     }
 
-    @media screen and (max-width: 2048px) {
+    @media screen and (max-width: 2048px) and (max-height: 1388px) {
       .body-background-image {
         background-image: url("{{ bg_image_prefix }}_huge.jpg");
       }
     }
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1280px) and (max-height: 868px) {
       .body-background-image {
         background-image: url("{{ bg_image_prefix }}_large.jpg");
       }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) and (max-height: 407px) {
       .body-background-image {
         background-image: url("{{ bg_image_prefix }}_block.jpg");
       }
