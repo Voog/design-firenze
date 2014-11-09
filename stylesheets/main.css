@@ -233,13 +233,29 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted .edy-positionable-container-center-block:last-child {
   margin-bottom: 0;
 }
-.content-formatted h1,
-.content-formatted h2,
-.content-formatted h3,
-.content-formatted h4,
-.content-formatted h5,
+.content-page .content-formatted h1, .content-page
+.content-formatted h2, .content-page
+.content-formatted h3, .content-page
+.content-formatted h4, .content-page
+.content-formatted h5, .content-page
 .content-formatted h6 {
   color: #444444;
+}
+.front-page .light-background .content-formatted h1, .front-page .light-background
+.content-formatted h2, .front-page .light-background
+.content-formatted h3, .front-page .light-background
+.content-formatted h4, .front-page .light-background
+.content-formatted h5, .front-page .light-background
+.content-formatted h6 {
+  color: black;
+}
+.front-page .dark-backgground .content-formatted h1, .front-page .dark-backgground
+.content-formatted h2, .front-page .dark-backgground
+.content-formatted h3, .front-page .dark-backgground
+.content-formatted h4, .front-page .dark-backgground
+.content-formatted h5, .front-page .dark-backgground
+.content-formatted h6 {
+  color: black;
 }
 .content-formatted h1 {
   font-size: 36px;
@@ -305,6 +321,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted table,
 .content-formatted form {
   word-break: normal;
+  word-wrap: normal;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;

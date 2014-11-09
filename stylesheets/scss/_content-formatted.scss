@@ -43,7 +43,21 @@
   h4,
   h5,
   h6 {
-    @include color($secondary-color);
+    .content-page & {
+      @include color($secondary-color);
+    }
+
+    .light-background & {
+      .front-page & {
+        @include color($black);
+      }
+    }
+
+    .dark-backgground & {
+      .front-page & {
+        @include color($black);
+      }
+    }
   }
 
   // Editable content area headings.
