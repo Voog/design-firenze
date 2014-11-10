@@ -78,7 +78,6 @@
       commit: function(data) {
         // Defines the variable with the data to be saved.
         var commitData = $.extend(true, {}, data);
-        console.log(commitData{{  }}
 
         // Defines data for saving - image and color or their fallbacks.
         commitData.image = commitData.image || '';
