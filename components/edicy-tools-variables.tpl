@@ -10,22 +10,83 @@
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% if edicy-tools-variables == "article" %}
     {% assign body_bg = article.data.body_bg %}
-    {% assign body_bg_image = article.data.body_bg.image %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if article.data.body_image != nil and article.data.body_bg.image == nil %}
+      {% assign body_bg_image = article.data.body_image %}
+    {% else %}
+      {% assign body_bg_image = article.data.body_bg.image %}
+    {% endif %}
+
     {% assign body_bg_image_sizes = article.data.body_bg.imageSizes %}
 
-    {% assign body_bg_color_data = article.data.body_bg.colorData %}
-    {% assign body_bg_color = article.data.body_bg.color %}
-    {% assign body_bg_color_opacity = article.data.body_bg.colorData.a %}
-    {% assign body_bg_color_lightness = article.data.body_bg.colorData.lightness %}
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if article.data.body_colorData != nil and article.data.body_bg.colorData == nil %}
+      {% assign body_bg_color_data = article.data.body_colorData %}
+    {% else %}
+      {% assign body_bg_color_data = article.data.body_bg.colorData %}
+    {% endif %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if article.data.body_color != nil and article.data.body_bg.color == nil %}
+      {% assign body_bg_color = article.data.body_color %}
+    {% else %}
+      {% assign body_bg_color = article.data.body_bg.color %}
+    {% endif %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if article.data.body_opacity != nil article.data.body_bg.colorData.a == nil %}
+      {% assign body_bg_color = article.data.body_opacity %}
+    {% else %}
+      {% assign body_bg_color_opacity = article.data.body_bg.colorData.a %}
+    {% endif %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if article.data.body_lightness != nil article.data.body_bg.colorData.lightness == nil %}
+      {% assign body_bg_color_lightness = article.data.body_lightness %}
+    {% else %}
+      {% assign body_bg_color_lightness = article.data.body_bg.colorData.lightness %}
+    {% endif %}
+
   {% else %}
     {% assign body_bg = page.data.body_bg %}
-    {% assign body_bg_image = page.data.body_bg.image %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if page.data.body_image != nil and page.data.body_bg.image == nil %}
+      {% assign body_bg_image = page.data.body_image %}
+    {% else %}
+      {% assign body_bg_image = page.data.body_bg.image %}
+    {% endif %}
+
     {% assign body_bg_image_sizes = page.data.body_bg.imageSizes %}
 
-    {% assign body_bg_color = page.data.body_bg.color %}
-    {% assign body_bg_color_data = page.data.body_bg.colorData %}
-    {% assign body_bg_color_opacity = page.data.body_bg.colorData.a %}
-    {% assign body_bg_color_lightness = page.data.body_bg.colorData.lightness %}
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if page.data.body_colorData != nil and page.data.body_bg.colorData == nil %}
+      {% assign body_bg_color_data = page.data.body_colorData %}
+    {% else %}
+      {% assign body_bg_color_data = page.data.body_bg.colorData %}
+    {% endif %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if page.data.body_color != nil and page.data.body_bg.color == nil %}
+      {% assign body_bg_color = page.data.body_color %}
+    {% else %}
+      {% assign body_bg_color = page.data.body_bg.color %}
+    {% endif %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if page.data.body_opacity != nil page.data.body_bg.colorData.a == nil %}
+      {% assign body_bg_color = page.data.body_opacity %}
+    {% else %}
+      {% assign body_bg_color_opacity = page.data.body_bg.colorData.a %}
+    {% endif %}
+
+    {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
+    {% if page.data.body_lightness != nil page.data.body_bg.colorData.lightness == nil %}
+      {% assign body_bg_color_lightness = page.data.body_lightness %}
+    {% else %}
+      {% assign body_bg_color_lightness = page.data.body_bg.colorData.lightness %}
+    {% endif %}
   {% endif %}
 
   {% comment %}Sets the body background type.{% endcomment %}
