@@ -101,6 +101,16 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+
+  .edit-btn {
+    margin-right: 8px;
+    margin-left: 8px;
+
+    @include query($large-1, 'min-width') {
+      margin-right: #{8 * $wide-view-multiplier}px;
+      margin-left: #{8 * $wide-view-multiplier}px;
+    }
+  }
 }
 
 .menu-main {
@@ -273,14 +283,9 @@
     }
 
     .edit-btn {
-      margin-right: 8px;
-      margin-left: 8px;
-
       @include query($large-1, 'min-width') {
         position: relative;
         top: -2px;
-        margin-right: #{8 * $wide-view-multiplier}px;
-        margin-left: #{8 * $wide-view-multiplier}px;
       }
 
       @include query($mobile-1) {

@@ -547,6 +547,16 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   padding-left: 0;
   list-style: none;
 }
+.menu .edit-btn {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+@media screen and (min-width: 1400px) {
+  .menu .edit-btn {
+    margin-right: 11.2px;
+    margin-left: 11.2px;
+  }
+}
 
 .menu-main.narrow {
   max-width: 500px;
@@ -694,16 +704,10 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 
-.menu-main .menu .edit-btn {
-  margin-right: 8px;
-  margin-left: 8px;
-}
 @media screen and (min-width: 1400px) {
   .menu-main .menu .edit-btn {
     position: relative;
     top: -2px;
-    margin-right: 11.2px;
-    margin-left: 11.2px;
   }
 }
 @media screen and (max-width: 480px) {
