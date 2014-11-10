@@ -4,7 +4,7 @@
   {% assign blog_page = true %}
   {% include "html-head" %}
   {% include "edicy-tools-variables" with "article" %}
-  {% include "edicy-tools-styles" %}
+  {% include "edicy-tools-styles" with "article" %}
 </head>
 
 <body class="post-page content-page body-background-image js-body js-body-background-image">
