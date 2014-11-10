@@ -227,13 +227,13 @@
 .edy-image-container-with-title {
   &:after {
     display: block;
-    padding: 4px 6px 2px;
-    font-size: 16px;
+    padding: 2px;
+    font-size: 11px;
     content: attr(data-title);
 
     @include query($large-1, 'min-width') {
-      padding: #{4 * $wide-view-multiplier}px #{6 * $wide-view-multiplier}px #{2 * $wide-view-multiplier}px;
-      font-size: #{16 * $wide-view-multiplier}px;
+      padding: #{2 * $wide-view-multiplier}px;
+      font-size: #{11 * $wide-view-multiplier}px;
     }
   }
 }

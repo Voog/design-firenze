@@ -411,14 +411,14 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .content-formatted .edy-image-container-with-title:after {
   display: block;
-  padding: 4px 6px 2px;
-  font-size: 16px;
+  padding: 2px;
+  font-size: 11px;
   content: attr(data-title);
 }
 @media screen and (min-width: 1400px) {
   .content-formatted .edy-image-container-with-title:after {
-    padding: 5.6px 8.4px 2.8px;
-    font-size: 22.4px;
+    padding: 2.8px;
+    font-size: 15.4px;
   }
 }
 .content-formatted .table-container {
