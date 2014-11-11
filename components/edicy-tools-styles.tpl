@@ -7,7 +7,7 @@
     {% assign fallback_color = page.data.body_color %}
   {% endif %}
 
-  {% if (fallback_image != nil or fallback_image != "") and body_bg.image == nil %}
+  {% if fallback_image != nil and fallback_image != "" and body_bg.image == nil %}
     .body-background-image {
       background-image: url("{{ fallback_image }}");
     }
@@ -63,7 +63,7 @@
     {% endif %}
   {% endif %}
 
-  {% if (fallback_color != nil or fallback_color != "") and body_bg.color == nil %}
+  {% if fallback_color != nil and fallback_color != "" and body_bg.color == nil %}
     .body-background-color {
       background-color: {{ fallback_color }};
     }
