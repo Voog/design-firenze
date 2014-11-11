@@ -36,7 +36,7 @@
 
     {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
     {% if article.data.body_opacity != nil article.data.body_bg.colorData.a == nil %}
-      {% assign body_bg_color = article.data.body_opacity %}
+      {% assign body_bg_color_opacity = article.data.body_opacity %}
     {% else %}
       {% assign body_bg_color_opacity = article.data.body_bg.colorData.a %}
     {% endif %}
@@ -76,7 +76,7 @@
 
     {% comment %}Fallbacks to old data save location if it is set and newer is not saved yet.{% endcomment %}
     {% if page.data.body_opacity != nil page.data.body_bg.colorData.a == nil %}
-      {% assign body_bg_color = page.data.body_opacity %}
+      {% assign body_bg_color_opacity = page.data.body_opacity %}
     {% else %}
       {% assign body_bg_color_opacity = page.data.body_bg.colorData.a %}
     {% endif %}

@@ -1,5 +1,4 @@
 <style>
-
   {% if edicy-tools-styles == "article" %}
     {% assign fallback_image = article.data.body_image %}
     {% assign fallback_color = article.data.body_color %}
@@ -8,10 +7,11 @@
     {% assign fallback_color = page.data.body_color %}
   {% endif %}
 
-  {% if fallback_image != nil and body_bg.image == nil %}
+  {% if (fallback_image != nil and fallback_image != "") and body_bg.image == nil %}
     .body-background-image {
       background-image: url("{{ fallback_image }}");
     }
+
   {% else %}
 
     {% if body_bg.image != nil %}
@@ -63,7 +63,7 @@
     {% endif %}
   {% endif %}
 
-  {% if fallback_color != nil and body_bg.color == nil %}
+  {% if (fallback_color != nil and fallback_color != "") and body_bg.color == nil %}
     .body-background-color {
       background-color: {{ fallback_color }};
     }

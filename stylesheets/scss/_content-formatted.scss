@@ -224,20 +224,19 @@
     }
 
   // Content area image title
-.edy-image-container-with-title {
-  &:after {
-    display: block;
-    padding: 2px;
-    font-size: 11px;
-    content: attr(data-title);
+  .edy-image-container-with-title {
+    &:after {
+      display: block;
+      padding: 2px;
+      font-size: 11px;
+      content: attr(data-title);
 
-    @include query($large-1, 'min-width') {
-      padding: #{2 * $wide-view-multiplier}px;
-      font-size: #{11 * $wide-view-multiplier}px;
+      @include query($large-1, 'min-width') {
+        padding: #{2 * $wide-view-multiplier}px;
+        font-size: #{11 * $wide-view-multiplier}px;
+      }
     }
   }
-}
-
 
   // Styling rules for the site's editable content area tables.
   // Container around editable content-area table.
