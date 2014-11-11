@@ -1,10 +1,13 @@
 <style>
-  {% if fallback_image != nil and fallback_image != "" and body_bg.image == nil %}
-    {% assign fallback_state = true %}
+  {% if fallback_image != nil and body_bg.image == nil %}
     .body-background-image {
       background-image: url("{{ fallback_image }}");
     }
 
+  {% elsif fallback_image == "" and body_bg.image == nil %}
+    .body-background-image {
+      background-image: none;
+    }
   {% else %}
 
     {% if body_bg.image != nil %}
@@ -56,11 +59,17 @@
     {% endif %}
   {% endif %}
 
-  {% if fallback_color != nil and fallback_color != "" and body_bg.color == nil %}
+  {% if fallback_color != nil and body_bg.color == nil %}
+    {% assign fallback_state = true %}
     .body-background-color {
       background-color: {{ fallback_color }};
     }
 
+  {% elsif fallback_color == "" and body_bg.color == nil %}
+    {% assign fallback_state = true %}
+    .body-background-color {
+      background-color: transparent;
+    }
   {% else %}
 
     {% if body_bg.color %}
