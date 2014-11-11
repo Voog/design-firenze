@@ -65,7 +65,7 @@
       background-color: {{ fallback_color }};
     }
 
-  {% elsif fallback_color == "" and body_bg.color == nil %}
+  {% elsif (fallback_color == "transparent" or fallback_color == "") and body_bg.color == nil %}
     {% assign fallback_state = true %}
     .body-background-color {
       background-color: transparent;
