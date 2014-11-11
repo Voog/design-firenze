@@ -7,6 +7,14 @@
     {% assign flags_state = site.data.flags_state %}
   {% endif %}
 
+  {% if edicy-tools-variables == "article" %}
+    {% assign fallback_image = article.data.body_image %}
+    {% assign fallback_color = article.data.body_color %}
+  {% else %}
+    {% assign fallback_image = page.data.body_image %}
+    {% assign fallback_color = page.data.body_color %}
+  {% endif %}
+
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% if edicy-tools-variables == "article" %}
     {% assign body_bg = article.data.body_bg %}

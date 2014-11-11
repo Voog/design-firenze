@@ -1,13 +1,6 @@
 <style>
-  {% if edicy-tools-styles == "article" %}
-    {% assign fallback_image = article.data.body_image %}
-    {% assign fallback_color = article.data.body_color %}
-  {% else %}
-    {% assign fallback_image = page.data.body_image %}
-    {% assign fallback_color = page.data.body_color %}
-  {% endif %}
-
   {% if fallback_image != nil and fallback_image != "" and body_bg.image == nil %}
+    {% assign fallback_state = true %}
     .body-background-image {
       background-image: url("{{ fallback_image }}");
     }
