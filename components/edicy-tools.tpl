@@ -85,7 +85,7 @@
         commitData.color = commitData.color || 'transparent';
 
         // Saves the background data to custom data.
-        {% if bg-picker == "article" %}
+        {% if edicy-tools == "article" %}
           // Saves background image and color data for article pages.
           Edicy.articles.currentArticle.setData("body_bg", commitData);
         {% else %}
