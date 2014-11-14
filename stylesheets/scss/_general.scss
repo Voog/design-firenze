@@ -19,6 +19,7 @@ body {
   @include color($primary-color);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
 
   @include query($large-1, 'min-width') {
     font-size: #{round(round(14 * $wide-view-multiplier))}px;

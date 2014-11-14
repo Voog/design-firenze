@@ -33,6 +33,7 @@ body {
   color: #888888;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
 }
 @media screen and (min-width: 1400px) {
   body {
@@ -2512,7 +2513,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 @media screen and (min-width: 1400px) {
   .comments {
     margin-top: 35px;
-    padding: 35px 6 0;
+    padding: 35px 7px 0;
     border-width: 1px;
   }
 }
