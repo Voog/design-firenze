@@ -21,7 +21,7 @@ body {
   background-attachment: fixed;
 
   @include query($large-1, 'min-width') {
-    font-size: #{14 * $wide-view-multiplier}px;
+    font-size: #{round(round(14 * $wide-view-multiplier))}px;
   }
 }
 
@@ -118,7 +118,7 @@ a {
     padding: 25px;
 
     @include query($large-1, 'min-width') {
-      padding: #{25 * $wide-view-multiplier}px;
+      padding: #{round(25 * $wide-view-multiplier)}px;
     }
 
     .content-page & {
@@ -130,7 +130,7 @@ a {
       @include bg($white);
 
       @include query($large-1, 'min-width') {
-        max-width: #{650 * $wide-view-multiplier}px;
+        max-width: #{round(650 * $wide-view-multiplier)}px;
       }
     }
   }
@@ -150,7 +150,7 @@ a {
     margin-top: 30px;
 
     @include query($large-1, 'min-width') {
-      margin-top: #{30 * $wide-view-multiplier}px;
+      margin-top: #{round(30 * $wide-view-multiplier)}px;
     }
   }
 }

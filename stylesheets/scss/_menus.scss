@@ -15,9 +15,9 @@
     border-radius: 5px;
 
     @include query($large-1, 'min-width') {
-      width: #{23 * $wide-view-multiplier}px;
-      height: #{4 * $wide-view-multiplier}px;
-      margin: #{4 * $wide-view-multiplier}px 0;
+      width: #{round(23 * $wide-view-multiplier)}px;
+      height: #{round(4 * $wide-view-multiplier)}px;
+      margin: #{round(4 * $wide-view-multiplier)}px 0;
     }
 
     &:first-child,
@@ -74,9 +74,9 @@
   }
 
   @include query($large-1, 'min-width') {
-    width: #{155 * $wide-view-multiplier}px;
-    padding: 0 #{20 * $wide-view-multiplier}px;
-    font-size: #{16 * $wide-view-multiplier}px;
+    width: #{round(155 * $wide-view-multiplier)}px;
+    padding: 0 #{round(20 * $wide-view-multiplier)}px;
+    font-size: #{round(16 * $wide-view-multiplier)}px;
   }
 
   &.open,
@@ -107,8 +107,8 @@
     margin-left: 8px;
 
     @include query($large-1, 'min-width') {
-      margin-right: #{8 * $wide-view-multiplier}px;
-      margin-left: #{8 * $wide-view-multiplier}px;
+      margin-right: #{round(8 * $wide-view-multiplier)}px;
+      margin-left: #{round(8 * $wide-view-multiplier)}px;
     }
   }
 }
@@ -124,7 +124,7 @@
     max-width: 500px;
 
     @include query($large-1, 'min-width') {
-      max-width: #{500 * $wide-view-multiplier}px;
+      max-width: #{round(500 * $wide-view-multiplier)}px;
     }
   }
 
@@ -149,10 +149,10 @@
         @include bg($white);
 
         @include query($large-1, 'min-width') {
-          top: #{50  * $wide-view-multiplier}px;
-          rigth: #{-25 * $wide-view-multiplier}px;
-          left: #{-25 * $wide-view-multiplier}px;
-          margin-bottom: #{40 * $wide-view-multiplier}px;
+          top: #{round(50  * $wide-view-multiplier)}px;
+          rigth: #{round(-25 * $wide-view-multiplier)}px;
+          left: #{round(-25 * $wide-view-multiplier)}px;
+          margin-bottom: #{round(40 * $wide-view-multiplier)}px;
         }
       }
     }
@@ -169,13 +169,13 @@
       margin-right: 8px;
 
       @include query($large-1, 'min-width') {
-        margin-right: #{8 * $wide-view-multiplier}px;
+        margin-right: #{round(8 * $wide-view-multiplier)}px;
       }
       .front-page & {
         margin-right: 15px;
 
         @include query($large-1, 'min-width') {
-          margin-right: #{8 * $wide-view-multiplier}px;
+          margin-right: #{round(8 * $wide-view-multiplier)}px;
         }
       }
 
@@ -202,7 +202,7 @@
           @include color($white);
 
           @include query($large-1, 'min-width') {
-            font-size: #{16 * $wide-view-multiplier}px;
+            font-size: #{round(16 * $wide-view-multiplier)}px;
           }
 
           &.untranslated {
@@ -237,7 +237,7 @@
           @include color($primary-color);
 
           @include query($large-1, 'min-width') {
-            font-size: #{14 * $wide-view-multiplier}px;
+            font-size: #{round(14 * $wide-view-multiplier)}px;
           }
 
           &.untranslated {
@@ -274,8 +274,8 @@
             @include border(bottom, 1px, solid, $primary-color, 0.33);
 
             @include query($large-1, 'min-width') {
-              padding: #{7 * $wide-view-multiplier}px #{10 * $wide-view-multiplier}px #{4 * $wide-view-multiplier}px;
-              font-size: #{20 * $wide-view-multiplier}px;
+              padding: #{round(7 * $wide-view-multiplier)}px #{round(10 * $wide-view-multiplier)}px #{round(4 * $wide-view-multiplier)}px;
+              font-size: #{round(20 * $wide-view-multiplier)}px;
             }
           }
         }
@@ -382,7 +382,7 @@
   padding: 15px 5px;
 
   @include query($large-1, 'min-width') {
-    padding: #{15 * $wide-view-multiplier}px #{5 * $wide-view-multiplier}px;
+    padding: #{round(15 * $wide-view-multiplier)}px #{round(5 * $wide-view-multiplier)}px;
   }
 
   .menu {
@@ -392,8 +392,8 @@
       font-size: 16px;
 
       @include query($large-1, 'min-width') {
-        margin-right: #{10 * $wide-view-multiplier}px;
-        font-size: #{14 * $wide-view-multiplier}px;
+        margin-right: #{round(10 * $wide-view-multiplier)}px;
+        font-size: #{round(14 * $wide-view-multiplier)}px;
       }
 
       &:first-child {
@@ -600,7 +600,7 @@
     text-align: right;
 
     @include query($large-1, 'min-width') {
-      padding: #{8 * $wide-view-multiplier}px #{18 * $wide-view-multiplier}px #{3 * $wide-view-multiplier}px;
+      padding: #{round(8 * $wide-view-multiplier)}px #{round(18 * $wide-view-multiplier)}px #{round(3 * $wide-view-multiplier)}px;
     }
   }
 }
@@ -610,7 +610,7 @@
     background-position: -189px -60px;
 
     @include query($large-1, 'min-width') {
-      background-position: #{-189 * 2}px #{-60 * 2}px;
+      background-position: #{round(-189 * 2)}px #{round(-60 * 2)}px;
     }
   }
 
@@ -799,7 +799,7 @@ $flags:
   padding: 15px 5px;
 
   @include query($large-1, 'min-width') {
-    padding: #{15 * $wide-view-multiplier}px #{5 * $wide-view-multiplier}px;
+    padding: #{round(15 * $wide-view-multiplier)}px #{round(5 * $wide-view-multiplier)}px;
   }
 }
 
@@ -820,7 +820,7 @@ $flags:
     border: none;
 
     @include query($large-1, 'min-width') {
-      right: #{5 * $wide-view-multiplier}px;
+      right: #{round(5 * $wide-view-multiplier)}px;
     }
   }
 }
@@ -842,7 +842,7 @@ $flags:
       @include bg($black);
 
       @include query($large-1, 'min-width') {
-        padding-bottom: #{30 * $wide-view-multiplier}px;
+        padding-bottom: #{round(30 * $wide-view-multiplier)}px;
       }
 
       .menu-item {
@@ -855,8 +855,8 @@ $flags:
           @include color($primary-color);
 
           @include query($large-1, 'min-width') {
-            padding: #{3 * $wide-view-multiplier}px #{20 * $wide-view-multiplier}px;
-            font-size: #{12 * $wide-view-multiplier}px;
+            padding: #{round(3 * $wide-view-multiplier)}px #{round(20 * $wide-view-multiplier)}px;
+            font-size: #{round(12 * $wide-view-multiplier)}px;
           }
 
           &.active,

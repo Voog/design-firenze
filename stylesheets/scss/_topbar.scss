@@ -10,7 +10,7 @@
   @include perspective;
 
   @include query($large-1, 'min-width') {
-  top: #{-200 * $wide-view-multiplier}px;
+  top: #{round(-200 * $wide-view-multiplier)}px;
 }
 
   .wrap {
@@ -21,8 +21,8 @@
     padding: 12px 30px;
 
     @include query($large-1, 'min-width') {
-  max-width: #{650 * $wide-view-multiplier}px;
-  padding: #{12 * $wide-view-multiplier}px #{30 * $wide-view-multiplier}px;
+  max-width: #{round(650 * $wide-view-multiplier)}px;
+  padding: #{round(12 * $wide-view-multiplier)}px #{round(30 * $wide-view-multiplier)}px;
 }
 
     .container-inner & {

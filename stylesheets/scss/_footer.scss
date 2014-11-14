@@ -9,8 +9,8 @@
   text-align: center;
 
   @include query($large-1, 'min-width') {
-    min-height: #{20 * $wide-view-multiplier}px;
-    padding: #{60 * $wide-view-multiplier}px 0 #{20 * $wide-view-multiplier}px;
+    min-height: #{round(20 * $wide-view-multiplier)}px;
+    padding: #{round(60 * $wide-view-multiplier)}px 0 #{round(20 * $wide-view-multiplier)}px;
   }
 
   .container-long & {
@@ -21,8 +21,8 @@
     padding-bottom: 21px;
 
     @include query($large-1, 'min-width') {
-      margin-top: #{-43 * $wide-view-multiplier}px;
-      padding-bottom: #{21 * $wide-view-multiplier}px;
+      margin-top: #{round(-43 * $wide-view-multiplier)}px;
+      padding-bottom: #{round(21 * $wide-view-multiplier)}px;
     }
   }
 
@@ -31,7 +31,7 @@
     margin: 0 auto;
 
     @include query($large-1, 'min-width') {
-      max-width: #{720 * $wide-view-multiplier}px;
+      max-width: #{round(720 * $wide-view-multiplier)}px;
     }
   }
 
@@ -53,9 +53,9 @@
     }
 
     @include query($large-1, 'min-width') {
-      min-width: #{100 * $wide-view-multiplier}px;
-      padding-right: #{10 * $wide-view-multiplier}px;
-      font-size: #{9 * $wide-view-multiplier}px;
+      min-width: #{round(100 * $wide-view-multiplier)}px;
+      padding-right: #{round(10 * $wide-view-multiplier)}px;
+      font-size: #{round(9 * $wide-view-multiplier)}px;
     }
 
     @include color($white, 0.33);

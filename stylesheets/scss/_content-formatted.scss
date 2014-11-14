@@ -70,7 +70,7 @@
     }
 
     @include query($large-1, 'min-width') {
-      font-size: #{36 * $wide-view-multiplier}px;
+      font-size: #{round(36 * $wide-view-multiplier)}px;
     }
   }
 
@@ -78,7 +78,7 @@
     font-size: 18px;
 
     @include query($large-1, 'min-width') {
-      font-size: #{18 * $wide-view-multiplier}px;
+      font-size: #{round(18 * $wide-view-multiplier)}px;
     }
   }
 
@@ -89,7 +89,7 @@
     font-size: 16px;
 
     @include query($large-1, 'min-width') {
-      font-size: #{16 * $wide-view-multiplier}px;
+      font-size: #{round(16 * $wide-view-multiplier)}px;
     }
   }
 
@@ -151,8 +151,8 @@
     margin-bottom: 20px;
 
     @include query($large-1, 'min-width') {
-      margin-top: #{20 * $wide-view-multiplier}px;
-      margin-bottom: #{20 * $wide-view-multiplier}px;
+      margin-top: #{round(20 * $wide-view-multiplier)}px;
+      margin-bottom: #{round(20 * $wide-view-multiplier)}px;
     }
   }
 
@@ -163,7 +163,7 @@
     @include bg($grey-2);
 
     @include query($large-1, 'min-width') {
-      font-size: #{14 * $wide-view-multiplier}px;
+      font-size: #{round(14 * $wide-view-multiplier)}px;
     }
   }
 
@@ -191,7 +191,7 @@
     margin: 20px 40px;
 
     @include query($large-1, 'min-width') {
-      margin: #{20 * $wide-view-multiplier}px #{40 * $wide-view-multiplier}px;
+      margin: #{round(20 * $wide-view-multiplier)}px #{round(40 * $wide-view-multiplier)}px;
     }
   }
 
@@ -211,7 +211,7 @@
       margin-right: 20px;
 
       @include query($large-1, 'min-width') {
-        margin-right: #{20 * $wide-view-multiplier}px;
+        margin-right: #{round(20 * $wide-view-multiplier)}px;
       }
     }
 
@@ -219,7 +219,7 @@
       margin-left: 20px;
 
       @include query($large-1, 'min-width') {
-        margin-left: #{20 * $wide-view-multiplier}px;
+        margin-left: #{round(20 * $wide-view-multiplier)}px;
       }
     }
 
@@ -232,8 +232,8 @@
       content: attr(data-title);
 
       @include query($large-1, 'min-width') {
-        padding: #{2 * $wide-view-multiplier}px;
-        font-size: #{11 * $wide-view-multiplier}px;
+        padding: #{round(2 * $wide-view-multiplier)}px;
+        font-size: #{round(11 * $wide-view-multiplier)}px;
       }
     }
   }
@@ -244,7 +244,7 @@
     margin-top: 20px;
 
     @include query($large-1, 'min-width') {
-      margin-top: #{20 * $wide-view-multiplier}px;
+      margin-top: #{round(20 * $wide-view-multiplier)}px;
     }
   }
 
@@ -261,7 +261,7 @@
     border-collapse: collapse;
 
     @include query($large-1, 'min-width') {
-      font-size: #{16 * $wide-view-multiplier}px;
+      font-size: #{round(16 * $wide-view-multiplier)}px;
     }
 
     td {
@@ -275,7 +275,7 @@
       }
 
       @include query($large-1, 'min-width') {
-        border-witdh: #{1 * $wide-view-multiplier}px;
+        border-witdh: #{round(1 * $wide-view-multiplier)}px;
       }
     }
   }

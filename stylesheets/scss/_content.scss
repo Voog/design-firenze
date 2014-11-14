@@ -4,7 +4,7 @@
   padding: 25px 5px 4px;
 
   @include query($large-1, 'min-width') {
-    padding: #{25 * $wide-view-multiplier}px #{5 * $wide-view-multiplier}px #{4 * $wide-view-multiplier}px;
+    padding: #{round(25 * $wide-view-multiplier)}px #{round(5 * $wide-view-multiplier)}px #{round(4 * $wide-view-multiplier)}px;
   }
 
   .front-page & {
@@ -19,9 +19,9 @@
       @include border(top, 3px, solid, $white);
 
       @include query($large-1, 'min-width') {
-        min-width: #{211 * $wide-view-multiplier}px;
-        padding-bottom: #{19 * $wide-view-multiplier}px 0 #{21 * $wide-view-multiplier}px;
-        border-width: #{3 * $wide-view-multiplier}px;
+        min-width: #{round(211 * $wide-view-multiplier)}px;
+        padding-bottom: #{round(19 * $wide-view-multiplier)}px 0 #{round(21 * $wide-view-multiplier)}px;
+        border-width: #{round(3 * $wide-view-multiplier)}px;
       }
 
       &:empty {

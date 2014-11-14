@@ -8,9 +8,9 @@
     @include border(bottom, 1px, solid, $primary-color, 0.33);
 
     @include query($large-1, 'min-width') {
-      padding-right: #{5 * $wide-view-multiplier}px;
-      padding-bottom: #{5 * $wide-view-multiplier}px;
-      padding-left: #{5 * $wide-view-multiplier}px;
+      padding-right: #{round(5 * $wide-view-multiplier)}px;
+      padding-bottom: #{round(5 * $wide-view-multiplier)}px;
+      padding-left: #{round(5 * $wide-view-multiplier)}px;
       border-width: 2px;
     }
   }
@@ -36,7 +36,7 @@
     @include border(bottom, 3px, solid, $white);
 
     @include query($large-1, 'min-width') {
-      border-width: #{3 * $wide-view-multiplier}px;
+      border-width: #{round(3 * $wide-view-multiplier)}px;
     }
   }
 
@@ -115,7 +115,7 @@
 
   @include query($large-1, 'min-width') {
     .front-page & {
-      top: #{18 * $wide-view-multiplier}px;
+      top: #{round(18 * $wide-view-multiplier)}px;
     }
 
     .content-page & {
@@ -147,9 +147,9 @@
   }
 
   @include query($large-1, 'min-width') {
-    max-width: #{630 * $wide-view-multiplier}px;
-    min-width: #{211 * $wide-view-multiplier}px;
-    font-size: #{30 * $wide-view-multiplier}px;
+    max-width: #{round(630 * $wide-view-multiplier)}px;
+    min-width: #{round(211 * $wide-view-multiplier)}px;
+    font-size: #{round(30 * $wide-view-multiplier)}px;
   }
 
   .front-page & {
@@ -158,7 +158,7 @@
     font-size: 60px;
 
     @include query($large-1, 'min-width') {
-      font-size: #{60 * $wide-view-multiplier}px;
+      font-size: #{round(60 * $wide-view-multiplier)}px;
     }
 
     &,
@@ -178,7 +178,7 @@
       margin-bottom: 20px;
 
       @include query($large-1, 'min-width') {
-        margin-bottom: #{20 * $wide-view-multiplier}px;
+        margin-bottom: #{round(20 * $wide-view-multiplier)}px;
       }
     }
   }
@@ -218,7 +218,7 @@
     padding-top: 25px;
 
     @include query($large-1, 'min-width') {
-      padding-top: #{25 * $wide-view-multiplier}px;
+      padding-top: #{round(25 * $wide-view-multiplier)}px;
     }
   }
 }
