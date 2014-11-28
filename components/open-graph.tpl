@@ -35,14 +35,7 @@
   <meta property="og:description" content="{{ excerpt_description }}">
   <meta name="description" content="{{ excerpt_description }}">
 {% else %}
-  {% if article and (article.description == nil or article.description == "") %}
-    {% assign description = article.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
-  {% elsif article %}
-    {% assign description = article.description %}
-  {% else %}
-    {% assign description = page.description %}
-  {% endif %}
-
+  {% if article %}{% assign description = article.description %}{% else %}{% assign description = page.description %}{% endif %}
   {% if description != nil and description != "" %}
     <meta property="og:description" content="{{ description }}">
     <meta name="description" content="{{ description }}">

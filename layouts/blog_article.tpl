@@ -22,7 +22,7 @@
         <main class="content" role="main">
           <article class="post">
             <header class="post-header">
-              <h2 class="post-title">{% editable article.title %}</h2>
+              <h1 class="post-title">{% editable article.title %}</h1>
               <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | format_date: 'long' }}</time>
               {% if article.comments_count > 0 %}
                 <div class="post-comments-count">

@@ -24,7 +24,7 @@
           {% for article in articles %}
             <article class="post">
               <header class="post-header">
-                <h2 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
+                <h1 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h1>
                 <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | format_date: 'long' }}</time>
               </header>
 
