@@ -36,7 +36,7 @@
   <meta name="description" content="{{ excerpt_description }}">
 {% else %}
   {% if article and (article.description == nil or article.description == "") %}
-    {% assign description = articles.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
+    {% assign description = article.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
   {% elsif article %}
     {% assign description = article.description %}
   {% else %}
