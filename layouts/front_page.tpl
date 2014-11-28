@@ -12,10 +12,6 @@
   {% if body_bg_color != '' or editmode %}<div class="body-background-color js-body-background-color"></div>{% endif %}
 
   <div class="container js-container">
-  {% if images_path contains "http://" %}
-  <script>console.log('bla');</script>
-  {% endif %}
-    <script>console.log('{{ images_path }}');</script>
     <div class="container-inner">
       <div class="wrap js-wrap js-background-type {{ body_bg_type }}">
         {% include "header" %}
