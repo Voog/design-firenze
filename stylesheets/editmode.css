@@ -27,6 +27,9 @@
   outline: 1px solid rgba(255, 255, 255, 0.63);
 }
 
+.edy-gallery-area {
+  font-size: 0;
+}
 .front-page .edy-gallery-area .edy-gallery-thumb, .front-page
 .edy-gallery-area .edy-gallery-sortable-placeholder {
   float: none;
