@@ -34,13 +34,14 @@
         var getImageByWidth = function(sizes, targetWidth) {
           var prevImage;
 
-          for (var i = sizes.length; i--;) {
-            if (sizes[i].width > targetWidth) {
+          for (var i = 0, max = sizes.length; i < max; i++) {
+            if (sizes[i].width < targetWidth) {
               return prevImage || sizes[i];
             }
+            prevImage = sizes[i];
           }
           // Makes sure that smallest is returned if all images bigger than targetWidth.
-          return sizes[sizes.length - 1]
+          return sizes[sizes.length - 1];
         };
 
         // Defines the suitable image based on the viewport width.
