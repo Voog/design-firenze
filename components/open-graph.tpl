@@ -31,9 +31,9 @@
 
 {% comment %}Open Graph description{% endcomment %}
 {% if blog_page and (page.description == nil or page.description == "") %}
-  {% assign excerpt_description = articles.first.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
-  <meta property="og:description" content="{{ excerpt_description }}">
-  <meta name="description" content="{{ excerpt_description }}">
+  {% assign description = articles.first.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
+  <meta property="og:description" content="{{ description }}">
+  <meta name="description" content="{{ description }}">
 {% else %}
   {% if article %}{% assign description = article.description %}{% else %}{% assign description = page.description %}{% endif %}
   {% if description != nil and description != "" %}
