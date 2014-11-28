@@ -956,13 +956,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .menu-lang-popover .edit-btn {
   display: block;
-  padding: 8px 18px 3px;
+  padding: 8px 10px 3px;
   text-align: right;
-}
-@media screen and (min-width: 1400px) {
-  .menu-lang-popover .edit-btn {
-    padding: 11px 25px 4px;
-  }
 }
 
 .lang-flag:after {
@@ -1167,7 +1162,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   font-size: 13px;
 }
 @media screen and (max-width: 480px) {
-  .lang-options .menu .menu-item {
+  .content-page .lang-options .menu .menu-item {
     margin-top: 0;
     padding: 10px 12px;
     font-size: 17px;

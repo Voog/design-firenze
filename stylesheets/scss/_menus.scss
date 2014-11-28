@@ -596,12 +596,8 @@
 
   .edit-btn {
     display: block;
-    padding: 8px 18px 3px;
+    padding: 8px 10px 3px;
     text-align: right;
-
-    @include query($large-1, 'min-width') {
-      padding: #{round(8 * $wide-view-multiplier)}px #{round(18 * $wide-view-multiplier)}px #{round(3 * $wide-view-multiplier)}px;
-    }
   }
 }
 
@@ -748,9 +744,11 @@ $flags:
       font-size: 13px;
 
       @include query($mobile-1) {
-        margin-top: 0;
-        padding: 10px 12px;
-        font-size: 17px;
+        .content-page & {
+          margin-top: 0;
+          padding: 10px 12px;
+          font-size: 17px;
+        }
       }
     }
 
