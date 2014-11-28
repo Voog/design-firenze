@@ -9,7 +9,7 @@
 {% comment %}Open Graph image{% endcomment %}
 {% if front_page or blog_page %}
   {% if fallback_body_image == nil and body_bg.image == nil %}
-    <meta property="og:image" content="{% if images_path contains "http://" or images_path contains "https://" %}{% else %}{{ site.url }}{% endif %}{{ body_bg_image_original | remove_first: '/' }}">
+    <meta property="og:image" content="{% if images_path contains "http://" or images_path contains "https://" %}{{ body_bg_image_original }}{% else %}{{ site.url }}{{ body_bg_image_original | remove_first: '/' }}{% endif %}">
   {% elsif fallback_body_image != nil and body_bg.image == nil %}
     <meta property="og:image" content="{{ body_bg_image }}">
   {% else %}
