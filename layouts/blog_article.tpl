@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% assign blog_page = true %}
-  {% include "html-head" %}
+  {% assign post_page = true %}
   {% include "edicy-tools-variables" with "article" %}
+  {% include "html-head" %}
   {% include "edicy-tools-styles" %}
 </head>
 

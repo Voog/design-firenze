@@ -54,7 +54,6 @@
         // Removes the current lightness class.
         $('.js-background-type').removeClass('light-background dark-background');
         // Checks the opacity of the body background color and sets the lightness class depending on it's value.
-
         if (bodyBgColorOpacity >= 0.2) {
           $('.js-background-type').addClass(bodyBgColorLightness >= 0.5 ? 'light-background' : 'dark-background');
         } else {
@@ -77,12 +76,11 @@
 
       // Body background image and color save logic (runs after closing the background picker).
       commit: function(data) {
-        // Defines the variable with the data to be saved.
-        var commitData = $.extend(true, {}, data);
-
         // Defines data for saving - image and color or their fallbacks.
-        commitData.image = commitData.image || '';
-        commitData.color = commitData.color || 'transparent';
+        var commitData = $.extend(true, {}, data);
+        commitData.image = data.image || '';
+        commitData.imageSizes = data.imageSizes || '';
+        commitData.color = data.color || 'transparent';
 
         // Saves the background data to custom data.
         {% if edicy-tools == "article" %}

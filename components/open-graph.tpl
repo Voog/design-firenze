@@ -7,14 +7,18 @@
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
-{% if front_page == true %}
-  {% unless page.data.body_image == '' %}
-    {% if page.data.body_image == nil %}
-      <meta property="og:image" content="{{ site.url }}{{ body_image | remove_first: '/' }}">
-    {% else %}
-      <meta property="og:image" content="{{ body_image }}">
-    {% endif %}
-  {% endunless %}
+{% if front_page or blog_page %}
+  {% if fallback_body_image == nil and body_bg.image == nil %}
+    <meta property="og:image" content="{{ site.url }}{{ body_bg_image_original }}">
+  {% elsif fallback_body_image != nil and body_bg.image == nil %}
+    <meta property="og:image" content="{{ body_bg_image }}">
+  {% else %}
+    {% for image_size in body_bg_image_sizes %}
+      {% if forloop.first %}
+        <meta property="og:image" content="{{ image_size.url }}">
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 {% else %}
   {% if article and article.data.fb_image %}
     <meta property="og:image" content="{{ article.data.fb_image }}">
@@ -26,11 +30,14 @@
 {% endif %}
 
 {% comment %}Open Graph description{% endcomment %}
-{% if blog and article == nil and (page.description == nil or page.description == "") %}
+{% if blog_page and (page.description == nil or page.description == "") %}
   {% assign excerpt_description = articles.first.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
   <meta property="og:description" content="{{ excerpt_description }}">
   <meta name="description" content="{{ excerpt_description }}">
 {% else %}
-    <meta property="og:description" content="{% if article %}{{ article.description }}{% else %}{{ page.description }}{% endif %}">
-    <meta name="description" content="{% if article %}{{ article.description }}{% else %}{{ page.description }}{% endif %}">
+  {% if article %}{% assign description = article.description %}{% else %}{% assign description = page.description %}{% endif %}
+  {% if description != nil and description != "" %}
+    <meta property="og:description" content="{{ description }}">
+    <meta name="description" content="{{ description }}">
+  {% endif %}
 {% endif %}

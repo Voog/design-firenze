@@ -2,8 +2,8 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign common_page = true %}
-  {% include "html-head" %}
   {% include "edicy-tools-variables" %}
+  {% include "html-head" %}
   {% include "edicy-tools-styles" %}
 </head>
 

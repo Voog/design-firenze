@@ -167,6 +167,7 @@
     footerInner = $('.js-footer-inner'),
     footerGradientHeight = 85,
     editmodePanelHeight = 40,
+    // TODO: Is this normal?
     windowHeight = editmode ? windowHeight = $(window).height() - editmodePanelHeight : windowHeight = $(window).height(),
     brakePoint = 2 * footer.innerHeight() - footerGradientHeight + containerWrap.innerHeight();
 
