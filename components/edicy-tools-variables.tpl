@@ -8,7 +8,7 @@
   {% endif %}
 
   {% comment %}Assign variables based on page type.{% endcomment %}
-  {% if edicy-tools-variables == "article" %}
+  {% if edicy-tools-variables == 'article' %}
     {% assign fallback_body_image = article.data.body_image %}
     {% assign fallback_body_color = article.data.body_color %}
     {% assign body_bg = article.data.body_bg %}
