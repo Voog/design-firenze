@@ -43,7 +43,6 @@
     {% assign body_bg_type = 'dark-background' %}
   {% endif %}
 
-
   {% if fallback_body_image != nil and body_bg.image == nil %}
     {% assign body_bg_image = fallback_body_image %}
   {% else %}
