@@ -53,7 +53,7 @@
     {% endif %}
   {% endif %}
 
-  {% if fallback_body_image != nil and body_bg.image == nil %}
+  {% if fallback_body_color != nil and body_bg.color == nil %}
     .body-background-color {
       background-color: {{ fallback_body_color }};
     }
