@@ -40,7 +40,7 @@
   vertical-align: middle;
   width: 100%;
   padding: 0 20px;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 
   @include query($large-1, 'min-width') {
     padding: 0 #{round(20 * $wide-view-multiplier)}px;
@@ -113,7 +113,7 @@
   line-height: 1;
   @include color($secondary-color);
   background: none;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   border: none;
 
   @include query($large-1, 'min-width') {
@@ -284,7 +284,7 @@
 
 .voog-search-modal {
   display: none;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   z-index: 999;
   width: 100%;
   max-width: 400px;

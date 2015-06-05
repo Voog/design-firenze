@@ -1,17 +1,15 @@
 /* FONTS */
 @font-face {
   font-family: "Bebas Neue Latin";
-  font-weight: 400;
   font-style: normal;
-  src: url("../assets/bebas-neue-regular-latin.eot");
-  src: url("../assets/bebas-neue-regular-latin.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-latin.woff") format("woff"), url("../assets/bebas-neue-regular-latin.ttf") format("truetype"), url("../assets/bebas-neue-regular-latin.svg#Bebas Neue Latin") format("svg");
+  font-weight: 400;
+  src: url("../assets/bebas-neue-regular-latin.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-latin.woff2") format("woff2"), url("../assets/bebas-neue-regular-latin.woff") format("woff"), url("../assets/bebas-neue-regular-latin.ttf") format("truetype"), url("../assets/bebas-neue-regular-latin.svg#Bebas Neue Latin") format("svg");
 }
 @font-face {
   font-family: "Bebas Neue Cyrillic";
-  font-weight: 400;
   font-style: normal;
-  src: url("../assets/bebas-neue-regular-cyrillic.eot");
-  src: url("../assets/bebas-neue-regular-cyrillic.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-cyrillic.woff") format("woff"), url("../assets/bebas-neue-regular-cyrillic.ttf") format("truetype"), url("../assets/bebas-neue-regular-cyrillic.svg#Bebas Neue Cyrillic") format("svg");
+  font-weight: 400;
+  src: url("../assets/bebas-neue-regular-cyrillic.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-cyrillic.woff2") format("woff2"), url("../assets/bebas-neue-regular-cyrillic.woff") format("woff"), url("../assets/bebas-neue-regular-cyrillic.ttf") format("truetype"), url("../assets/bebas-neue-regular-cyrillic.svg#Bebas Neue Cyrillic") format("svg");
 }
 /* GENERAL */
 html,
@@ -376,13 +374,15 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   white-space: pre;
   line-height: inherit;
   background-color: transparent;
+  overflow-wrap: normal;
   word-wrap: normal;
+  word-break: normal;
 }
 .content-formatted code {
   display: inline-block;
   padding: 5px;
-  word-wrap: break-word;
   overflow-wrap: break-word;
+  word-wrap: break-word;
   word-break: break-all;
 }
 .content-formatted blockquote {
@@ -1710,8 +1710,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   vertical-align: middle;
   width: 100%;
   padding: 0 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media screen and (min-width: 1400px) {
@@ -1791,8 +1789,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   line-height: 1;
   color: #444444;
   background: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
 }
@@ -1949,8 +1945,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 
 .voog-search-modal {
   display: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 999;
   width: 100%;
@@ -2132,8 +2126,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   padding: 5px 8px 6px;
   background-color: #f2f2f2;
   border: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media screen and (min-width: 1400px) {

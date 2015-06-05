@@ -101,7 +101,7 @@
     padding: 5px 8px 6px;
     @include bg($third-color);
     border: none;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 
     @include query($large-1, 'min-width') {
       width: #{round(280 * $wide-view-multiplier)}px;
