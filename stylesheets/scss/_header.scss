@@ -214,6 +214,8 @@
 
 .header-bottom {
   .front-page & {
+    position: relative;
+    z-index: 9;
     padding-top: 25px;
 
     @include query($large-1, 'min-width') {

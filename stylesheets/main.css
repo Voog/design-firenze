@@ -1459,6 +1459,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .front-page .header-bottom {
+  position: relative;
+  z-index: 9;
   padding-top: 25px;
 }
 @media screen and (min-width: 1400px) {
