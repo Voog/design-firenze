@@ -10654,17 +10654,6 @@ return jQuery;
     });
   };
 
-  // Reduces opacity of the gallery images that are not under the cursor.
-  var handleGalleryHover = function() {
-    $('.edys-gallery').mouseover(function() {
-      $(this).find('.edys-gallery-item').addClass('inactive');
-    });
-
-    $('.edys-gallery').mouseout(function() {
-      $(this).find('.edys-gallery-item').removeClass('inactive');
-    });
-  };
-
   // Scrolls to the comment-form if comment submit failed (to show the error messages to the user)
   var focusFormWithErrors = function() {
     $(document).ready(function() {
@@ -10793,29 +10782,6 @@ return jQuery;
     }
   };
 
-  // Checks the presence of the table scrollbar.
-  var checkScrollBar = function() {
-    jQuery.fn.hasScrollBar = function(direction) {
-      if (direction == 'vertical') {
-        return this.get(0).scrollHeight > this.innerHeight();
-      } else if (direction == 'horizontal') {
-        return this.get(0).scrollWidth > this.innerWidth();
-      }
-      return false;
-    }
-  };
-
-  // Adds horizontal scroll to tables that don't fit into the content area.
-  var handleTableHorizontalScrolling = function() {
-    $.each($('.table-container'), function() {
-      if ($(this).hasScrollBar('horizontal') === true) {
-        $(this).addClass('horizontal-scroll');
-      } else {
-        $(this).removeClass('horizontal-scroll');
-      }
-    });
-  };
-
   // Fallback for color scheme detection.
   var handleColorSchemeFallback = function() {
     color = $('.js-body-background-color').css('background-color');
@@ -10859,7 +10825,6 @@ return jQuery;
     $(window).resize(function() {
       handleTopbarPosition();
       handleLayoutPositioning();
-      handleTableHorizontalScrolling();
       handleSearchModalHeight();
     });
   };
@@ -10893,15 +10858,9 @@ return jQuery;
       handleLayoutPositioning();
       handleContentMutations();
       handleSearchSubmit();
-      handleGalleryHover();
       focusFormWithErrors();
       handleWindowResize();
       wrapTables();
-
-      if ($('.table-container').length > 0) {
-        checkScrollBar();
-        handleTableHorizontalScrolling();
-      }
     };
 
     // Enables the usage of the initiations outside this file.
