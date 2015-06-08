@@ -29,10 +29,10 @@
 }
 
 .header-top-inner {
-  display: inline-block;
-  max-width: 100%;
 
   .front-page & {
+    display: inline-block;
+    max-width: 100%;
     @include border(bottom, 3px, solid, $white);
 
     @include query($large-1, 'min-width') {
@@ -50,10 +50,10 @@
 
   .search-enabled & {
     .content-page & {
-      margin-right: 58px;
+      margin-right: 68px;
 
       @include query($large-1, 'min-width') {
-        margin-right: 53px;
+        margin-right: 73px;
       }
     }
   }

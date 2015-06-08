@@ -1303,11 +1303,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 
-.header-top-inner {
+.front-page .header-top-inner {
   display: inline-block;
   max-width: 100%;
-}
-.front-page .header-top-inner {
   border-bottom: 3px solid white;
 }
 @media screen and (min-width: 1400px) {
@@ -1324,11 +1322,11 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 .content-page .search-enabled .header-top-inner {
-  margin-right: 58px;
+  margin-right: 68px;
 }
 @media screen and (min-width: 1400px) {
   .content-page .search-enabled .header-top-inner {
-    margin-right: 53px;
+    margin-right: 73px;
   }
 }
 .content-page .flags-disabled .header-top-inner {
