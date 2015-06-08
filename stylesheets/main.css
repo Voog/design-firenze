@@ -395,7 +395,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .content-formatted iframe {
   max-width: 100%;
-  height: auto;
 }
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
