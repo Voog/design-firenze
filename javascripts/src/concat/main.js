@@ -2,6 +2,23 @@
   var editmode = $('html').hasClass('editmode');
   var bgPickerFallback = $('body').hasClass('bgpicker-fallback');
 
+  // Remove comments if debouncing is used.
+  // Function to limit the rate at which a function can fire.
+  var debounce = function(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
   // Shows/hides the popover main menu (visible on smalles screens).
   var handleElementsClick = function() {
     $('html').click(function() {
@@ -264,9 +281,9 @@
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
-      handleTopbarPosition();
-      handleLayoutPositioning();
-      handleSearchModalHeight();
+      $(window).resize(debounce(handleTopbarPosition, 1000));
+      $(window).resize(debounce(handleLayoutPositioning, 1000));
+      $(window).resize(debounce(handleSearchModalHeight, 1000));
     });
   };
 
