@@ -10840,9 +10840,9 @@ return jQuery;
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
-      $(window).resize(debounce(handleTopbarPosition, 1000));
-      $(window).resize(debounce(handleLayoutPositioning, 1000));
-      $(window).resize(debounce(handleSearchModalHeight, 1000));
+      $(window).resize(debounce(handleTopbarPosition, 500));
+      $(window).resize(debounce(handleLayoutPositioning, 500));
+      $(window).resize(debounce(handleSearchModalHeight, 500));
     });
   };
 
