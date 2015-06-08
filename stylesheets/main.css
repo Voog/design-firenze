@@ -3,13 +3,13 @@
   font-family: "Bebas Neue Latin";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/bebas-neue-regular-latin.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-latin.woff2") format("woff2"), url("../assets/bebas-neue-regular-latin.woff") format("woff"), url("../assets/bebas-neue-regular-latin.ttf") format("truetype"), url("../assets/bebas-neue-regular-latin.svg#Bebas Neue Latin") format("svg");
+  src: url("../assets/bebas-neue-regular-latin.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-latin.woff") format("woff"), url("../assets/bebas-neue-regular-latin.ttf") format("truetype"), url("../assets/bebas-neue-regular-latin.svg#Bebas Neue Latin") format("svg");
 }
 @font-face {
   font-family: "Bebas Neue Cyrillic";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/bebas-neue-regular-cyrillic.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-cyrillic.woff2") format("woff2"), url("../assets/bebas-neue-regular-cyrillic.woff") format("woff"), url("../assets/bebas-neue-regular-cyrillic.ttf") format("truetype"), url("../assets/bebas-neue-regular-cyrillic.svg#Bebas Neue Cyrillic") format("svg");
+  src: url("../assets/bebas-neue-regular-cyrillic.eot?#iefix") format("embedded-opentype"), url("../assets/bebas-neue-regular-cyrillic.woff") format("woff"), url("../assets/bebas-neue-regular-cyrillic.ttf") format("truetype"), url("../assets/bebas-neue-regular-cyrillic.svg#Bebas Neue Cyrillic") format("svg");
 }
 /* GENERAL */
 html,

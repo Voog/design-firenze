@@ -1,3 +1,3 @@
 /* FONTS */
-@include font-face('Bebas Neue Latin', '../assets/bebas-neue-regular-latin', 400);
-@include font-face('Bebas Neue Cyrillic', '../assets/bebas-neue-regular-cyrillic', 400);
+@include font-face('Bebas Neue Latin', '../assets/bebas-neue-regular-latin', 400, $file-formats: eot woff ttf svg);
+@include font-face('Bebas Neue Cyrillic', '../assets/bebas-neue-regular-cyrillic', 400, $file-formats: eot woff ttf svg);
