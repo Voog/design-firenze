@@ -2576,7 +2576,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   vertical-align: middle;
 }
 .footer .content-formatted {
-  min-width: 100px;
   margin: 0 auto;
   padding-right: 10px;
   text-align: center;
@@ -2586,6 +2585,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .footer .content-formatted:empty {
   display: none;
+}
+.editmode .footer .content-formatted {
+  min-width: 552px;
 }
 @media screen and (min-width: 1400px) {
   .footer .content-formatted {
@@ -2605,6 +2607,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   .footer .content-formatted {
     display: block;
     padding: 0 20px;
+  }
+  .editmode .footer .content-formatted {
+    min-width: 0;
   }
 }
 .footer.light-background .content-formatted {

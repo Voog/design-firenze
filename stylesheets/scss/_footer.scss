@@ -42,7 +42,6 @@
   }
 
   .content-formatted {
-    min-width: 100px;
     margin: 0 auto;
     padding-right: 10px;
     text-align: center;
@@ -50,6 +49,10 @@
 
     &:empty {
       display: none;
+    }
+
+    .editmode & {
+      min-width: 552px;
     }
 
     @include query($large-1, 'min-width') {
@@ -71,6 +74,10 @@
     @include query($tablet-3) {
       display: block;
       padding: 0 20px;
+
+      .editmode & {
+        min-width: 0;
+      }
     }
   }
 
