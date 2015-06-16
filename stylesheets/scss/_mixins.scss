@@ -1,7 +1,7 @@
 // CUSTOM MIXINS
 // Comment out the "_mixins.scss" partial in the "main.scss" file if not used.
 
-// Hyphenate
+// HYPHENATE
 @mixin hyphenate($boolean) {
   @if $boolean == true {
     word-break: break-word;
