@@ -237,6 +237,27 @@
     }
   }
 
+  .custom-btn {
+    display: inline-block;
+    padding: 8px 11px;
+    font-size: 14px;
+    @include color($white);
+    line-height: 1;
+    @include bg($blue-1);
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      @include color($white);
+      @include bg($blue-1, 0.8);
+    }
+
+    @include query($large-1, 'min-width') {
+      padding: #{round(8 * $wide-view-multiplier)}px #{round(11 * $wide-view-multiplier)}px;
+      font-size: #{round(14 * $wide-view-multiplier)}px;
+    }
+  }
+
   // Styling rules for the site's editable content area tables.
   // Container around editable content-area table.
   .table-container {

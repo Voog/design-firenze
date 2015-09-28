@@ -428,6 +428,27 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     font-size: 15px;
   }
 }
+.content-formatted .custom-btn {
+  display: inline-block;
+  padding: 8px 11px;
+  font-size: 14px;
+  color: white;
+  line-height: 1;
+  background-color: #0066bb;
+  border: none;
+  cursor: pointer;
+}
+.content-formatted .custom-btn:hover {
+  color: white;
+  background-color: #0066BB;
+  background-color: rgba(0, 102, 187, 0.8);
+}
+@media screen and (min-width: 1400px) {
+  .content-formatted .custom-btn {
+    padding: 11px 15px;
+    font-size: 20px;
+  }
+}
 .content-formatted .table-container {
   margin-top: 20px;
 }

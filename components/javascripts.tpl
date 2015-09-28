@@ -16,5 +16,12 @@
   </script>
 {% endif %}
 
+{% if editmode %}
+  <script type="text/javascript">
+    window.edy = window.edy || [];
+    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+  </script>
+{% endif %}
+
 {% comment %}GOOGLE ANALYTICS INITIATION{% endcomment %}
 {% unless editmode %}{{ site.analytics }}{% endunless %}
