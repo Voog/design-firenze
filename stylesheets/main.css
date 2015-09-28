@@ -219,8 +219,11 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted pre:first-child,
 .content-formatted code:first-child,
 .content-formatted .edy-positionable-container-left-block:first-child,
+.content-formatted .edy-positionable-container-center-block:first-child,
 .content-formatted .edy-positionable-container-right-block:first-child,
-.content-formatted .edy-positionable-container-center-block:first-child {
+.content-formatted .edy-texteditor-container-wrapper-left-block:first-child,
+.content-formatted .edy-texteditor-container-wrapper-center:first-child,
+.content-formatted .edy-texteditor-container-wrapper-right-block:first-child {
   margin-top: 0;
 }
 .content-formatted h1:last-child,
@@ -235,8 +238,11 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted pre:last-child,
 .content-formatted code:last-child,
 .content-formatted .edy-positionable-container-left-block:last-child,
+.content-formatted .edy-positionable-container-center-block:last-child,
 .content-formatted .edy-positionable-container-right-block:last-child,
-.content-formatted .edy-positionable-container-center-block:last-child {
+.content-formatted .edy-texteditor-container-wrapper-left-block:last-child,
+.content-formatted .edy-texteditor-container-wrapper-center:last-child,
+.content-formatted .edy-texteditor-container-wrapper-right-block:last-child {
   margin-bottom: 0;
 }
 .content-page .content-formatted h1, .content-page
@@ -396,23 +402,31 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted iframe {
   max-width: 100%;
 }
-.content-formatted .edy-positionable-container-left,
-.content-formatted .edy-positionable-container-right {
+.content-formatted .edy-positionable-container-center,
+.content-formatted .edy-positionable-container-left-block,
+.content-formatted .edy-positionable-container-right-block,
+.content-formatted .edy-texteditor-container-wrapper-center,
+.content-formatted .edy-texteditor-container-wrapper-left-block,
+.content-formatted .edy-texteditor-container-wrapper-right-block {
   width: 45%;
 }
-.content-formatted .edy-positionable-container-left {
+.content-formatted .edy-positionable-container-left,
+.content-formatted .edy-texteditor-container-wrapper-left {
   margin-right: 20px;
 }
 @media screen and (min-width: 1400px) {
-  .content-formatted .edy-positionable-container-left {
+  .content-formatted .edy-positionable-container-left,
+  .content-formatted .edy-texteditor-container-wrapper-left {
     margin-right: 28px;
   }
 }
-.content-formatted .edy-positionable-container-right {
+.content-formatted .edy-positionable-container-right,
+.content-formatted .edy-texteditor-container-wrapper-right {
   margin-left: 20px;
 }
 @media screen and (min-width: 1400px) {
-  .content-formatted .edy-positionable-container-right {
+  .content-formatted .edy-positionable-container-right,
+  .content-formatted .edy-texteditor-container-wrapper-right {
     margin-left: 28px;
   }
 }
