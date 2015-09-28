@@ -16,7 +16,9 @@
       min-width: 211px;
       padding: 19px 0 21px;
 
-      @include border(top, 3px, solid, $white);
+      border-top-width: 3px;
+      border-top-style: solid;
+      border-top-color: $white;
 
       @include query($large-1, 'min-width') {
         min-width: #{round(211 * $wide-view-multiplier)}px;
@@ -31,10 +33,12 @@
   }
 
   .light-background & {
-  .content-formatted {
-    border-color: $black;
+    .front-page & {
+      .content-formatted {
+        border-color: $black;
+      }
+    }
   }
-}
 
   @include query($tablet-2) {
     .container-inner {

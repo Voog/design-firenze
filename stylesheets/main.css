@@ -1528,7 +1528,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   position: relative;
   min-width: 211px;
   padding: 19px 0 21px;
-  border-top: 3px solid white;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #FFFFFF;
 }
 @media screen and (min-width: 1400px) {
   .front-page .content .content-formatted {
@@ -1540,7 +1542,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .front-page .content .content-formatted:empty {
   display: none;
 }
-.light-background .content .content-formatted {
+.front-page .light-background .content .content-formatted {
   border-color: #000000;
 }
 @media screen and (max-width: 720px) {
