@@ -7,37 +7,41 @@
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
-{% if front_page or blog_page %}
-  {% if fallback_body_image == nil and body_bg.image == nil %}
-    <meta property="og:image" content="{% if images_path contains "http://" or images_path contains "https://" %}{{ body_bg_image_original }}{% else %}{{ site.url }}{{ body_bg_image_original | remove_first: '/' }}{% endif %}">
-  {% elsif fallback_body_image != nil and body_bg.image == nil %}
-    <meta property="og:image" content="{{ body_bg_image }}">
-  {% else %}
-    {% for image_size in body_bg_image_sizes %}
-      {% if forloop.first %}
-        <meta property="og:image" content="{{ image_size.url }}">
-      {% endif %}
-    {% endfor %}
+{% if page.image == nil and (front_page or blog_page) %}
+  {% if fallback_body_image != nil and fallback_body_image != '' and body_bg_image_sizes == nil %}
+    {% assign og_image = fallback_body_image %}
+  {% elsif body_bg_image_sizes != nil and body_bg_image_sizes != '' %}
+    {% assign og_image = body_bg_image_sizes[0] %}
   {% endif %}
 {% else %}
-  {% if article and article.data.fb_image %}
-    <meta property="og:image" content="{{ article.data.fb_image }}">
-  {% elsif page.data.fb_image %}
-    <meta property="og:image" content="{{ page.data.fb_image }}">
-  {% elsif site.data.fb_image %}
-    <meta property="og:image" content="{{ site.data.fb_image }}">
+  {% if article %}
+    {% if article.image? %}
+      {% assign og_image = article.image %}
+    {% endif %}
+  {% elsif page.image? %}
+    {% assign og_image = page.image %}
   {% endif %}
 {% endif %}
 
-{% comment %}Open Graph description{% endcomment %}
-{% if blog_page and (page.description == nil or page.description == "") %}
-  {% assign description = articles.first.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
-  <meta property="og:description" content="{{ description }}">
-  <meta name="description" content="{{ description }}">
-{% else %}
-  {% if article %}{% assign description = article.description %}{% else %}{% assign description = page.description %}{% endif %}
-  {% if description != nil and description != "" %}
-    <meta property="og:description" content="{{ description }}">
-    <meta name="description" content="{{ description }}">
+{% if og_image %}
+  {% if og_image.url %}
+    <meta property="og:image" content="{{ og_image.url }}">
+  {% elsif og_image %}
+    <meta property="og:image" content="{{ og_image }}">
   {% endif %}
+  {% if og_image.content_type %}<meta property="og:image:type" content="{{ og_image.content_type }}">{% endif %}
+  {% if og_image.width and og_image.width > 0 %}<meta property="og:image:width" content="{{ og_image.width }}">{% endif %}
+  {% if og_image.height and og_image.width > 0 %}<meta property="og:image:height" content="{{ og_image.height }}">{% endif %}
+{% endif %}
+
+{% comment %}Open Graph description{% endcomment %}
+{% if article %}
+  {% assign description = article.description %}
+{% else %}
+  {% assign description = page.description %}
+{% endif %}
+
+{% if description != nil and description != '' %}
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta name="description" content="{{ description | escape }}">
 {% endif %}
