@@ -1533,7 +1533,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 @media screen and (min-width: 1400px) {
   .front-page .content .content-formatted {
     min-width: 295px;
-    padding-bottom: 27px 0 29px;
+    padding: 27px 0 29px;
     border-width: 4px;
   }
 }

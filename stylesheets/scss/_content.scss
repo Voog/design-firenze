@@ -20,7 +20,7 @@
 
       @include query($large-1, 'min-width') {
         min-width: #{round(211 * $wide-view-multiplier)}px;
-        padding-bottom: #{round(19 * $wide-view-multiplier)}px 0 #{round(21 * $wide-view-multiplier)}px;
+        padding: #{round(19 * $wide-view-multiplier)}px 0 #{round(21 * $wide-view-multiplier)}px;
         border-width: #{round(3 * $wide-view-multiplier)}px;
       }
 
