@@ -370,12 +370,6 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-tick.png",
-      "kind": "images",
-      "filename": "ico-tick.png"
-    },
-    {
-      "content_type": "image/png",
       "file": "images/ico-voog-black.png",
       "kind": "images",
       "filename": "ico-voog-black.png"
