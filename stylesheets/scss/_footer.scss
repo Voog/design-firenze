@@ -24,6 +24,10 @@
       margin-top: #{round(-43 * $wide-view-multiplier)}px;
       padding-bottom: #{round(21 * $wide-view-multiplier)}px;
     }
+
+    .editmode & {
+      padding-bottom: 61px;
+    }
   }
 
   .footer-inner {

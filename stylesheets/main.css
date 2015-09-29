@@ -2581,6 +2581,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     padding-bottom: 29px;
   }
 }
+.editmode .container-long .footer {
+  padding-bottom: 61px;
+}
 .footer .footer-inner {
   max-width: 720px;
   margin: 0 auto;
