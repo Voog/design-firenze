@@ -192,7 +192,7 @@
 
           @include query($large-1, 'min-width') {
             top: #{round(-3 * $wide-view-multiplier)}px;
-            left: #{round(-3 * $wide-view-multiplier)}px;
+            left: #{round(3 * $wide-view-multiplier)}px;
             width: #{round(14 * $wide-view-multiplier)}px;
             height: #{round(14 * $wide-view-multiplier)}px;
           }
