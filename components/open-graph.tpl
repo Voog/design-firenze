@@ -7,7 +7,14 @@
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
-{% if page.image == nil and (front_page or blog_page) %}
+{% assign use_background_image = false %}
+{% if front_page or blog_page %}
+  {% if page.image == nil %}
+    {% assign use_background_image = true %}
+  {% endif %}
+{% endif %}
+
+{% if use_background_image %}
   {% if fallback_body_image != nil and fallback_body_image != '' and body_bg_image_sizes == nil %}
     {% assign og_image = fallback_body_image %}
   {% elsif body_bg_image_sizes != nil and body_bg_image_sizes != '' %}
