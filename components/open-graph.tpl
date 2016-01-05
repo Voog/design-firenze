@@ -18,7 +18,13 @@
   {% if fallback_body_image != nil and fallback_body_image != '' and body_bg_image_sizes == nil %}
     {% assign og_image = fallback_body_image %}
   {% elsif body_bg_image_sizes != nil and body_bg_image_sizes != '' %}
-    {% assign og_image = body_bg_image_sizes[2] %}
+    {% for size in body_bg_image_sizes reversed %}
+      {% if size.width <= 1280 %}
+        {% assign og_image = size %}
+      {% else %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 {% else %}
   {% if article %}
