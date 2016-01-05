@@ -2223,7 +2223,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 @media screen and (min-width: 1400px) {
   .svg .content-formatted .form_field_checkbox:checked + .form_control_indicator:before {
-    top: -4px;
+    top: -5px;
     left: 4px;
     width: 20px;
     height: 20px;
@@ -2567,7 +2567,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 @media screen and (min-width: 1400px) {
   .container-long .footer {
-    margin-top: -60px;
+    margin-top: -61px;
     padding-bottom: 29px;
   }
 }
