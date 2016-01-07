@@ -1392,12 +1392,24 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-page .header-options {
   right: 0;
 }
+.empty-site-header .header-options {
+  top: -6px;
+}
+.empty-site-header .flags-disabled .header-options {
+  top: -7px;
+}
 @media screen and (min-width: 1400px) {
   .front-page .header-options {
     top: 25px;
   }
   .content-page .header-options {
     top: 3px;
+  }
+  .empty-site-header .header-options {
+    top: -5px;
+  }
+  .empty-site-header .flags-disabled .header-options {
+    top: -6px;
   }
 }
 @media screen and (max-width: 480px) {

@@ -3,11 +3,12 @@
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_page = true %}
   {% include "edicy-tools-variables" %}
+  {% include "content-page-variables" %}
   {% include "html-head" %}
   {% include "edicy-tools-styles" %}
 </head>
 
-<body class="blog-page content-page js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %}">
+<body class="post-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %}">
 {% if editmode %}<button class="bgpicker-btn js-background-settings" data-bg-key="body_bg" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
 {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
 {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}

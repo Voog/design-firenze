@@ -43,6 +43,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/content-page-variables.tpl",
+      "layout_name": "content-page-variables",
+      "title": "content-page-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/edicy-tools-styles.tpl",
       "layout_name": "edicy-tools-styles",
       "title": "edicy-tools-styles"

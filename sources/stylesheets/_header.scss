@@ -111,6 +111,14 @@
     right: 0;
   }
 
+  .empty-site-header & {
+    top: -6px;
+  }
+
+  .empty-site-header .flags-disabled & {
+    top: -7px;
+  }
+
   @include query($large-1, 'min-width') {
     .front-page & {
       top: #{round(18 * $wide-view-multiplier)}px;
@@ -118,6 +126,14 @@
 
     .content-page & {
       top: 3px;
+    }
+
+    .empty-site-header & {
+      top: -5px;
+    }
+
+    .empty-site-header .flags-disabled & {
+      top: -6px;
     }
   }
 
