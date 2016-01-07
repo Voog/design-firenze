@@ -97,11 +97,11 @@ a {
 
 // Styling rules for the main container that affects the entire site's other elements.
 .container {
+  display: flex;
   position: relative;
-  @include display(flex);
-  @include flex-direction(column);
-  @include justify-content(center);
-  @include align-items(center);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   min-height: 100%;
   box-sizing: border-box;
@@ -114,7 +114,7 @@ a {
   }
 
   &.container-long {
-    @include justify-content(flex-end);
+    justify-content: flex-end;
     height: auto;
 
     .no-flexbox & {

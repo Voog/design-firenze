@@ -107,30 +107,19 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .container {
-  position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
+  position: relative;
   -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   min-height: 100%;
   box-sizing: border-box;
@@ -142,11 +131,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   height: 100%;
 }
 .container.container-long {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: auto;
 }
 .no-flexbox .container.container-long,
@@ -984,8 +971,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   padding: 6px 0;
   min-width: 121px;
   background: #fff;
-  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-  -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   z-index: 30;
 }
@@ -1512,8 +1497,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   right: 0;
   z-index: 2;
   background-color: #444444;
-  -webkit-transition: top 0.2s 0.2s;
-  -moz-transition: top 0.2s 0.2s;
   transition: top 0.2s 0.2s;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
@@ -1735,8 +1718,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   position: relative;
   max-width: 400px;
   margin: 60px auto;
-  -webkit-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
 }
 @media screen and (min-width: 1400px) {
@@ -1961,8 +1942,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   padding: 20px 27px;
   background-color: #EDECEC;
   background-color: rgba(237, 236, 236, 0.95);
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -2109,7 +2088,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   font-family: inherit;
   font-size: 14px;
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
   border-radius: 0;
 }
 @media screen and (min-width: 1400px) {
@@ -2280,7 +2258,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
   border-radius: 0;
 }
 .content-formatted .form_submit input:hover {
@@ -2385,7 +2362,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   background: transparent;
   border-radius: 50%;
   -webkit-animation: feedback-loading 0.8s linear infinite;
-  -moz-animation: feedback-loading 0.8s linear infinite;
   animation: feedback-loading 0.8s linear infinite;
 }
 @media screen and (min-width: 1400px) {
@@ -2398,29 +2374,16 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .content-formatted .feedback-loading span:nth-child(2) {
   -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 .content-formatted .feedback-loading span:nth-child(3) {
   -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 .content-formatted .feedback-loading span:last-child {
   margin-right: 0;
 }
 @-webkit-keyframes feedback-loading {
-  0% {
-    background: transparent;
-  }
-  50% {
-    background: #FFFFFF;
-  }
-  100% {
-    background: transparent;
-  }
-}
-@-moz-keyframes feedback-loading {
   0% {
     background: transparent;
   }
@@ -2672,6 +2635,5 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .footer-gradient {
-  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
 }
