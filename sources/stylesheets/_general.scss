@@ -10,6 +10,13 @@ body {
   }
 }
 
+html {
+  &.search-open {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -17,6 +24,15 @@ body {
   font-size: 14px;
   line-height: 1.4;
   @include color($primary-color);
+
+  .search-open & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 
   @include query($large-1, 'min-width') {
     font-size: #{round(round(14 * $wide-view-multiplier))}px;

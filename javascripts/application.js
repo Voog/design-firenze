@@ -9823,6 +9823,7 @@ MMCQ = (function() {
         $('.js-menu-btn').trigger('click');
       }
 
+      $('html').addClass('search-open');
       $(this).addClass('open');
       $('.js-search-close-btn').addClass('open');
       $('.js-search').addClass('active');
@@ -9832,6 +9833,7 @@ MMCQ = (function() {
     // Closes the search modal.
     $('.js-search-close-btn').click(function(event) {
       event.stopPropagation();
+      $('html').removeClass('search-open');
       $('.js-search-open-btn, .js-search-close-btn').removeClass('open');
       $('.js-search').removeClass('active');
       $('.js-voog-search-modal').removeClass('search-results-active');
