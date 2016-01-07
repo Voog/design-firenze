@@ -1382,16 +1382,15 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .header-options {
   position: absolute;
   z-index: 1;
-  left: 30px;
   text-align: right;
 }
 .front-page .header-options {
   top: 18px;
   right: 25px;
+  left: 30px;
 }
 .content-page .header-options {
   right: 0;
-  left: 5px;
 }
 @media screen and (min-width: 1400px) {
   .front-page .header-options {

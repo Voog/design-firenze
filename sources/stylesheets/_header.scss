@@ -99,17 +99,16 @@
 .header-options {
   position: absolute;
   z-index: 1;
-  left: 30px;
   text-align: right;
 
   .front-page & {
     top: 18px;
     right: 25px;
+    left: 30px;
   }
 
   .content-page & {
     right: 0;
-    left: 5px;
   }
 
   @include query($large-1, 'min-width') {
