@@ -38,7 +38,8 @@
 
 {% if og_image %}
   {% if og_image.url %}
-    <meta property="og:image" content="{{ og_image.url }}">
+    {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
+    {% if og_image.url %}<meta property="og:image" content="{{ og_image.url | replace_first: "http:", "" | replace_first: "https:", "" | prepend: "https:" }}">{% endif %}
   {% elsif og_image %}
     <meta property="og:image" content="{{ og_image }}">
   {% endif %}
