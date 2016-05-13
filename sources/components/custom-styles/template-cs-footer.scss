@@ -1,0 +1,56 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+  // scss-lint:disable Comment, Indentation
+
+  /* VoogStyle
+    "pathI18n": ["footer", "text"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --footer-font-size: 12px;
+
+  /* VoogStyle
+     "pathI18n": ["footer", "text"],
+     "titleI18n": "line_height",
+     "editor": "rangePicker",
+     "min": 0.8,
+     "max": 3,
+     "step": 0.1,
+     "unit": "em",
+     "scope": "global"
+  */
+  --footer-line-height: $line-height;
+
+  /* VoogStyle
+    "pathI18n": ["footer", "text"],
+    "titleI18n": "color",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --footer-color: $color-two;
+
+  // scss-lint:enable Comment, Indentation
+}

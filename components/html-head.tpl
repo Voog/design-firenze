@@ -21,6 +21,26 @@
 {% if editmode %}{% stylesheet_link "editmode.min.css" %}{% endif %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
 
+{% customstyle %}
+  {% include "template-cs-main-styles" %}
+  {% include "template-cs-header" %}
+  {% if blog_list %}
+    {% include "template-cs-blog-list" %}
+  {% endif %}
+  {% if blog_article %}
+    {% include "template-cs-blog-article" %}
+  {% endif %}
+  {% if common_page %}
+    {% include "template-cs-content" %}
+  {% endif %}
+  {% include "template-cs-footer" %}
+  {% include "template-cs-headings" %}
+  {% include "template-cs-button" %}
+  {% include "template-cs-table" %}
+  {% include "template-cs-form" %}
+  {% include "template-cs-style-rules" %}
+{% endcustomstyle %}
+
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
 <script src="{{ javascripts_path }}/modernizr.min.js"></script>
 

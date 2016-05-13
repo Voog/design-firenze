@@ -1,0 +1,51 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+    // scss-lint:disable Comment, Indentation
+
+  /* VoogStyle
+     "pathI18n": ["table"],
+     "titleI18n": "border",
+     "editor": "listPicker",
+     "list": {{ base_border_style_set }},
+     "scope": "global"
+  */
+  --table-border-style: solid;
+
+  /* VoogStyle
+     "pathI18n": ["table"],
+     "titleI18n": "padding",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 60,
+     "unit": "px",
+     "scope": "global"
+  */
+  --table-cell-padding: 10px;
+
+  /* VoogStyle
+    "pathI18n": ["table"],
+    "titleI18n": "color",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --table-border-color: $color-four;
+
+  // scss-lint:enable Comment, Indentation
+}
