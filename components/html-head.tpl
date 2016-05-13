@@ -23,7 +23,11 @@
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
-  {% include "template-cs-header" %}
+  {% include "template-cs-headings" %}
+
+
+{% comment %}
+{% include "template-cs-header" %}
   {% if blog_list %}
     {% include "template-cs-blog-list" %}
   {% endif %}
@@ -39,6 +43,7 @@
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
   {% include "template-cs-style-rules" %}
+{% endcomment %}
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}

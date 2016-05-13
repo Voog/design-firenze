@@ -39,3 +39,44 @@ $mobile-2: 420px;
 // $box-width: 400px;
 $wide-view-multiplier: 1.4;
 $search-height: 50px;
+
+///// TEMPORARY VALUES
+
+// VARIABLES
+
+// Media queries
+$tablet: 999px;
+$mobile: 640px;
+
+$site-width: 940px;
+
+// Colors
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+
+$color-one: #222; // replaced by $color-two in design editor
+// rgb(34,34,34)
+
+$color-two: #333;
+// rgb(51,51,51)
+
+$color-three: #888; // replaced by $color-four in design editor
+// rgb(136,136,136)
+
+$color-four: #919191;
+// rgb(145,145,145)
+
+$color-error: #c33; //rgb(204,51,51)
+$color-notice: #3c3; // rgb(51,204,51)
+
+// Fonts
+$font-one: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-two: "EB Garamond", "Georgia", serif;
+
+$h1-size: 36px;
+$h2-size: 24px;
+$font-size: 18px;
+$line-height: 1.4;
+
+$color-one: $color-two;
+$color-three: $color-four;
