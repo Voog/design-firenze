@@ -28,5 +28,5 @@
     "scope": "global",
     "featured": true
   */
-  --footer-color: #333;
+  --footer-color: #444;
 }

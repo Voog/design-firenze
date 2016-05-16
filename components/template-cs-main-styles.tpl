@@ -50,7 +50,7 @@
         "--h1-color"
       ]
   */
-  --color-primary: #333;
+  --color-primary: #444;
   /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "secondary_color",

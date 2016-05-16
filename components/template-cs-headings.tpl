@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --h1-line-height: 1em;
+  --h1-line-height: 1.4;
   /* VoogStyle
      "pathI18n": ["headings", "title"],
      "titleI18n": "alignment",
@@ -41,7 +41,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h1-font-weight: 400;
+  --h1-font-weight: bold;
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "font_style",
@@ -89,7 +89,7 @@
     "scope": "global",
     "featured": true
   */
-  --h1-color: #333;
+  --h1-color: #444;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "size",
@@ -100,7 +100,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-font-size: 24px;
+  --h2-font-size: 18px;
   /* VoogStyle
      "pathI18n": ["headings", "heading"],
      "titleI18n": "line_height",
@@ -132,7 +132,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h2-font-weight: 400;
+  --h2-font-weight: bold;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "font_style",
@@ -171,7 +171,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --h2-text-transform: uppercase;
+  --h2-text-transform: none;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "color",
@@ -180,7 +180,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-color: #c33;
+  --h2-color: #444;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "size",
@@ -191,7 +191,7 @@
     "scope": "global",
     "featured": true
   */
-  --h3-font-size: 18px;
+  --h3-font-size: 16px;
   /* VoogStyle
      "pathI18n": ["headings", "subheading"],
      "titleI18n": "line_height",
@@ -223,7 +223,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h3-font-weight: 400;
+  --h3-font-weight: bold;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "font_style",
@@ -262,7 +262,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --h3-text-transform: uppercase;
+  --h3-text-transform: none;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "color",
@@ -271,5 +271,5 @@
     "scope": "global",
     "featured": true
   */
-  --h3-color: #c33;
+  --h3-color: #444;
 }

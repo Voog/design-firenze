@@ -8,6 +8,7 @@
 // The output component can be included in any "layout" or "component".
 // =============================================================================
 
+
 // =============================================================================
 // Modules
 // =============================================================================
@@ -41,7 +42,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --h1-line-height: 1em;
+  --h1-line-height: $line-height;
 
   /* VoogStyle
      "pathI18n": ["headings", "title"],
@@ -64,7 +65,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h1-font-weight: 400;
+  --h1-font-weight: bold;
 
   /* VoogStyle
     "pathI18n": ["headings", "title"],
@@ -128,7 +129,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-font-size: $h2-size;
+  --h2-font-size: $font-size;
 
   /* VoogStyle
      "pathI18n": ["headings", "heading"],
@@ -163,7 +164,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h2-font-weight: 400;
+  --h2-font-weight: bold;
 
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
@@ -205,7 +206,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --h2-text-transform: uppercase;
+  --h2-text-transform: none;
 
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
@@ -215,7 +216,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-color: $color-error;
+  --h2-color: $color-two;
 
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
@@ -227,7 +228,7 @@
     "scope": "global",
     "featured": true
   */
-  --h3-font-size: $font-size;
+  --h3-font-size: 16px;
 
   /* VoogStyle
      "pathI18n": ["headings", "subheading"],
@@ -262,7 +263,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h3-font-weight: 400;
+  --h3-font-weight: bold;
 
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
@@ -304,7 +305,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --h3-text-transform: uppercase;
+  --h3-text-transform: none;
 
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
@@ -314,7 +315,7 @@
     "scope": "global",
     "featured": true
   */
-  --h3-color: $color-error;
+  --h3-color: $color-two;
 
   // scss-lint:enable Comment, Indentation
 }

@@ -40,6 +40,11 @@ $mobile-2: 420px;
 $wide-view-multiplier: 1.4;
 $search-height: 50px;
 
+
+
+
+
+
 ///// TEMPORARY VALUES
 
 // VARIABLES
@@ -73,10 +78,22 @@ $color-notice: #3c3; // rgb(51,204,51)
 $font-one: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-two: "EB Garamond", "Georgia", serif;
 
-$h1-size: 36px;
 $h2-size: 24px;
 $font-size: 18px;
-$line-height: 1.4;
 
 $color-one: $color-two;
 $color-three: $color-four;
+
+
+// For firenze Sirje
+
+// Fonts
+$h1-size: 36px;
+$font-size: 18px;
+$line-height: 1.4;
+
+//Colors
+$color-one: #444; // replaced by $color-two in design editor
+// rgb(34,34,34)
+$color-two: #444;
+// rgb(51,51,51)

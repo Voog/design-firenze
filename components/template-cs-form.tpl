@@ -81,7 +81,7 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-text-color: #333;
+  --form-field-text-color: #444;
   /* VoogStyle
     "pathI18n": ["form"],
     "titleI18n": "border",

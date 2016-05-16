@@ -81,7 +81,7 @@
     "scope": "global",
     "featured": true
   */
-  --header-site-title-color: #333;
+  --header-site-title-color: #444;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
     "titleI18n": "size",
@@ -292,7 +292,7 @@
   "editor": "colorPicker",
   "scope": "global"
 */
-  --header-mainmenu-hover-color: #333;
+  --header-mainmenu-hover-color: #444;
  /* VoogStyle
   "pathI18n": ["header", "main_menu", "active"],
   "titleI18n": "color",
@@ -300,5 +300,5 @@
   "editor": "colorPicker",
   "scope": "global"
 */
-  --header-mainmenu-active-color: #333;
+  --header-mainmenu-active-color: #444;
 }
