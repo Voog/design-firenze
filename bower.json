@@ -1,9 +1,7 @@
 {
   "name": "voog-design-firenze",
   "devDependencies": {
-    "bourbon": "~4.2.6"
-  },
-  "dependencies": {
-    "jquery": "~2.1.4"
+    "bourbon": "^4.2.7",
+    "jquery": "^2.2.4"
   }
 }
