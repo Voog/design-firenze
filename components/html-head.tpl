@@ -27,10 +27,10 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-headings" %}
+  {% include "template-cs-header" %}
   {% include "template-cs-style-rules" %}
 
   {% comment %}
-    {% include "template-cs-header" %}
     {% if blog_list %}
       {% include "template-cs-blog-list" %}
     {% endif %}

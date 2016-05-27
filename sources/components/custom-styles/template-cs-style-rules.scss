@@ -62,6 +62,45 @@
 }
 
 
+// Header
+.content-page .header-title {
+  font-size: var(--header-site-title-font-size);
+  line-height: var(--header-site-title-line-height);
+  font-weight: var(--header-site-title-font-weight);
+  font-style: var(--header-site-title-font-style);
+  text-decoration: var(--header-site-title-text-decoration);
+  text-transform: var(--header-site-title-text-transform);
+  color: var(--header-site-title-color);
+}
+
+
+// menu-main
+.content-page .menu-main .menu .menu-item .menu-link {
+  color: var(--header-mainmenu-color);
+  text-transform: var(--header-mainmenu-text-transform);
+  text-decoration: var(--header-mainmenu-text-decoration);
+  font-style: var(--header-mainmenu-font-style);
+  font-weight: var(--header-mainmenu-font-weight);
+  line-height: var(--header-mainmenu-line-height);
+  font-size: var(--header-mainmenu-font-size);
+}
+
+.content-page .menu-main .menu .menu-item .menu-link:hover {
+  color: var(--header-mainmenu-hover-color);
+  text-transform: var(--header-mainmenu-hover-text-transform);
+  text-decoration: var(--header-mainmenu-hover-text-decoration);
+  font-style: var(--header-mainmenu-hover-font-style);
+  font-weight: var(--header-mainmenu-hover-font-weight);
+}
+
+.content-page .menu-main .menu .menu-item .menu-link.active {
+  color: var(--header-mainmenu-active-color);
+  text-transform: var(--header-mainmenu-active-text-transform);
+  text-decoration: var(--header-mainmenu-active-text-decoration);
+  font-style: var(--header-mainmenu-active-font-style);
+  font-weight: var(--header-mainmenu-active-font-weight);
+}
+
 
 
 
