@@ -26,9 +26,12 @@
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
-  {% include "template-cs-headings" %}
   {% include "template-cs-header" %}
+  {% include "template-cs-headings" %}
   {% include "template-cs-style-rules" %}
+  {% if common_page %}
+    {% include "template-cs-content" %}
+  {% endif %}
 
   {% comment %}
     {% if blog_list %}
@@ -41,7 +44,6 @@
       {% include "template-cs-content" %}
     {% endif %}
     {% include "template-cs-footer" %}
-    {% include "template-cs-headings" %}
     {% include "template-cs-button" %}
     {% include "template-cs-table" %}
     {% include "template-cs-form" %}

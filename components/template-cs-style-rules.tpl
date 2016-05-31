@@ -67,6 +67,57 @@
   font-weight: var(--header-mainmenu-active-font-weight);
 }
 
+.menu-sub .menu .menu-item .menu-link {
+  font-size: var(--content-submenu-font-size);
+  line-height: var(--content-submenu-line-height);
+}
+
+.menu-sub .menu .menu-item .menu-link {
+  font-weight: var(--content-submenu-font-weight);
+  font-style: var(--content-submenu-font-style);
+  text-decoration: var(--content-submenu-text-decoration);
+  text-transform: var(--content-submenu-text-transform);
+  color: var(--content-submenu-color);
+}
+
+.menu-sub .menu .menu-item .menu-link:hover {
+  font-weight: var(--content-submenu-hover-font-weight);
+  font-style: var(--content-submenu-hover-font-style);
+  text-decoration: var(--content-submenu-hover-text-decoration);
+  text-transform: var(--content-submenu-hover-text-transform);
+  color: var(--content-submenu-hover-color);
+}
+
+.menu-sub .menu .menu-item .menu-link.active {
+  font-weight: var(--content-submenu-active-font-weight);
+  font-style: var(--content-submenu-active-font-style);
+  text-decoration: var(--content-submenu-active-text-decoration);
+  text-transform: var(--content-submenu-active-text-transform);
+  color: var(--content-submenu-active-color);
+}
+
+.content-formatted {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+  color: var(--content-color);
+}
+
+.content-formatted a {
+  font-weight: var(--content-links-font-weight);
+  font-style: var(--content-links-font-style);
+  text-decoration: var(--content-links-text-decoration);
+  text-transform: var(--content-links-text-transform);
+  color: var(--content-links-color);
+}
+
+.content-formatted a:hover {
+  font-weight: var(--content-links-hover-font-weight);
+  font-style: var(--content-links-hover-font-style);
+  text-decoration: var(--content-links-hover-text-decoration);
+  text-transform: var(--content-links-hover-text-transform);
+  color: var(--content-links-hover-color);
+}
+
 /*
 // Main styles
 body {
