@@ -104,7 +104,6 @@
 
 
 // Content - Sub-menu
-
 .menu-sub .menu .menu-item .menu-link {
     font-size: var(--content-submenu-font-size);
     line-height: var(--content-submenu-line-height);
@@ -158,6 +157,24 @@
     color: var(--content-links-hover-color);
   }
 
+
+  // Footer
+  .footer .content-formatted {
+    font-size: var(--footer-font-size);
+    line-height: var(--footer-line-height);
+  }
+
+  .footer.light-background .content-formatted,
+  .footer .content-formatted {
+    color: var(--footer-color);
+  }
+
+  // Voog reference
+  .footer .voog-reference {
+    a {
+      color: var(--footer-color);
+    }
+  }
 
 
 /*

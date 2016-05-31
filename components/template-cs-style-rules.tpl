@@ -118,6 +118,20 @@
   color: var(--content-links-hover-color);
 }
 
+.footer .content-formatted {
+  font-size: var(--footer-font-size);
+  line-height: var(--footer-line-height);
+}
+
+.footer.light-background .content-formatted,
+.footer .content-formatted {
+  color: var(--footer-color);
+}
+
+.footer .voog-reference a {
+  color: var(--footer-color);
+}
+
 /*
 // Main styles
 body {

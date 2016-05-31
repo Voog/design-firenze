@@ -32,6 +32,7 @@
   {% if common_page %}
     {% include "template-cs-content" %}
   {% endif %}
+  {% include "template-cs-footer" %}
 
   {% comment %}
     {% if blog_list %}

@@ -9,7 +9,7 @@
     "scope": "global",
     "featured": true
   */
-  --footer-font-size: 12px;
+  --footer-font-size: 9px;
   /* VoogStyle
      "pathI18n": ["footer", "text"],
      "titleI18n": "line_height",
@@ -28,5 +28,5 @@
     "scope": "global",
     "featured": true
   */
-  --footer-color: #444;
+  --footer-color: rgba(255, 255, 255, 0.33);
 }
