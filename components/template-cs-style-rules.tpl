@@ -132,6 +132,23 @@
   color: var(--footer-color);
 }
 
+.content-formatted .custom-btn {
+  background-color: var(--button-background-color);
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  line-height: var(--button-line-height);
+  color: var(--button-color);
+}
+
+.content-formatted .custom-btn:hover {
+  color: #fff;
+  opacity: .6;
+  background-color: var(--button-background-color);
+}
+
+/*.content-formatted .custom-btn,
+.content-formatted .custom-btn:hover { text-transform: var(--button-text-transform) }
+*/
 /*
 // Main styles
 body {
