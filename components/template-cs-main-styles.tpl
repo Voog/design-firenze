@@ -69,7 +69,7 @@
         "--form-field-border-color"
      ]
   */
-  --color-secondary: #919191;
+  --color-secondary: #f2f2f2;
   /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "background_color",

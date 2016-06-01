@@ -89,5 +89,5 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-border-color: #919191;
+  --form-field-border-color: #f2f2f2;
 }

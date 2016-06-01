@@ -149,6 +149,14 @@
 /*.content-formatted .custom-btn,
 .content-formatted .custom-btn:hover { text-transform: var(--button-text-transform) }
 */
+.content-formatted table td {
+  border-bottom-style: var(--table-border-style);
+  border-top-style: var(--table-border-style);
+  padding: var(--table-cell-padding);
+  border-bottom-color: var(--table-border-color);
+  border-top-color: var(--table-border-color);
+}
+
 /*
 // Main styles
 body {

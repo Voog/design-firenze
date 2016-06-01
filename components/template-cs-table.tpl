@@ -23,5 +23,5 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --table-border-color: #919191;
+  --table-border-color: #cacaca;
 }

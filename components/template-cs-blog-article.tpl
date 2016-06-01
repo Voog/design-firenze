@@ -333,7 +333,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-color: #919191;
+  --content-links-color: #f2f2f2;
  /* VoogStyle
   "pathI18n": ["content", "link", "hover"],
   "titleI18n": "color",

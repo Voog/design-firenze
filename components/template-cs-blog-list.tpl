@@ -175,7 +175,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-date-color: #919191;
+  --blog-list-date-color: #f2f2f2;
   /* VoogStyle
     "pathI18n": ["blog", "text"],
     "titleI18n": "size",
@@ -333,7 +333,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-color: #919191;
+  --content-links-color: #f2f2f2;
  /* VoogStyle
   "pathI18n": ["blog", "link", "hover"],
   "titleI18n": "color",
