@@ -324,8 +324,8 @@
   };
 
   // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
-  var bgPickerContentLightnessClass = function(bgPickerArea) {
-    if (bgPickerCombinedLightness >= 0.5) {
+  var bgPickerContentLightnessClass = function(bgPickerArea, combinedLightness) {
+    if (combinedLightness > 0.6) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
     } else {
       $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
@@ -333,7 +333,7 @@
   };
 
   // Header background image and color preview logic function.
-  var bgPickerPreview = function(bgPickerArea, data, bgPicker) {
+  var bgPickerPreview = function(bgPickerArea, data, bgPicker, defaultImageColor) {
     // Defines the variables used in preview logic.
 
     var bgPickerImagePrevious = $(bgPickerArea).find('.js-background-image').css('background-image'),
@@ -348,21 +348,25 @@
 
     if (colorExtractImageUrl) {
       if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious)) {
-        bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
-        bgPickerContentLightnessClass(bgPickerArea);
+        bgPicker.imageColor = bgPicker.imageColor ? bgPicker.imageColor : defaultImageColor;
+        bgPicker.combinedLightness = getCombinedLightness(bgPicker.imageColor, bgPickerColor);
+        bgPickerContentLightnessClass(bgPickerArea, bgPicker.combinedLightness);
+
       } else {
         colorExtractImage.attr('src', colorExtractImageUrl.replace(/.*\/(photos|voogstock)/g,'/photos'));
         colorExtractImage.load(function() {
           ColorExtract.extract(colorExtractImage[0], colorExtractCanvas[0], function(data) {
-            bgPicker.bgPickerImageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
-            bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
-            bgPickerContentLightnessClass(bgPickerArea);
+            bgPicker.imageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
+            bgPicker.combinedLightness = getCombinedLightness(bgPicker.imageColor, bgPickerColor);
+            bgPickerContentLightnessClass(bgPickerArea, bgPicker.combinedLightness);
+
           });
         });
       };
     } else {
-      bgPickerCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', bgPickerColor);
-      bgPickerContentLightnessClass(bgPickerArea);
+      bgPicker.imageColor = 'rgba(255,255,255,1)';
+      bgPicker.combinedLightness = getCombinedLightness(bgPicker.imageColor, bgPickerColor);
+      bgPickerContentLightnessClass(bgPickerArea, bgPicker.combinedLightness);
     };
 
     // Updates the bgPickerContent background image and background color.
@@ -371,12 +375,12 @@
   };
 
   // Header background image and color save logic function.
-  var bgPickerCommit = function(dataBgKey, data) {
+  var bgPickerCommit = function(dataBgKey, data, bgPicker, pageType) {
     var commitData = $.extend(true, {}, data);
     commitData.image = data.image || '';
     commitData.imageSizes = data.imageSizes || '';
     commitData.color = data.color || '';
-    commitData.combinedLightness = bgPickerCombinedLightness;
+    commitData.combinedLightness = bgPicker.combinedLightness;
 
     if (pageType === 'articlePage') {
       Edicy.articles.currentArticle.setData(dataBgKey, commitData);

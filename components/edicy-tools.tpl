@@ -21,7 +21,8 @@
 
     $('.js-bg-picker-area').each(function(index, bgPickerArea) {
       var bgPickerButton = $(bgPickerArea).find('.js-background-settings'),
-          dataBgKey = $(bgPickerButton).data('bg-key');
+          dataBgKey = $(bgPickerButton).data('bg-key'),
+          defaultImageColor = $(bgPickerButton).data('bg-default-image-color');
 
       var bgPicker = new Edicy.BgPicker(bgPickerButton, {
             picture: true,
@@ -30,11 +31,11 @@
             showAlpha: true,
 
         preview: function(data) {
-          site.bgPickerPreview($(bgPickerArea), data, bgPicker);
+          site.bgPickerPreview($(bgPickerArea), data, bgPicker, defaultImageColor);
         },
 
         commit: function(data) {
-          site.bgPickerCommit(dataBgKey, data, pageType);
+          site.bgPickerCommit(dataBgKey, data, bgPicker, pageType);
         }
       });
     });
