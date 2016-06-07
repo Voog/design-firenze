@@ -22,11 +22,13 @@
     $('.js-bg-picker-area').each(function(index, bgPickerArea) {
       var bgPickerButton = $(bgPickerArea).find('.js-background-settings'),
           dataBgKey = $(bgPickerButton).data('bg-key'),
-          defaultImageColor = $(bgPickerButton).data('bg-default-image-color');
+          defaultImageColor = $(bgPickerButton).data('bg-default-image-color'),
+          pictureBoolean = $(bgPickerButton).data('bg-picture-boolean'),
+          targetWidth = $(bgPickerButton).data('target-width');
 
       var bgPicker = new Edicy.BgPicker(bgPickerButton, {
-            picture: true,
-            target_width: 600,
+            picture: pictureBoolean,
+            target_width: targetWidth,
             color: true,
             showAlpha: true,
 

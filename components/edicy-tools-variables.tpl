@@ -22,6 +22,7 @@
   {% assign body_bg_image_sizes = body_bg.imageSizes %}
   {% assign body_bg_color = body_bg.color %}
   {% assign body_bg_color_data = body_bg.colorData %}
+  {% assign body_bg_combined_lightness = body_bg.combinedLightness %}
 
   {% comment %}Assign fallback image state{% endcomment %}
   {% if fallback_body_color != nil and body_bg.color == nil %}
@@ -30,17 +31,25 @@
 
   {% comment %}Sets the body background color scheme.{% endcomment %}
   {% if body_bg %}
-    {% if body_bg_color_data.a >= 0.2 %}
-      {% if body_bg_color_data.lightness >= 0.5 %}
-        {% assign body_bg_type = 'light-background' %}
+    {% if body_bg_combined_lightness %}
+      {% if body_bg_combined_lightness > 0.6 %}
+        {% assign body_bg_type = "light-background" %}
       {% else %}
-        {% assign body_bg_type = 'dark-background' %}
+        {% assign body_bg_type = "dark-background" %}
       {% endif %}
     {% else %}
-      {% assign body_bg_type = 'light-background' %}
+      {% if body_bg_color_data.a >= 0.6 %}
+        {% if body_bg_color_data.lightness >= 0.6 %}
+          {% assign body_bg_type = "light-background" %}
+        {% else %}
+          {% assign body_bg_type = "dark-background" %}
+        {% endif %}
+      {% else %}
+        {% assign body_bg_type = "light-background" %}
+      {% endif %}
     {% endif %}
   {% else %}
-    {% assign body_bg_type = 'dark-background' %}
+    {% assign body_bg_type = "dark-background" %}
   {% endif %}
 
   {% if fallback_body_image != nil and body_bg.image == nil %}
