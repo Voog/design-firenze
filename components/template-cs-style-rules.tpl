@@ -176,12 +176,15 @@
 .form_field .edy-fe-label {
   color: var(--form-field-text-color);
   font-style: var(--form-field-text-font-style);
-  font-weight: var(--form-field-text-font-weight);
   text-transform: var(--form-field-text-text-transform);
 }
 
 .content-formatted .form_field label {
   text-decoration: none;
+}
+
+.content-formatted .form_field .form_field_label {
+  font-weight: var(--form-field-text-font-weight);
 }
 
 /*
