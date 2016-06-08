@@ -132,7 +132,8 @@
   color: var(--footer-color);
 }
 
-.content-formatted .custom-btn {
+.content-formatted .custom-btn,
+.content-formatted .form_submit input {
   background-color: var(--button-background-color);
   padding: var(--button-padding);
   font-size: var(--button-font-size);
@@ -140,7 +141,8 @@
   color: var(--button-color);
 }
 
-.content-formatted .custom-btn:hover {
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input:hover {
   color: #fff;
   opacity: .6;
   background-color: var(--button-background-color);
@@ -155,6 +157,31 @@
   padding: var(--table-cell-padding);
   border-bottom-color: var(--table-border-color);
   border-top-color: var(--table-border-color);
+}
+
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.svg .content-formatted .form_field_checkbox + .form_control_indicator,
+.svg .content-formatted .form_field_radio + .form_control_indicator,
+.svg .content-formatted .form_field_select {
+  background-color: var(--form-field-background-color);
+}
+
+.form_field_file,
+.form_field .edy-fe-label {
+  text-decoration: var(--form-field-text-text-decoration);
+}
+
+.form_field_file,
+.form_field .edy-fe-label {
+  color: var(--form-field-text-color);
+  font-style: var(--form-field-text-font-style);
+  font-weight: var(--form-field-text-font-weight);
+  text-transform: var(--form-field-text-text-transform);
+}
+
+.content-formatted .form_field label {
+  text-decoration: none;
 }
 
 /*
