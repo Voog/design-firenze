@@ -96,7 +96,7 @@
   color: var(--content-submenu-active-color);
 }
 
-.content-formatted {
+.content-formatted, .post-excerpt .content-formatted {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
   color: var(--content-color);
@@ -185,6 +185,57 @@
 
 .content-formatted .form_field .form_field_label {
   font-weight: var(--form-field-text-font-weight);
+}
+
+.post-title {
+  font-weight: var(--blog-list-title-font-weight);
+  display: inline-block !important;
+}
+
+.post-title a {
+  font-size: var(--blog-list-title-font-size);
+  line-height: var(--blog-list-title-line-height);
+  font-style: var(--blog-list-title-font-style);
+  text-decoration: var(--blog-list-title-text-decoration);
+  text-transform: var(--blog-list-title-text-transform);
+  color: var(--blog-list-title-color);
+}
+
+.post-title a:hover {
+  opacity: 0.8;
+  color: var(--blog-list-title-color);
+}
+
+.post-date {
+  font-size: var(--blog-list-date-font-size);
+  line-height: var(--blog-list-date-line-height);
+  font-weight: var(--blog-list-date-font-weight);
+  font-style: var(--blog-list-date-font-style);
+  text-decoration: var(--blog-list-date-text-decoration);
+  text-transform: var(--blog-list-date-text-transform);
+  color: var(--blog-list-date-color);
+}
+
+.content-formatted, .post-excerpt .content-formatted {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+  color: var(--content-color);
+}
+
+.content-formatted a {
+  font-weight: var(--content-links-font-weight);
+  font-style: var(--content-links-font-style);
+  text-decoration: var(--content-links-text-decoration);
+  text-transform: var(--content-links-text-transform);
+  color: var(--content-links-color);
+}
+
+.content-formatted a:hover {
+  font-weight: var(--content-links-hover-font-weight);
+  font-style: var(--content-links-hover-font-style);
+  text-decoration: var(--content-links-hover-text-decoration);
+  text-transform: var(--content-links-hover-text-transform);
+  color: var(--content-links-hover-color);
 }
 
 /*

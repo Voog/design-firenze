@@ -5,7 +5,7 @@
   {% assign blog_page = true %}
   {% include "edicy-tools-variables" %}
   {% include "content-page-variables" %}
-  {% include "html-head" %}
+  {% include "html-head" blog_list: true %}
   {% include "edicy-tools-styles" %}
 </head>
 

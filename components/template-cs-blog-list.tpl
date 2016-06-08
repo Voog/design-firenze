@@ -1,16 +1,5 @@
 :root {
   /* VoogStyle
-     "pathI18n": ["blog"],
-     "titleI18n": "padding",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 200,
-     "step": 10,
-     "unit": "px",
-     "scope": "global"
-  */
-  --blog-list-margin: 70px;
-  /* VoogStyle
     "pathI18n": ["blog", "title"],
     "titleI18n": "size",
     "editor": "rangePicker",
@@ -20,7 +9,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-title-font-size: 20px;
+  --blog-list-title-font-size: 36px;
   /* VoogStyle
      "pathI18n": ["blog", "title"],
      "titleI18n": "line_height",
@@ -103,7 +92,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-date-font-size: 12px;
+  --blog-list-date-font-size: 36px;
   /* VoogStyle
      "pathI18n": ["blog", "date"],
      "titleI18n": "line_height",
@@ -175,7 +164,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-date-color: #f2f2f2;
+  --blog-list-date-color: #e2e2e2;
   /* VoogStyle
     "pathI18n": ["blog", "text"],
     "titleI18n": "size",
@@ -189,7 +178,7 @@
       "--form-field-text-font-size"
     ]
   */
-  --content-font-size: 20px;
+  --content-font-size: 14px;
   /* VoogStyle
      "pathI18n": ["blog", "text"],
      "titleI18n": "line_height",
@@ -208,7 +197,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-color: #444;
+  --content-color: #888;
   /* VoogStyle
       "pathI18n": ["blog", "link", "normal"],
       "titleI18n": "font_weight",
@@ -333,7 +322,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-color: #f2f2f2;
+  --content-links-color: rgba(0, 102, 187, 0.8);
  /* VoogStyle
   "pathI18n": ["blog", "link", "hover"],
   "titleI18n": "color",
@@ -342,5 +331,5 @@
   "scope": "global",
   "featured": true
 */
-  --content-links-hover-color: #444;
+  --content-links-hover-color: #06b;
 }

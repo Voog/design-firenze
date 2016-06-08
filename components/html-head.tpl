@@ -36,11 +36,12 @@
   {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
+  {% if blog_list %}
+    {% include "template-cs-blog-list" %}
+  {% endif %}
+
 
   {% comment %}
-    {% if blog_list %}
-      {% include "template-cs-blog-list" %}
-    {% endif %}
     {% if blog_article %}
       {% include "template-cs-blog-article" %}
     {% endif %}
