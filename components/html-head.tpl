@@ -39,13 +39,9 @@
   {% if blog_list %}
     {% include "template-cs-blog-list" %}
   {% endif %}
-
-
-  {% comment %}
-    {% if blog_article %}
-      {% include "template-cs-blog-article" %}
-    {% endif %}
-  {% endcomment %}
+  {% if blog_article %}
+    {% include "template-cs-blog-article" %}
+  {% endif %}
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
