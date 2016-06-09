@@ -77,7 +77,6 @@ $color-error: #c33; //rgb(204,51,51)
 $color-notice: #3c3; // rgb(51,204,51)
 
 // Fonts
-$font-one: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-two: "EB Garamond", "Georgia", serif;
 
 $h2-size: 24px;
@@ -87,9 +86,14 @@ $color-one: $color-two;
 $color-three: $color-four;
 
 
-// For Firenze, Sirje
+// FOR FIRENZE, Sirje
+
+//Main styles
+$site-width: 650px;
 
 // Fonts
+$font-one: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-two: "Bebas Neue Latin", sans-serif;
 $h1-size: 36px;
 $font-size: 18px;
 $line-height: 1.4;
@@ -97,6 +101,7 @@ $line-height: 1.4;
 //Colors
 $color-one: #444; // replaced by $color-two in design editor
 $color-two: #444;
+$color-four: #919191;
 
 $color: #888;
 

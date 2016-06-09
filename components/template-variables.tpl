@@ -15,8 +15,16 @@
           "value": "\"Avenir Next\", \"Helvetica Neue\", \"Helvetica\", \"Segoe UI\", sans-serif"
         },
         {
+          "title": "Bebas Neue Latin",
+          "value": "\"Bebas Neue Latin\", sans-serif"
+        },
+        {
           "title": "Fira Sans",
           "value": "\"Fira Sans\", sans-serif"
+        },
+        {
+          "title": "Helvetica Neue",
+          "value": "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
         },
         {
           "title": "Lato",

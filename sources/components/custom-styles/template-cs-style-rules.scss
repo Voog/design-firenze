@@ -47,7 +47,6 @@
   }
 }
 
-
 .content-page .content-formatted {
   h3 {
     font-size: var(--h3-font-size);
@@ -75,7 +74,7 @@
 }
 
 
-// menu-main
+// Menu main
 .content-page .menu-main .menu .menu-item .menu-link {
   color: var(--header-mainmenu-color);
   text-transform: var(--header-mainmenu-text-transform);
@@ -103,7 +102,7 @@
 }
 
 
-// Content - Sub-menu
+// Content - sub-menu
 .menu-sub .menu .menu-item .menu-link {
     font-size: var(--content-submenu-font-size);
     line-height: var(--content-submenu-line-height);
@@ -133,14 +132,14 @@
     color: var(--content-submenu-active-color);
   }
 
-  // Content - Text
+  // Content - text
   .content-formatted, .post-excerpt .content-formatted {
     font-size: var(--content-font-size);
     line-height: var(--content-line-height);
     color: var(--content-color);
   }
 
-  // Content - Links
+  // Content - links
   .content-formatted a {
     font-weight: var(--content-links-font-weight);
     font-style: var(--content-links-font-style);
@@ -169,12 +168,14 @@
     color: var(--footer-color);
   }
 
+
   // Voog reference
   .footer .voog-reference {
     a {
       color: var(--footer-color);
     }
   }
+
 
   // Custom button
   .content-formatted .custom-btn,
@@ -209,92 +210,115 @@
 
 
   // Form
+  .content-formatted .form_field_textfield,
+  .content-formatted .form_field_textarea,
+  .svg .content-formatted .form_field_checkbox+.form_control_indicator,
+  .svg .content-formatted .form_field_radio+.form_control_indicator,
+  .svg .content-formatted .form_field_select {
+    background-color: var(--form-field-background-color);
+  }
 
-    .content-formatted .form_field_textfield,
-    .content-formatted .form_field_textarea,
-    .svg .content-formatted .form_field_checkbox+.form_control_indicator,
-    .svg .content-formatted .form_field_radio+.form_control_indicator,
-    .svg .content-formatted .form_field_select {
-      background-color: var(--form-field-background-color);
+  .form_field_file,
+  .form_field .edy-fe-label {
+    text-decoration: var(--form-field-text-text-decoration);
+  }
+
+  .form_field_file,
+  .form_field .edy-fe-label {
+    color: var(--form-field-text-color);
+    font-style: var(--form-field-text-font-style);
+    text-transform: var(--form-field-text-text-transform);
+  }
+
+  .content-formatted .form_field label {
+    text-decoration: none;
+  }
+  .content-formatted .form_field .form_field_label {
+    font-weight: var(--form-field-text-font-weight);
+  }
+
+
+  // Blog
+  .post-title {
+    font-weight: var(--blog-list-title-font-weight);
+    display: inline-block !important;
+  }
+
+  .post-title a {
+      font-size: var(--blog-list-title-font-size);
+      line-height: var(--blog-list-title-line-height);
+      font-style: var(--blog-list-title-font-style);
+      text-decoration: var(--blog-list-title-text-decoration);
+      text-transform: var(--blog-list-title-text-transform);
+      color: var(--blog-list-title-color);
     }
 
-    .form_field_file,
-    .form_field .edy-fe-label {
-      text-decoration: var(--form-field-text-text-decoration);
+  .post-title a:hover {
+      opacity:0.8;
+      color: var(--blog-list-title-color);
     }
 
-    .form_field_file,
-    .form_field .edy-fe-label {
-      color: var(--form-field-text-color);
-      font-style: var(--form-field-text-font-style);
-      text-transform: var(--form-field-text-text-transform);
+  .post-date {
+    font-size: var(--blog-list-date-font-size);
+    line-height: var(--blog-list-date-line-height);
+    font-weight: var(--blog-list-date-font-weight);
+    font-style: var(--blog-list-date-font-style);
+    text-decoration: var(--blog-list-date-text-decoration);
+    text-transform: var(--blog-list-date-text-transform);
+    color: var(--blog-list-date-color);
+  }
+
+
+  // Content - text
+  .content-formatted, .post-excerpt .content-formatted {
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
+    color: var(--content-color);
+  }
+
+  // Content - links
+  .content-formatted a {
+    font-weight: var(--content-links-font-weight);
+    font-style: var(--content-links-font-style);
+    text-decoration: var(--content-links-text-decoration);
+    text-transform: var(--content-links-text-transform);
+    color: var(--content-links-color);
+  }
+
+  // Content - link hover
+  .content-formatted a:hover {
+    font-weight: var(--content-links-hover-font-weight);
+    font-style: var(--content-links-hover-font-style);
+    text-decoration: var(--content-links-hover-text-decoration);
+    text-transform: var(--content-links-hover-text-transform);
+    color: var(--content-links-hover-color);
+  }
+
+
+  // Main styles - width
+  .content-page .container .wrap {
+    max-width: var(--site-width);
+    background-color: var(--color-bg);
+  }
+
+
+  // Main styles - Colors and font
+  body {
+    font-family: var(--font-one);
+    .light-background {
+      color: var(--color-primary);
     }
-
-    .content-formatted .form_field label {
-      text-decoration: none;
+    .dark-background {
+      color: var(--color-secondary);
     }
-    .content-formatted .form_field .form_field_label {
-      font-weight: var(--form-field-text-font-weight);
-    }
+  }
 
+  .comments .comments-title, .content-formatted h1,
+  .header-title, .menu-main, .post-date, .post-title,
+  .post-title a, .tags-btn, .voog-search-modal-results h3 {
+    font-family: var(--font-two);
+  }
 
-    // Blog
-
-    .post-title {
-      font-weight: var(--blog-list-title-font-weight);
-      display: inline-block !important;
-
-    }
-
-    .post-title a {
-          font-size: var(--blog-list-title-font-size);
-          line-height: var(--blog-list-title-line-height);
-          font-style: var(--blog-list-title-font-style);
-          text-decoration: var(--blog-list-title-text-decoration);
-          text-transform: var(--blog-list-title-text-transform);
-          color: var(--blog-list-title-color);
-        }
-
-      .post-title a:hover {
-              opacity:0.8;
-              color: var(--blog-list-title-color);
-            }
-
-      .post-date {
-        font-size: var(--blog-list-date-font-size);
-        line-height: var(--blog-list-date-line-height);
-        font-weight: var(--blog-list-date-font-weight);
-        font-style: var(--blog-list-date-font-style);
-        text-decoration: var(--blog-list-date-text-decoration);
-        text-transform: var(--blog-list-date-text-transform);
-        color: var(--blog-list-date-color);
-      }
-
-
-      // Content - Text
-      .content-formatted, .post-excerpt .content-formatted {
-        font-size: var(--content-font-size);
-        line-height: var(--content-line-height);
-        color: var(--content-color);
-      }
-
-      // Content - Links
-      .content-formatted a {
-        font-weight: var(--content-links-font-weight);
-        font-style: var(--content-links-font-style);
-        text-decoration: var(--content-links-text-decoration);
-        text-transform: var(--content-links-text-transform);
-        color: var(--content-links-color);
-      }
-
-      // Content - Link hover
-      .content-formatted a:hover {
-        font-weight: var(--content-links-hover-font-weight);
-        font-style: var(--content-links-hover-font-style);
-        text-decoration: var(--content-links-hover-text-decoration);
-        text-transform: var(--content-links-hover-text-transform);
-        color: var(--content-links-hover-color);
-      }
 
 
 

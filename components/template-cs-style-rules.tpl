@@ -238,6 +238,27 @@
   color: var(--content-links-hover-color);
 }
 
+.content-page .container .wrap {
+  max-width: var(--site-width);
+  background-color: var(--color-bg);
+}
+
+body {
+  font-family: var(--font-one);
+}
+body .light-background {
+  color: var(--color-primary);
+}
+body .dark-background {
+  color: var(--color-secondary);
+}
+
+.comments .comments-title, .content-formatted h1,
+.header-title, .menu-main, .post-date, .post-title,
+.post-title a, .tags-btn, .voog-search-modal-results h3 {
+  font-family: var(--font-two);
+}
+
 /*
 // Main styles
 body {

@@ -3,13 +3,13 @@
      "pathI18n": ["main_styles"],
      "titleI18n": "maximum_width",
      "editor": "rangePicker",
-     "min": 600,
+     "min": 650,
      "max": 1800,
      "step": 20,
      "unit": "px",
      "scope": "global"
   */
-  --site-width: 940px;
+  --site-width: 650px;
   /* VoogStyle
      "pathI18n": ["main_styles"],
      "titleI18n": "font_primary",
@@ -18,7 +18,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-one: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-one: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "pathI18n": ["main_styles"],
      "titleI18n": "font_secondary",
@@ -27,7 +27,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-two: "EB Garamond", "Georgia", serif;
+  --font-two: "Bebas Neue Latin", sans-serif;
   /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "primary_color",
@@ -77,5 +77,5 @@
      "scope": "global",
      "featured": true
   */
-  --color-bg: white;
+  --color-bg: #FFFFFF;
 }
