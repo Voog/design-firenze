@@ -1,17 +1,6 @@
 :root {
   /* VoogStyle
-     "pathI18n": ["content"],
-     "titleI18n": "padding",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 200,
-     "step": 10,
-     "unit": "px",
-     "scope": "global"
-  */
-  --blog-article-margin: 70px;
-  /* VoogStyle
-    "pathI18n": ["content", "title"],
+    "pathI18n": ["blog", "title"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
@@ -20,9 +9,9 @@
     "scope": "global",
     "featured": true
   */
-  --content-title-font-size: 46px;
+  --blog-list-title-font-size: 36px;
   /* VoogStyle
-     "pathI18n": ["content", "title"],
+     "pathI18n": ["blog", "title"],
      "titleI18n": "line_height",
      "editor": "rangePicker",
      "min": 0.8,
@@ -31,9 +20,9 @@
      "unit": "em",
      "scope": "global"
   */
-  --content-title-line-height: 1em;
+  --blog-list-title-line-height: 1.4;
   /* VoogStyle
-    "pathI18n": ["content", "title"],
+    "pathI18n": ["blog", "title"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -44,9 +33,9 @@
     "icon": "bold",
     "scope": "global"
   */
-  --content-title-font-weight: 400;
+  --blog-list-title-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["content", "title"],
+    "pathI18n": ["blog", "title"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -57,9 +46,9 @@
     "icon": "italic",
     "scope": "global"
   */
-  --content-title-font-style: normal;
+  --blog-list-title-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["content", "title"],
+    "pathI18n": ["blog", "title"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -70,9 +59,9 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-title-text-decoration: none;
+  --blog-list-title-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["content", "title"],
+    "pathI18n": ["blog", "title"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -83,18 +72,18 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --content-title-text-transform: none;
+  --blog-list-title-text-transform: uppercase;
   /* VoogStyle
-    "pathI18n": ["content", "title"],
+    "pathI18n": ["blog", "title"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
     "featured": true
   */
-  --content-title-color: #444;
+  --blog-list-title-color: #444;
   /* VoogStyle
-    "pathI18n": ["content", "date"],
+    "pathI18n": ["blog", "date"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
@@ -103,9 +92,9 @@
     "scope": "global",
     "featured": true
   */
-  --post-date-font-size: 20px;
+  --blog-list-date-font-size: 36px;
   /* VoogStyle
-     "pathI18n": ["content", "date"],
+     "pathI18n": ["blog", "date"],
      "titleI18n": "line_height",
      "editor": "rangePicker",
      "min": 0.8,
@@ -114,9 +103,9 @@
      "unit": "em",
      "scope": "global"
   */
-  --post-date-line-height: 1.6em;
+  --blog-list-date-line-height: 1.4;
   /* VoogStyle
-    "pathI18n": ["content", "date"],
+    "pathI18n": ["blog", "date"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -127,9 +116,9 @@
     "icon": "bold",
     "scope": "global"
   */
-  --post-date-font-weight: 400;
+  --blog-list-date-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["content", "date"],
+    "pathI18n": ["blog", "date"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -140,9 +129,9 @@
     "icon": "italic",
     "scope": "global"
   */
-  --post-date-font-style: normal;
+  --blog-list-date-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["content", "date"],
+    "pathI18n": ["blog", "date"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -153,9 +142,9 @@
     "icon": "underline",
     "scope": "global"
   */
-  --post-date-text-decoration: none;
+  --blog-list-date-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["content", "date"],
+    "pathI18n": ["blog", "date"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -166,18 +155,18 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --post-date-text-transform: uppercase;
+  --blog-list-date-text-transform: uppercase;
   /* VoogStyle
-    "pathI18n": ["content", "date"],
+    "pathI18n": ["blog", "date"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
     "featured": true
   */
-  --post-date-color: #c33;
+  --blog-list-date-color: #e2e2e2;
   /* VoogStyle
-    "pathI18n": ["content", "text"],
+    "pathI18n": ["blog", "text"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
@@ -189,9 +178,9 @@
       "--form-field-text-font-size"
     ]
   */
-  --content-font-size: 20px;
+  --content-font-size: 14px;
   /* VoogStyle
-     "pathI18n": ["content", "text"],
+     "pathI18n": ["blog", "text"],
      "titleI18n": "line_height",
      "editor": "rangePicker",
      "min": 0.8,
@@ -202,15 +191,15 @@
   */
   --content-line-height: 1.4;
   /* VoogStyle
-    "pathI18n": ["content", "text"],
+    "pathI18n": ["blog", "text"],
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",
     "featured": true
   */
-  --content-color: #444;
+  --content-color: #888;
   /* VoogStyle
-      "pathI18n": ["content", "link", "normal"],
+      "pathI18n": ["blog", "link", "normal"],
       "titleI18n": "font_weight",
       "type": "button",
       "editor": "toggleIcon",
@@ -226,7 +215,7 @@
     */
   --content-links-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["content", "link", "hover"],
+    "pathI18n": ["blog", "link", "hover"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -239,7 +228,7 @@
   */
   --content-links-hover-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
+    "pathI18n": ["blog", "link", "normal"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -255,7 +244,7 @@
   */
   --content-links-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["content", "link", "hover"],
+    "pathI18n": ["blog", "link", "hover"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -268,7 +257,7 @@
   */
   --content-links-hover-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
+    "pathI18n": ["blog", "link", "normal"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -284,7 +273,7 @@
   */
   --content-links-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["content", "link", "hover"],
+    "pathI18n": ["blog", "link", "hover"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -297,7 +286,7 @@
   */
   --content-links-hover-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
+    "pathI18n": ["blog", "link", "normal"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -313,7 +302,7 @@
   */
   --content-links-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["content", "link", "hover"],
+    "pathI18n": ["blog", "link", "hover"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -326,21 +315,21 @@
   */
   --content-links-hover-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
+    "pathI18n": ["blog", "link", "normal"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
     "featured": true
   */
-  --content-links-color: #f2f2f2;
+  --content-links-color: rgba(0, 102, 187, 0.8);
  /* VoogStyle
-  "pathI18n": ["content", "link", "hover"],
+  "pathI18n": ["blog", "link", "hover"],
   "titleI18n": "color",
   "type": "button",
   "editor": "colorPicker",
   "scope": "global",
   "featured": true
 */
-  --content-links-hover-color: #444;
+  --content-links-hover-color: #06b;
 }
