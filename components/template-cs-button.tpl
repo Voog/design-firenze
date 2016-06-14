@@ -31,7 +31,7 @@
     "unit": "em",
     "scope": "global"
   */
-  --button-line-height: 1em;
+  --button-line-height: 1;
   /* VoogStyle
     "pathI18n": ["button"],
     "titleI18n": "background_color",

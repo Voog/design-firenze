@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --header-site-title-line-height: 1em;
+  --header-site-title-line-height: 1;
   /* VoogStyle
     "pathI18n": ["header", "title"],
     "titleI18n": "font_weight",
@@ -103,7 +103,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --header-mainmenu-line-height: 1.4em;
+  --header-mainmenu-line-height: 1.4;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
     "titleI18n": "font_weight",
