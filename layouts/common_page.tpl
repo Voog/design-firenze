@@ -5,7 +5,7 @@
   {% assign common_page = true %}
   {% include "edicy-tools-variables" %}
   {% include "content-page-variables" %}
-  {% include "html-head" %}
+  {% include "html-head" common_page: true %}
   {% include "edicy-tools-styles" %}
 </head>
 

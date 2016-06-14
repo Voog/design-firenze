@@ -225,6 +225,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/template-cs-main-styles-ver2.tpl",
+      "layout_name": "template-cs-main-styles-ver2",
+      "title": "template-cs-main-styles-ver2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-main-styles.tpl",
       "layout_name": "template-cs-main-styles",
       "title": "template-cs-main-styles"
