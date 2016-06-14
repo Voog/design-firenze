@@ -68,10 +68,11 @@
         "--focus-area-links-hover-color",
         "--header-mainmenu-color",
         "--table-border-color",
-        "--form-field-border-color"
+        "--form-field-border-color",
+        "--content-color"
      ]
   */
-  --color-secondary: #f2f2f2;
+  --color-secondary: #888;
   /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "background_color",
