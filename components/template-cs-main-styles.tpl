@@ -47,7 +47,9 @@
         "--content-title-color",
         "--blog-list-title-color",
         "--form-field-text-color",
-        "--h1-color"
+        "--h1-color",
+        "--h2-color",
+        "--h3-color"
       ]
   */
   --color-primary: #444;

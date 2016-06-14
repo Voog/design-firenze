@@ -3,95 +3,18 @@
 // Comment out the "_variables.scss" partial in the "main.scss" file if not used.
 
 
+
+// FOR FIRENZE, Sirje
+
 // General colors
 $primary-color: #888888;
 $secondary-color: #444444;
 $third-color: #F2F2F2;
 
-// Specific colors
-$black: #000000;
-$white: #FFFFFF;
-
-$red: #CC0000;
-$green: #60A740;
-$blue-1: #0066BB;
-$blue-2: #C7E5FF;
-
-$grey-1: #838586;
-$grey-2: #FAFAFA;
-$grey-3: #E2E2E2;
-$grey-4: #EDECEC;
-$yellow: #F9EC5A;
-
-
-// Media queries
-$large-1: 1400px;
-
-$tablet-1: 900px;
-$tablet-2: 720px;
-$tablet-3: 640px;
-
-$mobile-1: 480px;
-$mobile-2: 420px;
-
-// Reusable values
-// Define the reusable variables here.
-// For example the width of several different elements, that allways have to be with the same height:
-// $box-width: 400px;
-$wide-view-multiplier: 1.4;
-$search-height: 50px;
-
-
-
-
-
-
-///// TEMPORARY VALUES
-
-// VARIABLES
-
-// Media queries
-$tablet: 999px;
-$mobile: 640px;
-
-$site-width: 940px;
-
-// Colors
-$color-white: rgb(255, 255, 255);
-$color-black: rgb(0, 0, 0);
-
-$color-one: #222; // replaced by $color-two in design editor
-// rgb(34,34,34)
-
-$color-two: #333;
-// rgb(51,51,51)
-
-$color-three: #888; // replaced by $color-four in design editor
-// rgb(136,136,136)
-
-$color-four: #919191;
-// rgb(145,145,145)
-
-
-$color-error: #c33; //rgb(204,51,51)
-$color-notice: #3c3; // rgb(51,204,51)
-
-// Fonts
-$font-two: "EB Garamond", "Georgia", serif;
-
-$h2-size: 24px;
-$font-size: 18px;
-
-$color-one: $color-two;
-$color-three: $color-four;
-
-
-// FOR FIRENZE, Sirje
-
 //Main styles
 $site-width: 650px;
 
-// Fonts
+//Fonts
 $font-one: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-two: "Bebas Neue Latin", sans-serif;
 $h1-size: 36px;
@@ -102,12 +25,8 @@ $line-height: 1.4;
 $color-one: #444; // replaced by $color-two in design editor
 $color-two: #444;
 $color-four: #919191;
-
 $color: #888;
-
 $link-color: #06b;
 $link-hovercolor: rgba(0,102,187,.8);
-
 $white: #FFFFFF;
-
 $color-four: #f2f2f2;
