@@ -6,6 +6,7 @@
 
 // FOR FIRENZE, Sirje
 
+
 // General colors
 $primary-color: #888888;
 $secondary-color: #444444;
@@ -30,3 +31,36 @@ $link-color: #06b;
 $link-hovercolor: rgba(0,102,187,.8);
 $white: #FFFFFF;
 $color-four: #f2f2f2;
+
+
+// Media queries
+$large-1: 1400px;
+
+$tablet-1: 900px;
+$tablet-2: 720px;
+$tablet-3: 640px;
+
+$mobile-1: 480px;
+$mobile-2: 420px;
+
+// Reusable values
+// Define the reusable variables here.
+// For example the width of several different elements, that allways have to be with the same height:
+// $box-width: 400px;
+$wide-view-multiplier: 1.4;
+$search-height: 50px;
+
+// Specific colors
+$black: #000000;
+$white: #FFFFFF;
+
+$red: #CC0000;
+$green: #60A740;
+$blue-1: #0066BB;
+$blue-2: #C7E5FF;
+
+$grey-1: #838586;
+$grey-2: #FAFAFA;
+$grey-3: #E2E2E2;
+$grey-4: #EDECEC;
+$yellow: #F9EC5A;

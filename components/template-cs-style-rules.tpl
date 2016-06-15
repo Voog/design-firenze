@@ -107,7 +107,7 @@
   color: var(--content-color);
 }
 
-.content-formatted a {
+.content-formatted a:not(.custom-btn) {
   font-weight: var(--content-links-font-weight);
   font-style: var(--content-links-font-style);
   text-decoration: var(--content-links-text-decoration);
@@ -115,7 +115,7 @@
   color: var(--content-links-color);
 }
 
-.content-formatted a:hover {
+.content-formatted a:not(.custom-btn):hover {
   font-weight: var(--content-links-hover-font-weight);
   font-style: var(--content-links-hover-font-style);
   text-decoration: var(--content-links-hover-text-decoration);
@@ -140,17 +140,16 @@
 .content-formatted .custom-btn,
 .content-formatted .form_submit input {
   background-color: var(--button-background-color);
-  padding: var(--button-padding);
+  padding: calc(var(--button-padding) - 3px) var(--button-padding);
   font-size: var(--button-font-size);
   line-height: var(--button-line-height);
   color: var(--button-color);
 }
-
 .content-formatted .custom-btn:hover,
 .content-formatted .form_submit input:hover {
-  color: #fff;
-  opacity: .6;
+  opacity: .8;
   background-color: var(--button-background-color);
+  color: #fff;
 }
 
 /*.content-formatted .custom-btn,
@@ -233,7 +232,7 @@
   color: var(--content-color);
 }
 
-.content-formatted a {
+.content-formatted a:not(.custom-btn) {
   font-weight: var(--content-links-font-weight);
   font-style: var(--content-links-font-style);
   text-decoration: var(--content-links-text-decoration);
@@ -241,7 +240,7 @@
   color: var(--content-links-color);
 }
 
-.content-formatted a:hover {
+.content-formatted a:not(.custom-btn):hover {
   font-weight: var(--content-links-hover-font-weight);
   font-style: var(--content-links-hover-font-style);
   text-decoration: var(--content-links-hover-text-decoration);

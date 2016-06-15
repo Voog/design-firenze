@@ -9,7 +9,7 @@
      "unit": "px",
      "scope": "global"
    */
-  --button-padding: 8px 11px;
+  --button-padding: 11px;
   /* VoogStyle
     "pathI18n": ["button"],
     "titleI18n": "size",
