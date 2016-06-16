@@ -387,5 +387,5 @@
   "scope": "global",
   "featured": true
 */
-  --content-links-hover-color: rgba(0, 102, 187, 0.8);
+  --content-links-hover-color: #06b;
 }

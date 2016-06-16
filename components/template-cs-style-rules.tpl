@@ -1,4 +1,4 @@
-.content-page .content-formatted h1 {
+.content-page .content-formatted h1, .content-formatted h1 {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
   alignment: var(--h1-alignment);
@@ -9,7 +9,7 @@
   color: var(--h1-color);
 }
 
-.content-page .content-formatted h2 {
+.content-page .content-formatted h2, .content-formatted h2 {
   font-size: var(--h2-font-size);
   line-height: var(--h2-line-height);
   alignment: var(--h2-alignment);
@@ -20,7 +20,7 @@
   color: var(--h2-color);
 }
 
-.content-page .content-formatted h3 {
+.content-page .content-formatted h3, .content-formatted h3 {
   font-size: var(--h3-font-size);
   line-height: var(--h3-line-height);
   alignment: var(--h3-alignment);
@@ -268,3 +268,9 @@ body .dark-background {
 .post-title a, .tags-btn, .voog-search-modal-results h3 {
   font-family: var(--font-two);
 }
+
+/*.front-page .dark-backgground .content-formatted h1, .front-page .dark-backgground .content-formatted h2, .front-page .dark-backgground .content-formatted h3, .front-page .dark-backgground .content-formatted h4, .front-page .dark-backgground .content-formatted h5, .front-page .dark-backgground .content-formatted h6
+  {
+    color: var(--color-primary);
+  }
+*/

@@ -322,7 +322,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-color: rgba(0, 102, 187, 0.8);
+  --content-links-color: #06b;
  /* VoogStyle
   "pathI18n": ["blog", "link", "hover"],
   "titleI18n": "color",

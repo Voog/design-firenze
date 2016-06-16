@@ -20,7 +20,7 @@
 
 
 // Headings
-.content-page .content-formatted {
+.content-page .content-formatted, .content-formatted {
   h1 {
     font-size: var(--h1-font-size);
     line-height: var(--h1-line-height);
@@ -33,7 +33,7 @@
   }
 }
 
-.content-page .content-formatted {
+.content-page .content-formatted, .content-formatted {
   h2 {
     font-size: var(--h2-font-size);
     line-height: var(--h2-line-height);
@@ -46,7 +46,7 @@
   }
 }
 
-.content-page .content-formatted {
+.content-page .content-formatted, .content-formatted {
   h3 {
     font-size: var(--h3-font-size);
     line-height: var(--h3-line-height);
@@ -324,9 +324,14 @@
     }
   }
 
-
   .comments .comments-title, .content-formatted h1,
   .header-title, .menu-main, .post-date, .post-title,
   .post-title a, .tags-btn, .voog-search-modal-results h3 {
     font-family: var(--font-two);
   }
+
+  /*.front-page .dark-backgground .content-formatted h1, .front-page .dark-backgground .content-formatted h2, .front-page .dark-backgground .content-formatted h3, .front-page .dark-backgground .content-formatted h4, .front-page .dark-backgground .content-formatted h5, .front-page .dark-backgground .content-formatted h6
+    {
+      color: var(--color-primary);
+    }
+  */

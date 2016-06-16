@@ -43,6 +43,9 @@
   {% if common_page %}
     {% include "template-cs-content" %}
   {% endif %}
+  {% if front_page %}
+    {% include "template-cs-content-ver2" %}
+  {% endif %}
   {% include "template-cs-footer" %}
   {% include "template-cs-button" %}
   {% include "template-cs-table" %}
