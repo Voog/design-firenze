@@ -9,7 +9,8 @@
   color: var(--h1-color);
 }
 
-.content-page .content-formatted h2, .content-formatted h2 {
+.content-page .content-formatted h2, .content-formatted h2,
+.front-page .light-background .content-formatted h2 {
   font-size: var(--h2-font-size);
   line-height: var(--h2-line-height);
   alignment: var(--h2-alignment);
@@ -20,7 +21,8 @@
   color: var(--h2-color);
 }
 
-.content-page .content-formatted h3, .content-formatted h3 {
+.content-page .content-formatted h3, .content-formatted h3,
+.front-page .light-background .content-formatted h3 {
   font-size: var(--h3-font-size);
   line-height: var(--h3-line-height);
   alignment: var(--h3-alignment);
@@ -120,17 +122,6 @@
   font-style: var(--content-links-hover-font-style);
   text-decoration: var(--content-links-hover-text-decoration);
   text-transform: var(--content-links-hover-text-transform);
-  color: var(--content-links-hover-color);
-}
-
-.footer .content-formatted {
-  font-size: var(--footer-font-size);
-  line-height: var(--footer-line-height);
-}
-
-.footer.light-background .content-formatted,
-.footer .content-formatted {
-  color: var(--footer-color);
 }
 
 .footer .voog-reference a {
@@ -155,7 +146,7 @@
 /*.content-formatted .custom-btn,
 .content-formatted .custom-btn:hover { text-transform: var(--button-text-transform) }
 */
-.content-formatted table td {
+.content-formatted table td, .light-background .content-formatted table td {
   border-bottom-style: var(--table-border-style);
   border-top-style: var(--table-border-style);
   padding: var(--table-cell-padding);
@@ -256,11 +247,13 @@
 body {
   font-family: var(--font-one);
 }
-body .light-background {
-  color: var(--color-primary);
+
+.light-background .content-formatted {
+  color: var(--dark-primary);
 }
-body .dark-background {
-  color: var(--color-secondary);
+
+.dark-background .content-formatted {
+  color: var(--light-primary);
 }
 
 .comments .comments-title, .content-formatted h1,
@@ -269,8 +262,15 @@ body .dark-background {
   font-family: var(--font-two);
 }
 
-/*.front-page .dark-backgground .content-formatted h1, .front-page .dark-backgground .content-formatted h2, .front-page .dark-backgground .content-formatted h3, .front-page .dark-backgground .content-formatted h4, .front-page .dark-backgground .content-formatted h5, .front-page .dark-backgground .content-formatted h6
-  {
-    color: var(--color-primary);
+.footer .content-formatted {
+  font-size: var(--footer-font-size);
+  line-height: var(--footer-line-height);
+  color: #fff;
+  color: rgba(255, 255, 255, 0.33);
+}
+
+@media screen and (max-width: 1400px) {
+  body, .content-formatted {
+    font-size: calc(var(--content-font-size) * 0.8);
   }
-*/
+}

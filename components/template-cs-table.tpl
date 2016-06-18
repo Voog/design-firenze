@@ -19,9 +19,9 @@
   --table-cell-padding: 10px;
   /* VoogStyle
     "pathI18n": ["table"],
-    "titleI18n": "color",
+    "titleI18n": "border_color",
     "editor": "colorPicker",
     "scope": "global"
   */
-  --table-border-color: #cacaca;
+  --table-border-color: #f2f2f2;
 }

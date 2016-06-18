@@ -269,7 +269,7 @@
       "--form-field-text-font-size"
     ]
   */
-  --content-font-size: 14px;
+  --content-font-size: 20px;
 
   /* VoogStyle
      "pathI18n": ["content", "text"],
@@ -437,7 +437,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-hover-color: $link-hovercolor;
+  --content-links-hover-color: $link-color;
 
   // scss-lint:enable Comment, Indentation
 }

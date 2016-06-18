@@ -1,25 +1,4 @@
-// =============================================================================
-// TEMPLATE CUSTOM STYLES.
-// This file sets the configuration for design editor tool.
-//
-// This file will be converted to CSS, copied under "/components" and renamed to
-// "*.tpl".
-//
-// The output component can be included in any "layout" or "component".
-// =============================================================================
-
-// =============================================================================
-// Modules
-// =============================================================================
-@import '../../stylesheets/variables';
-
-// =============================================================================
-// Design editor configuration.
-// =============================================================================
 :root {
-  // scss-lint:disable Comment, Indentation
-
-
   /* VoogStyle
     "pathI18n": ["content", "text"],
     "titleI18n": "size",
@@ -34,7 +13,6 @@
     ]
   */
   --content-font-size: 14px;
-
   /* VoogStyle
      "pathI18n": ["content", "text"],
      "titleI18n": "line_height",
@@ -45,8 +23,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --content-line-height: $line-height;
-
+  --content-line-height: 1.4;
   /* VoogStyle
     "pathI18n": ["content", "text"],
     "titleI18n": "color",
@@ -57,25 +34,23 @@
       "--form-field-text-color"
     ]
   */
-  --content-color: $color;
-
-/* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
-    "titleI18n": "font_weight",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "600",
-      "off": "400"
-    },
-    "icon": "bold",
-    "scope": "global",
-    "boundVariables": [
-      "--content-links-hover-font-weight"
-    ]
-  */
+  --content-color: #888;
+  /* VoogStyle
+      "pathI18n": ["content", "link", "normal"],
+      "titleI18n": "font_weight",
+      "type": "button",
+      "editor": "toggleIcon",
+      "states": {
+        "on": "600",
+        "off": "400"
+      },
+      "icon": "bold",
+      "scope": "global",
+      "boundVariables": [
+        "--content-links-hover-font-weight"
+      ]
+    */
   --content-links-font-weight: 400;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
     "titleI18n": "font_weight",
@@ -89,7 +64,6 @@
     "scope": "global"
   */
   --content-links-hover-font-weight: 400;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
     "titleI18n": "font_style",
@@ -106,7 +80,6 @@
     ]
   */
   --content-links-font-style: normal;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
     "titleI18n": "font_style",
@@ -120,7 +93,6 @@
     "scope": "global"
   */
   --content-links-hover-font-style: normal;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
     "titleI18n": "text_decoration",
@@ -137,7 +109,6 @@
     ]
   */
   --content-links-text-decoration: none;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
     "titleI18n": "text_decoration",
@@ -151,7 +122,6 @@
     "scope": "global"
   */
   --content-links-hover-text-decoration: none;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
     "titleI18n": "text_transform",
@@ -168,7 +138,6 @@
     ]
   */
   --content-links-text-transform: none;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
     "titleI18n": "text_transform",
@@ -182,7 +151,6 @@
     "scope": "global"
   */
   --content-links-hover-text-transform: none;
-
   /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
     "titleI18n": "color",
@@ -194,17 +162,14 @@
       "--content-links-hover-color"
     ]
   */
-  --content-links-color: $link-color;
-
-   /* VoogStyle
-    "pathI18n": ["content", "link", "hover"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --content-links-hover-color: $link-color;
-
-  // scss-lint:enable Comment, Indentation
+  --content-links-color: #06b;
+ /* VoogStyle
+  "pathI18n": ["content", "link", "hover"],
+  "titleI18n": "color",
+  "type": "button",
+  "editor": "colorPicker",
+  "scope": "global",
+  "featured": true
+*/
+  --content-links-hover-color: #06b;
 }

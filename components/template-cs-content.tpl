@@ -231,7 +231,7 @@
       "--form-field-text-font-size"
     ]
   */
-  --content-font-size: 14px;
+  --content-font-size: 20px;
   /* VoogStyle
      "pathI18n": ["content", "text"],
      "titleI18n": "line_height",

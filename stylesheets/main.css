@@ -2657,6 +2657,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .footer-gradient {
   background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
 }
-.footer.light-background .content-formatted a:hover {
-  opacity: .8
+.content-formatted a:hover {
+    opacity: 0.8;
 }

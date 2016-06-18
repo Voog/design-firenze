@@ -21,12 +21,4 @@
      "scope": "global"
   */
   --footer-line-height: 1.4;
-  /* VoogStyle
-    "pathI18n": ["footer", "text"],
-    "titleI18n": "color",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --footer-color: rgba(255, 255, 255, 0.33);
 }
