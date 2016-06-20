@@ -30,6 +30,7 @@
     {% include "template-cs-content-front" %}
     {% include "template-cs-headings-front" %}
     {% include "template-cs-button-front" %}
+    {% include "template-cs-header-front" %}
   {% endif %}
 
   {% if common_page %}
@@ -37,7 +38,7 @@
     {% include "template-cs-content" %}
     {% include "template-cs-headings" %}
     {% include "template-cs-button" %}
-
+    {% include "template-cs-header" %}
   {% endif %}
 
   {% if blog_article and blog_list %}
@@ -50,7 +51,6 @@
     {% include "template-cs-blog-list" %}
   {% endif %}
 
-  {% include "template-cs-header" %}
   {% include "template-cs-style-rules" %}
   {% include "template-cs-footer" %}
   {% include "template-cs-table" %}

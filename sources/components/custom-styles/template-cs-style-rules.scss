@@ -58,6 +58,7 @@
   }
 }
 
+// Headings - light and dark background
 .front-page .light-background .content-formatted h1,
 .front-page .light-background .content-formatted h2,
 .front-page .light-background .content-formatted h3 {
@@ -91,7 +92,9 @@
 
 
 // Menu main
-.content-page .menu-main .menu .menu-item .menu-link {
+.content-page .menu-main .menu .menu-item .menu-link,
+.front-page .light-background .menu-main .menu .menu-item .menu-link,
+.front-page .dark-background .menu-main .menu .menu-item .menu-link {
   color: var(--header-mainmenu-color);
   text-transform: var(--header-mainmenu-text-transform);
   text-decoration: var(--header-mainmenu-text-decoration);
@@ -109,13 +112,28 @@
   font-weight: var(--header-mainmenu-active-font-weight);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link:hover {
+.content-page .menu-main .menu .menu-item .menu-link:hover,
+.front-page .light-background .menu-main .menu .menu-item .menu-link:hover,
+.front-page .dark-background .menu-main .menu .menu-item .menu-link:hover {
   color: var(--header-mainmenu-hover-color);
   text-transform: var(--header-mainmenu-hover-text-transform);
   text-decoration: var(--header-mainmenu-hover-text-decoration);
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
 }
+
+// Header - light and dark background
+.front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link,
+.front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link.active,
+.front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link:hover {
+    color: var(--font-one);
+}
+.front-page .light-background .content-page .menu-main .menu .menu-item .menu-link
+.front-page .light-background .content-page .menu-main .menu .menu-item .menu-link.active,
+.front-page .light-background .content-page .menu-main .menu .menu-item .menu-link:hover {
+    color: var(--font-two);
+  }
+
 
 
 // Content - sub-menu
@@ -198,17 +216,15 @@
     }
   }
 
-  .front-page .dark-background .content-formatted .custom-btn{
+  // Custom button - light and dark background
+  .front-page .dark-background .content-formatted .custom-btn {
         color: var(--font-one);
         background-color: #06b;
       }
-
   .front-page .light-background .content-formatted .custom-btn {
       color: var(--font-two);
       background-color: #06b;
     }
-
-
 
 
   // Table
