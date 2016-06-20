@@ -36,9 +36,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/sidebar.tpl",
-      "layout_name": "sidebar",
-      "title": "sidebar"
+      "file": "components/tags-blog.tpl",
+      "layout_name": "tags-blog",
+      "title": "tags-blog"
     },
     {
       "content_type": "component",
@@ -148,16 +148,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/comment-form.tpl",
-      "layout_name": "comment-form",
-      "title": "comment-form"
+      "file": "components/sidebar.tpl",
+      "layout_name": "sidebar",
+      "title": "sidebar"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/tags-blog.tpl",
-      "layout_name": "tags-blog",
-      "title": "tags-blog"
+      "file": "components/comment-form.tpl",
+      "layout_name": "comment-form",
+      "title": "comment-form"
     },
     {
       "content_type": "component",
@@ -179,6 +179,13 @@
       "file": "components/template-cs-blog-list.tpl",
       "layout_name": "template-cs-blog-list",
       "title": "template-cs-blog-list"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-button-front.tpl",
+      "layout_name": "template-cs-button-front",
+      "title": "template-cs-button-front"
     },
     {
       "content_type": "component",
@@ -239,9 +246,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-main-styles-ver2.tpl",
-      "layout_name": "template-cs-main-styles-ver2",
-      "title": "template-cs-main-styles-ver2"
+      "file": "components/template-cs-main-styles-front.tpl",
+      "layout_name": "template-cs-main-styles-front",
+      "title": "template-cs-main-styles-front"
     },
     {
       "content_type": "component",

@@ -1,7 +1,6 @@
 .content-page .content-formatted h1, .content-formatted h1 {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
-  alignment: var(--h1-alignment);
   font-weight: var(--h1-font-weight);
   font-style: var(--h1-font-style);
   text-decoration: var(--h1-text-decoration);
@@ -13,7 +12,6 @@
 .front-page .light-background .content-formatted h2 {
   font-size: var(--h2-font-size);
   line-height: var(--h2-line-height);
-  alignment: var(--h2-alignment);
   font-weight: var(--h2-font-weight);
   font-style: var(--h2-font-style);
   text-decoration: var(--h2-text-decoration);
@@ -25,7 +23,6 @@
 .front-page .light-background .content-formatted h3 {
   font-size: var(--h3-font-size);
   line-height: var(--h3-line-height);
-  alignment: var(--h3-alignment);
   font-weight: var(--h3-font-weight);
   font-style: var(--h3-font-style);
   text-decoration: var(--h3-text-decoration);
@@ -33,7 +30,9 @@
   color: var(--h3-color);
 }
 
-.content-page .header-title {
+.content-page .header-title,
+.content-page .header-title a,
+.content-page .header-title .header-link {
   font-size: var(--header-site-title-font-size);
   line-height: var(--header-site-title-line-height);
   font-weight: var(--header-site-title-font-weight);
@@ -41,6 +40,12 @@
   text-decoration: var(--header-site-title-text-decoration);
   text-transform: var(--header-site-title-text-transform);
   color: var(--header-site-title-color);
+}
+
+.content-page .header-title .header-link:hover {
+  color: var(--header-body-text-color);
+  text-transform: var(--header-site-title-text-transform);
+  font-style: var(--header-site-title-font-style);
 }
 
 .content-page .menu-main .menu .menu-item .menu-link {
@@ -53,20 +58,20 @@
   font-size: var(--header-mainmenu-font-size);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link:hover {
-  color: var(--header-mainmenu-hover-color);
-  text-transform: var(--header-mainmenu-hover-text-transform);
-  text-decoration: var(--header-mainmenu-hover-text-decoration);
-  font-style: var(--header-mainmenu-hover-font-style);
-  font-weight: var(--header-mainmenu-hover-font-weight);
-}
-
 .content-page .menu-main .menu .menu-item .menu-link.active {
   color: var(--header-mainmenu-active-color);
   text-transform: var(--header-mainmenu-active-text-transform);
   text-decoration: var(--header-mainmenu-active-text-decoration);
   font-style: var(--header-mainmenu-active-font-style);
   font-weight: var(--header-mainmenu-active-font-weight);
+}
+
+.content-page .menu-main .menu .menu-item .menu-link:hover {
+  color: var(--header-mainmenu-hover-color);
+  text-transform: var(--header-mainmenu-hover-text-transform);
+  text-decoration: var(--header-mainmenu-hover-text-decoration);
+  font-style: var(--header-mainmenu-hover-font-style);
+  font-weight: var(--header-mainmenu-hover-font-weight);
 }
 
 .menu-sub .menu .menu-item .menu-link {
@@ -133,7 +138,6 @@
   background-color: var(--button-background-color);
   padding: calc(var(--button-padding) - 3px) var(--button-padding);
   font-size: var(--button-font-size);
-  line-height: var(--button-line-height);
   color: var(--button-color);
 }
 .content-formatted .custom-btn:hover,
@@ -143,9 +147,16 @@
   color: #fff;
 }
 
-/*.content-formatted .custom-btn,
-.content-formatted .custom-btn:hover { text-transform: var(--button-text-transform) }
-*/
+.front-page .dark-background .content-formatted .custom-btn {
+  color: var(--font-one);
+  background-color: #06b;
+}
+
+.front-page .light-background .content-formatted .custom-btn {
+  color: var(--font-two);
+  background-color: #06b;
+}
+
 .content-formatted table td, .light-background .content-formatted table td {
   border-bottom-style: var(--table-border-style);
   border-top-style: var(--table-border-style);
@@ -168,7 +179,8 @@
 }
 
 .form_field_file,
-.form_field .edy-fe-label {
+.form_field .edy-fe-label,
+.content-formatted .form_field {
   color: var(--form-field-text-color);
   font-style: var(--form-field-text-font-style);
   text-transform: var(--form-field-text-text-transform);
@@ -215,28 +227,6 @@
   text-decoration: var(--blog-list-date-text-decoration);
   text-transform: var(--blog-list-date-text-transform);
   color: var(--blog-list-date-color);
-}
-
-.content-formatted, .post-excerpt .content-formatted {
-  font-size: var(--content-font-size);
-  line-height: var(--content-line-height);
-  color: var(--content-color);
-}
-
-.content-formatted a:not(.custom-btn) {
-  font-weight: var(--content-links-font-weight);
-  font-style: var(--content-links-font-style);
-  text-decoration: var(--content-links-text-decoration);
-  text-transform: var(--content-links-text-transform);
-  color: var(--content-links-color);
-}
-
-.content-formatted a:not(.custom-btn):hover {
-  font-weight: var(--content-links-hover-font-weight);
-  font-style: var(--content-links-hover-font-style);
-  text-decoration: var(--content-links-hover-text-decoration);
-  text-transform: var(--content-links-hover-text-transform);
-  color: var(--content-links-hover-color);
 }
 
 .content-page .container .wrap {

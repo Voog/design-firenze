@@ -282,7 +282,11 @@
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--header-mainmenu-hover-color",
+      "--header-mainmenu-active-color"
+    ]
   */
   --header-mainmenu-color: #888;
  /* VoogStyle
@@ -290,7 +294,10 @@
   "titleI18n": "color",
   "type": "button",
   "editor": "colorPicker",
-  "scope": "global"
+  "scope": "global",
+  "boundVariables": [
+    "--header-mainmenu-active-color"
+  ]
 */
   --header-mainmenu-hover-color: #444;
  /* VoogStyle

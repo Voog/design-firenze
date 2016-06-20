@@ -22,14 +22,6 @@
   */
   --h1-line-height: 1.4;
   /* VoogStyle
-     "pathI18n": ["headings", "title"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --h1-alignment: left;
-  /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "font_weight",
     "type": "button",
@@ -113,14 +105,6 @@
   */
   --h2-line-height: 1.4;
   /* VoogStyle
-     "pathI18n": ["headings", "heading"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --h2-alignment: left;
-  /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "font_weight",
     "type": "button",
@@ -203,14 +187,6 @@
      "scope": "global"
   */
   --h3-line-height: 1.4;
-  /* VoogStyle
-     "pathI18n": ["headings", "subheading"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --h3-alignment: left;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "font_weight",

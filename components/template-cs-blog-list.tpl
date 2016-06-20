@@ -195,7 +195,10 @@
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--form-field-text-color"
+    ]
   */
   --content-color: #888;
   /* VoogStyle
@@ -320,16 +323,10 @@
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--content-links-hover-color"
+    ]
   */
   --content-links-color: #06b;
- /* VoogStyle
-  "pathI18n": ["blog", "link", "hover"],
-  "titleI18n": "color",
-  "type": "button",
-  "editor": "colorPicker",
-  "scope": "global",
-  "featured": true
-*/
-  --content-links-hover-color: #06b;
 }

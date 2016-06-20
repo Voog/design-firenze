@@ -12,6 +12,7 @@
 // Modules
 // =============================================================================
 @import '../../stylesheets/variables';
+
 // =============================================================================
 // Design editor configuration.
 // =============================================================================
@@ -364,19 +365,12 @@
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--content-links-hover-color"
+    ]
   */
   --content-links-color: $link-color;
-
-   /* VoogStyle
-    "pathI18n": ["blog", "link", "hover"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --content-links-hover-color: $link-color;
 
   // scss-lint:enable Comment, Indentation
 }

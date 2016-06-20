@@ -199,7 +199,11 @@
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--content-submenu-hover-color",
+      "--content-submenu-active-color"
+    ]
   */
   --content-submenu-color: #888;
  /* VoogStyle
@@ -207,7 +211,10 @@
   "titleI18n": "color",
   "type": "button",
   "editor": "colorPicker",
-  "scope": "global"
+  "scope": "global",
+  "boundVariables": [
+    "--content-submenu-active-color"
+  ]
 */
   --content-submenu-hover-color: #444;
  /* VoogStyle
@@ -217,7 +224,7 @@
   "editor": "colorPicker",
   "scope": "global"
 */
-  --content-submenu-active-color: #888;
+  --content-submenu-active-color: #444;
   /* VoogStyle
     "pathI18n": ["content", "text"],
     "titleI18n": "size",
@@ -376,16 +383,10 @@
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--content-links-hover-color"
+    ]
   */
   --content-links-color: #06b;
- /* VoogStyle
-  "pathI18n": ["content", "link", "hover"],
-  "titleI18n": "color",
-  "type": "button",
-  "editor": "colorPicker",
-  "scope": "global",
-  "featured": true
-*/
-  --content-links-hover-color: #06b;
 }

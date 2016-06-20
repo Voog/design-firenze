@@ -234,7 +234,11 @@
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--content-submenu-hover-color",
+      "--content-submenu-active-color"
+    ]
   */
   --content-submenu-color: $color;
 
@@ -243,7 +247,10 @@
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-submenu-active-color"
+    ]
   */
   --content-submenu-hover-color: $color-one;
 
@@ -254,7 +261,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --content-submenu-active-color: #888;
+  --content-submenu-active-color: $color-one;
 
   /* VoogStyle
     "pathI18n": ["content", "text"],
@@ -425,19 +432,13 @@
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--content-links-hover-color"
+    ]
   */
   --content-links-color: $link-color;
 
-   /* VoogStyle
-    "pathI18n": ["content", "link", "hover"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --content-links-hover-color: $link-color;
 
   // scss-lint:enable Comment, Indentation
 }
