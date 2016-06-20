@@ -40,7 +40,7 @@
      "scope": "global",
      "featured": true
   */
-  --light-primary: rgba(255, 255, 255, 0.8);
+  --light-primary: white;
   /* VoogStyle
      "pathI18n": ["main_styles", "for_dark_background"],
      "titleI18n": "secondary_color",

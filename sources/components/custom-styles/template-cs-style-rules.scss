@@ -18,7 +18,8 @@
 // =============================================================================
 
 // Headings
-.content-page .content-formatted, .content-formatted {
+.content-page .content-formatted, .content-formatted,
+.front-page .light-background .content-formatted {
   h1 {
     font-size: var(--h1-font-size);
     line-height: var(--h1-line-height);
@@ -55,6 +56,17 @@
     color: var(--h3-color);
 
   }
+}
+
+.front-page .light-background .content-formatted h1,
+.front-page .light-background .content-formatted h2,
+.front-page .light-background .content-formatted h3 {
+  color: var(--dark-primary);
+}
+.front-page .dark-background .content-formatted h1,
+.front-page .dark-background .content-formatted h2,
+.front-page .dark-background .content-formatted h3 {
+  color: var(--light-primary);
 }
 
 

@@ -1,4 +1,5 @@
-.content-page .content-formatted h1, .content-formatted h1 {
+.content-page .content-formatted h1, .content-formatted h1,
+.front-page .light-background .content-formatted h1 {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
   font-weight: var(--h1-font-weight);
@@ -28,6 +29,18 @@
   text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
   color: var(--h3-color);
+}
+
+.front-page .light-background .content-formatted h1,
+.front-page .light-background .content-formatted h2,
+.front-page .light-background .content-formatted h3 {
+  color: var(--dark-primary);
+}
+
+.front-page .dark-background .content-formatted h1,
+.front-page .dark-background .content-formatted h2,
+.front-page .dark-background .content-formatted h3 {
+  color: var(--light-primary);
 }
 
 .content-page .header-title,

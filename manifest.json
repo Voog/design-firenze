@@ -239,6 +239,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/template-cs-headings-front.tpl",
+      "layout_name": "template-cs-headings-front",
+      "title": "template-cs-headings-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-headings.tpl",
       "layout_name": "template-cs-headings",
       "title": "template-cs-headings"
