@@ -92,13 +92,11 @@
 }
 
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link,
-.front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link.active,
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link:hover {
   color: var(--font-one);
 }
 
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link
-.front-page .light-background .content-page .menu-main .menu .menu-item .menu-link.active,
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link:hover {
   color: var(--font-two);
 }
