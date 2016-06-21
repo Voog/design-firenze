@@ -61,9 +61,7 @@
   font-style: var(--header-site-title-font-style);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link,
-.front-page .light-background .menu-main .menu .menu-item .menu-link,
-.front-page .dark-background .menu-main .menu .menu-item .menu-link {
+.content-page .menu-main .menu .menu-item .menu-link {
   color: var(--header-mainmenu-color);
   text-transform: var(--header-mainmenu-text-transform);
   text-decoration: var(--header-mainmenu-text-decoration);
@@ -81,14 +79,21 @@
   font-weight: var(--header-mainmenu-active-font-weight);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link:hover,
-.front-page .light-background .menu-main .menu .menu-item .menu-link:hover,
-.front-page .dark-background .menu-main .menu .menu-item .menu-link:hover {
+.content-page .menu-main .menu .menu-item .menu-link:hover {
   color: var(--header-mainmenu-hover-color);
   text-transform: var(--header-mainmenu-hover-text-transform);
   text-decoration: var(--header-mainmenu-hover-text-decoration);
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
+}
+
+.front-page .menu-main .menu .menu-item .menu-link {
+  text-transform: var(--header-mainmenu-text-transform);
+  text-decoration: var(--header-mainmenu-text-decoration);
+  font-style: var(--header-mainmenu-font-style);
+  font-weight: var(--header-mainmenu-font-weight);
+  line-height: var(--header-mainmenu-line-height);
+  font-size: var(--header-mainmenu-font-size);
 }
 
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link,

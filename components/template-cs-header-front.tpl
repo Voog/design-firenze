@@ -97,7 +97,11 @@
       "off": "none"
     },
     "icon": "underline",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--header-mainmenu-hover-text-decoration",
+      "--header-mainmenu-active-text-decoration"
+    ]
   */
   --header-mainmenu-text-decoration: none;
   /* VoogStyle
@@ -110,7 +114,10 @@
       "off": "none"
     },
     "icon": "underline",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--header-mainmenu-active-text-decoration"
+    ]
   */
   --header-mainmenu-hover-text-decoration: none;
   /* VoogStyle
