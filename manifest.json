@@ -281,6 +281,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/template-cs-table-front.tpl",
+      "layout_name": "template-cs-table-front",
+      "title": "template-cs-table-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-table.tpl",
       "layout_name": "template-cs-table",
       "title": "template-cs-table"
