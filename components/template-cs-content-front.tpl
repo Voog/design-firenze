@@ -151,25 +151,4 @@
     "scope": "global"
   */
   --content-links-hover-text-transform: none;
-  /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-    "boundVariables": [
-      "--content-links-hover-color"
-    ]
-  */
-  --content-links-color: #06b;
- /* VoogStyle
-  "pathI18n": ["content", "link", "hover"],
-  "titleI18n": "color",
-  "type": "button",
-  "editor": "colorPicker",
-  "scope": "global",
-  "featured": true
-*/
-  --content-links-hover-color: #06b;
 }
