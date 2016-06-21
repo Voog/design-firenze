@@ -41,14 +41,22 @@
     {% include "template-cs-header" %}
   {% endif %}
 
-  {% if blog_article and blog_list %}
+  {% if blog_article %}
     {% include "template-cs-main-styles" %}
     {% include "template-cs-blog-article" %}
+    {% include "template-cs-content" %}
+    {% include "template-cs-headings" %}
+    {% include "template-cs-button" %}
+    {% include "template-cs-header" %}
   {% endif %}
 
   {% if blog_list %}
     {% include "template-cs-main-styles" %}
     {% include "template-cs-blog-list" %}
+    {% include "template-cs-content" %}
+    {% include "template-cs-headings" %}
+    {% include "template-cs-button" %}
+    {% include "template-cs-header" %}
   {% endif %}
 
   {% include "template-cs-style-rules" %}
