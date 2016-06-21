@@ -32,6 +32,8 @@
     {% include "template-cs-button-front" %}
     {% include "template-cs-header-front" %}
     {% include "template-cs-table-front" %}
+    {% include "template-cs-form-front" %}
+
   {% endif %}
 
   {% if common_page %}
@@ -63,9 +65,10 @@
     {% include "template-cs-table" %}
   {% endif %}
 
-  {% include "template-cs-style-rules" %}
   {% include "template-cs-footer" %}
   {% include "template-cs-form" %}
+  {% include "template-cs-style-rules" %}
+
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}

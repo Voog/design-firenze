@@ -179,12 +179,17 @@
   color: #fff;
 }
 
-.front-page .dark-background .content-formatted .custom-btn {
+.content-formatted .form_submit input:hover
+.front-page .dark-background .content-formatted .custom-btn,
+.front-page .dark-background .content-formatted .form_submit input,
+.front-page .dark-background .content-formatted .form_submit input:hover {
   color: var(--font-one);
   background-color: #06b;
 }
 
-.front-page .light-background .content-formatted .custom-btn {
+.front-page .light-background .content-formatted .custom-btn,
+.front-page .light-background .content-formatted .form_submit input,
+.front-page .light-background .content-formatted .form_submit input:hover {
   color: var(--font-two);
   background-color: #06b;
 }
