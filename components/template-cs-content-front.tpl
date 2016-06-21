@@ -25,17 +25,6 @@
   */
   --content-line-height: 1.4;
   /* VoogStyle
-    "pathI18n": ["content", "text"],
-    "titleI18n": "color",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true,
-    "boundVariables": [
-      "--form-field-text-color"
-    ]
-  */
-  --content-color: #888;
-  /* VoogStyle
       "pathI18n": ["content", "link", "normal"],
       "titleI18n": "font_weight",
       "type": "button",
