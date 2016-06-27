@@ -49,15 +49,6 @@
   --dark-primary: $dark-primary;
 
   /* VoogStyle
-     "pathI18n": ["main_styles", "for_light_background"],
-     "titleI18n": "secondary_color",
-     "editor": "colorPicker",
-     "scope": "global",
-     "featured": true
-  */
-  --dark-secondary: $dark-secondary;
-
-  /* VoogStyle
      "pathI18n": ["main_styles", "for_dark_background"],
      "titleI18n": "primary_color",
      "editor": "colorPicker",
@@ -65,14 +56,4 @@
      "featured": true
   */
   --light-primary: $light-primary;
-
-  /* VoogStyle
-     "pathI18n": ["main_styles", "for_dark_background"],
-     "titleI18n": "secondary_color",
-     "editor": "colorPicker",
-     "scope": "global",
-     "featured": true
-  */
-  --light-secondary: $light-secondary;
-  
 }
