@@ -24,7 +24,7 @@
      "scope": "global",
      "featured": true
   */
-  --dark-primary: rgba(0, 0, 0, 0.8);
+  --dark-primary: black;
   /* VoogStyle
      "pathI18n": ["main_styles", "for_dark_background"],
      "titleI18n": "primary_color",

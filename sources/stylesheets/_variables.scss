@@ -7,18 +7,8 @@
 // FOR FIRENZE, Sirje
 
 // General colors
-$dark-primary: rgba(0,0,0,.8);
-$dark-secondary: rgba(0,0,0,.6);
-$dark-tertiary: rgba(0,0,0,.3);
-$dark-hover: rgba(0,0,0,1);
-$dark-hover2: rgba(0,0,0,.7);
-
+$dark-primary: rgba(0,0,0,1);
 $light-primary: rgba(255,255,255,1);
-$light-secondary: rgba(255,255,255,.6);
-$light-tertiary: rgba(255,255,255,.3);
-$light-hover: rgba(255,255,255,1);
-$light-hover2: rgba(255,255,255,.7);
-
 
 
 // General colors
@@ -26,8 +16,10 @@ $primary-color: #888888;
 $secondary-color: #444444;
 $third-color: #F2F2F2;
 
+
 //Main styles
 $site-width: 650px;
+
 
 //Fonts
 $font-one: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -35,6 +27,7 @@ $font-two: "Bebas Neue Latin", sans-serif;
 $h1-size: 36px;
 $font-size: 18px;
 $line-height: 1.4;
+
 
 //Colors
 $color-one: #444; // replaced by $color-two in design editor
@@ -48,13 +41,12 @@ $color-four: #f2f2f2;
 
 // Media queries
 $large-1: 1400px;
-
 $tablet-1: 900px;
 $tablet-2: 720px;
 $tablet-3: 640px;
-
 $mobile-1: 480px;
 $mobile-2: 420px;
+
 
 // Reusable values
 // Define the reusable variables here.

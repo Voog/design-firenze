@@ -221,6 +221,7 @@
   .content-formatted .form_submit input:hover
 
   // Custom button - light and dark background
+  .front-page .dark-background .content-formatted a,
   .front-page .dark-background .content-formatted .custom-btn,
   .front-page .dark-background .content-formatted .form_submit input,
   .front-page .dark-background .content-formatted .form_submit input:hover {
@@ -237,7 +238,7 @@
 
 
   // Table
-  .content-formatted table td, .light-background .content-formatted table td {
+  .content-formatted table td {
     border-bottom-style: var(--table-border-style);
     border-top-style: var(--table-border-style);
     padding: var(--table-cell-padding);
@@ -322,14 +323,47 @@
   // Main styles - Colors
   body { font-family: var(--font-one);}
 
-  .light-background .content-formatted {
+  .light-background .content-formatted,
+  .light-background .header-title,
+  .light-background .header-title a,
+  .light-background .menu-main .menu .menu-item .menu-link,
+  .light-background .menu-main .menu .menu-item .menu-link.active,
+  .light-background .menu-main .menu .menu-item .menu-link:hover {
     color: var(--dark-primary);
   }
 
-  .dark-background .content-formatted {
+  .light-background .content-formatted table td {
+    color: var(--dark-primary);
+    border-top: 1px solid var(--dark-primary);
+    border-bottom: 1px solid var(--dark-primary);
+  }
+
+  .dark-background .content-formatted,
+  .dark-background .header-title,
+  .dark-background .header-title a,
+  .dark-background .menu-main .menu .menu-item .menu-link,
+  .dark-background .menu-main .menu .menu-item .menu-link.active,
+  .dark-background .menu-main .menu .menu-item .menu-link:hover {
     color: var(--light-primary);
   }
 
+  .dark-background .content-formatted table td {
+    color: var(--light-primary);
+    border-top: 1px solid var(--light-primary);
+    border-bottom: 1px solid var(--light-primary);
+  }
+
+  .front-page .dark-background .header-top-inner {
+    border-bottom: 3px solid var(--light-primary);
+  }
+  .front-page .light-background .content .content-formatted {
+    border-top-color: var(--dark-primary);
+  }
+
+  .front-page .menu-main .menu .menu-item .menu-link.active,
+  .front-page .menu-main .menu .menu-item .menu-link:hover {
+    opacity: .8;
+  }
 
   // Main styles - Colors and font
   .comments .comments-title, .content-formatted h1,
