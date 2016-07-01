@@ -28,7 +28,7 @@
     "min": 0.8,
     "max": 5,
     "step": 0.1,
-    "unit": "em",
+    "unit": "",
     "scope": "global"
   */
   --button-line-height: 1;

@@ -17,7 +17,7 @@
      "min": 0.8,
      "max": 3,
      "step": 0.1,
-     "unit": "em",
+     "unit": "",
      "scope": "global"
   */
   --h1-line-height: 1.4;
@@ -100,7 +100,7 @@
      "min": 0.8,
      "max": 3,
      "step": 0.1,
-     "unit": "em",
+     "unit": "",
      "scope": "global"
   */
   --h2-line-height: 1.4;
@@ -183,7 +183,7 @@
      "min": 0.8,
      "max": 3,
      "step": 0.1,
-     "unit": "em",
+     "unit": "",
      "scope": "global"
   */
   --h3-line-height: 1.4;

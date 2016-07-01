@@ -17,7 +17,7 @@
      "min": 0.8,
      "max": 3,
      "step": 0.1,
-     "unit": "em",
+     "unit": "",
      "scope": "global"
   */
   --content-submenu-line-height: 1.4;
