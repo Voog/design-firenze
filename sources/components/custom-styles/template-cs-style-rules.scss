@@ -85,10 +85,10 @@
   color: var(--header-site-title-color);
 }
 .content-page .header-title .header-link:hover {
-    color: var(--header-body-text-color);
-    text-transform: var(--header-site-title-text-transform);
-    font-style: var(--header-site-title-font-style);
-  }
+  color: var(--header-body-text-color);
+  text-transform: var(--header-site-title-text-transform);
+  font-style: var(--header-site-title-font-style);
+}
 
 
 // Menu main
@@ -130,78 +130,78 @@
 // Header - light and dark background
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link,
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link:hover {
-    color: var(--font-one);
+  color: var(--font-one);
 }
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link:hover {
-    color: var(--font-two);
-  }
+  color: var(--font-two);
+}
 
 
 
 // Content - sub-menu
-.menu-sub .menu .menu-item .menu-link {
-    font-size: var(--content-submenu-font-size);
-    line-height: var(--content-submenu-line-height);
-  }
+.menu-sub .menu .menu-item {
+  font-size: var(--content-submenu-font-size);
+  line-height: var(--content-submenu-line-height);
+}
 
 .menu-sub .menu .menu-item .menu-link {
-    font-weight: var(--content-submenu-font-weight);
-    font-style: var(--content-submenu-font-style);
-    text-decoration: var(--content-submenu-text-decoration);
-    text-transform: var(--content-submenu-text-transform);
-    color: var(--content-submenu-color);
-  }
+  font-weight: var(--content-submenu-font-weight);
+  font-style: var(--content-submenu-font-style);
+  text-decoration: var(--content-submenu-text-decoration);
+  text-transform: var(--content-submenu-text-transform);
+  color: var(--content-submenu-color);
+}
 
-  .topbar .menu-main .menu .menu-item .menu-link.active,
-  .topbar .menu-main .menu .menu-item .menu-link.active:hover {
-    color: #fff;
-  }
+.topbar .menu-main .menu .menu-item .menu-link.active,
+.topbar .menu-main .menu .menu-item .menu-link.active:hover {
+  color: #fff;
+}
 
-  .menu-sub .menu .menu-item .menu-link:hover {
-    font-weight: var(--content-submenu-hover-font-weight);
-    font-style: var(--content-submenu-hover-font-style);
-    text-decoration: var(--content-submenu-hover-text-decoration);
-    text-transform: var(--content-submenu-hover-text-transform);
-    color: var(--content-submenu-hover-color);
-  }
+.menu-sub .menu .menu-item .menu-link:hover {
+  font-weight: var(--content-submenu-hover-font-weight);
+  font-style: var(--content-submenu-hover-font-style);
+  text-decoration: var(--content-submenu-hover-text-decoration);
+  text-transform: var(--content-submenu-hover-text-transform);
+  color: var(--content-submenu-hover-color);
+}
 
-  .menu-sub .menu .menu-item .menu-link.active {
-    font-weight: var(--content-submenu-active-font-weight);
-    font-style: var(--content-submenu-active-font-style);
-    text-decoration: var(--content-submenu-active-text-decoration);
-    text-transform: var(--content-submenu-active-text-transform);
-    color: var(--content-submenu-active-color);
-  }
+.menu-sub .menu .menu-item .menu-link.active {
+  font-weight: var(--content-submenu-active-font-weight);
+  font-style: var(--content-submenu-active-font-style);
+  text-decoration: var(--content-submenu-active-text-decoration);
+  text-transform: var(--content-submenu-active-text-transform);
+  color: var(--content-submenu-active-color);
+}
 
-  // Content - text
-  .content-formatted, .post-excerpt .content-formatted {
-    font-size: var(--content-font-size);
-    line-height: var(--content-line-height);
-    color: var(--content-color);
-  }
+// Content - text
+.content-formatted, .post-excerpt .content-formatted {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+  color: var(--content-color);
+}
 
-  // Content - links
-  .content-formatted a:not(.custom-btn) {
-    font-weight: var(--content-links-font-weight);
-    font-style: var(--content-links-font-style);
-    text-decoration: var(--content-links-text-decoration);
-    text-transform: var(--content-links-text-transform);
-    color: var(--content-links-color);
-  }
+// Content - links
+.content-formatted a:not(.custom-btn) {
+  font-weight: var(--content-links-font-weight);
+  font-style: var(--content-links-font-style);
+  text-decoration: var(--content-links-text-decoration);
+  text-transform: var(--content-links-text-transform);
+  color: var(--content-links-color);
+}
 
-  .content-formatted a:not(.custom-btn):hover {
-    font-weight: var(--content-links-hover-font-weight);
-    font-style: var(--content-links-hover-font-style);
-    text-decoration: var(--content-links-hover-text-decoration);
-    text-transform: var(--content-links-hover-text-transform);
-  }
+.content-formatted a:not(.custom-btn):hover {
+  font-weight: var(--content-links-hover-font-weight);
+  font-style: var(--content-links-hover-font-style);
+  text-decoration: var(--content-links-hover-text-decoration);
+  text-transform: var(--content-links-hover-text-transform);
+}
 
 
-  // Voog reference
-  .footer .voog-reference {
-    a { color: var(--footer-color);}
-  }
+// Voog reference
+.footer .voog-reference {
+  a { color: var(--footer-color);}
+}
 
 
   // Custom button
@@ -225,9 +225,9 @@
   .front-page .dark-background .content-formatted .custom-btn,
   .front-page .dark-background .content-formatted .form_submit input,
   .front-page .dark-background .content-formatted .form_submit input:hover {
-        color: var(--font-one);
-        background-color: #06b;
-      }
+      color: var(--font-one);
+      background-color: #06b;
+    }
   .front-page .light-background .content-formatted .custom-btn,
   .front-page .light-background .content-formatted .form_submit input,
   .front-page .light-background .content-formatted .form_submit input:hover
@@ -320,6 +320,10 @@
     background-color: var(--color-bg);
   }
 
+  @media screen and (min-width: 1400px) {
+  .content-page .container .wrap { max-width: calc(var(--site-width) * 1.5);}
+  }
+
   // Main styles - Colors
   body { font-family: var(--font-one);}
 
@@ -372,6 +376,7 @@
     font-family: var(--font-two);
   }
 
+
   // Footer
   .footer .content-formatted {
     font-size: var(--footer-font-size);
@@ -381,6 +386,22 @@
   }
 
 
-  @media screen and (max-width: 1400px) {
-    body, .content-formatted { font-size: calc(var(--content-font-size) * 0.8);}
+  /* "widescreen mode" rules, where area elements are 1.4 times bigger  */
+  @media screen and (min-width: 1400px) {
+    body { font-size: calc(var(--content-font-size) * 1.4);}
+    .content-formatted { font-size: calc(var(--content-font-size) * 1.4);}
+    .content-formatted h1 { font-size: calc(var(--h1-font-size) * 1.4);}
+    .content-page .content-formatted h1 { font-size: calc(var(--h1-font-size) * 1.4);}
+    .content-formatted h2 { font-size: calc(var(--h2-font-size) * 1.4);}
+    .content-page .content-formatted h2 { font-size: calc(var(--h2-font-size) * 1.4);}
+    .content-formatted h3 { font-size: calc(var(--h3-font-size) * 1.4);}
+    .content-page .content-formatted h3 { font-size: calc(var(--h3-font-size) * 1.4);}
+    .front-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
+    .footer .content-formatted { font-size: calc(var(--footer-font-size) * 1.4);}
+    .content-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
+    .content-page .header-title, .content-page .header-title a, .content-page .header-title .header-link { font-size: calc(var(--header-site-title-font-size) * 1.4);}
+    .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link { font-size: calc(var(--content-submenu-font-size) * 1.3);}
+    .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}
+    .post-date { font-size: calc(var(--blog-list-date-font-size) * 1.4);}
+    .content-formatted .form_submit input { font-size: calc(var(--button-font-size) * 1.4);}
   }

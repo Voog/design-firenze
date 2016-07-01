@@ -106,7 +106,7 @@
   color: var(--font-two);
 }
 
-.menu-sub .menu .menu-item .menu-link {
+.menu-sub .menu .menu-item {
   font-size: var(--content-submenu-font-size);
   line-height: var(--content-submenu-line-height);
 }
@@ -272,6 +272,11 @@
   background-color: var(--color-bg);
 }
 
+@media screen and (min-width: 1400px) {
+  .content-page .container .wrap {
+    max-width: calc(var(--site-width) * 1.5);
+  }
+}
 body {
   font-family: var(--font-one);
 }
@@ -332,8 +337,69 @@ body {
   color: rgba(255, 255, 255, 0.33);
 }
 
-@media screen and (max-width: 1400px) {
-  body, .content-formatted {
-    font-size: calc(var(--content-font-size) * 0.8);
+/* "widescreen mode" rules, where area elements are 1.4 times bigger  */
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: calc(var(--content-font-size) * 1.4);
+  }
+
+  .content-formatted {
+    font-size: calc(var(--content-font-size) * 1.4);
+  }
+
+  .content-formatted h1 {
+    font-size: calc(var(--h1-font-size) * 1.4);
+  }
+
+  .content-page .content-formatted h1 {
+    font-size: calc(var(--h1-font-size) * 1.4);
+  }
+
+  .content-formatted h2 {
+    font-size: calc(var(--h2-font-size) * 1.4);
+  }
+
+  .content-page .content-formatted h2 {
+    font-size: calc(var(--h2-font-size) * 1.4);
+  }
+
+  .content-formatted h3 {
+    font-size: calc(var(--h3-font-size) * 1.4);
+  }
+
+  .content-page .content-formatted h3 {
+    font-size: calc(var(--h3-font-size) * 1.4);
+  }
+
+  .front-page .menu-main .menu .menu-item .menu-link {
+    font-size: calc(var(--header-mainmenu-font-size) * 1.4);
+  }
+
+  .footer .content-formatted {
+    font-size: calc(var(--footer-font-size) * 1.4);
+  }
+
+  .content-page .menu-main .menu .menu-item .menu-link {
+    font-size: calc(var(--header-mainmenu-font-size) * 1.4);
+  }
+
+  .content-page .header-title, .content-page .header-title a, .content-page .header-title .header-link {
+    font-size: calc(var(--header-site-title-font-size) * 1.4);
+  }
+
+  .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link {
+    font-size: calc(var(--content-submenu-font-size) * 1.3);
+  }
+
+  .post-title, .post-title a {
+    font-size: calc(var(--blog-list-title-font-size) * 1.4);
+  }
+
+  .post-date {
+    font-size: calc(var(--blog-list-date-font-size) * 1.4);
+  }
+
+  .content-formatted .form_submit input {
+    font-size: calc(var(--button-font-size) * 1.4);
   }
 }
