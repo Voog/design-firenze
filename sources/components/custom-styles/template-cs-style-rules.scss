@@ -204,7 +204,7 @@
 }
 
 
-  // Custom button
+  // Button
   .content-formatted .custom-btn,
   .content-formatted .form_submit input {
     background-color: var(--button-background-color);
@@ -218,9 +218,8 @@
     color: #fff;
     }
   }
-  .content-formatted .form_submit input:hover
 
-  // Custom button - light and dark background
+  // Button - light and dark background
   .front-page .dark-background .content-formatted a,
   .front-page .dark-background .content-formatted .custom-btn,
   .front-page .dark-background .content-formatted .form_submit input,
@@ -384,7 +383,7 @@
     color: #fff;
     color: rgba(255,255,255,0.33);
   }
-  
+
   .footer .content-formatted a {
     color: #fff;
     color: rgba(255,255,255,0.66);

@@ -23,17 +23,6 @@
   --button-font-size: 14px;
   /* VoogStyle
     "pathI18n": ["button"],
-    "titleI18n": "line_height",
-    "editor": "rangePicker",
-    "min": 0.8,
-    "max": 5,
-    "step": 0.1,
-    "unit": "",
-    "scope": "global"
-  */
-  --button-line-height: 1;
-  /* VoogStyle
-    "pathI18n": ["button"],
     "titleI18n": "background_color",
     "editor": "colorPicker",
     "scope": "global"

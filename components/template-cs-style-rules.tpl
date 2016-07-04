@@ -179,7 +179,6 @@
   color: #fff;
 }
 
-.content-formatted .form_submit input:hover
 .front-page .dark-background .content-formatted a,
 .front-page .dark-background .content-formatted .custom-btn,
 .front-page .dark-background .content-formatted .form_submit input,
