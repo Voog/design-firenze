@@ -210,11 +210,15 @@
   background-color: var(--form-field-background-color);
 }
 
+.front-page .content-formatted .edy-fe-label,
+.front-page .content-formatted .form_field,
 .form_field_file,
 .form_field .edy-fe-label {
   text-decoration: var(--form-field-text-text-decoration);
 }
 
+.front-page .content-formatted .edy-fe-label,
+.front-page .content-formatted .form_field,
 .form_field_file,
 .form_field .edy-fe-label,
 .content-formatted .form_field {
