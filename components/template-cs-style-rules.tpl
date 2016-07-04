@@ -337,6 +337,16 @@ body {
   color: rgba(255, 255, 255, 0.33);
 }
 
+.footer .content-formatted a {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.dark-background .footer .content-formatted,
+.dark-background .footer .content-formatted a {
+  color: var(--light-primary);
+}
+
 /* "widescreen mode" rules, where area elements are 1.4 times bigger  */
 @media screen and (min-width: 1400px) {
   body {
