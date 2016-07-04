@@ -146,6 +146,7 @@
   color: var(--content-color);
 }
 
+.front-page .dark-background .content-formatted a:not(.custom-btn),
 .content-formatted a:not(.custom-btn) {
   font-weight: var(--content-links-font-weight);
   font-style: var(--content-links-font-style);
@@ -179,7 +180,6 @@
   color: #fff;
 }
 
-.front-page .dark-background .content-formatted a,
 .front-page .dark-background .content-formatted .custom-btn,
 .front-page .dark-background .content-formatted .form_submit input,
 .front-page .dark-background .content-formatted .form_submit input:hover {
