@@ -289,7 +289,9 @@ body {
 .light-background .header-title a,
 .light-background .menu-main .menu .menu-item .menu-link,
 .light-background .menu-main .menu .menu-item .menu-link.active,
-.light-background .menu-main .menu .menu-item .menu-link:hover {
+.light-background .menu-main .menu .menu-item .menu-link:hover,
+.light-background .content-formatted .edy-fe-label,
+.light-background .content-formatted .form_field {
   color: var(--dark-primary);
 }
 
@@ -304,7 +306,9 @@ body {
 .dark-background .header-title a,
 .dark-background .menu-main .menu .menu-item .menu-link,
 .dark-background .menu-main .menu .menu-item .menu-link.active,
-.dark-background .menu-main .menu .menu-item .menu-link:hover {
+.dark-background .menu-main .menu .menu-item .menu-link:hover,
+.dark-background .content-formatted .edy-fe-label,
+.dark-background .content-formatted .form_field {
   color: var(--light-primary);
 }
 
