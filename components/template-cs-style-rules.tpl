@@ -194,6 +194,22 @@
   background-color: #06b;
 }
 
+.light-background .content-formatted table td {
+  color: var(--dark-primary);
+  border-top: 1px solid var(--dark-primary);
+  border-bottom: 1px solid var(--dark-primary);
+  border-bottom-style: var(--table-border-style);
+  border-top-style: var(--table-border-style);
+}
+
+.dark-background .content-formatted table td {
+  color: var(--light-primary);
+  border-top: 1px solid var(--light-primary);
+  border-bottom: 1px solid var(--light-primary);
+  border-bottom-style: var(--table-border-style);
+  border-top-style: var(--table-border-style);
+}
+
 .content-formatted table td {
   border-bottom-style: var(--table-border-style);
   border-top-style: var(--table-border-style);
@@ -301,12 +317,6 @@ body {
   color: var(--dark-primary);
 }
 
-.light-background .content-formatted table td {
-  color: var(--dark-primary);
-  border-top: 1px solid var(--dark-primary);
-  border-bottom: 1px solid var(--dark-primary);
-}
-
 .dark-background .content-formatted,
 .dark-background .header-title,
 .dark-background .header-title a,
@@ -316,12 +326,6 @@ body {
 .dark-background .content-formatted .edy-fe-label,
 .dark-background .content-formatted .form_field {
   color: var(--light-primary);
-}
-
-.dark-background .content-formatted table td {
-  color: var(--light-primary);
-  border-top: 1px solid var(--light-primary);
-  border-bottom: 1px solid var(--light-primary);
 }
 
 .front-page .dark-background .header-top-inner {
