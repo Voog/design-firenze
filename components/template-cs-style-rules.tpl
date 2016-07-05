@@ -332,9 +332,13 @@ body {
   border-top-color: var(--dark-primary);
 }
 
+.front-page .light-background .header-top-inner {
+  border-color: var(--dark-primary);
+}
+
 .front-page .menu-main .menu .menu-item .menu-link.active,
 .front-page .menu-main .menu .menu-item .menu-link:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .comments .comments-title, .content-formatted h1,
@@ -418,7 +422,7 @@ body {
     font-size: calc(var(--blog-list-date-font-size) * 1.4);
   }
 
-  .content-formatted .form_submit input {
+  .content-formatted .form_submit input, .content-formatted .custom-btn {
     font-size: calc(var(--button-font-size) * 1.4);
   }
 

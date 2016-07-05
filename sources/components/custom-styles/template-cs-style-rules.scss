@@ -379,10 +379,13 @@
   .front-page .light-background .content .content-formatted {
     border-top-color: var(--dark-primary);
   }
+  .front-page .light-background .header-top-inner {
+    border-color: var(--dark-primary);
+}
 
   .front-page .menu-main .menu .menu-item .menu-link.active,
   .front-page .menu-main .menu .menu-item .menu-link:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   // Main styles - Colors and font
@@ -429,6 +432,6 @@
     .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link { font-size: calc(var(--content-submenu-font-size) * 1.3);}
     .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}
     .post-date { font-size: calc(var(--blog-list-date-font-size) * 1.4);}
-    .content-formatted .form_submit input { font-size: calc(var(--button-font-size) * 1.4);}
+    .content-formatted .form_submit input, .content-formatted .custom-btn { font-size: calc(var(--button-font-size) * 1.4);}
     .front-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
   }
