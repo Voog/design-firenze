@@ -9,7 +9,7 @@
     "scope": "global",
     "featured": true
   */
-  --header-mainmenu-font-size: 14px;
+  --header-mainmenu-font-size: 16px;
   /* VoogStyle
      "pathI18n": ["header", "main_menu", "normal"],
      "titleI18n": "line_height",

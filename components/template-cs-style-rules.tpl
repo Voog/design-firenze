@@ -394,10 +394,6 @@ body {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
 
-  .front-page .menu-main .menu .menu-item .menu-link {
-    font-size: calc(var(--header-mainmenu-font-size) * 1.4);
-  }
-
   .footer .content-formatted {
     font-size: calc(var(--footer-font-size) * 1.4);
   }
@@ -424,5 +420,9 @@ body {
 
   .content-formatted .form_submit input {
     font-size: calc(var(--button-font-size) * 1.4);
+  }
+
+  .front-page .menu-main .menu .menu-item .menu-link {
+    font-size: calc(var(--header-mainmenu-font-size) * 1.4);
   }
 }

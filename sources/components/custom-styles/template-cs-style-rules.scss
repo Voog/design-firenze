@@ -423,7 +423,6 @@
     .content-page .content-formatted h2 { font-size: calc(var(--h2-font-size) * 1.4);}
     .content-formatted h3 { font-size: calc(var(--h3-font-size) * 1.4);}
     .content-page .content-formatted h3 { font-size: calc(var(--h3-font-size) * 1.4);}
-    .front-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
     .footer .content-formatted { font-size: calc(var(--footer-font-size) * 1.4);}
     .content-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
     .content-page .header-title, .content-page .header-title a, .content-page .header-title .header-link { font-size: calc(var(--header-site-title-font-size) * 1.4);}
@@ -431,4 +430,5 @@
     .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}
     .post-date { font-size: calc(var(--blog-list-date-font-size) * 1.4);}
     .content-formatted .form_submit input { font-size: calc(var(--button-font-size) * 1.4);}
+    .front-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
   }
