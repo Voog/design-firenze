@@ -328,6 +328,10 @@ body {
   border-bottom: 3px solid var(--light-primary);
 }
 
+.front-page .dark-background .content .content-formatted {
+  border-top-color: var(--light-primary);
+}
+
 .front-page .light-background .content .content-formatted {
   border-top-color: var(--dark-primary);
 }

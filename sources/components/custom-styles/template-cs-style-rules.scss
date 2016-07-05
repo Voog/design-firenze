@@ -376,12 +376,15 @@
   .front-page .dark-background .header-top-inner {
     border-bottom: 3px solid var(--light-primary);
   }
+  .front-page .dark-background .content .content-formatted {
+    border-top-color: var(--light-primary);
+  }
   .front-page .light-background .content .content-formatted {
     border-top-color: var(--dark-primary);
   }
   .front-page .light-background .header-top-inner {
     border-color: var(--dark-primary);
-}
+  }
 
   .front-page .menu-main .menu .menu-item .menu-link.active,
   .front-page .menu-main .menu .menu-item .menu-link:hover {
