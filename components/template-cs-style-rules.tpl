@@ -204,9 +204,9 @@
 
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
-.svg .content-formatted .form_field_checkbox + .form_control_indicator,
-.svg .content-formatted .form_field_radio + .form_control_indicator,
-.svg .content-formatted .form_field_select {
+.content-formatted .svg .content-formatted .form_field_checkbox + .form_control_indicator,
+.content-formatted .svg .content-formatted .form_field_radio + .form_control_indicator,
+.content-formatted .svg .content-formatted .form_field_select {
   background-color: var(--form-field-background-color);
 }
 
@@ -217,11 +217,10 @@
   text-decoration: var(--form-field-text-text-decoration);
 }
 
-.front-page .content-formatted .edy-fe-label,
-.front-page .content-formatted .form_field,
 .form_field_file,
 .form_field .edy-fe-label,
-.content-formatted .form_field {
+.content-formatted .form_field,
+.dark-background .content-formatted .form_field {
   color: var(--form-field-text-color);
   font-style: var(--form-field-text-font-style);
   text-transform: var(--form-field-text-text-transform);
@@ -233,6 +232,13 @@
 
 .content-formatted .form_field .form_field_label {
   font-weight: var(--form-field-text-font-weight);
+}
+
+.front-page .content-formatted .form_field_textfield, .front-page .content-formatted .form_field_textarea,
+.front-page .svg .content-formatted .form_field_checkbox + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_radio + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_select {
+  background-color: #f2f2f2;
 }
 
 .post-title {

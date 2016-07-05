@@ -32,7 +32,6 @@
     {% include "template-cs-button-front" %}
     {% include "template-cs-header-front" %}
     {% include "template-cs-table-front" %}
-    {% include "template-cs-form-front" %}
   {% endif %}
 
   {% if common_page %}
