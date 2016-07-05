@@ -388,5 +388,5 @@
       "--content-links-hover-color"
     ]
   */
-  --content-links-color: rgba(0, 102, 187, 0.8);
+  --content-links-color: #0066bb;
 }
