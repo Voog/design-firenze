@@ -358,20 +358,23 @@ body {
 .footer .content-formatted {
   font-size: var(--footer-font-size);
   line-height: var(--footer-line-height);
-  color: #fff;
-  color: rgba(255, 255, 255, 0.33);
+  /*color: #fff;
+  color: rgba(255,255,255,0.33);*/
 }
 
-.footer .content-formatted a {
-  color: #fff;
-  color: rgba(255, 255, 255, 0.66);
-}
-
-.dark-background .footer .content-formatted,
-.dark-background .footer .content-formatted a {
+.footer.dark-background .content-formatted {
   color: var(--light-primary);
+  opacity: 0.33;
 }
 
+.footer.light-background .content-formatted {
+  color: var(--dark-primary);
+}
+
+/*.footer.light-background .content-formatted {
+  color: none;
+  color: rgba(0, 0, 0, 0.66);
+}*/
 /* "widescreen mode" rules, where area elements are 1.4 times bigger  */
 @media screen and (min-width: 1400px) {
   body {

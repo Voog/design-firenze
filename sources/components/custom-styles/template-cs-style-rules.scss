@@ -362,7 +362,8 @@
   .light-background .menu-main .menu .menu-item .menu-link.active,
   .light-background .menu-main .menu .menu-item .menu-link:hover,
   .light-background .content-formatted .edy-fe-label,
-  .light-background .content-formatted .form_field {
+  .light-background .content-formatted .form_field,
+   {
     color: var(--dark-primary);
   }
 
@@ -416,9 +417,13 @@
     color: rgba(255,255,255,0.66);
   }
 
-  .dark-background .footer .content-formatted,
-  .dark-background .footer .content-formatted a {
+  .footer.dark-background .content-formatted {
     color: var(--light-primary);
+    opacity: 0.33
+  }
+  .footer.dark-background .content-formatted a {
+    color: var(--light-primary);
+    opacity: 0.66;
   }
 
 
