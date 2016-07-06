@@ -11011,6 +11011,27 @@ MMCQ = (function() {
     }
   };
 
+  // ===========================================================================
+  // Detects design editor changes.
+  // ===========================================================================
+  var detectDesignEditorChanges = function() {
+    document.addEventListener('edicy:customstyles:change', function(event) {
+      var relevantVariables = [
+        '--header-mainmenu-font-size',
+        '--header-mainmenu-line-height'
+      ];
+
+      var relevantVariableChanged = Object.keys(event.detail.changes).filter(function(variable) {
+       return relevantVariables.indexOf(variable) > -1;
+      }).length > 0;
+
+      //
+      if (relevantVariableChanged) {
+        handleTopbarPosition();
+      }
+    });
+  };
+
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
@@ -11028,16 +11049,19 @@ MMCQ = (function() {
     var initCommonPage = function() {
       // Add common page specific functions here.
       handleTopbarPosition();
+      detectDesignEditorChanges();
     };
 
     var initBlogPage = function() {
       // Add blog listing layout specific functions here.
       handleTopbarPosition();
+      detectDesignEditorChanges();
     };
 
     var initPostPage = function() {
       // Add single post layout specific functions here.
       handleTopbarPosition();
+      detectDesignEditorChanges();
     };
 
     var init = function() {
