@@ -11020,53 +11020,53 @@ MMCQ = (function() {
     });
   };
 
-    // Initiations
-    var initFrontPage = function() {
-      // Add front page specific functions here.
+  // Initiations
+  var initFrontPage = function() {
+    // Add front page specific functions here.
+  };
+
+  var initCommonPage = function() {
+    // Add common page specific functions here.
+    handleTopbarPosition();
+  };
+
+  var initBlogPage = function() {
+    // Add blog listing layout specific functions here.
+    handleTopbarPosition();
+  };
+
+  var initPostPage = function() {
+    // Add single post layout specific functions here.
+    handleTopbarPosition();
+  };
+
+  var init = function() {
+    // Add site wide functions here.
+    if (bgPickerFallback) {
+      handleColorSchemeFallback();
     };
+    handleElementsClick();
+    handleLayoutPositioning();
+    handleContentMutations();
+    handleSearchSubmit();
+    focusFormWithErrors();
+    handleWindowResize();
+    wrapTables();
+  };
 
-    var initCommonPage = function() {
-      // Add common page specific functions here.
-      handleTopbarPosition();
-    };
+  // Enables the usage of the initiations outside this file.
+  // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
+  window.site = $.extend(window.site || {}, {
+    toggleFlags: toggleFlags,
+    bgPickerPreview: bgPickerPreview,
+    bgPickerCommit: bgPickerCommit,
+    bgPickerColorScheme: bgPickerColorScheme,
+    initFrontPage: initFrontPage,
+    initCommonPage: initCommonPage,
+    initBlogPage: initBlogPage,
+    initPostPage: initPostPage
+  });
 
-    var initBlogPage = function() {
-      // Add blog listing layout specific functions here.
-      handleTopbarPosition();
-    };
-
-    var initPostPage = function() {
-      // Add single post layout specific functions here.
-      handleTopbarPosition();
-    };
-
-    var init = function() {
-      // Add site wide functions here.
-      if (bgPickerFallback) {
-        handleColorSchemeFallback();
-      };
-      handleElementsClick();
-      handleLayoutPositioning();
-      handleContentMutations();
-      handleSearchSubmit();
-      focusFormWithErrors();
-      handleWindowResize();
-      wrapTables();
-    };
-
-    // Enables the usage of the initiations outside this file.
-    // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
-    window.site = $.extend(window.site || {}, {
-      toggleFlags: toggleFlags,
-      bgPickerPreview: bgPickerPreview,
-      bgPickerCommit: bgPickerCommit,
-      bgPickerColorScheme: bgPickerColorScheme,
-      initFrontPage: initFrontPage,
-      initCommonPage: initCommonPage,
-      initBlogPage: initBlogPage,
-      initPostPage: initPostPage
-    });
-
-    // Initiates site wide functions.
-    init();
-  })(jQuery);
+  // Initiates site wide functions.
+  init();
+})(jQuery);
