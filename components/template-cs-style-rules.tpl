@@ -218,11 +218,22 @@
   border-top-color: var(--table-border-color);
 }
 
+/*.common-page .content-formatted .form_field_select,
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
+.svg .content-formatted .form_field_checkbox+.form_control_indicator,
+.svg .content-formatted .form_field_radio+.form_control_indicator,
+.content-formatted .svg .content-formatted .form_field_select {
+  background-color: var(--form-field-background-color);
+}*/
+.svg .content-page .content-formatted .form_field_checkbox + .form_control_indicator,
+.svg .content-page .content-formatted .form_field_radio + .form_control_indicator,
+.content-formatted .form_field_textfield, .content-formatted .form_field_textarea,
 .content-formatted .svg .content-formatted .form_field_checkbox + .form_control_indicator,
 .content-formatted .svg .content-formatted .form_field_radio + .form_control_indicator,
-.content-formatted .svg .content-formatted .form_field_select {
+.content-formatted .svg .content-formatted .form_field_select,
+.content-formatted .form_field_select, .content-formatted .form_field_textarea,
+.content-formatted .form_field_textfield {
   background-color: var(--form-field-background-color);
 }
 
@@ -250,11 +261,13 @@
   font-weight: var(--form-field-text-font-weight);
 }
 
-.front-page .content-formatted .form_field_textfield, .front-page .content-formatted .form_field_textarea,
+.front-page .content-formatted .form_field_textfield,
+.front-page .content-formatted .form_field_textarea,
 .front-page .svg .content-formatted .form_field_checkbox + .form_control_indicator,
 .front-page .svg .content-formatted .form_field_radio + .form_control_indicator,
-.front-page .svg .content-formatted .form_field_select {
-  background-color: #f2f2f2;
+.front-page .svg .content-formatted .form_field_select,
+.front-page .content-formatted .form_field_select {
+  background-color: #f2f2f2 !important;
 }
 
 .post-title {
