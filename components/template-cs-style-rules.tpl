@@ -369,8 +369,6 @@ body {
 }
 
 .footer .content-formatted {
-  font-size: var(--footer-font-size);
-  line-height: var(--footer-line-height);
   color: #fff;
   color: rgba(255, 255, 255, 0.33);
 }

@@ -66,7 +66,6 @@
     {% include "template-cs-form" %}
   {% endif %}
 
-  {% include "template-cs-footer" %}
   {% include "template-cs-style-rules" %}
 
 {% endcustomstyle %}
