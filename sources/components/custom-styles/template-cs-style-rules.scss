@@ -362,7 +362,7 @@
   }
 
   @media screen and (min-width: 1400px) {
-  .content-page .container .wrap { max-width: calc(var(--site-width) * 1.5);}
+  .content-page .container .wrap { max-width: calc(var(--site-width) * 1.4);}
   }
 
   // Main styles - Colors
@@ -451,7 +451,7 @@
     .footer .content-formatted { font-size: calc(var(--footer-font-size) * 1.4);}
     .content-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
     .content-page .header-title, .content-page .header-title a, .content-page .header-title .header-link { font-size: calc(var(--header-site-title-font-size) * 1.4);}
-    .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link { font-size: calc(var(--content-submenu-font-size) * 1.3);}
+    .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link { font-size: calc(var(--content-submenu-font-size) * 1.4);}
     .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}
     .post-date { font-size: calc(var(--blog-list-date-font-size) * 1.4);}
     .content-formatted .form_submit input, .content-formatted .custom-btn { font-size: calc(var(--button-font-size) * 1.4);}

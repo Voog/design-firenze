@@ -312,7 +312,7 @@
 
 @media screen and (min-width: 1400px) {
   .content-page .container .wrap {
-    max-width: calc(var(--site-width) * 1.5);
+    max-width: calc(var(--site-width) * 1.4);
   }
 }
 body {
@@ -434,7 +434,7 @@ body {
   }
 
   .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link {
-    font-size: calc(var(--content-submenu-font-size) * 1.3);
+    font-size: calc(var(--content-submenu-font-size) * 1.4);
   }
 
   .post-title, .post-title a {
