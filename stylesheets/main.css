@@ -2663,3 +2663,39 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted a:not(.custom-btn):hover { opacity: 0.8;}
 .footer .content-formatted a:hover { opacity: 1;}
 .editmode .post-title { display: inline-block !important;min-width:100px;}
+
+.post-title a:hover { opacity:0.8;}
+.topbar .menu-main .menu .menu-item .menu-link.active,
+.topbar .menu-main .menu .menu-item .menu-link.active:hover { color: #fff;}
+
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input:hover { opacity: 0.8;color: #fff;}
+
+.front-page .dark-background .content-formatted .custom-btn,
+.front-page .dark-background .content-formatted .form_submit input,
+.front-page .dark-background .content-formatted .form_submit input:hover {
+    background-color: #06b;
+}
+
+.front-page .light-background .content-formatted .custom-btn,
+.front-page .light-background .content-formatted .form_submit input,
+.front-page .light-background .content-formatted .form_submit input:hover {
+    background-color: #06b;
+}
+
+.content-formatted .form_field label { text-decoration: none;}
+
+.front-page .content-formatted .form_field_textfield,
+.front-page .content-formatted .form_field_textarea,
+.front-page .svg .content-formatted .form_field_checkbox + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_radio + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_select,
+.front-page .content-formatted .form_field_select {
+  background-color: #f2f2f2 !important;
+}
+
+.front-page .menu-main .menu .menu-item .menu-link.active,
+.front-page .menu-main .menu .menu-item .menu-link:hover { opacity: 0.8;}
+
+.footer .content-formatted { color: #fff;color: rgba(255,255,255,0.33);}
+.footer .content-formatted a { color: #fff; color: rgba(255,255,255,0.66);}

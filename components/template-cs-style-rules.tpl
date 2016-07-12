@@ -119,11 +119,6 @@
   color: var(--content-submenu-color);
 }
 
-.topbar .menu-main .menu .menu-item .menu-link.active,
-.topbar .menu-main .menu .menu-item .menu-link.active:hover {
-  color: #fff;
-}
-
 .menu-sub .menu .menu-item .menu-link:hover {
   font-weight: var(--content-submenu-hover-font-weight);
   font-style: var(--content-submenu-hover-font-style);
@@ -172,26 +167,23 @@
   padding: calc(var(--button-padding) - 3px) var(--button-padding);
   font-size: var(--button-font-size);
   color: var(--button-color);
-}
-.content-formatted .custom-btn:hover,
-.content-formatted .form_submit input:hover {
-  opacity: .8;
-  background-color: var(--button-background-color);
-  color: #fff;
+  /*&:hover {
+    opacity: .8;
+    background-color: var(--button-background-color);
+    color: #fff;
+  }*/
 }
 
 .front-page .dark-background .content-formatted .custom-btn,
 .front-page .dark-background .content-formatted .form_submit input,
 .front-page .dark-background .content-formatted .form_submit input:hover {
   color: var(--font-one);
-  background-color: #06b;
 }
 
 .front-page .light-background .content-formatted .custom-btn,
 .front-page .light-background .content-formatted .form_submit input,
 .front-page .light-background .content-formatted .form_submit input:hover {
   color: var(--font-two);
-  background-color: #06b;
 }
 
 .light-background .content-formatted table td {
@@ -253,21 +245,8 @@
   text-transform: var(--form-field-text-text-transform);
 }
 
-.content-formatted .form_field label {
-  text-decoration: none;
-}
-
 .content-formatted .form_field .form_field_label {
   font-weight: var(--form-field-text-font-weight);
-}
-
-.front-page .content-formatted .form_field_textfield,
-.front-page .content-formatted .form_field_textarea,
-.front-page .svg .content-formatted .form_field_checkbox + .form_control_indicator,
-.front-page .svg .content-formatted .form_field_radio + .form_control_indicator,
-.front-page .svg .content-formatted .form_field_select,
-.front-page .content-formatted .form_field_select {
-  background-color: #f2f2f2 !important;
 }
 
 .post-title {
@@ -278,7 +257,6 @@
   text-decoration: var(--blog-list-title-text-decoration);
   text-transform: var(--blog-list-title-text-transform);
   color: var(--blog-list-title-color);
-  display: inline-block !important;
 }
 
 .post-title a {
@@ -291,7 +269,6 @@
 }
 
 .post-title a:hover {
-  opacity: 0.8;
   color: var(--blog-list-title-color);
 }
 
@@ -310,11 +287,6 @@
   background-color: var(--color-bg);
 }
 
-@media screen and (min-width: 1400px) {
-  .content-page .container .wrap {
-    max-width: calc(var(--site-width) * 1.4);
-  }
-}
 body {
   font-family: var(--font-one);
 }
@@ -357,25 +329,10 @@ body {
   border-color: var(--dark-primary);
 }
 
-.front-page .menu-main .menu .menu-item .menu-link.active,
-.front-page .menu-main .menu .menu-item .menu-link:hover {
-  opacity: 0.8;
-}
-
 .comments .comments-title, .content-formatted h1,
 .header-title, .menu-main, .post-date, .post-title,
 .post-title a, .tags-btn, .voog-search-modal-results h3 {
   font-family: var(--font-two);
-}
-
-.footer .content-formatted {
-  color: #fff;
-  color: rgba(255, 255, 255, 0.33);
-}
-
-.footer .content-formatted a {
-  color: #fff;
-  color: rgba(255, 255, 255, 0.66);
 }
 
 .front-page .footer.light-background .content-formatted,
@@ -387,10 +344,16 @@ body {
   color: var(--light-primary);
 }
 
-/* "widescreen mode" rules, where area elements are 1.4 times bigger  */
+/*-------------------------
+  "widescreen mode" rules, where area elements are 1.4 times bigger
+--------------------------*/
 @media screen and (min-width: 1400px) {
   body {
     font-size: calc(var(--content-font-size) * 1.4);
+  }
+
+  .content-page .container .wrap {
+    max-width: calc(var(--site-width) * 1.4);
   }
 
   .content-formatted {
