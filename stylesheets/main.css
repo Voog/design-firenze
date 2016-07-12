@@ -2662,3 +2662,4 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 /* For designeditor, 2016 */
 .content-formatted a:not(.custom-btn):hover { opacity: 0.8;}
 .footer .content-formatted a:hover { opacity: 1;}
+.editmode .post-title { display: inline-block !important;min-width:100px;}
