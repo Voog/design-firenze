@@ -135,6 +135,10 @@
   color: var(--content-submenu-active-color);
 }
 
+.menu-sub .menu .menu-item .menu-link.active:hover {
+  color: var(--content-submenu-hover-color);
+}
+
 .content-formatted, .post-excerpt .content-formatted {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
