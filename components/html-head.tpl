@@ -27,41 +27,41 @@
 {% customstyle %}
   {% if front_page %}
     {% include "template-cs-main-styles-front" %}
+    {% include "template-cs-header-front" %}
     {% include "template-cs-content-front" %}
     {% include "template-cs-headings-front" %}
     {% include "template-cs-button-front" %}
-    {% include "template-cs-header-front" %}
     {% include "template-cs-table-front" %}
   {% endif %}
 
   {% if common_page %}
     {% include "template-cs-main-styles" %}
+    {% include "template-cs-header" %}
     {% include "template-cs-content" %}
     {% include "template-cs-headings" %}
     {% include "template-cs-button" %}
-    {% include "template-cs-header" %}
     {% include "template-cs-table" %}
     {% include "template-cs-form" %}
   {% endif %}
 
   {% if blog_article %}
     {% include "template-cs-main-styles" %}
+    {% include "template-cs-header" %}
     {% include "template-cs-blog-article" %}
     {% include "template-cs-content" %}
     {% include "template-cs-headings" %}
     {% include "template-cs-button" %}
-    {% include "template-cs-header" %}
     {% include "template-cs-table" %}
     {% include "template-cs-form" %}
   {% endif %}
 
   {% if blog_list %}
     {% include "template-cs-main-styles" %}
+    {% include "template-cs-header" %}
     {% include "template-cs-blog-list" %}
     {% include "template-cs-content" %}
     {% include "template-cs-headings" %}
     {% include "template-cs-button" %}
-    {% include "template-cs-header" %}
     {% include "template-cs-table" %}
     {% include "template-cs-form" %}
   {% endif %}
