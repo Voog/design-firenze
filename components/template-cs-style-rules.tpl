@@ -171,6 +171,10 @@
   text-transform: var(--content-links-hover-text-transform);
 }
 
+.front-page .light-background .content-formatted a:not(.custom-btn):hover {
+  color: var(--content-links-color);
+}
+
 .footer .voog-reference a {
   color: var(--footer-color);
 }
