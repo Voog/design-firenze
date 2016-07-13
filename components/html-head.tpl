@@ -48,7 +48,6 @@
     {% include "template-cs-main-styles" %}
     {% include "template-cs-header" %}
     {% include "template-cs-blog-article" %}
-    {% include "template-cs-content" %}
     {% include "template-cs-headings" %}
     {% include "template-cs-button" %}
     {% include "template-cs-table" %}
@@ -59,7 +58,6 @@
     {% include "template-cs-main-styles" %}
     {% include "template-cs-header" %}
     {% include "template-cs-blog-list" %}
-    {% include "template-cs-content" %}
     {% include "template-cs-headings" %}
     {% include "template-cs-button" %}
     {% include "template-cs-table" %}
