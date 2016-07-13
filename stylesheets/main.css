@@ -2712,3 +2712,5 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     color: #FFF;
     color: rgba(255,255,255,.5);
 }
+
+.comments .comment, .post-excerpt.content-formatted { font-size: 14px;}
