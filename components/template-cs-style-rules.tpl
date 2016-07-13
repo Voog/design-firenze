@@ -305,6 +305,10 @@
   background-color: var(--content-color-bg);
 }
 
+.topbar .wrap {
+  max-width: var(--site-width);
+}
+
 body {
   font-family: var(--font-one);
 }
