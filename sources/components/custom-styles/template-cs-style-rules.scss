@@ -109,7 +109,8 @@
   font-weight: var(--header-mainmenu-active-font-weight);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link:hover {
+.content-page .menu-main .menu .menu-item .menu-link:hover,
+.content-page .menu-main .menu .menu-item .menu-link.active:hover {
   color: var(--header-mainmenu-hover-color);
   text-transform: var(--header-mainmenu-hover-text-transform);
   text-decoration: var(--header-mainmenu-hover-text-decoration);
