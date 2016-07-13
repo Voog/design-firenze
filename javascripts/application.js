@@ -11018,7 +11018,9 @@ MMCQ = (function() {
     document.addEventListener('edicy:customstyles:change', function(event) {
       var relevantVariables = [
         '--header-mainmenu-font-size',
-        '--header-mainmenu-line-height'
+        '--header-mainmenu-line-height',
+        '--header-mainmenu-line-height',
+        '--font-two'
       ];
 
       var relevantVariableChanged = Object.keys(event.detail.changes).filter(function(variable) {
