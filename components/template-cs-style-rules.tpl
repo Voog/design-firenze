@@ -149,7 +149,7 @@
   color: var(--content-submenu-hover-color);
 }
 
-.content-formatted, .post-excerpt .content-formatted {
+.content-formatted, .post-content {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
   color: var(--content-color);
