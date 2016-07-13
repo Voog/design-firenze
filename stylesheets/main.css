@@ -2713,4 +2713,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
     color: rgba(255,255,255,.5);
 }
 
-.comments .comment, .post-excerpt.content-formatted { font-size: 14px;}
+.comments .comment,
+.post-excerpt.content-formatted,
+.content-page .topbar .menu-main .menu .menu-item .menu-link {
+  font-size: 14px;
+}
