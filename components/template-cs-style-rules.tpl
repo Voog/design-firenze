@@ -96,6 +96,15 @@
   font-size: var(--header-mainmenu-font-size);
 }
 
+.front-page .menu-main .menu .menu-item .menu-link:hover,
+.light-background .menu-main .menu .menu-item .menu-link:hover {
+  text-transform: var(--header-mainmenu-hover-text-transform);
+  text-decoration: var(--header-mainmenu-hover-text-decoration);
+  font-style: var(--header-mainmenu-hover-font-style);
+  font-weight: var(--header-mainmenu-hover-font-weight);
+  line-height: var(--header-mainmenu-hover-line-height);
+}
+
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link,
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link:hover {
   color: var(--font-one);
