@@ -322,7 +322,8 @@ body {
 .dark-background .menu-main .menu .menu-item .menu-link.active,
 .dark-background .menu-main .menu .menu-item .menu-link:hover,
 .dark-background .content-formatted .edy-fe-label,
-.dark-background .content-formatted .form_field {
+.dark-background .content-formatted .form_field,
+.dark-background .content-formatted a:not(.custom-btn) {
   color: var(--light-primary);
 }
 
