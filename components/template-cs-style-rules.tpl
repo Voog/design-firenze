@@ -302,7 +302,7 @@
 
 .content-page .container .wrap {
   max-width: var(--site-width);
-  background-color: var(--color-bg);
+  background-color: var(--content-color-bg);
 }
 
 body {
