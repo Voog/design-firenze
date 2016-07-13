@@ -149,6 +149,10 @@
   color: var(--content-submenu-hover-color);
 }
 
+.tags-title {
+  color: var(--content-submenu-color);
+}
+
 .content-formatted, .post-content {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
