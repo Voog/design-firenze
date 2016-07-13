@@ -108,12 +108,12 @@
 
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link,
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link:hover {
-  color: var(--font-one);
+  color: var(--light-primary);
 }
 
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link:hover {
-  color: var(--font-two);
+  color: var(--dark-primary);
 }
 
 .menu-sub .menu .menu-item {
