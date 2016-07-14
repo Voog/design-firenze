@@ -236,6 +236,10 @@
   color: #fff;
 }*/
 }
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input:hover {
+  background-color: var(--button-background-color);
+}
 
 // Button - light and dark background
 .front-page .dark-background .content-formatted .custom-btn,

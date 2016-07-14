@@ -196,6 +196,11 @@
   }*/
 }
 
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input:hover {
+  background-color: var(--button-background-color);
+}
+
 .front-page .dark-background .content-formatted .custom-btn,
 .front-page .dark-background .content-formatted .form_submit input,
 .front-page .dark-background .content-formatted .form_submit input:hover {
