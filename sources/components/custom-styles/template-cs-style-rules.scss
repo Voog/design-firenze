@@ -84,9 +84,13 @@
   color: var(--header-site-title-color);
 }
 .content-page .header-title .header-link:hover {
-  color: var(--header-body-text-color);
-  text-transform: var(--header-site-title-text-transform);
+  font-size: var(--header-site-title-font-size);
+  line-height: var(--header-site-title-line-height);
+  font-weight: var(--header-site-title-font-weight);
   font-style: var(--header-site-title-font-style);
+  text-decoration: var(--header-site-title-text-decoration);
+  text-transform: var(--header-site-title-text-transform);
+  color: var(--header-site-title-color);
 }
 
 
