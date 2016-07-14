@@ -2717,9 +2717,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   line-height: 1.4;
 }
 
-.footer.dark-background .content-formatted a, .footer .content-formatted a {
-    color: rgba(255, 255, 255, 0.66);
-}
-.footer.light-background .content-formatted a:hover {
-    color: black;
-}
+
+.footer.dark-background .content-formatted a, .footer .content-formatted a { color: rgba(255, 255, 255, 0.66) !important;}
+.footer.light-background .content-formatted a, .footer.light-background .content-formatted a { color: rgba(0,0,0,.66)!important;}
+.footer.light-background .content-formatted a:hover { color: rgba(0, 0, 0, 0.66);}
+.footer.dark-background .content-formatted { color: rgba(255, 255, 255, 0.35);}
