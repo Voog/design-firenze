@@ -369,9 +369,9 @@
   background-color: var(--color-third);
 }
 
-/*.topbar .wrap {
+.topbar .wrap {
   max-width: var(--site-width);
-}*/
+}
 
 
 // Main styles - colors
@@ -441,6 +441,7 @@ body { font-family: var(--font-one);}
 @media screen and (min-width: 1400px) {
   body { font-size: calc(var(--content-font-size) * 1.4);}
   .content-page .container .wrap { max-width: calc(var(--site-width) * 1.4);}
+  .topbar .wrap { max-width: calc(var(--site-width) * 1.4);}
   .content-formatted { font-size: calc(var(--content-font-size) * 1.4);}
   .content-formatted h1 { font-size: calc(var(--h1-font-size) * 1.4);}
   .content-page .content-formatted h1 { font-size: calc(var(--h1-font-size) * 1.4);}

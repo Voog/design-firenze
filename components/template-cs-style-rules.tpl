@@ -318,9 +318,10 @@
   background-color: var(--color-third);
 }
 
-/*.topbar .wrap {
+.topbar .wrap {
   max-width: var(--site-width);
-}*/
+}
+
 body {
   font-family: var(--font-one);
 }
@@ -389,6 +390,10 @@ body {
   }
 
   .content-page .container .wrap {
+    max-width: calc(var(--site-width) * 1.4);
+  }
+
+  .topbar .wrap {
     max-width: calc(var(--site-width) * 1.4);
   }
 
