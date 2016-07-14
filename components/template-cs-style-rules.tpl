@@ -65,7 +65,7 @@
   color: var(--header-site-title-color);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link {
+.content-page .header .menu-main .menu .menu-item .menu-link {
   color: var(--header-mainmenu-color);
   text-transform: var(--header-mainmenu-text-transform);
   text-decoration: var(--header-mainmenu-text-decoration);
@@ -75,7 +75,7 @@
   font-size: var(--header-mainmenu-font-size);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link.active {
+.content-page .header .menu-main .menu .menu-item .menu-link.active {
   color: var(--header-mainmenu-active-color);
   text-transform: var(--header-mainmenu-active-text-transform);
   text-decoration: var(--header-mainmenu-active-text-decoration);
@@ -83,8 +83,8 @@
   font-weight: var(--header-mainmenu-active-font-weight);
 }
 
-.content-page .menu-main .menu .menu-item .menu-link:hover,
-.content-page .menu-main .menu .menu-item .menu-link.active:hover {
+.content-page .header .menu-main .menu .menu-item .menu-link:hover,
+.content-page .header .menu-main .menu .menu-item .menu-link.active:hover {
   color: var(--header-mainmenu-hover-color);
   text-transform: var(--header-mainmenu-hover-text-transform);
   text-decoration: var(--header-mainmenu-hover-text-decoration);
@@ -318,10 +318,9 @@
   background-color: var(--color-third);
 }
 
-.topbar .wrap {
+/*.topbar .wrap {
   max-width: var(--site-width);
-}
-
+}*/
 body {
   font-family: var(--font-one);
 }
@@ -424,10 +423,6 @@ body {
     font-size: calc(var(--footer-font-size) * 1.4);
   }
 
-  .content-page .menu-main .menu .menu-item .menu-link {
-    font-size: calc(var(--header-mainmenu-font-size) * 1.4);
-  }
-
   .content-page .header-title, .content-page .header-title a, .content-page .header-title .header-link {
     font-size: calc(var(--header-site-title-font-size) * 1.4);
   }
@@ -449,6 +444,10 @@ body {
   }
 
   .front-page .menu-main .menu .menu-item .menu-link {
+    font-size: calc(var(--header-mainmenu-font-size) * 1.4);
+  }
+
+  .content-page .header .menu-main .menu .menu-item .menu-link {
     font-size: calc(var(--header-mainmenu-font-size) * 1.4);
   }
 }

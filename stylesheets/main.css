@@ -2714,8 +2714,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .comments .comment,
-.post-excerpt.content-formatted,
-.content-page .topbar .menu-main .menu .menu-item .menu-link {
+.post-excerpt.content-formatted /*,
+.content-page .topbar .menu-main .menu .menu-item .menu-link*/ {
   font-size: 14px;
   line-height: 1.4;
 }
