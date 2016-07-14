@@ -383,15 +383,15 @@ body {
   color: black;
 }
 
-.footer.dark-background .content-formatted {
+.footer.dark-background .content-formatted, .footer .content-formatted {
   color: rgba(255, 255, 255, 0.35);
 }
 
-.footer.dark-background .content-formatted a {
+.footer.dark-background .content-formatted a, .footer .content-formatted a {
   color: rgba(255, 255, 255, 0.66);
 }
 
-.footer.dark-background .content-formatted a:hover {
+.footer.dark-background .content-formatted a:hover, .footer .content-formatted a:hover {
   color: white;
 }
 
