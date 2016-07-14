@@ -2697,9 +2697,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .front-page .menu-main .menu .menu-item .menu-link.active,
 .front-page .menu-main .menu .menu-item .menu-link:hover { opacity: 0.8;}
 
-.footer .content-formatted { color: #fff;color: rgba(255,255,255,0.33);}
-.footer .content-formatted a { color: #fff; color: rgba(255,255,255,0.66);}
-
 .content-page .topbar .menu-main .menu .menu-item .menu-link {
   color: #888;
 }
@@ -2719,3 +2716,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   font-size: 14px;
   line-height: 1.4;
 }
+.footer .dark-background .content-formatted { color: #fff; color: rgba(255,255,255,.66);}
+.footer .light-background .content-formatted { color: #000; color: rgba(0,0,0,.66);}
+.footer .content-formatted { color: #fff;color: rgba(255,255,255,0.33);}
+.footer .content-formatted a { color: #fff; color: rgba(255,255,255,0.66);}
