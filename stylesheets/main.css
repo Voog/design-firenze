@@ -2723,12 +2723,16 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 .content-page .footer.light-background .content-formatted a {
   color: #000;
+  opacity: 0.66;
+}
+.content-page .footer.light-background .content-formatted a:hover {
+  color: #000;
+  opacity: 1;
 }
 
 .content-page .footer.dark-background .content-formatted {
   color: #fff;
   opacity: 0.33;
 }
-.content-page .footer.dark-background .content-formatted a {
-  color: #fff;
-}
+.content-page .footer.dark-background .content-formatted a { color: #fff;opacity: 0.66;}
+.content-page .footer.dark-background .content-formatted a { color: #fff;opacity: 1;}
