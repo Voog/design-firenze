@@ -2716,3 +2716,10 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   font-size: 14px;
   line-height: 1.4;
 }
+
+.footer.dark-background .content-formatted a, .footer .content-formatted a {
+    color: rgba(255, 255, 255, 0.66);
+}
+.footer.light-background .content-formatted a:hover {
+    color: black;
+}
