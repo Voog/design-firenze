@@ -371,16 +371,43 @@ body {
   font-family: var(--font-two);
 }
 
-.front-page .footer.light-background .content-formatted,
+.footer.light-background .content-formatted {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.footer.light-background .content-formatted a {
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.footer.light-background .content-formatted a:hover {
+  color: black;
+}
+
+.footer.dark-background .content-formatted {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer.dark-background .content-formatted a {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.footer.dark-background .content-formatted a:hover {
+  color: white;
+}
+
+/*.front-page .footer.light-background .content-formatted,
 .front-page .footer.light-background .content-formatted a {
   color: var(--dark-primary);
 }
+.dark-background & {
+      color: rgba($white, .35);
+    }
 
-.front-page .footer .dark-background .content-formatted,
+.front-page .footer.dark-background .content-formatted,
 .front-page .footer.dark-background .content-formatted a {
   color: var(--light-primary);
 }
-
+*/
 /*-------------------------
   "widescreen mode" rules, where area elements are 1.4 times bigger
 --------------------------*/

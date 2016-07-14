@@ -2661,7 +2661,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 
 /* For designeditor, 2016 */
 .content-formatted a:not(.custom-btn):hover { opacity: 0.8;}
-.footer .content-formatted a:hover { opacity: 1;}
 .editmode .post-title { display: inline-block !important;min-width:100px;}
 
 .post-title a:hover { opacity:0.8;}
@@ -2705,6 +2704,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-page .topbar .menu-main .menu .menu-item .menu-link.active:hover {
     color: #fff;
 }
+
 .content-page .topbar .menu-main .menu .menu-item .menu-link:hover {
     color: #FFF;
     color: rgba(255,255,255,.5);
@@ -2716,11 +2716,3 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   font-size: 14px;
   line-height: 1.4;
 }
-
-.content-page .footer.light-background .content-formatted {color: #000;opacity: 0.33;}
-.content-page .footer.light-background .content-formatted a { color: #000;opacity: 0.66;}
-.content-page .footer.light-background .content-formatted a:hover { color: #000;opacity: 1;}
-
-.content-page .footer.dark-background .content-formatted {color: #fff;opacity: 0.33;}
-.content-page .footer.dark-background .content-formatted a { color: #fff;opacity: 0.66;}
-.content-page .footer.dark-background .content-formatted a:hover { color: #fff;opacity: 1;}
