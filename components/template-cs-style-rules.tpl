@@ -315,7 +315,7 @@
 
 .content-page .container .wrap {
   max-width: var(--site-width);
-  background-color: var(--content-color-bg);
+  background-color: var(--color-third);
 }
 
 .topbar .wrap {

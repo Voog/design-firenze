@@ -79,5 +79,5 @@
      "scope": "global",
      "featured": true
   */
-  --content-color-bg: #FFFFFF;
+  --color-third: #FFFFFF;
 }
