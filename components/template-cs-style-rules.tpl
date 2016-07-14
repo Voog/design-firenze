@@ -375,7 +375,8 @@ body {
   color: var(--dark-primary);
 }
 
-.front-page .footer .content-formatted {
+.front-page .footer .dark-background .content-formatted,
+.front-page .footer.dark-background .content-formatted a {
   color: var(--light-primary);
 }
 

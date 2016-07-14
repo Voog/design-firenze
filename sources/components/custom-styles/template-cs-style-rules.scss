@@ -427,9 +427,11 @@ body { font-family: var(--font-one);}
   color: var(--dark-primary);
 }
 
-.front-page .footer .content-formatted {
-   color: var(--light-primary);
+.front-page .footer .dark-background .content-formatted,
+.front-page .footer.dark-background .content-formatted a {
+  color: var(--light-primary);
 }
+
 
 
 /*-------------------------
