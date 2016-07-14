@@ -199,13 +199,13 @@
 .front-page .dark-background .content-formatted .custom-btn,
 .front-page .dark-background .content-formatted .form_submit input,
 .front-page .dark-background .content-formatted .form_submit input:hover {
-  color: var(--font-one);
+  color: var(--light-primary);
 }
 
 .front-page .light-background .content-formatted .custom-btn,
 .front-page .light-background .content-formatted .form_submit input,
 .front-page .light-background .content-formatted .form_submit input:hover {
-  color: var(--font-two);
+  color: var(--dark-primary);
 }
 
 .light-background .content-formatted table td {
