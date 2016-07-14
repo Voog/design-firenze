@@ -2717,14 +2717,18 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   line-height: 1.4;
 }
 
-.content-page .footer.light-background .content-formatted,
-.content-page .footer.light-background .content-formatted a {
+.content-page .footer.light-background .content-formatted {
   color: #000;
   opacity: 0.33;
 }
+.content-page .footer.light-background .content-formatted a {
+  color: #000;
+}
 
-.content-page .footer.dark-background .content-formatted,
-.content-page .footer.dark-background .content-formatted a {
+.content-page .footer.dark-background .content-formatted {
   color: #fff;
   opacity: 0.33;
+}
+.content-page .footer.dark-background .content-formatted a {
+  color: #fff;
 }
