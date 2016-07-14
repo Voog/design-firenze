@@ -1,171 +1,5 @@
 :root {
   /* VoogStyle
-    "pathI18n": ["blog", "title"],
-    "titleI18n": "size",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global",
-    "featured": true
-  */
-  --blog-list-title-font-size: 36px;
-  /* VoogStyle
-     "pathI18n": ["blog", "title"],
-     "titleI18n": "line_height",
-     "editor": "rangePicker",
-     "min": 0.8,
-     "max": 3,
-     "step": 0.1,
-     "unit": "",
-     "scope": "global"
-  */
-  --blog-list-title-line-height: 1.4;
-  /* VoogStyle
-    "pathI18n": ["blog", "title"],
-    "titleI18n": "font_weight",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "600",
-      "off": "400"
-    },
-    "icon": "bold",
-    "scope": "global"
-  */
-  --blog-list-title-font-weight: 400;
-  /* VoogStyle
-    "pathI18n": ["blog", "title"],
-    "titleI18n": "font_style",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "italic",
-      "off": "normal"
-    },
-    "icon": "italic",
-    "scope": "global"
-  */
-  --blog-list-title-font-style: normal;
-  /* VoogStyle
-    "pathI18n": ["blog", "title"],
-    "titleI18n": "text_decoration",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "underline",
-      "off": "none"
-    },
-    "icon": "underline",
-    "scope": "global"
-  */
-  --blog-list-title-text-decoration: none;
-  /* VoogStyle
-    "pathI18n": ["blog", "title"],
-    "titleI18n": "text_transform",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "uppercase",
-      "off": "none"
-    },
-    "icon": "uppercase",
-    "scope": "global"
-  */
-  --blog-list-title-text-transform: uppercase;
-  /* VoogStyle
-    "pathI18n": ["blog", "title"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --blog-list-title-color: #444;
-  /* VoogStyle
-    "pathI18n": ["blog", "date"],
-    "titleI18n": "size",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global",
-    "featured": true
-  */
-  --blog-list-date-font-size: 36px;
-  /* VoogStyle
-     "pathI18n": ["blog", "date"],
-     "titleI18n": "line_height",
-     "editor": "rangePicker",
-     "min": 0.8,
-     "max": 3,
-     "step": 0.1,
-     "unit": "",
-     "scope": "global"
-  */
-  --blog-list-date-line-height: 1.4;
-  /* VoogStyle
-    "pathI18n": ["blog", "date"],
-    "titleI18n": "font_weight",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "600",
-      "off": "400"
-    },
-    "icon": "bold",
-    "scope": "global"
-  */
-  --blog-list-date-font-weight: 400;
-  /* VoogStyle
-    "pathI18n": ["blog", "date"],
-    "titleI18n": "font_style",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "italic",
-      "off": "normal"
-    },
-    "icon": "italic",
-    "scope": "global"
-  */
-  --blog-list-date-font-style: normal;
-  /* VoogStyle
-    "pathI18n": ["blog", "date"],
-    "titleI18n": "text_decoration",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "underline",
-      "off": "none"
-    },
-    "icon": "underline",
-    "scope": "global"
-  */
-  --blog-list-date-text-decoration: none;
-  /* VoogStyle
-    "pathI18n": ["blog", "date"],
-    "titleI18n": "text_transform",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "uppercase",
-      "off": "none"
-    },
-    "icon": "uppercase",
-    "scope": "global"
-  */
-  --blog-list-date-text-transform: uppercase;
-  /* VoogStyle
-    "pathI18n": ["blog", "date"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --blog-list-date-color: #e2e2e2;
-  /* VoogStyle
       "pathI18n": ["blog", "tags", "normal"],
       "titleI18n": "size",
       "editor": "rangePicker",
@@ -391,6 +225,172 @@
   "scope": "global"
 */
   --content-submenu-active-color: #444;
+  /* VoogStyle
+    "pathI18n": ["blog", "title"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --blog-list-title-font-size: 36px;
+  /* VoogStyle
+     "pathI18n": ["blog", "title"],
+     "titleI18n": "line_height",
+     "editor": "rangePicker",
+     "min": 0.8,
+     "max": 3,
+     "step": 0.1,
+     "unit": "",
+     "scope": "global"
+  */
+  --blog-list-title-line-height: 1.4;
+  /* VoogStyle
+    "pathI18n": ["blog", "title"],
+    "titleI18n": "font_weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  --blog-list-title-font-weight: 400;
+  /* VoogStyle
+    "pathI18n": ["blog", "title"],
+    "titleI18n": "font_style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  --blog-list-title-font-style: normal;
+  /* VoogStyle
+    "pathI18n": ["blog", "title"],
+    "titleI18n": "text_decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  --blog-list-title-text-decoration: none;
+  /* VoogStyle
+    "pathI18n": ["blog", "title"],
+    "titleI18n": "text_transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --blog-list-title-text-transform: uppercase;
+  /* VoogStyle
+    "pathI18n": ["blog", "title"],
+    "titleI18n": "color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --blog-list-title-color: #444;
+  /* VoogStyle
+    "pathI18n": ["blog", "date"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --blog-list-date-font-size: 36px;
+  /* VoogStyle
+     "pathI18n": ["blog", "date"],
+     "titleI18n": "line_height",
+     "editor": "rangePicker",
+     "min": 0.8,
+     "max": 3,
+     "step": 0.1,
+     "unit": "",
+     "scope": "global"
+  */
+  --blog-list-date-line-height: 1.4;
+  /* VoogStyle
+    "pathI18n": ["blog", "date"],
+    "titleI18n": "font_weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  --blog-list-date-font-weight: 400;
+  /* VoogStyle
+    "pathI18n": ["blog", "date"],
+    "titleI18n": "font_style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  --blog-list-date-font-style: normal;
+  /* VoogStyle
+    "pathI18n": ["blog", "date"],
+    "titleI18n": "text_decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  --blog-list-date-text-decoration: none;
+  /* VoogStyle
+    "pathI18n": ["blog", "date"],
+    "titleI18n": "text_transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --blog-list-date-text-transform: uppercase;
+  /* VoogStyle
+    "pathI18n": ["blog", "date"],
+    "titleI18n": "color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --blog-list-date-color: #e2e2e2;
   /* VoogStyle
     "pathI18n": ["blog", "text"],
     "titleI18n": "size",
