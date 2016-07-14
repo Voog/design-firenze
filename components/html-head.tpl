@@ -50,6 +50,8 @@
     {% include "template-cs-table" %}
     {% include "template-cs-form" %}
   {% endif %}
+  
+  {% include "template-cs-style-rules" %}
 
 {% endcustomstyle %}
 
