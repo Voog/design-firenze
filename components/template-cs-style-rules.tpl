@@ -163,8 +163,7 @@
   color: var(--content-color);
 }
 
-.front-page .dark-background .content-formatted a:not(.custom-btn),
-.content-formatted a:not(.custom-btn) {
+.common-page .content-formatted a:not(.custom-btn) {
   font-weight: var(--content-links-font-weight);
   font-style: var(--content-links-font-style);
   text-decoration: var(--content-links-text-decoration);
@@ -177,10 +176,6 @@
   font-style: var(--content-links-hover-font-style);
   text-decoration: var(--content-links-hover-text-decoration);
   text-transform: var(--content-links-hover-text-transform);
-}
-
-.front-page .light-background .content-formatted a:not(.custom-btn):hover {
-  color: var(--content-links-color);
 }
 
 .footer .voog-reference a {
