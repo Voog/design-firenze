@@ -302,24 +302,24 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted ol {
   text-align: left;
 }
-.content-formatted a {
+.content-formatted a:not(.custom-btn) {
   color: #0066bb;
 }
-.content-formatted a:hover {
+.content-formatted a:not(.custom-btn):hover {
   color: #0066BB;
   color: rgba(0, 102, 187, 0.8);
 }
-.front-page .content-formatted a {
+.front-page .content-formatted a:not(.custom-btn) {
   color: white;
 }
-.front-page .content-formatted a:hover {
+.front-page .content-formatted a:not(.custom-btn):hover {
   color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
 }
-.light-background .content-formatted a {
+.light-background .content-formatted a:not(.custom-btn) {
   color: black;
 }
-.light-background .content-formatted a:hover {
+.light-background .content-formatted a:not(.custom-btn):hover {
   color: #000000;
   color: rgba(0, 0, 0, 0.8);
 }

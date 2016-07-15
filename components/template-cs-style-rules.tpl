@@ -186,6 +186,10 @@
 .content-formatted .form_submit input {
   padding: calc(var(--button-padding) - 3px) var(--button-padding);
   font-size: var(--button-font-size);
+}
+
+.content-page .content-formatted .custom-btn,
+.content-pate .content-formatted .form_submit input {
   color: var(--button-color);
 }
 
@@ -197,18 +201,6 @@
 .content-formatted .custom-btn:hover,
 .content-formatted .form_submit input:hover {
   background-color: var(--button-background-color);
-}
-
-.front-page .dark-background .content-formatted .custom-btn,
-.front-page .dark-background .content-formatted .form_submit input,
-.front-page .dark-background .content-formatted .form_submit input:hover {
-  color: var(--light-primary);
-}
-
-.front-page .light-background .content-formatted .custom-btn,
-.front-page .light-background .content-formatted .form_submit input,
-.front-page .light-background .content-formatted .form_submit input:hover {
-  color: var(--dark-primary);
 }
 
 .light-background .content-formatted table td {

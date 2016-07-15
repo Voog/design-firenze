@@ -104,7 +104,7 @@
   }
 
   // Editable content area links.
-  a {
+  a:not(.custom-btn) {
     @include color($blue-1, 1);
 
     &:hover {
