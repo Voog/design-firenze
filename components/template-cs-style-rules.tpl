@@ -381,19 +381,16 @@ body {
   color: white;
 }
 
-/*.front-page .footer.light-background .content-formatted,
+.front-page .footer.light-background .content-formatted,
 .front-page .footer.light-background .content-formatted a {
-  color: var(--dark-primary);
+  color: var(--dark-primary) !important;
 }
-.dark-background & {
-      color: rgba($white, .35);
-    }
 
 .front-page .footer.dark-background .content-formatted,
 .front-page .footer.dark-background .content-formatted a {
-  color: var(--light-primary);
+  color: var(--light-primary) !important;
 }
-*/
+
 /*-------------------------
   "widescreen mode" rules, where area elements are 1.4 times bigger
 --------------------------*/
