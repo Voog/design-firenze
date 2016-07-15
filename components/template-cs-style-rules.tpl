@@ -412,10 +412,6 @@ body {
   "widescreen mode" rules, where area elements are 1.4 times bigger
 --------------------------*/
 @media screen and (min-width: 1400px) {
-  body {
-    font-size: calc(var(--content-font-size) * 1.4);
-  }
-
   .content-page .container .wrap {
     max-width: calc(var(--site-width) * 1.4);
   }

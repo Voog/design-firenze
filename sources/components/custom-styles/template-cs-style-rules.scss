@@ -464,7 +464,6 @@ body { font-family: var(--font-one);}
 --------------------------*/
 
 @media screen and (min-width: 1400px) {
-  body { font-size: calc(var(--content-font-size) * 1.4);}
   .content-page .container .wrap { max-width: calc(var(--site-width) * 1.4);}
   .topbar .wrap { max-width: calc(var(--site-width) * 1.4);}
   .content-formatted { font-size: calc(var(--content-font-size) * 1.4);}
