@@ -1,0 +1,64 @@
+// TODO: These ovverrides should be added to proper location in /sources/stylesheets/ instead of overriding them in the bottom of CSS.
+// For designeditor, 2016
+.content-formatted a:not(.custom-btn):hover { opacity: 0.8;}
+.editmode .post-title { display: inline-block !important;min-width:100px;}
+
+.post-title a:hover { opacity:0.8;}
+.topbar .menu-main .menu .menu-item .menu-link.active,
+.topbar .menu-main .menu .menu-item .menu-link.active:hover { color: #fff;}
+
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input:hover { opacity: 0.8;color: #fff;}
+
+.front-page .dark-background .content-formatted .custom-btn,
+.front-page .dark-background .content-formatted .form_submit input,
+.front-page .dark-background .content-formatted .form_submit input:hover {
+    background-color: #06b;
+}
+
+.front-page .light-background .content-formatted .custom-btn,
+.front-page .light-background .content-formatted .form_submit input,
+.front-page .light-background .content-formatted .form_submit input:hover {
+    background-color: #06b;
+}
+
+.content-formatted .form_field label { text-decoration: none;}
+
+.front-page .content-formatted .form_field_textfield,
+.front-page .content-formatted .form_field_textarea,
+.front-page .svg .content-formatted .form_field_checkbox + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_radio + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_select,
+.front-page .content-formatted .form_field_select {
+  background-color: #f2f2f2 !important;
+}
+
+.front-page .menu-main .menu .menu-item .menu-link.active,
+.front-page .menu-main .menu .menu-item .menu-link:hover { opacity: 0.8;}
+
+.content-page .topbar .menu-main .menu .menu-item .menu-link {
+  color: #888;
+}
+
+.content-page .topbar .menu-main .menu .menu-item .menu-link.active,
+.content-page .topbar .menu-main .menu .menu-item .menu-link.active:hover {
+    color: #fff;
+}
+
+.content-page .topbar .menu-main .menu .menu-item .menu-link:hover {
+    color: #FFF;
+    color: rgba(255,255,255,.5);
+}
+
+.comments .comment,
+.post-excerpt.content-formatted /*,
+.content-page .topbar .menu-main .menu .menu-item .menu-link*/ {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+.footer.light-background .content-formatted a, .footer.light-background .content-formatted a { color: rgba(0,0,0,.66)!important;}
+.footer.light-background .content-formatted a:hover { color: rgba(0, 0, 0, 0.66);}
+.footer.dark-background .content-formatted { color: rgba(255, 255, 255, 0.35);}
+.footer.dark-background .content-formatted a, .footer .content-formatted a { color: rgba(255, 255, 255, 0.66) !important;}

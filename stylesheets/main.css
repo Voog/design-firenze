@@ -2658,31 +2658,45 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
 }
 
+.content-formatted a:not(.custom-btn):hover {
+  opacity: 0.8;
+}
 
-/* For designeditor, 2016 */
-.content-formatted a:not(.custom-btn):hover { opacity: 0.8;}
-.editmode .post-title { display: inline-block !important;min-width:100px;}
+.editmode .post-title {
+  display: inline-block !important;
+  min-width: 100px;
+}
 
-.post-title a:hover { opacity:0.8;}
+.post-title a:hover {
+  opacity: 0.8;
+}
+
 .topbar .menu-main .menu .menu-item .menu-link.active,
-.topbar .menu-main .menu .menu-item .menu-link.active:hover { color: #fff;}
+.topbar .menu-main .menu .menu-item .menu-link.active:hover {
+  color: #fff;
+}
 
 .content-formatted .custom-btn:hover,
-.content-formatted .form_submit input:hover { opacity: 0.8;color: #fff;}
+.content-formatted .form_submit input:hover {
+  opacity: 0.8;
+  color: #fff;
+}
 
 .front-page .dark-background .content-formatted .custom-btn,
 .front-page .dark-background .content-formatted .form_submit input,
 .front-page .dark-background .content-formatted .form_submit input:hover {
-    background-color: #06b;
+  background-color: #06b;
 }
 
 .front-page .light-background .content-formatted .custom-btn,
 .front-page .light-background .content-formatted .form_submit input,
 .front-page .light-background .content-formatted .form_submit input:hover {
-    background-color: #06b;
+  background-color: #06b;
 }
 
-.content-formatted .form_field label { text-decoration: none;}
+.content-formatted .form_field label {
+  text-decoration: none;
+}
 
 .front-page .content-formatted .form_field_textfield,
 .front-page .content-formatted .form_field_textarea,
@@ -2694,7 +2708,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .front-page .menu-main .menu .menu-item .menu-link.active,
-.front-page .menu-main .menu .menu-item .menu-link:hover { opacity: 0.8;}
+.front-page .menu-main .menu .menu-item .menu-link:hover {
+  opacity: 0.8;
+}
 
 .content-page .topbar .menu-main .menu .menu-item .menu-link {
   color: #888;
@@ -2702,23 +2718,32 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 
 .content-page .topbar .menu-main .menu .menu-item .menu-link.active,
 .content-page .topbar .menu-main .menu .menu-item .menu-link.active:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .content-page .topbar .menu-main .menu .menu-item .menu-link:hover {
-    color: #FFF;
-    color: rgba(255,255,255,.5);
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .comments .comment,
-.post-excerpt.content-formatted /*,
-.content-page .topbar .menu-main .menu .menu-item .menu-link*/ {
+.post-excerpt.content-formatted {
   font-size: 14px;
   line-height: 1.4;
 }
 
+.footer.light-background .content-formatted a, .footer.light-background .content-formatted a {
+  color: rgba(0, 0, 0, 0.66) !important;
+}
 
-.footer.light-background .content-formatted a, .footer.light-background .content-formatted a { color: rgba(0,0,0,.66)!important;}
-.footer.light-background .content-formatted a:hover { color: rgba(0, 0, 0, 0.66);}
-.footer.dark-background .content-formatted { color: rgba(255, 255, 255, 0.35);}
-.footer.dark-background .content-formatted a, .footer .content-formatted a { color: rgba(255, 255, 255, 0.66) !important;}
+.footer.light-background .content-formatted a:hover {
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.footer.dark-background .content-formatted {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer.dark-background .content-formatted a, .footer .content-formatted a {
+  color: rgba(255, 255, 255, 0.66) !important;
+}

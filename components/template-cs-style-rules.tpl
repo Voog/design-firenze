@@ -184,15 +184,14 @@
 
 .content-formatted .custom-btn,
 .content-formatted .form_submit input {
-  background-color: var(--button-background-color);
   padding: calc(var(--button-padding) - 3px) var(--button-padding);
   font-size: var(--button-font-size);
   color: var(--button-color);
-  /*&:hover {
-    opacity: .8;
-    background-color: var(--button-background-color);
-    color: #fff;
-  }*/
+}
+
+.content-page .content-formatted .custom-btn,
+.content-page .content-formatted .form_submit input {
+  background-color: var(--button-background-color);
 }
 
 .content-formatted .custom-btn:hover,
