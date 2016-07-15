@@ -190,13 +190,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-footer.tpl",
-      "layout_name": "template-cs-footer",
-      "title": "template-cs-footer"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-cs-form-front.tpl",
       "layout_name": "template-cs-form-front",
       "title": "template-cs-form-front"
