@@ -104,7 +104,7 @@
   }
 
   // Editable content area links.
-  a {
+  a:not(.custom-btn) {
     @include color($blue-1, 1);
 
     &:hover {
@@ -130,7 +130,7 @@
 
   // Sets the dynamic line-height for the text with custom font-size.
   span[style*="font-size"] {
-    line-height: 1.7em;
+    line-height: 1.7;
   }
 
   // Disables hyphenation for the elements that shouldn't hyphenate.

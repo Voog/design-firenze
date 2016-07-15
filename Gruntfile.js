@@ -231,7 +231,7 @@ module.exports = function(grunt) {
           'sources/stylesheets/*.scss',
           'sources/stylesheets/*/*.scss',
         ],
-        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest', 'exec:kit:stylesheets/*.css']
+        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest']
       },
 
       custom_styles: {
@@ -282,6 +282,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'copy:assets', 'copy:images', 'copy:javascripts', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove']);
 
+  /*
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
       if (action == 'added' || action == 'deleted') {
@@ -294,4 +295,5 @@ module.exports = function(grunt) {
       }
     }
   });
+  */
 };

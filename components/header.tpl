@@ -4,7 +4,7 @@
   <div class="header-top">
     <div class="header-top-inner content-formatted">
       <div class="header-title">
-        {% unless editmode or site.root_item.selected? %}<a href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode or site.root_item.selected? %}</a>{% endunless %}
+        {% unless editmode or site.root_item.selected? %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode or site.root_item.selected? %}</a>{% endunless %}
       </div>
 
       {% if front_page == true %}

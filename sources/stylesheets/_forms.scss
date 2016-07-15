@@ -319,7 +319,7 @@
     display: inline-block;
     vertical-align: top;
     @include color($white);
-    line-height: 1em;
+    line-height: 1;
   }
 
   .feedback-error,

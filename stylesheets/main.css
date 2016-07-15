@@ -29,7 +29,7 @@ html.search-open {
 
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -302,29 +302,29 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted ol {
   text-align: left;
 }
-.content-formatted a {
+.content-formatted a:not(.custom-btn) {
   color: #0066bb;
 }
-.content-formatted a:hover {
+.content-formatted a:not(.custom-btn):hover {
   color: #0066BB;
   color: rgba(0, 102, 187, 0.8);
 }
-.front-page .content-formatted a {
+.front-page .content-formatted a:not(.custom-btn) {
   color: white;
 }
-.front-page .content-formatted a:hover {
+.front-page .content-formatted a:not(.custom-btn):hover {
   color: #FFFFFF;
   color: rgba(255, 255, 255, 0.8);
 }
-.light-background .content-formatted a {
+.light-background .content-formatted a:not(.custom-btn) {
   color: black;
 }
-.light-background .content-formatted a:hover {
+.light-background .content-formatted a:not(.custom-btn):hover {
   color: #000000;
   color: rgba(0, 0, 0, 0.8);
 }
 .content-formatted span[style*="font-size"] {
-  line-height: 1.7em;
+  line-height: 1.7;
 }
 .content-formatted pre,
 .content-formatted code,
@@ -2392,7 +2392,7 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   display: inline-block;
   vertical-align: top;
   color: white;
-  line-height: 1em;
+  line-height: 1;
 }
 .content-formatted .feedback-error,
 .content-formatted .feedback-success,
@@ -2717,4 +2717,94 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 
 .footer-gradient {
   background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.content-formatted a:not(.custom-btn):hover {
+  opacity: 0.8;
+}
+
+.editmode .post-title {
+  display: inline-block !important;
+  min-width: 100px;
+}
+
+.post-title a:hover {
+  opacity: 0.8;
+}
+
+.topbar .menu-main .menu .menu-item .menu-link.active,
+.topbar .menu-main .menu .menu-item .menu-link.active:hover {
+  color: #fff;
+}
+
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.front-page .dark-background .content-formatted .custom-btn,
+.front-page .dark-background .content-formatted .form_submit input,
+.front-page .dark-background .content-formatted .form_submit input:hover {
+  background-color: #06b;
+}
+
+.front-page .light-background .content-formatted .custom-btn,
+.front-page .light-background .content-formatted .form_submit input,
+.front-page .light-background .content-formatted .form_submit input:hover {
+  background-color: #06b;
+}
+
+.content-formatted .form_field label {
+  text-decoration: none;
+}
+
+.front-page .content-formatted .form_field_textfield,
+.front-page .content-formatted .form_field_textarea,
+.front-page .svg .content-formatted .form_field_checkbox + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_radio + .form_control_indicator,
+.front-page .svg .content-formatted .form_field_select,
+.front-page .content-formatted .form_field_select {
+  background-color: #f2f2f2 !important;
+}
+
+.front-page .menu-main .menu .menu-item .menu-link.active,
+.front-page .menu-main .menu .menu-item .menu-link:hover {
+  opacity: 0.8;
+}
+
+.content-page .topbar .menu-main .menu .menu-item .menu-link {
+  color: #888;
+}
+
+.content-page .topbar .menu-main .menu .menu-item .menu-link.active,
+.content-page .topbar .menu-main .menu .menu-item .menu-link.active:hover {
+  color: #fff;
+}
+
+.content-page .topbar .menu-main .menu .menu-item .menu-link:hover {
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.comments .comment,
+.post-excerpt.content-formatted {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer.light-background .content-formatted a, .footer.light-background .content-formatted a {
+  color: rgba(0, 0, 0, 0.66) !important;
+}
+
+.footer.light-background .content-formatted a:hover {
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.footer.dark-background .content-formatted {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer.dark-background .content-formatted a, .footer .content-formatted a {
+  color: rgba(255, 255, 255, 0.66) !important;
 }

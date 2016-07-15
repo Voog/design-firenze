@@ -2,10 +2,58 @@
 // Custom variables to use in every .scss files.
 // Comment out the "_variables.scss" partial in the "main.scss" file if not used.
 
+
+
+// FOR FIRENZE, Sirje
+
+// General colors
+$dark-primary: rgba(0,0,0,1);
+$light-primary: rgba(255,255,255,1);
+
+
 // General colors
 $primary-color: #888888;
 $secondary-color: #444444;
 $third-color: #F2F2F2;
+
+
+//Main styles
+$site-width: 650px;
+
+
+//Fonts
+$font-one: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-two: "Bebas Neue Latin", sans-serif;
+$h1-size: 36px;
+$font-size: 18px;
+$line-height: 1.4;
+
+
+//Colors
+$color-one: #444; // replaced by $color-two in design editor
+$color-two: #444;
+$color-four: #919191;
+$color: #888;
+$link-color: #06b;
+$white: #FFFFFF;
+$color-four: #f2f2f2;
+
+
+// Media queries
+$large-1: 1400px;
+$tablet-1: 900px;
+$tablet-2: 720px;
+$tablet-3: 640px;
+$mobile-1: 480px;
+$mobile-2: 420px;
+
+
+// Reusable values
+// Define the reusable variables here.
+// For example the width of several different elements, that allways have to be with the same height:
+// $box-width: 400px;
+$wide-view-multiplier: 1.4;
+$search-height: 50px;
 
 // Specific colors
 $black: #000000;
@@ -21,21 +69,3 @@ $grey-2: #FAFAFA;
 $grey-3: #E2E2E2;
 $grey-4: #EDECEC;
 $yellow: #F9EC5A;
-
-
-// Media queries
-$large-1: 1400px;
-
-$tablet-1: 900px;
-$tablet-2: 720px;
-$tablet-3: 640px;
-
-$mobile-1: 480px;
-$mobile-2: 420px;
-
-// Reusable values
-// Define the reusable variables here.
-// For example the width of several different elements, that allways have to be with the same height:
-// $box-width: 400px;
-$wide-view-multiplier: 1.4;
-$search-height: 50px;

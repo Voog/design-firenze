@@ -1,0 +1,59 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+  // scss-lint:disable Comment, Indentation
+
+  /* VoogStyle
+     "pathI18n": ["main_styles"],
+     "titleI18n": "font_primary",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global"
+  */
+  --font-one: $font-one;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles"],
+     "titleI18n": "font_secondary",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global"
+  */
+  --font-two: $font-two;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles"],
+     "titleI18n": "for_light_background",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --dark-primary: $dark-primary;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles"],
+     "titleI18n": "for_dark_background",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --light-primary: $light-primary;
+}

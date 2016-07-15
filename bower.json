@@ -1,7 +1,13 @@
 {
   "name": "voog-design-firenze",
+  "homepage": "https://github.com/Voog/design-firenze",
+  "authors": [
+    "Kaspar Naaber <kaspar@voog.com>"
+  ],
+  "description": "The Firenze design template for Voog",
+  "license": "MIT",
   "devDependencies": {
     "bourbon": "^4.2.7",
-    "jquery": "^2.2.4"
+    "jquery": "^3.0.0"
   }
 }
