@@ -18,16 +18,16 @@
   */
   --font-two: "Bebas Neue Latin", sans-serif;
   /* VoogStyle
-     "pathI18n": ["main_styles", "for_light_background"],
-     "titleI18n": "primary_color",
+     "pathI18n": ["main_styles"],
+     "titleI18n": "for_light_background",
      "editor": "colorPicker",
      "scope": "global",
      "featured": true
   */
   --dark-primary: black;
   /* VoogStyle
-     "pathI18n": ["main_styles", "for_dark_background"],
-     "titleI18n": "primary_color",
+     "pathI18n": ["main_styles"],
+     "titleI18n": "for_dark_background",
      "editor": "colorPicker",
      "scope": "global",
      "featured": true
