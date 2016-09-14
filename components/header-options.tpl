@@ -14,7 +14,7 @@
   {% endif %}
 
   {% if editmode or site.has_many_languages? %}
-    <nav class="menu-lang">
+    <nav class="menu-lang" {{ edy_intro_add_lang }}>
       <button class="menu-lang-btn lang-flag lang-flag-{{ page.language_code }} js-menu-lang-btn js-btn" data-lang-code="{{ page.language_code }}">
         {% if editmode or flags_state == false %}
           <span class="lang-title">
