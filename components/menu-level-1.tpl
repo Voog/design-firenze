@@ -16,6 +16,6 @@
       <li class="edit-btn">{% menubtn site.hidden_menuitems %}</li>
     {% endif %}
 
-    <li class="edit-btn" {{ edy_intro_add_page }}>{% menuadd %}</li>
+    <li class="edit-btn" {% unless menu-level-1 == "topbar" %}{{ edy_intro_add_page }}{% endunless %}>{% menuadd %}</li>
   {% endif %}
 </ul>
