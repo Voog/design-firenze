@@ -23,7 +23,7 @@
         {% include "menu-level-2" %}
 
         <main class="content" role="main">
-          <section class="content-formatted">{% content %}</section>
+          <section class="content-formatted" {{ edy_intro_edit_text }}>{% content %}</section>
         </main>
       </div>
     </div>
