@@ -34,8 +34,8 @@
             </header>
 
             <div class="post-content">
-              <div class="post-excerpt content-formatted">{% editable article.excerpt %}</div>
-              <div class="post-body content-formatted" {{ edy_intro_edit_text }}>{% editable article.body %}</div>
+              <div class="post-excerpt content-formatted" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
+              <div class="post-body content-formatted">{% editable article.body %}</div>
             </div>
           </article>
         </main>
