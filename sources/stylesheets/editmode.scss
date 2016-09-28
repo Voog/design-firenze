@@ -12,26 +12,3 @@
     margin-top: 0;
   }
 }
-
-.dark-background {
-  .edy-empty-bordered {
-    @include color($white, .5);
-    @include border(all, 1px, dashed, $white, .5);
-  }
-
-  .placeholder {
-    @include color($white, .5);
-  }
-
-  .edy-content-element-hover {
-    @include border(all, 1px, solid, $white, 0.2);
-  }
-
-  .edy-texteditor-active {
-    outline: 1px solid rgba($white, 0.4);
-
-    &:hover {
-      outline: 1px solid rgba($white, 0.63)
-    }
-  }
-}
