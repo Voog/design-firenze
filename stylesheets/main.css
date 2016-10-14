@@ -2808,3 +2808,44 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .footer.dark-background .content-formatted a, .footer .content-formatted a {
   color: rgba(255, 255, 255, 0.66) !important;
 }
+
+.public .edy-ecommerce-shopping-cart-button {
+  color: white;
+  background-color: #0066bb;
+  display: inline-block;
+  padding: 8px 11px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  border: 0;
+}
+.public .front-page .edy-ecommerce-shopping-cart-button {
+  right: 30px;
+}
+@media screen and (max-width: 1399px) {
+  .public .front-page .edy-ecommerce-shopping-cart-button {
+    top: 49px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .public .front-page .edy-ecommerce-shopping-cart-button {
+    top: 59px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .public .content-page .edy-ecommerce-shopping-cart-button {
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 701px) {
+  .public .content-page .edy-ecommerce-shopping-cart-button {
+    top: 30px;
+    right: 30px;
+  }
+}
+.edy-ecommerce-shopping-cart-button:hover {
+  color: white;
+  background-color: #0066BB;
+  background-color: rgba(0, 102, 187, 0.8);
+}
