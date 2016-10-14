@@ -459,3 +459,10 @@ body {
     font-size: calc(var(--header-mainmenu-font-size) * 1.4);
   }
 }
+.content-page .edy-ecommerce-shopping-cart-button {
+  color: var(--button-color);
+  background-color: var(--button-background-color);
+}
+.content-page .edy-ecommerce-shopping-cart-button:hover {
+  background-color: var(--button-background-color);
+}

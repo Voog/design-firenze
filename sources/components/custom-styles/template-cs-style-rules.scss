@@ -460,3 +460,18 @@ body { font-family: var(--font-one);}
   .front-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
   .content-page .header .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
 }
+
+//==============================================================================
+// ECOMMERCE
+//==============================================================================
+.edy-ecommerce-shopping-cart-button {
+  .content-page & {
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+
+    &:hover {
+      background-color: var(--button-background-color);
+    }
+  }
+
+}
