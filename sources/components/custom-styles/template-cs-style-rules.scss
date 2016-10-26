@@ -17,6 +17,10 @@
 // Default stylesheet override styles.
 // =============================================================================
 
+body {
+  color: var(--color-secondary);
+}
+
 // Headings
 .content-page .content-formatted, .content-formatted,
 .front-page .light-background .content-formatted {

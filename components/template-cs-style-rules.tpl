@@ -1,3 +1,7 @@
+body {
+  color: var(--color-secondary);
+}
+
 .content-page .content-formatted h1, .content-formatted h1,
 .front-page .light-background .content-formatted h1 {
   font-size: var(--h1-font-size);
