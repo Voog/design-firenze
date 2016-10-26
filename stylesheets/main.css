@@ -1747,10 +1747,14 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 
 .post-nav {
   margin-top: 27px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 @media screen and (min-width: 1400px) {
   .post-nav {
     margin-top: 38px;
+    padding-right: 7px;
+    padding-left: 7px;
   }
 }
 

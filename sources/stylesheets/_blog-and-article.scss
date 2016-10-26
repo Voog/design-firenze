@@ -104,9 +104,13 @@
 
 .post-nav {
   margin-top: 27px;
+  padding-right: 5px;
+  padding-left: 5px;
 
   @include query($large-1, 'min-width') {
     margin-top: #{round(27 * $wide-view-multiplier)}px;
+    padding-right: #{round(5 * $wide-view-multiplier)}px;
+    padding-left: #{round(5 * $wide-view-multiplier)}px;
   }
 }
 
