@@ -10916,7 +10916,13 @@ MMCQ = (function() {
         scrolled = endScroll - startScroll;
 
         if (scrolled < -5 && startScroll > topbarVisibleArea) {
-          $(topbar).css({'top' : 0});
+          if ($('body').hasClass('edy-checkout-button-visible')) {
+            headerOffset = $('.edy-ecommerce-shopping-cart-button').outerHeight();
+          } else {
+            headerOffset = 0;
+          }
+
+          $(topbar).css({'top' : headerOffset});
         } else if ((scrolled < 0 && startScroll < topbarVisibleArea) || (scrolled > 0 && startScroll > topbarVisibleArea)) {
           if (tagsMenu.hasClass('expanded')) {
             $(tagsMenu).removeClass('expanded');
