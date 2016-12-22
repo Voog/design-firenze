@@ -1,4 +1,4 @@
-#The Firenze design template for Voog
+#The Firenze design template for [Voog](https://www.voog.com)
 
 ##Set up the developing environment
 To modify this template [Node Package Manager](https://www.npmjs.org/) (or [Node.js](http://www.nodejs.org/)), [Bower](http://www.bower.io/) and [Grunt](http://www.gruntjs.com/) must be installed.
