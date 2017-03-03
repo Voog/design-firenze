@@ -215,14 +215,21 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted p:first-child,
 .content-formatted ul:first-child,
 .content-formatted ol:first-child,
+.content-formatted dl:first-child,
+.content-formatted table:first-child,
 .content-formatted pre:first-child,
 .content-formatted code:first-child,
+.content-formatted iframe:first-child,
+.content-formatted table:first-child,
+.content-formatted form:first-child,
+.content-formatted .table-container:first-child,
 .content-formatted .edy-positionable-container-left-block:first-child,
 .content-formatted .edy-positionable-container-center-block:first-child,
 .content-formatted .edy-positionable-container-right-block:first-child,
 .content-formatted .edy-texteditor-container-wrapper-left-block:first-child,
 .content-formatted .edy-texteditor-container-wrapper-center:first-child,
-.content-formatted .edy-texteditor-container-wrapper-right-block:first-child {
+.content-formatted .edy-texteditor-container-wrapper-right-block:first-child,
+.content-formatted .edy-positionable-container-maxwidth:first-child {
   margin-top: 0;
 }
 .content-formatted h1:last-child,
@@ -234,14 +241,21 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted p:last-child,
 .content-formatted ul:last-child,
 .content-formatted ol:last-child,
+.content-formatted dl:last-child,
+.content-formatted table:last-child,
 .content-formatted pre:last-child,
 .content-formatted code:last-child,
+.content-formatted iframe:last-child,
+.content-formatted table:last-child,
+.content-formatted form:last-child,
+.content-formatted .table-container:last-child,
 .content-formatted .edy-positionable-container-left-block:last-child,
 .content-formatted .edy-positionable-container-center-block:last-child,
 .content-formatted .edy-positionable-container-right-block:last-child,
 .content-formatted .edy-texteditor-container-wrapper-left-block:last-child,
 .content-formatted .edy-texteditor-container-wrapper-center:last-child,
-.content-formatted .edy-texteditor-container-wrapper-right-block:last-child {
+.content-formatted .edy-texteditor-container-wrapper-right-block:last-child,
+.content-formatted .edy-positionable-container-maxwidth:last-child {
   margin-bottom: 0;
 }
 .content-page .content-formatted h1, .content-page

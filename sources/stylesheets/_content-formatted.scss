@@ -23,14 +23,21 @@
   p,
   ul,
   ol,
+  dl,
+  table,
   pre,
   code,
+  iframe,
+  table,
+  form,
+  .table-container,
   .edy-positionable-container-left-block,
   .edy-positionable-container-center-block,
   .edy-positionable-container-right-block,
   .edy-texteditor-container-wrapper-left-block,
   .edy-texteditor-container-wrapper-center,
-  .edy-texteditor-container-wrapper-right-block {
+  .edy-texteditor-container-wrapper-right-block,
+  .edy-positionable-container-maxwidth {
     &:first-child {
       margin-top: 0;
     }
