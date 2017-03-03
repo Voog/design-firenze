@@ -5,6 +5,10 @@
   @extend %clearfix;
   @include hyphenate(true);
 
+  &:empty {
+    display: none;
+  }
+
   .front-page & {
     @include color($white);
   }

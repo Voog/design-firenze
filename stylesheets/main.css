@@ -200,6 +200,9 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   -ms-hyphens: auto;
   hyphens: auto;
 }
+.content-formatted:empty {
+  display: none;
+}
 .front-page .content-formatted {
   color: white;
 }
