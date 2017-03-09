@@ -1,8 +1,8 @@
 /* EDITMODE STYLESHEET */
 // Stylesheet for styling elements that are only used in editmode
 @import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
-@import '_mixins';
-@import '_variables';
+@import 'mixins';
+@import 'variables';
 
 // Editable content area
 .edy-ca {
