@@ -167,7 +167,8 @@ body {
   color: var(--content-color);
 }
 
-.common-page .content-formatted a:not(.custom-btn) {
+.common-page .content-formatted a:not(.custom-btn),
+.blog-page .post-read-more-btn {
   font-weight: var(--content-links-font-weight);
   font-style: var(--content-links-font-style);
   text-decoration: var(--content-links-text-decoration);

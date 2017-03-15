@@ -49,6 +49,10 @@
   }
 }
 
+.post-excerpt.content-formatted {
+  margin-top: 17px;
+}
+
 .post-comments-count {
   a {
     @include color($blue-1);
@@ -60,7 +64,6 @@
 }
 
 .post-content {
-  margin-top: 17px;
 
   @include query($large-1, 'min-width') {
     margin-top: #{round(17 * $wide-view-multiplier)}px;
@@ -189,4 +192,26 @@
 .post-nav-title {
   margin-top: 6px;
   opacity: .7;
+}
+
+.blog-page {
+  .post:last-child {
+    .post-read-more-btn {
+      margin: 5px 0 0;
+     }
+  }
+
+  .post-read-more-btn {
+    display: inline-block;
+    margin: 5px 0 15px;
+    @include color($blue-1, 1);
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .post-excerpt {
+    margin-top: 17px;
+  }
 }
