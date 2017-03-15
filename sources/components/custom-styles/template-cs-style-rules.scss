@@ -205,17 +205,22 @@ body {
 
 
 // Content - links
-.common-page .content-formatted a:not(.custom-btn) {
-  font-weight: var(--content-links-font-weight);
+// scss-lint:disable SingleLinePerSelector
+.content-formatted a:not(.custom-btn),
+.blog-page .post-read-more-btn {
   font-style: var(--content-links-font-style);
+  font-weight: var(--content-links-font-weight);
+  color: var(--content-links-color);
   text-decoration: var(--content-links-text-decoration);
   text-transform: var(--content-links-text-transform);
-  color: var(--content-links-color);
 }
+// scss-lint:enable SingleLinePerSelector
 
-.content-formatted a:not(.custom-btn):hover {
-  font-weight: var(--content-links-hover-font-weight);
+.content-formatted a:not(.custom-btn):hover,
+.blog-page .post-read-more-btn:hover {
   font-style: var(--content-links-hover-font-style);
+  font-weight: var(--content-links-hover-font-weight);
+  color: var(--content-links-color);
   text-decoration: var(--content-links-hover-text-decoration);
   text-transform: var(--content-links-hover-text-transform);
 }

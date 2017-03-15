@@ -1717,6 +1717,10 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   color: #e2e2e2;
 }
 
+.post-excerpt.content-formatted {
+  margin-top: 17px;
+}
+
 .post-comments-count a {
   color: #0066bb;
 }
@@ -1725,9 +1729,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   color: rgba(0, 102, 187, 0.8);
 }
 
-.post-content {
-  margin-top: 17px;
-}
 @media screen and (min-width: 1400px) {
   .post-content {
     margin-top: 24px;
@@ -1850,6 +1851,21 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .post-nav-title {
   margin-top: 6px;
   opacity: .7;
+}
+
+.blog-page .post:last-child .post-read-more-btn {
+  margin: 5px 0 0;
+}
+.blog-page .post-read-more-btn {
+  display: inline-block;
+  margin: 5px 0 15px;
+  color: #0066bb;
+}
+.blog-page .post-read-more-btn:hover {
+  opacity: .8;
+}
+.blog-page .post-excerpt {
+  margin-top: 17px;
 }
 
 /* SEARCH */
@@ -2892,12 +2908,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-page .topbar .menu-main .menu .menu-item .menu-link:hover {
   color: #FFF;
   color: rgba(255, 255, 255, 0.5);
-}
-
-.comments .comment,
-.post-excerpt.content-formatted {
-  font-size: 14px;
-  line-height: 1.4;
 }
 
 .footer.light-background .content-formatted a, .footer.light-background .content-formatted a {

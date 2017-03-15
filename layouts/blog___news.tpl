@@ -9,7 +9,7 @@
   {% include "edicy-tools-styles" %}
 </head>
 
-<body class="post-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %}">
+<body class="post-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %} blog-page">
 {% if editmode %}<button class="bgpicker-btn js-background-settings" data-bg-key="body_bg" data-bg-default-image-color="rgb(111, 108, 119)" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
 {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
 {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}
@@ -31,9 +31,8 @@
                 <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | format_date: 'long' }}</time>
               </header>
 
-              <section class="post-content">
-                <div class="post-excerpt content-formatted">{{ article.excerpt }}</div>
-              </section>
+              <section class="post-content"><div class="post-excerpt content-formatted">{{ article.excerpt }}</div></section>
+              <a class="post-read-more-btn" href="{{ article.url }}">{{ "read_more" | lc }}</a>
             </article>
           {% endfor %}
         </main>
