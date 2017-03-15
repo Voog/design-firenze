@@ -2910,12 +2910,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   color: rgba(255, 255, 255, 0.5);
 }
 
-.comments .comment,
-.post-excerpt.content-formatted {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
 .footer.light-background .content-formatted a, .footer.light-background .content-formatted a {
   color: rgba(0, 0, 0, 0.66) !important;
 }

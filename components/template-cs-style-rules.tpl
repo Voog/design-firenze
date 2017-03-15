@@ -167,18 +167,20 @@ body {
   color: var(--content-color);
 }
 
-.common-page .content-formatted a:not(.custom-btn),
+.content-formatted a:not(.custom-btn),
 .blog-page .post-read-more-btn {
-  font-weight: var(--content-links-font-weight);
   font-style: var(--content-links-font-style);
+  font-weight: var(--content-links-font-weight);
+  color: var(--content-links-color);
   text-decoration: var(--content-links-text-decoration);
   text-transform: var(--content-links-text-transform);
-  color: var(--content-links-color);
 }
 
-.content-formatted a:not(.custom-btn):hover {
-  font-weight: var(--content-links-hover-font-weight);
+.content-formatted a:not(.custom-btn):hover,
+.blog-page .post-read-more-btn:hover {
   font-style: var(--content-links-hover-font-style);
+  font-weight: var(--content-links-hover-font-weight);
+  color: var(--content-links-color);
   text-decoration: var(--content-links-hover-text-decoration);
   text-transform: var(--content-links-hover-text-transform);
 }
