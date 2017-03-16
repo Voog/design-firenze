@@ -200,12 +200,12 @@ body {
   color: var(--button-color);
 }
 
-.content-page .content-formatted .custom-btn,
-.content-page .content-formatted .form_submit input {
+.content-formatted .custom-btn:not(.custom-btn-disabled),
+.content-formatted .form_submit input {
   background-color: var(--button-background-color);
 }
 
-.content-formatted .custom-btn:hover,
+.content-formatted .custom-btn:not(.custom-btn-disabled):hover,
 .content-formatted .form_submit input:hover {
   background-color: var(--button-background-color);
 }

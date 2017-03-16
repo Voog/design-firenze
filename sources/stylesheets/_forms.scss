@@ -11,10 +11,12 @@
   }
 
   .form_field {
-    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
     @include query($large-1, 'min-width') {
-      margin-top: #{round(15 * $wide-view-multiplier)}px;
+      padding-top: #{round(8 * $wide-view-multiplier)}px;
+      padding-bottom: #{round(8 * $wide-view-multiplier)}px;
     }
 
     &:first-child {
@@ -41,6 +43,14 @@
   }
 
   .form_field {
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
     label {
       position: relative;
       display: inline;

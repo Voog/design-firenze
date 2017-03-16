@@ -465,12 +465,21 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   line-height: 1;
   background-color: #0066bb;
   border: none;
-  cursor: pointer;
 }
 .content-formatted .custom-btn:hover {
   color: white;
   background-color: #0066BB;
   background-color: rgba(0, 102, 187, 0.8);
+}
+.public .content-formatted .custom-btn {
+  cursor: pointer;
+}
+.public .content-formatted .custom-btn-disabled {
+  cursor: default;
+  background-color: #ccc;
+}
+.public .content-formatted .custom-btn-disabled:hover {
+  opacity: 1;
 }
 @media screen and (min-width: 1400px) {
   .content-formatted .custom-btn {
@@ -2228,11 +2237,13 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 .content-formatted .form_field {
-  margin-top: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 @media screen and (min-width: 1400px) {
   .content-formatted .form_field {
-    margin-top: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 }
 .content-formatted .form_field:first-child {
@@ -2256,6 +2267,12 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .light-background .content-formatted .form_field, .light-background
 .content-formatted .edy-fe-label {
   color: black;
+}
+.content-formatted .form_field:first-child {
+  padding-top: 0;
+}
+.content-formatted .form_field:last-child {
+  padding-bottom: 0;
 }
 .content-formatted .form_field label {
   position: relative;
@@ -2864,18 +2881,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .content-formatted .form_submit input:hover {
   opacity: 0.8;
   color: #fff;
-}
-
-.front-page .dark-background .content-formatted .custom-btn,
-.front-page .dark-background .content-formatted .form_submit input,
-.front-page .dark-background .content-formatted .form_submit input:hover {
-  background-color: #06b;
-}
-
-.front-page .light-background .content-formatted .custom-btn,
-.front-page .light-background .content-formatted .form_submit input,
-.front-page .light-background .content-formatted .form_submit input:hover {
-  background-color: #06b;
 }
 
 .content-formatted .form_field label {

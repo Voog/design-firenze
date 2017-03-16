@@ -265,11 +265,29 @@
     line-height: 1;
     @include bg($blue-1);
     border: none;
-    cursor: pointer;
 
     &:hover {
       @include color($white);
       @include bg($blue-1, 0.8);
+    }
+
+    .public & {
+      cursor: pointer;
+    }
+
+    &-disabled {
+      // scss-lint:disable NestingDepth
+      .public & {
+        cursor: default;
+        background-color: $color-disabled;
+      }
+
+      &:hover {
+        .public & {
+          opacity: 1;
+        }
+      }
+      // scss-lint:enable NestingDepth
     }
 
     @include query($large-1, 'min-width') {
