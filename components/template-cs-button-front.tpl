@@ -3,7 +3,7 @@
      "pathI18n": ["button"],
      "titleI18n": "padding",
      "editor": "rangePicker",
-     "min": 0,
+     "min": 5,
      "max": 200,
      "step": 1,
      "unit": "px",
@@ -21,18 +21,4 @@
     "scope": "global"
   */
   --button-font-size: 14px;
-  /* VoogStyle
-    "pathI18n": ["button"],
-    "titleI18n": "background_color",
-    "editor": "colorPicker",
-    "scope": "global"
-  */
-  --button-background-color: #06b;
-  /* VoogStyle
-    "pathI18n": ["button"],
-    "titleI18n": "color",
-    "editor": "colorPicker",
-    "scope": "global"
-  */
-  --button-color: #FFFFFF;
 }

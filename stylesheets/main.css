@@ -120,19 +120,15 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 
 .container {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   height: 100%;
   min-height: 100%;
   box-sizing: border-box;
@@ -144,9 +140,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   height: 100%;
 }
 .container.container-long {
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   height: auto;
 }
 .no-flexbox .container.container-long,
@@ -1788,9 +1783,8 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 .post-nav-link {
   position: relative;
   display: block;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+      flex: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   color: currentColor;
@@ -1827,7 +1821,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
 }
 @media screen and (min-width: 641px) {
   .post-nav-inner {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -2582,7 +2575,6 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   margin: 0 3px 5px 0;
   background: transparent;
   border-radius: 50%;
-  -webkit-animation: feedback-loading 0.8s linear infinite;
   animation: feedback-loading 0.8s linear infinite;
 }
 @media screen and (min-width: 1400px) {
@@ -2594,26 +2586,13 @@ html[lang=ru] .content-formatted h1, html[lang=ru] .tags-btn, html[lang=ru] .men
   }
 }
 .content-formatted .feedback-loading span:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 .content-formatted .feedback-loading span:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 .content-formatted .feedback-loading span:last-child {
   margin-right: 0;
-}
-@-webkit-keyframes feedback-loading {
-  0% {
-    background: transparent;
-  }
-  50% {
-    background: #FFFFFF;
-  }
-  100% {
-    background: transparent;
-  }
 }
 @keyframes feedback-loading {
   0% {
