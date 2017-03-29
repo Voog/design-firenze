@@ -21,8 +21,8 @@
 {% if editmode %}{% stylesheet_link "editmode.min.css" %}{% endif %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
 
-{% comment %}Custom fonts{% endcomment %}
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Lato:400,400i,700,700i|Montserrat:400,700|Open+Sans:400,400i,700,700i|Roboto:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i|Ubuntu:400,400i,700,700i|Arvo:400,400i,700,700i|Crimson+Text:400,400i,700,700i|Lora:400,400i,700,700i|Noto+Serif:400,400i,700,700i|Playfair+Display:400,400i,700i,700|PT+Serif:400,400i,700,700i|Roboto+Slab:400,700|Anonymous+Pro:400,400i,700,700i|Cousine:400,400i,700,700i|Roboto+Mono:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i&subset=latin,greek,cyrillic-ext,latin-ext,cyrillic,greek-ext,vietnamese,hebrew">
+{% comment %}Google fonts for Design Editor{% endcomment %}
+<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Arvo:400,400i,700,700i|Cousine:400,400i,700,700i|Crimson+Text:400,400i,700,700i|Fira+Sans:400,400i,700,700i|Lato:400,400i,700,700i|Lora:400,400i,700,700i|Montserrat:400,400i,700,700i|Noto+Serif:400,400i,700,700i|Open+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i|Playfair+Display:400,400i,700,700i|Raleway:400,400i,700,700i|Roboto+Mono:400,400i,700,700i|Roboto+Slab:400,700|Roboto:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i|Ubuntu:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,latin-ext,vietnamese" rel="stylesheet">
 
 {% customstyle %}
 
@@ -50,7 +50,7 @@
     {% include "template-cs-table" %}
     {% include "template-cs-form" %}
   {% endif %}
-  
+
   {% include "template-cs-style-rules" %}
 
 {% endcustomstyle %}
