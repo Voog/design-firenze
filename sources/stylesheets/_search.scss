@@ -311,13 +311,9 @@
   }
 
   h3 {
-    @extend %bebas-neue-latin;
+    font-family: $font-two;
     margin: 0;
     font-size: 24px;
-
-    html[lang=ru] & {
-      @extend %bebas-neue-cyrillic;
-    }
 
     @include query($large-1, 'min-width') {
       font-size: #{round(24 * $wide-view-multiplier)}px;

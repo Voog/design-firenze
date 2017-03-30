@@ -76,12 +76,8 @@
 
   // Editable content area headings.
   h1 {
-    @extend %bebas-neue-latin;
+    font-family: $font-two;
     font-size: 36px;
-
-    html[lang=ru] & {
-      @extend %bebas-neue-cyrillic;
-    }
 
     @include query($large-1, 'min-width') {
       font-size: #{round(36 * $wide-view-multiplier)}px;

@@ -145,7 +145,7 @@
 }
 
 .header-title {
-  @extend %bebas-neue-latin;
+  font-family: $font-two;
   min-width: 96px;
   font-weight: 400;
   font-size: 30px;
@@ -154,10 +154,6 @@
   &,
   a {
     @include hyphenate(true);
-  }
-
-  html[lang=ru] & {
-    @extend %bebas-neue-cyrillic;
   }
 
   @include query($large-1, 'min-width') {

@@ -2,12 +2,8 @@
 .post-title,
 .post-title a,
 .post-date {
-  @extend %bebas-neue-latin;
+  font-family: $font-two;
   font-size: 36px;
-
-  html[lang=ru] & {
-    @extend %bebas-neue-cyrillic;
-  }
 
   @include query($large-1, 'min-width') {
     font-size: #{round(36 * $wide-view-multiplier)}px;
@@ -40,13 +36,9 @@
 }
 
 .post-date {
-  @extend %bebas-neue-latin;
+  font-family: $font-two;
   display: inline-block;
   @include color($grey-3);
-
-  html[lang=ru] & {
-    @extend %bebas-neue-cyrillic;
-  }
 }
 
 .post-excerpt.content-formatted {

@@ -18,7 +18,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-one: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-one: "Avenir Next", "AvenirX", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   /* VoogStyle
      "pathI18n": ["main_styles"],
      "titleI18n": "font_secondary",
@@ -27,7 +27,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-two: "Bebas Neue Latin", sans-serif;
+  --font-two: "Bebas Neue Latin", "Bebas Neue Cyrillic", sans-serif;
   /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "primary_color",

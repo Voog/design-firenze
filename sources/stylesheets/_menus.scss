@@ -59,7 +59,7 @@
 // Tags toggle button
 .tags-btn {
   @extend %button;
-  @extend %bebas-neue-latin;
+  font-family: $font-two;
   width: 155px;
   height: 100%;
   padding: 0 20px;
@@ -69,9 +69,6 @@
   @include color($white);
   line-height: 1;
 
-  html[lang=ru] & {
-    @extend %bebas-neue-cyrillic;
-  }
 
   @include query($large-1, 'min-width') {
     width: #{round(155 * $wide-view-multiplier)}px;
@@ -114,11 +111,7 @@
 }
 
 .menu-main {
-  @extend %bebas-neue-latin;
-
-  html[lang=ru] & {
-    @extend %bebas-neue-cyrillic;
-  }
+  font-family: $font-two;
 
   &.narrow {
     max-width: 500px;

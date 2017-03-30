@@ -11,12 +11,8 @@
   }
 
   .comments-title {
-    @extend %bebas-neue-latin;
+    font-family: $font-two;
     font-size: 30px;
-
-    html[lang=ru] & {
-      @extend %bebas-neue-cyrillic;
-    }
 
     @include query($large-1, 'min-width') {
       font-size: #{round(30 * $wide-view-multiplier)}px;
