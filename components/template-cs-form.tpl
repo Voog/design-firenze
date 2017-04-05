@@ -11,7 +11,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --form-field-text-font-weight: 800;
+  --form-field-text-font-weight: 600;
   /* VoogStyle
     "pathI18n": ["form", "text"],
     "titleI18n": "font_style",
