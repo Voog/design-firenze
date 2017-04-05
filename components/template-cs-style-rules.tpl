@@ -111,7 +111,6 @@ body {
   text-decoration: var(--header-mainmenu-hover-text-decoration);
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
-  line-height: var(--header-mainmenu-hover-line-height);
 }
 
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link,
