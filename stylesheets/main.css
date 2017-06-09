@@ -108,22 +108,24 @@ a img {
 }
 
 .container {
-  display: -webkit-flex;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-align-items: center;
+  -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: center;
+  -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
   min-height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .no-flexbox .container {
   display: table;
@@ -132,7 +134,7 @@ a img {
   height: 100%;
 }
 .container.container-long {
-  -webkit-justify-content: flex-end;
+  -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: auto;
@@ -165,7 +167,8 @@ a img {
 
 .container-inner {
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .no-flexbox .container-inner {
   display: table-cell;
@@ -1014,6 +1017,7 @@ a img {
   padding: 6px 0;
   min-width: 121px;
   background: #fff;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   z-index: 30;
 }
@@ -1051,7 +1055,8 @@ a img {
   text-transform: uppercase;
   background-position: 0 -75px;
   content: attr(data-lang-code);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .lang-flag-sq:after {
@@ -1609,6 +1614,8 @@ a img {
   right: 0;
   z-index: 2;
   background-color: #444444;
+  -webkit-transition: top 0.2s 0.2s;
+  -o-transition: top 0.2s 0.2s;
   transition: top 0.2s 0.2s;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
@@ -1795,7 +1802,7 @@ a img {
 .post-nav-link {
   position: relative;
   display: block;
-  -webkit-flex: 1;
+  -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding-top: 20px;
@@ -1834,7 +1841,7 @@ a img {
 }
 @media screen and (min-width: 641px) {
   .post-nav-inner {
-    display: -webkit-flex;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1920,7 +1927,8 @@ a img {
   vertical-align: middle;
   width: 100%;
   padding: 0 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media screen and (min-width: 1400px) {
   .search-middle {
@@ -1937,6 +1945,7 @@ a img {
   position: relative;
   max-width: 400px;
   margin: 60px auto;
+  -webkit-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.75);
 }
 @media screen and (min-width: 1400px) {
@@ -1997,7 +2006,8 @@ a img {
   line-height: 1;
   color: #444444;
   background: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
 }
 @media screen and (min-width: 1400px) {
@@ -2153,7 +2163,8 @@ a img {
 
 .voog-search-modal {
   display: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 999;
   width: 100%;
   max-width: 400px;
@@ -2161,6 +2172,7 @@ a img {
   padding: 20px 27px;
   background-color: #EDECEC;
   background-color: rgba(237, 236, 236, 0.95);
+  -webkit-box-shadow: none;
   box-shadow: none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -2341,7 +2353,8 @@ a img {
   padding: 5px 8px 6px;
   background-color: #f2f2f2;
   border: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media screen and (min-width: 1400px) {
   .content-formatted .form_field_textfield,
@@ -2367,7 +2380,8 @@ a img {
 .content-formatted .form_field_select {
   padding: 7px 16px 7px 9px;
   text-indent: 0.01px;
-  text-overflow: '';
+  -o-text-overflow: '';
+     text-overflow: '';
   background-position: 97.5% 13px;
   background-repeat: no-repeat;
   border: none;
@@ -2753,7 +2767,8 @@ a img {
 }
 .container-long .footer {
   position: static;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   margin-top: -43px;
   padding-bottom: 21px;
@@ -2865,6 +2880,9 @@ a img {
 }
 
 .footer-gradient {
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.5) 100%);
 }
 
