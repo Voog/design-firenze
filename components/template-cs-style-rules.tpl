@@ -438,7 +438,7 @@ body {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
 
-  .content-page .header-title, .content-page .header-title a, .content-page .header-title .header-link {
+  .content-page .header-title, .content-page .header-title a, .content-page .header-title a:hover, .content-page .header-title .header-link, .content-page .header-title .header-link:hover {
     font-size: calc(var(--header-site-title-font-size) * 1.4);
   }
 
