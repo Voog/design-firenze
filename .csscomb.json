@@ -1,4 +1,5 @@
 {
+  "remove-empty-rulesets": true,
   "always-semicolon": true,
   "color-case": "lower",
   "block-indent": "  ",
@@ -7,6 +8,7 @@
   "eof-newline": true,
   "leading-zero": false,
   "quotes": "single",
+  "sort-order-fallback": "abc",
   "space-before-colon": "",
   "space-after-colon": " ",
   "space-before-combinator": " ",
@@ -21,22 +23,27 @@
   "tab-size": true,
   "unitless-zero": true,
   "vendor-prefix-align": true,
-
-  "exclude": [
-    ".git/**",
-    "node_modules/**",
-    "bower_components/**"
-  ],
-
   "sort-order": [
     "$variable",
-    "$include",
+    "position",
     "top",
     "right",
     "bottom",
     "left",
     "z-index",
     "display",
+    "align-content",
+    "align-items",
+    "align-self",
+    "flex",
+    "flex-basis",
+    "flex-direction",
+    "flex-flow",
+    "flex-grow",
+    "flex-shrink",
+    "flex-wrap",
+    "justify-content",
+    "order",
     "float",
     "width",
     "height",
@@ -77,6 +84,7 @@
     "letter-spacing",
     "word-spacing",
     "color",
+    "fill",
     "text-align",
     "text-decoration",
     "text-indent",
@@ -97,6 +105,7 @@
     "cursor",
     "background",
     "background-attachment",
+    "background-clip",
     "background-color",
     "background-image",
     "background-position",
@@ -138,6 +147,9 @@
     "quotes",
     "outline",
     "outline-offset",
+    "outline-width",
+    "outline-style",
+    "outline-color",
     "opacity",
     "filter",
     "visibility",
@@ -164,7 +176,6 @@
     "transition-duration",
     "transition-property",
     "transition-timing-function",
-    "background-clip",
     "backface-visibility",
     "resize",
     "appearance",
@@ -175,7 +186,6 @@
     "page",
     "set-link-source",
     "unicode-bidi",
-    "speak",
-    "$include-content"
+    "speak"
   ]
 }

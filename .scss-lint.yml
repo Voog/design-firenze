@@ -127,10 +127,10 @@ linters:
 
   PropertySortOrder:
     enabled: true
-    order: recess
     ignore_unspecified: false
     min_properties: 2
     separate_groups: false
+    order: recess
 
   PropertySpelling:
     enabled: true
