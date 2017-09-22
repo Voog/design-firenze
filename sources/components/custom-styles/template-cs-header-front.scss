@@ -29,7 +29,7 @@
     "scope": "global",
     "featured": true
   */
-  --header-mainmenu-font-size: 16px;
+  #{--header-mainmenu-font-size}: 16px;
 
   /* VoogStyle
      "pathI18n": ["main_menu", "normal"],
@@ -41,7 +41,7 @@
      "unit": "",
      "scope": "global"
   */
-  --header-mainmenu-line-height: 1.4;
+  #{--header-mainmenu-line-height}: 1.4;
 
   /* VoogStyle
     "pathI18n": ["main_menu", "normal"],
@@ -59,7 +59,7 @@
       "--header-mainmenu-active-font-weight"
     ]
   */
-  --header-mainmenu-font-weight: 400;
+  #{--header-mainmenu-font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["main_menu", "hover"],
@@ -76,7 +76,7 @@
       "--header-mainmenu-active-font-weight"
     ]
   */
-  --header-mainmenu-hover-font-weight: 400;
+  #{--header-mainmenu-hover-font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["main_menu", "normal"],
@@ -94,7 +94,7 @@
       "--header-mainmenu-active-font-style"
     ]
   */
-  --header-mainmenu-font-style: normal;
+  #{--header-mainmenu-font-style}: normal;
 
 
   /* VoogStyle
@@ -113,7 +113,7 @@
       "--header-mainmenu-active-text-font-size"
     ]
   */
-  --header-mainmenu-hover-font-style: normal;
+  #{--header-mainmenu-hover-font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["main_menu", "normal"],
@@ -131,7 +131,7 @@
       "--header-mainmenu-active-text-decoration"
     ]
   */
-  --header-mainmenu-text-decoration: none;
+  #{--header-mainmenu-text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["main_menu", "hover"],
@@ -148,7 +148,7 @@
       "--header-mainmenu-active-text-decoration"
     ]
   */
-  --header-mainmenu-hover-text-decoration: none;
+  #{--header-mainmenu-hover-text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["main_menu", "normal"],
@@ -166,7 +166,7 @@
       "--header-mainmenu-active-text-transform"
     ]
   */
-  --header-mainmenu-text-transform: uppercase;
+  #{--header-mainmenu-text-transform}: uppercase;
 
   /* VoogStyle
     "pathI18n": ["main_menu", "hover"],
@@ -180,6 +180,6 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --header-mainmenu-hover-text-transform: uppercase;
+  #{--header-mainmenu-hover-text-transform}: uppercase;
 
 }

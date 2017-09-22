@@ -33,7 +33,7 @@
       "--form-field-text-font-size"
     ]
   */
-  --content-font-size: 14px;
+  #{--content-font-size}: 14px;
 
   /* VoogStyle
      "pathI18n": ["content", "text"],
@@ -45,7 +45,7 @@
      "unit": "",
      "scope": "global"
   */
-  --content-line-height: $line-height;
+  #{--content-line-height}: $line-height;
 
 /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
@@ -62,7 +62,7 @@
       "--content-links-hover-font-weight"
     ]
   */
-  --content-links-font-weight: 400;
+  #{--content-links-font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
@@ -76,7 +76,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --content-links-hover-font-weight: 400;
+  #{--content-links-hover-font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
@@ -93,7 +93,7 @@
       "--content-links-hover-font-style"
     ]
   */
-  --content-links-font-style: normal;
+  #{--content-links-font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
@@ -107,7 +107,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --content-links-hover-font-style: normal;
+  #{--content-links-hover-font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
@@ -124,7 +124,7 @@
       "--content-links-hover-text-decoration"
     ]
   */
-  --content-links-text-decoration: none;
+  #{--content-links-text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
@@ -138,7 +138,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-links-hover-text-decoration: none;
+  #{--content-links-hover-text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
@@ -155,7 +155,7 @@
       "--content-links-hover-text-transform"
     ]
   */
-  --content-links-text-transform: none;
+  #{--content-links-text-transform}: none;
 
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
@@ -169,7 +169,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --content-links-hover-text-transform: none;
+  #{--content-links-hover-text-transform}: none;
 
   // scss-lint:enable Comment, Indentation
 }

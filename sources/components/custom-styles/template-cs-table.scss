@@ -26,7 +26,7 @@
      "list": {{ base_border_style_set }},
      "scope": "global"
   */
-  --table-border-style: solid;
+  #{--table-border-style}: solid;
 
   /* VoogStyle
      "pathI18n": ["table"],
@@ -37,7 +37,7 @@
      "unit": "px",
      "scope": "global"
   */
-  --table-cell-padding: 10px;
+  #{--table-cell-padding}: 10px;
 
   /* VoogStyle
     "pathI18n": ["table"],
@@ -45,7 +45,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --table-border-color: #f2f2f2;
+  #{--table-border-color}: #f2f2f2;
 
   // scss-lint:enable Comment, Indentation
 }

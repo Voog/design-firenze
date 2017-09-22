@@ -29,7 +29,7 @@
      "unit": "px",
      "scope": "global"
    */
-   --button-padding: 11px;
+   #{--button-padding}: 11px;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -41,6 +41,6 @@
     "featured": true,
     "scope": "global"
   */
-  --button-font-size: 14px;
+  #{--button-font-size}: 14px;
 
 }

@@ -27,7 +27,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-one: $font-one;
+  #{--font-one}: $font-one;
 
   /* VoogStyle
      "pathI18n": ["main_styles"],
@@ -37,7 +37,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-two: $font-two;
+  #{--font-two}: $font-two;
 
   /* VoogStyle
      "pathI18n": ["main_styles"],
@@ -46,7 +46,7 @@
      "scope": "global",
      "featured": true
   */
-  --dark-primary: $dark-primary;
+  #{--dark-primary}: $dark-primary;
 
   /* VoogStyle
      "pathI18n": ["main_styles"],
@@ -55,5 +55,5 @@
      "scope": "global",
      "featured": true
   */
-  --light-primary: $light-primary;
+  #{--light-primary}: $light-primary;
 }
