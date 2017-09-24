@@ -9,10 +9,6 @@
         "title": "Sans Serif",
         "list": [
           {
-            "title": "Avenir Next",
-            "value": "\"Avenir Next\", \"AvenirX\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif"
-          },
-          {
             "title": "Bebas Neue",
             "value": "\"Bebas Neue Latin\", \"Bebas Neue Cyrillic\", sans-serif"
           },
