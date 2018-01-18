@@ -1678,6 +1678,10 @@ a img {
 }
 
 /* BLOG & BLOG ARTICLE */
+.post-intro-content {
+  padding-bottom: 25px;
+}
+
 .post-title,
 .post-title a,
 .post-date {
