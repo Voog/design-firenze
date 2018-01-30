@@ -2422,7 +2422,7 @@ a img {
 }
 @media screen and (min-width: 1400px) {
   .svg .content-formatted .form_field_checkbox:checked + .form_control_indicator:before {
-    top: -5px;
+    top: -4px;
     left: 4px;
     width: 20px;
     height: 20px;
@@ -2753,7 +2753,7 @@ a img {
 }
 @media screen and (min-width: 1400px) {
   .container-long .footer {
-    margin-top: -61px;
+    margin-top: -60px;
     padding-bottom: 29px;
   }
 }
