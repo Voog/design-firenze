@@ -4,5 +4,9 @@
     {% if site.branding.enabled %}
       <div class="voog-reference">{% loginblock %}Voog{% endloginblock %}</div>
     {% endif %}
+
+    {% if page.private? %}   
+      <div class="signout-btn-pad"></div>
+    {% endif %}
   </div>
 </footer>

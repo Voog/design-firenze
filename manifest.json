@@ -8,16 +8,16 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
     },
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
     },
     {
       "content_type": "blog",
@@ -32,6 +32,27 @@
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
       "title": "Blog article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/post-box.tpl",
+      "layout_name": "post-box",
+      "title": "post-box"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-header.tpl",
+      "layout_name": "template-cs-header",
+      "title": "template-cs-header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-headings.tpl",
+      "layout_name": "template-cs-headings",
+      "title": "template-cs-headings"
     },
     {
       "content_type": "component",
@@ -53,6 +74,13 @@
       "file": "components/menu-level-2.tpl",
       "layout_name": "menu-level-2",
       "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-signout.tpl",
+      "layout_name": "site-signout",
+      "title": "site-signout"
     },
     {
       "content_type": "component",
@@ -141,9 +169,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/post-box.tpl",
-      "layout_name": "post-box",
-      "title": "post-box"
+      "file": "components/template-cs-content.tpl",
+      "layout_name": "template-cs-content",
+      "title": "template-cs-content"
     },
     {
       "content_type": "component",
@@ -298,27 +326,6 @@
       "file": "components/comment-form.tpl",
       "layout_name": "comment-form",
       "title": "comment-form"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-header.tpl",
-      "layout_name": "template-cs-header",
-      "title": "template-cs-header"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-headings.tpl",
-      "layout_name": "template-cs-headings",
-      "title": "template-cs-headings"
     }
   ],
   "assets": [
