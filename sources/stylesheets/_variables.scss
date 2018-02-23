@@ -9,6 +9,7 @@
 // General colors
 $dark-primary: rgba(0,0,0,1);
 $light-primary: rgba(255,255,255,1);
+$color-science-blue: #06b;
 
 
 // General colors
@@ -48,7 +49,17 @@ $tablet-3: 640px;
 $mobile-1: 480px;
 $mobile-2: 420px;
 
+// Media query breakpoints.
+$break-large: 1500px;
+$break-middle: 1024px;
+$tablet: 768px;
+$mobile: 640px;
+$break-small: 600px;
+$nano: 320px;
 
+
+
+$color-science-blue: #06b;
 // Reusable values
 // Define the reusable variables here.
 // For example the width of several different elements, that allways have to be with the same height:
@@ -70,3 +81,7 @@ $grey-2: #FAFAFA;
 $grey-3: #E2E2E2;
 $grey-4: #EDECEC;
 $yellow: #F9EC5A;
+
+$color-science-blue: #06b;
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);

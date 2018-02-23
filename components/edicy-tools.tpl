@@ -5,6 +5,19 @@
       type: 'site'
     });
 
+    {% if items_page %}
+      template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc }}');
+      template.bindContentItemImageCropToggle();
+
+      {%if site.data.settings_root_item %}
+        rootItemValuesObj = {{ site.data.settings_root_item | json }};
+      {% else %}
+        rootItemValuesObj = {};
+      {% endif %};
+
+      template.bindRootItemSettings(rootItemValuesObj);
+    {% endif %}
+
     // Initiates language flag toggleing functionality.
     site.toggleFlags();
 
