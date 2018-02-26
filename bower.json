@@ -8,6 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "bourbon": "^4.3.4",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "jquery_lazyload": "^1.9.7"
   }
 }

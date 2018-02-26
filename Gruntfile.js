@@ -30,6 +30,7 @@ module.exports = function(grunt) {
       build: {
         src: [
           'bower_components/jquery/dist/jquery.js',
+          'bower_components/jquery_lazyload/jquery.lazyload.js',
           'sources/javascripts/concat/*.js'
         ],
         dest: 'javascripts/application.js'
@@ -282,7 +283,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'copy:assets', 'copy:images', 'copy:javascripts', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove']);
 
-  /*
+
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
       if (action == 'added' || action == 'deleted') {
@@ -295,5 +296,5 @@ module.exports = function(grunt) {
       }
     }
   });
-  */
+
 };

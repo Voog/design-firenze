@@ -41,7 +41,7 @@
       <div class="top-inner aspect-ratio-inner">
         {% if menu_level.image %}
           <div class="loader js-loader"></div>
-          <img class="item-image {{ item_image_orientation }} {{ item_image_crop_state }}" data-original="{{ menu_level.image.for-width-680.schemeless_url }}">
+          <img class="item-image {{ item_image_orientation }} {{ item_image_crop_state }} js-lazyload" data-original="{{ menu_level.image.for-width-680.schemeless_url }}">
         {% else %}
           <div class="item-placeholder">{{ menu_level.title | truncate: 50 }}</div>
         {% endif %}
