@@ -235,24 +235,17 @@
 
 .item-title {
   @include hyphenate;
+  font-family: var(--font-two);
+  color: var(--color-primary);
   margin-top: 0;
   margin-bottom: 0;
 
 
   .item-link {
+    font-family: var(--font-two);
     font-size: 14px;
-    line-height: 1.2;
     text-align: center;
-    color: $primary-color;
-    font-family: $font-one;
-    font-weight: 400;
-
-    &:hover {
-      font-size: 14px;
-      line-height: 1.2;
-      text-align: center;
-      text-decoration: underline !important;
-    }
+    color: var(--color-primary);
   }
 
   .content-item-box > & {

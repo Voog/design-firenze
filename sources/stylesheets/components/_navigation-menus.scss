@@ -24,17 +24,17 @@
     font-size: 12px;
 
     a {
-      color: rgba($dark-primary, .35) !important;
+      color: var(--header-mainmenu-color) !important;
 
       &:hover {
-        color: rgba($dark-primary, 1) !important;
+        color: var(--header-mainmenu-hover-color) !important;
       }
     }
   }
 
   .current.menu-item {
     a {
-    color: rgba($dark-primary, 1) !important;
+    color: var(--header-mainmenu-active-color) !important;
     }
   }
 }
