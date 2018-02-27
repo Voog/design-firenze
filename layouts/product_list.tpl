@@ -21,7 +21,7 @@
     <div class="container-inner">
       <div class="wrap js-wrap">
         {% include "header" %}
-        {% include "menu-level-2" %}
+        {% include "menu-breadcrumbs" %}
 
         <main class="content" role="main">
 
