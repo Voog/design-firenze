@@ -5,6 +5,7 @@
   .menu-separator {
     opacity: .36;
     font-size: 12px;
+    margin-right: 3px;
 
     &:first-child {
       display: none;
@@ -50,5 +51,11 @@
 
   &.float-right {
     float: right;
+  }
+}
+
+.menu-horizontal {
+  .menu-item{
+  margin-right: 3px !important;
   }
 }
