@@ -29,7 +29,6 @@
         {% endif %}
       {% else %}
         {% include "menu-breadcrumbs-buttons-loop" menu_items: site.visible_menuitems %}
-        {% if editmode %}<li class="edit-btn">{% menuadd parent="item" %}</li>{% endif %}
       {% endif %}
     </ul>
   </nav>
