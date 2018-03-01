@@ -220,6 +220,7 @@ a img {
 }
 
 .content-item-boxes {
+  padding-top: 10px;
   font-size: 0;
   line-height: 1.3;
 }
@@ -661,29 +662,25 @@ a img {
   }
 }
 
-.content-formatted .edy-buy-button-container .form_field {
-  padding-top: 15px;
+.edy-buy-button-container .form_field {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.content-formatted .edy-buy-button-variants .form_field {
+
+.edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.content-formatted .edy-buy-button-variants .form_field_select {
+.edy-buy-button-variants .form_field .form_field_label {
+  font-size: 16px;
+  position: relative;
+  display: block;
+}
+.edy-buy-button-variants .form_field .form_field_select {
+  position: relative;
+  display: block;
   width: initial;
-}
-
-.form_field .form_field_label {
-  position: relative;
-  display: block;
-  margin-top: 8px;
-}
-.form_field .form_field_select {
-  position: relative;
-  display: block;
-  margin-top: 8px;
-}
-.form_field .custom-btn {
-  margin-top: 15px;
+  margin-top: 4px;
 }
 
 .content-area .edy-buy-button-variants .form_field_select {
@@ -737,6 +734,7 @@ a img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
+  border-color: #2b2b2b !important;
 }
 
 /* MENUS */
@@ -3234,7 +3232,6 @@ a img {
 }
 .content-illustrations .content-item-box {
   margin-bottom: 40px;
-  padding-top: 15px;
 }
 .content-item-box .top-inner {
   opacity: 1;
@@ -3441,10 +3438,13 @@ a img {
   text-align: center;
 }
 
-.content-item-title h1 {
-  font-size: 24px;
+.content-body .content-item-title h1 {
+  color: var(--color-secondary);
+  font-size: calc(var(--header-mainmenu-font-size) * 1.4);
+  font-family: var(--font-one);
+  margin-bottom: 20;
+  margin-top: 0;
 }
-
-.item-page .content-area {
-  font-size: 16px;
+.content-body .content-item-title {
+  padding-top: 3px;
 }

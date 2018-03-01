@@ -25,7 +25,6 @@
 
   .content-illustrations & {
     margin-bottom: 40px;
-    padding-top: 15px;
   }
 
   .top-inner {
@@ -258,12 +257,16 @@
   }
 }
 
-.content-item-title h1 {
-  font-size: 24px;
-}
+.content-body{
+  .content-item-title h1 {
+    color: var(--color-secondary);
+    font-size: calc(var(--header-mainmenu-font-size) * 1.4);
+    font-family: var(--font-one);
+    margin-bottom: 20;
+    margin-top: 0;
+  }
 
-.item-page {
-  .content-area {
-    font-size: 16px;
+  .content-item-title {
+    padding-top: 3px;
   }
 }
