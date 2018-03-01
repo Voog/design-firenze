@@ -465,6 +465,10 @@ body {
     font-size: calc(var(--content-submenu-font-size) * 1.4);
   }
 
+  .menu-sub .menu .menu-separator {
+    font-size: calc(var(--content-submenu-font-size) * 1.4);
+  }
+
   .post-title, .post-title a {
     font-size: calc(var(--blog-list-title-font-size) * 1.4);
   }

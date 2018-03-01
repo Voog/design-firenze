@@ -1862,7 +1862,7 @@ a img {
 }
 .menu-horizontal .menu-separator {
   opacity: .36;
-  font-size: 12px;
+  font-size: var(--content-submenu-font-size);
   margin-right: 3px;
 }
 .menu-horizontal .menu-separator:first-child {
