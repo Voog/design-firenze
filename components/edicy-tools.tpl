@@ -6,7 +6,7 @@
     });
 
     {% if items_page %}
-      template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc }}');
+      template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc: editor_locale }}');
       template.bindContentItemImageCropToggle();
 
       {%if site.data.settings_root_item %}
