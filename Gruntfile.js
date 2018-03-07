@@ -30,7 +30,6 @@ module.exports = function(grunt) {
       build: {
         src: [
           'bower_components/jquery/dist/jquery.js',
-          'bower_components/jquery_lazyload/jquery.lazyload.js',
           'sources/javascripts/concat/*.js'
         ],
         dest: 'javascripts/application.js'
