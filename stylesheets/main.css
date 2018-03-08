@@ -690,7 +690,7 @@ a img {
   font-weight: 300;
   line-height: 1.5;
   vertical-align: bottom;
-  background-image: url(../assets/ico-arrow-white.svg);
+  background-image: url(../assets/ico-arrow.svg);
   background-position: right 10px center;
   background-repeat: no-repeat;
   border-radius: 0;
@@ -735,6 +735,10 @@ a img {
   -o-transition: 500ms;
   transition: 500ms;
   border-color: #2b2b2b !important;
+}
+
+.form_field .custom-btn-disabled {
+  cursor: default;
 }
 
 /* MENUS */
