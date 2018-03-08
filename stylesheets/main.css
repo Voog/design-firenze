@@ -3440,10 +3440,12 @@ a img {
 
 .content-body .content-item-title h1 {
   color: var(--color-secondary);
-  font-size: calc(var(--header-mainmenu-font-size) * 1.4);
+  font-size: 24px;
   font-family: var(--font-one);
-  margin-bottom: 20;
+  margin-bottom: 0;
   margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .content-body .content-item-title {
   padding-top: 3px;
