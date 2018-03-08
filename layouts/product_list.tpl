@@ -4,7 +4,6 @@
 <head prefix="og: http://ogp.me/ns#">
   {% assign items_page = true %}
   {% include "edicy-tools-variables" %}
-  {% include "edicy-tools" items_page: true %}
   {% include "html-head" items_page: true %}
   {% include "edicy-tools-styles" %}
 </head>
@@ -47,6 +46,7 @@
   </div>
 
   {% include "javascripts" %}
-   <script>template.initItemsPage();</script>
+  {% include "edicy-tools" items_page: true  %}
+   <script>site.initItemsPage();</script>
 </body>
 </html>

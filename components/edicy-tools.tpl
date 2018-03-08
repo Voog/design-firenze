@@ -6,8 +6,8 @@
     });
 
     {% if items_page %}
-      template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc: editor_locale }}');
-      template.bindContentItemImageCropToggle();
+      site.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc: editor_locale }}');
+      site.bindContentItemImageCropToggle();
 
       {%if site.data.settings_root_item %}
         rootItemValuesObj = {{ site.data.settings_root_item | json }};
@@ -15,7 +15,7 @@
         rootItemValuesObj = {};
       {% endif %};
 
-      template.bindRootItemSettings(rootItemValuesObj);
+      site.bindRootItemSettings(rootItemValuesObj);
     {% endif %}
 
     // Initiates language flag toggleing functionality.

@@ -784,10 +784,7 @@
     initFrontPage: initFrontPage,
     initCommonPage: initCommonPage,
     initBlogPage: initBlogPage,
-    initPostPage: initPostPage
-  });
-
-  window.template = $.extend(window.template || {}, {
+    initPostPage: initPostPage,
     initItemsPage: initItemsPage,
     // Initiations for specific functions.
     bindRootItemSettings: bindRootItemSettings,

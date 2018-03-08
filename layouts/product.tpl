@@ -95,7 +95,7 @@
   </div>
 
   {% include "javascripts" %}
-  {% include "edicy-tools" items_page: true %}
-  <script>template.initItemsPage();</script>
+  {% include "edicy-tools" items_page: true  %}
+  <script>site.initItemsPage();</script>
 </body>
 </html>
