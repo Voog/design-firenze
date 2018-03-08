@@ -231,7 +231,7 @@ module.exports = function(grunt) {
           'sources/stylesheets/*.scss',
           'sources/stylesheets/*/*.scss',
         ],
-        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest']
+        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest', 'exec:kit:stylesheets/*.css']
       },
 
       custom_styles: {
