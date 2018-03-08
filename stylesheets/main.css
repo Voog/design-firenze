@@ -742,6 +742,10 @@ a img {
 }
 
 /* MENUS */
+.main-menu li.is-hidden {
+  display: none !important;
+}
+
 .menu-btn {
   display: none;
 }

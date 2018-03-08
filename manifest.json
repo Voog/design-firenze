@@ -57,6 +57,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/menu-level-1-link.tpl",
+      "layout_name": "menu-level-1-link",
+      "title": "menu-level-1-link"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-header.tpl",
       "layout_name": "template-cs-header",
       "title": "template-cs-header"
