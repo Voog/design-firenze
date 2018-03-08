@@ -29,7 +29,6 @@ module.exports = function(grunt) {
     concat: {
       build: {
         src: [
-          'bower_components/jquery/dist/jquery.js',
           'sources/javascripts/concat/*.js'
         ],
         dest: 'javascripts/application.js'
