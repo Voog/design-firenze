@@ -380,12 +380,6 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-arrow.svg",
-      "kind": "assets",
-      "filename": "ico-arrow.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-white.svg",
       "kind": "assets",
       "filename": "ico-arrow-white.svg"
@@ -401,6 +395,12 @@
       "file": "assets/bebas-neue-regular-latin.woff",
       "kind": "assets",
       "filename": "bebas-neue-regular-latin.woff"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-arrow.svg",
+      "kind": "assets",
+      "filename": "ico-arrow.svg"
     },
     {
       "content_type": "image/svg+xml",
