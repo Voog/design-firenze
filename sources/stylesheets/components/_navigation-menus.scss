@@ -4,7 +4,6 @@
 
   .menu-separator {
     opacity: .36;
-    font-size: var(--content-submenu-font-size);
     margin-right: 3px;
 
     &:first-child {
@@ -17,25 +16,8 @@
 
     .menu-item {
       padding-left: 0;
-    }
-  }
-
-  .menu-item {
-    display: inline-block;
-    font-size: 12px;
-
-    a {
-      color: var(--header-mainmenu-color) !important;
-
-      &:hover {
-        color: var(--header-mainmenu-hover-color) !important;
-      }
-    }
-  }
-
-  .current.menu-item {
-    a {
-    color: var(--header-mainmenu-active-color) !important;
+      font-family: $font-one;
+      display: inline-block;
     }
   }
 }

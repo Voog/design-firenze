@@ -14,6 +14,11 @@ body {
   color: var(--h1-color);
 }
 
+.content-body .content-item-title h1 {
+  color: var(--color-secondary);
+  font-family: var(--font-one);
+}
+
 .content-page .content-formatted h2, .content-formatted h2,
 .front-page .light-background .content-formatted h2 {
   font-size: var(--h2-font-size);
@@ -134,6 +139,7 @@ body {
 }
 
 .menu-sub .menu .menu-item {
+  font-size: var(--content-submenu-font-size);
   line-height: var(--content-submenu-line-height);
 }
 
@@ -198,6 +204,22 @@ body {
   text-transform: var(--content-links-hover-text-transform);
 }
 
+.menu-horizontal .menu-item a {
+  color: var(--header-mainmenu-color) !important;
+}
+
+.menu-horizontal .menu-item:hover a {
+  color: var(--header-mainmenu-color) !important;
+}
+
+.menu-horizontal .current a {
+  color: var(--header-mainmenu-active-color) !important;
+}
+
+.item-title .item-link {
+  color: var(--color-primary);
+}
+
 .footer .voog-reference a {
   color: var(--footer-color);
 }
@@ -221,6 +243,21 @@ body {
 .content-formatted .custom-btn:not(.custom-btn-disabled):hover,
 .content-formatted .form_submit input:hover {
   background-color: var(--button-background-color);
+}
+
+.form_field .custom-btn-disabled {
+  color: var(--color-secondary);
+}
+
+.form_field .custom-btn:not(.custom-btn-disabled) {
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+}
+
+.form_field .custom-btn:not(.custom-btn-disabled):hover {
+  border-color: var(--color-secondary);
+  background: var(--color-secondary);
+  border: 2px solid var(--color-secondary) !important;
 }
 
 .light-background .content-formatted table td {
@@ -255,6 +292,11 @@ body {
 .content-formatted .svg .content-formatted .form_field_select {
   background-color: var(--form-field-background-color);
 }*/
+.content-area .edy-buy-button-variants .form_field_select {
+  border: 1px solid var(--color-secondary) !important;
+  color: var(--color-secondary);
+}
+
 .svg .content-page .content-formatted .form_field_checkbox + .form_control_indicator,
 .svg .content-page .content-formatted .form_field_radio + .form_control_indicator,
 .content-formatted .form_field_textfield, .content-formatted .form_field_textarea,
@@ -322,6 +364,10 @@ body {
           text-decoration: var(--blog-list-date-text-decoration);
   text-transform: var(--blog-list-date-text-transform);
   color: var(--blog-list-date-color);
+}
+
+.image-drop-area .edy-img-drop-area-placeholder {
+  color: var(--color-secondary);
 }
 
 .content-page .container .wrap {

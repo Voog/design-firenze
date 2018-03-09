@@ -45,14 +45,16 @@
       -moz-appearance: none;
       appearance: none;
       outline: 0;
-      border: 1px solid !important;
-      border-color: var(--color-secondary) !important;
-      color: var(--color-secondary);
+      background: transparent;
     }
   }
 }
 
 .form_field{
+  .custom-btn-disabled {
+    cursor: default;
+  }
+
   .custom-btn {
     display: inline-block;
     background-color: transparent;
@@ -66,27 +68,11 @@
     @include hyphenate(true);
     text-decoration: none;
     border: 2px solid !important;
-
-    &:not(.custom-btn-disabled) {
-      color: var(--color-primary);
-      border: 2px solid!important;
-    }
+    background: $white .8;
 
     &:not(.custom-btn-disabled):hover {
-      background: #2b2b2b !important;
-      border: 2px solid !important;
+      color: $white;
       transition: $transition;
-      border-color: var(--color-primary);
     }
-
-
-  }
-}
-
-.form_field{
-  .custom-btn-disabled {
-    color: var(--color-primary);
-    border-color: var(--color-primary);
-    cursor: default;
   }
 }
