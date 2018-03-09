@@ -380,6 +380,10 @@
 .menu-sub {
   padding-top: 15px;
 
+  .common-page &{
+    padding-bottom: 15px;
+  }
+
   .item-page & {
     padding-top: 0;
   }

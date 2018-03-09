@@ -8,7 +8,6 @@
 
   .item-list-page & {
     padding-top: 15px;
-    padding-bottom: 15px;
     box-sizing: border-box;
 
     @media screen and (max-width: $mobile-1) {
@@ -240,14 +239,14 @@
 
 .item-title {
   @include hyphenate;
-  font-family: var(--font-two);
+  font-family: $font-one;
+  font-weight: 400;
   color: var(--color-primary);
   margin-top: 0;
   margin-bottom: 0;
 
 
   .item-link {
-    font-family: var(--font-two);
     font-size: 14px;
     text-align: center;
     color: var(--color-primary);
@@ -256,7 +255,6 @@
   .content-item-box > & {
     margin-top: 15px;
     margin-bottom: 5px;
-    font-size: 14px;
     line-height: 1.2;
     text-align: center;
   }

@@ -1067,6 +1067,9 @@ a img {
 .menu-sub {
   padding-top: 15px;
 }
+.common-page .menu-sub {
+  padding-bottom: 15px;
+}
 .item-page .menu-sub {
   padding-top: 0;
 }
@@ -3222,7 +3225,6 @@ a img {
 }
 .item-list-page .content-item-box {
   padding-top: 15px;
-  padding-bottom: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -3432,13 +3434,13 @@ a img {
           hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-family: var(--font-two);
+  font-family: "Avenir Next", "AvenirX", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
   color: var(--color-primary);
   margin-top: 0;
   margin-bottom: 0;
 }
 .item-title .item-link {
-  font-family: var(--font-two);
   font-size: 14px;
   text-align: center;
   color: var(--color-primary);
@@ -3446,7 +3448,6 @@ a img {
 .content-item-box > .item-title {
   margin-top: 15px;
   margin-bottom: 5px;
-  font-size: 14px;
   line-height: 1.2;
   text-align: center;
 }
