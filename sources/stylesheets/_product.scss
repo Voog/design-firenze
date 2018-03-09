@@ -185,11 +185,11 @@
     }
 
     .with-image & {
-      background-color: rgba($color-white, 1);
+      background-color: transparent;
     }
 
     .without-image & {
-      border-color: rgba($color-black, .1);
+      border-color: transparent;
       border-style: solid;
       border-width: 1px;
     }
@@ -224,10 +224,12 @@
     .edy-img-drop-area-placeholder {
       @media screen and (max-width: $mobile) {
         font-size: 13px;
+        color: var(--color-secondary);
       }
 
       @media screen and (min-width: $mobile + 1) {
         font-size: 16px;
+        color: var(--color-secondary);
       }
     }
   }

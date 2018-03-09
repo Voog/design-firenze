@@ -711,7 +711,7 @@ a img {
   padding: 12px 30px 13px;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.7;
   text-align: center;
   -webkit-hyphens: auto;
@@ -725,19 +725,19 @@ a img {
 .form_field .custom-btn:not(.custom-btn-disabled) {
   color: var(--color-primary);
   border: 2px solid !important;
-  border-color: var(--color-secondary);
 }
 .form_field .custom-btn:not(.custom-btn-disabled):hover {
   background: #2b2b2b !important;
   border: 2px solid !important;
-  color: #FFFFFF;
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
-  border-color: #2b2b2b !important;
+  border-color: var(--color-primary);
 }
 
 .form_field .custom-btn-disabled {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
   cursor: default;
 }
 
@@ -3385,10 +3385,10 @@ a img {
   height: auto;
 }
 .with-image .item-top .top-inner {
-  background-color: white;
+  background-color: transparent;
 }
 .without-image .item-top .top-inner {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: transparent;
   border-style: solid;
   border-width: 1px;
 }
@@ -3413,11 +3413,13 @@ a img {
 @media screen and (max-width: 640px) {
   .item-top .image-drop-area .edy-img-drop-area-placeholder {
     font-size: 13px;
+    color: var(--color-secondary);
   }
 }
 @media screen and (min-width: 641px) {
   .item-top .image-drop-area .edy-img-drop-area-placeholder {
     font-size: 16px;
+    color: var(--color-secondary);
   }
 }
 

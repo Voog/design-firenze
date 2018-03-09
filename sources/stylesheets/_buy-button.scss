@@ -60,7 +60,7 @@
     padding: 12px 30px 13px;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.7;
     text-align: center;
     @include hyphenate(true);
@@ -70,15 +70,13 @@
     &:not(.custom-btn-disabled) {
       color: var(--color-primary);
       border: 2px solid!important;
-      border-color: var(--color-secondary);
     }
 
     &:not(.custom-btn-disabled):hover {
       background: #2b2b2b !important;
       border: 2px solid !important;
-      color: $white;
       transition: $transition;
-      border-color:  #2b2b2b !important;
+      border-color: var(--color-primary);
     }
 
 
@@ -87,6 +85,8 @@
 
 .form_field{
   .custom-btn-disabled {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
     cursor: default;
   }
 }
