@@ -134,7 +134,6 @@ body {
 }
 
 .menu-sub .menu .menu-item {
-  font-size: var(--content-submenu-font-size);
   line-height: var(--content-submenu-line-height);
 }
 

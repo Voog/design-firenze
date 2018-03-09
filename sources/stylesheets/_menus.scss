@@ -378,7 +378,11 @@
 }
 
 .menu-sub {
-  padding: 15px 5px;
+  padding-top: 15px;
+
+  .item-page & {
+    padding-top: 0;
+  }
 
   @include query($large-1, 'min-width') {
     padding: #{round(15 * $wide-view-multiplier)}px #{round(5 * $wide-view-multiplier)}px;
@@ -388,7 +392,7 @@
     .menu-item {
       display: inline-block;
       margin-right: 10px;
-      font-size: 16px;
+      font-size: 12px;
 
       @include query($large-1, 'min-width') {
         margin-right: #{round(10 * $wide-view-multiplier)}px;

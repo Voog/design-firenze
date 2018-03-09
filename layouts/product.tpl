@@ -41,9 +41,8 @@
     <div class="container-inner">
       <div class="wrap js-wrap">
         {% include "header" %}
-        {% include "menu-breadcrumbs" %}
         <main class="content" role="main">
-
+          {% include "menu-breadcrumbs" %}
             <div class="items-body">
               <div class="content-illustrations">
                 {% if editmode %}

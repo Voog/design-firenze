@@ -1,6 +1,11 @@
 .content-item-box {
   color: rgba($color-black, .8);
 
+  .item-page &{
+  margin-bottom: 40px;
+  padding-top: 10px;
+  }
+
   .item-list-page & {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -23,9 +28,7 @@
     }
   }
 
-  .content-illustrations & {
-    margin-bottom: 40px;
-  }
+
 
   .top-inner {
     opacity: 1;

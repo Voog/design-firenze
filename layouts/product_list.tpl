@@ -20,12 +20,9 @@
     <div class="container-inner">
       <div class="wrap js-wrap">
         {% include "header" %}
-        {% include "menu-breadcrumbs" %}
-
         <main class="content" role="main">
-
           <div class="content-gallery content-area">{% content name="gallery" %}</div>
-
+          {% include "menu-breadcrumbs" %}
           <section class="content-item-boxes">
             {% if site.root_item.selected? %}
               {% for level_1 in site.visible_menuitems_with_data %}
