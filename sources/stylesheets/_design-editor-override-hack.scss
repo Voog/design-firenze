@@ -8,7 +8,8 @@
 .topbar .menu-main .menu .menu-item .menu-link.active:hover { color: #fff;}
 
 .content-formatted .custom-btn:hover,
-.content-formatted .form_submit input:hover { opacity: 0.8;color: #fff;}
+.content-formatted .form_submit input:hover,
+.form_field .custom-btn:not(.custom-btn-disabled):hover { opacity: 0.8;color: #fff;}
 
 .content-formatted .form_field label { text-decoration: none;}
 

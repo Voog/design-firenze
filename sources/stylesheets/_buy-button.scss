@@ -45,7 +45,7 @@
       -moz-appearance: none;
       appearance: none;
       outline: 0;
-      background-color: rgba($black, .0);
+      background-color: $white;
     }
   }
 }
@@ -67,8 +67,6 @@
     text-align: center;
     @include hyphenate(true);
     text-decoration: none;
-    border: 2px solid !important;
-    background: $white .8;
 
     &:not(.custom-btn-disabled):hover {
       color: $white;

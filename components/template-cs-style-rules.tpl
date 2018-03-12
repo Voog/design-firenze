@@ -245,19 +245,11 @@ body {
   background-color: var(--button-background-color);
 }
 
-.form_field .custom-btn-disabled {
-  color: var(--color-secondary);
-}
-
+.form_field .custom-btn:not(.custom-btn-disabled):hover,
+.form_field .custom-btn-disabled,
 .form_field .custom-btn:not(.custom-btn-disabled) {
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
-}
-
-.form_field .custom-btn:not(.custom-btn-disabled):hover {
-  border-color: var(--color-secondary);
-  background: var(--color-secondary);
-  border: 2px solid var(--color-secondary) !important;
+  background: var(--button-background-color);
+  color: var(--button-color);
 }
 
 .light-background .content-formatted table td {

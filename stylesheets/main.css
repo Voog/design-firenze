@@ -697,7 +697,7 @@ a img {
   -moz-appearance: none;
   appearance: none;
   outline: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #FFFFFF;
 }
 
 .form_field .custom-btn-disabled {
@@ -720,14 +720,12 @@ a img {
   word-break: break-word;
   word-wrap: break-word;
   text-decoration: none;
-  border: 2px solid !important;
-  background: #FFFFFF 0.8;
 }
 .form_field .custom-btn:not(.custom-btn-disabled):hover {
   color: #FFFFFF;
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 /* MENUS */
@@ -3141,7 +3139,8 @@ a img {
 }
 
 .content-formatted .custom-btn:hover,
-.content-formatted .form_submit input:hover {
+.content-formatted .form_submit input:hover,
+.form_field .custom-btn:not(.custom-btn-disabled):hover {
   opacity: 0.8;
   color: #fff;
 }
