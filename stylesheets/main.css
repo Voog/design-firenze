@@ -701,6 +701,7 @@ a img {
 
 .form_field .custom-btn-disabled {
   cursor: default;
+  background-color: #ccc;
 }
 .form_field .custom-btn {
   display: inline-block;
