@@ -3239,6 +3239,12 @@ a img {
   -o-transition: opacity .5s;
   transition: opacity .5s;
 }
+.content-item-box:hover {
+  opacity: 0.9;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
 .editmode .content-item-box:hover .top-inner::after, .item-list-page .content-item-box:hover .top-inner::after {
   opacity: .2;
 }
@@ -3412,6 +3418,7 @@ a img {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 14px;
 }
 .item-title .item-link {
   font-size: 14px;

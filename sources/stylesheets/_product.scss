@@ -27,8 +27,6 @@
     }
   }
 
-
-
   .top-inner {
     opacity: 1;
 
@@ -49,6 +47,8 @@
   }
 
   &:hover {
+    opacity: 0.9;
+    transition: $transition;
     .top-inner {
       // scss-lint:disable NestingDepth
       &::after {
@@ -240,6 +240,7 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 14px;
 
 
   .item-link {
