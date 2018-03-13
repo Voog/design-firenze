@@ -1054,6 +1054,9 @@ a img {
 .item-page .menu-sub {
   padding-top: 0;
 }
+.menu-sub .menu-breadcrumbs .menu-item {
+  font-size: 12px !important;
+}
 @media screen and (min-width: 1400px) {
   .menu-sub {
     padding: 21px 7px;
@@ -1062,7 +1065,6 @@ a img {
 .menu-sub .menu .menu-item {
   display: inline-block;
   margin-right: 10px;
-  font-size: 12px;
 }
 @media screen and (min-width: 1400px) {
   .menu-sub .menu .menu-item {
