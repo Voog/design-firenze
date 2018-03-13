@@ -208,15 +208,17 @@ body {
   color: var(--header-mainmenu-color) !important;
 }
 
-.menu-horizontal .menu-item:hover a {
-  color: var(--header-mainmenu-color) !important;
-}
-
-.menu-horizontal .current a {
+.menu-horizontal .menu-item a:hover {
   color: var(--header-mainmenu-active-color) !important;
 }
 
-.item-title .item-link {
+.menu-horizontal .current a,
+.menu-horizontal .current a:hover {
+  color: var(--header-mainmenu-active-color) !important;
+}
+
+.item-top .item-title .item-link,
+.item-top .item-title {
   color: var(--color-primary);
 }
 
