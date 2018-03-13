@@ -23,7 +23,7 @@
       position: relative;
       display: block;
       width: initial;
-      margin-top: 4px;
+      margin-top: 7px;
     }
   }
 }
@@ -31,9 +31,8 @@
 .content-area {
   .edy-buy-button-variants {
     .form_field_select {
-      position: relative;
-      padding: 6px 25px 6px 7px;
-      font-size: 14px;
+      padding: 2px 25px 2px 6px;
+      font-size: 13px;
       font-weight: 300;
       line-height: 1.5;
       vertical-align: bottom;
@@ -57,14 +56,8 @@
 
   .custom-btn {
     display: inline-block;
-    background-color: transparent;
     box-sizing: border-box;
-    padding: 12px 30px 13px;
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.7;
-    text-align: center;
     @include hyphenate(true);
     text-decoration: none;
 

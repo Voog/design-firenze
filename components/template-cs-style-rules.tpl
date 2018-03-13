@@ -16,7 +16,6 @@ body {
 
 .content-body .content-item-title h1 {
   color: var(--color-secondary);
-  font-family: var(--font-one);
 }
 
 .content-page .content-formatted h2, .content-formatted h2,
@@ -217,8 +216,8 @@ body {
   color: var(--header-mainmenu-active-color) !important;
 }
 
-.item-top .item-title .item-link,
-.item-top .item-title {
+.content-item-box .item-link,
+.content-item-box .item-title {
   color: var(--color-primary);
 }
 
@@ -252,6 +251,8 @@ body {
 .form_field .custom-btn:not(.custom-btn-disabled) {
   background: var(--button-background-color);
   color: var(--button-color);
+  padding: calc(var(--button-padding) - 3px) var(--button-padding);
+  font-size: var(--button-font-size);
 }
 
 .light-background .content-formatted table td {
@@ -289,6 +290,7 @@ body {
 .content-area .edy-buy-button-variants .form_field_select {
   border: 1px solid var(--color-secondary) !important;
   color: var(--color-secondary);
+  font-family: var(--font-one);
 }
 
 .svg .content-page .content-formatted .form_field_checkbox + .form_control_indicator,
