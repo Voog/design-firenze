@@ -3238,7 +3238,6 @@ a img {
   transition: opacity .5s;
 }
 .content-item-box:hover {
-  opacity: 0.9;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
@@ -3247,11 +3246,12 @@ a img {
   opacity: .2;
 }
 
-.item-top {
-  position: relative;
+.item-list-page .content-item-box:hover {
+  opacity: 0.9;
 }
 
 .item-top {
+  position: relative;
   position: relative;
 }
 .item-top::before {

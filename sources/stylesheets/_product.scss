@@ -47,8 +47,8 @@
   }
 
   &:hover {
-    opacity: 0.9;
     transition: $transition;
+
     .top-inner {
       // scss-lint:disable NestingDepth
       &::after {
@@ -62,11 +62,16 @@
   }
 }
 
-.item-top {
-  position: relative;
+.item-list-page {
+  .content-item-box {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 }
 
 .item-top {
+  position: relative;
   @include aspect-ratio(1, 1);
 
   &:hover {
