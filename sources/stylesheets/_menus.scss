@@ -394,6 +394,9 @@
     .menu-item {
       font-size: 12px !important;
     }
+    .menu-separator {
+      font-size: 12px;
+    }
   }
 
   @include query($large-1, 'min-width') {

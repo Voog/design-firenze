@@ -1058,6 +1058,9 @@ a img {
 .menu-sub .menu-breadcrumbs .menu-item {
   font-size: 12px !important;
 }
+.menu-sub .menu-breadcrumbs .menu-separator {
+  font-size: 12px;
+}
 @media screen and (min-width: 1400px) {
   .menu-sub {
     padding: 21px 7px;
