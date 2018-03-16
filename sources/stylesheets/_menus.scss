@@ -7,6 +7,7 @@
     }
   }
 }
+
 // Menu button. Only visible on smaller screens.
 .menu-btn {
   @extend %button;
@@ -380,24 +381,7 @@
 
 
 .menu-sub {
-  padding-top: 15px;
-
-  .common-page &{
-    padding-bottom: 15px;
-  }
-
-  .item-page & {
-    padding-top: 0;
-  }
-
-  .menu-breadcrumbs {
-    .menu-item {
-      font-size: 12px !important;
-    }
-    .menu-separator {
-      font-size: 12px;
-    }
-  }
+  padding: 15px 5px;
 
   @include query($large-1, 'min-width') {
     padding: #{round(15 * $wide-view-multiplier)}px #{round(5 * $wide-view-multiplier)}px;
@@ -407,6 +391,7 @@
     .menu-item {
       display: inline-block;
       margin-right: 10px;
+      font-size: 16px;
 
       @include query($large-1, 'min-width') {
         margin-right: #{round(10 * $wide-view-multiplier)}px;

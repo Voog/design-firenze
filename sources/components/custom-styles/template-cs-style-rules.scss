@@ -229,18 +229,19 @@ body {
   text-transform: var(--content-links-hover-text-transform);
 }
 
-// Submenu
+// Menu-breadcrumbs
 
-.menu-horizontal .menu-item a {
-  color: var(--header-mainmenu-color) !important;
+.menu-breadcrumbs .menu-item a {
+  color: var(--header-mainmenu-color);
 }
 
-.menu-horizontal .menu-item a:hover {
-  color: var(--header-mainmenu-active-color) !important;
+.menu-breadcrumbs .menu-item a:hover {
+  color: var(--header-mainmenu-active-color);
 }
-.menu-horizontal .current a,
-.menu-horizontal .current a:hover {
-  color: var(--header-mainmenu-active-color) !important;
+
+.menu-breadcrumbs .current a,
+.menu-breadcrumbs .current a:hover {
+  color: var(--header-mainmenu-active-color);
 }
 
 // Item
@@ -510,7 +511,6 @@ body { font-family: var(--font-one);}
   .content-page .content-formatted h3 { font-size: calc(var(--h3-font-size) * 1.4);}
   .content-page .header-title, .content-page .header-title a, .content-page .header-title a:hover, .content-page .header-title .header-link, .content-page .header-title .header-link:hover { font-size: calc(var(--header-site-title-font-size) * 1.4);}
   .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link { font-size: calc(var(--content-submenu-font-size) * 1.4);}
-  .menu-sub .menu .menu-separator { font-size: calc(var(--content-submenu-font-size) * 1.4);}
   .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}
   .post-date { font-size: calc(var(--blog-list-date-font-size) * 1.4);}
   .content-formatted .form_submit input, .content-formatted .custom-btn { font-size: calc(var(--button-font-size) * 1.4);}

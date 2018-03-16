@@ -203,17 +203,17 @@ body {
   text-transform: var(--content-links-hover-text-transform);
 }
 
-.menu-horizontal .menu-item a {
-  color: var(--header-mainmenu-color) !important;
+.menu-breadcrumbs .menu-item a {
+  color: var(--header-mainmenu-color);
 }
 
-.menu-horizontal .menu-item a:hover {
-  color: var(--header-mainmenu-active-color) !important;
+.menu-breadcrumbs .menu-item a:hover {
+  color: var(--header-mainmenu-active-color);
 }
 
-.menu-horizontal .current a,
-.menu-horizontal .current a:hover {
-  color: var(--header-mainmenu-active-color) !important;
+.menu-breadcrumbs .current a,
+.menu-breadcrumbs .current a:hover {
+  color: var(--header-mainmenu-active-color);
 }
 
 .content-item-box .item-link,
@@ -508,10 +508,6 @@ body {
   }
 
   .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link {
-    font-size: calc(var(--content-submenu-font-size) * 1.4);
-  }
-
-  .menu-sub .menu .menu-separator {
     font-size: calc(var(--content-submenu-font-size) * 1.4);
   }
 
