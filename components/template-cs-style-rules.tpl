@@ -292,7 +292,7 @@ body {
 .content-formatted .svg .content-formatted .form_field_select {
   background-color: var(--form-field-background-color);
 }*/
-.content-area .edy-buy-button-variants .form_field_select {
+.content-formatted .edy-buy-button-variants .form_field_select {
   border: 1px solid var(--color-secondary) !important;
   color: var(--color-secondary);
   font-family: var(--font-one);
