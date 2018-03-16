@@ -195,13 +195,14 @@
     }
 
     .without-image & {
-      border-color: transparent;
+      border-color: rgba($color-black, .1);
       border-style: solid;
       border-width: 1px;
     }
 
     .item-placeholder {
       padding: .5em;
+      font-size: 22px;
     }
   }
 
