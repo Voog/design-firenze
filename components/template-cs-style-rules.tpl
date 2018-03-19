@@ -14,10 +14,6 @@ body {
   color: var(--h1-color);
 }
 
-.content-body .content-item-title h1 {
-  color: var(--color-secondary);
-}
-
 .content-page .content-formatted h2, .content-formatted h2,
 .front-page .light-background .content-formatted h2 {
   font-size: var(--h2-font-size);
@@ -292,12 +288,6 @@ body {
 .content-formatted .svg .content-formatted .form_field_select {
   background-color: var(--form-field-background-color);
 }*/
-.content-formatted .edy-buy-button-variants .form_field_select {
-  border: 1px solid var(--color-secondary) !important;
-  color: var(--color-secondary);
-  font-family: var(--font-one);
-}
-
 .svg .content-page .content-formatted .form_field_checkbox + .form_control_indicator,
 .svg .content-page .content-formatted .form_field_radio + .form_control_indicator,
 .content-formatted .form_field_textfield, .content-formatted .form_field_textarea,
@@ -320,10 +310,15 @@ body {
 .form_field_file,
 .form_field .edy-fe-label,
 .content-formatted .form_field,
+.content-formatted .form_field .form_field_select,
 .dark-background .content-formatted .form_field {
   color: var(--form-field-text-color);
   font-style: var(--form-field-text-font-style);
   text-transform: var(--form-field-text-text-transform);
+}
+
+.content-formatted .form_field .form_field_select {
+  border: 1px solid var(--form-field-text-color) !important;
 }
 
 .content-formatted .form_field .form_field_label,
