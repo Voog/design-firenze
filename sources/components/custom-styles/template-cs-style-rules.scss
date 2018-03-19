@@ -240,10 +240,9 @@ body {
   color: var(--header-mainmenu-active-color);
 }
 
-// Item
-.content-item-box .item-link,
-.content-item-box .item-title {
-  color: var(--color-primary);
+// Item-link
+.item-list-page .item-link {
+  color: (var(--h2-color));
 }
 
 // Voog reference

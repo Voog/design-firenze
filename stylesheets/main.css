@@ -3235,14 +3235,15 @@ a img {
           hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
 }
 .item-title .item-link {
-  font-size: 14px;
   text-align: center;
+}
+.item-list-page .item-title {
+  font-weight: 400;
+  font-size: 14px;
 }
 .content-item-box > .item-title {
   margin-top: 15px;

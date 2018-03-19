@@ -242,15 +242,16 @@
 
 .item-title {
   @include hyphenate;
-  font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
-
 
   .item-link {
-    font-size: 14px;
     text-align: center;
+  }
+
+  .item-list-page & {
+    font-weight: 400;
+    font-size: 14px;
   }
 
   .content-item-box > & {

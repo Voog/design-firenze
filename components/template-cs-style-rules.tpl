@@ -212,9 +212,8 @@ body {
   color: var(--header-mainmenu-active-color);
 }
 
-.content-item-box .item-link,
-.content-item-box .item-title {
-  color: var(--color-primary);
+.item-list-page .item-link {
+  color: var(--h2-color);
 }
 
 .footer .voog-reference a {
