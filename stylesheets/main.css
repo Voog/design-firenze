@@ -3024,23 +3024,19 @@ a img {
   padding-top: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-@media screen and (max-width: 480px) {
-  .item-list-page .content-item-box {
-    display: block;
-  }
-}
-@media screen and (min-width: 481px) {
-  .item-list-page .content-item-box {
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 640px) {
   .item-list-page .content-item-box {
     width: 50%;
-    padding-right: 10px;
-    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 641px) {
+  .item-list-page .content-item-box {
+    vertical-align: top;
+    width: 33.3%;
   }
 }
 .content-item-box .top-inner {
