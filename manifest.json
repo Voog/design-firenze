@@ -386,12 +386,6 @@
   ],
   "assets": [
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-arrow-white.svg",
-      "kind": "assets",
-      "filename": "ico-arrow-white.svg"
-    },
-    {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/bebas-neue-regular-latin.eot",
       "kind": "assets",
