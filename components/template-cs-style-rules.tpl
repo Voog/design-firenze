@@ -173,7 +173,8 @@ body {
   color: var(--content-submenu-color);
 }
 
-.content-formatted, .post-content {
+.content-formatted, .post-content,
+.content-body .content-formatted {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
   color: var(--content-color);

@@ -503,8 +503,8 @@ a img {
 }
 
 .edy-buy-button-container .form_field {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 .edy-buy-button-variants .form_field {
@@ -3255,8 +3255,6 @@ a img {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: 700;
-}
-.content-body .content-item-title {
   padding-top: 3px;
 }
 
@@ -3280,11 +3278,6 @@ a img {
             flex: 1;
     max-width: 520px;
     margin-right: 40px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .item-page .content-body {
-    padding-top: 30px;
   }
 }
 @media screen and (min-width: 481px) {

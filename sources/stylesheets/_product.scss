@@ -263,9 +263,6 @@
     margin-top: 0;
     text-transform: uppercase;
     font-weight: 700;
-  }
-
-  .content-item-title {
     padding-top: 3px;
   }
 }
@@ -292,10 +289,6 @@
 
 .content-body {
   .item-page & {
-    @media screen and (max-width: $mobile-1) {
-      padding-top: 30px;
-    }
-
     @media screen and (min-width: $mobile-1 + 1) {
       flex: 1;
     }
