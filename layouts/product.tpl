@@ -24,6 +24,7 @@
 
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
+  {% assign items_page = true %}
   {% include "edicy-tools-variables" %}
   {% include "html-head" %}
   {% include "edicy-tools-styles" %}
