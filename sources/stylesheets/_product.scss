@@ -2,8 +2,8 @@
   color: rgba($color-black, .8);
 
   .item-page &{
-  margin-bottom: 40px;
-  padding-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 10px;
   }
 
   .item-list-page & {
@@ -260,10 +260,8 @@
 }
 
 .content-body{
-  .content-item-title h1 {
-    margin-bottom: 0;
-    margin-top: 0;
-    text-transform: uppercase;
+  .content-header {
+    padding-bottom: 8px;
   }
 }
 
@@ -296,7 +294,7 @@
 }
 
 .intro-content {
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 
 .content-item-boxes {

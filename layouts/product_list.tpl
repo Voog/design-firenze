@@ -21,7 +21,7 @@
       <div class="wrap js-wrap">
         {% include "header" %}
         <main class="content" role="main">
-          <div class="content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</div>
+          <div class="intro-content content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</div>
           {% include "menu-breadcrumbs" %}
           <section class="content-item-boxes">
             {% if site.root_item.selected? %}

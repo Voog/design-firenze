@@ -3022,7 +3022,7 @@ a img {
   color: rgba(0, 0, 0, 0.8);
 }
 .item-page .content-item-box {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-top: 10px;
 }
 .item-list-page .content-item-box {
@@ -3259,10 +3259,8 @@ a img {
   text-align: center;
 }
 
-.content-body .content-item-title h1 {
-  margin-bottom: 0;
-  margin-top: 0;
-  text-transform: uppercase;
+.content-body .content-header {
+  padding-bottom: 8px;
 }
 
 .svg-spritesheet {
@@ -3296,7 +3294,7 @@ a img {
 }
 
 .intro-content {
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 
 .content-item-boxes {
