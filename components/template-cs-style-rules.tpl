@@ -213,9 +213,9 @@ body {
   color: var(--header-mainmenu-active-color);
 }
 
-.item-list-page .item-link {
+.item-list-page .item-link,
+.item-list-page .item-title {
   color: var(--h2-color);
-  font-size: var(--content-font-size);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
 }
@@ -471,6 +471,10 @@ body {
 
   .topbar .wrap {
     max-width: calc(var(--site-width) * 1.4);
+  }
+
+  .content-body .content-formatted {
+    font-size: calc(var(--content-font-size) * 1.4);
   }
 
   .content-formatted {
