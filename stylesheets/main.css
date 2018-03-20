@@ -1697,6 +1697,11 @@ a img {
   line-height: 16px;
   font-size: 12px;
 }
+@media screen and (min-width: 1400px) {
+  .menu-horizontal.menu-breadcrumbs {
+    font-size: 16px;
+  }
+}
 .menu-horizontal.menu-breadcrumbs .menu-item {
   margin-right: 3px;
 }
@@ -3238,6 +3243,11 @@ a img {
 .item-title .item-link {
   text-align: center;
 }
+@media screen and (min-width: 1400px) {
+  .item-title .item-link {
+    font-size: 20px !important;
+  }
+}
 .item-list-page .item-title {
   font-weight: 400;
   font-size: 14px;
@@ -3250,12 +3260,9 @@ a img {
 }
 
 .content-body .content-item-title h1 {
-  font-size: 24px !important;
   margin-bottom: 0;
   margin-top: 0;
   text-transform: uppercase;
-  font-weight: 700;
-  padding-top: 3px;
 }
 
 .svg-spritesheet {

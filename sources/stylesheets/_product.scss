@@ -241,6 +241,9 @@
 
   .item-link {
     text-align: center;
+    @media screen and (min-width: $large-1) {
+      font-size: 20px !important;
+    }
   }
 
   .item-list-page & {
@@ -258,12 +261,9 @@
 
 .content-body{
   .content-item-title h1 {
-    font-size: 24px !important;
     margin-bottom: 0;
     margin-top: 0;
     text-transform: uppercase;
-    font-weight: 700;
-    padding-top: 3px;
   }
 }
 

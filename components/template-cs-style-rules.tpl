@@ -215,6 +215,9 @@ body {
 
 .item-list-page .item-link {
   color: var(--h2-color);
+  font-size: var(--content-font-size);
+  font-style: var(--content-links-font-style);
+  font-weight: var(--content-links-font-weight);
 }
 
 .footer .voog-reference a {
