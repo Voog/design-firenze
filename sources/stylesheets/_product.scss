@@ -244,6 +244,10 @@
     @media screen and (min-width: $large-1) {
       font-size: 20px !important;
     }
+
+    &:hover {
+      opacity: .7;
+    }
   }
 
   .item-list-page & {
