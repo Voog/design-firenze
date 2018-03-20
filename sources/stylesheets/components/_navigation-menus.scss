@@ -10,11 +10,16 @@
   }
 
   &.menu-breadcrumbs {
-    padding-top: 15px;
     line-height: 16px;
-    font-size: 12px;
-    @media screen and (min-width: $large-1) {
+
+    @media screen and (min-width: $large-1 + 1) {
       font-size: 16px;
+    }
+    @media screen and (min-width: $mobile-1 + 1) and (max-width: $large-1) {
+      font-size: 13px;
+    }
+    @media screen and (max-width: $mobile-1) {
+      font-size: 12px;
     }
 
     .menu-item {

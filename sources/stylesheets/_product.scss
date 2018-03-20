@@ -141,9 +141,6 @@
     // scss-lint:enable ImportantRule
     align-items: center;
     justify-content: center;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.2;
     text-align: center;
 
     .public  & {
@@ -198,7 +195,16 @@
 
     .item-placeholder {
       padding: .5em;
-      font-size: 22px;
+
+      @media screen and (min-width: $large-1 + 1) {
+        font-size: 24px;
+      }
+      @media screen and (min-width: $mobile-1 + 1) and (max-width: $large-1) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: $mobile-1) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -221,16 +227,6 @@
         border-style: solid;
       }
     }
-
-    .edy-img-drop-area-placeholder {
-      @media screen and (max-width: $mobile) {
-        font-size: 13px;
-      }
-
-      @media screen and (min-width: $mobile + 1) {
-        font-size: 16px;
-      }
-    }
   }
 }
 
@@ -238,21 +234,35 @@
   @include hyphenate;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 400;
+
+  @media screen and (min-width: $large-1 + 1) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: $mobile-1 + 1) and (max-width: $large-1) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: $mobile-1) {
+    font-size: 14px;
+  }
 
   .item-link {
     text-align: center;
-    @media screen and (min-width: $large-1) {
-      font-size: 20px !important;
+    font-weight: 400;
+
+    @media screen and (min-width: $large-1 + 1) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: $mobile-1 + 1) and (max-width: $large-1) {
+      font-size: 17px;
+    }
+    @media screen and (max-width: $mobile-1) {
+      font-size: 14px;
     }
 
     &:hover {
       opacity: .7;
     }
-  }
-
-  .item-list-page & {
-    font-weight: 400;
-    font-size: 14px;
   }
 
   .content-item-box > & {
@@ -298,7 +308,7 @@
 }
 
 .intro-content {
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 
 .content-item-boxes {
