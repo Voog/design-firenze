@@ -505,12 +505,15 @@ a img {
 .content-formatted .edy-buy-button-container .form_field {
   padding-top: 15px;
 }
+.content-formatted .edy-buy-button-container .form_field:first-child {
+  padding-top: 15px !important;
+}
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 .content-formatted .edy-buy-button-variants .form_field:first-child {
-  padding-top: 10px;
+  padding-top: 10px !important;
 }
 .content-formatted .edy-buy-button-variants .form_field_select {
   width: initial;

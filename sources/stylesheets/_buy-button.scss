@@ -7,6 +7,10 @@
     // sass-lint:disable class-name-format
     .form_field {
       padding-top: 15px;
+
+      &:first-child {
+        padding-top: 15px !important;
+      }
     }
     // sass-lint:enable class-name-format
   }
@@ -18,7 +22,7 @@
       padding-bottom: 5px;
 
       &:first-child {
-        padding-top: 10px;
+        padding-top: 10px !important;
       }
     }
 
