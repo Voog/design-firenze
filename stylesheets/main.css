@@ -3194,7 +3194,7 @@ a img {
   height: auto;
 }
 .with-image .item-top .top-inner {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border: 0;
 }
 .without-image .item-top .top-inner {
