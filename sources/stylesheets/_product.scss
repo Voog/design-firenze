@@ -247,36 +247,12 @@
     @include hyphenate;
     margin-top: 15px;
     margin-bottom: 5px;
-    line-height: 1.2;
     text-align: center;
-    font-weight: 400;
-
-    @media screen and (min-width: $large-1 + 1) {
-      font-size: 20px;
-    }
-    @media screen and (min-width: $mobile-1 + 1) and (max-width: $large-1) {
-      font-size: 17px;
-    }
-    @media screen and (max-width: $mobile-1) {
-      font-size: 14px;
-    }
 
     .item-link {
       margin-top: 15px;
       margin-bottom: 5px;
-      line-height: 1.2;
       text-align: center;
-      font-weight: 400;
-
-      @media screen and (min-width: $large-1 + 1) {
-        font-size: 20px;
-      }
-      @media screen and (min-width: $mobile-1 + 1) and (max-width: $large-1) {
-        font-size: 17px;
-      }
-      @media screen and (max-width: $mobile-1) {
-        font-size: 14px;
-      }
 
       &:hover {
         opacity: .7;

@@ -13,13 +13,13 @@
     line-height: 16px;
 
     @media screen and (min-width: $large-1 + 1) {
-      font-size: 16px;
+      font-size: 14px;
     }
     @media screen and (min-width: $mobile-1 + 1) and (max-width: $large-1) {
-      font-size: 13px;
+      font-size: 12px;
     }
     @media screen and (max-width: $mobile-1) {
-      font-size: 12px;
+      font-size: 11px;
     }
 
     .menu-item {

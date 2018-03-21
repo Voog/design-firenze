@@ -31,9 +31,9 @@
       <div class="top-inner aspect-ratio-inner image-drop-area {{ item_image_orientation }} {{ item_image_crop_state }} js-content-item-img-drop-area" data-image="{{ menu_level.image.for-width-680.schemeless_url }}"></div>
     </div>
 
-    <h2 class="item-title">
+    <h3 class="item-title">
       <a class="item-link" href="{{ menu_level.url }}">{{ menu_level.title }}</a>
-    </h2>
+    </h3>
   </div>
 {% else %}
   <a class="content-item-box {{ item_image_state }} js-content-item-box" href="{{ menu_level.url }}">
@@ -48,6 +48,6 @@
       </div>
     </div>
 
-    <h2 class="item-title">{{ menu_level.title }}</h2>
+    <h3 class="item-title">{{ menu_level.title }}</h2>
   </a>
 {% endif %}

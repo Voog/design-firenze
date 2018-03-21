@@ -215,9 +215,11 @@ body {
 
 .item-list-page .item-link,
 .item-list-page .item-title {
-  color: var(--h2-color);
-  font-style: var(--content-links-font-style);
-  font-weight: var(--content-links-font-weight);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-font-weight);
+  font-style: var(--h3-font-style);
+  color: var(--h3-color);
 }
 
 .footer .voog-reference a {
@@ -488,6 +490,14 @@ body {
   }
 
   .content-page .content-formatted h3 {
+    font-size: calc(var(--h3-font-size) * 1.4);
+  }
+
+  .item-list-page .item-title {
+    font-size: calc(var(--h3-font-size) * 1.4);
+  }
+
+  .item-list-page .item-link {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
 

@@ -1697,17 +1697,17 @@ a img {
 }
 @media screen and (min-width: 1401px) {
   .menu-horizontal.menu-breadcrumbs {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1400px) {
   .menu-horizontal.menu-breadcrumbs {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 480px) {
   .menu-horizontal.menu-breadcrumbs {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 .menu-horizontal.menu-breadcrumbs .menu-item {
@@ -3263,46 +3263,12 @@ a img {
   word-wrap: break-word;
   margin-top: 15px;
   margin-bottom: 5px;
-  line-height: 1.2;
   text-align: center;
-  font-weight: 400;
-}
-@media screen and (min-width: 1401px) {
-  .item-list-page .item-title {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 1400px) {
-  .item-list-page .item-title {
-    font-size: 17px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .item-list-page .item-title {
-    font-size: 14px;
-  }
 }
 .item-list-page .item-title .item-link {
   margin-top: 15px;
   margin-bottom: 5px;
-  line-height: 1.2;
   text-align: center;
-  font-weight: 400;
-}
-@media screen and (min-width: 1401px) {
-  .item-list-page .item-title .item-link {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 1400px) {
-  .item-list-page .item-title .item-link {
-    font-size: 17px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .item-list-page .item-title .item-link {
-    font-size: 14px;
-  }
 }
 .item-list-page .item-title .item-link:hover {
   opacity: .7;
