@@ -245,20 +245,6 @@ body {
   background-color: var(--button-background-color);
 }
 
-.form_field .custom-btn:not(.custom-btn-disabled):hover,
-.form_field .custom-btn:not(.custom-btn-disabled) {
-  background: var(--button-background-color);
-  color: var(--button-color);
-  padding: calc(var(--button-padding) - 3px) var(--button-padding);
-  font-size: var(--button-font-size);
-}
-
-.form_field .custom-btn-disabled {
-  color: var(--button-color);
-  padding: calc(var(--button-padding) - 3px) var(--button-padding);
-  font-size: var(--button-font-size);
-}
-
 .light-background .content-formatted table td {
   color: var(--dark-primary);
   border-top: 1px solid var(--dark-primary);
