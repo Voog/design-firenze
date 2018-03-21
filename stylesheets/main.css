@@ -2979,9 +2979,6 @@ a img {
   color: rgba(255, 255, 255, 0.66) !important;
 }
 
-.content-item-box {
-  color: rgba(0, 0, 0, 0.8);
-}
 .item-page .content-item-box {
   margin-bottom: 30px;
   padding-top: 10px;
@@ -2993,6 +2990,9 @@ a img {
   display: inline-block;
   padding-right: 10px;
   padding-left: 10px;
+}
+.item-list-page .content-item-box:hover {
+  opacity: 0.9;
 }
 @media screen and (max-width: 640px) {
   .item-list-page .content-item-box {
@@ -3028,10 +3028,6 @@ a img {
 }
 .editmode .content-item-box:hover .top-inner::after, .item-list-page .content-item-box:hover .top-inner::after {
   opacity: .2;
-}
-
-.item-list-page .content-item-box:hover {
-  opacity: 0.9;
 }
 
 .item-top {
@@ -3227,7 +3223,7 @@ a img {
   opacity: .7;
 }
 
-.content-body .content-header {
+.item-page .content-body .content-header {
   padding-bottom: 8px;
 }
 

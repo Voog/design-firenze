@@ -1,6 +1,4 @@
 .content-item-box {
-  color: rgba($color-black, .8);
-
   .item-page &{
     margin-bottom: 30px;
     padding-top: 10px;
@@ -12,6 +10,10 @@
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
+
+    &:hover {
+      opacity: 0.9;
+    }
 
     @media screen and (max-width: $tablet-3) {
       width: 50%;
@@ -54,14 +56,6 @@
         }
       }
       // scss-lint:enable NestingDepth
-    }
-  }
-}
-
-.item-list-page {
-  .content-item-box {
-    &:hover {
-      opacity: 0.9;
     }
   }
 }
@@ -261,9 +255,11 @@
   }
 }
 
-.content-body{
-  .content-header {
-    padding-bottom: 8px;
+.item-page {
+  .content-body{
+    .content-header {
+      padding-bottom: 8px;
+    }
   }
 }
 
