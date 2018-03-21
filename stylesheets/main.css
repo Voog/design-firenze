@@ -3213,7 +3213,7 @@ a img {
 }
 @media screen and (min-width: 481px) and (max-width: 1400px) {
   .item-top .top-inner .edy-img-drop-area-placeholder {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
