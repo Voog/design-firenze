@@ -236,6 +236,12 @@
   }
 }
 
+.item-page{
+  .content-item-title {
+    margin-bottom: 15px;
+  }
+}
+
 .item-list-page {
   .item-title {
     @include hyphenate;
@@ -244,6 +250,7 @@
     text-align: center;
 
     .item-link {
+      @include hyphenate;
       margin-top: 15px;
       margin-bottom: 5px;
       text-align: center;

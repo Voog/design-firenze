@@ -506,14 +506,14 @@ a img {
   padding-top: 15px;
 }
 .content-formatted .edy-buy-button-container .form_field:first-child {
-  padding-top: 15px !important;
+  padding-top: 15px;
 }
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 .content-formatted .edy-buy-button-variants .form_field:first-child {
-  padding-top: 10px !important;
+  padding-top: 5px;
 }
 .content-formatted .edy-buy-button-variants .form_field_select {
   width: initial;
@@ -3208,6 +3208,10 @@ a img {
   border-style: solid;
 }
 
+.item-page .content-item-title {
+  margin-bottom: 15px;
+}
+
 .item-list-page .item-title {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -3219,6 +3223,11 @@ a img {
   text-align: center;
 }
 .item-list-page .item-title .item-link {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
   margin-top: 15px;
   margin-bottom: 5px;
   text-align: center;
