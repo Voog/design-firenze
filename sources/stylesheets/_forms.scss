@@ -136,9 +136,10 @@
     background-position: 90% 13px;
     background-repeat: no-repeat;
     border: none;
+    outline: 0;
 
-    @include query($large-1, 'min-width') {
-      padding: #{round(7 * $wide-view-multiplier)}px #{round(9 * $wide-view-multiplier)}px;
+    @media screen and (min-width: $large-1 + 1) {
+      background-position: 90% 16px;
     }
   }
 
