@@ -399,12 +399,6 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-arrow.svg",
-      "kind": "assets",
-      "filename": "ico-arrow.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
       "file": "assets/ico-voog-black.svg",
       "kind": "assets",
       "filename": "ico-voog-black.svg"
