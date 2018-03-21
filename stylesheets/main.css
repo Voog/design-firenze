@@ -502,24 +502,34 @@ a img {
   }
 }
 
-.edy-buy-button-variants .form_field {
+.common-page .content-formatted .edy-buy-button-container .form_field {
+  padding-top: 15px;
+}
+.common-page .content-formatted .edy-buy-button-variants .form_field {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.common-page .content-formatted .edy-buy-button-variants .form_field_select {
+  width: initial;
+}
+
+.item-page .edy-buy-button-variants .form_field {
   padding-top: 10px !important;
   padding-bottom: 0px !important;
 }
-.edy-buy-button-variants .form_field .form_field_label {
+.item-page .edy-buy-button-variants .form_field .form_field_label {
   font-size: 16px;
-  font-weight: 400 !important;
+  font-weight: 400;
   position: relative;
   display: block;
 }
-.edy-buy-button-variants .form_field .form_field_select {
+.item-page .edy-buy-button-variants .form_field .form_field_select {
   position: relative;
   display: block;
   width: initial;
   margin-top: 7px;
 }
-
-.content-formatted .edy-buy-button-variants .form_field_select {
+.item-page .content-formatted .edy-buy-button-variants .form_field_select {
   padding: 2px 25px 2px 6px;
   font-size: 14px;
   font-weight: 400;
@@ -535,12 +545,11 @@ a img {
   outline: 0;
   background-color: #FFFFFF;
 }
-
-.form_field .custom-btn-disabled {
+.item-page .form_field .custom-btn-disabled {
   cursor: default;
   background-color: #ccc;
 }
-.form_field .custom-btn {
+.item-page .form_field .custom-btn {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -552,7 +561,7 @@ a img {
   word-wrap: break-word;
   text-decoration: none;
 }
-.form_field .custom-btn:not(.custom-btn-disabled):hover {
+.item-page .form_field .custom-btn:not(.custom-btn-disabled):hover {
   color: #FFFFFF;
   -webkit-transition: 300ms;
   -o-transition: 300ms;

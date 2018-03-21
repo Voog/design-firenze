@@ -1,64 +1,94 @@
 // =============================================================================
-// Content area buy button
+// Content area buy button on common page
+// =============================================================================
+.common-page {
+  .content-formatted {
+    .edy-buy-button-container {
+      // sass-lint:disable class-name-format
+      .form_field {
+        padding-top: 15px;
+      }
+      // sass-lint:enable class-name-format
+    }
+
+    .edy-buy-button-variants {
+      // sass-lint:disable class-name-format
+      .form_field {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .form_field_select {
+        width: initial;
+      }
+      // sass-lint:enable class-name-format
+    }
+  }
+}
+
+// =============================================================================
+// Content area buy button on item page
 // =============================================================================
 
-.edy-buy-button-variants {
-  .form_field{
-    padding-top: 10px !important;
-    padding-bottom: 0px !important;
-    .form_field_label {
-      font-size: 16px;
-      font-weight: 400 !important;
-      position: relative;
-      display: block;
-    }
-
-    .form_field_select {
-      position: relative;
-      display: block;
-      width: initial;
-      margin-top: 7px;
-    }
-  }
-}
-
-.content-formatted{
+.item-page {
   .edy-buy-button-variants {
-    .form_field_select {
-      padding: 2px 25px 2px 6px;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.5;
-      vertical-align: bottom;
-      background-image: url(../assets/ico-arrow.svg);
-      background-position: right 10px center;
-      background-repeat: no-repeat;
-      border-radius: 0;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      outline: 0;
-      background-color: $white;
+    .form_field{
+      padding-top: 10px !important;
+      padding-bottom: 0px !important;
+      .form_field_label {
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        display: block;
+      }
+
+      .form_field_select {
+        position: relative;
+        display: block;
+        width: initial;
+        margin-top: 7px;
+      }
     }
   }
-}
 
-.form_field{
-  .custom-btn-disabled {
-    cursor: default;
-    background-color: $color-disabled;
+  .content-formatted{
+    .edy-buy-button-variants {
+      .form_field_select {
+        padding: 2px 25px 2px 6px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        vertical-align: bottom;
+        background-image: url(../assets/ico-arrow.svg);
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        background-color: $white;
+      }
+    }
   }
 
-  .custom-btn {
-    display: inline-block;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    @include hyphenate(true);
-    text-decoration: none;
+  .form_field{
+    .custom-btn-disabled {
+      cursor: default;
+      background-color: $color-disabled;
+    }
 
-    &:not(.custom-btn-disabled):hover {
-      color: $white;
-      transition: $transition;
+    .custom-btn {
+      display: inline-block;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      @include hyphenate(true);
+      text-decoration: none;
+
+      &:not(.custom-btn-disabled):hover {
+        color: $white;
+        transition: $transition;
+      }
     }
   }
 }
