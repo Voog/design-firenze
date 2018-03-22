@@ -2983,12 +2983,13 @@ a img {
   color: rgba(255, 255, 255, 0.66) !important;
 }
 
-.item-page .content-item-box {
-  margin-bottom: 30px;
+.content-item-box {
   padding-top: 10px;
 }
+.item-page .content-item-box {
+  margin-bottom: 30px;
+}
 .item-list-page .content-item-box {
-  padding-top: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -3272,12 +3273,15 @@ a img {
   }
 }
 
-.intro-content {
-  padding-bottom: 35px;
+@media screen and (max-width: 1400px) {
+  .intro-content {
+    padding-bottom: 25px;
+  }
 }
-
-.items-body {
-  margin-bottom: 10px;
+@media screen and (min-width: 1401px) {
+  .intro-content {
+    padding-bottom: 35px;
+  }
 }
 
 @media screen and (min-width: 481px) {

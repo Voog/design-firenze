@@ -1,11 +1,11 @@
 .content-item-box {
+  padding-top: 10px;
+
   .item-page &{
     margin-bottom: 30px;
-    padding-top: 10px;
   }
 
   .item-list-page & {
-    padding-top: 15px;
     box-sizing: border-box;
     display: inline-block;
     padding-right: 10px;
@@ -299,13 +299,15 @@
 }
 
 .intro-content {
-  padding-bottom: 35px;
+  @media screen and (max-width: $large-1) {
+  padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: $large-1 + 1) {
+    padding-bottom: 35px;
+  }
 }
 
-
-.items-body {
-  margin-bottom: 10px;
-}
 @media screen and (min-width: $mobile-1 + 1) {
   .items-body {
     display: flex;
