@@ -137,6 +137,9 @@
     background-repeat: no-repeat;
     border: none;
     outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
     @media screen and (min-width: $large-1 + 1) {
       background-position: 90% 16px;

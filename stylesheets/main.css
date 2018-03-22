@@ -2412,6 +2412,9 @@ a img {
   background-repeat: no-repeat;
   border: none;
   outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media screen and (min-width: 1401px) {
   .content-formatted .form_field_select {
