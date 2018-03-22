@@ -1,5 +1,6 @@
 .content-item-box {
   padding-top: 10px;
+  text-align: center;
 
   .item-page &{
     margin-bottom: 30px;
@@ -8,8 +9,10 @@
   .item-list-page & {
     box-sizing: border-box;
     display: inline-block;
+    vertical-align: top;
     padding-right: 10px;
     padding-left: 10px;
+    margin-bottom: 12px;
 
     &:hover {
       opacity: 0.9;
@@ -20,7 +23,6 @@
     }
 
     @media screen and (min-width: $tablet-3 + 1) {
-      vertical-align: top;
       width: 33.3%;
     }
   }
@@ -243,7 +245,6 @@
 }
 
 .item-list-page {
-
   .content-item-boxes {
     font-size: 0;
     line-height: 1.3;
@@ -253,14 +254,14 @@
 
   .item-title {
     @include hyphenate;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     text-align: center;
 
     .item-link {
       @include hyphenate;
-      margin-top: 15px;
-      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-bottom: 0px;
       text-align: center;
 
       &:hover {

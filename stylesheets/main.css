@@ -2985,6 +2985,7 @@ a img {
 
 .content-item-box {
   padding-top: 10px;
+  text-align: center;
 }
 .item-page .content-item-box {
   margin-bottom: 30px;
@@ -2993,8 +2994,10 @@ a img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
+  vertical-align: top;
   padding-right: 10px;
   padding-left: 10px;
+  margin-bottom: 12px;
 }
 .item-list-page .content-item-box:hover {
   opacity: 0.9;
@@ -3006,7 +3009,6 @@ a img {
 }
 @media screen and (min-width: 641px) {
   .item-list-page .content-item-box {
-    vertical-align: top;
     width: 33.3%;
   }
 }
@@ -3225,8 +3227,8 @@ a img {
           hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   text-align: center;
 }
 .item-list-page .item-title .item-link {
@@ -3235,8 +3237,8 @@ a img {
           hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   text-align: center;
 }
 .item-list-page .item-title .item-link:hover {
