@@ -386,8 +386,9 @@ border: 1px solid var(--form-field-text-color) !important;
 }
 
 // Image - placeholder
-.image-drop-area  .edy-img-drop-area-placeholder {
-color: var(--color-secondary);
+.top-inner  .edy-img-drop-area-placeholder,
+.top-inner .item-placeholder  {
+color: var(--h3-color);
 }
 
 // Main styles - width

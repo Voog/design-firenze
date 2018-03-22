@@ -353,8 +353,9 @@ body {
   color: var(--blog-list-date-color);
 }
 
-.image-drop-area .edy-img-drop-area-placeholder {
-  color: var(--color-secondary);
+.top-inner .edy-img-drop-area-placeholder,
+.top-inner .item-placeholder {
+  color: var(--h3-color);
 }
 
 .content-page .container .wrap {
