@@ -449,12 +449,12 @@
       &.active,
       &.active:hover {
         @include opacity(0.5);
-        @include filter(grayscale(100%));
+        filter: grayscale(100%);
       }
 
       &:hover {
         @include opacity(0.75);
-        @include filter(grayscale(50%));
+        filter: grayscale(50%);
       }
 
       &:before,
