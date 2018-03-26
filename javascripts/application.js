@@ -1073,7 +1073,7 @@ MMCQ = (function() {
         // String for feedback if no results are found.
         noResults: noResultsString
       });
-    } 
+    }
   };
 
   // Enables the usage of the initiations outside this file.
