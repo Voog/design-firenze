@@ -24,7 +24,10 @@
         {% include "tags-blog" %}
 
         <main class="content" role="main">
+          <section class="content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
+          
           {% addbutton %}
+          
           {% for article in articles %}
             <article class="post">
               <header class="post-header">
