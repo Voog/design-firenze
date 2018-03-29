@@ -1675,10 +1675,6 @@ a img {
   margin-top: 3px;
 }
 
-.signout-btn-pad {
-  padding-top: 20px;
-}
-
 /* CONTENT */
 .content {
   display: block;
@@ -2873,6 +2869,9 @@ a img {
 }
 .footer.light-background .content-formatted a:hover {
   color: black;
+}
+.footer .signout-btn-margin {
+  padding-top: 25px;
 }
 
 .voog-reference a {

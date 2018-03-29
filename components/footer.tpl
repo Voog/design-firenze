@@ -5,7 +5,7 @@
       <div class="voog-reference">{% loginblock %}Voog{% endloginblock %}</div>
     {% endif %}
     {% if page.private? %}
-      <div class="signout-btn-pad"></div>
+      <div class="signout-btn-margin"></div>
     {% endif %}
   </div>
 </footer>
