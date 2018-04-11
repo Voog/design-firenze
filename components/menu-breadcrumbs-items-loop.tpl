@@ -1,6 +1,6 @@
 {% for item in menu_items %}
 
-  {% if site.root_item.layout_title == product_list_layout or site.root_item.layout_title == product_layout %}
+  {% if site.root_item.layout_title == product_list_layout %}
     {% assign page_Lvl = 0 %}
   {% else %}
     {% assign page_Lvl = 1 %}
