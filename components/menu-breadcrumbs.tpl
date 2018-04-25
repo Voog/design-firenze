@@ -28,6 +28,6 @@
       {% endif %}
     {% endif %}
   {% else %}
-    {% include "menu-breadcrumbs-buttons-loop" menu_items: site.menuitems %}
+    {% include "menu-breadcrumbs-buttons-loop" %}
   {% endif %}
 </ul>

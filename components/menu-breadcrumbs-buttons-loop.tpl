@@ -1,4 +1,6 @@
-{% for item in menu_items %}
+{% for i in (1..5) %}
+  {% assign level_str = 'menuitems_on_level_' | append: i %}
+  {% for item in site[level_str] %}
   {% if item.selected? %}
     {% if item.current? and editmode %}
       {% if item.untranslated_children.size > 0 %}
@@ -14,8 +16,5 @@
       {% endunless %}
     {% endif %}
   {% endif %}
-
-  {% if item.visible_children.size > 0 %}
-    {% include "menu-breadcrumbs-buttons-loop" menu_items: item.visible_children  %}
-  {% endif %}
+{% endfor %}
 {% endfor %}
