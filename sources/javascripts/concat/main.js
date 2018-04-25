@@ -771,8 +771,7 @@
   var setHeaderMenuInitialWidth = function() {
     var $headerMenu = $('.js-header-menu');
 
-    $headerMenu.attr('data-initial-width', $headerMenu.outerWidth(true));
-  };
+    $headerMenu.attr('data-initial-width', $headerMenu.outerWidth(true));  };
 
   // Enables the usage of the initiations outside this file.
   // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
@@ -789,7 +788,8 @@
     // Initiations for specific functions.
     bindRootItemSettings: bindRootItemSettings,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
-    bindContentItemImageCropToggle: bindContentItemImageCropToggle
+    bindContentItemImageCropToggle: bindContentItemImageCropToggle,
+    bindSiteSearch: bindSiteSearch
   });
 
   // Initiates site wide functions.

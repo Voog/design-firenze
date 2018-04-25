@@ -1062,7 +1062,7 @@ MMCQ = (function() {
     }
   };
 
-// ===========================================================================
+  // ===========================================================================
   // Toggles product categories visibility in main menu.
   // ===========================================================================
   var bindRootItemSettings = function(rootItemValuesObj) {
@@ -1315,6 +1315,29 @@ MMCQ = (function() {
     $headerMenu.attr('data-initial-width', $headerMenu.outerWidth(true));
   };
 
+  // Binds site search functionality.
+  // ===========================================================================
+  var bindSiteSearch = function(searchForm, languageCode, noResultsString) {
+    if (searchForm) {
+      var search = new VoogSearch(searchForm, {
+        // This defines the number of results per query.
+        per_page: 10,
+        // Language code for restricting the search to page language.
+        lang: languageCode,
+        // If given, an DOM element results are rendered inside that element
+        resultsContainer: $('.js-voog-search-modal').get(0),
+        // Defines if modal should close on sideclick.
+        sideclick: true,
+        // Mobile checkpoint.
+        mobileModeWidth: 480,
+        // Updates results on every keypress.
+        updateOnKeypress: true,
+        // String for feedback if no results are found.
+        noResults: noResultsString
+      });
+    }
+  };
+
   // Enables the usage of the initiations outside this file.
   // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
   window.site = $.extend(window.site || {}, {
@@ -1330,7 +1353,8 @@ MMCQ = (function() {
     // Initiations for specific functions.
     bindRootItemSettings: bindRootItemSettings,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
-    bindContentItemImageCropToggle: bindContentItemImageCropToggle
+    bindContentItemImageCropToggle: bindContentItemImageCropToggle,
+    bindSiteSearch: bindSiteSearch
   });
 
   // Initiates site wide functions.
