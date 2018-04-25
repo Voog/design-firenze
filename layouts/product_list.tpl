@@ -25,13 +25,13 @@
           {% include "menu-breadcrumbs" %}
           <section class="content-item-boxes">
             {% if site.root_item.selected? %}
-              {% for level_1 in site.visible_menuitems_with_data %}
+              {% for level_1 in site.menuitems_with_data %}
                 {% if level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
                   {% include "product-list-item" menu_level: level_1 %}
                 {% endif %}
               {% endfor %}
               {% else %}
-              {% include "product-list-loop" menu_items: site.visible_menuitems %}
+              {% include "product-list-loop" menu_items: site.menuitems %}
             {% endif %}
           </section>
 
