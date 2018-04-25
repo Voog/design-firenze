@@ -1062,7 +1062,7 @@ MMCQ = (function() {
     }
   };
 
-  // ===========================================================================
+// ===========================================================================
   // Toggles product categories visibility in main menu.
   // ===========================================================================
   var bindRootItemSettings = function(rootItemValuesObj) {
@@ -1315,6 +1315,7 @@ MMCQ = (function() {
     $headerMenu.attr('data-initial-width', $headerMenu.outerWidth(true));
   };
 
+  // ===========================================================================
   // Binds site search functionality.
   // ===========================================================================
   var bindSiteSearch = function(searchForm, languageCode, noResultsString) {
