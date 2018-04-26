@@ -7,7 +7,7 @@
     {% endunless %}
 
     {% for item in site.menuitems %}
-        {% if site.root_item.layout_title == product_list_layout or site.root_item.layout_title == product_layout %}
+        {% if site.root_item.layout_title == product_list_layout %}
           {% if editmode %}
             {% include "menu-level-1-link" render_hidden_categories: true %}
           {% else %}
