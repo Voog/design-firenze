@@ -130,10 +130,10 @@
   }
 
   .form_field_select {
-    padding: 7px 16px 7px 9px;
-    text-indent: 0.01px;
+    position: relative;
+    padding-right: 18px;
     text-overflow: '';
-    background-position: 90% 13px;
+    background-position: right 6px center;
     background-repeat: no-repeat;
     border: none;
     outline: 0;
