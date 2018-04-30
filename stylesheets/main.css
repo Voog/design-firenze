@@ -3053,9 +3053,6 @@ a img {
   padding-left: 10px;
   margin-bottom: 12px;
 }
-.item-list-page .content-item-box:hover {
-  opacity: 0.9;
-}
 @media screen and (max-width: 640px) {
   .item-list-page .content-item-box {
     width: 50%;
@@ -3076,16 +3073,12 @@ a img {
   bottom: 0;
   left: 0;
   display: block;
+  background-color: white;
   content: '';
   opacity: 0;
   -webkit-transition: opacity .5s;
   -o-transition: opacity .5s;
   transition: opacity .5s;
-}
-.content-item-box:hover {
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
 }
 .editmode .content-item-box:hover .top-inner::after, .item-list-page .content-item-box:hover .top-inner::after {
   opacity: .2;
