@@ -180,6 +180,10 @@ body {
   color: var(--content-color);
 }
 
+.without-image .item-top .top-inner {
+  border-color: var(--h3-color);
+}
+
 .content-formatted a:not(.custom-btn),
 .blog-page .post-read-more-btn {
   font-style: var(--content-links-font-style);

@@ -204,6 +204,10 @@ body {
   color: var(--content-color);
 }
 
+// Content item box
+.without-image .item-top .top-inner {
+  border-color: var(--h3-color);
+}
 
 // Content - links
 // scss-lint:disable SingleLinePerSelector
