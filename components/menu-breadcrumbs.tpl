@@ -5,7 +5,7 @@
     {% endif %}
   {% endif %}
 
-  {% include "menu-breadcrumbs-items-loop" menu_items: site.menuitems_with_hidden %}
+  {% include "menu-breadcrumbs-items-loop" %}
 
   {% if site.root_item.selected? %}
     {% if editmode %}
