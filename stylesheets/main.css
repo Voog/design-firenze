@@ -2464,11 +2464,6 @@ a img {
   -moz-appearance: none;
   appearance: none;
 }
-@media screen and (min-width: 1401px) {
-  .content-formatted .form_field_select {
-    background-position: 90% 16px;
-  }
-}
 .no-svg .content-formatted .form_field_select {
   background-image: url("../images/ico-arrow-down.png");
 }
