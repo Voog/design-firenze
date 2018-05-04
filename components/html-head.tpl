@@ -37,7 +37,7 @@
     {% include "template-cs-main-styles" %}
     {% include "template-cs-header" %}
 
-    {% if common_page or items_page %}
+    {% if common_page %}
       {% include "template-cs-content" %}
     {% elsif blog_list %}
       {% include "template-cs-blog-list" %}
