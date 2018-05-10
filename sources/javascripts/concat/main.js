@@ -2,6 +2,7 @@
   var editmode = $('html').hasClass('editmode');
   var bgPickerFallback = $('body').hasClass('bgpicker-fallback');
 
+
   // Remove comments if debouncing is used.
   // Function to limit the rate at which a function can fire.
   var debounce = function(func, wait, immediate) {
@@ -512,6 +513,268 @@
   };
 
   // ===========================================================================
+  // Sets functions that will be initiated on items list layouts.
+  // ===========================================================================
+  var initItemsPage = function() {
+    if (!editmode()) {
+      bindContentItemImageLazyload();
+    }
+  };
+
+// ===========================================================================
+  // Toggles product categories visibility in main menu.
+  // ===========================================================================
+  var bindRootItemSettings = function(rootItemValuesObj) {
+    if (!('show_product_related_pages_in_main_menu' in rootItemValuesObj)) {
+      rootItemValuesObj.show_product_related_pages_in_main_menu = false;
+    }
+
+    $('.js-root-item-settings-toggle').each(function(index, languageMenuSettingsButton) {
+      var rootItemSettingsEditor = new Edicy.SettingsEditor(languageMenuSettingsButton, {
+        menuItems: [
+          {
+            "titleI18n": "show_in_main_menu",
+            "type": "checkbox",
+            "key": "show_product_related_pages_in_main_menu",
+            "states": {
+              "on": true,
+              "off": false
+            }
+          }
+        ],
+
+        buttonTitleI18n: "settings",
+
+        values: rootItemValuesObj,
+
+        containerClass: ['js-root-item-settings-popover', 'js-prevent-sideclick'],
+
+        preview: function(data) {
+          if (!data.show_product_related_pages_in_main_menu === true) {
+            $('.js-menu-item-products').addClass('is-hidden');
+          } else {
+            $('.js-menu-item-products').removeClass('is-hidden');
+          }
+        },
+
+        commit: function(data) {
+          siteData.set('settings_root_item', data);
+        }
+      });
+    });
+  };
+
+  // ===========================================================================
+  // Binds editmode image drop areas.
+  // ===========================================================================
+  var bindContentItemImgDropAreas = function(placeholderText) {
+    $('.js-content-item-img-drop-area').each(function(index, imgDropAreaTarget) {
+      var $imgDropAreaTarget = $(imgDropAreaTarget),
+          $contentItemBox = $imgDropAreaTarget.closest('.js-content-item-box'),
+          itemId = $contentItemBox.data('item-id'),
+          itemType = $contentItemBox.data('item-type'),
+          itemData = new Edicy.CustomData({
+            type: itemType,
+            id: itemId
+          });
+
+      var imgDropArea = new Edicy.ImgDropArea($imgDropAreaTarget, {
+        positionable: false,
+        target_width: 1280,
+        placeholder: '<div class="edy-img-drop-area-placeholder">' + placeholderText + '</div>',
+        removeBtn: '<div class="edy-img-drop-area-remove-image">' +
+                      '<div class="edy-img-drop-area-remove-image-ico">' +
+                        '<svg width="16" height="20" viewBox="0 0 26 30" xmlns="http://www.w3.org/2000/svg">' +
+                          '<g fill-rule="nonzero" fill="currentColor">' +
+                            '<g transform="translate(2 5)">' +
+                              '<path d="M0 .997h2V21c0 1 1 2 2 2h14c1 0 2-1 2-2V1h2v20c0 2.25-1.75 4-4 4H4c-2.25 0-4-1.75-4-4V.997z"/>' +
+                              '<rect x="10" y="4" width="2" height="16" rx="1"/>' +
+                              '<rect x="5" y="4" width="2" height="16" rx="1"/>' +
+                              '<rect x="15" y="4" width="2" height="16" rx="1"/>' +
+                            '</g>' +
+                            '<path d="M26 4v2H0V4h7V2c0-1 1-2 2-2h8c1 0 2 1 2 2v2h7zM9 4h8V3c0-.5-.5-1-1-1h-6c-.5 0-1 .5-1 1v1z"/>' +
+                          '</g>' +
+                        '</svg>' +
+                      '</div>' +
+                    '</div>',
+
+        change: function(data) {
+          var imageId;
+
+          $imgDropAreaTarget
+            .removeClass('is-cropped')
+            .addClass('not-cropped')
+            .css('opacity', .1)
+          ;
+
+          if (data) {
+            imageId = data.original_id;
+
+            $contentItemBox
+              .removeClass('without-image is-loaded with-error')
+              .addClass('with-image not-loaded')
+            ;
+
+            setImageOrientation($contentItemBox, data.width, data.height);
+          } else {
+            imageId = null;
+
+            $contentItemBox
+              .removeClass('with-image is-loaded with-error')
+              .addClass('without-image not-loaded')
+            ;
+
+            $contentItemBox.find('.edy-img-drop-area-placeholder').css('opacity', 0);
+          }
+
+          setItemImage($contentItemBox, $imgDropAreaTarget, itemId, imageId, itemType);
+        }
+      });
+    });
+  };
+
+  var setImageOrientation = function($contentItemBox, width, height) {
+    var $imgDropAreaTarget = $contentItemBox.find('.js-content-item-img-drop-area'),
+        $cropToggleButton = $contentItemBox.find('.js-toggle-crop-state');
+
+    if (width > height) {
+      $imgDropAreaTarget
+        .removeClass('image-landscape image-square image-portrait')
+        .addClass('image-landscape')
+      ;
+    } else if (width === height) {
+      $imgDropAreaTarget
+        .removeClass('image-landscape image-square image-portrait')
+        .addClass('image-square')
+      ;
+    } else {
+      $imgDropAreaTarget
+        .removeClass('image-landscape image-square image-portrait')
+        .addClass('image-portrait')
+      ;
+    }
+
+    if ($imgDropAreaTarget.hasClass('image-square')) {
+      $cropToggleButton
+        .removeClass('is-visible')
+        .addClass('is-hidden')
+      ;
+    } else {
+      $cropToggleButton
+        .removeClass('is-hidden')
+        .addClass('is-visible')
+      ;
+    }
+  };
+
+  var setItemImage = function($contentItemBox, $imgDropArea, itemId, imageId, itemType) {
+    var apiType = itemType === 'article' ? 'articles' : 'pages',
+        itemData = new Edicy.CustomData({
+          type: itemType,
+          id: itemId
+        });
+
+    $.ajax({
+       type: 'PATCH',
+       contentType: 'application/json',
+       url: '/admin/api/' + apiType +'/' + itemId,
+       data: JSON.stringify({'image_id': imageId}),
+       dataType: 'json',
+       success: function(data) {
+         itemData.set('image_crop_state', 'not-cropped');
+         $contentItemBox.removeClass('not-loaded with-error').addClass('is-loaded');
+         $contentItemBox.find('.edy-img-drop-area-placeholder').css('opacity', 1);
+         $imgDropArea.css('opacity', 1);
+       },
+       timeout: 30000,
+       error: function(data) {
+         $contentItemBox.removeClass('not-loaded is-loaded with-error').addClass('with-error');
+       }
+    });
+  };
+
+  // ===========================================================================
+  // Sets functions that will be initiated globally when resizing the browser
+  // window.
+  // ===========================================================================
+  var bindContentItemImageCropToggle = function() {
+    $('.js-toggle-crop-state').on('click', function() {
+      var $contentItemBox = $(this).closest('.js-content-item-box'),
+          $imgDropAreaTarget = $contentItemBox.find('.js-content-item-img-drop-area'),
+          itemId = $contentItemBox.data('item-id'),
+          itemType = $contentItemBox.data('item-type'),
+          itemData = new Edicy.CustomData({
+            type: itemType,
+            id: itemId
+          }),
+          imageCropState;
+
+      if ($imgDropAreaTarget.hasClass('is-cropped')) {
+        $imgDropAreaTarget
+          .removeClass('is-cropped')
+          .addClass('not-cropped')
+        ;
+
+        imageCropState = 'not-cropped';
+      } else {
+        $imgDropAreaTarget
+          .removeClass('not-cropped')
+          .addClass('is-cropped')
+        ;
+
+        imageCropState = 'is-cropped';
+      }
+
+      itemData.set('image_crop_state', imageCropState);
+    });
+  };
+
+  // ===========================================================================
+  // Load article cover images only when they are close or appearing in the
+  // viewport.
+  // ===========================================================================
+  var bindContentItemImageLazyload = function() {
+    $(document).ready(function() {
+      setTimeout(function() {
+        $('.js-content-item-box').addClass('not-loaded');
+      }, 3000);
+    });
+
+    $('.js-lazyload').lazyload({
+      threshold : 500,
+      effect : "fadeIn",
+      placeholder: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==',
+
+      load: function() {
+        var $contentItemBox = $(this).closest('.js-content-item-box');
+
+        $contentItemBox.removeClass('not-loaded with-error').addClass('is-loaded');
+
+        setTimeout(function() {
+          $contentItemBox.removeClass('not-loaded with-error');
+          $contentItemBox.find('.js-loader').remove();
+        }, 3000);
+      }
+    });
+  };
+
+  // ===========================================================================
+  // Function to detect if site is displayed in editmode.
+  // ===========================================================================
+  var editmode = function () {
+    return $('html').hasClass('editmode');
+  };
+
+  // ===========================================================================
+  // Sets header menu initial width attribute for menu mode calculation.
+  // ===========================================================================
+  var setHeaderMenuInitialWidth = function() {
+    var $headerMenu = $('.js-header-menu');
+
+    $headerMenu.attr('data-initial-width', $headerMenu.outerWidth(true));
+  };
+
+  // ===========================================================================
   // Binds site search functionality.
   // ===========================================================================
   var bindSiteSearch = function(searchForm, languageCode, noResultsString) {
@@ -546,6 +809,11 @@
     initCommonPage: initCommonPage,
     initBlogPage: initBlogPage,
     initPostPage: initPostPage,
+    initItemsPage: initItemsPage,
+    // Initiations for specific functions.
+    bindRootItemSettings: bindRootItemSettings,
+    bindContentItemImgDropAreas: bindContentItemImgDropAreas,
+    bindContentItemImageCropToggle: bindContentItemImageCropToggle,
     bindSiteSearch: bindSiteSearch
   });
 

@@ -173,7 +173,8 @@ body {
   color: var(--content-submenu-color);
 }
 
-.content-formatted, .post-content {
+.content-formatted, .post-content,
+.content-body .content-formatted {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
   color: var(--content-color);
@@ -197,6 +198,28 @@ body {
   -webkit-text-decoration: var(--content-links-hover-text-decoration);
           text-decoration: var(--content-links-hover-text-decoration);
   text-transform: var(--content-links-hover-text-transform);
+}
+
+.menu-breadcrumbs .menu-item a {
+  color: var(--header-mainmenu-color);
+}
+
+.menu-breadcrumbs .menu-item a:hover {
+  color: var(--header-mainmenu-active-color);
+}
+
+.menu-breadcrumbs .current a,
+.menu-breadcrumbs .current a:hover {
+  color: var(--header-mainmenu-active-color);
+}
+
+.item-list-page .item-link,
+.item-list-page .item-title {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-font-weight);
+  font-style: var(--h3-font-style);
+  color: var(--h3-color);
 }
 
 .footer .voog-reference a {
@@ -278,10 +301,15 @@ body {
 .form_field_file,
 .form_field .edy-fe-label,
 .content-formatted .form_field,
+.content-formatted .form_field .form_field_select,
 .dark-background .content-formatted .form_field {
   color: var(--form-field-text-color);
   font-style: var(--form-field-text-font-style);
   text-transform: var(--form-field-text-text-transform);
+}
+
+.content-formatted .form_field .form_field_select {
+  border: 1px solid var(--form-field-text-color) !important;
 }
 
 .content-formatted .form_field .form_field_label,
@@ -323,6 +351,11 @@ body {
           text-decoration: var(--blog-list-date-text-decoration);
   text-transform: var(--blog-list-date-text-transform);
   color: var(--blog-list-date-color);
+}
+
+.top-inner .edy-img-drop-area-placeholder,
+.top-inner .item-placeholder {
+  color: var(--h3-color);
 }
 
 .content-page .container .wrap {
@@ -429,6 +462,10 @@ body {
     max-width: calc(var(--site-width) * 1.4);
   }
 
+  .content-body .content-formatted {
+    font-size: calc(var(--content-font-size) * 1.4);
+  }
+
   .content-formatted {
     font-size: calc(var(--content-font-size) * 1.4);
   }
@@ -454,6 +491,14 @@ body {
   }
 
   .content-page .content-formatted h3 {
+    font-size: calc(var(--h3-font-size) * 1.4);
+  }
+
+  .item-list-page .item-title {
+    font-size: calc(var(--h3-font-size) * 1.4);
+  }
+
+  .item-list-page .item-link {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
 

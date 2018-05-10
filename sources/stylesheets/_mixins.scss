@@ -112,3 +112,34 @@
     @content;
   }
 }
+
+@mixin hyphenate($boolean: true) {
+  @if $boolean == true {
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+  } @else {
+    hyphens: none;
+    word-break: normal;
+    word-wrap: normal;
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    display: block;
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+    content: '';
+  }
+
+  > .aspect-ratio-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

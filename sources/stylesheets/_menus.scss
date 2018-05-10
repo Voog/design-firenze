@@ -1,5 +1,12 @@
 /* MENUS */
 // Styling rules for the site's menus.
+.main-menu {
+  li {
+    &.is-hidden {
+      display: none !important;
+    }
+  }
+}
 
 // Menu button. Only visible on smaller screens.
 .menu-btn {
@@ -370,6 +377,8 @@
     border-width: 2px;
   }
 }
+
+
 
 .menu-sub {
   padding: 15px 5px;

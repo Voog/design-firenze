@@ -7,6 +7,6 @@
   "description": "The Firenze design template for Voog",
   "license": "MIT",
   "devDependencies": {
-    "bourbon": "^4.3.4" 
+    "bourbon": "^4.3.4"
   }
 }

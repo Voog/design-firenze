@@ -8,6 +8,13 @@
     {
       "content_type": "page",
       "component": false,
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
+    },
+    {
+      "content_type": "page",
+      "component": false,
       "file": "layouts/front_page.tpl",
       "layout_name": "page_front",
       "title": "Front page"
@@ -18,6 +25,13 @@
       "file": "layouts/common_page.tpl",
       "layout_name": "page_default",
       "title": "Common page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
     },
     {
       "content_type": "blog",
@@ -36,9 +50,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/post-box.tpl",
-      "layout_name": "post-box",
-      "title": "post-box"
+      "file": "components/template-cs-button.tpl",
+      "layout_name": "template-cs-button",
+      "title": "template-cs-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1-link.tpl",
+      "layout_name": "menu-level-1-link",
+      "title": "menu-level-1-link"
     },
     {
       "content_type": "component",
@@ -120,6 +141,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/product-list-item.tpl",
+      "layout_name": "product-list-item",
+      "title": "product-list-item"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/header-options.tpl",
       "layout_name": "header-options",
       "title": "header-options"
@@ -155,6 +183,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/product-list-loop.tpl",
+      "layout_name": "product-list-loop",
+      "title": "product-list-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/content-page-variables.tpl",
       "layout_name": "content-page-variables",
       "title": "content-page-variables"
@@ -162,16 +197,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-button.tpl",
-      "layout_name": "template-cs-button",
-      "title": "template-cs-button"
+      "file": "components/template-cs-content.tpl",
+      "layout_name": "template-cs-content",
+      "title": "template-cs-content"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
+      "file": "components/post-box.tpl",
+      "layout_name": "post-box",
+      "title": "post-box"
     },
     {
       "content_type": "component",
@@ -235,6 +270,13 @@
       "file": "components/topbar-tags-post.tpl",
       "layout_name": "topbar-tags-post",
       "title": "topbar-tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-buttons-loop.tpl",
+      "layout_name": "menu-breadcrumbs-buttons-loop",
+      "title": "menu-breadcrumbs-buttons-loop"
     },
     {
       "content_type": "component",
@@ -309,6 +351,27 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/template-svg-spritesheet.tpl",
+      "layout_name": "template-svg-spritesheet",
+      "title": "template-svg-spritesheet"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs.tpl",
+      "layout_name": "menu-breadcrumbs",
+      "title": "menu-breadcrumbs"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-items-loop.tpl",
+      "layout_name": "menu-breadcrumbs-items-loop",
+      "title": "menu-breadcrumbs-items-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-form.tpl",
       "layout_name": "template-cs-form",
       "title": "template-cs-form"
@@ -343,6 +406,12 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-arrow.svg",
+      "kind": "assets",
+      "filename": "ico-arrow.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-voog-black.svg",
       "kind": "assets",
       "filename": "ico-voog-black.svg"
@@ -370,6 +439,12 @@
       "file": "assets/bebas-neue-regular-cyrillic.svg",
       "kind": "assets",
       "filename": "bebas-neue-regular-cyrillic.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/loader.svg",
+      "kind": "assets",
+      "filename": "loader.svg"
     },
     {
       "content_type": "application/vnd.ms-fontobject",

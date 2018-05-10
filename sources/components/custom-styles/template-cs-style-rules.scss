@@ -32,8 +32,8 @@ body {
     text-decoration: var(--h1-text-decoration);
     text-transform: var(--h1-text-transform);
     color: var(--h1-color);
-    }
   }
+}
 
 .content-page .content-formatted, .content-formatted,
 .front-page .light-background .content-formatted {
@@ -45,8 +45,8 @@ body {
     text-decoration: var(--h2-text-decoration);
     text-transform: var(--h2-text-transform);
     color: var(--h2-color);
-    }
   }
+}
 
 .content-page .content-formatted, .content-formatted,
 .front-page .light-background .content-formatted {
@@ -58,8 +58,8 @@ body {
     text-decoration: var(--h3-text-decoration);
     text-transform: var(--h3-text-transform);
     color: var(--h3-color);
-    }
   }
+}
 
 
 // Headings - light and dark background
@@ -135,6 +135,7 @@ body {
   line-height: var(--header-mainmenu-line-height);
   font-size: var(--header-mainmenu-font-size);
 }
+
 .front-page .menu-main .menu .menu-item .menu-link:hover,
 .light-background .menu-main .menu .menu-item .menu-link:hover {
   text-transform: var(--header-mainmenu-hover-text-transform);
@@ -149,6 +150,7 @@ body {
 .front-page .dark-background .content-page .menu-main .menu .menu-item .menu-link:hover {
   color: var(--light-primary);
 }
+
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link
 .front-page .light-background .content-page .menu-main .menu .menu-item .menu-link:hover {
   color: var(--dark-primary);
@@ -194,14 +196,13 @@ body {
   color: var(--content-submenu-color);
 }
 
-
 // Content - text
-.content-formatted, .post-content {
+.content-formatted, .post-content,
+.content-body .content-formatted {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
   color: var(--content-color);
 }
-
 
 // Content - links
 // scss-lint:disable SingleLinePerSelector
@@ -224,11 +225,35 @@ body {
   text-transform: var(--content-links-hover-text-transform);
 }
 
+// Menu-breadcrumbs
+
+.menu-breadcrumbs .menu-item a {
+  color: var(--header-mainmenu-color);
+}
+
+.menu-breadcrumbs .menu-item a:hover {
+  color: var(--header-mainmenu-active-color);
+}
+
+.menu-breadcrumbs .current a,
+.menu-breadcrumbs .current a:hover {
+  color: var(--header-mainmenu-active-color);
+}
+
+// Item-link
+.item-list-page .item-link,
+.item-list-page .item-title {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-font-weight);
+  font-style: var(--h3-font-style);
+  color: var(--h3-color);
+}
+
 // Voog reference
 .footer .voog-reference {
   a { color: var(--footer-color);}
 }
-
 
 // Button
 .content-formatted .custom-btn,
@@ -287,7 +312,6 @@ body {
 .content-formatted .svg .content-formatted .form_field_select {
   background-color: var(--form-field-background-color);
 }*/
-
 .svg .content-page .content-formatted .form_field_checkbox+.form_control_indicator,
 .svg .content-page .content-formatted .form_field_radio+.form_control_indicator,
 .content-formatted .form_field_textfield, .content-formatted .form_field_textarea,
@@ -309,10 +333,15 @@ body {
 .form_field_file,
 .form_field .edy-fe-label,
 .content-formatted .form_field,
+.content-formatted .form_field .form_field_select,
 .dark-background .content-formatted .form_field {
   color: var(--form-field-text-color);
   font-style: var(--form-field-text-font-style);
   text-transform: var(--form-field-text-text-transform);
+}
+
+.content-formatted .form_field .form_field_select {
+border: 1px solid var(--form-field-text-color) !important;
 }
 
 .content-formatted .form_field .form_field_label,
@@ -355,6 +384,11 @@ body {
   color: var(--blog-list-date-color);
 }
 
+// Image - placeholder
+.top-inner  .edy-img-drop-area-placeholder,
+.top-inner .item-placeholder  {
+color: var(--h3-color);
+}
 
 // Main styles - width
 .content-page .container .wrap {
@@ -454,6 +488,7 @@ body { font-family: var(--font-one);}
 @media screen and (min-width: 1400px) {
   .content-page .container .wrap { max-width: calc(var(--site-width) * 1.4);}
   .topbar .wrap { max-width: calc(var(--site-width) * 1.4);}
+  .content-body .content-formatted { font-size: calc(var(--content-font-size) * 1.4);}
   .content-formatted { font-size: calc(var(--content-font-size) * 1.4);}
   .content-formatted h1 { font-size: calc(var(--h1-font-size) * 1.4);}
   .content-page .content-formatted h1 { font-size: calc(var(--h1-font-size) * 1.4);}
@@ -461,6 +496,8 @@ body { font-family: var(--font-one);}
   .content-page .content-formatted h2 { font-size: calc(var(--h2-font-size) * 1.4);}
   .content-formatted h3 { font-size: calc(var(--h3-font-size) * 1.4);}
   .content-page .content-formatted h3 { font-size: calc(var(--h3-font-size) * 1.4);}
+  .item-list-page .item-title { font-size: calc(var(--h3-font-size) * 1.4);}
+  .item-list-page .item-link { font-size: calc(var(--h3-font-size) * 1.4);}
   .content-page .header-title, .content-page .header-title a, .content-page .header-title a:hover, .content-page .header-title .header-link, .content-page .header-title .header-link:hover { font-size: calc(var(--header-site-title-font-size) * 1.4);}
   .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link { font-size: calc(var(--content-submenu-font-size) * 1.4);}
   .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}

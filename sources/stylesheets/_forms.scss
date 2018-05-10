@@ -130,16 +130,16 @@
   }
 
   .form_field_select {
-    padding: 7px 16px 7px 9px;
-    text-indent: 0.01px;
+    position: relative;
+    padding-right: 18px;
     text-overflow: '';
-    background-position: 97.5% 13px;
+    background-position: right 6px center;
     background-repeat: no-repeat;
     border: none;
-
-    @include query($large-1, 'min-width') {
-      padding: #{round(7 * $wide-view-multiplier)}px #{round(9 * $wide-view-multiplier)}px;
-    }
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .no-svg & {

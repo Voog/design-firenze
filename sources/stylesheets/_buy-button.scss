@@ -1,11 +1,16 @@
 // =============================================================================
-// Content area buy button
+// Content area buy button on common page
 // =============================================================================
+
 .content-formatted {
   .edy-buy-button-container {
     // sass-lint:disable class-name-format
     .form_field {
       padding-top: 15px;
+
+      &:first-child {
+        padding-top: 15px;
+      }
     }
     // sass-lint:enable class-name-format
   }
@@ -15,6 +20,10 @@
     .form_field {
       padding-top: 5px;
       padding-bottom: 5px;
+
+      &:first-child {
+        padding-top: 5px;
+      }
     }
 
     .form_field_select {
