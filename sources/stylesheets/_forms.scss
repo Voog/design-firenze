@@ -140,6 +140,10 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
   }
 
   .no-svg & {
