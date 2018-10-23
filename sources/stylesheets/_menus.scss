@@ -695,6 +695,7 @@ $flags:
   (en_CA, -105px -60px), // Canadian English (Canada)
   (pt_BR, -63px 0), // Brazilian Portuguese (Brazil)
   (fr_IC, -42px -60px), // French (Ivory Coast)
+  (fr_CA, -105px -60px), // Canadian French (Canada)
 ;
 
 @each $flag, $pos in $flags {

@@ -1308,6 +1308,11 @@ a img {
   content: '';
 }
 
+[data-lang-code^="fr_CA"]:after {
+  background-position: -105px -60px;
+  content: '';
+}
+
 .lang-options {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.09);
