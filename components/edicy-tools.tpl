@@ -6,7 +6,7 @@
     });
 
     {% if items_page %}
-      site.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc: editor_locale }}');
+      site.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc: editor_locale | escape }}');
       site.bindContentItemImageCropToggle();
 
       {%if site.data.settings_root_item %}
