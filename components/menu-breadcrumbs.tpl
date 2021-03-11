@@ -18,7 +18,15 @@
       {% endif %}
 
       {% unless site.root_item.layout_title == product_layout %}
-        <li class="menu-item menu-item-cms">{% menuadd %}</li>
+        <li class="menu-item menu-item-cms">
+          {% assign add_product_label = 'add_product' | lce %}
+          {% assign add_product_title = 'add_product_page' | lce %}
+          {% if site.root_item.layout_title == product_list_layout %}
+            {% menuadd parent=item label=add_product_label lable=add_product_title layout_title="Product" %}
+          {% else %}
+            {% menuadd %}
+          {% endif %}
+        </li>
       {% endunless %}
 
       {% if site.root_item.selected? and site.root_item.layout_title == product_list_layout %}
