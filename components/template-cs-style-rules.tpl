@@ -457,75 +457,57 @@ body {
   .content-page .container .wrap {
     max-width: calc(var(--site-width) * 1.4);
   }
-
   .topbar .wrap {
     max-width: calc(var(--site-width) * 1.4);
   }
-
   .content-body .content-formatted {
     font-size: calc(var(--content-font-size) * 1.4);
   }
-
   .content-formatted {
     font-size: calc(var(--content-font-size) * 1.4);
   }
-
   .content-formatted h1 {
     font-size: calc(var(--h1-font-size) * 1.4);
   }
-
   .content-page .content-formatted h1 {
     font-size: calc(var(--h1-font-size) * 1.4);
   }
-
   .content-formatted h2 {
     font-size: calc(var(--h2-font-size) * 1.4);
   }
-
   .content-page .content-formatted h2 {
     font-size: calc(var(--h2-font-size) * 1.4);
   }
-
   .content-formatted h3 {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
-
   .content-page .content-formatted h3 {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
-
   .item-list-page .item-title {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
-
   .item-list-page .item-link {
     font-size: calc(var(--h3-font-size) * 1.4);
   }
-
   .content-page .header-title, .content-page .header-title a, .content-page .header-title a:hover, .content-page .header-title .header-link, .content-page .header-title .header-link:hover {
     font-size: calc(var(--header-site-title-font-size) * 1.4);
   }
-
   .menu-sub .menu .menu-item, .menu-sub .menu .menu-item .menu-link {
     font-size: calc(var(--content-submenu-font-size) * 1.4);
   }
-
   .post-title, .post-title a {
     font-size: calc(var(--blog-list-title-font-size) * 1.4);
   }
-
   .post-date {
     font-size: calc(var(--blog-list-date-font-size) * 1.4);
   }
-
   .content-formatted .form_submit input, .content-formatted .custom-btn {
     font-size: calc(var(--button-font-size) * 1.4);
   }
-
   .front-page .menu-main .menu .menu-item .menu-link {
     font-size: calc(var(--header-mainmenu-font-size) * 1.4);
   }
-
   .content-page .header .menu-main .menu .menu-item .menu-link {
     font-size: calc(var(--header-mainmenu-font-size) * 1.4);
   }
