@@ -53,12 +53,6 @@
       "file": "components/template-meta.tpl",
       "layout_name": "template-meta",
       "title": "template-meta"
-    },{
-      "content_type": "component",
-      "component": true,
-      "file": "components/add-product-button.tpl",
-      "layout_name": "add-product-button",
-      "title": "add-product-button"
     },
     {
       "content_type": "component",
