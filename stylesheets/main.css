@@ -2117,6 +2117,18 @@ a img {
   color: #e2e2e2;
 }
 
+.post-date.hide-article-date {
+  display: none;
+}
+
+.btn-container {
+  margin-left: 7px;
+}
+
+.blog-editor-padding {
+  padding-top: 5px;
+}
+
 .post-excerpt.content-formatted {
   margin-top: 17px;
 }
@@ -2128,6 +2140,10 @@ a img {
 .post-comments-count a:hover {
   color: #0066BB;
   color: rgba(0, 102, 187, 0.8);
+}
+
+.hide-article-comments {
+  display: none;
 }
 
 @media screen and (min-width: 1400px) {

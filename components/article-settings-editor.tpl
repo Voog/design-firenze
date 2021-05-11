@@ -1,5 +1,5 @@
 {% if editmode %}
-  <div class="btns-container">
+  <div class="btn-container">
     <button class="article-settings-editor"></button>
   </div>
 {% endif %}
@@ -77,7 +77,7 @@
       buttonTitleI18n: "article_settings",
       preview: function(data) {
        var $articleDate = $('.post-date'),
-        $articleComment =$('.post-bottom');
+        $articleComment =$('.comments');
         if (data.show_date == true) {
           $articleDate.removeClass('hide-article-date');
           $articleDate.addClass('show-article-date');
@@ -85,10 +85,13 @@
           $articleDate.removeClass('show-article-date');
           $articleDate.addClass('hide-article-date');
         }
+        
         if (data.show_comments == true) {
-          $articleComment.show();
+          $articleComment.removeClass('hide-article-comments');
+          $articleComment.addClass('show-article-comments');
         } else if (data.show_comments == false) {
-          $articleComment.hide();
+          $articleComment.removeClass('show-article-comments');
+          $articleComment.addClass('hide-article-comments')
         }
       },
       commit: function(data) {

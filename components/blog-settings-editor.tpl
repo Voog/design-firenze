@@ -1,5 +1,5 @@
 {% if editmode %}
-  <div class="btns-container">
+  <div class="blog-editor-padding">
     <button class="blog-settings-editor"></button>
   </div>
 {% endif %}
@@ -68,7 +68,7 @@
       // Title for the button.
       buttonTitleI18n: "blog_settings",
        preview: function(data) {
-        var $articleDate = $('.post-date.site-data');
+        var $articleDate = $('.post-date');
         if (data.show_dates == true) {
           $articleDate.removeClass('hide-article-date');
           $articleDate.addClass('show-article-date');

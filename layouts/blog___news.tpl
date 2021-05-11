@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
+{% include "blog-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_page = true %}
@@ -26,8 +27,11 @@
         <main class="content" role="main">
           <section class="content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
           
-          {% addbutton %}
-          
+          <div class="btn-container">
+            {% addbutton %}
+            {% include "blog-settings-editor" %}
+          </div>
+
           {% for article in articles %}
             <article class="post">
               <header class="post-header">
@@ -40,7 +44,7 @@
                   {% assign article_date_format = "long" %}
                 {% endif %}
 
-                <time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                <time class="post-date {{ toggle_article_date }}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
               </header>
 
               <section class="post-content"><div class="post-excerpt content-formatted">{{ article.excerpt }}</div></section>

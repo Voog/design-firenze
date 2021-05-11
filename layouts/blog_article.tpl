@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
+{% include "blog-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign post_page = true %}
@@ -26,6 +27,7 @@
           <article class="post">
             <header class="post-header">
               <h1 class="post-title">{% editable article.title %}</h1>
+
               {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
 
               {% if article_year == current_year %}
@@ -34,7 +36,11 @@
                 {% assign article_date_format = "long" %}
               {% endif %}
 
-              <time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+
+              <time class="post-date {{ toggle_article_date }}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+
+              {% include "article-settings-editor" %}
+
               {% if article.comments_count > 0 %}
                 <div class="post-comments-count">
                   <a href="#comments">{{ 'post_has_replies' | lcc : article.comments_count }}</a>
@@ -74,7 +80,7 @@
           </div>
         {% endif %}
 
-        <section id="comments" class="comments content-formatted">
+        <section id="comments" class="comments content-formatted {{ toggle_article_comments }}">
           {% if article.comments_count > 0 %}
           <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
 

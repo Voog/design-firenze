@@ -8,13 +8,6 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/product_list.tpl",
       "layout_name": "product_list",
       "title": "Product list"
@@ -25,6 +18,13 @@
       "file": "layouts/common_page.tpl",
       "layout_name": "page_default",
       "title": "Common page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
     },
     {
       "content_type": "page",
@@ -183,6 +183,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/blog-settings-variables.tpl",
+      "layout_name": "blog-settings-variables",
+      "title": "blog-settings-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-form-front.tpl",
       "layout_name": "template-cs-form-front",
       "title": "template-cs-form-front"
@@ -337,6 +344,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/article-settings-editor.tpl",
+      "layout_name": "article-settings-editor",
+      "title": "article-settings-editor"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/menu-breadcrumbs-items-loop.tpl",
       "layout_name": "menu-breadcrumbs-items-loop",
       "title": "menu-breadcrumbs-items-loop"
@@ -361,6 +375,13 @@
       "file": "components/comment-form.tpl",
       "layout_name": "comment-form",
       "title": "comment-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-settings-editor.tpl",
+      "layout_name": "blog-settings-editor",
+      "title": "blog-settings-editor"
     },
     {
       "content_type": "component",
@@ -430,7 +451,7 @@
       "filename": "bebas-neue-regular-cyrillic.woff"
     },
     {
-      "content_type": "application/x-font-truetype",
+      "content_type": "application/font-sfnt",
       "file": "assets/bebas-neue-regular-latin.ttf",
       "kind": "assets",
       "filename": "bebas-neue-regular-latin.ttf"
@@ -478,7 +499,7 @@
       "filename": "ico-voog-white.svg"
     },
     {
-      "content_type": "application/x-font-truetype",
+      "content_type": "application/font-sfnt",
       "file": "assets/bebas-neue-regular-cyrillic.ttf",
       "kind": "assets",
       "filename": "bebas-neue-regular-cyrillic.ttf"
