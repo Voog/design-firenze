@@ -1,0 +1,12 @@
+.btns-container {
+  margin-top: 8px;
+
+  @include breakpoint(max-width $medium) {
+    margin-bottom: 24px;
+  }
+
+  @include breakpoint($medium-up) {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
