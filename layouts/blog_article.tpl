@@ -36,10 +36,13 @@
                 {% assign article_date_format = "long" %}
               {% endif %}
 
+              {% if editmode or toggle_article_date == 'show-article-date' %}
+                <time class="post-date {{ toggle_article_date }}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+              {% endif %}
 
-              <time class="post-date {{ toggle_article_date }}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
-
-              {% include "article-settings-editor" %}
+              {% if editmode %}
+                {% include "article-settings-editor" %}
+              {% endif %}
 
               {% if article.comments_count > 0 %}
                 <div class="post-comments-count">
@@ -80,26 +83,28 @@
           </div>
         {% endif %}
 
-        <section id="comments" class="comments content-formatted {{ toggle_article_comments }}">
-          {% if article.comments_count > 0 %}
-          <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
+        {% if editmode or toggle_article_comments == 'show-article-comments' %}
+          <section id="comments" class="comments content-formatted {{ toggle_article_comments }}">
+            {% if article.comments_count > 0 %}
+            <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
 
-          <div class="comment-messages">
-            {% for comment in article.comments reversed %}
-            <div class="comment edy-site-blog-comment">
-              <span class="comment-body">{{ comment.body_html }}</span>
-              <span class="comment-info">
-                <span class="comment-author">{{ comment.author }}, </span>
-                <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
-              </span>
-              {% removebutton %}
+            <div class="comment-messages">
+              {% for comment in article.comments reversed %}
+              <div class="comment edy-site-blog-comment">
+                <span class="comment-body">{{ comment.body_html }}</span>
+                <span class="comment-info">
+                  <span class="comment-author">{{ comment.author }}, </span>
+                  <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
+                </span>
+                {% removebutton %}
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
-          </div>
-          {% endif %}
+            {% endif %}
 
-          {% include "comment-form" %}
-        </section>
+            {% include "comment-form" %}
+          </section>
+        {% endif %}
       </div>
     </div>
 
