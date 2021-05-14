@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
-{% include "blog-settings-variables" %}
+{% include "article-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_page = true %}
@@ -27,10 +27,7 @@
         <main class="content" role="main">
           <section class="content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
           
-          <div class="btn-container">
-            {% addbutton %}
-            {% include "blog-settings-editor" %}
-          </div>
+          <span style="margin-left: 7px;">{% addbutton %}</span>
 
           {% for article in articles %}
             <article class="post">
@@ -44,8 +41,8 @@
                   {% assign article_date_format = "long" %}
                 {% endif %}
 
-                {% if editmode or toggle_article_date == 'show-article-date' %}
-                  <time class="post-date {{ toggle_article_date }}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                {% if editmode or show_article_date != false %}
+                  <time class="post-date{% if show_article_date != true %} hide-article-date{% endif %}{% if article_data_show_date_defined != true %} site-data{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
                 {% endif %}
               </header>
 
@@ -63,6 +60,8 @@
   {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" %}
+  {% include "settings-editor" %}
+  {% include 'settings-popover', _blogPage: true %}
   <script>site.initBlogPage();</script>
 </body>
 </html>

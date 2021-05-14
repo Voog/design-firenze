@@ -4,6 +4,10 @@
 <script src="{{ javascripts_path }}/application.min.js?v=firenze-2.2.5"></script>
 {% sitejs_include %}
 
+{% if editmode %}
+  <script src="{{ javascripts_path }}/editmode.js"></script>
+{% endif %}
+
 {% comment %}Site search related javascript components.{% endcomment %}
 {% if site.search.enabled %}
   <script src="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.js"></script>

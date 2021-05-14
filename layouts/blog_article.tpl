@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
-{% include "blog-settings-variables" %}
+{% include "article-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign post_page = true %}
@@ -14,6 +14,7 @@
   {% if editmode %}<button class="bgpicker-btn js-background-settings" data-bg-key="body_bg" data-bg-default-image-color="rgb(111, 108, 119)" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
   {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
   {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}
+  {%- assign articleSettingsData = article.data.article_settings -%}
 
   {% include "topbar" with "article" %}
 
@@ -36,12 +37,8 @@
                 {% assign article_date_format = "long" %}
               {% endif %}
 
-              {% if editmode or toggle_article_date == 'show-article-date' %}
-                <time class="post-date {{ toggle_article_date }}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
-              {% endif %}
-
-              {% if editmode %}
-                {% include "article-settings-editor" %}
+              {% if editmode or show_article_date != false %}
+                <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}{% if article_data_show_date_defined != false %} site-data{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
               {% endif %}
 
               {% if article.comments_count > 0 %}
@@ -83,8 +80,8 @@
           </div>
         {% endif %}
 
-        {% if editmode or toggle_article_comments == 'show-article-comments' %}
-          <section id="comments" class="comments content-formatted {{ toggle_article_comments }}">
+        {% if editmode or show_article_comments != false %}
+          <section id="comments" class="comments content-formatted{% if show_article_comments == false %} hide-article-comments{% endif %}">
             {% if article.comments_count > 0 %}
             <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
 
@@ -114,6 +111,8 @@
   {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" with 'article' %}
+  {% include "settings-editor" %}
+  {% include 'settings-popover', _articlePage: true %}
   <script>site.initPostPage();</script>
 </body>
 </html>
