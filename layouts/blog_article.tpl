@@ -38,7 +38,7 @@
               {% endif %}
 
               {% if editmode or show_article_date != false %}
-                <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}{% if article_data_show_date_defined != false %} site-data{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
               {% endif %}
 
               {% if article.comments_count > 0 %}
@@ -98,10 +98,10 @@
               {% endfor %}
             </div>
             {% endif %}
-
             {% include "comment-form" %}
           </section>
         {% endif %}
+        
       </div>
     </div>
 
@@ -110,9 +110,9 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
-  {% include "edicy-tools" with 'article' %}
+  {% include "edicy-tools" with "article" %}
   {% include "settings-editor" %}
-  {% include 'settings-popover', _articlePage: true %}
+  {% include "settings-popover", _articlePage: true %}
   <script>site.initPostPage();</script>
 </body>
 </html>

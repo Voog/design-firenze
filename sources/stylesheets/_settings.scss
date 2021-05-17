@@ -269,13 +269,6 @@ body .edy-settings-editor:not(.editor_default) {
   padding: 0 0 8px 0;
 }
 
-.content-item-box:hover {
-  .image_settings {
-    opacity: 1;
-    pointer-events: all;
-  }
-}
-
 .settings_popover {
   opacity: 0;
   pointer-events: none;
@@ -318,20 +311,12 @@ body .edy-settings-editor:not(.editor_default) {
 .bottom-settings-popover.edy-popover {
   &.first {
     bottom: 150px !important;
-
-    .edy-bar-open & {
-      bottom: 276 !important;
-    }
   }
 
   &.first,
   &.second {
     top: unset !important;
     position: fixed !important;
-
-    &.edy-popover-bottom::after {
-      height: 0;
-    }
 
     .edy-popover-arrow {
       top: unset!important;

@@ -13,6 +13,7 @@
 
 <body class="post-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %} blog-page">
 {% if editmode %}<button class="bgpicker-btn js-background-settings" data-bg-key="body_bg" data-bg-default-image-color="rgb(111, 108, 119)" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
+{%- assign articleSettingsData = article.data.article_settings -%}
 {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
 {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}
 
@@ -42,7 +43,7 @@
                 {% endif %}
 
                 {% if editmode or show_article_date != false %}
-                  <time class="post-date{% if show_article_date != true %} hide-article-date{% endif %}{% if article_data_show_date_defined != true %} site-data{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  <time class="post-date{% if show_article_date != true %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
                 {% endif %}
               </header>
 
@@ -61,7 +62,7 @@
   {% include "javascripts" %}
   {% include "edicy-tools" %}
   {% include "settings-editor" %}
-  {% include 'settings-popover', _blogPage: true %}
+  {% include "settings-popover", _blogPage: true %}
   <script>site.initBlogPage();</script>
 </body>
 </html>

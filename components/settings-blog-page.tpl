@@ -62,8 +62,9 @@
         noReload: true,
         containerClass: ['bottom-settings-popover', 'first', 'editor_default'],
         prevFunc: function(data) {
-          var $articleDate = $('.post-date.site-data'),
+          var $articleDate = $('.post-date'),
               $articleComments = $('.comments');
+
           if (data.show_dates == true) {
             $articleDate.removeClass('hide-article-date');
             $articleDate.addClass('show-article-date');

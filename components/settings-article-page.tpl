@@ -74,7 +74,8 @@
 
         prevFunc: function(data) {
           var $articleComment = $('.comments'),
-            $articleDate = $('.post-date.site-data');
+              $articleDate = $('.post-date');
+              
           if (data.show_date == true) {
             $articleDate.removeClass('hide-article-date');
             $articleDate.addClass('show-article-date');

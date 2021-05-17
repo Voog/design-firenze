@@ -5,10 +5,10 @@
         <span class="edy-cbtn-ico"></span>
         <span>
           {%- if _titleKey != blank -%}
-            <div class="bold">{{ _titleKey  | lce  | escape_once }}</div>
+            <div class="bold">{{ _titleKey | lce | escape_once }}</div>
           {%- endif -%}
           {%- if _descriptionKey != blank -%}
-            <div class="grey">{{ _descriptionKey  | lce  | escape_once }}</div>
+            <div class="grey">{{ _descriptionKey | lce | escape_once }}</div>
           {%- endif -%}
         </span>
       </span>
