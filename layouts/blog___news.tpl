@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
-{% include "article-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_page = true %}
@@ -13,7 +12,6 @@
 
 <body class="post-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %} blog-page">
 {% if editmode %}<button class="bgpicker-btn js-background-settings" data-bg-key="body_bg" data-bg-default-image-color="rgb(111, 108, 119)" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
-{%- assign articleSettingsData = article.data.article_settings -%}
 {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
 {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}
 
@@ -28,9 +26,10 @@
         <main class="content" role="main">
           <section class="content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
           
-          <span style="margin-left: 7px;">{% addbutton %}</span>
+          <span class="add-button">{% addbutton %}</span>
 
           {% for article in articles %}
+            {% include "article-settings-variables" %}
             <article class="post">
               <header class="post-header">
                 <h1 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h1>
@@ -60,8 +59,6 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
-  {% include "edicy-tools" %}
-  {% include "settings-editor" %}
   {% include "settings-popover", _blogPage: true %}
   <script>site.initBlogPage();</script>
 </body>

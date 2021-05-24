@@ -346,13 +346,6 @@ a img {
   opacity: .7;
 }
 
-.semimodal_picker-btn {
-  z-index: 101;
-  position: absolute;
-  top: -106px;
-  left: 0;
-}
-
 body .edy-popover {
   z-index: 56502 !important;
 }
@@ -430,71 +423,9 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   padding: 8px 0;
 }
 
-.editmode .editor_default-container {
-  position: relative;
-}
-
-.editmode .editor_default-container .editor_default-btn {
-  opacity: 0 !important;
-  top: -34px !important;
-  left: -1px !important;
-  position: absolute !important;
-  z-index: 10699 !important;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
-  transition: all 300ms;
-}
-
-.editmode .editor_default-container:hover, .editmode .editor_default-container.active {
-  -webkit-box-shadow: 0 0 0 1px #000000;
-          box-shadow: 0 0 0 1px #000000;
-}
-
-.editmode .editor_default-container:hover .editor_default-btn, .editmode .editor_default-container.active .editor_default-btn {
-  opacity: 1 !important;
-}
-
-.editmode .editor_default-container .editor_default-btn.active {
-  opacity: 1 !important;
-}
-
-.admin_btn {
-  cursor: pointer;
-  background: #1B2124;
-  color: #FFFFFF;
-  padding: 8px 16px;
-  font-weight: 600;
-  line-height: 24px;
-  position: relative;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 8px;
-}
-
-.admin_btn:hover {
-  opacity: .7;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.admin_btn:active {
-  opacity: .7;
-  top: 1px;
-}
-
-.menu-item-cms-settings {
-  margin: 8px 0;
-}
-
-.lang_menu-popover .menu.menu-cms {
-  padding: 0 0 8px 0;
+body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-settings-editor-inner-title {
+  padding: 0 32px;
+  margin-bottom: 0;
 }
 
 .settings_popover {
@@ -2443,6 +2374,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   .post-date {
     font-size: 50px;
   }
+}
+
+.add-button {
+  margin-left: 7px;
 }
 
 .post-title {

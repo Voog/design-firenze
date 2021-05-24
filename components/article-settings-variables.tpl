@@ -1,3 +1,5 @@
+{%- assign articleSettingsData = article.data.article_settings -%}
+
 {% assign article_data_show_date_defined = false %}
 {% if article.data.article_settings.show_date == true or article.data.article_settings.show_date == false %}
   {% assign show_article_date = article.data.article_settings.show_date %}

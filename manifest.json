@@ -665,6 +665,12 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/editmode.min.js",
+      "kind": "javascripts",
+      "filename": "editmode.min.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/application.js",
       "kind": "javascripts",
       "filename": "application.js"

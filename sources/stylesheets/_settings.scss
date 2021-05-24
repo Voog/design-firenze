@@ -134,15 +134,6 @@
   }
 }
 
-.semimodal_ {
-  &picker-btn {
-    z-index: $zindex-semimodal;
-    position: absolute;
-    top: -106px;
-    left: 0;
-  }
-}
-
 body .edy-popover {
   z-index: $zindex-settings-popover + 1 !important;
 }
@@ -204,70 +195,15 @@ body .edy-settings-editor:not(.editor_default) {
       .edy-settings-editor-item {
         padding: 8px 0;
       }
+
+      &-title {
+        padding: 0 32px;
+        margin-bottom: 0;
+      }
     }
   }
 }
 
-.editmode .editor_default-container {
-  position: relative;
-
-  .editor_default-btn {
-    opacity: 0 !important;
-    top: -34px!important;
-    left: -1px!important;
-    position: absolute !important;
-    z-index: 10699 !important;
-    @include transition(all 300ms);
-  }
-
-  &:hover,
-  &.active {
-    box-shadow: 0 0 0 1px $black;
-
-    .editor_default-btn {
-      opacity: 1 !important;
-    }
-  }
-
-  .editor_default-btn.active {
-    opacity: 1 !important;
-  }
-}
-
-
-.admin_btn {
-  cursor: pointer;
-  background: $editor-grey;
-  color: $white;
-  padding: 8px 16px;
-  font-weight: $bold;
-  line-height: 24px;
-  position: relative;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 8px;
-
-  &:hover {
-    opacity: .7;
-    box-shadow: none;
-  }
-
-  &:active {
-    opacity: .7;
-    top: 1px;
-  }
-}
-
-.menu-item-cms-settings {
-  margin: 8px 0;
-}
-
-.lang_menu-popover .menu.menu-cms {
-  padding: 0 0 8px 0;
-}
 
 .settings_popover {
   opacity: 0;

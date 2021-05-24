@@ -5,7 +5,7 @@
 {% sitejs_include %}
 
 {% if editmode %}
-  <script src="{{ javascripts_path }}/editmode.js"></script>
+  <script src="{{ javascripts_path }}/editmode.min.js"></script>
 {% endif %}
 
 {% comment %}Site search related javascript components.{% endcomment %}

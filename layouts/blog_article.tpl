@@ -14,7 +14,6 @@
   {% if editmode %}<button class="bgpicker-btn js-background-settings" data-bg-key="body_bg" data-bg-default-image-color="rgb(111, 108, 119)" data-bg-image="{{ body_bg_image }}" data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" data-bg-color="{{ body_bg_color }}" data-bg-color-data="{{ body_bg_color_data_str | escape }}"></button>{% endif %}
   {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
   {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}
-  {%- assign articleSettingsData = article.data.article_settings -%}
 
   {% include "topbar" with "article" %}
 
@@ -110,8 +109,6 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
-  {% include "edicy-tools" with "article" %}
-  {% include "settings-editor" %}
   {% include "settings-popover", _articlePage: true %}
   <script>site.initPostPage();</script>
 </body>
