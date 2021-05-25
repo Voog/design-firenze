@@ -42,7 +42,7 @@
                 {% endif %}
 
                 {% if editmode or show_article_date != false %}
-                  <time class="post-date{% if show_article_date != true %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  <time class="post-date{% if show_article_date != true %} hide-article-date{% endif %}{% if article_data_show_date_defined != true%} site-data{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
                 {% endif %}
               </header>
 

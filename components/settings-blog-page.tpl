@@ -14,6 +14,7 @@
     {% endif %}
 
     var show_comments, show_dates;
+
     if (globalDataValues.show_comments != null && globalDataValues.show_comments !== '') {
       show_comments = Boolean(globalDataValues.show_comments)
     } else {
@@ -62,7 +63,7 @@
         noReload: true,
         containerClass: ['bottom-settings-popover', 'first', 'editor_default'],
         prevFunc: function(data) {
-          var $articleDate = $('.post-date'),
+          var $articleDate = $('.post-date.site-data'),
               $articleComments = $('.comments');
 
           if (data.show_dates == true) {
