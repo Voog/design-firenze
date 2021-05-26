@@ -73,14 +73,6 @@
             $articleDate.removeClass('show-article-date');
             $articleDate.addClass('hide-article-date');
           }
-          if (data.show_comments == true) {
-            $articleComments.removeClass('hide-article-comments');
-            $articleComments.addClass('show-article-comments');
-          } else if (data.show_authors == false) {
-            $articleComments.removeClass('show-article-comments');
-            $articleComments.addClass('hide-article-comments');
-          }
-
         },
       }
     );
