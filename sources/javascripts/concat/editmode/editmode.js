@@ -29,6 +29,9 @@ window.addEventListener('DOMContentLoaded', function(event) {
 
       shadowDom.querySelector(".js-layout_settings-btn").addEventListener(
         "click", function(e){
+          if (document.querySelector('body').classList.contains('layout_settings-visible')) {
+            document.querySelector('div.editor_default').attr('style', display = 'none')
+          }
           document.querySelector('body').classList.toggle('layout_settings-visible');
           e.stopImmediatePropagation();
         }
@@ -61,5 +64,5 @@ window.addEventListener('DOMContentLoaded', function(event) {
 }
 
 window.site = $.extend(window.site || {}, {
-initSettingsEditorBtn: initSettingsEditorBtn
+  initSettingsEditorBtn: initSettingsEditorBtn
 })

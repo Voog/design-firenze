@@ -33,20 +33,26 @@
             success: function() {
               if (options.noReload !== true) {
                 window.location.reload();
+              } else {
+                $('body').removeClass('layout_settings-visible');
               }
             }
           });
         }
       });
+      
       options.settingsBtn.removeAttribute('disabled');
+
       $('.edy-settings-editor:not(.editor_default)').each(function() {
         if ($(this).find('.layout_settings-close').length <= 0) {
           $(this).prepend('<div class="layout_settings-close"></div>');
         }
       });
+
       $('.layout_settings-close').click(function() {
         $('body').trigger('click');
       });
+
       $('.js-settings-editor-btn').click(function() {
         if ($(':not(.editor_default) .edy-settings-editor-inner-title').length >= 1) {
           $('.edy-settings-editor-inner-title').text($(this).find('.edy-cbtn-content .p14.bold').text())
@@ -56,7 +62,15 @@
           );
         }
       });
+
+      $('body').on('click', function(event) {
+        if (!$(event.target).closest('.js-prevent-sideclick').length) {
+          $('body').removeClass('layout_settings-visible');
+        };
+      });
+
     }
+      
     site.initSettingsEditorBtn();
   </script>
 {% endif %}

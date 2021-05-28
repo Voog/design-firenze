@@ -143,6 +143,9 @@ module.exports = function(grunt) {
       },
 
       build_assets: {
+        options: {
+          svgoPlugins: [{removeViewBox: false}]
+        },
         files: [{
           expand: true,
           cwd: 'sources/assets/minify',

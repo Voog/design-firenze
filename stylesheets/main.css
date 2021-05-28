@@ -260,6 +260,10 @@ a img {
   margin-right: 0;
 }
 
+.layout_settings-btn button .edy-cbtn-content .grey {
+  color: #8D9091;
+}
+
 .layout_settings-btn button.edy-cbtn .edy-cbtn-ico {
   display: none;
 }

@@ -1,6 +1,5 @@
 {%- if editmode -%}
   <div class="layout_settings-popover js-layout_settings-popover">
-    {% include "settings-editor" %}
     {%- if _blogPage == true -%}
       {% include 'settings-blog-page' %}
       {% include "edicy-tools" %}

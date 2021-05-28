@@ -61,10 +61,9 @@
         values: valuesObj,
         entityData: 'siteData',
         noReload: true,
-        containerClass: ['bottom-settings-popover', 'first', 'editor_default'],
+        containerClass: ['bottom-settings-popover', 'first', 'editor_default', 'js-prevent-sideclick'],
         prevFunc: function(data) {
-          var $articleDate = $('.post-date.site-data'),
-              $articleComments = $('.comments');
+          var $articleDate = $('.post-date.site-data');
 
           if (data.show_dates == true) {
             $articleDate.removeClass('hide-article-date');
