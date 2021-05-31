@@ -1,7 +1,5 @@
 {% editorjsblock %}
   <script src='{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js'></script>
-
-  {% include "settings-editor" %}
   
   <script>
     var siteData = new Edicy.CustomData({
