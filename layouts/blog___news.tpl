@@ -60,7 +60,6 @@
   {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "settings-popover", _blogPage: true %}
-  {% include "settings-editor" %}
   <script>site.initBlogPage();</script>
 </body>
 </html>

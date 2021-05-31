@@ -110,7 +110,6 @@
   {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "settings-popover", _articlePage: true %}
-  {% include "settings-editor" %}
   <script>site.initPostPage();</script>
 </body>
 </html>

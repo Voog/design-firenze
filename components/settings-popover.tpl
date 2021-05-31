@@ -2,12 +2,14 @@
   <div class="layout_settings-popover js-layout_settings-popover">
     {%- if _blogPage == true -%}
       {% include 'settings-blog-page' %}
-      {% include "edicy-tools" %}
+      {% include "edicy-tools", _isSettingsEditor: true %}
     {%- endif -%}
+
     {%- if _articlePage == true -%}
       {% include 'settings-article-page' %}
-      {% include "edicy-tools" with "article" %}
+      {% include "edicy-tools", _isSettingsEditor: true %}
     {%- endif -%}
+
     <div class="layout_settings-arrow"></div>
   </div>
 
