@@ -26,7 +26,9 @@
         <main class="content" role="main">
           <section class="content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
           
-          <span class="add-button">{% addbutton %}</span>
+          {% if editmode %}
+            <span class="add-button">{% addbutton %}</span>
+          {% endif %}
 
           {% for article in articles %}
             {% include "article-settings-variables" %}

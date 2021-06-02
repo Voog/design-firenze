@@ -2381,7 +2381,7 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
 }
 
 .add-button {
-  margin-left: 7px;
+  margin-left: 7px !important;
 }
 
 .post-title {
