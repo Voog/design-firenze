@@ -32,6 +32,12 @@ module.exports = function(grunt) {
           'sources/javascripts/concat/*.js'
         ],
         dest: 'javascripts/application.js'
+      },
+      editmode: {
+        src: [
+          'sources/javascripts/concat/editmode/*.js'
+        ],
+        dest: 'javascripts/editmode.js'
       }
     },
 
@@ -137,6 +143,9 @@ module.exports = function(grunt) {
       },
 
       build_assets: {
+        options: {
+          svgoPlugins: [{removeViewBox: false}]
+        },
         files: [{
           expand: true,
           cwd: 'sources/assets/minify',

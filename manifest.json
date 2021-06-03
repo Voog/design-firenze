@@ -64,6 +64,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/settings-editor.tpl",
+      "layout_name": "settings-editor",
+      "title": "settings-editor"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/site-signout.tpl",
       "layout_name": "site-signout",
       "title": "site-signout"
@@ -81,6 +88,13 @@
       "file": "components/tags-blog.tpl",
       "layout_name": "tags-blog",
       "title": "tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/settings-article-page.tpl",
+      "layout_name": "settings-article-page",
+      "title": "settings-article-page"
     },
     {
       "content_type": "component",
@@ -176,6 +190,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/settings-blog-page.tpl",
+      "layout_name": "settings-blog-page",
+      "title": "settings-blog-page"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/post-box.tpl",
       "layout_name": "post-box",
       "title": "post-box"
@@ -190,6 +211,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/settings-popover.tpl",
+      "layout_name": "settings-popover",
+      "title": "settings-popover"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-blog-list.tpl",
       "layout_name": "template-cs-blog-list",
       "title": "template-cs-blog-list"
@@ -200,6 +228,13 @@
       "file": "components/template-cs-table-front.tpl",
       "layout_name": "template-cs-table-front",
       "title": "template-cs-table-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/settings-editor-button.tpl",
+      "layout_name": "settings-editor-button",
+      "title": "settings-editor-button"
     },
     {
       "content_type": "component",
@@ -221,6 +256,13 @@
       "file": "components/footer.tpl",
       "layout_name": "footer",
       "title": "footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/article-settings-variables.tpl",
+      "layout_name": "article-settings-variables",
+      "title": "article-settings-variables"
     },
     {
       "content_type": "component",
@@ -430,7 +472,7 @@
       "filename": "bebas-neue-regular-cyrillic.woff"
     },
     {
-      "content_type": "application/x-font-truetype",
+      "content_type": "application/font-sfnt",
       "file": "assets/bebas-neue-regular-latin.ttf",
       "kind": "assets",
       "filename": "bebas-neue-regular-latin.ttf"
@@ -478,7 +520,7 @@
       "filename": "ico-voog-white.svg"
     },
     {
-      "content_type": "application/x-font-truetype",
+      "content_type": "application/font-sfnt",
       "file": "assets/bebas-neue-regular-cyrillic.ttf",
       "kind": "assets",
       "filename": "bebas-neue-regular-cyrillic.ttf"
@@ -611,9 +653,21 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/editmode.js",
+      "kind": "javascripts",
+      "filename": "editmode.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/application.min.js",
       "kind": "javascripts",
       "filename": "application.min.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/editmode.min.js",
+      "kind": "javascripts",
+      "filename": "editmode.min.js"
     },
     {
       "content_type": "application/javascript",

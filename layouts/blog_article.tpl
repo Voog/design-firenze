@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
+{% include "article-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign post_page = true %}
@@ -26,6 +27,7 @@
           <article class="post">
             <header class="post-header">
               <h1 class="post-title">{% editable article.title %}</h1>
+
               {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
 
               {% if article_year == current_year %}
@@ -34,7 +36,10 @@
                 {% assign article_date_format = "long" %}
               {% endif %}
 
-              <time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+              {% if editmode or show_article_date != false %}
+                <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+              {% endif %}
+
               {% if article.comments_count > 0 %}
                 <div class="post-comments-count">
                   <a href="#comments">{{ 'post_has_replies' | lcc : article.comments_count }}</a>
@@ -74,26 +79,28 @@
           </div>
         {% endif %}
 
-        <section id="comments" class="comments content-formatted">
-          {% if article.comments_count > 0 %}
-          <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
+        {% if editmode or show_article_comments != false %}
+          <section id="comments" class="comments content-formatted{% if show_article_comments == false %} hide-article-comments{% endif %}">
+            {% if article.comments_count > 0 %}
+            <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
 
-          <div class="comment-messages">
-            {% for comment in article.comments reversed %}
-            <div class="comment edy-site-blog-comment">
-              <span class="comment-body">{{ comment.body_html }}</span>
-              <span class="comment-info">
-                <span class="comment-author">{{ comment.author }}, </span>
-                <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
-              </span>
-              {% removebutton %}
+            <div class="comment-messages">
+              {% for comment in article.comments reversed %}
+              <div class="comment edy-site-blog-comment">
+                <span class="comment-body">{{ comment.body_html }}</span>
+                <span class="comment-info">
+                  <span class="comment-author">{{ comment.author }}, </span>
+                  <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
+                </span>
+                {% removebutton %}
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
-          </div>
-          {% endif %}
-
-          {% include "comment-form" %}
-        </section>
+            {% endif %}
+            {% include "comment-form" %}
+          </section>
+        {% endif %}
+        
       </div>
     </div>
 
@@ -102,7 +109,7 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
-  {% include "edicy-tools" with 'article' %}
+  {% include "settings-popover", _articlePage: true %}
   <script>site.initPostPage();</script>
 </body>
 </html>

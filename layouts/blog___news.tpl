@@ -26,9 +26,12 @@
         <main class="content" role="main">
           <section class="content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
           
-          {% addbutton %}
-          
+          {% if editmode %}
+            <span class="add-button">{% addbutton %}</span>
+          {% endif %}
+
           {% for article in articles %}
+            {% include "article-settings-variables" %}
             <article class="post">
               <header class="post-header">
                 <h1 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h1>
@@ -40,7 +43,9 @@
                   {% assign article_date_format = "long" %}
                 {% endif %}
 
-                <time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                {% if editmode or show_article_date != false %}
+                  <time class="post-date{% if show_article_date != true %} hide-article-date{% endif %}{% if article_data_show_date_defined != true%} site-data{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                {% endif %}
               </header>
 
               <section class="post-content"><div class="post-excerpt content-formatted">{{ article.excerpt }}</div></section>
@@ -56,7 +61,7 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
-  {% include "edicy-tools" %}
+  {% include "settings-popover", _blogPage: true %}
   <script>site.initBlogPage();</script>
 </body>
 </html>

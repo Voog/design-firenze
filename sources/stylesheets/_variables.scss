@@ -31,6 +31,7 @@ $site-width: 650px;
 //Fonts
 $font-one: 'Avenir Next', 'AvenirX', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $font-two: 'Bebas Neue Latin', 'Bebas Neue Cyrillic', sans-serif;
+$primary-font: $font-one;
 $avenir: 'Avenir Next', 'AvenirX';
 $h1-size: 36px;
 $font-size: 18px;
@@ -77,6 +78,8 @@ $search-height: 50px;
 // Specific colors
 $black: #000000;
 $white: #FFFFFF;
+$voog-blue: #443df6;
+$editor-grey: #1B2124;
 
 $red: #CC0000;
 $green: #60A740;
@@ -95,3 +98,13 @@ $color-black: rgb(0, 0, 0);
 $color-white: rgb(255, 255, 255);
 
 $transition: 300ms;
+
+
+// Variables for blog settings CSS
+$zindex-settings-btn: 104;
+$zindex-settings-popover: 56501;
+$zindex-settings-editor: 57000;
+
+$bold: 600;
+
+$box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
