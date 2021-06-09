@@ -501,6 +501,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   border-bottom-color: transparent;
 }
 
+.d-none {
+  display: none;
+}
+
 .content-formatted {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
