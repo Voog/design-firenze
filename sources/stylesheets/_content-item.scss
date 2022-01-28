@@ -184,6 +184,10 @@
       border-width: 1px;
     }
 
+    & .item-image {
+      width: 100%;
+    }
+
     .edy-img-drop-area-placeholder {
       @media screen and (min-width: $large-1 + 1) {
         font-size: 17px;

@@ -6,32 +6,410 @@
   "author": "Tõnu Runnel",
   "layouts": [
     {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
+      "content_type": "component",
+      "component": true,
+      "file": "components/add-page-button.tpl",
+      "layout_name": "add-page-button",
+      "title": "add-page-button"
     },
     {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
+      "content_type": "component",
+      "component": true,
+      "file": "components/article-settings-variables.tpl",
+      "layout_name": "article-settings-variables",
+      "title": "article-settings-variables"
     },
     {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-variables.tpl",
+      "layout_name": "blog-article-variables",
+      "title": "blog-article-variables"
     },
     {
-      "content_type": "page",
+      "content_type": "component",
+      "component": true,
+      "file": "components/buy-button.tpl",
+      "layout_name": "buy-button",
+      "title": "buy-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/comment-form.tpl",
+      "layout_name": "comment-form",
+      "title": "comment-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/content-page-variables.tpl",
+      "layout_name": "content-page-variables",
+      "title": "content-page-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-styles.tpl",
+      "layout_name": "edicy-tools-styles",
+      "title": "edicy-tools-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools.tpl",
+      "layout_name": "edicy-tools",
+      "title": "edicy-tools"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/footer.tpl",
+      "layout_name": "footer",
+      "title": "footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/header-options.tpl",
+      "layout_name": "header-options",
+      "title": "header-options"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/header.tpl",
+      "layout_name": "header",
+      "title": "header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/html-head.tpl",
+      "layout_name": "html-head",
+      "title": "html-head"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/javascripts.tpl",
+      "layout_name": "javascripts",
+      "title": "javascripts"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-buttons-loop.tpl",
+      "layout_name": "menu-breadcrumbs-buttons-loop",
+      "title": "menu-breadcrumbs-buttons-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-items-loop.tpl",
+      "layout_name": "menu-breadcrumbs-items-loop",
+      "title": "menu-breadcrumbs-items-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs.tpl",
+      "layout_name": "menu-breadcrumbs",
+      "title": "menu-breadcrumbs"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-lang.tpl",
+      "layout_name": "menu-lang",
+      "title": "menu-lang"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1-link.tpl",
+      "layout_name": "menu-level-1-link",
+      "title": "menu-level-1-link"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1.tpl",
+      "layout_name": "menu-level-1",
+      "title": "menu-level-1"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "menu-level-2",
+      "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/post-box.tpl",
+      "layout_name": "post-box",
+      "title": "post-box"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-item.tpl",
+      "layout_name": "product-list-item",
+      "title": "product-list-item"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-loop.tpl",
+      "layout_name": "product-list-loop",
+      "title": "product-list-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/settings-article-page.tpl",
+      "layout_name": "settings-article-page",
+      "title": "settings-article-page"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/settings-blog-page.tpl",
+      "layout_name": "settings-blog-page",
+      "title": "settings-blog-page"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/settings-editor-button.tpl",
+      "layout_name": "settings-editor-button",
+      "title": "settings-editor-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/settings-editor.tpl",
+      "layout_name": "settings-editor",
+      "title": "settings-editor"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/settings-popover.tpl",
+      "layout_name": "settings-popover",
+      "title": "settings-popover"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/sidebar.tpl",
+      "layout_name": "sidebar",
+      "title": "sidebar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-signout.tpl",
+      "layout_name": "site-signout",
+      "title": "site-signout"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-blog.tpl",
+      "layout_name": "tags-blog",
+      "title": "tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-post.tpl",
+      "layout_name": "tags-post",
+      "title": "tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog-article.tpl",
+      "layout_name": "template-cs-blog-article",
+      "title": "template-cs-blog-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog-list.tpl",
+      "layout_name": "template-cs-blog-list",
+      "title": "template-cs-blog-list"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-button-front.tpl",
+      "layout_name": "template-cs-button-front",
+      "title": "template-cs-button-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-button.tpl",
+      "layout_name": "template-cs-button",
+      "title": "template-cs-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-content-front.tpl",
+      "layout_name": "template-cs-content-front",
+      "title": "template-cs-content-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-content.tpl",
+      "layout_name": "template-cs-content",
+      "title": "template-cs-content"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-form-front.tpl",
+      "layout_name": "template-cs-form-front",
+      "title": "template-cs-form-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-form.tpl",
+      "layout_name": "template-cs-form",
+      "title": "template-cs-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-header-front.tpl",
+      "layout_name": "template-cs-header-front",
+      "title": "template-cs-header-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-header.tpl",
+      "layout_name": "template-cs-header",
+      "title": "template-cs-header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-headings-front.tpl",
+      "layout_name": "template-cs-headings-front",
+      "title": "template-cs-headings-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-headings.tpl",
+      "layout_name": "template-cs-headings",
+      "title": "template-cs-headings"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-main-styles-front.tpl",
+      "layout_name": "template-cs-main-styles-front",
+      "title": "template-cs-main-styles-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-main-styles.tpl",
+      "layout_name": "template-cs-main-styles",
+      "title": "template-cs-main-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-style-rules.tpl",
+      "layout_name": "template-cs-style-rules",
+      "title": "template-cs-style-rules"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-table-front.tpl",
+      "layout_name": "template-cs-table-front",
+      "title": "template-cs-table-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-table.tpl",
+      "layout_name": "template-cs-table",
+      "title": "template-cs-table"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-meta.tpl",
+      "layout_name": "template-meta",
+      "title": "template-meta"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-svg-spritesheet.tpl",
+      "layout_name": "template-svg-spritesheet",
+      "title": "template-svg-spritesheet"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-variables.tpl",
+      "layout_name": "template-variables",
+      "title": "template-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar-tags-blog.tpl",
+      "layout_name": "topbar-tags-blog",
+      "title": "topbar-tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar-tags-post.tpl",
+      "layout_name": "topbar-tags-post",
+      "title": "topbar-tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar.tpl",
+      "layout_name": "topbar",
+      "title": "topbar"
+    },
+    {
+      "content_type": "product",
       "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
+      "file": "layouts/auto_generated_product.tpl",
+      "layout_name": "auto_generated_product",
+      "title": "Auto-generated product"
     },
     {
       "content_type": "blog",
@@ -48,404 +426,76 @@
       "title": "Blog article"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-meta.tpl",
-      "layout_name": "template-meta",
-      "title": "template-meta"
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-2.tpl",
-      "layout_name": "menu-level-2",
-      "title": "menu-level-2"
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/settings-editor.tpl",
-      "layout_name": "settings-editor",
-      "title": "settings-editor"
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/site-signout.tpl",
-      "layout_name": "site-signout",
-      "title": "site-signout"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-1.tpl",
-      "layout_name": "menu-level-1",
-      "title": "menu-level-1"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-blog.tpl",
-      "layout_name": "tags-blog",
-      "title": "tags-blog"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/settings-article-page.tpl",
-      "layout_name": "settings-article-page",
-      "title": "settings-article-page"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-variables.tpl",
-      "layout_name": "edicy-tools-variables",
-      "title": "edicy-tools-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/topbar.tpl",
-      "layout_name": "topbar",
-      "title": "topbar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/topbar-tags-blog.tpl",
-      "layout_name": "topbar-tags-blog",
-      "title": "topbar-tags-blog"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-list-item.tpl",
-      "layout_name": "product-list-item",
-      "title": "product-list-item"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/header-options.tpl",
-      "layout_name": "header-options",
-      "title": "header-options"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-content-front.tpl",
-      "layout_name": "template-cs-content-front",
-      "title": "template-cs-content-front"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/add-page-button.tpl",
-      "layout_name": "add-page-button",
-      "title": "add-page-button"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-blog-article.tpl",
-      "layout_name": "template-cs-blog-article",
-      "title": "template-cs-blog-article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/search.tpl",
-      "layout_name": "search",
-      "title": "search"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-styles.tpl",
-      "layout_name": "edicy-tools-styles",
-      "title": "edicy-tools-styles"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-list-loop.tpl",
-      "layout_name": "product-list-loop",
-      "title": "product-list-loop"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/content-page-variables.tpl",
-      "layout_name": "content-page-variables",
-      "title": "content-page-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-button.tpl",
-      "layout_name": "template-cs-button",
-      "title": "template-cs-button"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/settings-blog-page.tpl",
-      "layout_name": "settings-blog-page",
-      "title": "settings-blog-page"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/post-box.tpl",
-      "layout_name": "post-box",
-      "title": "post-box"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-form-front.tpl",
-      "layout_name": "template-cs-form-front",
-      "title": "template-cs-form-front"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/settings-popover.tpl",
-      "layout_name": "settings-popover",
-      "title": "settings-popover"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-blog-list.tpl",
-      "layout_name": "template-cs-blog-list",
-      "title": "template-cs-blog-list"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-table-front.tpl",
-      "layout_name": "template-cs-table-front",
-      "title": "template-cs-table-front"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/settings-editor-button.tpl",
-      "layout_name": "settings-editor-button",
-      "title": "settings-editor-button"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-lang.tpl",
-      "layout_name": "menu-lang",
-      "title": "menu-lang"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-main-styles-front.tpl",
-      "layout_name": "template-cs-main-styles-front",
-      "title": "template-cs-main-styles-front"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/footer.tpl",
-      "layout_name": "footer",
-      "title": "footer"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/article-settings-variables.tpl",
-      "layout_name": "article-settings-variables",
-      "title": "article-settings-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-header-front.tpl",
-      "layout_name": "template-cs-header-front",
-      "title": "template-cs-header-front"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/javascripts.tpl",
-      "layout_name": "javascripts",
-      "title": "javascripts"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/topbar-tags-post.tpl",
-      "layout_name": "topbar-tags-post",
-      "title": "topbar-tags-post"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-breadcrumbs-buttons-loop.tpl",
-      "layout_name": "menu-breadcrumbs-buttons-loop",
-      "title": "menu-breadcrumbs-buttons-loop"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-main-styles.tpl",
-      "layout_name": "template-cs-main-styles",
-      "title": "template-cs-main-styles"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/header.tpl",
-      "layout_name": "header",
-      "title": "header"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-variables.tpl",
-      "layout_name": "template-variables",
-      "title": "template-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-post.tpl",
-      "layout_name": "tags-post",
-      "title": "tags-post"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-style-rules.tpl",
-      "layout_name": "template-cs-style-rules",
-      "title": "template-cs-style-rules"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-headings-front.tpl",
-      "layout_name": "template-cs-headings-front",
-      "title": "template-cs-headings-front"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/sidebar.tpl",
-      "layout_name": "sidebar",
-      "title": "sidebar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools.tpl",
-      "layout_name": "edicy-tools",
-      "title": "edicy-tools"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/html-head.tpl",
-      "layout_name": "html-head",
-      "title": "html-head"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-variables.tpl",
-      "layout_name": "blog-article-variables",
-      "title": "blog-article-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-svg-spritesheet.tpl",
-      "layout_name": "template-svg-spritesheet",
-      "title": "template-svg-spritesheet"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-breadcrumbs.tpl",
-      "layout_name": "menu-breadcrumbs",
-      "title": "menu-breadcrumbs"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-breadcrumbs-items-loop.tpl",
-      "layout_name": "menu-breadcrumbs-items-loop",
-      "title": "menu-breadcrumbs-items-loop"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-form.tpl",
-      "layout_name": "template-cs-form",
-      "title": "template-cs-form"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-button-front.tpl",
-      "layout_name": "template-cs-button-front",
-      "title": "template-cs-button-front"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/comment-form.tpl",
-      "layout_name": "comment-form",
-      "title": "comment-form"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-1-link.tpl",
-      "layout_name": "menu-level-1-link",
-      "title": "menu-level-1-link"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-header.tpl",
-      "layout_name": "template-cs-header",
-      "title": "template-cs-header"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-headings.tpl",
-      "layout_name": "template-cs-headings",
-      "title": "template-cs-headings"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-table.tpl",
-      "layout_name": "template-cs-table",
-      "title": "template-cs-table"
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
     }
   ],
   "assets": [
     {
       "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/bebas-neue-regular-cyrillic.eot",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-cyrillic.eot"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/bebas-neue-regular-cyrillic.svg",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-cyrillic.svg"
+    },
+    {
+      "content_type": "application/font-sfnt",
+      "file": "assets/bebas-neue-regular-cyrillic.ttf",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-cyrillic.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/bebas-neue-regular-cyrillic.woff",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-cyrillic.woff"
+    },
+    {
+      "content_type": "application/vnd.ms-fontobject",
       "file": "assets/bebas-neue-regular-latin.eot",
       "kind": "assets",
       "filename": "bebas-neue-regular-latin.eot"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/bebas-neue-regular-latin.svg",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-latin.svg"
+    },
+    {
+      "content_type": "application/font-sfnt",
+      "file": "assets/bebas-neue-regular-latin.ttf",
+      "kind": "assets",
+      "filename": "bebas-neue-regular-latin.ttf"
     },
     {
       "content_type": "application/font-woff",
@@ -455,57 +505,15 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-arrow.svg",
-      "kind": "assets",
-      "filename": "ico-arrow.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-voog-black.svg",
-      "kind": "assets",
-      "filename": "ico-voog-black.svg"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/bebas-neue-regular-cyrillic.woff",
-      "kind": "assets",
-      "filename": "bebas-neue-regular-cyrillic.woff"
-    },
-    {
-      "content_type": "application/font-sfnt",
-      "file": "assets/bebas-neue-regular-latin.ttf",
-      "kind": "assets",
-      "filename": "bebas-neue-regular-latin.ttf"
-    },
-    {
-      "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-down.svg",
       "kind": "assets",
       "filename": "ico-arrow-down.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/bebas-neue-regular-cyrillic.svg",
+      "file": "assets/ico-arrow.svg",
       "kind": "assets",
-      "filename": "bebas-neue-regular-cyrillic.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/loader.svg",
-      "kind": "assets",
-      "filename": "loader.svg"
-    },
-    {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/bebas-neue-regular-cyrillic.eot",
-      "kind": "assets",
-      "filename": "bebas-neue-regular-cyrillic.eot"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
-      "kind": "assets",
-      "filename": "ico-flags.svg"
+      "filename": "ico-arrow.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -515,15 +523,9 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-voog-white.svg",
+      "file": "assets/ico-flags.svg",
       "kind": "assets",
-      "filename": "ico-voog-white.svg"
-    },
-    {
-      "content_type": "application/font-sfnt",
-      "file": "assets/bebas-neue-regular-cyrillic.ttf",
-      "kind": "assets",
-      "filename": "bebas-neue-regular-cyrillic.ttf"
+      "filename": "ico-flags.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -533,15 +535,21 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/bebas-neue-regular-latin.svg",
+      "file": "assets/ico-voog-black.svg",
       "kind": "assets",
-      "filename": "bebas-neue-regular-latin.svg"
+      "filename": "ico-voog-black.svg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/ico-arrow-down.png",
-      "kind": "images",
-      "filename": "ico-arrow-down.png"
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-voog-white.svg",
+      "kind": "assets",
+      "filename": "ico-voog-white.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/loader.svg",
+      "kind": "assets",
+      "filename": "loader.svg"
     },
     {
       "content_type": "image/jpeg",
@@ -551,39 +559,21 @@
     },
     {
       "content_type": "image/jpeg",
-      "file": "images/common-page-bg_large.jpg",
-      "kind": "images",
-      "filename": "common-page-bg_large.jpg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-voog-black.png",
-      "kind": "images",
-      "filename": "ico-voog-black.png"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/common-page-bg_huge.jpg",
-      "kind": "images",
-      "filename": "common-page-bg_huge.jpg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-search-black.png",
-      "kind": "images",
-      "filename": "ico-search-black.png"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/common-page-bg_block.jpg",
-      "kind": "images",
-      "filename": "common-page-bg_block.jpg"
-    },
-    {
-      "content_type": "image/jpeg",
       "file": "images/blog-page-bg_block.jpg",
       "kind": "images",
       "filename": "blog-page-bg_block.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/blog-page-bg_huge.jpg",
+      "kind": "images",
+      "filename": "blog-page-bg_huge.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/blog-page-bg_large.jpg",
+      "kind": "images",
+      "filename": "blog-page-bg_large.jpg"
     },
     {
       "content_type": "image/jpeg",
@@ -593,15 +583,33 @@
     },
     {
       "content_type": "image/jpeg",
+      "file": "images/common-page-bg_block.jpg",
+      "kind": "images",
+      "filename": "common-page-bg_block.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/common-page-bg_huge.jpg",
+      "kind": "images",
+      "filename": "common-page-bg_huge.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/common-page-bg_large.jpg",
+      "kind": "images",
+      "filename": "common-page-bg_large.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
       "filename": "front-page-bg.jpg"
     },
     {
       "content_type": "image/jpeg",
-      "file": "images/front-page-bg_large.jpg",
+      "file": "images/front-page-bg_block.jpg",
       "kind": "images",
-      "filename": "front-page-bg_large.jpg"
+      "filename": "front-page-bg_block.jpg"
     },
     {
       "content_type": "image/jpeg",
@@ -611,15 +619,15 @@
     },
     {
       "content_type": "image/jpeg",
-      "file": "images/blog-page-bg_large.jpg",
+      "file": "images/front-page-bg_large.jpg",
       "kind": "images",
-      "filename": "blog-page-bg_large.jpg"
+      "filename": "front-page-bg_large.jpg"
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-voog-white.png",
+      "file": "images/ico-arrow-down.png",
       "kind": "images",
-      "filename": "ico-voog-white.png"
+      "filename": "ico-arrow-down.png"
     },
     {
       "content_type": "image/png",
@@ -629,45 +637,33 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-search-white.png",
-      "kind": "images",
-      "filename": "ico-search-white.png"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/blog-page-bg_huge.jpg",
-      "kind": "images",
-      "filename": "blog-page-bg_huge.jpg"
-    },
-    {
-      "content_type": "image/png",
       "file": "images/ico-flags.png",
       "kind": "images",
       "filename": "ico-flags.png"
     },
     {
-      "content_type": "image/jpeg",
-      "file": "images/front-page-bg_block.jpg",
+      "content_type": "image/png",
+      "file": "images/ico-search-black.png",
       "kind": "images",
-      "filename": "front-page-bg_block.jpg"
+      "filename": "ico-search-black.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/editmode.js",
-      "kind": "javascripts",
-      "filename": "editmode.js"
+      "content_type": "image/png",
+      "file": "images/ico-search-white.png",
+      "kind": "images",
+      "filename": "ico-search-white.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/application.min.js",
-      "kind": "javascripts",
-      "filename": "application.min.js"
+      "content_type": "image/png",
+      "file": "images/ico-voog-black.png",
+      "kind": "images",
+      "filename": "ico-voog-black.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/editmode.min.js",
-      "kind": "javascripts",
-      "filename": "editmode.min.js"
+      "content_type": "image/png",
+      "file": "images/ico-voog-white.png",
+      "kind": "images",
+      "filename": "ico-voog-white.png"
     },
     {
       "content_type": "application/javascript",
@@ -677,21 +673,27 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/application.min.js",
+      "kind": "javascripts",
+      "filename": "application.min.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/editmode.js",
+      "kind": "javascripts",
+      "filename": "editmode.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/editmode.min.js",
+      "kind": "javascripts",
+      "filename": "editmode.min.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr-custom.min.js",
       "kind": "javascripts",
       "filename": "modernizr-custom.min.js"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/editmode.min.css",
-      "kind": "stylesheets",
-      "filename": "editmode.min.css"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/main.min.css",
-      "kind": "stylesheets",
-      "filename": "main.min.css"
     },
     {
       "content_type": "text/css",
@@ -701,9 +703,21 @@
     },
     {
       "content_type": "text/css",
+      "file": "stylesheets/editmode.min.css",
+      "kind": "stylesheets",
+      "filename": "editmode.min.css"
+    },
+    {
+      "content_type": "text/css",
       "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
       "filename": "ie8.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/ie8.min.css",
+      "kind": "stylesheets",
+      "filename": "ie8.min.css"
     },
     {
       "content_type": "text/css",
@@ -713,9 +727,9 @@
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/ie8.min.css",
+      "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
-      "filename": "ie8.min.css"
+      "filename": "main.min.css"
     }
   ]
 }

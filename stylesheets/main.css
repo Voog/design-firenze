@@ -4031,6 +4031,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   border-width: 1px;
 }
 
+.item-top .top-inner .item-image {
+  width: 100%;
+}
+
 @media screen and (min-width: 1401px) {
   .item-top .top-inner .edy-img-drop-area-placeholder {
     font-size: 17px;
