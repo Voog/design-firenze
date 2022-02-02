@@ -39,48 +39,53 @@
         {% include "header" %}
         <main class="content product-content" role="main">
           <div class="items-body">
-            <div class="content-illustrations">
+            <div class="flex-col mar_r-40">
+              <div class="content-illustrations product-illustrations">
 
-              {%- if product.image != blank %}
-                {% assign item_image_state = "with-image" %}
-              {% else %}
-                {% assign item_image_state = "without-image" %}
-              {% endif -%}
+                {%- if product.image != blank %}
+                  {% assign item_image_state = "with-image" %}
+                {% else %}
+                  {% assign item_image_state = "without-image" %}
+                {% endif -%}
 
-              <div class="content-item-box {{ item_image_state }} js-content-item-box">
-                <div class="item-top">
-                  {%- if product.image != blank -%}
-                    <div class="top-inner aspect-ratio-inner">
-                      {%- assign image_class = "item-image " | append: "not-cropped" -%}
-                      {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
-                    </div>
-                  {%- endif -%}
-                </div>
-              </div>
-              {% if editmode or gallery_content_size > 0 %}
-                <div class="content-formatted js-product-gallery" data-search-indexing-allowed="true">
-                  {% content bind=product name="gallery" %}
-                </div>
-              {% endif %}
-            </div>
-
-            <div class="content-body">
-              <header class="content-header">
-                <div class="content-item-title content-formatted">
-                  <h1>{%- editable product.name -%}</h1>
-                </div>
-              </header>
-
-              <div class="content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>
-                {%- if editmode or product.description != blank -%}
-                  <div class="content-product-description">
-                  {%- editable product.description -%}
+                <div class="content-item-box {{ item_image_state }} js-content-item-box">
+                  <div class="item-top">
+                    {%- if product.image != blank -%}
+                      <div class="top-inner aspect-ratio-inner">
+                        {%- assign image_class = "item-image " | append: "not-cropped" -%}
+                        {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
+                      </div>
+                    {%- endif -%}
                   </div>
-                {%- endif -%}
+                </div>
+                {% if editmode or gallery_content_size > 0 %}
+                  <div class="content-formatted js-product-gallery" data-search-indexing-allowed="true">
+                    {% content bind=product name="gallery" %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="flex-col">
+              <div class="content-body">
+                <div class="content-body-inner">
+                  <header class="content-header">
+                    <div class="content-item-title content-formatted">
+                      <h1>{%- editable product.name -%}</h1>
+                    </div>
+                  </header>
 
-                {% content bind=product %}
-                <div class="buy-btn-content js-buy-btn-content">
-                  {% include "buy-button" %}
+                  <div class="content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>
+                    {%- if editmode or product.description != blank -%}
+                      <div class="content-product-description">
+                      {%- editable product.description -%}
+                      </div>
+                    {%- endif -%}
+
+                    {% content bind=product %}
+                    <div class="buy-btn-content js-buy-btn-content">
+                      {% include "buy-button" %}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

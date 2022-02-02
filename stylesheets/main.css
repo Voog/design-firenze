@@ -4103,6 +4103,21 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   border-style: solid;
 }
 
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.flex-col.mar_r-40 {
+  margin-right: 40px;
+}
+
 .item-page .content-item-title {
   margin-bottom: 15px;
 }
@@ -4160,6 +4175,8 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
         -ms-flex: 1;
             flex: 1;
     max-width: 520px;
+  }
+  .content-illustrations:not(.product-illustrations) {
     margin-right: 40px;
   }
 }
@@ -4170,6 +4187,12 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+.content-body-inner {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 32px;
 }
 
 @media screen and (max-width: 1400px) {

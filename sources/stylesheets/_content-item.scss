@@ -241,6 +241,16 @@
   }
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &.mar_r-40 {
+    margin-right: 40px;
+  }
+}
+
 .item-page{
   .content-item-title {
     margin-bottom: 15px;
@@ -290,7 +300,10 @@
   .content-illustrations {
     flex: 1;
     max-width: 520px;
-    margin-right: 40px;
+    
+    &:not(.product-illustrations) {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -300,6 +313,11 @@
       flex: 1;
     }
   }
+}
+
+.content-body-inner {
+  position: sticky;
+  top: 32px;
 }
 
 .intro-content {
