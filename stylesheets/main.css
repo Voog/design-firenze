@@ -4037,8 +4037,11 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   border-width: 1px;
 }
 
-.item-top .top-inner .item-image {
+.product-content .item-top .top-inner .item-image {
+  height: 100%;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 1401px) {

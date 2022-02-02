@@ -184,8 +184,12 @@
       border-width: 1px;
     }
 
-    & .item-image {
-      width: 100%;
+    .product-content & {
+      .item-image {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        }
     }
 
     .edy-img-drop-area-placeholder {
