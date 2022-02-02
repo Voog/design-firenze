@@ -37,7 +37,7 @@
     <div class="container-inner">
       <div class="wrap js-wrap">
         {% include "header" %}
-        <main class="content" role="main">
+        <main class="content product-content" role="main">
           <div class="items-body">
             <div class="content-illustrations">
               {%- assign productImage = product.image -%}

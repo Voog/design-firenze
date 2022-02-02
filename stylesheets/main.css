@@ -833,12 +833,14 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   cursor: pointer;
 }
 
-.public .content-formatted .custom-btn-disabled {
+.public .content-formatted .custom-btn-disabled,
+.product-content .content-formatted .custom-btn-disabled {
   cursor: default;
   background-color: #ccc;
 }
 
-.public .content-formatted .custom-btn-disabled:hover {
+.public .content-formatted .custom-btn-disabled:hover,
+.product-content .content-formatted .custom-btn-disabled:hover {
   opacity: 1;
 }
 

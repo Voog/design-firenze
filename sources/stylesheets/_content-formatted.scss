@@ -273,13 +273,15 @@
 
     &-disabled {
       // scss-lint:disable NestingDepth
-      .public & {
+      .public &,
+      .product-content & {
         cursor: default;
         background-color: $color-disabled;
       }
 
       &:hover {
-        .public & {
+        .public &,
+        .product-content & {
           opacity: 1;
         }
       }
