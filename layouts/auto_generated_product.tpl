@@ -38,6 +38,7 @@
       <div class="wrap js-wrap">
         {% include "header" %}
         <main class="content product-content" role="main">
+        {% include "menu-breadcrumbs-sd" %}
           <div class="items-body">
             <div class="flex-col mar_r-40">
               <div class="content-illustrations product-illustrations">

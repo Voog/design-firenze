@@ -4192,7 +4192,7 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
 .content-body-inner {
   position: -webkit-sticky;
   position: sticky;
-  top: 32px;
+  top: 64px;
 }
 
 @media screen and (max-width: 1400px) {
