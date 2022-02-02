@@ -40,8 +40,8 @@
         <main class="content product-content" role="main">
           <div class="items-body">
             <div class="content-illustrations">
-              {%- assign productImage = product.image -%}
-              {%- if productImage != blank %}
+
+              {%- if product.image != blank %}
                 {% assign item_image_state = "with-image" %}
               {% else %}
                 {% assign item_image_state = "without-image" %}
@@ -49,16 +49,16 @@
 
               <div class="content-item-box {{ item_image_state }} js-content-item-box">
                 <div class="item-top">
-                  {%- if productImage != blank -%}
+                  {%- if product.image != blank -%}
                     <div class="top-inner aspect-ratio-inner">
-                      {%- assign imageClass = "item-image " | append: "not-cropped" -%}
-                      {% image productImage target_width: "1280" class: imageClass loading: "lazy" %}
+                      {%- assign image_class = "item-image " | append: "not-cropped" -%}
+                      {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
                     </div>
                   {%- endif -%}
                 </div>
               </div>
               {% if editmode or gallery_content_size > 0 %}
-                <div class="content-formatted" data-search-indexing-allowed="true">
+                <div class="content-formatted js-product-gallery" data-search-indexing-allowed="true">
                   {% content bind=product name="gallery" %}
                 </div>
               {% endif %}
@@ -79,7 +79,9 @@
                 {%- endif -%}
 
                 {% content bind=product %}
-                {% include "buy-button" %}
+                <div class="buy-btn-content js-buy-btn-content">
+                  {% include "buy-button" %}
+                </div>
               </div>
             </div>
           </div>
@@ -99,5 +101,11 @@
 
   {% include "javascripts" %}
   {% include "edicy-tools" %}
+
+  <script>
+    if (site) {
+     site.handleProductPageContent();
+    }
+  </script>
 </body>
 </html>

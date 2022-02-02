@@ -895,6 +895,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   }
 }
 
+.content-formatted .buy-btn-content .edy-buy-button-container {
+  padding-bottom: 24px;
+}
+
 .content-formatted .edy-buy-button-container .form_field {
   padding-top: 15px;
 }
