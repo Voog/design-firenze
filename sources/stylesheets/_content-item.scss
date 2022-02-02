@@ -318,6 +318,10 @@
 .content-body-inner {
   position: sticky;
   top: 64px;
+
+  & .content-formatted {
+    padding-bottom: 24px;
+  }
 }
 
 .intro-content {

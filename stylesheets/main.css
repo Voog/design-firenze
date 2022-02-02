@@ -4195,6 +4195,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   top: 64px;
 }
 
+.content-body-inner .content-formatted {
+  padding-bottom: 24px;
+}
+
 @media screen and (max-width: 1400px) {
   .intro-content {
     padding-bottom: 25px;

@@ -68,7 +68,7 @@
             </div>
             <div class="flex-col">
               <div class="content-body">
-                <div class="content-body-inner">
+                <div class="content-body-inner js-product-right-content">
                   <header class="content-header">
                     <div class="content-item-title content-formatted">
                       <h1>{%- editable product.name -%}</h1>
@@ -82,10 +82,10 @@
                       </div>
                     {%- endif -%}
 
-                    {% content bind=product %}
                     <div class="buy-btn-content js-buy-btn-content">
                       {% include "buy-button" %}
                     </div>
+                    {% content bind=product %}
                   </div>
                 </div>
               </div>
