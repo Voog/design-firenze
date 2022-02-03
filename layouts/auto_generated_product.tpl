@@ -15,21 +15,21 @@
   {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
   {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}
 
-  {% capture bottom_content_html %}
-    {% unless editmode %}
-      {% content bind=product name="content" %}
-    {% endunless %}
-  {% endcapture %}
+  {%- capture bottom_content_html -%}
+    {%- unless editmode -%}
+      {%- content bind=product name="content" -%}
+    {%- endunless -%}
+  {%- endcapture -%}
 
-  {% assign bottom_content_size = bottom_content_html | strip | size %}
+  {%- assign bottom_content_size = bottom_content_html | strip | size -%}
 
-  {% capture gallery_content_html %}
-    {% unless editmode %}
-      {% content bind=product name="gallery" %}
-    {% endunless %}
-  {% endcapture %}
+  {%- capture gallery_content_html -%}
+    {%- unless editmode -%}
+      {%- content bind=product name="gallery" -%}
+    {%- endunless -%}
+  {%- endcapture -%}
 
-  {% assign gallery_content_size = gallery_content_html | strip | size %}
+  {%- assign gallery_content_size = gallery_content_html | strip | size -%}
 
   {% include "topbar" %}
 
@@ -38,7 +38,7 @@
       <div class="wrap js-wrap">
         {% include "header" %}
         <main class="content product-content" role="main">
-        {% include "menu-breadcrumbs-sd" %}
+          {% include "menu-breadcrumbs-sd" %}
           <div class="items-body">
             <div class="flex-col mar_r-40">
               <div class="content-illustrations product-illustrations">
