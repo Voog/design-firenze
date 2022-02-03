@@ -184,14 +184,6 @@
       border-width: 1px;
     }
 
-    .product-content & {
-      .item-image {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-      }
-    }
-
     .edy-img-drop-area-placeholder {
       @media screen and (min-width: $large-1 + 1) {
         font-size: 17px;
@@ -261,6 +253,28 @@
 
     &-divider {
       margin: 0 4px;
+    }
+  }
+
+  .product-content {
+    .without-image .item-top {
+      background-image: url("../assets/ico-placeholder.svg");
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F2F2F2;
+    }
+
+    .item-top {
+      .top-inner {
+      background-color: transparent;
+
+        .item-image {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
     }
   }
 }
