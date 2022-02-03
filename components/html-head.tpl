@@ -43,6 +43,8 @@
       {% include "template-cs-blog-list" %}
     {% elsif blog_article %}
       {% include "template-cs-blog-article" %}
+    {% elsif items_page %}
+      {% include "template-cs-product" %}
     {% endif %}
 
     {% include "template-cs-headings" %}
