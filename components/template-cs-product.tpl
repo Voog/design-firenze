@@ -1,14 +1,6 @@
 :root {
   /* VoogStyle
     "pathI18n": ["product", "title"],
-    "titleI18n": "alignment",
-    "editor": "listPicker",
-    "list": {{ base_alignment_set }},
-    "scope": "global"
-  */
-  --product-title-alignment: left;
-  /* VoogStyle
-    "pathI18n": ["product", "title"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
