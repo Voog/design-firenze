@@ -189,7 +189,7 @@
         height: 100%;
         width: 100%;
         object-fit: contain;
-        }
+      }
     }
 
     .edy-img-drop-area-placeholder {
@@ -251,9 +251,17 @@
   }
 }
 
-.item-page{
-  .content-item-title {
+.item-page {
+  .content-item-title:not(.product-item-title) {
     margin-bottom: 15px;
+  }
+
+  .product-price {
+    padding-bottom: 24px;
+
+    &-divider {
+      margin: 0 4px;
+    }
   }
 }
 

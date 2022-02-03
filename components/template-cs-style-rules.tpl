@@ -290,6 +290,15 @@ body {
           text-decoration: var(--product-description-font-text-decoration);
 }
 
+.item-page .product-price {
+  color: var(--product-price-color);
+  font-size: var(--product-price-size);
+  font-weight: var(--product-price-font-weight);
+  font-style: var(--product-price-font-style);
+  -webkit-text-decoration: var(--product-price-font-text-decoration);
+          text-decoration: var(--product-price-font-text-decoration);
+}
+
 /*.common-page .content-formatted .form_field_select,
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,

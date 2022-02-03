@@ -4118,8 +4118,16 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   margin-right: 40px;
 }
 
-.item-page .content-item-title {
+.item-page .content-item-title:not(.product-item-title) {
   margin-bottom: 15px;
+}
+
+.item-page .product-price {
+  padding-bottom: 24px;
+}
+
+.item-page .product-price-divider {
+  margin: 0 4px;
 }
 
 .item-list-page .content-item-boxes {

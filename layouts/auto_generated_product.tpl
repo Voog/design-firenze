@@ -70,10 +70,18 @@
               <div class="content-body">
                 <div class="content-body-inner js-product-right-content">
                   <header class="content-header">
-                    <div class="content-item-title content-formatted">
+                    <div class="content-item-title content-formatted product-item-title">
                       <h1>{%- editable product.name -%}</h1>
                     </div>
                   </header>
+
+                  <div class="product-price">
+                    {%- if product.price_max_with_tax != product.price_min_with_tax -%}
+                      {{ product.price_min_with_tax | money_with_currency: product.currency -}}
+                      <span class="product-price-divider">–</span>
+                    {%- endif -%}
+                    {{ product.price_max_with_tax | money_with_currency: product.currency -}}
+                  </div>
 
                   <div class="content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>
                     {%- if editmode or product.description != blank -%}
