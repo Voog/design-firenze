@@ -237,7 +237,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 50%;
+
+  @include query($mobile-1, min-width) {
+    max-width: 50%;
+  }
 
   &.mar_r-40 {
     margin-right: 40px;

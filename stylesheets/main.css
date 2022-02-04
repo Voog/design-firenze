@@ -4105,7 +4105,12 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 50%;
+}
+
+@media screen and (min-width: 480px) {
+  .flex-col {
+    max-width: 50%;
+  }
 }
 
 .flex-col.mar_r-40 {
