@@ -261,8 +261,10 @@
   }
 
   .product-content {
-    .editmode & {
-      cursor: pointer;
+    .product-image {
+      .editmode & {
+        cursor: pointer;
+      }
     }
 
     .without-image .item-top {

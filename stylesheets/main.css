@@ -4130,7 +4130,7 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   margin: 0 4px;
 }
 
-.editmode .item-page .product-content {
+.editmode .item-page .product-content .product-image {
   cursor: pointer;
 }
 
