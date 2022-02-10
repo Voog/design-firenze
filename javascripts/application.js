@@ -1308,6 +1308,38 @@ MMCQ = (function() {
   };
 
   // ===========================================================================
+  // Change product image position on narrower screens (mobile devices)
+  // ===========================================================================
+
+  var handleProductPageContent = function () {
+    $(document).ready(function () {
+      changeProductImagePos();
+    });
+
+    $(window).resize(debounce(function () {
+      changeProductImagePos();
+    }, 25));
+
+    var changeProductImagePos = function () {
+      var productGallery = $('.js-product-gallery');
+      var productImageContentBox = $('.js-content-item-box');
+      var productRightContent = $('.js-product-right-content');
+
+      if ($('.js-buy-btn-content .edy-buy-button-container').length >= 1) {
+        if ($(window).width() < 480) {
+          if ($('.js-product-right-content + .js-product-gallery').length === 0) {
+            productRightContent.append(productGallery);
+          }
+        } else {
+          if ($('.js-content-item-box + .js-product-gallery').length === 0) {
+            productImageContentBox.parent().append(productGallery);
+          }
+        }
+      }
+    }
+  };
+
+  // ===========================================================================
   // Function to detect if site is displayed in editmode.
   // ===========================================================================
   var editmode = function () {
@@ -1363,7 +1395,8 @@ MMCQ = (function() {
     bindRootItemSettings: bindRootItemSettings,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,
-    bindSiteSearch: bindSiteSearch
+    bindSiteSearch: bindSiteSearch,
+    handleProductPageContent: handleProductPageContent
   });
 
   // Initiates site wide functions.

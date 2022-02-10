@@ -3,10 +3,15 @@
 // =============================================================================
 
 .content-formatted {
+  .buy-btn-content .edy-buy-button-container {
+    padding-bottom: 24px;
+  }
+  
   .edy-buy-button-container {
     // sass-lint:disable class-name-format
     .form_field {
       padding-top: 15px;
+      word-break: normal;
 
       &:first-child {
         padding-top: 15px;
