@@ -11,6 +11,7 @@
     // sass-lint:disable class-name-format
     .form_field {
       padding-top: 15px;
+      word-break: normal;
 
       &:first-child {
         padding-top: 15px;

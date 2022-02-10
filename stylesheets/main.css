@@ -901,6 +901,7 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
 
 .content-formatted .edy-buy-button-container .form_field {
   padding-top: 15px;
+  word-break: normal;
 }
 
 .content-formatted .edy-buy-button-container .form_field:first-child {
