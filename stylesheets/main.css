@@ -4129,6 +4129,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   margin: 0 4px;
 }
 
+.editmode .item-page .product-content {
+  cursor: pointer;
+}
+
 .item-page .product-content .without-image .item-top {
   background-image: url("../assets/ico-placeholder.svg");
   background-size: 40px;
