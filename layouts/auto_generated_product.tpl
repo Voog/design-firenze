@@ -9,7 +9,7 @@
   {% include "edicy-tools-styles" %}
 </head>
 
-<body class="item-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} {% if fallback_state %} bgpicker-fallback{% endif %}">
+<body class="item-page product-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} {% if fallback_state %} bgpicker-fallback{% endif %}">
   {% include "template-svg-spritesheet" %}
   {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
   {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}

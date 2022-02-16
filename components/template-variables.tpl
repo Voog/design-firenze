@@ -122,15 +122,15 @@
   {% capture base_alignment_set %}
     [
       {
-        "title": "Left",
+        "titleI18n": "left",
         "value": "left"
       },
       {
-        "title": "Center",
+        "titleI18n": "center",
         "value": "center"
       },
       {
-        "title": "Right",
+        "titleI18n": "right",
         "value": "right"
       }
     ]
