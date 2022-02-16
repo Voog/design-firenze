@@ -7,7 +7,7 @@
       {% continue %}
     {% endif %}
     <span class="menu-separator">/</span>
-    <li class="selected menu-item {% if forloop.last %}current{% endif %}">
+    <li class="selected menu-item{% if forloop.last %} current{% endif %}">
       <a href="/{{listItem.item.id}}">{{ listItem.item.name }}</a>
     </li>
   {% endfor -%}
