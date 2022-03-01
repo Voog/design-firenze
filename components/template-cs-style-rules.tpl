@@ -299,6 +299,16 @@ body {
           text-decoration: var(--product-price-font-text-decoration);
 }
 
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
+  padding: calc(var(--button-padding) - 3px) var(--button-padding);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+}
+
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn, .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
+  background-color: var(--button-background-color);
+}
+
 /*.common-page .content-formatted .form_field_select,
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
@@ -531,6 +541,9 @@ body {
     font-size: calc(var(--blog-list-date-font-size) * 1.4);
   }
   .content-formatted .form_submit input, .content-formatted .custom-btn {
+    font-size: calc(var(--button-font-size) * 1.4);
+  }
+  .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
     font-size: calc(var(--button-font-size) * 1.4);
   }
   .front-page .menu-main .menu .menu-item .menu-link {

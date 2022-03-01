@@ -329,6 +329,16 @@ body {
   text-decoration: var(--product-price-font-text-decoration);
 }
 
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
+  padding: calc(var(--button-padding) - 3px) var(--button-padding);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+
+  &, &:hover {
+    background-color: var(--button-background-color);
+  }
+}
+
 
 // Form
 /*.common-page .content-formatted .form_field_select,
@@ -530,6 +540,7 @@ body { font-family: var(--font-one);}
   .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}
   .post-date { font-size: calc(var(--blog-list-date-font-size) * 1.4);}
   .content-formatted .form_submit input, .content-formatted .custom-btn { font-size: calc(var(--button-font-size) * 1.4);}
+  .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn { font-size: calc(var(--button-font-size) * 1.4); }
   .front-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
   .content-page .header .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
   .product-page .content-header h1 { font-size: calc(var(--product-title-size) * 1.4); }
