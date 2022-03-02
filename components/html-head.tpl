@@ -16,9 +16,11 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}STYLESHEETS{% endcomment %}
-{% stylesheet_link "main.min.css?v={{ template_settings.version }}" %}
+<link href="{{ stylesheets_path }}/main.min.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/>
 {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
-{% if editmode %}{% stylesheet_link "editmode.min.css?v={{ template_settings.version }}" %}{% endif %}
+{% if editmode %}
+  <link href="{{ stylesheets_path }}/editmode.min.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/>
+{% endif %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css?v=1" %}<![endif]-->
 
 {% comment %}Google fonts for Design Editor{% endcomment %}
