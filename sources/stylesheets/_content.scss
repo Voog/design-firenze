@@ -11,6 +11,11 @@
     padding: 0;
     text-align: center;
 
+    .edy-product-widget-grid,
+    .edy-product-widget-list {
+      text-align: left;
+    }
+
     .content-formatted {
       position: relative;
       min-width: 211px;

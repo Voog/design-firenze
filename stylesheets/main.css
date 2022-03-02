@@ -2344,6 +2344,11 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   text-align: center;
 }
 
+.front-page .content .edy-product-widget-grid,
+.front-page .content .edy-product-widget-list {
+  text-align: left;
+}
+
 .front-page .content .content-formatted {
   position: relative;
   min-width: 211px;
@@ -3728,6 +3733,11 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
 
 .footer .signout-btn-margin {
   padding-top: 25px;
+}
+
+.footer .edy-product-widget-grid,
+.footer .edy-product-widget-list {
+  text-align: left;
 }
 
 .voog-reference a {
