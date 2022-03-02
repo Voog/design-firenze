@@ -16,9 +16,9 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}STYLESHEETS{% endcomment %}
-{% stylesheet_link "main.min.css?v=firenze-2.3.1" %}
+{% stylesheet_link "main.min.css?v={{ template_settings.version }}" %}
 {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
-{% if editmode %}{% stylesheet_link "editmode.min.css?v=firenze-2.3.1" %}{% endif %}
+{% if editmode %}{% stylesheet_link "editmode.min.css?v={{ template_settings.version }}" %}{% endif %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css?v=1" %}<![endif]-->
 
 {% comment %}Google fonts for Design Editor{% endcomment %}
@@ -58,7 +58,7 @@
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
-<script src="{{ javascripts_path }}/modernizr-custom.min.js?v=firenze-2.3.1"></script>
+<script src="{{ javascripts_path }}/modernizr-custom.min.js?v={{ template_settings.version }}"></script>
 
 {% comment %}SITE TITLE{% endcomment %}
 <title>{% title %}</title>
