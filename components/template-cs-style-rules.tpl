@@ -401,6 +401,22 @@ body {
   background-color: var(--button-background-color);
 }
 
+.edy-product-widget-filter-sort option {
+  color: var(--color-primary);
+}
+
+.front-page .edy-product-widget-filter-sort option {
+  color: var(--dark-primary);
+}
+
+.dark-background .edy-product-widget-filter-name, .dark-background .edy-product-widget-filter-sort, .dark-background .edy-product-widget-filter-label, .dark-background .edy-product-widget-filter-search-input {
+  color: var(--color-secondary);
+}
+
+.front-page .dark-background .edy-product-widget-filter-name, .front-page .dark-background .edy-product-widget-filter-sort, .front-page .dark-background .edy-product-widget-filter-label, .front-page .dark-background .edy-product-widget-filter-search-input {
+  color: var(--light-primary);
+}
+
 /*.common-page .content-formatted .form_field_select,
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,

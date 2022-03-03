@@ -447,6 +447,23 @@ body {
   }
 }
 
+.edy-product-widget-filter-sort option {
+  .front-page & {
+    color: var(--dark-primary);
+  }
+
+  color: var(--color-primary);
+}
+
+.dark-background {
+  .edy-product-widget-filter-name, .edy-product-widget-filter-sort, .edy-product-widget-filter-label, .edy-product-widget-filter-search-input {
+    color: var(--color-secondary);
+
+    .front-page & {
+      color: var(--light-primary);
+    }
+  }
+}
 
 // Form
 /*.common-page .content-formatted .form_field_select,

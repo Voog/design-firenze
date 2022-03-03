@@ -289,6 +289,17 @@
   }
 }
 
+.dark-background {
+  .edy-product-widget-filter-sort,
+  .edy-product-widget-filter-search-input {
+    opacity: .7;
+  }
+
+  .edy-product-widget-filter-label {
+    opacity: .5;
+  }
+}
+
 .item-list-page {
   .content-item-boxes {
     font-size: 0;

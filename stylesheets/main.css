@@ -4173,6 +4173,15 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
      object-fit: contain;
 }
 
+.dark-background .edy-product-widget-filter-sort,
+.dark-background .edy-product-widget-filter-search-input {
+  opacity: .7;
+}
+
+.dark-background .edy-product-widget-filter-label {
+  opacity: .5;
+}
+
 .item-list-page .content-item-boxes {
   font-size: 0;
   line-height: 1.3;
