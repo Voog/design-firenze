@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
-{% include "blog-article-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
+{%- include "blog-article-variables" -%}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_page = true %}

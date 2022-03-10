@@ -12,6 +12,11 @@
     {% assign fallback_body_image = article.data.body_image %}
     {% assign fallback_body_color = article.data.body_color %}
     {% assign body_bg = article.data.body_bg %}
+  {% elsif edicy-tools-variables == 'product_page' %}
+    {% assign fallback_body_image = page.data.body_image %}
+    {% assign fallback_body_color = page.data.body_color %}
+    {% assign body_bg_key = template_settings.product.body_bg.key %}
+    {% assign body_bg = site.data[body_bg_key] %}
   {% else %}
     {% assign fallback_body_image = page.data.body_image %}
     {% assign fallback_body_color = page.data.body_color %}

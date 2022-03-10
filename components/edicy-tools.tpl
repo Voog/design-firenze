@@ -28,6 +28,8 @@
 
     {% if post_page %}
       var pageType = 'articlePage';
+    {% elsif product_page %}
+      var pageType = 'productPage';
     {% else %}
       var pageType = 'contentPage',
 

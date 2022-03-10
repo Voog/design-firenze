@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
 
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign items_page = true %}
-  {% include "edicy-tools-variables" %}
+  {% assign product_page = true %}
+  {% include "edicy-tools-variables" with "product_page" %}
   {% include "html-head" %}
   {% include "edicy-tools-styles" %}
 </head>
 
-<body class="item-page product-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} {% if fallback_state %} bgpicker-fallback{% endif %}">
+<body class="item-page product-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %}">
   {% include "template-svg-spritesheet" %}
+  {% if editmode %}
+    <button 
+      class="bgpicker-btn js-background-settings" 
+      data-bg-key="{{ body_bg_key }}" 
+      data-bg-default-image-color="rgb(111, 108, 119)" 
+      data-bg-image="{{ body_bg_image }}" 
+      data-bg-image-sizes="{{ body_bg_image_sizes_str | escape }}" 
+      data-bg-color="{{ body_bg_color }}" 
+      data-bg-color-data="{{ body_bg_color_data_str | escape }}">
+    </button>
+  {% endif %}
+
   {% if body_bg_image != '' or editmode %}<div class="body-background-image js-background-image"></div>{% endif %}
   {% if body_bg_color != '' or editmode %}<div class="body-background-color js-background-color"></div>{% endif %}
 
@@ -53,7 +67,7 @@
                     {%- if product.image != blank -%}
                       <div class="top-inner aspect-ratio-inner">
                         {%- assign image_class = "item-image " | append: "not-cropped" -%}
-                        {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
+                        {% image product.image target_width: "600" class: image_class loading: "lazy" %}
                       </div>
                     {%- endif -%}
                   </div>

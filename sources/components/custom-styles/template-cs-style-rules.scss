@@ -329,6 +329,141 @@ body {
   text-decoration: var(--product-price-font-text-decoration);
 }
 
+.dark-background {
+  .edy-product-widget-grid .edy-product-widget-item {
+    .edy-product-widget-item-details-wrap {
+      .edy-product-widget-item-title,
+      .edy-product-widget-item-link {
+        .front-page & {
+          color: var(--light-primary);
+        }
+
+        color: var(--color-secondary);
+      }
+
+      .edy-product-widget-item-price,
+      .edy-product-widget-item-description {
+        .front-page & {
+          color: var(--light-primary);
+        }
+
+        color: var(--color-secondary);
+        opacity: .7;
+      }
+    }
+
+    .edy-product-widget-item-top-outer .edy-product-widget-item-top.edy-product-widget-item-without-image {
+      border: 1px solid var(--color-secondary);
+      opacity: .5;
+
+      .front-page & {
+        border: 1px solid var(--light-primary);
+      }
+    }
+
+    .edy-product-widget-item-details-flex-wrap {
+      .edy-product-widget-item-out-of-stock {
+        color: var(--color-secondary);
+
+        .front-page & {
+          color: var(--light-primary);
+        }
+      }
+
+      .edy-product-widget-item-btn {
+        color: var(--color-secondary);
+
+        .front-page & {
+          color: var(--light-primary);
+        }
+      }
+    }
+
+    &:hover {
+      .edy-product-widget-item-price {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap {
+  .dark-background & {
+    .edy-product-widget-item-header {
+      .edy-product-widget-item-title {
+        .edy-product-widget-item-link {
+          color: var(--color-secondary);
+
+          .front-page & {
+            color: var(--light-primary);
+          }
+        }
+      }
+
+      .edy-product-widget-item-price {
+        color: var(--color-secondary);
+        opacity: .7;
+
+        .front-page & {
+          color: var(--light-primary);
+        }
+      }
+
+      .edy-product-widget-item-out-of-stock {
+        color: var(--color-secondary);
+
+        .front-page & {
+          color: var(--light-primary);
+        }
+      }
+    }
+
+    .edy-product-widget-item-description {
+      color: var(--color-secondary);
+
+      .front-page & {
+        color: var(--light-primary);
+      }
+    }
+
+    .edy-product-widget-item-without-image {
+      border: 1px solid var(--color-secondary);
+      opacity: .5;
+
+      .front-page & {
+        border: 1px solid var(--light-primary);
+      }
+    }
+  }
+}
+
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
+  padding: calc(var(--button-padding) - 3px) var(--button-padding);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+
+  &, &:hover {
+    background-color: var(--button-background-color);
+  }
+}
+
+.edy-product-widget-filter-sort option {
+  .front-page & {
+    color: var(--dark-primary);
+  }
+
+  color: var(--color-primary);
+}
+
+.dark-background {
+  .edy-product-widget-filter-name, .edy-product-widget-filter-sort, .edy-product-widget-filter-label, .edy-product-widget-filter-search-input {
+    color: var(--color-secondary);
+
+    .front-page & {
+      color: var(--light-primary);
+    }
+  }
+}
 
 // Form
 /*.common-page .content-formatted .form_field_select,
@@ -530,6 +665,7 @@ body { font-family: var(--font-one);}
   .post-title, .post-title a { font-size: calc(var(--blog-list-title-font-size) * 1.4);}
   .post-date { font-size: calc(var(--blog-list-date-font-size) * 1.4);}
   .content-formatted .form_submit input, .content-formatted .custom-btn { font-size: calc(var(--button-font-size) * 1.4);}
+  .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn { font-size: calc(var(--button-font-size) * 1.4); }
   .front-page .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
   .content-page .header .menu-main .menu .menu-item .menu-link { font-size: calc(var(--header-mainmenu-font-size) * 1.4);}
   .product-page .content-header h1 { font-size: calc(var(--product-title-size) * 1.4); }
