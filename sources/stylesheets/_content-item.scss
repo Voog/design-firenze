@@ -286,6 +286,10 @@
         }
       }
     }
+
+    .product-cross-page-info {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -343,7 +347,7 @@
   .content-illustrations {
     flex: 1;
     max-width: 520px;
-    
+
     &:not(.product-illustrations) {
       margin-right: 40px;
     }
