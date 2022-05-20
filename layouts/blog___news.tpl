@@ -25,9 +25,9 @@
         {% include "tags-blog" %}
 
         <main class="content" role="main">
-          {%- assign page_title_content_title = "title" | lce -%}
-          {%- assign page_title_content_title_tooltip = "content_tooltip_current_page_title" | lce -%}
-          <section class="content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content title=page_title_content_title title_tooltip=page_title_content_title_tooltip %}</section>
+          {%- assign content_default_title = "content" | lce -%}
+          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+          <section class="content-formatted post-intro-content" data-search-indexing-allowed="true">{% content title=content_default_title title_tooltip=content_default_title_tooltip %}</section>
 
           {% if editmode %}
             <span class="add-button">{% addbutton %}</span>
