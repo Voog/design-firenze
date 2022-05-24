@@ -4173,6 +4173,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
      object-fit: contain;
 }
 
+.item-page .product-content .product-cross-page-info {
+  margin-bottom: 32px;
+}
+
 .dark-background .edy-product-widget-filter-sort,
 .dark-background .edy-product-widget-filter-search-input {
   opacity: .7;

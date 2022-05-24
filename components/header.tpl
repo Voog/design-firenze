@@ -9,7 +9,11 @@
 
       {% if front_page == true %}
         <main class="content" role="main">
-          <section class="content-formatted" {{ edy_intro_edit_text }}>{% content %}</section>
+          {%- assign content_default_title = "content" | lce -%}
+          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+          <section class="content-formatted">
+            {%- content title=content_default_title title_tooltip=content_default_title_tooltip -%}
+          </section>
         </main>
       {% endif %}
     </div>

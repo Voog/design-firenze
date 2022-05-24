@@ -36,8 +36,8 @@
     {% endfor %}
   {% endif %}
 {% else %}
-  {% if og_obj.image? %}
-    {% assign og_image = og_obj.image.for-width-1200 %}
+  {% if og_obj.og_image? %}
+    {% assign og_image = og_obj.og_image.for-width-1200 %}
   {% endif %}
 {% endif %}
 

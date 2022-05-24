@@ -6,3 +6,7 @@
 .edy-ca:first-child {
   margin-top: 0;
 }
+
+.front-page .content .edy-ca-empty-placeholder {
+  margin-bottom: 32px;
+}
