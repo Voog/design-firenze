@@ -484,6 +484,54 @@
   ],
   "assets": [
     {
+      "content_type": "application/font-woff",
+      "file": "assets/anonymous-pro-v21-latin-ext_greek_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "anonymous-pro-v21-latin-ext_greek_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/anonymous-pro-v21-latin-ext_greek_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "anonymous-pro-v21-latin-ext_greek_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/anonymous-pro-v21-latin-ext_greek_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "anonymous-pro-v21-latin-ext_greek_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/anonymous-pro-v21-latin-ext_greek_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "anonymous-pro-v21-latin-ext_greek_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/arvo-v20-latin-700.woff",
+      "kind": "assets",
+      "filename": "arvo-v20-latin-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/arvo-v20-latin-700italic.woff",
+      "kind": "assets",
+      "filename": "arvo-v20-latin-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/arvo-v20-latin-italic.woff",
+      "kind": "assets",
+      "filename": "arvo-v20-latin-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/arvo-v20-latin-regular.woff",
+      "kind": "assets",
+      "filename": "arvo-v20-latin-regular.woff"
+    },
+    {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/bebas-neue-regular-cyrillic.eot",
       "kind": "assets",
@@ -530,6 +578,78 @@
       "file": "assets/bebas-neue-regular-latin.woff",
       "kind": "assets",
       "filename": "bebas-neue-regular-latin.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "cousine-v25-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/crimson-text-v19-vietnamese_latin-ext-700.woff",
+      "kind": "assets",
+      "filename": "crimson-text-v19-vietnamese_latin-ext-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/crimson-text-v19-vietnamese_latin-ext-700italic.woff",
+      "kind": "assets",
+      "filename": "crimson-text-v19-vietnamese_latin-ext-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/crimson-text-v19-vietnamese_latin-ext-italic.woff",
+      "kind": "assets",
+      "filename": "crimson-text-v19-vietnamese_latin-ext-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/crimson-text-v19-vietnamese_latin-ext-regular.woff",
+      "kind": "assets",
+      "filename": "crimson-text-v19-vietnamese_latin-ext-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "fira-sans-v16-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
     },
     {
       "content_type": "image/svg+xml",
@@ -580,10 +700,358 @@
       "filename": "ico-voog-white.svg"
     },
     {
+      "content_type": "application/font-woff",
+      "file": "assets/lato-v23-latin-ext-700.woff",
+      "kind": "assets",
+      "filename": "lato-v23-latin-ext-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/lato-v23-latin-ext-700italic.woff",
+      "kind": "assets",
+      "filename": "lato-v23-latin-ext-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/lato-v23-latin-ext-italic.woff",
+      "kind": "assets",
+      "filename": "lato-v23-latin-ext-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/lato-v23-latin-ext-regular.woff",
+      "kind": "assets",
+      "filename": "lato-v23-latin-ext-regular.woff"
+    },
+    {
       "content_type": "image/svg+xml",
       "file": "assets/loader.svg",
       "kind": "assets",
       "filename": "loader.svg"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "lora-v26-vietnamese_latin-ext_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "montserrat-v25-vietnamese_latin-ext_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "noto-serif-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "open-sans-v34-vietnamese_latin-ext_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/playfair-display-v30-vietnamese_latin-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "playfair-display-v30-vietnamese_latin-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/playfair-display-v30-vietnamese_latin-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "playfair-display-v30-vietnamese_latin-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/playfair-display-v30-vietnamese_latin-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "playfair-display-v30-vietnamese_latin-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/playfair-display-v30-vietnamese_latin-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "playfair-display-v30-vietnamese_latin-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "pt-sans-v17-latin-ext_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "pt-serif-v17-latin-ext_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "raleway-v28-vietnamese_latin-ext_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "roboto-mono-v22-vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-slab-v24-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "roboto-slab-v24-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-slab-v24-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "roboto-slab-v24-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "roboto-v30-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "source-sans-pro-v21-vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "ubuntu-mono-v15-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff",
+      "kind": "assets",
+      "filename": "ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff",
+      "kind": "assets",
+      "filename": "ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff",
+      "kind": "assets",
+      "filename": "ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff",
+      "kind": "assets",
+      "filename": "ubuntu-v20-latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"
     },
     {
       "content_type": "image/jpeg",
