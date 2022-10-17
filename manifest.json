@@ -532,6 +532,30 @@
       "filename": "arvo-v20-latin-regular.woff"
     },
     {
+      "content_type": "application/font-woff",
+      "file": "assets/avenir-next-bold.woff",
+      "kind": "assets",
+      "filename": "avenir-next-bold.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/avenir-next-demi-bold.woff",
+      "kind": "assets",
+      "filename": "avenir-next-demi-bold.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/avenir-next-medium.woff",
+      "kind": "assets",
+      "filename": "avenir-next-medium.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/avenir-next-regular.woff",
+      "kind": "assets",
+      "filename": "avenir-next-regular.woff"
+    },
+    {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/bebas-neue-regular-cyrillic.eot",
       "kind": "assets",
