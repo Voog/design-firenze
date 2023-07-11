@@ -9,6 +9,8 @@
   {% include "edicy-tools-variables" with "product_page" %}
   {% include "html-head" %}
   {% include "edicy-tools-styles" %}
+  
+  {% sd_product %}
 </head>
 
 <body class="item-page product-page content-page{% unless editmode or site_header_has_content %} empty-site-header{% endunless %} js-bg-picker-area{% if fallback_state %} bgpicker-fallback{% endif %}">
