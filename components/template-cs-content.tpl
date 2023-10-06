@@ -262,20 +262,20 @@
   */
   --content-color: #888;
   /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
-    "titleI18n": "font_weight",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "600",
-      "off": "400"
-    },
-    "icon": "bold",
-    "scope": "global",
-    "boundVariables": [
-      "--content-links-hover-font-weight"
-    ]
-  */
+      "pathI18n": ["content", "link", "normal"],
+      "titleI18n": "font_weight",
+      "type": "button",
+      "editor": "toggleIcon",
+      "states": {
+        "on": "600",
+        "off": "400"
+      },
+      "icon": "bold",
+      "scope": "global",
+      "boundVariables": [
+        "--content-links-hover-font-weight"
+      ]
+    */
   --content-links-font-weight: 400;
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
