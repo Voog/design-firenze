@@ -255,8 +255,14 @@
   .product-price {
     padding-bottom: 24px;
 
-    &-divider {
-      margin: 0 4px;
+  .product-price-original {
+    display: inline-block;
+    padding-right: 4px;
+    opacity: .4;
+  }
+
+  .product-price-final {
+    display: inline-block;
     }
   }
 

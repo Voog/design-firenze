@@ -20,6 +20,11 @@
     // sass-lint:enable class-name-format
   }
 
+  .edy-buy-button-price-container .edy-buy-button-price-original {
+    color: var(--form-field-text-color);
+    opacity: .4;
+  }
+
   .edy-buy-button-variants {
     // sass-lint:disable class-name-format
     .form_field {
