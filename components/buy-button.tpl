@@ -47,8 +47,8 @@
           <span class="edy-buy-button-title">{{ 'add_to_cart' | lc | escape_once }}</span>
         {% endif -%}
 
-      <div class="edy-buy-button-price-container"></div>
       </div>
+      <div class="edy-buy-button-price-container"></div>
     </div>
   </div>
 {% else %}

@@ -255,16 +255,16 @@
   .product-price {
     padding-bottom: 24px;
 
-  .product-price-original {
-    display: inline-block;
-    padding-right: 4px;
-    opacity: .4;
-  }
-
-  .product-price-final {
-    display: inline-block;
+    .product-price-original {
+      display: inline-block;
+      padding-right: 4px;
+      opacity: .4;
     }
-  }
+
+    .product-price-final {
+      display: inline-block;
+      }
+    }
 
   .product-content {
     .product-image {
