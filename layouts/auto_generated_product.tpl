@@ -9,7 +9,7 @@
   {% include "edicy-tools-variables" with "product_page" %}
   {% include "html-head" %}
   {% include "edicy-tools-styles" %}
-  
+
   {% sd_product %}
 </head>
 
@@ -66,21 +66,18 @@
             <div class="flex-col mar_r-40">
               <div class="content-illustrations product-illustrations">
 
-                {%- if product.image != blank %}
-                  {% assign item_image_state = "with-image" %}
+                {%- if product.photos != blank %}
+                  {% assign item_image_state = "with-images" %}
                 {% else %}
-                  {% assign item_image_state = "without-image" %}
+                  {% assign item_image_state = "without-images" %}
                 {% endif -%}
 
                 <div class="content-item-box {{ item_image_state }} js-content-item-box">
-                  <div class="item-top product-image">
-                    {%- if product.image != blank -%}
-                      <div class="top-inner aspect-ratio-inner">
-                        {%- assign image_class = "item-image " | append: "not-cropped" -%}
-                        {% image product.image target_width: "600" class: image_class loading: "lazy" %}
-                      </div>
-                    {%- endif -%}
-                  </div>
+                  {%- if product.photos == blank -%}
+                    <div class="item-top"></div>
+                  {%- else -%}
+                    {% gallery product layout="product_slider" %}
+                  {%- endif -%}
                 </div>
                 {% if editmode or gallery_content_size > 0 %}
                   <div class="content-formatted js-product-gallery" data-search-indexing-allowed="true">
@@ -177,10 +174,6 @@
   <script>
     if (site) {
       site.handleProductPageContent();
-
-      {%- if product and editmode -%}
-        site.handleProductImageClick({{ product.id }});
-      {% endif %}
     }
   </script>
 </body>
