@@ -1246,6 +1246,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
 .content-formatted .edy-buy-button-container .form_field:first-child {
   padding-top: 15px;
 }
+.content-formatted .edy-buy-button-price-container .edy-buy-button-price-original {
+  color: var(--form-field-text-color);
+  opacity: 0.4;
+}
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -4083,8 +4087,13 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
 .item-page .product-price {
   padding-bottom: 24px;
 }
-.item-page .product-price-divider {
-  margin: 0 4px;
+.item-page .product-price .product-price-original {
+  display: inline-block;
+  padding-right: 4px;
+  opacity: 0.4;
+}
+.item-page .product-price .product-price-final {
+  display: inline-block;
 }
 .editmode .item-page .product-content .product-image {
   cursor: pointer;
