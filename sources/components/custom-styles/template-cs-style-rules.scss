@@ -456,12 +456,16 @@ body {
 }
 
 .dark-background {
-  .edy-product-widget-filter-name, .edy-product-widget-filter-sort, .edy-product-widget-filter-label, .edy-product-widget-filter-search-input {
+  .edy-product-widget-item-price-original, .edy-product-widget-item-price-final, .edy-product-widget-filter-name, .edy-product-widget-filter-sort, .edy-product-widget-filter-label, .edy-product-widget-filter-search-input {
     color: var(--color-secondary);
 
     .front-page & {
       color: var(--light-primary);
     }
+  }
+  
+  .edy-product-widget-item-price-original {
+    opacity: .4;
   }
 }
 
