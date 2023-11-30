@@ -267,30 +267,12 @@
     }
 
   .product-content {
-    .product-image {
-      .editmode & {
-        cursor: pointer;
-      }
-    }
-
-    .without-image .item-top {
+    .without-images .item-top {
       background-image: url("../assets/ico-placeholder.svg");
       background-size: 40px;
       background-repeat: no-repeat;
       background-position: center;
       background-color: #F2F2F2;
-    }
-
-    .item-top {
-      .top-inner {
-      background-color: transparent;
-
-        .item-image {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-        }
-      }
     }
 
     .product-cross-page-info {

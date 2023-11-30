@@ -63,17 +63,6 @@ window.addEventListener('DOMContentLoaded', function(event) {
 });
 }
 
-// ===========================================================================
-// Opens product admin view on product image click
-// ===========================================================================
-
-var handleProductImageClick = function(product_id) {
-  $('.product-content .product-image').click(function() {
-    window.open('/admin/ecommerce/products/' + product_id, '_blank').focus();
-  });
-};
-
 window.site = $.extend(window.site || {}, {
-  initSettingsEditorBtn: initSettingsEditorBtn,
-  handleProductImageClick: handleProductImageClick
+  initSettingsEditorBtn: initSettingsEditorBtn
 })

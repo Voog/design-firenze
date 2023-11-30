@@ -4095,24 +4095,12 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
 .item-page .product-price .product-price-final {
   display: inline-block;
 }
-.editmode .item-page .product-content .product-image {
-  cursor: pointer;
-}
-.item-page .product-content .without-image .item-top {
+.item-page .product-content .without-images .item-top {
   background-image: url("../assets/ico-placeholder.svg");
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F2F2F2;
-}
-.item-page .product-content .item-top .top-inner {
-  background-color: transparent;
-}
-.item-page .product-content .item-top .top-inner .item-image {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .item-page .product-content .product-cross-page-info {
   margin-bottom: 32px;
