@@ -3737,9 +3737,10 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   filter: alpha(opacity=50);
   font-size: 14px;
   height: 8px;
+  color: #FFFFFF;
 }
 .light-background .voog-reference a {
-  color: #FFFFFF;
+  color: #000000;
 }
 .voog-reference a:hover {
   opacity: 1;

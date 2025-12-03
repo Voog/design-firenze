@@ -115,9 +115,10 @@
     @include opacity(0.5);
     font-size: 14px;
     height: 8px;
+    color: $white;
 
     .light-background & {
-      color: $white;
+      color: $black;
     }
 
     &:hover {

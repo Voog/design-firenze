@@ -221,10 +221,6 @@ body {
   color: var(--h3-color);
 }
 
-.footer .voog-reference a {
-  color: var(--footer-color);
-}
-
 .content-formatted .custom-btn,
 .content-formatted .form_submit input {
   padding: calc(var(--button-padding) - 3px) var(--button-padding);
