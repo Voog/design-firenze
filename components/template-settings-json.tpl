@@ -5,5 +5,5 @@
       "value": {}
     }
   },
-  "version": "firenze-2.4.2"
+  "version": "firenze-2.4.3"
 }
