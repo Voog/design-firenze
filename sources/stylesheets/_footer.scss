@@ -113,32 +113,12 @@
   a {
     display: block;
     @include opacity(0.5);
-    width: 35px;
+    font-size: 14px;
     height: 8px;
-    font-size: 0;
-    background-size: cover;
-
-    @include query($large-1, 'min-width') {
-      width: 52px;
-      height: 12px;
-    }
-
-    .svg & {
-      background-image: url('../assets/ico-voog-white.svg');
-    }
-
-    .no-svg & {
-      background-image: url('../images/ico-voog-white.png');
-    }
+    color: $white;
 
     .light-background & {
-      .no-svg & {
-        background-image: url('../images/ico-voog-black.png');
-      }
-
-      .svg & {
-        background-image: url('../assets/ico-voog-black.svg');
-      }
+      color: $black;
     }
 
     &:hover {

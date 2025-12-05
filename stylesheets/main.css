@@ -3735,28 +3735,12 @@ body .edy-settings-editor:not(.editor_default) .edy-popover-content .edy-setting
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
-  width: 35px;
+  font-size: 14px;
   height: 8px;
-  font-size: 0;
-  background-size: cover;
+  color: #FFFFFF;
 }
-@media screen and (min-width: 1400px) {
-  .voog-reference a {
-    width: 52px;
-    height: 12px;
-  }
-}
-.svg .voog-reference a {
-  background-image: url("../assets/ico-voog-white.svg");
-}
-.no-svg .voog-reference a {
-  background-image: url("../images/ico-voog-white.png");
-}
-.no-svg .light-background .voog-reference a {
-  background-image: url("../images/ico-voog-black.png");
-}
-.svg .light-background .voog-reference a {
-  background-image: url("../assets/ico-voog-black.svg");
+.light-background .voog-reference a {
+  color: #000000;
 }
 .voog-reference a:hover {
   opacity: 1;
