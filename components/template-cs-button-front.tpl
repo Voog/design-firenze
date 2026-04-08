@@ -21,4 +21,18 @@
     "scope": "global"
   */
   --button-font-size: 14px;
+  /* VoogStyle
+    "pathI18n": ["button"],
+    "titleI18n": "background_color",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --button-background-color: transparent;
+  /* VoogStyle
+    "pathI18n": ["button"],
+    "titleI18n": "color",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --button-color: #fff;
 }
