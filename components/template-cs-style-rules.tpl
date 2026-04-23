@@ -227,6 +227,8 @@ body {
   font-size: var(--button-font-size);
 }
 
+.front-page .content-formatted .custom-btn,
+.front-page .content-formatted .form_submit input,
 .content-page .content-formatted .custom-btn,
 .content-page .content-formatted .form_submit input {
   color: var(--button-color);
